@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Customization on icyphox</title>
+    <link>https://icyphox.github.io/tags/customization/</link>
+    <description>Recent content in Customization on icyphox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Dec 2017 19:13:23 +0400</lastBuildDate>
+    
+	<atom:link href="https://icyphox.github.io/tags/customization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Slice Of Life #2</title>
+      <link>https://icyphox.github.io/blog/sliceoflife2/</link>
+      <pubDate>Sat, 16 Dec 2017 19:13:23 +0400</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/sliceoflife2/</guid>
+      <description>HeyGuys
+Heh, posting frequency&amp;rsquo;s gone to shit, but meh. I write for myself. I mean, I&amp;rsquo;m genuinly surprised when some random Peruvian stumbles upon my blog and looks at it for a minute and thirty. Google Analytics, yeah.
+Anyway, a few new things. If you follow my Github, or happen to glance at it every once in a while, this site&amp;rsquo;s now on Github Pages! \o/
+Not really \o/, since I don&amp;rsquo;t have that server that fs0ciety&amp;rsquo;d given me, but tbf, I wasn&amp;rsquo;t using it for anything else besides this website.</description>
+    </item>
+    
+    <item>
+      <title>All My Rices</title>
+      <link>https://icyphox.github.io/blog/allrices/</link>
+      <pubDate>Mon, 09 Jan 2017 10:28:16 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/allrices/</guid>
+      <description>I thought you guys might be interested to see a few pictures of my actual working desktop. So here they are.
+Industrial Indoors Furniture Monochrome Synthwave I could go on, but I&amp;rsquo;ll save them for later.
+So that&amp;rsquo;s ricing for y&amp;rsquo;all. Stay tooned. (⊙_◎)</description>
+    </item>
+    
+    <item>
+      <title>Ricing Your Linux Box</title>
+      <link>https://icyphox.github.io/blog/ricingyourlinuxbox/</link>
+      <pubDate>Sat, 03 Dec 2016 17:34:22 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/ricingyourlinuxbox/</guid>
+      <description>So this is my first post to do with Linux. And I&amp;rsquo;m going to talk about ricing.
+What&amp;rsquo;s ricing now? Is there a wheating too? I agree, that&amp;rsquo;s a super lame subheading, but whatever. So, ricing.
+It can be defined as the hipster version of customizing. Yeah, we all *nixers got sweg, yo. Doing anything to make your desktop look pretty. You can edit colorschemes in .Xresources, you can use conky and add a fancy looking system status HUD, you can use cava and have a music visualizer, right in your terminal, the possibilities are endless.</description>
+    </item>
+    
+  </channel>
+</rss>

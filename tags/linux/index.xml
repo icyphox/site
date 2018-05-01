@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on icyphox</title>
+    <link>https://icyphox.github.io/tags/linux/</link>
+    <description>Recent content in Linux on icyphox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Jan 2018 20:16:55 +0530</lastBuildDate>
+    
+	<atom:link href="https://icyphox.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Slice Of Life #3</title>
+      <link>https://icyphox.github.io/blog/sliceoflife3/</link>
+      <pubDate>Thu, 25 Jan 2018 20:16:55 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/sliceoflife3/</guid>
+      <description>Topkek, here&amp;rsquo;s another. See the thing is, I do so many things between two consecutive posts, I&amp;rsquo;m forced to end up writing something that encompasses all of that. I should perhaps add a blitz blog section. I&amp;rsquo;ll put stuff up there as and when I do them - a journal of sorts. Anywway, here&amp;rsquo;s my third installment of the Slice Of Life series.
+Ohhh wait, did you see the new domain?</description>
+    </item>
+    
+    <item>
+      <title>A broken Arch system (All credits to OpenSSL)</title>
+      <link>https://icyphox.github.io/blog/brokensystem/</link>
+      <pubDate>Sun, 21 May 2017 10:02:58 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/brokensystem/</guid>
+      <description>Just yesterday, I decided to update OpenSSL because, why not? It was at version 1.0.0, which was quite outdated (2016). Anyway, I ran the update using pacman -S openssl.
+It finished without any issues, but guess what, it broke sudo and pacman. The two things, without which using your box would be&amp;hellip; dumb?
+So sudo threw an error about a missing shared library called libssl.so.1.0.0 and pacman cried about libcrypto.</description>
+    </item>
+    
+    <item>
+      <title>Too Much of L337 Stuff</title>
+      <link>https://icyphox.github.io/blog/l33tstuff/</link>
+      <pubDate>Tue, 17 Jan 2017 21:24:03 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/l33tstuff/</guid>
+      <description>This post took waayy longer than it should&amp;rsquo;ve, but I was stuck up doing quite a bit of l33t and h4xy things (things l33ter and h4xi3r than this blog, yes). This post isn&amp;rsquo;t specific to just one topic, and since I&amp;rsquo;ve got a lot of things to write about. So&amp;hellip;, without further ado, let&amp;rsquo;s get started.
+Sailfish OS About 3 days back, @drakonizer reminded me about Sailfish OS (yeah, I knew it existed, just didn&amp;rsquo;t care), and I decided to give it a whirl on my Nexus 5.</description>
+    </item>
+    
+    <item>
+      <title>All My Rices</title>
+      <link>https://icyphox.github.io/blog/allrices/</link>
+      <pubDate>Mon, 09 Jan 2017 10:28:16 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/allrices/</guid>
+      <description>I thought you guys might be interested to see a few pictures of my actual working desktop. So here they are.
+Industrial Indoors Furniture Monochrome Synthwave I could go on, but I&amp;rsquo;ll save them for later.
+So that&amp;rsquo;s ricing for y&amp;rsquo;all. Stay tooned. (⊙_◎)</description>
+    </item>
+    
+    <item>
+      <title>Bedrock Linux</title>
+      <link>https://icyphox.github.io/blog/bedrocklinux/</link>
+      <pubDate>Thu, 08 Dec 2016 21:10:00 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/bedrocklinux/</guid>
+      <description>Ever wanted the stability of Debian, the ease of application install of Ubuntu, and the bleeding-edge packages of Arch Linux or the automated compilation using portage in Gentoo?, all in one distro? Then Bedrock Linux is for you! (ugh, that sounded like a commercial).
+But yes! Bedrock Linux is really really cool. It&amp;rsquo;s all the good stuff from the major distros, all in one.
+What does Bedrock Linux do for this to be possible?</description>
+    </item>
+    
+    <item>
+      <title>Ricing Your Linux Box</title>
+      <link>https://icyphox.github.io/blog/ricingyourlinuxbox/</link>
+      <pubDate>Sat, 03 Dec 2016 17:34:22 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/ricingyourlinuxbox/</guid>
+      <description>So this is my first post to do with Linux. And I&amp;rsquo;m going to talk about ricing.
+What&amp;rsquo;s ricing now? Is there a wheating too? I agree, that&amp;rsquo;s a super lame subheading, but whatever. So, ricing.
+It can be defined as the hipster version of customizing. Yeah, we all *nixers got sweg, yo. Doing anything to make your desktop look pretty. You can edit colorschemes in .Xresources, you can use conky and add a fancy looking system status HUD, you can use cava and have a music visualizer, right in your terminal, the possibilities are endless.</description>
+    </item>
+    
+  </channel>
+</rss>

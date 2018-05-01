@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on icyphox</title>
+    <link>https://icyphox.github.io/tags/software/</link>
+    <description>Recent content in Software on icyphox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Dec 2016 22:22:13 +0530</lastBuildDate>
+    
+	<atom:link href="https://icyphox.github.io/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Choosing A Text Editor</title>
+      <link>https://icyphox.github.io/blog/texteditors/</link>
+      <pubDate>Tue, 06 Dec 2016 22:22:13 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/texteditors/</guid>
+      <description>On Github, doing a simple search for the keyphrase text editor, you see nearly 7000 repositories alone, with that keyphrase. And then there are 41.5 million results under the Code section. What does this search tell us? Text editors are batsh*t crazy all over the Internet. People basically write text editors as their first coding program.
+So I&amp;rsquo;ve come up with a pretty straightforward comparison of text editors for various kinds of users, be it a 1337 h4x0r or a Bio student, there&amp;rsquo;s one for you.</description>
+    </item>
+    
+  </channel>
+</rss>

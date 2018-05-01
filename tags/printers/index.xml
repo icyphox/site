@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Printers on icyphox</title>
+    <link>https://icyphox.github.io/tags/printers/</link>
+    <description>Recent content in Printers on icyphox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Mar 2017 21:39:54 +0530</lastBuildDate>
+    
+	<atom:link href="https://icyphox.github.io/tags/printers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hacking printers for fun and profit</title>
+      <link>https://icyphox.github.io/blog/pret/</link>
+      <pubDate>Thu, 30 Mar 2017 21:39:54 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/pret/</guid>
+      <description>I usually frequent this website/blog called n0where.net. They&amp;rsquo;ve got some really unique tools and utilities that pertain to pentesting or forensics. So that&amp;rsquo;s where I found PRET.
+The PRinter Exploitation Toolkit This tool was developed mainly to ease the whole process of attacking a printer. Seriously, who woulda thunk you could even hack a printer?
+Anyway, before we delve in, here&amp;rsquo;s a bit of background on the whole subject. Essentially, prnters are configured and interacted with, by using a printer language.</description>
+    </item>
+    
+  </channel>
+</rss>

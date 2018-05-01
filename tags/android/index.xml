@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on icyphox</title>
+    <link>https://icyphox.github.io/tags/android/</link>
+    <description>Recent content in Android on icyphox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Jan 2017 21:24:03 +0530</lastBuildDate>
+    
+	<atom:link href="https://icyphox.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Too Much of L337 Stuff</title>
+      <link>https://icyphox.github.io/blog/l33tstuff/</link>
+      <pubDate>Tue, 17 Jan 2017 21:24:03 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/l33tstuff/</guid>
+      <description>This post took waayy longer than it should&amp;rsquo;ve, but I was stuck up doing quite a bit of l33t and h4xy things (things l33ter and h4xi3r than this blog, yes). This post isn&amp;rsquo;t specific to just one topic, and since I&amp;rsquo;ve got a lot of things to write about. So&amp;hellip;, without further ado, let&amp;rsquo;s get started.
+Sailfish OS About 3 days back, @drakonizer reminded me about Sailfish OS (yeah, I knew it existed, just didn&amp;rsquo;t care), and I decided to give it a whirl on my Nexus 5.</description>
+    </item>
+    
+  </channel>
+</rss>

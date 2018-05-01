@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on icyphox</title>
+    <link>https://icyphox.github.io/tags/markdown/</link>
+    <description>Recent content in Markdown on icyphox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Mar 2018 18:08:13 +0530</lastBuildDate>
+    
+	<atom:link href="https://icyphox.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Markdown Shill</title>
+      <link>https://icyphox.github.io/blog/markdownshill/</link>
+      <pubDate>Fri, 30 Mar 2018 18:08:13 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/markdownshill/</guid>
+      <description>Henlo.
+It&amp;rsquo;s actually been super long since I&amp;rsquo;ve written. Had a lot of IRL stuff going on. And I&amp;rsquo;ve been working on some projects of my own too, like Vite. It&amp;rsquo;s a super comfy static site generator written in Python. Write your posts in Markdown, make a simple template of sorts, and render it.
+Also, if you&amp;rsquo;ve hung around here before, you should probably know that I use (neo)Vim for all my text editing (apart from the occasional VSCode for Angular).</description>
+    </item>
+    
+  </channel>
+</rss>

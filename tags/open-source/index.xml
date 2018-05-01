@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Source on icyphox</title>
+    <link>https://icyphox.github.io/tags/open-source/</link>
+    <description>Recent content in Open Source on icyphox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Dec 2016 21:10:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://icyphox.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bedrock Linux</title>
+      <link>https://icyphox.github.io/blog/bedrocklinux/</link>
+      <pubDate>Thu, 08 Dec 2016 21:10:00 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/bedrocklinux/</guid>
+      <description>Ever wanted the stability of Debian, the ease of application install of Ubuntu, and the bleeding-edge packages of Arch Linux or the automated compilation using portage in Gentoo?, all in one distro? Then Bedrock Linux is for you! (ugh, that sounded like a commercial).
+But yes! Bedrock Linux is really really cool. It&amp;rsquo;s all the good stuff from the major distros, all in one.
+What does Bedrock Linux do for this to be possible?</description>
+    </item>
+    
+    <item>
+      <title>Choosing A Text Editor</title>
+      <link>https://icyphox.github.io/blog/texteditors/</link>
+      <pubDate>Tue, 06 Dec 2016 22:22:13 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/texteditors/</guid>
+      <description>On Github, doing a simple search for the keyphrase text editor, you see nearly 7000 repositories alone, with that keyphrase. And then there are 41.5 million results under the Code section. What does this search tell us? Text editors are batsh*t crazy all over the Internet. People basically write text editors as their first coding program.
+So I&amp;rsquo;ve come up with a pretty straightforward comparison of text editors for various kinds of users, be it a 1337 h4x0r or a Bio student, there&amp;rsquo;s one for you.</description>
+    </item>
+    
+    <item>
+      <title>Open Source Licenses Explained</title>
+      <link>https://icyphox.github.io/blog/oslicenses/</link>
+      <pubDate>Mon, 05 Dec 2016 14:52:19 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/oslicenses/</guid>
+      <description>What is licensing anyway? There is a lot a confusion with regard to what licensing means. In essence, when you license your work, you don&amp;rsquo;t lose or give away any of your rights to that software.
+You still hold the original copyright on that work. What a license does is grants certain permissions for others to contribute/use that work.
+It&amp;rsquo;s much better than just releasing your work into the public domain (like this), or giving permissions on a case-by-case basis.</description>
+    </item>
+    
+  </channel>
+</rss>

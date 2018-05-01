@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>home on icyphox</title>
+    <link>https://icyphox.github.io/</link>
+    <description>Recent content in home on icyphox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Dec 2017 16:01:51 +0400</lastBuildDate>
+    
+	<atom:link href="https://icyphox.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Markdown Shill</title>
+      <link>https://icyphox.github.io/blog/markdownshill/</link>
+      <pubDate>Fri, 30 Mar 2018 18:08:13 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/markdownshill/</guid>
+      <description>Henlo.
+It&amp;rsquo;s actually been super long since I&amp;rsquo;ve written. Had a lot of IRL stuff going on. And I&amp;rsquo;ve been working on some projects of my own too, like Vite. It&amp;rsquo;s a super comfy static site generator written in Python. Write your posts in Markdown, make a simple template of sorts, and render it.
+Also, if you&amp;rsquo;ve hung around here before, you should probably know that I use (neo)Vim for all my text editing (apart from the occasional VSCode for Angular).</description>
+    </item>
+    
+    <item>
+      <title>Slice Of Life #3</title>
+      <link>https://icyphox.github.io/blog/sliceoflife3/</link>
+      <pubDate>Thu, 25 Jan 2018 20:16:55 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/sliceoflife3/</guid>
+      <description>Topkek, here&amp;rsquo;s another. See the thing is, I do so many things between two consecutive posts, I&amp;rsquo;m forced to end up writing something that encompasses all of that. I should perhaps add a blitz blog section. I&amp;rsquo;ll put stuff up there as and when I do them - a journal of sorts. Anywway, here&amp;rsquo;s my third installment of the Slice Of Life series.
+Ohhh wait, did you see the new domain?</description>
+    </item>
+    
+    <item>
+      <title>Slice Of Life #2</title>
+      <link>https://icyphox.github.io/blog/sliceoflife2/</link>
+      <pubDate>Sat, 16 Dec 2017 19:13:23 +0400</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/sliceoflife2/</guid>
+      <description>HeyGuys
+Heh, posting frequency&amp;rsquo;s gone to shit, but meh. I write for myself. I mean, I&amp;rsquo;m genuinly surprised when some random Peruvian stumbles upon my blog and looks at it for a minute and thirty. Google Analytics, yeah.
+Anyway, a few new things. If you follow my Github, or happen to glance at it every once in a while, this site&amp;rsquo;s now on Github Pages! \o/
+Not really \o/, since I don&amp;rsquo;t have that server that fs0ciety&amp;rsquo;d given me, but tbf, I wasn&amp;rsquo;t using it for anything else besides this website.</description>
+    </item>
+    
+    <item>
+      <title>whois</title>
+      <link>https://icyphox.github.io/whois/</link>
+      <pubDate>Fri, 15 Dec 2017 12:49:31 +0400</pubDate>
+      
+      <guid>https://icyphox.github.io/whois/</guid>
+      <description>Heyo,
+I&amp;rsquo;m icyphox, an independent security researcher and open source enthusiast.
+I love Linux, free software and desktop customization.
+Links:
+ Résumé GitHub Keybase LinkedIn Twitter  View my professional site at pro.ph0x.me.
+Feel free to contact me at icyph0x@pm.me or at #rice at rizon.
+This site is built using the Hugo static site generator, and deployed by Netlify.
+The theme used is my modified version of the After-Dark theme.</description>
+    </item>
+    
+    <item>
+      <title>Slice Of Life #1</title>
+      <link>https://icyphox.github.io/blog/sliceoflife1/</link>
+      <pubDate>Tue, 26 Sep 2017 21:12:59 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/sliceoflife1/</guid>
+      <description>It has been reaaallyy long since I&amp;rsquo;ve written, gosh, what was it? 3 months? w e w l a d. Most&amp;rsquo;ve my time is taken up by University coursework. Yes, I am no more a school (pfft) student.
+Unfortunately though, I have hardly been upto anything &amp;lsquo;technical&amp;rsquo;, which explains why I&amp;rsquo;m resorting to writing lame posts about, well, life. This can mostly be blamed on my crappy campus WiFi which has a ruddy port whitelist allowing traffic only through 80 and 443, monitored by a HTTP/HTTPS proxy.</description>
+    </item>
+    
+    <item>
+      <title>Getting into the core: Atmospheric metalcore</title>
+      <link>https://icyphox.github.io/blog/atmosphericore/</link>
+      <pubDate>Tue, 20 Jun 2017 21:15:36 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/atmosphericore/</guid>
+      <description>I haven&amp;rsquo;t touched the metalcore topic in quite a while, so I decided I&amp;rsquo;d write about one of my most faviourite sub-subgenres &amp;ndash; atmospheric metalcore.
+What makes an atmospheric metalcore band? Considering that metalcore is a pretty niche subgenre of metal, atmospheric metalcore is the nichest of the niche. So there isn&amp;rsquo;t any specifics as to what defines atmospheric metalcore. But most atmospheric metalcore bands share a few common features.</description>
+    </item>
+    
+    <item>
+      <title>A broken Arch system (All credits to OpenSSL)</title>
+      <link>https://icyphox.github.io/blog/brokensystem/</link>
+      <pubDate>Sun, 21 May 2017 10:02:58 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/brokensystem/</guid>
+      <description>Just yesterday, I decided to update OpenSSL because, why not? It was at version 1.0.0, which was quite outdated (2016). Anyway, I ran the update using pacman -S openssl.
+It finished without any issues, but guess what, it broke sudo and pacman. The two things, without which using your box would be&amp;hellip; dumb?
+So sudo threw an error about a missing shared library called libssl.so.1.0.0 and pacman cried about libcrypto.</description>
+    </item>
+    
+    <item>
+      <title>Recent events</title>
+      <link>https://icyphox.github.io/blog/recentevents/</link>
+      <pubDate>Mon, 24 Apr 2017 18:09:09 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/recentevents/</guid>
+      <description>I normally make it a point to post within about a week of my previous post, but this time, a lot of stuff happened, and that kept me busy.
+Of my VPS If you recall, either on Twitter or Facebook, I&amp;rsquo;d posted about having moved to a VPS of my own, which I got for free from FuslVZ. Well, that got taken down, due to a few ahem problems with the people who run the service.</description>
+    </item>
+    
+    <item>
+      <title>Hacking printers for fun and profit</title>
+      <link>https://icyphox.github.io/blog/pret/</link>
+      <pubDate>Thu, 30 Mar 2017 21:39:54 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/pret/</guid>
+      <description>I usually frequent this website/blog called n0where.net. They&amp;rsquo;ve got some really unique tools and utilities that pertain to pentesting or forensics. So that&amp;rsquo;s where I found PRET.
+The PRinter Exploitation Toolkit This tool was developed mainly to ease the whole process of attacking a printer. Seriously, who woulda thunk you could even hack a printer?
+Anyway, before we delve in, here&amp;rsquo;s a bit of background on the whole subject. Essentially, prnters are configured and interacted with, by using a printer language.</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m back with a hecka lotta stuff</title>
+      <link>https://icyphox.github.io/blog/imback/</link>
+      <pubDate>Tue, 28 Mar 2017 09:19:42 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/imback/</guid>
+      <description>So my exams just ended, and I&amp;rsquo;m free for a really long time. There&amp;rsquo;s so much that I did during those holidays in-between tests (ssshh, don&amp;rsquo;t tell anyone), but I just couldn&amp;rsquo;t write about it. So here it is, all in one post.
+My VPS If you remember, I&amp;rsquo;d written something about fs0ciety letting me use his VPS, or at least offering it. Anyway, he didn&amp;rsquo;t have to, because just about a week ago, I managed to procure my own from FuslVZ.</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s gg For Now</title>
+      <link>https://icyphox.github.io/blog/goingafk/</link>
+      <pubDate>Thu, 02 Feb 2017 11:03:22 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/goingafk/</guid>
+      <description>Going AFK So with the Grade 12 final exams coming up, I&amp;rsquo;m going AFK. Not my decision, but my Mom&amp;rsquo;s. She&amp;rsquo;s doing all kinds of stuff to get me off my PC, she even went to the extent of locking up my keyboard :D (Of course, I had a backup keyboard kept hidden in case of such a situation, but she doesn&amp;rsquo;t have to know that :P).
+She even made me kill my SSH server because I was SSHing into my desky from my phone.</description>
+    </item>
+    
+    <item>
+      <title>Firesale: Is it really possible?</title>
+      <link>https://icyphox.github.io/blog/firesale/</link>
+      <pubDate>Sun, 22 Jan 2017 21:36:45 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/firesale/</guid>
+      <description>What is a Firesale? A Firesale is a theoretical cyber attack where all the vital networks like gas, water, transportation, finance, etc. are taken down, thus crippling the nation under the attack.
+The word itself loosely means &amp;quot;everything must go&amp;quot;. In the word Firesale, F stands for financial, I for infrastructure, R for Resources and E for Environment.
+In reality, the word Firesale isn&amp;rsquo;t a cyber-security term at all. It was invented in the movie Die Hard 4.</description>
+    </item>
+    
+    <item>
+      <title>Too Much of L337 Stuff</title>
+      <link>https://icyphox.github.io/blog/l33tstuff/</link>
+      <pubDate>Tue, 17 Jan 2017 21:24:03 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/l33tstuff/</guid>
+      <description>This post took waayy longer than it should&amp;rsquo;ve, but I was stuck up doing quite a bit of l33t and h4xy things (things l33ter and h4xi3r than this blog, yes). This post isn&amp;rsquo;t specific to just one topic, and since I&amp;rsquo;ve got a lot of things to write about. So&amp;hellip;, without further ado, let&amp;rsquo;s get started.
+Sailfish OS About 3 days back, @drakonizer reminded me about Sailfish OS (yeah, I knew it existed, just didn&amp;rsquo;t care), and I decided to give it a whirl on my Nexus 5.</description>
+    </item>
+    
+    <item>
+      <title>All My Rices</title>
+      <link>https://icyphox.github.io/blog/allrices/</link>
+      <pubDate>Mon, 09 Jan 2017 10:28:16 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/allrices/</guid>
+      <description>I thought you guys might be interested to see a few pictures of my actual working desktop. So here they are.
+Industrial Indoors Furniture Monochrome Synthwave I could go on, but I&amp;rsquo;ll save them for later.
+So that&amp;rsquo;s ricing for y&amp;rsquo;all. Stay tooned. (⊙_◎)</description>
+    </item>
+    
+    <item>
+      <title>IRC Etiquette </title>
+      <link>https://icyphox.github.io/blog/ircpractices/</link>
+      <pubDate>Mon, 09 Jan 2017 10:00:39 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/ircpractices/</guid>
+      <description>It took a good week and a little bit more for this post. I was busy ricing my box again (here), and preparing for my switch to 2bwm. You see, I realized that I&amp;rsquo;ve been floating my windows an unhealthy amount, in a tiling window manager - i3.
+Anyway, IRC (Internet Relay Chat). It&amp;rsquo;s been around for years, and you can chat in real-time with people from all around the world, in channels.</description>
+    </item>
+    
+    <item>
+      <title>Theory of Bluetooth Hacking</title>
+      <link>https://icyphox.github.io/blog/bthacking/</link>
+      <pubDate>Sat, 31 Dec 2016 22:13:32 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/bthacking/</guid>
+      <description>I recently got myself a pair of these sweg Bose Bluetooth headsets, and an idea occured to me. If you could hijack someone&amp;rsquo;s bluetooth speaker/headset, and play your own music, wouldn&amp;rsquo;t that be sweet? So I did some research on BT&amp;rsquo;s protocols, possible exploits, etc., and came up with this theory (and it turns out that it is quite possible).
+Bluetooth is a pretty basic stack, in communication protocols. But it is quite secure.</description>
+    </item>
+    
+    <item>
+      <title>Man In Ze Middle Attacks (MIZM)</title>
+      <link>https://icyphox.github.io/blog/mitm/</link>
+      <pubDate>Fri, 23 Dec 2016 22:12:10 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/mitm/</guid>
+      <description>First off, it&amp;rsquo;s MITM. I wrote the Ze because I&amp;rsquo;m pretentious. An MITM attack is fairly straightforward, it&amp;rsquo;s what the name says. There&amp;rsquo;s a transaction happening between two computers, and it gets intercepted by a 3rd party - the man in the middle.
+So this attack has various applications, in cryptography and in computer security.
+In cryptography So there&amp;rsquo;s this very common example given using the characters Alice, Bob, and Mallory.</description>
+    </item>
+    
+    <item>
+      <title>Synthwave</title>
+      <link>https://icyphox.github.io/blog/synthwave/</link>
+      <pubDate>Sat, 17 Dec 2016 22:00:31 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/synthwave/</guid>
+      <description>Synthwave, also called New Retro Wave or just Retrowave, is an epic genre I just got into. It mainly appeals to me because of it&amp;rsquo;s cyberpunk-ish feel. The whole theme of this genre is that retro futuristic feel, y&amp;rsquo;know, that whole idea of a very dark city, with huge tall towers, with flying-cars&amp;hellip; Essentially a Tron-like thing.
+There are 2 primary styles in synthwave, one&amp;rsquo;s a very dark perspective, kinda like Terminator, and one&amp;rsquo;s a very positive/relaxing style.</description>
+    </item>
+    
+    <item>
+      <title>Creating a persistent Windows backdoor using Python (and netcat)</title>
+      <link>https://icyphox.github.io/blog/winbackdoor/</link>
+      <pubDate>Tue, 13 Dec 2016 19:59:33 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/winbackdoor/</guid>
+      <description>This is going to be a very hands on post, so get to your PC, if you&amp;rsquo;re reading this on your phone.
+In this post, I&amp;rsquo;m going to be walking you through the process of creating a Python backdoor (for Windows), but it doesn&amp;rsquo;t really use Python itself. How? Well of course, we shall be using the Windows port of the pretty (in)famous netcat.
+A little introduction on netcat or nc So ncis actually a GNU/Linux utility, that was created primarily to connect to and write/read using TCP or UDP.</description>
+    </item>
+    
+    <item>
+      <title>Why People Hate Metalcore</title>
+      <link>https://icyphox.github.io/blog/hatemetalcore/</link>
+      <pubDate>Sat, 10 Dec 2016 19:18:36 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/hatemetalcore/</guid>
+      <description>This is going to be an interesting topic to talk about. Why did I pick this? Primarily because I love this genre of music, and it doesn&amp;rsquo;t deserve the hate it gets, even from some of the so called elitist metalhead communities. So how did this all start? It all began in the early 2000s, with the scene kids.
+Scene Kids In the early 2000s there existed a special kind of rebellious teenagers, termed as &amp;ldquo;scene kids&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Bedrock Linux</title>
+      <link>https://icyphox.github.io/blog/bedrocklinux/</link>
+      <pubDate>Thu, 08 Dec 2016 21:10:00 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/bedrocklinux/</guid>
+      <description>Ever wanted the stability of Debian, the ease of application install of Ubuntu, and the bleeding-edge packages of Arch Linux or the automated compilation using portage in Gentoo?, all in one distro? Then Bedrock Linux is for you! (ugh, that sounded like a commercial).
+But yes! Bedrock Linux is really really cool. It&amp;rsquo;s all the good stuff from the major distros, all in one.
+What does Bedrock Linux do for this to be possible?</description>
+    </item>
+    
+    <item>
+      <title>The Definitive Guide To Social Engineering</title>
+      <link>https://icyphox.github.io/blog/socialengg/</link>
+      <pubDate>Wed, 07 Dec 2016 22:07:27 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/socialengg/</guid>
+      <description>Humans have a natural inclination to trust, and exploiting this human tendency is easier than having to hack into their software. This is the essence of social engineering. When you can just trick someone into divulging their password, why bother discovering ways to hack them?
+The types of information that a social engineer seeks may vary, it could be to get you to give them a password, allow them to access your workstation remotely (sometimes create an account forfor them on your PC!</description>
+    </item>
+    
+    <item>
+      <title>Choosing A Text Editor</title>
+      <link>https://icyphox.github.io/blog/texteditors/</link>
+      <pubDate>Tue, 06 Dec 2016 22:22:13 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/texteditors/</guid>
+      <description>On Github, doing a simple search for the keyphrase text editor, you see nearly 7000 repositories alone, with that keyphrase. And then there are 41.5 million results under the Code section. What does this search tell us? Text editors are batsh*t crazy all over the Internet. People basically write text editors as their first coding program.
+So I&amp;rsquo;ve come up with a pretty straightforward comparison of text editors for various kinds of users, be it a 1337 h4x0r or a Bio student, there&amp;rsquo;s one for you.</description>
+    </item>
+    
+    <item>
+      <title>Open Source Licenses Explained</title>
+      <link>https://icyphox.github.io/blog/oslicenses/</link>
+      <pubDate>Mon, 05 Dec 2016 14:52:19 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/oslicenses/</guid>
+      <description>What is licensing anyway? There is a lot a confusion with regard to what licensing means. In essence, when you license your work, you don&amp;rsquo;t lose or give away any of your rights to that software.
+You still hold the original copyright on that work. What a license does is grants certain permissions for others to contribute/use that work.
+It&amp;rsquo;s much better than just releasing your work into the public domain (like this), or giving permissions on a case-by-case basis.</description>
+    </item>
+    
+    <item>
+      <title>Ricing Your Linux Box</title>
+      <link>https://icyphox.github.io/blog/ricingyourlinuxbox/</link>
+      <pubDate>Sat, 03 Dec 2016 17:34:22 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/ricingyourlinuxbox/</guid>
+      <description>So this is my first post to do with Linux. And I&amp;rsquo;m going to talk about ricing.
+What&amp;rsquo;s ricing now? Is there a wheating too? I agree, that&amp;rsquo;s a super lame subheading, but whatever. So, ricing.
+It can be defined as the hipster version of customizing. Yeah, we all *nixers got sweg, yo. Doing anything to make your desktop look pretty. You can edit colorschemes in .Xresources, you can use conky and add a fancy looking system status HUD, you can use cava and have a music visualizer, right in your terminal, the possibilities are endless.</description>
+    </item>
+    
+    <item>
+      <title>Getting Into Metalcore</title>
+      <link>https://icyphox.github.io/blog/gettingintometalcore/</link>
+      <pubDate>Fri, 02 Dec 2016 17:05:25 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/gettingintometalcore/</guid>
+      <description>You&amp;rsquo;ve mentioned metalcore a couple of times, what is it? Metalcore is a genre of extreme music, which blends hardcore punk and metal. This turns to sound much heavier than normal metal. Metalcore has a few interesting characteristics that sets it apart from mainstream metal.
+First off, breakdowns. This is a huge difference between the two, mainly because it adds a bit more heaviness to the music. Breakdowns can, in some ways be compared to bass drops.</description>
+    </item>
+    
+    <item>
+      <title>I begin blogging</title>
+      <link>https://icyphox.github.io/blog/ibegin/</link>
+      <pubDate>Thu, 01 Dec 2016 21:36:13 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/ibegin/</guid>
+      <description>o/ Heya peeps. I&amp;rsquo;m Icyphox and I created this blog for the sole reason of the challenge. You&amp;rsquo;re probably wondering what kind of challenge I&amp;rsquo;d have gone through in making this blog. Well, believe it or not, this entire blog, including this post, was created in just one terminal instance.
+If you&amp;rsquo;re one of the people who knows what a terminal is (believe me, I know people who don&amp;rsquo;t), then you&amp;rsquo;d be sceptical.</description>
+    </item>
+    
+    <item>
+      <title>GPG</title>
+      <link>https://icyphox.github.io/gpg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://icyphox.github.io/gpg/</guid>
+      <description>&amp;mdash;&amp;ndash;BEGIN PGP PUBLIC KEY BLOCK&amp;mdash;&amp;ndash;
+mQENBFn8YdABCACtulcVqYEXUtib53uw1pBowkdWqxmMpKsh+CG+816xW/Sh6gCP eotqFgBMkvQ83/9fvJ2HAkaelyVmT1g20WNprqVU61u0Ctw6FtNPu0Y+cBikEbYJ GFcqXeMgUjQNqVyutTfbv5rfGz0/xzFB9P6edTC400Z3x7PfET8zOWYXxTcWMjfi swv+psPX7MteYI/1gvgdGB3VN6efdCAe1GQNmE8KUBPt4exlHiH1kkCIAD/p33tk MfWXL0etYweM7WHbwcAGMDYwtGSo+V+btshE081PsbGQj2C82BuQMZGaFk2JmzlK udwqL0p6Y6VjbW0RQR7i2h1O0vAAmRHHFTYPABEBAAG0LEFuaXJ1ZGggT3BwaWxp YXBwYW4gPGljeXBoMHhAcHJvdG9ubWFpbC5jb20+iQFUBBMBCAA+FiEE/huPz+bB YiLxVxyOipP5b3jF1MQFAln8YdACGwMFCQPCZwAFCwkIBwIGFQgJCgsCBBYCAwEC HgECF4AACgkQipP5b3jF1MQNigf+LWBALgyeGAKWMBhqXtLcxE1/EA6jXO0ntEjb WMCkd8fUmOqbJm5Asoiq5fK/g5mqt27pNSV98dT/evpFNLhSLPvAc1lgkyZM3dzM 5jK1l1QhfEkJj/mJxaPmGO1UUk6qEcs9s/SD47qfE+wxbpIA6QSo0ZyQ83PAb6kD tQjhibF9x9kWp2xEm2OaBAdGOAHWLA/dRrYWCIQUn2X4ITs3pEQuKPwfH6LEOHlh IV27CgSpGLzB2WUl0cRDjlgNSmQaM2YOpT7dqBxqHCAdr5jjR0Gqoi7ltP0W/V1P znA/VSbwyzu8s9B9xMNEuXZoskxCV5F0l/XNDDC6cqtXS/Y6CLkBDQRZ/GHQAQgA vZ423gfhwidyiQ+ybDfjjGfGPHcEkboPnn/tMvlWPTBPwHvxl5RkN0UIUw56Vx3e vUGJS+u/iuop78BwntGlsu2IrPVwKmT0WJhSwFF6n2ygdAm/bL11M0VZRotoI8ID xrmnJmeGc7AwV43HD6Nk7VQO8rL6wnmYLZ5ylMKYf82L/J8p01V2i1XyGU39CJDw TAcAU6ravA5pIiSH/Bsvi4Xoj2k6fj8V9P6njsEn0FgnL2HHEWgWJXU5MvLK9ylf qphY06MftmEVZWinrblB5AU1ogX/G5+yjbTR0oqYdsKetHAW4e0kUUhWWMHuRfBA I3IQObMKxsuSIC9KrQ9QQwARAQABiQE8BBgBCAAmFiEE/huPz+bBYiLxVxyOipP5 b3jF1MQFAln8YdACGwwFCQPCZwAACgkQipP5b3jF1MRvOwf/eU9jMKtvpfqHY473 05YLccpY6WElPk49La9CJAbLIZETcfOm32V3C7XiMa/o5v/FP5YfkooaUI80gNLm 1UKwjclSfbwOg2cESCl18+LDLvwZq2vTfIgq1yZkps3ccKfYMRVa2exG1clOhkVS uHSb1G2oi1rcWFz2XcXfduK4MGKf6Vz5+zMx73lWkwdKeOXtxrmB68isbyGzg2DZ rj74ULW6+0neyf3eH2xMLQYkvTw39IySG2BpsCo5fDgwuRzsLAppvp73Ajn3lgHk DwdlN2dsUo+DccxSZFh7AxGdTNiijcePfmb+U4QMC8CNvQ+DWiEkw3amRii5S1EV fd/YcA== =zHye
+&amp;mdash;&amp;ndash;END PGP PUBLIC KEY BLOCK&amp;mdash;&amp;ndash;</description>
+    </item>
+    
+  </channel>
+</rss>

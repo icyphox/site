@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/icyphox
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://icy.ph0x.me
+  * I am icyphox (https://keybase.io/icyphox) on keybase.
+  * I have a public key ASDwe3EU_2Zqm7Wjstoachs5PFWRMMKfsdDTGEgcAebMgAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010180319d65befacaf4c0fb75dae5fa128efd992d93b0e9f89a3b83d795f59a28850a",
+      "host": "keybase.io",
+      "kid": "0120f07b7114ff666a9bb5a3b2da1a721b393c559130c29fb1d0d318481c01e6cc800a",
+      "uid": "f7be14ab4cc8533a0a43dff5d3e51319",
+      "username": "icyphox"
+    },
+    "merkle_root": {
+      "ctime": 1516889630,
+      "hash": "9788b8137f3798f55cd1f213fce8cb1ea02c159bd1c6024cab08f907e6b2cde96f7287c3eaefe4a9130ab2369bb004395f2fa7fa7a28512ac5b8f72b9e66cc28",
+      "hash_meta": "dff7539057ea4a550e5bbbeb30ed7102d9a5bd77d4e62a21c56e69063b4f042f",
+      "seqno": 1979869
+    },
+    "service": {
+      "hostname": "icy.ph0x.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.37"
+  },
+  "ctime": 1516889652,
+  "expire_in": 504576000,
+  "prev": "63406fe740bbd5ef260b0d1d0869d387a105b3332a9409ba3c73da1b3f750999",
+  "seqno": 52,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg8HtxFP9mapu1o7LaGnIbOTxVkTDCn7HQ0xhIHAHmzIAKp3BheWxvYWTFA0N7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxODAzMTlkNjViZWZhY2FmNGMwZmI3NWRhZTVmYTEyOGVmZDk5MmQ5M2IwZTlmODlhM2I4M2Q3OTVmNTlhMjg4NTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZjA3YjcxMTRmZjY2NmE5YmI1YTNiMmRhMWE3MjFiMzkzYzU1OTEzMGMyOWZiMWQwZDMxODQ4MWMwMWU2Y2M4MDBhIiwidWlkIjoiZjdiZTE0YWI0Y2M4NTMzYTBhNDNkZmY1ZDNlNTEzMTkiLCJ1c2VybmFtZSI6ImljeXBob3gifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTY4ODk2MzAsImhhc2giOiI5Nzg4YjgxMzdmMzc5OGY1NWNkMWYyMTNmY2U4Y2IxZWEwMmMxNTliZDFjNjAyNGNhYjA4ZjkwN2U2YjJjZGU5NmY3Mjg3YzNlYWVmZTRhOTEzMGFiMjM2OWJiMDA0Mzk1ZjJmYTdmYTdhMjg1MTJhYzViOGY3MmI5ZTY2Y2MyOCIsImhhc2hfbWV0YSI6ImRmZjc1MzkwNTdlYTRhNTUwZTViYmJlYjMwZWQ3MTAyZDlhNWJkNzdkNGU2MmEyMWM1NmU2OTA2M2I0ZjA0MmYiLCJzZXFubyI6MTk3OTg2OX0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJpY3kucGgweC5tZSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM3In0sImN0aW1lIjoxNTE2ODg5NjUyLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjYzNDA2ZmU3NDBiYmQ1ZWYyNjBiMGQxZDA4NjlkMzg3YTEwNWIzMzMyYTk0MDliYTNjNzNkYTFiM2Y3NTA5OTkiLCJzZXFubyI6NTIsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RADqCTlt9es2x0FU6uK/YyO6c+kaDU6MRg+qaZKX4puN7wD9h9mRQpZfpWxcA96BfppB3uIPL556Gb2p13eGkAC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDBRQXu/3aZH8AiXjJ7SWX0ZbSKrvpUL3ya1j5C0PfhJo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/icyphox
+
+==================================================================

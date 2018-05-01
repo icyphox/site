@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life on icyphox</title>
+    <link>https://icyphox.github.io/tags/life/</link>
+    <description>Recent content in Life on icyphox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Jan 2018 20:16:55 +0530</lastBuildDate>
+    
+	<atom:link href="https://icyphox.github.io/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Slice Of Life #3</title>
+      <link>https://icyphox.github.io/blog/sliceoflife3/</link>
+      <pubDate>Thu, 25 Jan 2018 20:16:55 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/sliceoflife3/</guid>
+      <description>Topkek, here&amp;rsquo;s another. See the thing is, I do so many things between two consecutive posts, I&amp;rsquo;m forced to end up writing something that encompasses all of that. I should perhaps add a blitz blog section. I&amp;rsquo;ll put stuff up there as and when I do them - a journal of sorts. Anywway, here&amp;rsquo;s my third installment of the Slice Of Life series.
+Ohhh wait, did you see the new domain?</description>
+    </item>
+    
+    <item>
+      <title>Slice Of Life #2</title>
+      <link>https://icyphox.github.io/blog/sliceoflife2/</link>
+      <pubDate>Sat, 16 Dec 2017 19:13:23 +0400</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/sliceoflife2/</guid>
+      <description>HeyGuys
+Heh, posting frequency&amp;rsquo;s gone to shit, but meh. I write for myself. I mean, I&amp;rsquo;m genuinly surprised when some random Peruvian stumbles upon my blog and looks at it for a minute and thirty. Google Analytics, yeah.
+Anyway, a few new things. If you follow my Github, or happen to glance at it every once in a while, this site&amp;rsquo;s now on Github Pages! \o/
+Not really \o/, since I don&amp;rsquo;t have that server that fs0ciety&amp;rsquo;d given me, but tbf, I wasn&amp;rsquo;t using it for anything else besides this website.</description>
+    </item>
+    
+    <item>
+      <title>Slice Of Life #1</title>
+      <link>https://icyphox.github.io/blog/sliceoflife1/</link>
+      <pubDate>Tue, 26 Sep 2017 21:12:59 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/sliceoflife1/</guid>
+      <description>It has been reaaallyy long since I&amp;rsquo;ve written, gosh, what was it? 3 months? w e w l a d. Most&amp;rsquo;ve my time is taken up by University coursework. Yes, I am no more a school (pfft) student.
+Unfortunately though, I have hardly been upto anything &amp;lsquo;technical&amp;rsquo;, which explains why I&amp;rsquo;m resorting to writing lame posts about, well, life. This can mostly be blamed on my crappy campus WiFi which has a ruddy port whitelist allowing traffic only through 80 and 443, monitored by a HTTP/HTTPS proxy.</description>
+    </item>
+    
+  </channel>
+</rss>

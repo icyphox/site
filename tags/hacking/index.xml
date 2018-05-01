@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hacking on icyphox</title>
+    <link>https://icyphox.github.io/tags/hacking/</link>
+    <description>Recent content in Hacking on icyphox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Mar 2017 21:39:54 +0530</lastBuildDate>
+    
+	<atom:link href="https://icyphox.github.io/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hacking printers for fun and profit</title>
+      <link>https://icyphox.github.io/blog/pret/</link>
+      <pubDate>Thu, 30 Mar 2017 21:39:54 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/pret/</guid>
+      <description>I usually frequent this website/blog called n0where.net. They&amp;rsquo;ve got some really unique tools and utilities that pertain to pentesting or forensics. So that&amp;rsquo;s where I found PRET.
+The PRinter Exploitation Toolkit This tool was developed mainly to ease the whole process of attacking a printer. Seriously, who woulda thunk you could even hack a printer?
+Anyway, before we delve in, here&amp;rsquo;s a bit of background on the whole subject. Essentially, prnters are configured and interacted with, by using a printer language.</description>
+    </item>
+    
+    <item>
+      <title>Firesale: Is it really possible?</title>
+      <link>https://icyphox.github.io/blog/firesale/</link>
+      <pubDate>Sun, 22 Jan 2017 21:36:45 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/firesale/</guid>
+      <description>What is a Firesale? A Firesale is a theoretical cyber attack where all the vital networks like gas, water, transportation, finance, etc. are taken down, thus crippling the nation under the attack.
+The word itself loosely means &amp;quot;everything must go&amp;quot;. In the word Firesale, F stands for financial, I for infrastructure, R for Resources and E for Environment.
+In reality, the word Firesale isn&amp;rsquo;t a cyber-security term at all. It was invented in the movie Die Hard 4.</description>
+    </item>
+    
+    <item>
+      <title>Too Much of L337 Stuff</title>
+      <link>https://icyphox.github.io/blog/l33tstuff/</link>
+      <pubDate>Tue, 17 Jan 2017 21:24:03 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/l33tstuff/</guid>
+      <description>This post took waayy longer than it should&amp;rsquo;ve, but I was stuck up doing quite a bit of l33t and h4xy things (things l33ter and h4xi3r than this blog, yes). This post isn&amp;rsquo;t specific to just one topic, and since I&amp;rsquo;ve got a lot of things to write about. So&amp;hellip;, without further ado, let&amp;rsquo;s get started.
+Sailfish OS About 3 days back, @drakonizer reminded me about Sailfish OS (yeah, I knew it existed, just didn&amp;rsquo;t care), and I decided to give it a whirl on my Nexus 5.</description>
+    </item>
+    
+    <item>
+      <title>IRC Etiquette </title>
+      <link>https://icyphox.github.io/blog/ircpractices/</link>
+      <pubDate>Mon, 09 Jan 2017 10:00:39 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/ircpractices/</guid>
+      <description>It took a good week and a little bit more for this post. I was busy ricing my box again (here), and preparing for my switch to 2bwm. You see, I realized that I&amp;rsquo;ve been floating my windows an unhealthy amount, in a tiling window manager - i3.
+Anyway, IRC (Internet Relay Chat). It&amp;rsquo;s been around for years, and you can chat in real-time with people from all around the world, in channels.</description>
+    </item>
+    
+    <item>
+      <title>Theory of Bluetooth Hacking</title>
+      <link>https://icyphox.github.io/blog/bthacking/</link>
+      <pubDate>Sat, 31 Dec 2016 22:13:32 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/bthacking/</guid>
+      <description>I recently got myself a pair of these sweg Bose Bluetooth headsets, and an idea occured to me. If you could hijack someone&amp;rsquo;s bluetooth speaker/headset, and play your own music, wouldn&amp;rsquo;t that be sweet? So I did some research on BT&amp;rsquo;s protocols, possible exploits, etc., and came up with this theory (and it turns out that it is quite possible).
+Bluetooth is a pretty basic stack, in communication protocols. But it is quite secure.</description>
+    </item>
+    
+    <item>
+      <title>Man In Ze Middle Attacks (MIZM)</title>
+      <link>https://icyphox.github.io/blog/mitm/</link>
+      <pubDate>Fri, 23 Dec 2016 22:12:10 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/mitm/</guid>
+      <description>First off, it&amp;rsquo;s MITM. I wrote the Ze because I&amp;rsquo;m pretentious. An MITM attack is fairly straightforward, it&amp;rsquo;s what the name says. There&amp;rsquo;s a transaction happening between two computers, and it gets intercepted by a 3rd party - the man in the middle.
+So this attack has various applications, in cryptography and in computer security.
+In cryptography So there&amp;rsquo;s this very common example given using the characters Alice, Bob, and Mallory.</description>
+    </item>
+    
+    <item>
+      <title>Creating a persistent Windows backdoor using Python (and netcat)</title>
+      <link>https://icyphox.github.io/blog/winbackdoor/</link>
+      <pubDate>Tue, 13 Dec 2016 19:59:33 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/winbackdoor/</guid>
+      <description>This is going to be a very hands on post, so get to your PC, if you&amp;rsquo;re reading this on your phone.
+In this post, I&amp;rsquo;m going to be walking you through the process of creating a Python backdoor (for Windows), but it doesn&amp;rsquo;t really use Python itself. How? Well of course, we shall be using the Windows port of the pretty (in)famous netcat.
+A little introduction on netcat or nc So ncis actually a GNU/Linux utility, that was created primarily to connect to and write/read using TCP or UDP.</description>
+    </item>
+    
+    <item>
+      <title>The Definitive Guide To Social Engineering</title>
+      <link>https://icyphox.github.io/blog/socialengg/</link>
+      <pubDate>Wed, 07 Dec 2016 22:07:27 +0530</pubDate>
+      
+      <guid>https://icyphox.github.io/blog/socialengg/</guid>
+      <description>Humans have a natural inclination to trust, and exploiting this human tendency is easier than having to hack into their software. This is the essence of social engineering. When you can just trick someone into divulging their password, why bother discovering ways to hack them?
+The types of information that a social engineer seeks may vary, it could be to get you to give them a password, allow them to access your workstation remotely (sometimes create an account forfor them on your PC!</description>
+    </item>
+    
+  </channel>
+</rss>
