@@ -3,7 +3,7 @@ template: normal.html
 ---
 
 ## about
-I'm *icyphox*, an infosec enthusiast, Linux elitist and an open sourcer and this is all about me.
+I'm *icyphox*, an infosec enthusiast, Linux elitist and an open sourcer. And this is all about me.
 
 ### technical
 - network security
