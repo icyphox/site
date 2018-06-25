@@ -1,4 +1,4 @@
-hey there,
+Hey there,
 
 I'm *icyphox*, and this is all about me.
 
