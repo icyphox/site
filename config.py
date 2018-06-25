@@ -2,6 +2,6 @@
 
 title = 'icyphox'
 author = ''
-header = '<a href="/">home</a> <a href="/gpg.txt">gpg</a> <a href="/about">about</a> <a href="/contact">contact</a>'
-footer = 'Built using <a href="https://github.com/icyphox/vite">Vite</a>. View this site\'s <a href="https://github.com/icyphox/site">source</a>.'
+header = '<a href="/">home</a> <a href="/projects">projects</a> <a href="/info">info</a> <a href="/gpg.txt">gpg</a>'
+footer = ''
 template = 'index.html'  # default is index.html
