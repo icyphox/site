@@ -8,7 +8,7 @@ A simple and minimal static site generator that JustWorks&trade;.
 A terminal coloring and formatting lib for Nim.
 
 **[dotfiles](https://github.com/icyphox/dotfiles)**  
-My Linux dotfiles
+My Linux dotfiles.
 
 **[GitSocial](https://github.com/icyphox/gitsocial-instance)**  
 A federated social network, that uses Git under the hood.
