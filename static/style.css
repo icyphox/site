@@ -32,12 +32,4 @@ html {
 @media (min-width:960px) { body {font-size:120%;} } 
 @media (min-width:1100px) { body {font-size:120%;} }
 
-.footer {
-  position: relative;
-  bottom: 0;
-  width: auto
-}
 
-.dark {
-    background-color: #21373A
-}
