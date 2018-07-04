@@ -1,9 +1,5 @@
----
-template: banner.html
----
-
 # Anirudh Oppiliappan
 
-*linux, infosec and open source*
+*linux, infosec, open source*
 
-github - twitter - keybase - email
+[github](https://github.com/icyphox) • [twitter](https://twitter.com/icyphox) • [keybase](https://keybase.io/icyphox) • [email](mailto:icyph0x@pm.me)
