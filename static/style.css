@@ -29,7 +29,21 @@
 @media (min-width:1100px) { body {font-size:120%;} }
 
 html { 
-  font-size: 100%;
-  font-family: 'le_font'
+  font-family: 'le_font';
+  color: #222;
+  line-height: 50px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+em {
+  font-size: 1.5em;
+}
+
+
+.centered {
+  margin-top: 15%;
 }
 
