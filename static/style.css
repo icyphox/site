@@ -23,21 +23,30 @@
     #primary { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
 }
-html { 
-  font-size: 100%;
-  font-family: 'le_font'
 
-}
 @media (min-width: 640px) { body {font-size:100%;} } 
 @media (min-width:960px) { body {font-size:120%;} } 
 @media (min-width:1100px) { body {font-size:120%;} }
 
-.footer {
-  position: relative;
-  bottom: 0;
-  width: auto
+html { 
+  font-family: 'le_font';
+  color: #222;
+  line-height: 50px;
 }
 
-.dark {
-    background-color: #21373A
+h1 {
+  font-size: 4em;
 }
+
+em {
+  font-size: 1.5em;
+}
+
+a {
+  font-size: 1.2em;
+}
+
+.centered {
+  margin-top: 15%;
+}
+
