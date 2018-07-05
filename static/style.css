@@ -19,11 +19,11 @@
   src: url('/static/fonts/SecularOne-Regular.ttf');
 }
 
-@media screen and (max-width: 1200px) {
+/*@media screen and (max-width: 1200px) {
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}  
 }
-/* Tabled Portrait */
+ 
 @media screen and (max-width: 768px) {
     #primary { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
@@ -31,7 +31,7 @@
 
 @media (min-width: 640px) { body {font-size:80%;} } 
 @media (min-width:960px) { body {font-size:100%;} } 
-@media (min-width:1100px) { body {font-size:120%;} }
+@media (min-width:1100px) { body {font-size:120%;} } */
 
 html { 
   color: #333;
@@ -40,18 +40,18 @@ html {
 
 h1 {
 	font-family: 'secular', sans-serif;
-  font-size: 5em;
-  line-height: 0.2;
+  font-size: 5.5em;
+  line-height: 0.3;
 }
 
 em {
 	font-family: 'operator', italic;
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
 a {
 	font-family: 'operator', monospace;
-  font-size: 1em;
+  font-size: 1.2em;
   color: #444;
 }
 
