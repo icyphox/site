@@ -1,6 +1,6 @@
 # config.py - Vite's configuration script
 
-title = 'icyphox'
+title = 'Anirudh Oppiliappan'
 author = ''
 # header = '<a href="/">home</a> <a href="/projects">projects</a> <a href="/info">info</a> <a href="/gpg.txt">gpg</a>'
 header = ''
