@@ -1,5 +1,6 @@
-# Anirudh
-# Oppiliappan
+<h1 align="center">
+  <img src="/static/icynobg.svg" width="250px">
+</h1>
 
 *linux, infosec, open source.*
 
