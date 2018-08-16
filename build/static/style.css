@@ -14,7 +14,8 @@
   font-style: italic;
 }
 
-html { color: #fff;
+html { 
+  color: #fff;
   background: #021012;
 }
 
@@ -40,7 +41,7 @@ html { color: #fff;
     font-family: 'operator', monospace;
  	  bottom: 20px;
     font-size: 16px;
-  	position: absolute;
+  	position: fixed;
   	width: 100%;
   	text-align: center;
   	margin-bottom: 20px;
