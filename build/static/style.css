@@ -14,24 +14,11 @@
   font-style: italic;
 }
 
-@font-face {
-  font-family: 'secular';
-  src: url('/static/fonts/SecularOne-Regular.ttf');
-}
-
-html { 
-  color: #fff;
+html { color: #fff;
   background: #021012;
 }
 
 @media screen and (min-width: 200px) and (max-width: 1000px) {
-  h1 {
-	font-family: 'secular', sans-serif;
-  font-size: 50px;
-  line-height: 0.3;
-  text-align: center;
-}
-
   em {
   	font-family: 'operator', italic;
     font-size: 22px;
@@ -44,16 +31,27 @@ html {
     color: #fff;
     line-height: 2;
   } 
+
+  img {
+    width: 150px;
+  }
+
+  .footer {
+    font-family: 'operator', monospace;
+ 	  bottom: 20px;
+    font-size: 16px;
+  	position: absolute;
+  	width: 100%;
+  	text-align: center;
+  	margin-bottom: 20px;
+  }
+
+  .footer a {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-  h1 {
-  	font-family: 'secular', sans-serif;
-    font-size: 100px;
-    line-height: 0.3;
-    text-align: center;
-  }
-  
   em {
   	font-family: 'operator', italic;
     font-size: 30px;
@@ -66,8 +64,29 @@ html {
     color: #fff;
     line-height: 2;
   }
+
+  img {
+    width: 250px;
+  }
+
+  .footer {
+    font-family: 'operator', monospace;
+  	bottom: 20px;
+    font-size: 18px;
+  	position: fixed;
+  	width: 100%;
+  	text-align: center;
+  	margin-bottom: 20px;
+  }
+  
+  .footer a {
+    font-size: 18px;
+  }
 }
 
+.inline {
+  display: inline-block;
+}
 
 .centered {
   text-align: center;
@@ -76,7 +95,9 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
 
+.animated {
   -webkit-animation: fadein 2s;
   -moz-animation: fadein 2s;
   -ms-animation: fadein 2s;
