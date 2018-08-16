@@ -20,7 +20,8 @@
 }
 
 html { 
-  color: #333;
+  color: #fff;
+  background: #021012;
 }
 
 @media screen and (min-width: 200px) and (max-width: 1000px) {
@@ -40,7 +41,7 @@ html {
   a {
   	font-family: 'operator', monospace;
     font-size: 18px;
-    color: #444;
+    color: #fff;
     line-height: 2;
   } 
 }
@@ -62,7 +63,7 @@ html {
   a {
   	font-family: 'operator', monospace;
     font-size: 22px;
-    color: #444;
+    color: #fff;
     line-height: 2;
   }
 }
