@@ -16,23 +16,33 @@
 <meta property="og:description" content="linux, infosec, open source.">
 <meta property="og:url" content="https://icy.ph0x.me">
 <meta property="og:image" content="https://icy.ph0x.me/static/icyphox.png">
+<html>
+  <title>
+  	{{ title }}	
+  </title>
 
-<title>
-	{{ title }}	
-</title>
+  <header>
+  	{{ header }}
+  </header>
 
-<header>
-	{{ header }}
-</header>
+  <body> 
+    <div class="container">
+      <div class="introduction">
+    	{{ body }}
+    </div>
+  </body>
 
-<body> 
-  <div class="centered inline animated">
-  	{{ body }}
-  </div>
-</body>
+  <footer>
+    <div class="footer">
+      <div class="left">
+      {{ footer }}
+      </div>
 
-<footer>
-  <div class="footer inline animated">
-    {{ footer }}
-  </div>
-</footer>
+      <div class="right">
+        <a href="https://github.com/icyphox" target="_blank">GitHub</a>
+        <a href="https://twitter.com/icyphox" target="_blank">Twitter</a>
+        <a href="https://xix.ph0x.me/resume.pdf" target="_blank">Résumé</a>
+      </div>
+    </div>
+  </footer>
+</html>
