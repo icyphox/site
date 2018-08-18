@@ -40,11 +40,11 @@ a:hover:after {
 	color: white;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
-	-webkit-animation: fadein 2s;
-	   -moz-animation: fadein 2s;
-	    -ms-animation: fadein 2s;
-	     -o-animation: fadein 2s;
-	        animation: fadein 2s;
+	-webkit-animation: fadein 3s;
+	   -moz-animation: fadein 3s;
+	    -ms-animation: fadein 3s;
+	     -o-animation: fadein 3s;
+	        animation: fadein 3s;
 }
 
 @keyframes fadein {
