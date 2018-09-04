@@ -4,9 +4,9 @@ body {
 }
 
 a {
-	color: white;
+	color: #00ffff;
 	display: inline-block;
-	margin: 0 20px;
+	/* margin: 0 20px; */
 	position: relative;
 	text-decoration: none;
 }
