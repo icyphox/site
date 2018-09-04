@@ -69,6 +69,12 @@ a:hover:after {
 	width: 100%;
 }
 
+.content {
+	position: absolute;
+	left: 25%;
+	width: 50%;
+}
+
 .logo {
 	width: 250px;
 }
