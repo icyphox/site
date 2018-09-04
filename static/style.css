@@ -30,6 +30,11 @@ a:hover:after {
 	transform: scale(1, 1);
 }
 
+code {
+	background: #222;
+	padding: 3px;
+}
+
 .container {
 	position: absolute;
 	overflow: hidden;
