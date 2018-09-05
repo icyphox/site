@@ -2,8 +2,7 @@
 
 title = 'Anirudh Oppiliappan'
 author = ''
-# header = '<a href="/">home</a> <a href="/projects">projects</a> <a href="/info">info</a> <a href="/gpg.txt">gpg</a>'
-header = ''
+header = '<a href="/" target="_blank">Home</a> <a href="/blog" target="_blank">Blog</a> <a href="/about" target="_blank">About</a>' 
 footer = '&copy; 2018 — <a href="mailto:icyph0x@pm.me">icyph0x@pm.me</a>'
 template = 'index.html'  # default is index.html
 

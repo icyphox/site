@@ -104,6 +104,26 @@ code {
 	color: white;
 }
 
+.header {
+	color: #666;
+	top: 20px;
+	font-size: 14px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.header a {
+	color: #666;
+	margin: 0;
+	transition: all 200ms;
+}
+
+.header a:hover {
+	color: white;
+}
+
 .left {
 	display: inline-block;
 	margin-bottom: 30px;
