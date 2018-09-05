@@ -32,12 +32,12 @@ a:hover:after {
 
 code {
 	background: #222;
-	padding: 3px;
+	padding: 5px;
 }
 
 .container {
 	position: absolute;
-	overflow: hidden;
+	/* overflow: hidden; */
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -131,3 +131,8 @@ code {
 	.right a:last-child {
 		margin-right: 0;
 	}
+	.content {
+		left: 15%;
+		width: 70%;
+	}
+}
