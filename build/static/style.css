@@ -76,6 +76,7 @@ code {
 
 .content {
 	position: absolute;
+	top: 7%;
 	left: 25%;
 	width: 50%;
 }
