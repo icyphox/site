@@ -27,5 +27,9 @@ Some of the bands I like:
 
 You might want to check out my [Last.fm](https://last.fm/user/icyphox).
 
+## This website
+You can find its source [here](https://github.com/icyphox/site), and the static site generator that powers it - [Vite](https://github.com/icyphox/vite). 
+
 ## Contact
 I read all my mail (not that I get a lot of relevant stuff), so feel free to shoot one at [icyph0x@pm.me](mailto:icyph0x@pm.me). You can also find me at `#rice` at [Rizon](https://rizon.net), as `icy` or `icyphox`.
+
