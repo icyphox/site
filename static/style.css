@@ -86,7 +86,7 @@ code {
 }
 
 .footer {
-	color: #666;
+	color: white;
 	bottom: 20px;
 	font-size: 14px;
 	position: absolute;
@@ -96,17 +96,17 @@ code {
 }
 
 .footer a {
-	color: #666;
+	color: white;
 	margin: 0;
 	transition: all 200ms;
 }
 
 .footer a:hover {
-	color: white;
+	color: cyan;
 }
 
 .header {
-	color: #666;
+	color: white;
 	top: 20px;
 	font-size: 14px;
 	position: absolute;
@@ -116,13 +116,13 @@ code {
 }
 
 .header a {
-	color: #666;
+	color: white;
 	margin: 0;
 	transition: all 200ms;
 }
 
 .header a:hover {
-	color: white;
+	color: cyan;
 }
 
 .left {
