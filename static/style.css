@@ -4,7 +4,7 @@ body {
 }
 
 a {
-	color: #00ffff;
+	color: cyan;
 	display: inline-block;
 	/* margin: 0 20px; */
 	position: relative;
@@ -14,7 +14,7 @@ a {
 a:after {
 	content: "";
 	height: 1px;
-	background: white;
+	background: cyan;
 	position: absolute;
 	pointer-events: none;
 	bottom: -5px;
@@ -32,7 +32,7 @@ a:hover:after {
 
 code {
 	background: #222;
-	padding: 5px;
+	padding: 4px;
 }
 
 .container {
@@ -86,7 +86,7 @@ code {
 }
 
 .footer {
-	color: white;
+	color: #888;
 	bottom: 20px;
 	font-size: 14px;
 	position: absolute;
@@ -96,7 +96,7 @@ code {
 }
 
 .footer a {
-	color: white;
+	color: #888;
 	margin: 0;
 	transition: all 200ms;
 }
@@ -116,7 +116,7 @@ code {
 }
 
 .header a {
-	color: white;
+	color: #888;
 	margin: 0;
 	transition: all 200ms;
 }
