@@ -13,7 +13,7 @@ a {
 
 a:after {
 	content: "";
-	height: 1px;
+	height: 0.7px;
 	background: cyan;
 	position: absolute;
 	pointer-events: none;
