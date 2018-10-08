@@ -14,7 +14,7 @@ I have a *lot* of interests, but I primarily focus on these:
 - free and open source software
 
 I have long since been doing red-team activity in security, but I'm branching out and exploring blue-team work too.  
-I'm currently studying **reverse engineering** and **malware analysis**, along with Windows OS internals.
+I'm currently studying **reverse engineering** and **malware analysis**, Windows OS internals, and cyber forensics.
 
 ## Music
 I'm super picky when it comes to my music. I specifically listen to atmospheric/electronic/melodic **metalcore** and **deathcore**.  
