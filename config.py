@@ -2,7 +2,7 @@
 
 title = 'Anirudh'
 author = ''
-header = '<a href="/">Home</a> <a href="/about">About</a>' 
+header = '' 
 footer = '&copy; 2018 — <a href="mailto:icyph0x@pm.me">icyph0x@pm.me</a>'
 template = 'index.html'  # default is index.html
 
