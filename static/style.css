@@ -6,7 +6,6 @@ body {
 a {
 	color: cyan;
 	display: inline-block;
-	/* margin: 0 20px; */
 	position: relative;
 	text-decoration: none;
 }
@@ -30,14 +29,9 @@ a:hover:after {
 	transform: scale(1, 1);
 }
 
-code {
-	background: #222;
-	padding: 4px;
-}
-
 .container {
 	position: absolute;
-	/* overflow: hidden; */
+	overflow: hidden;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -102,26 +96,6 @@ code {
 }
 
 .footer a:hover {
-	color: cyan;
-}
-
-.header {
-	color: white;
-	top: 20px;
-	font-size: 14px;
-	position: absolute;
-	width: 100%;
-	text-align: center;
-	margin-top: 20px;
-}
-
-.header a {
-	color: #888;
-	margin: 0;
-	transition: all 200ms;
-}
-
-.header a:hover {
 	color: cyan;
 }
 
