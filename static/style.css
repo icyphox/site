@@ -4,29 +4,17 @@ body {
 }
 
 a {
-	color: cyan;
+	color: gray;
 	display: inline-block;
 	position: relative;
 	text-decoration: none;
-}
-
-a:after {
-	content: "";
-	height: 0.7px;
-	background: cyan;
-	position: absolute;
-	pointer-events: none;
-	bottom: -5px;
-	left: 0;
-	right: 0;
-	opacity: 0;
-	transform: scale(0, 1);
 	transition: all 200ms;
 }
 
-a:hover:after {
-	opacity: 1;
-	transform: scale(1, 1);
+a:hover{
+  color: #021012;
+  background: cyan;
+  text-decoration: none;
 }
 
 .container {
@@ -80,7 +68,7 @@ a:hover:after {
 }
 
 .footer {
-	color: #888;
+	color: gray;
 	bottom: 20px;
 	font-size: 14px;
 	position: absolute;
@@ -96,7 +84,8 @@ a:hover:after {
 }
 
 .footer a:hover {
-	color: cyan;
+	color: #021012;
+  background: cyan;
 }
 
 .left {
