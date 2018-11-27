@@ -3,20 +3,6 @@ body {
 	background: #021012;
 }
 
-a {
-	color: gray;
-	display: inline-block;
-	position: relative;
-	text-decoration: none;
-	transition: all 200ms;
-}
-
-a:hover{
-  color: #021012;
-  background: cyan;
-  text-decoration: none;
-}
-
 .container {
 	position: absolute;
 	overflow: hidden;
@@ -56,13 +42,6 @@ a:hover{
 	width: 100%;
 }
 
-.content {
-	position: absolute;
-	top: 7%;
-	left: 25%;
-	width: 50%;
-}
-
 .logo {
 	width: 220px;
 }
@@ -81,6 +60,7 @@ a:hover{
 	color: #888;
 	margin: 0;
 	transition: all 200ms;
+	text-decoration: none;
 }
 
 .footer a:hover {
