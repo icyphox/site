@@ -1,5 +1,12 @@
+@font-face {
+	font-family: Inter;
+	src: url('fonts/Inter-Regular.woff2');
+	font-size: 14px;
+}
+
 html,
 body {
+	font-family: Inter, sans-serif;
 	background: #021012;
 }
 
@@ -11,8 +18,7 @@ body {
 	left: 0;
 	right: 0;
 	color: white;
-	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-	font-size: 14px;
+
 	-webkit-animation: fadein 3s;
 	   -moz-animation: fadein 3s;
 	    -ms-animation: fadein 3s;
