@@ -142,7 +142,7 @@ a:hover {
   user-select:none
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 60em) {
 	.left {
 		display: block;
 		margin-right: 0;
@@ -164,6 +164,7 @@ a:hover {
     font-size: 15px;
     line-height: 150%;
 		width: 80%;
+    overflow-y: auto;
 	}
   .content h1 {
     font-size: 19px;
