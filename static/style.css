@@ -160,11 +160,10 @@ a:hover {
 
 	.content {
 		left: 10%;
-    bottom: 10%;
-    font-size: 15px;
+    bottom: 3%;
+    font-size: 18px;
     line-height: 150%;
 		width: 80%;
-    overflow-y: auto;
 	}
   .content h1 {
     font-size: 19px;
