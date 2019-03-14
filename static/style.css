@@ -153,6 +153,11 @@ a:hover {
 	.right a:last-child {
 		margin-right: 0;
 	}
+  
+  .container-text {
+    overflow-y: auto;
+  }
+
 	.content {
 		left: 10%;
     bottom: 10%;
