@@ -67,7 +67,7 @@ body {
 .content {
 	position: absolute;
   font-size: 17px;
-  top: 40%;
+  top: 50%;
   left: 30%;
   right: 30%;
   width: 40%;
@@ -97,14 +97,6 @@ body {
 	margin: 20px;
 }
 
-.header-right {
-	color: cyan;
-	top: 20px;
-	position: absolute;
-	width: 100%;
-	text-align: right;
-  right: 20px;
-}
 a {
 	color: gray;
 	margin: 0;
@@ -159,18 +151,13 @@ a:hover {
   }
 
 	.content {
+    top: 40%;
 		left: 10%;
     bottom: 3%;
     font-size: 18px;
     line-height: 150%;
 		width: 80%;
 	}
-  .content h1 {
-    font-size: 19px;
-  }
-  .content h2 {
-    font-size: 15px;
-  }
 
   .logo {
     width: 180px;
