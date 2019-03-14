@@ -97,6 +97,14 @@ body {
 	margin: 20px;
 }
 
+.header-right {
+	color: cyan;
+	top: 20px;
+	position: absolute;
+	width: 100%;
+	text-align: right;
+  right: 20px;
+}
 a {
 	color: gray;
 	margin: 0;
@@ -149,7 +157,7 @@ a:hover {
 		left: 10%;
     bottom: 0%;
     font-size: 15px;
-    line-height: 130%;
+    line-height: 150%;
 		width: 80%;
 	}
   .content h1 {
