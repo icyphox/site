@@ -134,6 +134,13 @@ a:hover {
   user-select:none
 }
 
+img {
+  height: auto;
+  width: 100%;
+
+  max-width: 720px;
+}
+
 @media only screen and (max-width: 100em) {
 	.left {
 		display: block;
@@ -153,11 +160,16 @@ a:hover {
 	.content {
     top: 10%;
 		left: 10%;
-    bottom: 3%;
-    font-size: 18px;
+    right: 10%;
+    bottom: 10%;
+    font-size: 16px;
     line-height: 150%;
-		width: 70%;
+		width: 85%;
 	}
+
+  pre {
+    overflow-x: auto;
+  }
 
   .logo {
     width: 180px;
