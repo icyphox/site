@@ -2,15 +2,15 @@
 template: text.html
 ---
 
-## Python for Reverse Engineering 1: ELF Binaries
+# Python for Reverse Engineering 1: ELF Binaries
 
-### Building your own disassembly tooling for — that’s right — fun and profit
+## Building your own disassembly tooling for — that’s right — fun and profit
 
 While solving complex reversing challenges, we often use established tools like radare2 or IDA for disassembling and debugging. But there are times when you need to dig in a little deeper and understand how things work under the hood.
 
 Rolling your own disassembly scripts can be immensely helpful when it comes to automating certain processes, and eventually build your own homebrew reversing toolchain of sorts. At least, that’s what I’m attempting anyway.
 
-## Setup
+### Setup
 
 As the title suggests, you’re going to need a Python 3 interpreter before
 anything else. Once you’ve confirmed beyond reasonable doubt that you do,
@@ -59,7 +59,7 @@ $ gcc chall.c -o chall.elf
 ```
 
 
-## Scripting
+### Scripting
 
 For starters, let’s look at the different sections present in the binary.
 
@@ -301,7 +301,7 @@ And this looks like our `strcmp()`
 
 I’m not sure why it uses `puts` here? I might be missing something; perhaps `printf` calls `puts`. I could be wrong. I also confirmed with radare2 that those locations are actually the strings “haha yes!” and “nah dude”.
 
-## Conclusion
+### Conclusion
 
 Wew, that took quite some time. But we’re done. If you’re a beginner, you might find this extremely confusing, or probably didn’t even understand what was going on. And that’s okay. Building an intuition for reading and grokking disassembly comes with practice. I’m no good at it either.
 

@@ -1,7 +1,6 @@
 @font-face {
 	font-family: Inter;
 	src: url('fonts/Inter-Regular.woff2');
-	font-size: 13px;
 }
 
 html,
@@ -27,7 +26,7 @@ body {
 }
 
 .container-text {
-	position: absolute;
+  position: absolute;
 	overflow-y: auto;
 	overflow-x: hidden;
 	top: 0;
@@ -36,11 +35,11 @@ body {
 	right: 0;
 	color: white;
 
-	-webkit-animation: fadein 3s;
-	   -moz-animation: fadein 3s;
-	    -ms-animation: fadein 3s;
-	     -o-animation: fadein 3s;
-	        animation: fadein 3s;
+	-webkit-animation: fadein 1.5s;
+	   -moz-animation: fadein 1.5s;
+	    -ms-animation: fadein 1.5s;
+	     -o-animation: fadein 1.5s;
+	        animation: fadein 1.5s;
 }
 
 @keyframes fadein {
@@ -67,12 +66,17 @@ body {
 
 .content {
 	position: absolute;
-	font-size: 17px;
+	font-size: 18px;
 	top: 10%;
   left: 20%;
   right: 20%;
   width: 60%;
-  line-height: 170%;
+  line-height: 1.8;
+}
+
+pre, code {
+    background: #041b1e;
+    padding: 2px;
 }
 
 .logo {
@@ -90,7 +94,7 @@ body {
 
 .header {
 	color: cyan;
-	top: 20px;
+	top: 10px;
 	position: absolute;
 	width: 100%;
 	text-align: left;
@@ -125,7 +129,7 @@ a:hover {
 	margin-right: 30px;
 }
 
-.noselect{
+.noselect {
   -webkit-touch-callout:none;
   -webkit-user-select:none;
   -khtml-user-select:none;
@@ -141,7 +145,24 @@ img {
   max-width: 720px;
 }
 
-@media only screen and (max-width: 100em) {
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+h2 { 
+  color: gray;
+}
+
+h3 {
+  color: cyan;
+}
+
+p {
+  bottom: 2em;
+}
+
+
+@media only screen and (max-width: 70em) {
 	.left {
 		display: block;
 		margin-right: 0;
@@ -158,14 +179,15 @@ img {
   }
 
 	.content {
-    top: 10%;
 		left: 10%;
     right: 10%;
     bottom: 10%;
-    font-size: 16px;
-    line-height: 150%;
-		width: 85%;
+		width: 80%;
 	}
+
+  .content h1, h2, h3 {
+    line-height: 1.5;
+  }
 
   pre {
     overflow-x: auto;
