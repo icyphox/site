@@ -1,5 +1,5 @@
 ---
-template: text.html
+template: about.html
 ---
 
 # Hi, I’m Anirudh.
