@@ -1,11 +1,11 @@
-@font-face {
-	font-family: Inter;
-	src: url('fonts/Inter-Regular.woff2');
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
 }
 
 html,
 body {
-	font-family: Inter, sans-serif;
 	background: #021012;
 }
 
@@ -74,9 +74,12 @@ body {
   line-height: 1.8;
 }
 
+pre {
+  padding: 10px;
+}
+
 pre, code {
     background: #041b1e;
-    padding: 2px;
 }
 
 .logo {
