@@ -36,7 +36,7 @@ int main() {
    char *pw = malloc(9);
    pw[0] = 'a';
    for(int i = 1; i <= 8; i++){
-       pw[i] = pw[i — 1] + 1;
+       pw[i] = pw[i - 1] + 1;
    }
    pw[9] = '\0';
    char *in = malloc(10);
@@ -71,13 +71,13 @@ from elftools.elf.elffile import ELFFile
 with open('./chall.elf', 'rb') as f:
     e = ELFFile(f)
     for section in e.iter_sections():
-        print(hex(section[’sh_addr’]), section.name)
+        print(hex(section['sh_addr']), section.name)
 ```
 
 
 This script iterates through all the sections and also shows us where it’s loaded. This will be pretty useful later. Running it gives us
 
-```
+```console
 › python sections.py
 0x238 .interp
 0x254 .note.ABI-tag
@@ -114,7 +114,7 @@ Most of these aren’t relevant to us, but a few sections here are to be noted. 
 
 Since we know that the `.text` section has the opcodes, let’s disassemble the binary starting at that address.
 
-```
+```python
 # disas1.py
 
 from elftools.elf.elffile import ELFFile
@@ -133,7 +133,7 @@ with open('./bin.elf', 'rb') as f:
 
 The code is fairly straightforward (I think). We should be seeing this, on running
 
-```
+```console
 › python disas1.py | less      
 0x6a0: xor ebp, ebp
 0x6a2: mov r9, rdx
@@ -180,7 +180,7 @@ with open('./chall.elf', 'rb') as f:
 
 Let’s run through this code real quick. We first loop through the sections, and check if it’s of the type `RelocationSection`. We then iterate through the relocations from the symbol table for each section. Finally, running this gives us
 
-```
+```console
 › python relocations.py
 .rela.dyn:
  0x200d98
@@ -206,7 +206,7 @@ Remember the function call at `0x200fe0` from earlier? Yep, so that was a call t
 
 And its definition is like so
 
-```
+```c
 int __libc_start_main(int *(main) (int, char * *, char * *), 
 int argc, char * * ubp_av, 
 void (*init) (void), 

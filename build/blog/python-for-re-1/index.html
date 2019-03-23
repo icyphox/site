@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang=en>
 <link rel="stylesheet" href="/static/style.css" type="text/css">
+<link rel="stylesheet" href="/static/syntax.css" type="text/css">
 <link rel="shortcut icon" type="images/x-icon" href="/static/favicon.ico">
 <meta content="Anirudh’s blog." name=description>
 <meta name="viewport" content="initial-scale=1">
@@ -61,7 +62,7 @@ challenge.</p>
    <span class="kt">char</span> <span class="o">*</span><span class="n">pw</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
    <span class="n">pw</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;a&#39;</span><span class="p">;</span>
    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">8</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-       <span class="n">pw</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">pw</span><span class="p">[</span><span class="n">i</span> <span class="err">—</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+       <span class="n">pw</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">pw</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
    <span class="p">}</span>
    <span class="n">pw</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>
    <span class="kt">char</span> <span class="o">*</span><span class="n">in</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
@@ -92,78 +93,78 @@ challenge.</p>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./chall.elf&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">e</span> <span class="o">=</span> <span class="n">ELFFile</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">iter_sections</span><span class="p">():</span>
-        <span class="k">print</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">section</span><span class="p">[</span><span class="err">’</span><span class="n">sh_addr</span><span class="err">’</span><span class="p">]),</span> <span class="n">section</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">section</span><span class="p">[</span><span class="s1">&#39;sh_addr&#39;</span><span class="p">]),</span> <span class="n">section</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 </code></pre></div>
 
 <p>This script iterates through all the sections and also shows us where it’s loaded. This will be pretty useful later. Running it gives us</p>
 
-<pre><code>› python sections.py
-0x238 .interp
-0x254 .note.ABI-tag
-0x274 .note.gnu.build-id
-0x298 .gnu.hash
-0x2c0 .dynsym
-0x3e0 .dynstr
-0x484 .gnu.version
-0x4a0 .gnu.version_r
-0x4c0 .rela.dyn
-0x598 .rela.plt
-0x610 .init
-0x630 .plt
-0x690 .plt.got
-0x6a0 .text
-0x8f4 .fini
-0x900 .rodata
-0x924 .eh_frame_hdr
-0x960 .eh_frame
-0x200d98 .init_array
-0x200da0 .fini_array
-0x200da8 .dynamic
-0x200f98 .got
-0x201000 .data
-0x201010 .bss
-0x0 .comment
-0x0 .symtab
-0x0 .strtab
-0x0 .shstrtab
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="go">› python sections.py</span>
+<span class="go">0x238 .interp</span>
+<span class="go">0x254 .note.ABI-tag</span>
+<span class="go">0x274 .note.gnu.build-id</span>
+<span class="go">0x298 .gnu.hash</span>
+<span class="go">0x2c0 .dynsym</span>
+<span class="go">0x3e0 .dynstr</span>
+<span class="go">0x484 .gnu.version</span>
+<span class="go">0x4a0 .gnu.version_r</span>
+<span class="go">0x4c0 .rela.dyn</span>
+<span class="go">0x598 .rela.plt</span>
+<span class="go">0x610 .init</span>
+<span class="go">0x630 .plt</span>
+<span class="go">0x690 .plt.got</span>
+<span class="go">0x6a0 .text</span>
+<span class="go">0x8f4 .fini</span>
+<span class="go">0x900 .rodata</span>
+<span class="go">0x924 .eh_frame_hdr</span>
+<span class="go">0x960 .eh_frame</span>
+<span class="go">0x200d98 .init_array</span>
+<span class="go">0x200da0 .fini_array</span>
+<span class="go">0x200da8 .dynamic</span>
+<span class="go">0x200f98 .got</span>
+<span class="go">0x201000 .data</span>
+<span class="go">0x201010 .bss</span>
+<span class="go">0x0 .comment</span>
+<span class="go">0x0 .symtab</span>
+<span class="go">0x0 .strtab</span>
+<span class="go">0x0 .shstrtab</span>
+</code></pre></div>
 
 <p>Most of these aren’t relevant to us, but a few sections here are to be noted. The <code>.text</code> section contains the instructions (opcodes) that we’re after. The <code>.data</code> section should have strings and constants initialized at compile time. Finally, the <code>.plt</code> which is the Procedure Linkage Table and the <code>.got</code>, the Global Offset Table. If you’re unsure about what these mean, read up on the ELF format and its internals.</p>
 
 <p>Since we know that the <code>.text</code> section has the opcodes, let’s disassemble the binary starting at that address.</p>
 
-<pre><code># disas1.py
+<div class="codehilite"><pre><span></span><code><span class="c1"># disas1.py</span>
 
-from elftools.elf.elffile import ELFFile
-from capstone import *
+<span class="kn">from</span> <span class="nn">elftools.elf.elffile</span> <span class="kn">import</span> <span class="n">ELFFile</span>
+<span class="kn">from</span> <span class="nn">capstone</span> <span class="kn">import</span> <span class="o">*</span>
 
-with open('./bin.elf', 'rb') as f:
-    elf = ELFFile(f)
-    code = elf.get_section_by_name('.text')
-    ops = code.data()
-    addr = code['sh_addr']
-    md = Cs(CS_ARCH_X86, CS_MODE_64)
-    for i in md.disasm(ops, addr):        
-        print(f'0x{i.address:x}:\t{i.mnemonic}\t{i.op_str}')
-</code></pre>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./bin.elf&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">elf</span> <span class="o">=</span> <span class="n">ELFFile</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="n">elf</span><span class="o">.</span><span class="n">get_section_by_name</span><span class="p">(</span><span class="s1">&#39;.text&#39;</span><span class="p">)</span>
+    <span class="n">ops</span> <span class="o">=</span> <span class="n">code</span><span class="o">.</span><span class="n">data</span><span class="p">()</span>
+    <span class="n">addr</span> <span class="o">=</span> <span class="n">code</span><span class="p">[</span><span class="s1">&#39;sh_addr&#39;</span><span class="p">]</span>
+    <span class="n">md</span> <span class="o">=</span> <span class="n">Cs</span><span class="p">(</span><span class="n">CS_ARCH_X86</span><span class="p">,</span> <span class="n">CS_MODE_64</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">md</span><span class="o">.</span><span class="n">disasm</span><span class="p">(</span><span class="n">ops</span><span class="p">,</span> <span class="n">addr</span><span class="p">):</span>        
+        <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;0x{i.address:x}:</span><span class="se">\t</span><span class="s1">{i.mnemonic}</span><span class="se">\t</span><span class="s1">{i.op_str}&#39;</span><span class="p">)</span>
+</code></pre></div>
 
 <p>The code is fairly straightforward (I think). We should be seeing this, on running</p>
 
-<pre><code>› python disas1.py | less      
-0x6a0: xor ebp, ebp
-0x6a2: mov r9, rdx
-0x6a5: pop rsi
-0x6a6: mov rdx, rsp
-0x6a9: and rsp, 0xfffffffffffffff0
-0x6ad: push rax
-0x6ae: push rsp
-0x6af: lea r8, [rip + 0x23a]
-0x6b6: lea rcx, [rip + 0x1c3]
-0x6bd: lea rdi, [rip + 0xe6]
-**0x6c4: call qword ptr [rip + 0x200916]**
-0x6ca: hlt
-... snip ...
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="go">› python disas1.py | less      </span>
+<span class="go">0x6a0: xor ebp, ebp</span>
+<span class="go">0x6a2: mov r9, rdx</span>
+<span class="go">0x6a5: pop rsi</span>
+<span class="go">0x6a6: mov rdx, rsp</span>
+<span class="go">0x6a9: and rsp, 0xfffffffffffffff0</span>
+<span class="go">0x6ad: push rax</span>
+<span class="go">0x6ae: push rsp</span>
+<span class="go">0x6af: lea r8, [rip + 0x23a]</span>
+<span class="go">0x6b6: lea rcx, [rip + 0x1c3]</span>
+<span class="go">0x6bd: lea rdi, [rip + 0xe6]</span>
+<span class="go">**0x6c4: call qword ptr [rip + 0x200916]**</span>
+<span class="go">0x6ca: hlt</span>
+<span class="go">... snip ...</span>
+</code></pre></div>
 
 <p>The line in bold is fairly interesting to us. The address at <code>[rip + 0x200916]</code> is equivalent to <code>[0x6ca + 0x200916]</code>, which in turn evaluates to <code>0x200fe0</code>. The first <code>call</code> being made to a function at <code>0x200fe0</code>? What could this function be?</p>
 
@@ -195,24 +196,24 @@ with open('./bin.elf', 'rb') as f:
 
 <p>Let’s run through this code real quick. We first loop through the sections, and check if it’s of the type <code>RelocationSection</code>. We then iterate through the relocations from the symbol table for each section. Finally, running this gives us</p>
 
-<pre><code>› python relocations.py
-.rela.dyn:
- 0x200d98
- 0x200da0
- 0x201008
-_ITM_deregisterTMCloneTable 0x200fd8
-**__libc_start_main 0x200fe0**
-__gmon_start__ 0x200fe8
-_ITM_registerTMCloneTable 0x200ff0
-__cxa_finalize 0x200ff8
-stdin 0x201010
-.rela.plt:
-puts 0x200fb0
-printf 0x200fb8
-fgets 0x200fc0
-strcmp 0x200fc8
-malloc 0x200fd0
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="go">› python relocations.py</span>
+<span class="go">.rela.dyn:</span>
+<span class="go"> 0x200d98</span>
+<span class="go"> 0x200da0</span>
+<span class="go"> 0x201008</span>
+<span class="go">_ITM_deregisterTMCloneTable 0x200fd8</span>
+<span class="go">**__libc_start_main 0x200fe0**</span>
+<span class="go">__gmon_start__ 0x200fe8</span>
+<span class="go">_ITM_registerTMCloneTable 0x200ff0</span>
+<span class="go">__cxa_finalize 0x200ff8</span>
+<span class="go">stdin 0x201010</span>
+<span class="go">.rela.plt:</span>
+<span class="go">puts 0x200fb0</span>
+<span class="go">printf 0x200fb8</span>
+<span class="go">fgets 0x200fc0</span>
+<span class="go">strcmp 0x200fc8</span>
+<span class="go">malloc 0x200fd0</span>
+</code></pre></div>
 
 <p>Remember the function call at <code>0x200fe0</code> from earlier? Yep, so that was a call to the well known <code>__libc_start_main</code>. Again, according to <a href="http://refspecs.linuxbase.org/LSB_3.1.0/LSB-generic/LSB-generic/baselib---libc-start-main-.html">linuxbase.org</a></p>
 
@@ -222,13 +223,13 @@ malloc 0x200fd0
 
 <p>And its definition is like so</p>
 
-<pre><code>int __libc_start_main(int *(main) (int, char * *, char * *), 
-int argc, char * * ubp_av, 
-void (*init) (void), 
-void (*fini) (void), 
-void (*rtld_fini) (void), 
-void (* stack_end));
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span> <span class="nf">__libc_start_main</span><span class="p">(</span><span class="kt">int</span> <span class="o">*</span><span class="p">(</span><span class="n">main</span><span class="p">)</span> <span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="o">*</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="o">*</span><span class="p">),</span> 
+<span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="o">*</span> <span class="n">ubp_av</span><span class="p">,</span> 
+<span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">init</span><span class="p">)</span> <span class="p">(</span><span class="kt">void</span><span class="p">),</span> 
+<span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">fini</span><span class="p">)</span> <span class="p">(</span><span class="kt">void</span><span class="p">),</span> 
+<span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">rtld_fini</span><span class="p">)</span> <span class="p">(</span><span class="kt">void</span><span class="p">),</span> 
+<span class="kt">void</span> <span class="p">(</span><span class="o">*</span> <span class="n">stack_end</span><span class="p">));</span>
+</code></pre></div>
 
 <p>Looking back at our disassembly</p>
 
