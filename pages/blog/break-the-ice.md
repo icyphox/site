@@ -1,3 +1,7 @@
+---
+template: text.html
+---
+
 # Break the Ice — Hardware CTF
 
 ## SecureLayer7’s hardware CTF at Nullcon ’19, Goa
@@ -202,7 +206,7 @@ To interact with the MQTT server, we’ll be using the [Mosquitto](https://mosqu
 ```
 
 
-![UwU](1*W_iVf3vDf4UaelycMbvPvw.png)*UwU*
+![UwU](1*W_iVf3vDf4UaelycMbvPvw.png)
 
 After messing around with this for quite a bit (as is evident from the screen behind), we tried sending the string ‘flag’ as our message and… *dramatic pause* we got what you’d expect.
 
@@ -210,6 +214,6 @@ After messing around with this for quite a bit (as is evident from the screen be
 
 ### Conclusion
 
-This was our first time playing a hardware CTF, and to be honest, there wasn’t *much *of “hacking” involved — at least by the word’s textbook definition. A lot of guesswork too, which made some parts of it excruciatingly painful to figure out. But all things considered, it was probably the most fun CTF I’ve played yet. Here’s a shoutout to the folks at SL7 for making this CTF *and* letting us keep the ESP :)
+This was our first time playing a hardware CTF, and to be honest, there wasn’t *much* of “hacking” involved — at least by the word’s textbook definition. A lot of guesswork too, which made some parts of it excruciatingly painful to figure out. But all things considered, it was probably the most fun CTF I’ve played yet. Here’s a shoutout to the folks at SL7 for making this CTF *and* letting us keep the ESP :)
 
 That’s it. The end.
