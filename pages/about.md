@@ -1,5 +1,6 @@
 ---
 template: about.html
+title: About
 ---
 
 # Hi, I’m Anirudh.
