@@ -1,5 +1,6 @@
 ---
 template: blogindex.html
+title: Blog
 ---
 
 # Posts

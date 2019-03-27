@@ -1,5 +1,6 @@
 ---
 template: text.html
+title: Python for Reverse Engineering #1: ELF Binaries
 ---
 
 # Python for Reverse Engineering 1: ELF Binaries
