@@ -1,6 +1,7 @@
 ---
 template: text.html
 title: Python for Reverse Engineering #1: ELF Binaries
+date: 8 Feb, 2019
 ---
 
 # Python for Reverse Engineering 1: ELF Binaries
