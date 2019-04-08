@@ -1,6 +1,7 @@
 ---
 template: text.html
 title: Python for Reverse Engineering #1: ELF Binaries
+subtitle: Building your own disassembly tooling for — that’s right — fun and profit
 date: 8 Feb, 2019
 ---
 
