@@ -12,6 +12,7 @@ My [blog](/blog) has a few write-ups that you might want to check out.
 
 In my free time (which I tend to have a lot of) I contribute to open-source projects like the [Nim](https://nim-lang.org) programming language.
 Take a look at my [GitHub](https://github.com/icyphox) profile for more of my work. This [website](https://github.com/icyphox/site) itself is built using [vite](https://github.com/icyphox/vite) — a static site generator written by me in Python. 
+You might be interested in my setup, which I’ve written about in detail [here](/blog/my-setup).
 
 Atmospheric/electronic metal subgenres are my jam. If it djents, I like it. My [Last.fm](https://last.fm/user/Icyphox) should be self-explanatory.
 For those who didn’t click it: bands like _Oceans Ate Alaska_, _I See Stars_, _Invent Animate_, _Make Them Suffer_, _Ice Nine Kills_, etc.
