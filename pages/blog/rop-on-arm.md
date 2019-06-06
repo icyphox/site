@@ -152,7 +152,8 @@ So that didn’t do much, just prints out a string “Nothing much here...”.
 But it _does_ however, contain `system()`. Which somehow needs to be populated with an argument
 to do what we want (run a command, execute a shell, etc.).
 
-To do that, we’ll follow a multi-step process:
+To do that, we’ll follow a multi-step process: 
+
 1. Jump to the address of `gadget`, again the 2nd instruction. This will `pop` `r0` and `pc`.
 2. Push our command to be executed, say “`/bin/sh`” onto the stack. This will go into
 `r0`.
