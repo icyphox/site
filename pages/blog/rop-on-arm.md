@@ -28,6 +28,12 @@ For debugging and disassembling, we’ll be using plain old `gdb`, but you
 may use `radare2`, IDA or anything else, really. All of which can be
 trivially installed.
 
+And for the sake of simplicity, disable ASLR:
+
+```shell
+$ echo 0 > /proc/sys/kernel/randomize_va_space
+```
+
 Finally, the binary we’ll be using in this exercise is [Billy Ellis’](https://twitter.com/bellis1000)
 [roplevel2](/static/files/roplevel2.c). 
 
@@ -69,7 +75,7 @@ that should put things into perspective.
 ### Exploring our binary
 
 Start by running it, and entering any arbitrary string. On entering a fairly
-large string, say, “AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA”, we
+large string, say, “A” × 20, we
 see a segmentation fault occur.
 
 ![string and segfault](/static/img/string_segfault.png)
@@ -105,6 +111,108 @@ Moving on to the disassembly of the `winner` function:
 
 ![gdb winner disassembly](/static/img/gdb_disas_winner.png)
 
+Here, we see a calls to `puts()`, `system()` and finally, `exit()`.
+So our end goal here is to, quite obviously, execute code via the `system()`
+function.
+
+Now that we have an overview of what’s in the binary, let’s formulate a method
+of exploitation by messing around with inputs.
+
+### Messing around with inputs :^)
+
+Back to `gdb`, hit `r` to run and pass in a patterned input, like in the
+screenshot.
+
+![gdb info reg post segfault](/static/img/gdb_info_reg_segfault.png)
+
+We hit a segfault because of invalid memory at address `0x46464646`. Notice
+the `pc` has been overwritten with our input.
+So we smashed the stack alright, but more importantly, it’s at the letter ‘F’.
+
+Since we know the offset at which the `pc` gets overwritten, we can now
+control program execution flow. Let’s try jumping to the `winner` function.
+
+Disassemble `winner` again using `disas winner` and note down the offset
+of the second instruction — `add r11, sp, #4`. 
+For this, we’ll use Python to print out input string replacing `FFFF` with
+the address of `winner`. Note the endianness.
+
+```shell
+$ python -c 'print("AAAABBBBCCCCDDDDEEEE\x28\x05\x01\x00")' | ./rop2
+```
+
+![jump to winner](/static/img/python_winner_jump.png)
+
+The reason we don’t jump to the first instruction is because we want to control the stack
+ourselves. If we allow `push {rll, lr}` (first instruction) to occur, the program will `pop`
+those out after `winner` is done executing and we will no longer control 
+where it jumps to.
+
+So that didn’t do much, just prints out a string “Nothing much here...”. 
+But it _does_ however, contain `system()`. Which somehow needs to be populated with an argument
+to do what we want (run a command, execute a shell, etc.).
+
+To do that, we’ll follow a multi-step process:
+1. Jump to the address of `gadget`, again the 2nd instruction. This will `pop` `r0` and `pc`.
+2. Push our command to be executed, say “`/bin/sh`” onto the stack. This will go into
+`r0`.
+3. Then, push the address of `system()`. And this will go into `pc`.
+
+The pseudo-code is something like this:
+```
+string = AAAABBBBCCCCDDDDEEEE
+gadget = # addr of gadget
+binsh  = # addr of /bin/sh
+system = # addr of system()
+
+print(string + gadget + binsh + system)
+```
+Clean and mean.
 
 
+### The exploit
 
+To write the exploit, we’ll use Python and the absolute godsend of a library — `struct`.
+It allows us to pack the bytes of addresses to the endianness of our choice.
+It probably does a lot more, but who cares.
+
+Let’s start by fetching the address of `/bin/sh`. In `gdb`, set a breakpoint
+at `main`, hit `r` to run, and search the entire address space for the string “`/bin/sh`”:
+
+
+```
+(gdb) find &system, +9999999, "/bin/sh"
+```
+![gdb finding /bin/sh](/static/img/gdb_find_binsh.png)
+
+One hit at `0xb6f85588`. The addresses of `gadget` and `system()` can be
+found from the disassmblies from earlier. Here’s the final exploit code:
+```python
+import struct
+
+binsh = struct.pack("I", 0xb6f85588)
+string = "AAAABBBBCCCCDDDDEEEE"
+gadget = struct.pack("I", 0x00010550)
+system = struct.pack("I", 0x00010538)
+
+print(string + gadget + binsh + system_pc)
+
+```
+Honestly, not too far off from our pseudo-code :)
+
+Let's see it in action:
+
+![the shell!](/static/img/the_shell.png)
+
+Notice that it doesn’t work the first time, and this is because `/bin/sh` terminates
+when the pipe closes, since there’s no input coming in from STDIN.
+To get around this, we use `cat(1)` which allows us to relay input via `cat`
+to the shell. Nifty trick.
+
+### Conclusion
+
+This was a fairly basic challenge, with everything laid out conviniently. 
+Actual ropchaining is a little more involved, with a lot more gadgets to be chained
+to acheive code execution.
+
+Hopefully, I’ll get around to writing about heap exploitation on ARM too. That’s all for now.

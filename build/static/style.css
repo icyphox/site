@@ -78,14 +78,21 @@ pre {
   padding: 10px;
 }
 
-pre, code {
+pre, pre code {
     background: #041b1e;
+    color: white;
     word-wrap: break-word;
     overflow-x: auto;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
+}
+
+code {
+    color: cyan;
+    background: #041b1e;
+    padding: 1px;
 }
 
 .logo {
