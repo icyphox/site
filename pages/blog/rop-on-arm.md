@@ -211,7 +211,7 @@ to the shell. Nifty trick.
 
 ### Conclusion
 
-This was a fairly basic challenge, with everything laid out conviniently. 
+This was a fairly basic challenge, with everything laid out conveniently. 
 Actual ropchaining is a little more involved, with a lot more gadgets to be chained
 to acheive code execution.
 
