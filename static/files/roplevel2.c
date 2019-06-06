@@ -3,10 +3,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-char str1[] = "uname -a";
-char str2[] = "touch pwned.txt";
-char str3[] = "ls -sail";
-
 void winner(){
     printf("Nothing interesting here...\n");
     system("# this does nothing...");
