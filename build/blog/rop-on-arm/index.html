@@ -181,11 +181,14 @@ where it jumps to.</p>
 But it <em>does</em> however, contain <code>system()</code>. Which somehow needs to be populated with an argument
 to do what we want (run a command, execute a shell, etc.).</p>
 
-<p>To do that, we’ll follow a multi-step process:
-1. Jump to the address of <code>gadget</code>, again the 2nd instruction. This will <code>pop</code> <code>r0</code> and <code>pc</code>.
-2. Push our command to be executed, say “<code>/bin/sh</code>” onto the stack. This will go into
-<code>r0</code>.
-3. Then, push the address of <code>system()</code>. And this will go into <code>pc</code>.</p>
+<p>To do that, we’ll follow a multi-step process: </p>
+
+<ol>
+<li>Jump to the address of <code>gadget</code>, again the 2nd instruction. This will <code>pop</code> <code>r0</code> and <code>pc</code>.</li>
+<li>Push our command to be executed, say “<code>/bin/sh</code>” onto the stack. This will go into
+<code>r0</code>.</li>
+<li>Then, push the address of <code>system()</code>. And this will go into <code>pc</code>.</li>
+</ol>
 
 <p>The pseudo-code is something like this:</p>
 
