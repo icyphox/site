@@ -134,7 +134,7 @@ control program execution flow. Let’s try jumping to the `winner` function.
 
 Disassemble `winner` again using `disas winner` and note down the offset
 of the second instruction — `add r11, sp, #4`. 
-For this, we’ll use Python to print out input string replacing `FFFF` with
+For this, we’ll use Python to print our input string replacing `FFFF` with
 the address of `winner`. Note the endianness.
 
 ```shell
@@ -196,18 +196,18 @@ string = "AAAABBBBCCCCDDDDEEEE"
 gadget = struct.pack("I", 0x00010550)
 system = struct.pack("I", 0x00010538)
 
-print(string + gadget + binsh + system_pc)
+print(string + gadget + binsh + system)
 
 ```
 Honestly, not too far off from our pseudo-code :)
 
-Let's see it in action:
+Let’s see it in action:
 
 ![the shell!](/static/img/the_shell.png)
 
 Notice that it doesn’t work the first time, and this is because `/bin/sh` terminates
 when the pipe closes, since there’s no input coming in from STDIN.
-To get around this, we use `cat(1)` which allows us to relay input via `cat`
+To get around this, we use `cat(1)` which allows us to relay input through it
 to the shell. Nifty trick.
 
 ### Conclusion

