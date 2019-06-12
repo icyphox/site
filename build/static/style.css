@@ -27,7 +27,7 @@ body {
 
 .container-text {
   position: absolute;
-	overflow-y: auto;
+	/*overflow-y: auto;*/
 	overflow-x: hidden;
 	top: 0;
 	bottom: 0;
