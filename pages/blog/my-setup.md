@@ -26,18 +26,21 @@ Great pair of headphones, although the ear cups need replacing.
 
 ### And the software
 
-My distro of choice for the past ~1 year has been [elementary OS](https://elementary.io). I used to be an Arch Linux elitist, complete with an esoteric
-window manager, all riced. I now use whatever JustWorks™. If you want, you can dig through my old configs at my [dotfiles](https://github.com/icyphox/dotfiles) repo. 
+<del>My distro of choice for the past ~1 year has been [elementary OS](https://elementary.io). I used to be an Arch Linux elitist, complete with an esoteric
+window manager, all riced. I now use whatever JustWorks™.</del>
 
-Here’s a screenshot of my desktop. It’s stock Pantheon with my cool terminal tweaks, which I’ll talk about below.
+**Update**: As of June 2019, I've switched over to a vanilla Debian 9 Stretch (testing) install,
+running [i3](https://i3wm.org) as my window manager. If you want, you can dig through my configs at my [dotfiles](https://github.com/icyphox/dotfiles) repo. 
 
-![scrot](https://x.icyphox.sh/RT-2W.png)
+Here’s a (riced) screenshot of my desktop. 
+
+![scrot](https://i.redd.it/jk574gworp331.png)
 
 Most of my work is done in either the browser, or the terminal.
 My shell is pure [zsh](http://www.zsh.org), as in no plugin frameworks. It’s customized using built-in zsh functions. Yes, you don’t actually need
 a framework. It’s useless bloat. The prompt itself is generated using a framework I built in [Nim](https://nim-lang.org) — [nicy](https://github.com/icyphox/nicy).
 My primary text editor is [nvim](https://neovim.org). Again, all configs in my dotfiles repo linked above.
-I manage all my passwords using [pass(1)](https://passwordstore.org).
+I manage all my passwords using [pass(1)](https://passwordstore.org), and I use [rofi-pass](https://github.com/carnager/rofi-pass) to access them via `rofi`.
 
 Most of my security tooling is typically run via a Kali Linux docker container. This is convenient for many reasons, keeps your global namespace
 clean and a single command to drop into a Kali shell.
