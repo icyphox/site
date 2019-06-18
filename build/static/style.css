@@ -161,6 +161,11 @@ img {
   max-width: 720px;
 }
 
+footer img {
+  all: initial;
+  * { all: unset; }
+}
+
 h1, h2, h3 {
   font-weight: normal;
 }
