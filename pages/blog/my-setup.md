@@ -29,7 +29,7 @@ Great pair of headphones, although the ear cups need replacing.
 <del>My distro of choice for the past ~1 year has been [elementary OS](https://elementary.io). I used to be an Arch Linux elitist, complete with an esoteric
 window manager, all riced. I now use whatever JustWorks™.</del>
 
-**Update**: As of June 2019, I've switched over to a vanilla Debian 9 Stretch (testing) install,
+**Update**: As of June 2019, I've switched over to a vanilla Debian 9 Stretch install,
 running [i3](https://i3wm.org) as my window manager. If you want, you can dig through my configs at my [dotfiles](https://github.com/icyphox/dotfiles) repo. 
 
 Here’s a (riced) screenshot of my desktop. 
