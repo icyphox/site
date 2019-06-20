@@ -304,6 +304,8 @@ And this looks like our `strcmp()`
 
 I’m not sure why it uses `puts` here? I might be missing something; perhaps `printf` calls `puts`. I could be wrong. I also confirmed with radare2 that those locations are actually the strings “haha yes!” and “nah dude”.
 
+**Update**: It's because of compiler optimization. A `printf()` (in this case) is seen as a bit overkill, and hence gets simplified to a `puts()`.
+
 ### Conclusion
 
 Wew, that took quite some time. But we’re done. If you’re a beginner, you might find this extremely confusing, or probably didn’t even understand what was going on. And that’s okay. Building an intuition for reading and grokking disassembly comes with practice. I’m no good at it either.
