@@ -307,6 +307,8 @@ malloc 0x680
 
 <p>I’m not sure why it uses <code>puts</code> here? I might be missing something; perhaps <code>printf</code> calls <code>puts</code>. I could be wrong. I also confirmed with radare2 that those locations are actually the strings “haha yes!” and “nah dude”.</p>
 
+<p><strong>Update</strong>: It's because of compiler optimization. A <code>printf()</code> (in this case) is seen as a bit overkill, and hence gets simplified to a <code>puts()</code>.</p>
+
 <h3>Conclusion</h3>
 
 <p>Wew, that took quite some time. But we’re done. If you’re a beginner, you might find this extremely confusing, or probably didn’t even understand what was going on. And that’s okay. Building an intuition for reading and grokking disassembly comes with practice. I’m no good at it either.</p>
