@@ -1,1 +1,1 @@
-<img src="/static/icynobg.svg" class="logo">
+<img src=/static/icynobg.svg class=logo>
