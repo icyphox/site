@@ -31,15 +31,15 @@
    <div class="content">
     <div align="left">
       <p> 8 Feb, 2019 </p>
-      <h1>Python for Reverse Engineering 1: ELF Binaries</h1>
+      <h1 id="python-for-reverse-engineering-1-elf-binaries">Python for Reverse Engineering 1: ELF Binaries</h1>
 
-<h2>Building your own disassembly tooling for — that’s right — fun and profit</h2>
+<h2 id="building-your-own-disassembly-tooling-for-thats-right-fun-and-profit">Building your own disassembly tooling for — that’s right — fun and profit</h2>
 
 <p>While solving complex reversing challenges, we often use established tools like radare2 or IDA for disassembling and debugging. But there are times when you need to dig in a little deeper and understand how things work under the hood.</p>
 
 <p>Rolling your own disassembly scripts can be immensely helpful when it comes to automating certain processes, and eventually build your own homebrew reversing toolchain of sorts. At least, that’s what I’m attempting anyway.</p>
 
-<h3>Setup</h3>
+<h3 id="setup">Setup</h3>
 
 <p>As the title suggests, you’re going to need a Python 3 interpreter before
 anything else. Once you’ve confirmed beyond reasonable doubt that you do,
@@ -83,7 +83,7 @@ challenge.</p>
 <div class="codehilite"><pre><span></span><code><span class="gp">$</span> gcc chall.c -o chall.elf
 </code></pre></div>
 
-<h3>Scripting</h3>
+<h3 id="scripting">Scripting</h3>
 
 <p>For starters, let’s look at the different sections present in the binary.</p>
 
@@ -216,7 +216,7 @@ challenge.</p>
 <span class="go">malloc 0x200fd0</span>
 </code></pre></div>
 
-<p>Remember the function call at <code>0x200fe0</code> from earlier? Yep, so that was a call to the well known <code>__libc_start_main</code>. Again, according to <a href="http://refspecs.linuxbase.org/LSB_3.1.0/LSB-generic/LSB-generic/baselib---libc-start-main-.html">linuxbase.org</a></p>
+<p>Remember the function call at <code>0x200fe0</code> from earlier? Yep, so that was a call to the well known <code>__libc_start_main</code>. Again, according to <a href="http://refspecs.linuxbase.org/LSB_3.1.0/LSB-generic/LSB-generic/baselib&#8212;libc-start-main-.html">linuxbase.org</a></p>
 
 <blockquote>
   <p>The <code>__libc_start_main()</code> function shall perform any necessary initialization of the execution environment, call the <em>main</em> function with appropriate arguments, and handle the return from <code>main()</code>. If the <code>main()</code> function returns, the return value shall be passed to the <code>exit()</code> function.</p>
@@ -307,9 +307,9 @@ malloc 0x680
 
 <p>I’m not sure why it uses <code>puts</code> here? I might be missing something; perhaps <code>printf</code> calls <code>puts</code>. I could be wrong. I also confirmed with radare2 that those locations are actually the strings “haha yes!” and “nah dude”.</p>
 
-<p><strong>Update</strong>: It's because of compiler optimization. A <code>printf()</code> (in this case) is seen as a bit overkill, and hence gets simplified to a <code>puts()</code>.</p>
+<p><strong>Update</strong>: It&#8217;s because of compiler optimization. A <code>printf()</code> (in this case) is seen as a bit overkill, and hence gets simplified to a <code>puts()</code>.</p>
 
-<h3>Conclusion</h3>
+<h3 id="conclusion">Conclusion</h3>
 
 <p>Wew, that took quite some time. But we’re done. If you’re a beginner, you might find this extremely confusing, or probably didn’t even understand what was going on. And that’s okay. Building an intuition for reading and grokking disassembly comes with practice. I’m no good at it either.</p>
 
@@ -321,5 +321,3 @@ malloc 0x680
    </body>
   </div>
 </html>
-<script src="/static/smartquotes.js"></script>
-<script>smartquotes()</script>

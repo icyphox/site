@@ -31,9 +31,9 @@
    <div class="content">
     <div align="left">
       <p> 05 June, 2019 </p>
-      <h1>Return Oriented Programming on ARM (32-bit)</h1>
+      <h1 id="return-oriented-programming-on-arm-32-bit">Return Oriented Programming on ARM (32-bit)</h1>
 
-<h2>Making stack-based exploitation great again!</h2>
+<h2 id="making-stack-based-exploitation-great-again">Making stack-based exploitation great again!</h2>
 
 <p>Before we start <em>anything</em>, you’re expected to know the basics of ARM
 assembly to follow along. I highly recommend
@@ -41,7 +41,7 @@ assembly to follow along. I highly recommend
 Basics</a>. Once you’re
 comfortable with it, proceed with the next bit — environment setup.</p>
 
-<h3>Setup</h3>
+<h3 id="setup">Setup</h3>
 
 <p>Since we’re working with the ARM architecture, there are two options to go
 forth with: </p>
@@ -72,7 +72,7 @@ trivially installed.</p>
 
 <p>With that out of the way, here’s a quick run down of what ROP actually is.</p>
 
-<h3>A primer on ROP</h3>
+<h3 id="a-primer-on-rop">A primer on ROP</h3>
 
 <p>ROP or Return Oriented Programming is a modern exploitation technique that’s
 used to bypass protections like the <strong>NX bit</strong> (no-execute bit) and <strong>code sigining</strong>.
@@ -102,7 +102,7 @@ Check it out, it might be just what you needed for that “aha!” moment :)</p>
 <p>Still don’t get it? Don’t fret, we’ll look at <em>actual</em> exploit code in a bit and hopefully
 that should put things into perspective.</p>
 
-<h3>Exploring our binary</h3>
+<h3 id="exploring-our-binary">Exploring our binary</h3>
 
 <p>Start by running it, and entering any arbitrary string. On entering a fairly
 large string, say, “A” × 20, we
@@ -148,7 +148,7 @@ function.</p>
 <p>Now that we have an overview of what’s in the binary, let’s formulate a method
 of exploitation by messing around with inputs.</p>
 
-<h3>Messing around with inputs :^)</h3>
+<h3 id="messing-around-with-inputs">Messing around with inputs :^)</h3>
 
 <p>Back to <code>gdb</code>, hit <code>r</code> to run and pass in a patterned input, like in the
 screenshot.</p>
@@ -177,7 +177,7 @@ ourselves. If we allow <code>push {rll, lr}</code> (first instruction) to occur,
 those out after <code>winner</code> is done executing and we will no longer control 
 where it jumps to.</p>
 
-<p>So that didn’t do much, just prints out a string “Nothing much here...”. 
+<p>So that didn’t do much, just prints out a string “Nothing much here&#8230;”. 
 But it <em>does</em> however, contain <code>system()</code>. Which somehow needs to be populated with an argument
 to do what we want (run a command, execute a shell, etc.).</p>
 
@@ -202,7 +202,7 @@ print(string + gadget + binsh + system)
 
 <p>Clean and mean.</p>
 
-<h3>The exploit</h3>
+<h3 id="the-exploit">The exploit</h3>
 
 <p>To write the exploit, we’ll use Python and the absolute godsend of a library — <code>struct</code>.
 It allows us to pack the bytes of addresses to the endianness of our choice.
@@ -240,7 +240,7 @@ when the pipe closes, since there’s no input coming in from STDIN.
 To get around this, we use <code>cat(1)</code> which allows us to relay input through it
 to the shell. Nifty trick.</p>
 
-<h3>Conclusion</h3>
+<h3 id="conclusion">Conclusion</h3>
 
 <p>This was a fairly basic challenge, with everything laid out conveniently. 
 Actual ropchaining is a little more involved, with a lot more gadgets to be chained
@@ -252,5 +252,3 @@ to acheive code execution.</p>
    </body>
   </div>
 </html>
-<script src="/static/smartquotes.js"></script>
-<script>smartquotes()</script>
