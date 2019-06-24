@@ -4,7 +4,7 @@ title: About
 ---
 
 # about
-## Hi, I'm Anirudh
+## Hi, I'm Anirudh.:wq
 
 But you'll see me as [icyphox](https://www.startpage.com/do/search?query=icyphox) on the Internet. 
 I’m doing my undergrad right now, majoring in CS. My primary interest is computer security, and more specifically — **offensive security** and **digital forensics**. 
