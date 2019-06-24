@@ -8,4 +8,5 @@ Found at [icyphox.sh](https://icyphox.sh). Built using [vite](https://github.com
 
 ## License
 
-I license the entirety of my site under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). Let it be public domain.
+The entirety of the content on my site is licensed under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).
+The source code for the site is licensed under the [MIT](https://opensource.org/licenses/MIT) liceense.
