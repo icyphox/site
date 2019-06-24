@@ -117,6 +117,14 @@ code {
 	margin: 20px;
 }
 
+.muted {
+  color: gray
+}
+
+.muted a {
+  color: cyan
+}
+
 a {
 	color: gray;
 	margin: 0;
