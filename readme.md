@@ -9,4 +9,4 @@ Found at [icyphox.sh](https://icyphox.sh). Built using [vite](https://github.com
 ## License
 
 The entirety of the content on my site is licensed under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).
-The source code for the site is licensed under the [MIT](https://opensource.org/licenses/MIT) liceense.
+The source code for the site is licensed under [MIT](https://opensource.org/licenses/MIT).
