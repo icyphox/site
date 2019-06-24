@@ -4,7 +4,7 @@ title: Blog
 subtitle: A blog where security is shilled, agressively.
 ---
 
-# Posts
+# posts
 
 6 June, 2019 — [Return Oriented Programming on ARM (32-bit)](/blog/rop-on-arm)
 

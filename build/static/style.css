@@ -110,11 +110,15 @@ code {
 
 .header {
 	color: cyan;
-	top: 10px;
+	top: 30px;
+  display: inline-block;
 	position: absolute;
 	width: 100%;
-	text-align: left;
-	margin: 20px;
+	text-align: center;
+}
+
+.header a {
+  margin-right: 20px;
 }
 
 .muted {
@@ -199,6 +203,9 @@ p {
 	.right {
 		display: block;
 	}
+  .right a {
+    margin-right: 15px;
+  }
 	.right a:last-child {
 		margin-right: 0;
 	}
