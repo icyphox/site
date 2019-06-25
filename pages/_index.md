@@ -9,10 +9,11 @@ subtitle: Memeing security since forever.
 </h1>
 
 Hi! I'm Anirudh. I'm currently majoring in Computer Science and 
-I generally do computer security stuff. Lately, I've been dabbling
-with hardware and embedded security.  
+I generally do computer security stuff.  
 When I'm not breaking things, I write (pretty) bad code in the [Nim](https://nim-lang.org)
 programming language. Or Python, otherwise.  
+I enjoy using Linux systems, and I'm the kind of guy who "*rices*"
+and has his [dotfiles](https://github.com/icyphox/dotfiles) under version control.  
 I do a bunch of other things too, which you can read all about [here](/about).
 
 Want to contact me? The best way is via email, at [icyph0x@pm.me](mailto:icyph0x@pm.me)
