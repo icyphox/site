@@ -6,9 +6,11 @@ subtitle: A blog where security is shilled, agressively.
 
 # all posts
 
-6 June, 2019 — [Return Oriented Programming on ARM (32-bit)](/blog/rop-on-arm)
+2019-08-06 — [Picking the FB50 smart lock](/blog/fb50)
 
-13 May, 2019 — [My Setup](/blog/my-setup)
+2019-06-06 — [Return Oriented Programming on ARM (32-bit)](/blog/rop-on-arm)
 
-8 Feb, 2019 — [Python for Reverse Engineering #1: ELF Binaries](/blog/python-for-re-1/)
+2019-13-05 — [My Setup](/blog/my-setup)
+
+2019-02-08 — [Python for Reverse Engineering #1: ELF Binaries](/blog/python-for-re-1/)
 
