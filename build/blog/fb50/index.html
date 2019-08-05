@@ -10,17 +10,17 @@
 <meta name="HandheldFriendly" content="true">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@icyphox">
-<meta name="twitter:title" content="Picking the FB50 smart lock">
+<meta name="twitter:title" content="Picking the FB50 smart lock (CVE-2019-13143)">
 <meta name="twitter:description" content="… and lessons learnt in IoT security">
 <meta name="twitter:image" content="/static/icyphox.png">
-<meta property="og:title" content="Picking the FB50 smart lock">
+<meta property="og:title" content="Picking the FB50 smart lock (CVE-2019-13143)">
 <meta property="og:type" content="website">
 <meta property="og:description" content="… and lessons learnt in IoT security">
 <meta property="og:url" content="https://icyphox.sh">
 <meta property="og:image" content="/static/icyphox.png">
 <html>
   <title>
-    Picking the FB50 smart lock
+    Picking the FB50 smart lock (CVE-2019-13143)
   </title>
 <script src="//instant.page/1.1.0" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
 <div class="container-text">
@@ -37,7 +37,7 @@
    <div class="content">
     <div align="left">
       <p> 2019-08-05 </p>
-      <h1 id="picking-the-fb50-smart-lock">Picking the FB50 smart lock</h1>
+      <h1 id="picking-the-fb50-smart-lock-cve-2019-13143">Picking the FB50 smart lock (CVE-2019-13143)</h1>
 
 <h2 id="and-lessons-learnt-in-iot-security">… and lessons learnt in IoT security</h2>
 
@@ -47,11 +47,11 @@
 Dragon Brother Technology Co. Ltd. This lock is sold under multiple brands
 across many ecommerce sites, and has over, an estimated, 15k+ users.</p>
 
-<p>The lock pairs to a phone via bluetooth, and requires the OKLOK app from
+<p>The lock pairs to a phone via Bluetooth, and requires the OKLOK app from
 the Play/App Store to function. The app requires the user to create an
 account before further functionality is available. 
-The app facilitates the fingerprint unlock configuration on the
-lock, and unlocking from a range via bluetooth.</p>
+It also facilitates configuring the fingerprint,
+and unlocking from a range via Bluetooth.</p>
 
 <p>We had two primary attack surfaces we decided to tackle — Bluetooth (BLE)
 and the Android app.</p>
@@ -86,7 +86,7 @@ and finally arrived at a working exploit chain.</p>
 HTTP requests:</p>
 
 <ol>
-<li>Using the lock&#8217;s MAC (obtained via a simple bluetooth scan in the 
+<li>Using the lock&#8217;s MAC (obtained via a simple Bluetooth scan in the 
 vicinity), get the barcode and lock ID</li>
 <li>Using the barcode, fetch the user ID</li>
 <li>Using the lock ID and user ID, unbind the user from the lock</li>
@@ -207,6 +207,10 @@ Ilja, a cool dude I met on Telegram, noticed locks named &#8220;carlock&#8221;,
 with keys. With the IoT plague spreading, it brings in a large attack surface
 to things that were otherwise &#8220;unhackable&#8221; (try hacking a &#8220;dumb&#8221; toaster).</p>
 
+<p>The IoT security scene is rife with bugs from over 10 years ago, like
+executable stack segments<sup class="footnote-ref&#8221; id="fnref-3"><a href="#fn-3">3</a></sup>, hardcoded keys, and poor development 
+practices in general.</p>
+
 <p>Our existing threat models and scenarios have to be updated to factor 
 in these new exploitation possibilities. This also broadens the playing 
 field for cyber warfare and mass surveillance campaigns. </p>
@@ -230,6 +234,10 @@ field for cyber warfare and mass surveillance campaigns. </p>
 
 <li id="fn-2">
 <p>Thanks to Ilja Shaposhnikov (@drakylar) for bruteforcing the IDs and sharing the data dump.&#160;<a href="#fnref-2" class="footnoteBackLink" title="Jump back to footnote 2 in the text.">&#8617;</a></p>
+</li>
+
+<li id="fn-3">
+<p><a href="https://gsec.hitb.org/materials/sg2015/whitepapers/Lyon%20Yang%20-%20Advanced%20SOHO%20Router%20Exploitation.pdf">PDF</a>&#160;<a href="#fnref-3" class="footnoteBackLink" title="Jump back to footnote 3 in the text.">&#8617;</a></p>
 </li>
 </ol>
 </div>
