@@ -2,7 +2,7 @@
 template: text.html
 title: My Setup
 subtitle: My daily drivers — hardware, software and workflow
-date: 13 May, 2019
+date: 2019-05-13
 ---
 
 # My Setup

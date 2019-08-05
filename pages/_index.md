@@ -21,7 +21,7 @@ or via [Twitter](https://twitter.com/icyphox) DMs.
 
 # latest post 
 
-6 June, 2019 — [Return Oriented Programming on ARM (32-bit)](/blog/rop-on-arm)
+2019-08-05 — [Return Oriented Programming on ARM (32-bit)](/blog/rop-on-arm)
 
 ([see all](/blog))
 

