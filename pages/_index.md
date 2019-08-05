@@ -21,7 +21,7 @@ or via [Twitter](https://twitter.com/icyphox) DMs.
 
 # latest post 
 
-2019-08-05 — [Picking the FB50 smart lock](/blog/fb50)
+2019-08-05 — [Picking the FB50 smart lock (CVE-2019-13143)](/blog/fb50)
 
 ([see all](/blog))
 
