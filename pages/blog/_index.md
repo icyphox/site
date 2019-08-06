@@ -4,7 +4,8 @@ title: Blog
 subtitle: A blog where security is shilled, agressively.
 ---
 
-# all posts
+# all posts ([rss](/blog/feed.xml))
+
 
 2019-08-06 — [Picking the FB50 smart lock (CVE-2019-13143)](/blog/fb50)
 
