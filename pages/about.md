@@ -41,5 +41,5 @@ The site itself is built using my own static site generator — [vite](https://g
 This site uses no cookies, and I'm generally not interested in any form of tracking/analytics. However, my DNS and SSL provider, CloudFlare,
 does collect basic data like site hits and demographics. I've been meaning to get rid of it, but laziness has gotten the best of me. 
 
-The entirety of the content on my site is licensed under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).
-The source code for the site is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
+The entirety of the content on my site is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The source code for the site is licensed under [MIT](https://opensource.org/licenses/MIT).

@@ -181,6 +181,11 @@ footer img {
   * { all: unset; }
 }
 
+footer a:hover {
+  all: initial;
+  * { all: unset; }
+}
+
 h1, h2, h3 {
   font-weight: normal;
 }
