@@ -2,33 +2,72 @@
 # generate an rss item
 
 import html
-from markdown2 import markdown_path
+from markdown2 import markdown
 import sys
-import datetime
 import os
+from collections import namedtuple
+import re
+import arrow
+import operator
+import warnings
 
-try:
-    mdfile = sys.argv[1]
-except IndexError:
-    print('error: specify path to markdown file')
-    sys.exit(-1)
-url =  os.path.splitext(mdfile)[0]
-rendered = markdown_path(mdfile, extras=['metadata',
-        'fenced-code-blocks', 'header-ids', 'footnotes', 'smarty-pants'])
-meta = rendered.metadata
-esc = html.escape(rendered)
+warnings.simplefilter("ignore", arrow.factory.ArrowParseWarning)
+items_raw = []
+from lxml import etree as ET
 
-# time stuff
-dt = datetime.datetime.strptime(meta['date'], '%Y-%m-%d').date()
-rfc822 = dt.strftime("%a, %d %b %Y %H:%M:%S %z") + '+0000'
 
-item = f"""<item>
-      <title>{meta['title']}</title>
-      <link>https://icyphox.sh/blog/{url}</link>
-      <description>{esc}</description>
-      <pubDate>{rfc822}</pubDate>
-      <guid>https://icyphox.sh/blog/{url}/</guid>
-</item>
-"""
+def convert_date(d):
+    return arrow.get(d, "YYYY-MM-DD").format("ddd, DD MMM YYYY HH:mm:ss Z")
 
-print(item)
+
+PREFIX_URL = "https://icyphox.sh/blog/"
+link_extractor = re.compile("\/([^\/]*)\.md$")
+
+def generate_node(rendered, path):
+
+    item = ET.Element("item")
+    title = ET.SubElement(item, "title")
+    title.text = rendered.metadata["title"]
+    description = ET.SubElement(item, "description")
+    description.text = ET.CDATA(str(rendered))
+    link = ET.SubElement(item, "link")
+    link.text = PREFIX_URL + link_extractor.search(path).group(1)
+    pubData = ET.SubElement(item, "pubDate")
+    pubData.text = convert_date(rendered.metadata["date"])
+    guid = ET.SubElement(item, "guid")
+    guid.text = PREFIX_URL + link_extractor.search(path).group(1)
+
+    return item
+
+
+def parse_article(path):
+    with open(path) as f:
+        rendered = markdown(
+            f.read(),
+            extras=[
+                "metadata",
+                "fenced-code-blocks",
+                "header-ids",
+                "footnotes",
+                "smarty-pants",
+            ],
+        )
+        return (arrow.get(rendered.metadata["date"]), rendered, path)
+
+
+tree = ET.parse(os.path.join("templates", "feed.xml"))
+articles = []
+
+for f in os.listdir("pages/blog/"):
+    if f not in ["_index.md", "feed.xml"]:
+        articles.append(parse_article(os.path.join("pages/blog", f)))
+
+articles.sort(key=operator.itemgetter(0), reverse=True)
+chan = tree.find("channel")
+
+for article in articles:
+    chan.append(generate_node(article[1], article[2]))
+
+out = ET.tostring(tree, encoding="unicode")
+with open("pages/blog/feed.xml", "w") as f:
+    f.write(out)
