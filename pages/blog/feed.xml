@@ -11,11 +11,7 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Picking the FB50 smart lock (CVE-2019-13143)</title><description><![CDATA[<h1 id="picking-the-fb50-smart-lock-cve-2019-13143">Picking the FB50 smart lock (CVE-2019-13143)</h1>
-
-<h2 id="and-lessons-learnt-in-iot-security">… and lessons learnt in IoT security</h2>
-
-<p>(<em>originally posted at <a href="http://blog.securelayer7.net/fb50-smart-lock-vulnerability-disclosure">SecureLayer7&#8217;s Blog</a>, with my edits</em>)</p>
+    <item><title>Picking the FB50 smart lock (CVE-2019-13143)</title><description><![CDATA[<p>(<em>originally posted at <a href="http://blog.securelayer7.net/fb50-smart-lock-vulnerability-disclosure">SecureLayer7&#8217;s Blog</a>, with my edits</em>)</p>
 
 <h3 id="the-lock">The lock</h3>
 
@@ -217,11 +213,7 @@ field for cyber warfare and mass surveillance campaigns. </p>
 </li>
 </ol>
 </div>
-]]></description><link>https://icyphox.sh/blog/fb50</link><pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/fb50</guid></item><item><title>Return Oriented Programming on ARM (32-bit)</title><description><![CDATA[<h1 id="return-oriented-programming-on-arm-32-bit">Return Oriented Programming on ARM (32-bit)</h1>
-
-<h2 id="making-stack-based-exploitation-great-again">Making stack-based exploitation great again!</h2>
-
-<p>Before we start <em>anything</em>, you’re expected to know the basics of ARM
+]]></description><link>https://icyphox.sh/blog/fb50</link><pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/fb50</guid></item><item><title>Return Oriented Programming on ARM (32-bit)</title><description><![CDATA[<p>Before we start <em>anything</em>, you’re expected to know the basics of ARM
 assembly to follow along. I highly recommend
 <a href="https://twitter.com/fox0x01">Azeria’s</a> series on <a href="https://azeria-labs.com/writing-arm-assembly-part-1/">ARM Assembly
 Basics</a>. Once you’re
@@ -434,11 +426,7 @@ Actual ropchaining is a little more involved, with a lot more gadgets to be chai
 to acheive code execution.</p>
 
 <p>Hopefully, I’ll get around to writing about heap exploitation on ARM too. That’s all for now.</p>
-]]></description><link>https://icyphox.sh/blog/rop-on-arm</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/rop-on-arm</guid></item><item><title>My Setup</title><description><![CDATA[<h1 id="my-setup">My Setup</h1>
-
-<h2 id="my-daily-drivers-hardware-and-software">My daily drivers — hardware and software</h2>
-
-<h3 id="hardware">Hardware</h3>
+]]></description><link>https://icyphox.sh/blog/rop-on-arm</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/rop-on-arm</guid></item><item><title>My Setup</title><description><![CDATA[<h3 id="hardware">Hardware</h3>
 
 <p>The only computer I have with me is my <a href="https://store.hp.com/us/en/mdp/laptops/envy-13">HP Envy 13 (2018)</a> (my model looks a little different). It’s a 13” ultrabook, with an i5 8250u,
 8 gigs of RAM and a 256 GB NVMe SSD. It’s a very comfy machine that does everything I need it to.</p>
@@ -479,11 +467,7 @@ clean and a single command to drop into a Kali shell.</p>
 The same box also serves as my IRC bouncer and OpenVPN (TCP), which I tunnel via SSH running on 443. Campus firewall woes. </p>
 
 <p>I plan on converting my desktop back at home into a homeserver setup. Soon™.</p>
-]]></description><link>https://icyphox.sh/blog/my-setup</link><pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/my-setup</guid></item><item><title>Python for Reverse Engineering #1: ELF Binaries</title><description><![CDATA[<h1 id="python-for-reverse-engineering-1-elf-binaries">Python for Reverse Engineering 1: ELF Binaries</h1>
-
-<h2 id="building-your-own-disassembly-tooling-for-thats-right-fun-and-profit">Building your own disassembly tooling for — that’s right — fun and profit</h2>
-
-<p>While solving complex reversing challenges, we often use established tools like radare2 or IDA for disassembling and debugging. But there are times when you need to dig in a little deeper and understand how things work under the hood.</p>
+]]></description><link>https://icyphox.sh/blog/my-setup</link><pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/my-setup</guid></item><item><title>Python for Reverse Engineering #1: ELF Binaries</title><description><![CDATA[<p>While solving complex reversing challenges, we often use established tools like radare2 or IDA for disassembling and debugging. But there are times when you need to dig in a little deeper and understand how things work under the hood.</p>
 
 <p>Rolling your own disassembly scripts can be immensely helpful when it comes to automating certain processes, and eventually build your own homebrew reversing toolchain of sorts. At least, that’s what I’m attempting anyway.</p>
 
