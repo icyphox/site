@@ -5,9 +5,6 @@ subtitle: My daily drivers — hardware, software and workflow
 date: 2019-05-13
 ---
 
-# My Setup
-## My daily drivers — hardware and software
-
 ### Hardware
 
 The only computer I have with me is my [HP Envy 13 (2018)](https://store.hp.com/us/en/mdp/laptops/envy-13) (my model looks a little different). It’s a 13” ultrabook, with an i5 8250u,

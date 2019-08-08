@@ -5,9 +5,6 @@ subtitle: Making stack-based exploitation great again!
 date: 2019-06-06
 ---
 
-# Return Oriented Programming on ARM (32-bit)
-## Making stack-based exploitation great again!
-
 Before we start _anything_, you’re expected to know the basics of ARM
 assembly to follow along. I highly recommend
 [Azeria’s](https://twitter.com/fox0x01) series on [ARM Assembly
