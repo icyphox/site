@@ -5,10 +5,6 @@ subtitle: Building your own disassembly tooling for — that’s right —
 date: 2019-02-08
 ---
 
-# Python for Reverse Engineering 1: ELF Binaries
-
-## Building your own disassembly tooling for — that’s right — fun and profit
-
 While solving complex reversing challenges, we often use established tools like radare2 or IDA for disassembling and debugging. But there are times when you need to dig in a little deeper and understand how things work under the hood.
 
 Rolling your own disassembly scripts can be immensely helpful when it comes to automating certain processes, and eventually build your own homebrew reversing toolchain of sorts. At least, that’s what I’m attempting anyway.
