@@ -2,7 +2,7 @@
   <channel>
     <title>icyphox's blog</title>
 	<link>https://icyphox.sh/blog/</link>
-    <description>icyphox's blog</description>
+    <description>Security, forensics and privacy.</description>
 	<atom:link href="https://icyphox.sh/blog/feed.xml" rel="self" type="application/xml"/>
     <image>
 		<title>icyphox logo</title>
@@ -41,7 +41,7 @@ around 4 &#8220;unlocks&#8221; from the Android phone, as seen in the screenshot
 <p><img src="/static/img/bt_ws_value.png" alt="wireshark write req" /></p>
 
 <p>We attempted replaying these requests using <code>gattool</code> and <code>gattacker</code>,
-but that didn&#8217;t pan out, since the value being written was encrypted.<sup class="footnote-ref&#8221; id="fnref-1"><a href="#fn-1">1</a></sup></p>
+but that didn&#8217;t pan out, since the value being written was encrypted.<sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup></p>
 
 <h3 id="via-the-android-app">Via the Android app</h3>
 
@@ -153,7 +153,7 @@ their lock. They can&#8217;t even &#8220;rebind&#8221; to get it back, since the
 
 <p>To add to that, roughly 15,000 user accounts&#8217; info are exposed via IDOR.
 Ilja, a cool dude I met on Telegram, noticed locks named &#8220;carlock&#8221;, 
-&#8220;garage&#8221;, &#8220;MainDoor&#8221;, etc.<sup class="footnote-ref&#8221; id="fnref-2"><a href="#fn-2">2</a></sup> This is terrifying.</p>
+&#8220;garage&#8221;, &#8220;MainDoor&#8221;, etc.<sup class="footnote-ref" id="fnref-2"><a href="#fn-2">2</a></sup> This is terrifying.</p>
 
 <p><em>shudders</em></p>
 
@@ -180,7 +180,7 @@ with keys. With the IoT plague spreading, it brings in a large attack surface
 to things that were otherwise &#8220;unhackable&#8221; (try hacking a &#8220;dumb&#8221; toaster).</p>
 
 <p>The IoT security scene is rife with bugs from over 10 years ago, like
-executable stack segments<sup class="footnote-ref&#8221; id="fnref-3"><a href="#fn-3">3</a></sup>, hardcoded keys, and poor development 
+executable stack segments<sup class="footnote-ref" id="fnref-3"><a href="#fn-3">3</a></sup>, hardcoded keys, and poor development 
 practices in general.</p>
 
 <p>Our existing threat models and scenarios have to be updated to factor 
