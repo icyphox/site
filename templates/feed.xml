@@ -3,7 +3,7 @@
   <channel>
     <title>icyphox's blog</title>
 	<link>https://icyphox.sh/blog/</link>
-    <description>icyphox's blog</description>
+    <description>Security, forensics and privacy.</description>
 	<atom:link href="https://icyphox.sh/blog/feed.xml" rel="self" type="application/xml"/>
     <image>
 		<title>icyphox logo</title>

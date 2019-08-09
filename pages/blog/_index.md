@@ -1,7 +1,7 @@
 ---
 template: blogindex.html
 title: Blog
-subtitle: A blog where security is shilled, agressively.
+subtitle: Security, forensics and privacy.
 ---
 
 # all posts ([rss](/blog/feed.xml))
