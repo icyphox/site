@@ -201,6 +201,10 @@ p {
   bottom: 2em;
 }
 
+::selection {
+  background-color: cyan;
+  color: #021012;
+}
 
 @media only screen and (max-width: 70em) {
 	.left {
