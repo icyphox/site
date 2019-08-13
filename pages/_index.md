@@ -27,7 +27,7 @@ or via [Twitter](https://twitter.com/icyphox) DMs.
 
 # currently reading
 
-[By Way of Deception: The Making of a Mossad Officer](https://www.amazon.in/Way-Deception-Making-Mossad-Officer/dp/0971759502)  
-*still reading* | by **Victor Ostrovsky** | started **17th July, 2019**
+[The Undending Game: A Former R&AW Chief's Insights into Espionage](https://www.amazon.in/Unending-Game-Former-Insights-Espionage/dp/0670091502)  
+*still reading* | by **Vikram Sood** | started **8th August, 2019** 
 
 ([see all](/reading))
