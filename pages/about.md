@@ -30,7 +30,7 @@ Apart from the links above, you can also find me on
 ## Contact
 
 My DMs on [Twitter](https://twitter.com/icyphox) are open, so feel free to slide into them.
-Don’t use Twitter? Shoot me a plain-text [email](mailto:icyph0x@pm.me). If it’s something secret, here’s my [Keybase](https://keybase.io/icyphox).
+Don’t use Twitter? Shoot me a plain-text [email](mailto:x@icyphox.sh). If it’s something secret, here’s my [Keybase](https://keybase.io/icyphox).
 
 Want to **hire me**? I’m down for freelance security work. Here’s my [résumé](https://x.icyphox.sh/resume.pdf).
 
