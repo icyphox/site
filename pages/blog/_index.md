@@ -6,6 +6,7 @@ subtitle: Security, forensics and privacy.
 
 # all posts ([rss](/blog/feed.xml))
 
+2019-08-15 — [Setting up my personal mailserver](/blog/mailserver)
 
 2019-08-06 — [Picking the FB50 smart lock (CVE-2019-13143)](/blog/fb50)
 
