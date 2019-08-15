@@ -130,8 +130,12 @@ rejected by Tutanota&#8217;s servers.</p>
 <p>Yet another hurdle &#8212; SSL/TLS certificates. This isn&#8217;t very properly
 documented, unless you read through the <a href="https://github.com/tomav/docker-mailserver/wiki/Installation-Examples">wiki</a>
 and look at an example. In short, install <code>certbot</code>, have port 80 free,
-and run <code>certbot certonly --standalone -d mail.domain.tld</code>. Once that&#8217;s 
-done, edit the <code>docker-compose.yml</code> file to mount <code>/etc/letsencrypt</code> in 
+and run </p>
+
+<div class="codehilite"><pre><span></span><code>$ certbot certonly --standalone -d mail.domain.tld
+</code></pre></div>
+
+<p>Once that&#8217;s done, edit the <code>docker-compose.yml</code> file to mount <code>/etc/letsencrypt</code> in 
 the container, something like so:</p>
 
 <div class="codehilite"><pre><span></span><code><span class="nn">...</span>
