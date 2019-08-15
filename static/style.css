@@ -201,6 +201,24 @@ p {
   bottom: 2em;
 }
 
+blockquote {
+  font-style: italic;
+  color: gray;
+}
+
+blockquote::before {
+  content: "\“";
+  font-size: 40px;
+  font-weight: bold;
+}
+
+blockquote::after {
+  content: "\”";
+  font-size: 40px;
+  font-weight: bold;
+  
+}
+
 ::selection {
   background-color: cyan;
   color: #021012;
