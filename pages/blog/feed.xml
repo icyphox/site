@@ -11,7 +11,171 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Picking the FB50 smart lock (CVE-2019-13143)</title><description><![CDATA[<p>(<em>originally posted at <a href="http://blog.securelayer7.net/fb50-smart-lock-vulnerability-disclosure">SecureLayer7&#8217;s Blog</a>, with my edits</em>)</p>
+    <item><title>Setting up my personal mailserver</title><description><![CDATA[<p>A mailserver was a long time coming. I&#8217;d made an attempt at setting one up
+around ~4 years ago (ish), and IIRC, I quit when it came to DNS. And
+I almost did this time too.<sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup></p>
+
+<p>For this attempt, I wanted a simpler approach. I recall how terribly
+confusing Dovecot &amp; Postfix were to configure and hence I decided to look
+for a containerized solution, that most importantly, runs on my cheap $5 
+Digital Ocean VPS &#8212; 1 vCPU and 1 GB memory. Of which only around 500 MB
+is actually available. So yeah, <em>pretty</em> tight.</p>
+
+<h3 id="whats-available">What&#8217;s available</h3>
+
+<p>Turns out, there are quite a few of these OOTB, ready to deply solutions.
+These are the ones I came across:</p>
+
+<ul>
+<li><p><a href="https://poste.io">poste.io</a>: Based on an &#8220;open core&#8221; model. The base install is open source 
+and free (as in beer), but you&#8217;ll have to pay for the extra stuff.</p></li>
+<li><p><a href="https://mailu.io">mailu.io</a>: Free software. Draws inspiration from poste.io, 
+but ships with a web UI that I didn&#8217;t need. </p></li>
+<li><p><a href="https://mailcow.email">mailcow.email</a>: These fancy domains are getting ridiculous. But more importantly
+they need 2 GiB of RAM <em>plus</em> swap?! Nope.</p></li>
+<li><p><a href="https://mailinabox.email">Mail-in-a-Box</a>: Unlike the ones above, not a Docker-based solution but definitely worth
+a mention. It however, needs a fresh box to work with. A box with absolutely 
+nothing else on it. I can&#8217;t afford to do that.</p></li>
+<li><p><a href="https://github.com/tomav/docker-mailserver/">docker-mailserver</a>: <strong>The winner</strong>. </p></li>
+</ul>
+
+<h3 id="so-docker-mailserver">So… <code>docker-mailserver</code></h3>
+
+<p>The first thing that caught my eye in the README:</p>
+
+<blockquote>
+  <p>Recommended:</p>
+  
+  <ul>
+  <li>1 CPU</li>
+  <li>1GB RAM</li>
+  </ul>
+  
+  <p>Minimum:</p>
+  
+  <ul>
+  <li>1 CPU</li>
+  <li>512MB RAM</li>
+  </ul>
+</blockquote>
+
+<p>Fantastic, I can somehow squeeze this into my existing VPS.
+Setup was fairly simple &amp; the docs are pretty good. Especially the single
+<code>.env</code> file for configuration, which is great.
+However, I did run into a couple of hiccups here and there.</p>
+
+<p>One especially nasty one was <code>docker</code> / <code>docker-compose</code> running out
+of memory.</p>
+
+<pre><code>Error response from daemon: cannot stop container: 2377e5c0b456: Cannot kill container 2377e5c0b456226ecaa66a5ac18071fc5885b8a9912feeefb07593638b9a40d1: OCI runtime state failed: runc did not terminate sucessfully: fatal error: runtime: out of memory
+</code></pre>
+
+<p>But it eventually worked after a couple of attempts.</p>
+
+<p>The next thing I struggled with &#8212; DNS. Especially with the step where
+the DKIM keys are generated<sup class="footnote-ref" id="fnref-2"><a href="#fn-2">2</a></sup>. The output under <code>config/opendkim/keys/domain.tld/mail.txt</code>
+isn&#8217;t exactly CloudFlare friendly; they can&#8217;t be directly copy-pasted into
+a <code>TXT</code> record. </p>
+
+<p>This is what it looks like.</p>
+
+<pre><code>mail._domainkey IN  TXT ( "v=DKIM1; h=sha256; k=rsa; "
+      "p=&lt;key&gt;"
+      "&lt;more key&gt;" )  ; ----- DKIM key mail for icyphox.sh
+</code></pre>
+
+<p>But while configuring the record, you set &#8220;Type&#8221; to <code>TXT</code>, &#8220;Name&#8221; to <code>mail._domainkey</code>,
+and the &#8220;Value&#8221; to what&#8217;s inside the parenthesis <code>(  )</code>, <em>removing</em> the quotes <code>""</code>. 
+Also remove the part that appears to be a comment <code>; ----- ...</code>.</p>
+
+<p>To simplify debugging DNS issues later, it&#8217;s probably a good idea to
+point to your mailserver using a subdomain like <code>mail.domain.tld</code> using an 
+<code>A</code> record.
+You&#8217;ll then have to set an <code>MX</code> record with the &#8220;Name&#8221; as <code>@</code> (or whatever your DNS provider
+uses to denote the root domain) and the &#8220;Value&#8221; to <code>mail.domain.tld</code>.
+And finally, the <code>PTR</code> (pointer record, I think), which is the reverse of 
+your <code>A</code> record &#8212; &#8220;Name&#8221; as the server IP and &#8220;Value&#8221; as <code>mail.domain.tld</code>.
+I learnt this part the hard way, when my outgoing email kept getting
+rejected by Tutanota&#8217;s servers.</p>
+
+<p>Yet another hurdle &#8212; SSL/TLS certificates. This isn&#8217;t very properly
+documented, unless you read through the <a href="https://github.com/tomav/docker-mailserver/wiki/Installation-Examples">wiki</a>
+and look at an example. In short, install <code>certbot</code>, have port 80 free,
+and run <code>certbot certonly --standalone -d mail.domain.tld</code>. Once that&#8217;s 
+done, edit the <code>docker-compose.yml</code> file to mount <code>/etc/letsencrypt</code> in 
+the container, something like so:</p>
+
+<div class="codehilite"><pre><span></span><code><span class="nn">...</span>
+
+<span class="nt">volumes</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">maildata:/var/mail</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mailstate:/var/mail-state</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./config/:/tmp/docker-mailserver/</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">/etc/letsencrypt:/etc/letsencrypt</span>
+
+<span class="nn">...</span>
+</code></pre></div>
+
+<p>With this done, you shouldn&#8217;t have mail clients complaining about 
+wonky certs for which you&#8217;ll have to add an exception manually.</p>
+
+<h3 id="why-would-you">Why would you…?</h3>
+
+<p>There are a few good reasons for this:</p>
+
+<h4 id="privacy">Privacy</h4>
+
+<p>No really, this is <em>the</em> best choice for truly private
+email. Not ProtonMail, not Tutanota. Sure, they claim so and I don&#8217;t 
+dispute it. Quoting Drew Devault<sup class="footnote-ref" id="fnref-3"><a href="#fn-3">3</a></sup>,</p>
+
+<blockquote>
+  <p>Truly secure systems do not require you to trust the service provider.</p>
+</blockquote>
+
+<p>But you have to <em>trust</em> ProtonMail. They run open source software, but
+how can you really be sure that it isn&#8217;t a backdoored version of it?</p>
+
+<p>When you host your own mailserver, you truly own your email without having to rely on any
+third-party.
+This isn&#8217;t an attempt to spread FUD. In the end, it all depends on your
+threat model™.</p>
+
+<h4 id="decentralization">Decentralization</h4>
+
+<p>Email today is basically run by Google. Gmail has over 1.2 <em>billion</em>
+active users. That&#8217;s obscene.
+Email was designed to be decentralized but big corps swooped in and
+made it a product. They now control your data, and it isn&#8217;t unknown that
+Google reads your mail. This again loops back to my previous point, privacy.
+Decentralization guarantees privacy. When you control your mail, you subsequently
+control who reads it.</p>
+
+<h4 id="personalization">Personalization</h4>
+
+<p>Can&#8217;t ignore this one. It&#8217;s cool to have a custom email address to flex.</p>
+
+<p><code>x@icyphox.sh</code> vs <code>gabe.newell4321@gmail.com</code></p>
+
+<p>Pfft, this is no competition.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-1">
+<p>My <a href="https://twitter.com/icyphox/status/1161648321548566528">tweet</a> of frustration.&#160;<a href="#fnref-1" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+
+<li id="fn-2">
+<p><a href="https://github.com/tomav/docker-mailserver#generate-dkim-keys">Link</a> to step in the docs.&#160;<a href="#fnref-2" class="footnoteBackLink" title="Jump back to footnote 2 in the text.">&#8617;</a></p>
+</li>
+
+<li id="fn-3">
+<p>From his <a href="https://drewdevault.com/2018/08/08/Signal.html">article</a> on why he doesn&#8217;t trust Signal.&#160;<a href="#fnref-3" class="footnoteBackLink" title="Jump back to footnote 3 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+]]></description><link>https://icyphox.sh/blog/mailserver</link><pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/mailserver</guid></item><item><title>Picking the FB50 smart lock (CVE-2019-13143)</title><description><![CDATA[<p>(<em>originally posted at <a href="http://blog.securelayer7.net/fb50-smart-lock-vulnerability-disclosure">SecureLayer7&#8217;s Blog</a>, with my edits</em>)</p>
 
 <h3 id="the-lock">The lock</h3>
 
