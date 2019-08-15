@@ -50,7 +50,7 @@ The first thing that caught my eye in the README:
 > - 512MB RAM
 
 Fantastic, I can somehow squeeze this into my existing VPS.
-Setup was fairly simple & the docs are pretty good. Especially the single
+Setup was fairly simple & the docs are pretty good. It employs a single
 `.env` file for configuration, which is great.
 However, I did run into a couple of hiccups here and there.
 
@@ -61,8 +61,9 @@ Error response from daemon: cannot stop container: 2377e5c0b456: Cannot kill con
 ```
 But it eventually worked after a couple of attempts.
 
-The next thing I struggled with --- DNS. Especially with the step where
-the DKIM keys are generated[^2]. The output under `config/opendkim/keys/domain.tld/mail.txt`
+The next thing I struggled with --- DNS. Specifically, the with the step where
+the DKIM keys are generated[^2]. The output under  
+`config/opendkim/keys/domain.tld/mail.txt`  
 isn't exactly CloudFlare friendly; they can't be directly copy-pasted into
 a `TXT` record. 
 

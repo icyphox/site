@@ -88,7 +88,7 @@ nothing else on it. I can&#8217;t afford to do that.</p></li>
 </blockquote>
 
 <p>Fantastic, I can somehow squeeze this into my existing VPS.
-Setup was fairly simple &amp; the docs are pretty good. Especially the single
+Setup was fairly simple &amp; the docs are pretty good. It employs a single
 <code>.env</code> file for configuration, which is great.
 However, I did run into a couple of hiccups here and there.</p>
 
@@ -100,8 +100,9 @@ of memory.</p>
 
 <p>But it eventually worked after a couple of attempts.</p>
 
-<p>The next thing I struggled with &#8212; DNS. Especially with the step where
-the DKIM keys are generated<sup class="footnote-ref" id="fnref-2"><a href="#fn-2">2</a></sup>. The output under <code>config/opendkim/keys/domain.tld/mail.txt</code>
+<p>The next thing I struggled with &#8212; DNS. Specifically, the with the step where
+the DKIM keys are generated<sup class="footnote-ref" id="fnref-2"><a href="#fn-2">2</a></sup>. The output under <br />
+<code>config/opendkim/keys/domain.tld/mail.txt</code> <br />
 isn&#8217;t exactly CloudFlare friendly; they can&#8217;t be directly copy-pasted into
 a <code>TXT</code> record. </p>
 
