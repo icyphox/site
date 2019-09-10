@@ -21,7 +21,7 @@ or via [Twitter](https://twitter.com/icyphox) DMs.
 
 # latest post 
 
-2019-08-15 — [Setting up my personal mailserver](/blog/mailserver)
+`2019-09-10` — [Disinformation demystified](/blog/disinfo)
 
 ([see all](/blog))
 
