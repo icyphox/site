@@ -1,6 +1,6 @@
 # config.py - Vite's configuration script
 
-title = 'Anirudh'
+title = 'icyphox'
 author = ''
 header = """
         <a href="/">home</a>
@@ -11,6 +11,10 @@ header = """
 """
 footer = """<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
         <img src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png">
-        </a>"""
+        </a>
+        <a href="https://webring.xxiivv.com/#random" target="_blank">
+        <img class="webring" alt="xxiivv webring" src="/static/webring.svg">
+        </a>
+        """
 template = 'index.html'  # default is index.html
 post_build = ['./rss.py']

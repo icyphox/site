@@ -177,12 +177,18 @@ img {
 
 footer img {
   all: initial;
-  * { all: unset; }
+}
+
+.webring {
+  max-height: 1.1rem;
+  display: inline-block;
+  vertical-align: text-top;
+  image-orientation: from-image;
+  max-width: 100%;
 }
 
 footer a:hover {
   all: initial;
-  * { all: unset; }
 }
 
 h1, h2, h3 {
