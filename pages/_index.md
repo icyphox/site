@@ -21,7 +21,7 @@ or via [Twitter](https://twitter.com/icyphox) DMs.
 
 # latest post 
 
-`2019-09-10` — [Disinformation demystified](/blog/disinfo)
+`2019-09-17` — [Weekly status update, 09/08 - 09/17](/blog/2019-09-17)
 
 ([see all](/blog))
 
