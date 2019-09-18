@@ -17,4 +17,4 @@ footer = """<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
         </a>
         """
 template = 'index.html'  # default is index.html
-post_build = ['./rss.py']
+post_build = ['./bin/rss.py']
