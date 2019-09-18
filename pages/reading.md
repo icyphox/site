@@ -4,7 +4,7 @@ title: Reading Log
 subtitle: I read very infrequently, this might never get updated.
 ---
 
-# reading log
+# чтение журнала
 ## I read very infrequently, this might never get updated.
 
 [The Undending Game: A Former R&AW Chief's Insights into Espionage](https://www.amazon.in/Unending-Game-Former-Insights-Espionage/dp/0670091502)  

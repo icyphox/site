@@ -4,7 +4,7 @@ title: Blog
 subtitle: Security, forensics and privacy.
 ---
 
-# all posts ([rss](/blog/feed.xml))
+# блог ([rss](/blog/feed.xml))
 
 <!--marker--!>
 `2019-09-17` [Weekly status update, 09/08 - 09/17](/blog/2019-09-17)
