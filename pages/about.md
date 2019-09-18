@@ -3,7 +3,7 @@ template: about.html
 title: About
 ---
 
-# about
+# обо мне
 ## Hi, I'm Anirudh.
 
 But you'll see me as [icyphox](https://www.startpage.com/do/search?query=icyphox) on the Internet. 
