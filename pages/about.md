@@ -20,6 +20,10 @@ For those who didn’t click it: bands like _Oceans Ate Alaska_, _I See Stars_, 
 
 You might be interested in my setup, which I’ve written about in detail [here](/blog/my-setup).
 
+I love languages, but I can never stick to one. I currently speak English, French, Tamil
+and Hindi. I can understand and read _very_ basic Japanese, and I've just begun learning
+Russian which I'm really enjoying so far.
+
 Apart from the links above, you can also find me on
 
 - [Reddit](https://reddit.com/u/icyphox)
