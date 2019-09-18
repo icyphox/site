@@ -31,7 +31,7 @@ def update_index(s):
 
 def update_blog(s):
     path = '../pages/blog/_index.md'
-    s = s + '\n'
+    s = s + '\n\n'
     for l in fileinput.FileInput(path, inplace=1):
         if "marker" in l:
             l=l.replace(l, l + s)
