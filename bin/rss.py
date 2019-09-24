@@ -11,7 +11,7 @@ import arrow
 import operator
 import warnings
 
-warnings.simplefilter("ignore", arrow.factory.ArrowParseWarning)
+#warnings.simplefilter("ignore", arrow.factory.ArrowParseWarning)
 items_raw = []
 from lxml import etree as ET
 
