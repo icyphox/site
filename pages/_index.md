@@ -21,7 +21,7 @@ or via [Twitter](https://twitter.com/icyphox) DMs.
 
 # latest post
 
-`2019-09-17` [Weekly status update, 09/08 - 09/17](/blog/2019-09-17)
+`2019-09-27` [Weekly status update, 09/17 - 09/27](/blog/2019-09-27)
 
 ([see all](/blog))
 
