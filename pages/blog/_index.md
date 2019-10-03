@@ -1,7 +1,7 @@
 ---
 template: blogindex.html
 title: Blog
-subtitle: Security, forensics and privacy.
+subtitle: Computers, security & computer security.
 ---
 
 # блог ([rss](/blog/feed.xml))
