@@ -17,7 +17,8 @@ and has his [dotfiles](https://github.com/icyphox/dotfiles) under version contro
 I do a bunch of other things too, which you can read all about [here](/about).
 
 Want to contact me? The best way is via email, at [x@icyphox.sh](mailto:x@icyphox.sh)
-or via [Twitter](https://twitter.com/icyphox) DMs.
+or via [Twitter](https://twitter.com/icyphox) DMs. Or if you prefer IRC, I'm `icy` /
+`icyphox` on Rizon and Freenode.
 
 # latest post
 
