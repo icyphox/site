@@ -7,6 +7,8 @@ subtitle: Computers, security & computer security.
 # блог ([rss](/blog/feed.xml))
 
 <!--marker--!>
+`2019-10-05` [Thoughts on digital minimalism](/blog/digital-minimalism)
+
 `2019-09-27` [Weekly status update, 09/17 -- 09/27](/blog/2019-09-27)
 
 `2019-09-17` [Weekly status update, 09/08 -- 09/17](/blog/2019-09-17)

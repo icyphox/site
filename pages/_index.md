@@ -22,7 +22,7 @@ or via [Twitter](https://twitter.com/icyphox) DMs. Or if you prefer IRC, I'm `ic
 
 # latest post
 
-`2019-09-27` [Weekly status update, 09/17 -- 09/27](/blog/2019-09-27)
+`2019-10-05` [Thoughts on digital minimalism](/blog/digital-minimalism)
 
 ([see all](/blog))
 
