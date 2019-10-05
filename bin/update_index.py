@@ -22,8 +22,8 @@ def update_index(s):
     path = '../pages/_index.md'
     with open(path, 'r') as f:
         md = f.readlines()
-    latest = md.index('# latest post\n')
-    md[latest + 2] = s + '\n'
+    ruler = md.index('| --- | --: |\n')
+    md[ruler + 1] = s + '\n'
 
     with open(path, 'w') as f:
         f.writelines(md)
@@ -31,9 +31,9 @@ def update_index(s):
 
 def update_blog(s):
     path = '../pages/blog/_index.md'
-    s = s + '\n\n'
+    s = s + '\n'
     for l in fileinput.FileInput(path, inplace=1):
-        if "marker" in l:
+        if "--:" in l:
             l=l.replace(l, l + s)
         print(l, end=''),
     
@@ -41,7 +41,7 @@ def update_blog(s):
 meta = markdown_path(getrecent(blog), extras=['metadata']).metadata
 fname = os.path.basename(os.path.splitext(getrecent(blog))[0])
 url = '/blog/' + fname
-line = f"`{meta['date']}` [{meta['title']}]({url})"
+line = f"| [{meta['title']}]({url}) | `{meta['date']}` |"
 
 update_index(line)
 update_blog(line)

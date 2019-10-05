@@ -127,6 +127,10 @@ code {
   color: cyan
 }
 
+table {
+  width: 100%;
+}
+
 a {
 	color: gray;
 	margin: 0;
