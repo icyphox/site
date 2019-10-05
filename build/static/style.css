@@ -59,7 +59,7 @@ body {
 
 .content {
 	position: relative;
-	font-size: 18px;
+	font-size: 17px;
 	top: 10%;
   left: 30%;
   right: 30%;
@@ -129,6 +129,18 @@ code {
 
 table {
   width: 100%;
+}
+
+td {
+  white-space: nowrap;
+}
+
+td:first-child {
+  width: 100%;
+  max-width: 1px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 a {
