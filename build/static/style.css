@@ -263,10 +263,10 @@ blockquote::after {
   }*/
 
 	.content {
-		left: 5%;
-    right: 5%;
+		left: 3%;
+    right: 3%;
     bottom: 10%;
-		width: 90%;
+		width: 94%;
 	}
 
   .content h1, h2, h3 {
