@@ -16,5 +16,5 @@ footer = """<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
         <img class="footimgs" alt="xxiivv webring" src="/static/webring.svg">
         </a>
         """
-template = 'index.html'  # default is index.html
+template = 'text.html'  # default is index.html
 post_build = ['./bin/rss.py']
