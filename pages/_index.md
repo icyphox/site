@@ -22,7 +22,9 @@ or via [Twitter](https://twitter.com/icyphox) DMs. Or if you prefer IRC, I'm `ic
 
 # latest post
 
-`2019-10-05` [Thoughts on digital minimalism](/blog/digital-minimalism)
+|     |     |
+| --- | --: |
+| [Thoughts on digital minimalism](/blog/digital-minimalism) | `2019-10-05` |
 
 ([see all](/blog))
 
