@@ -9,7 +9,7 @@ Ah yes, yet another article on the internet on this beaten to death
 subject. But this is inherently different, since it's _my_ opinion on
 the matter, and _my_ technique(s) to achieve "digital minimalism".
 
-According to me, minimalism can be acheived on two primary fronts --
+According to me, minimalism can be achieved on two primary fronts --
 the phone & the computer. Let's start with the phone. The daily carry.
 The device that's on our person from when we get out of bed, till we get
 back in bed.
