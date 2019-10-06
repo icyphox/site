@@ -7,7 +7,7 @@ date: 2019-10-05
 
 Ah yes, yet another article on the internet on this beaten to death
 subject. But this is inherently different, since it's _my_ opinion on
-the matter, and _my_ technique(s) to acheive "digital minimalism".
+the matter, and _my_ technique(s) to achieve "digital minimalism".
 
 According to me, minimalism can be acheived on two primary fronts --
 the phone & the computer. Let's start with the phone. The daily carry.
