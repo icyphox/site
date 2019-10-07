@@ -7,7 +7,7 @@ subtitle: I read very infrequently, this might never get updated.
 # чтение журнала
 ## I read very infrequently, this might never get updated.
 
-[The Undending Game: A Former R&AW Chief's Insights into Espionage](https://www.amazon.in/Unending-Game-Former-Insights-Espionage/dp/0670091502)  
+[The Unending Game: A Former R&AW Chief's Insights into Espionage](https://www.amazon.in/Unending-Game-Former-Insights-Espionage/dp/0670091502)  
 *still reading* | by **Vikram Sood** | started **8th August, 2019** 
 
 [By Way of Deception: The Making of a Mossad Officer](https://www.amazon.in/Way-Deception-Making-Mossad-Officer/dp/0971759502)  
