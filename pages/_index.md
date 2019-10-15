@@ -24,7 +24,7 @@ or via [Twitter](https://twitter.com/icyphox) DMs. Or if you prefer IRC, I'm `ic
 
 |     |     |
 | --- | --: |
-| [Thoughts on digital minimalism](/blog/digital-minimalism) | `2019-10-05` |
+| [PyCon India 2019 wrap-up](/blog/pycon-wrap-up) | `2019-10-15` |
 
 ([see all](/blog))
 
