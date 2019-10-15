@@ -181,11 +181,11 @@ a:hover {
 }
 
 img {
-  height: auto;
-  width: 100%;
-
-  max-width: 720px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
+
 
 footer img {
   all: initial;
