@@ -88,6 +88,16 @@ code {
     padding: 1px;
 }
 
+a > code {
+    transition: all 200ms;
+    color: gray;
+}
+
+a > code:hover {
+  	color: #021012;
+  	background: cyan;
+}
+
 .logo {
 	width: 220px;
 }
