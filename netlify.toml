@@ -1,3 +1,4 @@
 [build]
     publish = "build/"
-    command = "pip install vite && vite build"
+    command = "pip install git+https://github.com/icyphox/vite" 
+    command = "vite build"
