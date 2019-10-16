@@ -11,7 +11,68 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>PyCon India 2019 wrap-up</title><description><![CDATA[<p>I&#8217;m writing this article as I sit in class, back on the grind. Last
+    <item><title>Status update</title><description><![CDATA[<p>I&#8217;ve decided to drop the &#8220;Weekly&#8221; part of the status update posts, since
+they were never weekly and&#8212;let&#8217;s be honest&#8212;they aren&#8217;t going to be.
+These posts are, henceforth, just &#8220;Status updates&#8221;. The date range can
+be inferred from the post date.</p>
+
+<p>That said, here&#8217;s what I&#8217;ve been up to!</p>
+
+<h3 id="void-linux">Void Linux</h3>
+
+<p>Yes, I decided to ditch Alpine in favor of Void. Alpine was great,
+really. The very comfy <code>apk</code>, ultra mnml system&#8230; but having to
+maintain a chroot for my glibc needs was getting way too painful. And
+the package updates are so slow! Heck, they&#8217;re still on kernel 4.xx on
+their supposed &#8220;bleeding&#8221; <code>edge</code> repo.</p>
+
+<p>So yes, Void Linux it is. Still a very clean system. I&#8217;m loving it.
+I also undervolted my system using <a href="https://github.com/georgewhewell/undervolt"><code>undervolt</code></a>
+(-95 mV). Can&#8217;t say for sure if there&#8217;s a noticeable difference in
+battery life though. I&#8217;ll see if I can run some tests.</p>
+
+<p>This <em>should</em> be the end of my distro hopping. Hopefully.</p>
+
+<h3 id="pycon">PyCon</h3>
+
+<p>Yeah yeah, enough already. Read <a href="/blog/pycon-wrap-up">my previous post</a>.</p>
+
+<h3 id="this-website">This website</h3>
+
+<p>I&#8217;ve moved out of GitHub Pages over to Netlify. This isn&#8217;t my first time
+using Netlify, though. I used to host my old blog which ran Hugo, there.
+I was tired of doing this terrible hack to maintain a single repo for
+both my source (<code>master</code>) and deploy (<code>gh-pages</code>). In essence, here&#8217;s
+what I did:</p>
+
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/usr/bin/env bash</span>
+
+git push origin master
+<span class="c1"># push contents of `build/` to the `gh-pages` branch</span>
+git subtree push --prefix build origin gh-pages
+</code></pre></div>
+
+<p>I can now simply push to <code>master</code>, and Netlify generates a build for me
+by installing <a href="https://github.com/icyphox/vite">vite</a>, and running <code>vite
+build</code>. Very pleasant.</p>
+
+<h3 id="mnmlwms-status"><code>mnmlwm</code>&#8217;s status</h3>
+
+<p><a href="https://github.com/minimalwm/minimal">mnmlwm</a>, for those unaware, is my pet project which aims to be a simple
+window manager written in Nim. I&#8217;d taken a break from it for a while
+because Xlib is such a pain to work with (or I&#8217;m just dense). Anyway,
+I&#8217;m planning on getting back to it, with some fresh inspiration from
+Dylan Araps&#8217; <a href="https://github.com/dylanaraps/sowm">sowm</a>.</p>
+
+<h3 id="other">Other</h3>
+
+<p>I&#8217;ve been reading a lot of manga lately. Finished <em>Kekkon Yubiwa
+Monogatari</em> (till the latest chapter) and <em>Another</em>, and I&#8217;ve just
+started <em>Kakegurui</em>. I&#8217;ll reserve my opinions for when I update the
+<a href="/reading">reading log</a>.</p>
+
+<p>That&#8217;s about it, and I&#8217;ll see you &#8211; definitely not next week.</p>
+]]></description><link>https://icyphox.sh/blog/2019-10-17</link><pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/2019-10-17</guid></item><item><title>PyCon India 2019 wrap-up</title><description><![CDATA[<p>I&#8217;m writing this article as I sit in class, back on the grind. Last
 weekend&#8212;Oct 12th and 13th&#8212;was PyCon India 2019, in Chennai, India.
 It was my first PyCon, <em>and</em> my first ever talk at a major conference!
 This is an account of the all the cool stuff I saw, people I met and the
