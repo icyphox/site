@@ -30,8 +30,8 @@ or via [Twitter](https://twitter.com/icyphox) DMs. Or if you prefer IRC, I'm `ic
 
 # currently reading
 
-[The Undending Game: A Former R&AW Chief's Insights into Espionage](https://www.amazon.in/Unending-Game-Former-Insights-Espionage/dp/0670091502)  
-*still reading* | by **Vikram Sood** | started **8th August, 2019** 
+[Kakegurui](https://myanimelist.net/manga/73603/Kakegurui)  
+started **15th October, 2019**
 
 ([see all](/reading))
 
