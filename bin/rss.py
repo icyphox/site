@@ -11,7 +11,7 @@ import arrow
 import operator
 import warnings
 
-#warnings.simplefilter("ignore", arrow.factory.ArrowParseWarning)
+# warnings.simplefilter("ignore", arrow.factory.ArrowParseWarning)
 items_raw = []
 from lxml import etree as ET
 
@@ -22,6 +22,7 @@ def convert_date(d):
 
 PREFIX_URL = "https://icyphox.sh/blog/"
 link_extractor = re.compile("\/([^\/]*)\.md$")
+
 
 def generate_node(rendered, path):
 
