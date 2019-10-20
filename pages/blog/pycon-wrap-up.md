@@ -21,7 +21,7 @@ Science, Machine Learning and AI". I'd have liked to see more talks
 discussing security and privacy, but hey, the organizers can only pick
 from what's submitted. ;)
 
-With that point out of the way, here's some of the talks I really liked:
+With that point out of the way, here are some of the talks I really liked:
 
 - **Python Packaging - where we are and where we're headed** by [Pradyun](https://twitter.com/pradyunsg)
 - **Micropython: Building a Physical Inventory Search Engine** by [Vinay](https://twitter.com/stonecharioteer)
