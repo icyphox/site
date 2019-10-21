@@ -1,3 +1,0 @@
-2019-09-16T18:07:38+05:30	init
-2019-09-16T23:35:57+05:30	hey everyone! i'm really liking twtxt, & i'm working on an sh client here: https://github.com/icyphox/twsh (not usable yet)
-2019-09-19T11:04:00+05:30	thanks @neauoire! glad to be here
