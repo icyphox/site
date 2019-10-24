@@ -11,7 +11,168 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Status update</title><description><![CDATA[<p>I&#8217;ve decided to drop the &#8220;Weekly&#8221; part of the status update posts, since
+    <item><title>Hacky scripts</title><description><![CDATA[<p>As a CS student, I see a lot of people around me doing courses online
+to learn to code. Don&#8217;t get me wrong &#8211; it probably works for some.
+Everyone learns differently. But that&#8217;s only going to get you so far.
+Great you know the syntax, you can solve some competitive programming
+problems, but that&#8217;s not quite enough, is it? The actual learning comes
+from <em>applying</em> it in solving <em>actual</em> problems &#8211; not made up ones.
+(<em>inb4 some seething CP bro comes at me</em>)</p>
+
+<p>Now, what&#8217;s an actual problem? Some might define it as real world
+problems that people out there face, and solving it probably requires
+building a product. This is what you see in hackathons, generally.</p>
+
+<p>If you ask me, however, I like to define it as problems that <em>you</em> yourself
+face. This could be anything. Heck, it might not even be a &#8220;problem&#8221;. It
+could just be an itch that you want to scratch. And this is where
+<strong>hacky scripts</strong> come in. Unclear? Let me illustrate with a few
+examples.</p>
+
+<h3 id="now-playing-status-in-my-bar">Now playing status in my bar</h3>
+
+<p>If you weren&#8217;t aware already &#8211; I rice my desktop. A lot. And a part of
+this cohesive experience I try to create involves a status bar up at the
+top of my screen, showing the time, date, volume and battery statuses etc.</p>
+
+<p>So here&#8217;s the &#8220;problem&#8221;. I wanted to have my currently playing song
+(Spotify), show up on my bar. How did I approach this? A few ideas
+popped up in my head:</p>
+
+<ul>
+<li>Send <code>playerctl</code>&#8217;s STDOUT into my bar</li>
+<li>Write a Python script to query Spotify&#8217;s API</li>
+<li>Write a Python/shell script to query Last.fm&#8217;s API</li>
+</ul>
+
+<p>The first approach bombed instantly. <code>playerctl</code> didn&#8217;t recognize my
+Spotify client and whined about some <code>dbus</code> issues to top it off.
+I spent a while in that rabbit hole but eventually gave up.</p>
+
+<p>My next avenue was the Spotify Web API. One look at the <a href="https://developer.spotify.com/documentation/web-api/">docs</a> and
+I realize that I&#8217;ll have to make <em>more</em> than one request to fetch the
+artist and track details. Nope, I need this to work fast.</p>
+
+<p>Last resort &#8211; Last.fm&#8217;s API. Spolier alert, this worked. Also, arguably
+the best choice, since it shows the track status regardless of where
+the music is being played. Here&#8217;s the script in its entirety:</p>
+
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/usr/bin/env bash</span>
+<span class="c1"># now playing</span>
+<span class="c1"># requires the last.fm API key</span>
+
+<span class="nb">source</span> ~/.lastfm    <span class="c1"># `export API_KEY=&quot;&lt;key&gt;&quot;`</span>
+<span class="nv">fg</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>xres color15<span class="k">)</span><span class="s2">&quot;</span>
+<span class="nv">light</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>xres color8<span class="k">)</span><span class="s2">&quot;</span>
+
+<span class="nv">USER</span><span class="o">=</span><span class="s2">&quot;icyphox&quot;</span>
+<span class="nv">URL</span><span class="o">=</span><span class="s2">&quot;http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&quot;</span>
+<span class="nv">URL</span><span class="o">+=</span><span class="s2">&quot;&amp;user=</span><span class="nv">$USER</span><span class="s2">&amp;api_key=</span><span class="nv">$API_KEY</span><span class="s2">&amp;format=json&amp;limit=1&amp;nowplaying=true&quot;</span>
+<span class="nv">NOTPLAYING</span><span class="o">=</span><span class="s2">&quot; &quot;</span>    <span class="c1"># I like to have it show nothing</span>
+<span class="nv">RES</span><span class="o">=</span><span class="k">$(</span>curl -s <span class="nv">$URL</span><span class="k">)</span>
+<span class="nv">NOWPLAYING</span><span class="o">=</span><span class="k">$(</span>jq <span class="s1">&#39;.recenttracks.track[0].&quot;@attr&quot;.nowplaying&#39;</span> <span class="o">&lt;&lt;&lt;</span> <span class="s2">&quot;</span><span class="nv">$RES</span><span class="s2">&quot;</span> <span class="p">|</span> tr -d <span class="s1">&#39;&quot;&#39;</span><span class="k">)</span>
+
+
+<span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$NOWPLAYING</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;true&quot;</span> <span class="o">]]</span>
+<span class="k">then</span>
+    <span class="nv">TRACK</span><span class="o">=</span><span class="k">$(</span>jq <span class="s1">&#39;.recenttracks.track[0].name&#39;</span> <span class="o">&lt;&lt;&lt;</span> <span class="s2">&quot;</span><span class="nv">$RES</span><span class="s2">&quot;</span> <span class="p">|</span> tr -d <span class="s1">&#39;&quot;&#39;</span><span class="k">)</span>
+    <span class="nv">ARTIST</span><span class="o">=</span><span class="k">$(</span>jq <span class="s1">&#39;.recenttracks.track[0].artist.&quot;#text&quot;&#39;</span> <span class="o">&lt;&lt;&lt;</span> <span class="s2">&quot;</span><span class="nv">$RES</span><span class="s2">&quot;</span> <span class="p">|</span> tr -d <span class="s1">&#39;&quot;&#39;</span><span class="k">)</span>
+    <span class="nb">echo</span> -ne <span class="s2">&quot;%{F</span><span class="nv">$light</span><span class="s2">}</span><span class="nv">$TRACK</span><span class="s2"> %{F</span><span class="nv">$fg</span><span class="s2">}by </span><span class="nv">$ARTIST</span><span class="s2">&quot;</span>
+<span class="k">else</span>
+    <span class="nb">echo</span> -ne <span class="s2">&quot;</span><span class="nv">$NOTPLAYING</span><span class="s2">&quot;</span>
+<span class="k">fi</span>
+</code></pre></div>
+
+<p>The <code>source</code> command is used to fetch the API key which I store at
+<code>~/.lastfm</code>. The <code>fg</code> and <code>light</code> variables can be ignored, they&#8217;re only
+for coloring output on my bar. The rest is fairly trivial and just
+involves JSON parsing with <a href="https://stedolan.github.io/jq/"><code>jq</code></a>.
+That&#8217;s it! It&#8217;s so small, but I learnt a ton. For those curious, here&#8217;s
+what it looks like running:</p>
+
+<p><img src="/static/img/now_playing.png" alt="now playing status polybar" /></p>
+
+<h3 id="update-latest-post-on-the-index-page">Update latest post on the index page</h3>
+
+<p>This pertains to this very blog that you&#8217;re reading. I wanted a quick
+way to update the &#8220;latest post&#8221; section in the home page and the
+<a href="/blog">blog</a> listing, with a link to the latest post. This would require
+editing the Markdown <a href="https://github.com/icyphox/site/tree/master/pages">source</a>
+of both pages.</p>
+
+<p>This was a very
+interesting challenge to me, primarily because it requires in-place
+editing of the file, not just appending. Sure, I could&#8217;ve come up with
+some <code>sed</code> one-liner, but that didn&#8217;t seem very fun. Also I hate
+regexes. Did a lot of research (read: Googling) on in-place editing of
+files in Python, sorting lists of files by modification time etc. and
+this is what I ended up on, ultimately:</p>
+
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/usr/bin/env python3</span>
+
+<span class="kn">from</span> <span class="nn">markdown2</span> <span class="kn">import</span> <span class="n">markdown_path</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">fileinput</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="c1"># change our cwd</span>
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s2">&quot;bin&quot;</span><span class="p">)</span>
+
+<span class="n">blog</span> <span class="o">=</span> <span class="s2">&quot;../pages/blog/&quot;</span>
+
+<span class="c1"># get the most recently created file</span>
+<span class="k">def</span> <span class="nf">getrecent</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="n">path</span> <span class="o">+</span> <span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">blog</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;_index.md&quot;</span><span class="p">,</span> <span class="s2">&quot;feed.xml&quot;</span><span class="p">]]</span>
+    <span class="n">files</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getmtime</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">files</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># adding an entry to the markdown table</span>
+<span class="k">def</span> <span class="nf">update_index</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;../pages/_index.md&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">md</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+    <span class="n">ruler</span> <span class="o">=</span> <span class="n">md</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;| --- | --: |</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">md</span><span class="p">[</span><span class="n">ruler</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">md</span><span class="p">)</span>
+
+<span class="c1"># editing the md source in-place</span>
+<span class="k">def</span> <span class="nf">update_blog</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;../pages/blog/_index.md&quot;</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">fileinput</span><span class="o">.</span><span class="n">FileInput</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="k">if</span> <span class="s2">&quot;--:&quot;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+            <span class="n">l</span> <span class="o">=</span> <span class="n">l</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">l</span> <span class="o">+</span> <span class="n">s</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">),</span>
+
+
+<span class="c1"># fetch title and date</span>
+<span class="n">meta</span> <span class="o">=</span> <span class="n">markdown_path</span><span class="p">(</span><span class="n">getrecent</span><span class="p">(</span><span class="n">blog</span><span class="p">),</span> <span class="n">extras</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;metadata&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">metadata</span>
+<span class="n">fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">getrecent</span><span class="p">(</span><span class="n">blog</span><span class="p">))[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;/blog/&quot;</span> <span class="o">+</span> <span class="n">fname</span>
+<span class="n">line</span> <span class="o">=</span> <span class="n">f</span><span class="s2">&quot;| [{meta[&#39;title&#39;]}]({url}) | `{meta[&#39;date&#39;]}` |&quot;</span>
+
+<span class="n">update_index</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+<span class="n">update_blog</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</code></pre></div>
+
+<p>I&#8217;m going to skip explaining this one out, but in essence, it&#8217;s <strong>one
+massive hack</strong>. And in the end, that&#8217;s my point exactly. It&#8217;s very
+hacky, but the sheer amount I learnt by writing this ~50
+line script can&#8217;t be taught anywhere.</p>
+
+<p>This was partially how
+<a href="https://github.com/icyphox/vite">vite</a> was born. It was originally
+intended to be a script to build my site, but grew into a full-blown
+Python package. I could&#8217;ve just 
+used an off-the-shelf static site generator
+given that there are <a href="https://staticgen.com">so many</a> of them, but
+I chose to write one myself.</p>
+
+<p>And that just about sums up what I wanted to say. The best and most fun
+way to learn to code &#8211; write hacky scripts. You heard it here.</p>
+]]></description><link>https://icyphox.sh/blog/hacky-scripts</link><pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/hacky-scripts</guid></item><item><title>Status update</title><description><![CDATA[<p>I&#8217;ve decided to drop the &#8220;Weekly&#8221; part of the status update posts, since
 they were never weekly and&#8212;let&#8217;s be honest&#8212;they aren&#8217;t going to be.
 These posts are, henceforth, just &#8220;Status updates&#8221;. The date range can
 be inferred from the post date.</p>
