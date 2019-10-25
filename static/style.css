@@ -235,21 +235,15 @@ p {
 }
 
 blockquote {
-  font-style: italic;
+  border-left: 0.25rem solid gray;
   color: gray;
+  font-style: italic;
+  margin: .8rem 0;
+  padding: .5rem 1rem
 }
 
-blockquote::before {
-  content: "\“";
-  font-size: 40px;
-  font-weight: bold;
-}
-
-blockquote::after {
-  content: "\”";
-  font-size: 40px;
-  font-weight: bold;
-  
+hr {
+  width: 20%;
 }
 
 ::selection {
