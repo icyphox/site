@@ -11,7 +11,7 @@ subtitle: I read very infrequently, this might never get updated.
 started **15th October, 2019**
 
 [Another](https://myanimelist.net/manga/24098/Another)  
-started **12th October, 2019** | opinion: **pretty eh; not scary :/**
+started **12th October, 2019** | opinion: *pretty eh; not scary :/*
 
 [Kekkon Yubiwa Monogatari](https://myanimelist.net/manga/66685/Kekkon_Yubiwa_Monogatari)  
 started **8th October, 2019**
