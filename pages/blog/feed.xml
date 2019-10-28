@@ -11,7 +11,40 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Hacky scripts</title><description><![CDATA[<p>As a CS student, I see a lot of people around me doing courses online
+    <item><title>The intelligence conundrum</title><description><![CDATA[<p>I watched the latest <a href="https://en.wikipedia.org/wiki/S.W.A.T._(2017_TV_series)">S.W.A.T.</a>
+episode a couple of days ago, and it highlighted some interesting issues that
+intelligence organizations face when working with law enforcement. Side note: it&#8217;s a pretty
+good show if you like police procedurals.</p>
+
+<h3 id="the-problem">The problem</h3>
+
+<p>Consider the following scenario:</p>
+
+<ul>
+<li>There&#8217;s a local drug lord who&#8217;s been recruited to provide intel, by a certain 3-letter organization.</li>
+<li>Local PD busts his operation and proceed to arrest him.</li>
+<li>3-letter org steps in, wants him released.</li>
+</ul>
+
+<p>So here&#8217;s the thing, his presence is a threat to public but at the same time, 
+he can be a valuable long term asset &#8211; giving info on drug inflow, exchanges and perhaps even 
+actionable intel on bigger fish who exist on top of the ladder. But he also
+seeks security. The 3-letter org must provide him with protection, 
+in case he&#8217;s blown. And like in our case, they&#8217;d have to step in if he gets arrested.</p>
+
+<p>Herein lies the problem. How far should an intelligence organization go to protect an asset? 
+Who matters more, the people they&#8217;ve sworn to protect, or the asset? 
+Because afterall, in the bigger picture, local PD and intel orgs are on the same side.</p>
+
+<p>Thus, the question arises &#8211; how can we measure the &#8220;usefulness&#8221; of an
+asset to better quantify the tradeoff that is to be made? 
+Is the intel gained worth the loss of public safety?
+This question remains largely unanswered, and is quite the 
+predicament should you find yourself in it.</p>
+
+<p>This was a fairly short post, but an interesting problem to ponder
+nonetheless.</p>
+]]></description><link>https://icyphox.sh/blog/intel-conundrum</link><pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/intel-conundrum</guid></item><item><title>Hacky scripts</title><description><![CDATA[<p>As a CS student, I see a lot of people around me doing courses online
 to learn to code. Don&#8217;t get me wrong &#8211; it probably works for some.
 Everyone learns differently. But that&#8217;s only going to get you so far.
 Great you know the syntax, you can solve some competitive programming

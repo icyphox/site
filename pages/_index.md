@@ -24,7 +24,7 @@ or [Twitter](https://twitter.com/icyphox) DMs. Or if you prefer IRC, I'm `icy` /
 
 |     |     |
 | --- | --: |
-| [Hacky scripts](/blog/hacky-scripts) | `2019-10-24` |
+| [The intelligence conundrum](/blog/intel-conundrum) | `2019-10-28` |
 
 ([see all](/blog))
 
