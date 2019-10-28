@@ -9,6 +9,7 @@ subtitle: Computers, security & computer security.
 
 |     |     |
 | --- | --: |
+| [The intelligence conundrum](/blog/intel-conundrum) | `2019-10-28` |
 | [Hacky scripts](/blog/hacky-scripts) | `2019-10-24` |
 | [Status update](/blog/2019-10-17) | `2019-10-16` |
 | [PyCon India 2019 wrap-up](/blog/pycon-wrap-up) | `2019-10-15` |
