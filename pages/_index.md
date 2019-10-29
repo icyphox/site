@@ -20,18 +20,17 @@ Want to contact me? The best way is via email, at [x@icyphox.sh](mailto:x@icypho
 or [Twitter](https://twitter.com/icyphox) DMs. Or if you prefer IRC, I'm `icy` /
 `icyphox` on Rizon and Freenode.
 
-# latest post
+# latest posts ([see all](/blog))
 
 |     |     |
 | --- | --: |
 | [The intelligence conundrum](/blog/intel-conundrum) | `2019-10-28` |
+| [Hacky scripts](/blog/hacky-scripts) | `2019-10-24` |
+| [Status update](/blog/2019-10-17) | `2019-10-16` |
+| [PyCon India 2019 wrap-up](/blog/pycon-wrap-up) | `2019-10-15` |
 
-([see all](/blog))
-
-# currently reading
+# currently reading ([see all](/reading))
 
 [Kakegurui](https://myanimelist.net/manga/73603/Kakegurui)  
-started **15th October, 2019**
-
-([see all](/reading))
+*still reading* | started **15th October, 2019**
 
