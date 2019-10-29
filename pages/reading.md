@@ -8,7 +8,7 @@ subtitle: I read very infrequently, this might never get updated.
 ## I read very infrequently, this might never get updated.
 
 [Kakegurui](https://myanimelist.net/manga/73603/Kakegurui)  
-started **15th October, 2019**
+*still reading* | started **15th October, 2019**
 
 [Another](https://myanimelist.net/manga/24098/Another)  
 started **12th October, 2019** | opinion: *pretty eh; not scary :/*

@@ -10,19 +10,23 @@ os.chdir("bin")
 
 blog = "../pages/blog/"
 
-# bunch of file hacks to get to the most recent file
-def getrecent(path):
+# order files by recency
+def getrecents(path):
     files = [path + f for f in os.listdir(blog) if f not in ["_index.md", "feed.xml"]]
-    files.sort(key=os.path.getmtime, reverse=True)
-    return files[0]
+    files.sort(
+        key=lambda f: markdown_path(f, extras=["metadata"]).metadata["date"],
+        reverse=True,
+    )
+    return files
 
 
-def update_index(s):
+def update_index(posts):
     path = "../pages/_index.md"
     with open(path, "r") as f:
         md = f.readlines()
     ruler = md.index("| --- | --: |\n")
-    md[ruler + 1] = s + "\n"
+    for post, i in zip(posts, range(4)):
+        md[ruler + i + 1] = post + "\n"
 
     with open(path, "w") as f:
         f.writelines(md)
@@ -37,11 +41,19 @@ def update_blog(s):
         print(l, end=""),
 
 
-# fetch title and date
-meta = markdown_path(getrecent(blog), extras=["metadata"]).metadata
-fname = os.path.basename(os.path.splitext(getrecent(blog))[0])
-url = "/blog/" + fname
-line = f"| [{meta['title']}]({url}) | `{meta['date']}` |"
+top_four = []
+metas = []
+lines = []
+fnames = []
 
-update_index(line)
-update_blog(line)
+for i in range(4):
+    top_four.append(getrecents(blog)[i])
+    metas.append(markdown_path(getrecents(blog)[i], extras=["metadata"]).metadata)
+    fnames.append(os.path.basename(os.path.splitext(getrecents(blog)[i])[0]))
+
+for meta, fname in zip(metas, fnames):
+    url = "/blog/" + fname
+    lines.append(f"| [{meta['title']}]({url}) | `{meta['date']}` |")
+
+update_index(lines)
+update_blog(lines[0])
