@@ -60,13 +60,12 @@ IRC. The only unexplored option -- using a channel.
 
 A fairly easy process:
 
-* Limit users to 2 (3 if you have a bot)
 * Set modes (on Rizon)[^modes]:
 
     ```
     #crimson [+ilnpstz 3]
     ```
-    In essence, this limits the users to 3, sets the channel to invite only,
+    In essence, this limits the users to 3 (one bot), sets the channel to invite only,
 hides the channel from `/whois` and `/list`, and a few other misc.
 modes.
 

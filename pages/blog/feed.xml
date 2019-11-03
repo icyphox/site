@@ -67,13 +67,12 @@ IRC. The only unexplored option &#8211; using a channel.</p>
 <p>A fairly easy process:</p>
 
 <ul>
-<li>Limit users to 2 (3 if you have a bot)</li>
 <li><p>Set modes (on Rizon)<sup class="footnote-ref" id="fnref-modes"><a href="#fn-modes">1</a></sup>:</p>
 
 <pre><code>#crimson [+ilnpstz 3]
 </code></pre>
 
-<p>In essence, this limits the users to 3, sets the channel to invite only,
+<p>In essence, this limits the users to 3 (one bot), sets the channel to invite only,
 hides the channel from <code>/whois</code> and <code>/list</code>, and a few other misc.
 modes.</p></li>
 <li><p>Notifications: Also a trivial task; a quick modification to <a href="https://weechat.org/scripts/source/lnotify.py.html/">lnotify.py</a>
