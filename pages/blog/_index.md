@@ -9,6 +9,7 @@ subtitle: Computers, security & computer security.
 
 |     |     |
 | --- | --: |
+| [IRC for DMs](/blog/irc-for-dms) | `2019-11-03` |
 | [The intelligence conundrum](/blog/intel-conundrum) | `2019-10-28` |
 | [Hacky scripts](/blog/hacky-scripts) | `2019-10-24` |
 | [Status update](/blog/2019-10-17) | `2019-10-16` |
@@ -20,6 +21,6 @@ subtitle: Computers, security & computer security.
 | [Setting up my personal mailserver](/blog/mailserver) |`2019-08-15`|
 | [Picking the FB50 smart lock (CVE-2019-13143)](/blog/fb50) |`2019-08-06`|
 | [Return Oriented Programming on ARM (32-bit)](/blog/rop-on-arm) |`2019-06-06`|
-| [My Setup](/blog/my-setup) |`2019-13-05`|
+| [My Setup](/blog/my-setup) |`2019-05-13`|
 | [Python for Reverse Engineering #1: ELF Binaries](/blog/python-for-re-1/)|`2019-02-08`|
 
