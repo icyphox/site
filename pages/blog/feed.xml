@@ -11,7 +11,104 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>The intelligence conundrum</title><description><![CDATA[<p>I watched the latest <a href="https://en.wikipedia.org/wiki/S.W.A.T._(2017_TV_series)">S.W.A.T.</a>
+    <item><title>IRC for DMs</title><description><![CDATA[<p><a href="https://nerdypepper.me">Nerdy</a> and I decided to try and use IRC for our
+daily communications, as opposed to non-free alternatives like WhatsApp
+or Telegram. This is an account of how that went.</p>
+
+<h3 id="the-status-quo-of-instant-messaging-apps">The status quo of instant messaging apps</h3>
+
+<p>I&#8217;ve tried a <em>ton</em> of messaging applications &#8211; Signal, WhatsApp,
+Telegram, Wire, Jami (Ring), Matrix, Slack, Discord and more recently, DeltaChat.</p>
+
+<p><strong>Signal</strong>: It straight up sucks on Android. Not to mention the
+centralzied architecture, and OWS&#8217;s refusal to federate.</p>
+
+<p><strong>WhatsApp</strong>: Facebook&#8217;s spyware that people use without a second
+thought. The sole reason I have it installed is for University&#8217;s
+class groups; I can&#8217;t wait to graduate.</p>
+
+<p><strong>Telegram</strong>: Centralized architecture and a closed-source server. It&#8217;s
+got a very nice Android client, though.</p>
+
+<p><strong>Jami</strong>: Distributed platform, free software. I am not going to comment
+on this because I don&#8217;t recall what my experience was like, but I&#8217;m not
+using it now&#8230; so if that&#8217;s indicative of anything.</p>
+
+<p><strong>Matrix (Riot)</strong>: Distributed network. Multiple client implementations.
+Overall, pretty great, but it&#8217;s slow. I&#8217;ve had messages not send / not
+received a lot of times. Matrix + Riot excels in group communication, but
+really sucks for one-to-one chats.</p>
+
+<p><strong>Slack</strong> / <strong>Discord</strong>: <em>sigh</em></p>
+
+<p><strong>DeltaChat</strong>: Pretty interesting idea &#8211; on paper. Using existing email
+infrastructure for IM sounds great, but it isn&#8217;t all that cash in
+practice. Email isn&#8217;t instant, there&#8217;s always a delay of give or take
+5 to 10 seconds, if not more. This affects the flow of conversation.
+I might write a small blog post later, revewing DeltaChat.<sup class="footnote-ref" id="fnref-deltachat"><a href="#fn-deltachat">2</a></sup></p>
+
+<h3 id="why-irc">Why IRC?</h3>
+
+<p>It&#8217;s free, in all senses of the word. A lot of others have done a great
+job of answering this question in further detail, this is by far my
+favourite:</p>
+
+<p><a href="https://drewdevault.com/2019/07/01/Absence-of-features-in-IRC.html">https://drewdevault.com/2019/07/01/Absence-of-features-in-IRC.html</a></p>
+
+<h3 id="using-ircs-private-messages">Using IRC&#8217;s private messages</h3>
+
+<p>This was the next obvious choice, but personal message buffers don&#8217;t
+persist in ZNC and it&#8217;s very annoying to have to do a <code>/query
+nerdypepper</code> (Weechat) or to search and message a user via Revolution
+IRC. The only unexplored option &#8211; using a channel.</p>
+
+<h3 id="setting-up-a-channel-for-dms">Setting up a channel for DMs</h3>
+
+<p>A fairly easy process:</p>
+
+<ul>
+<li>Limit users to 2 (3 if you have a bot)</li>
+<li><p>Set modes (on Rizon)<sup class="footnote-ref" id="fnref-modes"><a href="#fn-modes">1</a></sup>:</p>
+
+<pre><code>#crimson [+ilnpstz 3]
+</code></pre>
+
+<p>In essence, this limits the users to 3, sets the channel to invite only,
+hides the channel from <code>/whois</code> and <code>/list</code>, and a few other misc.
+modes.</p></li>
+<li><p>Notifications: Also a trivial task; a quick modification to <a href="https://weechat.org/scripts/source/lnotify.py.html/">lnotify.py</a>
+to send a notification for all messages in the specified buffer
+(<code>#crimson</code>) did the trick for Weechat. Revolution IRC, on the other
+hand, has an option to setup rules for notifications &#8211; super
+convenient.</p></li>
+<li><p>A bot: Lastly, a bot for a few small tasks &#8211; fetching URL titles, responding
+to <code>.np</code> (now playing) etc. Writing an IRC bot is dead simple, and it
+took me about an hour or two to get most of the basic functionality in
+place. The source is <a href="https://github.com/icyphox/detotated">here</a>.
+It is by no means &#8220;good code&#8221;; it breaks spectacularly from time to
+time.</p></li>
+</ul>
+
+<h3 id="in-conclusion">In conclusion</h3>
+
+<p>As the subtitle suggests, using IRC has been great. It&#8217;s probably not
+for everyone though, but it fits my (and Nerdy&#8217;s) usecase perfectly.</p>
+
+<p>P.S.: <em>I&#8217;m not sure why the footnotes are reversed.</em></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-modes">
+<p>Channel modes on <a href="https://wiki.rizon.net/index.php?title=Channel_Modes">Rizon</a>.&#160;<a href="#fnref-modes" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+
+<li id="fn-deltachat">
+<p>It&#8217;s in <a href="https://github.com/icyphox/site/issues/10">queue</a>.&#160;<a href="#fnref-deltachat" class="footnoteBackLink" title="Jump back to footnote 2 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+]]></description><link>https://icyphox.sh/blog/irc-for-dms</link><pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/irc-for-dms</guid></item><item><title>The intelligence conundrum</title><description><![CDATA[<p>I watched the latest <a href="https://en.wikipedia.org/wiki/S.W.A.T._(2017_TV_series)">S.W.A.T.</a>
 episode a couple of days ago, and it highlighted some interesting issues that
 intelligence organizations face when working with law enforcement. Side note: it&#8217;s a pretty
 good show if you like police procedurals.</p>
