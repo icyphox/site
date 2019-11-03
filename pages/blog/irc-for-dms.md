@@ -15,7 +15,7 @@ I've tried a _ton_ of messaging applications -- Signal, WhatsApp,
 Telegram, Wire, Jami (Ring), Matrix, Slack, Discord and more recently, DeltaChat.
 
 **Signal**: It straight up sucks on Android. Not to mention the
-centralzied architecture, and OWS's refusal to federate.
+centralized architecture, and OWS's refusal to federate.
 
 **WhatsApp**: Facebook's spyware that people use without a second
 thought. The sole reason I have it installed is for University's
