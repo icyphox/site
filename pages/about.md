@@ -28,7 +28,7 @@ Russian which I'm really enjoying so far.
 Apart from the links above, you can also find me on
 
 - [Reddit](https://reddit.com/u/icyphox)
-- [Lobste.rs](https://lobste.rs/u/icyphox)
+- [Lobsters](https://lobste.rs/u/icyphox)
 - [Hacker News](https://news.ycombinator.com/user?id=Icyphox)
 - [Steam](https://steamcommunity.com/id/icyphox)
 
@@ -36,15 +36,14 @@ Apart from the links above, you can also find me on
 
 My DMs on [Twitter](https://twitter.com/icyphox) are open, so feel free to slide into them.
 Don’t use Twitter? Shoot me a plain-text [email](mailto:x@icyphox.sh). If it’s something secret, here’s my [Keybase](https://keybase.io/icyphox).
+You can also find me on IRC @ Rizon and Freenode, as `icyphox` -- feel
+free to PM!
 
 Want to **hire me**? I’m down for freelance security work. Here’s my [résumé](https://x.icyphox.sh/resume.pdf).
 
 ## This website
 
 The site itself is built using my own static site generator — [vite](https://github.com/icyphox/vite). 
-
-This site uses no cookies, and I'm generally not interested in any form of tracking/analytics. However, my DNS and SSL provider, CloudFlare,
-does collect basic data like site hits and demographics. I've been meaning to get rid of it, but laziness has gotten the best of me. 
 
 The entirety of the content on my site is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 The source code for the site is licensed under [MIT](https://opensource.org/licenses/MIT).
