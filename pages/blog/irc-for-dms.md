@@ -47,7 +47,7 @@ It's free, in all senses of the word. A lot of others have done a great
 job of answering this question in further detail, this is by far my
 favourite:
 
-<a href="https://drewdevault.com/2019/07/01/Absence-of-features-in-IRC.html">https://drewdevault.com/2019/07/01/Absence-of-features-in-IRC.html</a>
+https://drewdevault.com/2019/07/01/Absence-of-features-in-IRC.html
 
 ### Using IRC's private messages
  
