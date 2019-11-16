@@ -19,8 +19,7 @@ during exams. Anyway, here&#8217;s a quick update on what I&#8217;ve been up to.
 
 <p>I realized that I could use this site&#8217;s
 <a href="https://github.com/icyphox/site">repo</a>&#8217;s issues to track blog post ideas.
-I&#8217;ve made a few, mostly just porting them over from my Google Keep note,
-which I&#8217;ve been using to keep track of blog post ideas.</p>
+I&#8217;ve made a few, mostly just porting them over from my Google Keep note.</p>
 
 <p>This method of using issues is great, because readers can chime in with
 ideas for things I could possibly discuss &#8211; like in <a href="https://github.com/icyphox/site/issues/10">this
@@ -28,8 +27,68 @@ issue</a>.</p>
 
 <h3 id="contemplating-a-vite-rewrite">Contemplating a <code>vite</code> rewrite</h3>
 
-<p><a href="https://github.com/icyphox/vite">vite</a>, the static site generator that
-builds this site, is aw</p>
+<p><a href="https://github.com/icyphox/vite"><code>vite</code></a>, despite what the name suggests
+&#8211; is awfully slow. Also, Python is bloat.
+Will rewriting it fix that? That&#8217;s what I plan to find out. I have
+a couple of choices of languages to use in the rewrite:</p>
+
+<ul>
+<li>C: Fast, compiled. Except I suck at it. (<code>cite</code>?)</li>
+<li>Nim: My favourite, but I&#8217;ll have to write bindings to <a href="https://github.com/kristapsdz/lowdown"><code>lowdown(1)</code></a>. (<code>nite</code>?)</li>
+<li>Shell: Another favourite, muh &#8220;minimalsm&#8221;. No downside, really.
+(<code>shite</code>?)</li>
+</ul>
+
+<p>Oh, and did I mention &#8211; I want it to be compatible with <code>vite</code>.
+I don&#8217;t want to have to redo my site structure or its templates. At the
+moment, I rely on Jinja2 for templating, so I&#8217;ll need something similar.</p>
+
+<h3 id="irc-bot">IRC bot</h3>
+
+<p>My earlier post on <a href="/blog/irc-for-dms">IRC for DMs</a> got quite a bit of
+traction, which was pretty cool. I didn&#8217;t really talk much about the bot
+itself though; I&#8217;m dedicating this section to
+<a href="https://github.com/icyphox/detotated">detotated</a>.<sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup></p>
+
+<p>Fairly simple Python code, using plain sockets. So far, we&#8217;ve got a few
+basic features in place:</p>
+
+<ul>
+<li><code>.np</code> command: queries the user&#8217;s last.fm to get the currently playing
+track</li>
+<li>Fetches the URL title, when a URL is sent in chat</li>
+</ul>
+
+<p>That&#8217;s it, really. I plan to add a <code>.nps</code>, or &#8220;now playing Spotify&#8221;
+command, since we share Spotify links pretty often.</p>
+
+<h3 id="other">Other</h3>
+
+<p>I&#8217;ve been reading some more manga, I&#8217;ll update the <a href="/reading">reading
+log</a> when I, well&#8230; get around to it. Haven&#8217;t had time to do
+much in the past few weeks &#8211; the time at the end of a semester tends to
+get pretty tight. Here&#8217;s what I plan to get back to during this winter break:</p>
+
+<ul>
+<li>Russian!</li>
+<li>Window manager in Nim</li>
+<li><code>vite</code> rewrite, probably</li>
+<li>The other blog posts in queue</li>
+</ul>
+
+<p>I&#8217;ve also put off doing any &#8220;security work&#8221; for a while now, perhaps
+that&#8217;ll change this December. Or whenever.</p>
+
+<p>With that ends my status update, on all things that I <em>haven&#8217;t</em> done.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-1">
+<p><a href="https://knowyourmeme.com/memes/dedotated-wam">https://knowyourmeme.com/memes/dedotated-wam</a> (dead meme, yes I know)&#160;<a href="#fnref-1" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
 ]]></description><link>https://icyphox.sh/blog/2019-11-16</link><pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/2019-11-16</guid></item><item><title>IRC for DMs</title><description><![CDATA[<p><a href="https://nerdypepper.me">Nerdy</a> and I decided to try and use IRC for our
 daily communications, as opposed to non-free alternatives like WhatsApp
 or Telegram. This is an account of how that went.</p>
