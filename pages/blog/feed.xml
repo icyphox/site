@@ -11,7 +11,26 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>IRC for DMs</title><description><![CDATA[<p><a href="https://nerdypepper.me">Nerdy</a> and I decided to try and use IRC for our
+    <item><title>Status update</title><description><![CDATA[<p>This month is mostly just unfun stuff, lined up in a neat schedule &#8211;
+exams. I get all these cool ideas for things to do, and it&#8217;s always
+during exams. Anyway, here&#8217;s a quick update on what I&#8217;ve been up to.</p>
+
+<h3 id="blog-post-queue">Blog post queue</h3>
+
+<p>I realized that I could use this site&#8217;s
+<a href="https://github.com/icyphox/site">repo</a>&#8217;s issues to track blog post ideas.
+I&#8217;ve made a few, mostly just porting them over from my Google Keep note,
+which I&#8217;ve been using to keep track of blog post ideas.</p>
+
+<p>This method of using issues is great, because readers can chime in with
+ideas for things I could possibly discuss &#8211; like in <a href="https://github.com/icyphox/site/issues/10">this
+issue</a>.</p>
+
+<h3 id="contemplating-a-vite-rewrite">Contemplating a <code>vite</code> rewrite</h3>
+
+<p><a href="https://github.com/icyphox/vite">vite</a>, the static site generator that
+builds this site, is aw</p>
+]]></description><link>https://icyphox.sh/blog/2019-11-16</link><pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/2019-11-16</guid></item><item><title>IRC for DMs</title><description><![CDATA[<p><a href="https://nerdypepper.me">Nerdy</a> and I decided to try and use IRC for our
 daily communications, as opposed to non-free alternatives like WhatsApp
 or Telegram. This is an account of how that went.</p>
 
@@ -53,7 +72,7 @@ I might write a small blog post later, revewing DeltaChat.<sup class="footnote-r
 job of answering this question in further detail, this is by far my
 favourite:</p>
 
-<p>https://drewdevault.com/2019/07/01/Absence-of-features-in-IRC.html</p>
+<p><a href="https://drewdevault.com/2019/07/01/Absence-of-features-in-IRC.html">https://drewdevault.com/2019/07/01/Absence-of-features-in-IRC.html</a></p>
 
 <h3 id="using-ircs-private-messages">Using IRC&#8217;s private messages</h3>
 

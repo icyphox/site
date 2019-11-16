@@ -51,6 +51,15 @@ def parse_article(path):
                 "header-ids",
                 "footnotes",
                 "smarty-pants",
+                "link-patterns",
+            ],
+            link_patterns=[
+                (
+                    re.compile(
+                        r"((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+(:[0-9]+)?|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)"
+                    ),
+                    r"\1",
+                )
             ],
         )
         return (arrow.get(rendered.metadata["date"]), rendered, path)
