@@ -9,6 +9,7 @@ subtitle: Computers, security & computer security.
 
 |     |     |
 | --- | --: |
+| [Status update](/blog/2019-11-16) | `2019-11-16` |
 | [IRC for DMs](/blog/irc-for-dms) | `2019-11-03` |
 | [The intelligence conundrum](/blog/intel-conundrum) | `2019-10-28` |
 | [Hacky scripts](/blog/hacky-scripts) | `2019-10-24` |
