@@ -25,7 +25,7 @@ domain gives them the power to make decisions that would be unfavourable
 to the .ORG community:
 
 - They control the registration/renewal fees of the TLD. They can
-hike the price if they wish to do. As is stands, NGOs already earn very
+hike the price if they wish to. As is stands, NGOs already earn very
 little -- a .ORG price hike would put them in a very icky situation.
 
 - They can introduce [Rights Protection
