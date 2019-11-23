@@ -11,7 +11,64 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Status update</title><description><![CDATA[<p>This month is mostly just unfun stuff, lined up in a neat schedule &#8211;
+    <item><title>Save .ORG!</title><description><![CDATA[<p>The .ORG top-level domain introduced in 1985, has been operated by the
+<a href="https://en.wikipedia.org/wiki/Public_Interest_Registry">Public Interest Registry</a> since
+2003. The .ORG TLD is used primarily by communities, free and open source projects, 
+and other non-profit organizations &#8211; although the use of the TLD isn&#8217;t
+restricted to non-profits.</p>
+
+<p>The Internet Society or ISOC, the group that created the PIR, has
+decided to sell the registry over to a private equity firm &#8211; Ethos
+Capital.</p>
+
+<h3 id="whats-the-problem">What&#8217;s the problem?</h3>
+
+<p>There are around 10 million .ORG TLDs registered, and a good portion of
+them are non-profits and non-governmental organizations. As the name
+suggests, they don&#8217;t earn any profits and all their operations rely on
+a thin inflow of donations. A private firm having control of the .ORG
+domain gives them the power to make decisions that would be unfavourable
+to the .ORG community:</p>
+
+<ul>
+<li><p>They control the registration/renewal fees of the TLD. They can
+hike the price if they wish to do. As is stands, NGOs already earn very
+little &#8211; a .ORG price hike would put them in a very icky situation.</p></li>
+<li><p>They can introduce <a href="https://www.icann.org/resources/pages/rpm-drp-2017-10-04-en">Rights Protection
+Mechanisms</a>
+or RPMs, which are essentially legal statements that can&#8212;if not
+correctly developed&#8212;jeopardize / censor completely legal non-profit
+activities.</p></li>
+<li><p>Lastly, they can suspend domains at the whim of state actors. It isn&#8217;t
+news that nation states go after NGOs, targetting them with allegations
+of illegal activity. The registry being a private firm only simplifies
+the process.</p></li>
+</ul>
+
+<p>Sure, these are just &#8220;what ifs&#8221; and speculations, but the risk is real.
+Such power can be abused and this would be severly detrimental to NGOs
+globally.</p>
+
+<h3 id="how-can-i-help">How can I help?</h3>
+
+<p>We need to get the ISOC to <strong>stop the sale</strong>. Head over to
+<a href="https://savedotorg.org">https://savedotorg.org</a> and sign their letter. An email is sent on your
+behalf to:</p>
+
+<ul>
+<li>Andrew Sullivan, CEO, ISOC</li>
+<li>Jon Nevett, CEO, PIR</li>
+<li>Maarten Botterman, Board Chair, ICANN</li>
+<li>Göran Marby, CEO, ICANN</li>
+</ul>
+
+<h3 id="closing-thoughts">Closing thoughts</h3>
+
+<p>The Internet that we all love and care for is slowly being subsumed by
+megacorps and private firms, who&#8217;s only motive is to make a profit. The
+Internet was meant to be free, and we&#8217;d better act now if we want that
+freedom. The future looks bleak &#8211; I hope we aren&#8217;t too late.</p>
+]]></description><link>https://icyphox.sh/blog/save-org</link><pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/save-org</guid></item><item><title>Status update</title><description><![CDATA[<p>This month is mostly just unfun stuff, lined up in a neat schedule &#8211;
 exams. I get all these cool ideas for things to do, and it&#8217;s always
 during exams. Anyway, here&#8217;s a quick update on what I&#8217;ve been up to.</p>
 
