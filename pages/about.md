@@ -34,7 +34,7 @@ Apart from the links above, you can also find me on
 
 My presence on the fediverse:
 
-- [@icyphox@freeradical.social](https://freeradical.social/@icyphox) (x-posted on Twitter)
+- <a rel="me" href="https://freeradical.zone/@icyphox">@icyphox@freeradical.zone</a> (x-posted on Twitter)
 - [@icyphox@pixelfed.social](https://pixelfed.social/icyphox)
 
 ## Contact
