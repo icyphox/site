@@ -32,6 +32,11 @@ Apart from the links above, you can also find me on
 - [Hacker News](https://news.ycombinator.com/user?id=Icyphox)
 - [Steam](https://steamcommunity.com/id/icyphox)
 
+My presence on the fediverse:
+
+- [@icyphox@freeradical.social](https://freeradical.social/@icyphox) (x-posted on Twitter)
+- [@icyphox@pixelfed.social](https://pixelfed.social/icyphox)
+
 ## Contact
 
 My DMs on [Twitter](https://twitter.com/icyphox) are open, so feel free to slide into them.
