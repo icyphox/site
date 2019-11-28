@@ -45,8 +45,10 @@ email me at [x@icyphox.sh](mailto:x@icyphox.sh), or if it's a comment on
 one of my blog posts -- send an email to my public inbox at
 [~icyphox/x@lists.sr.ht](mailto:~icyphox/x@lists.sr.ht) 
 (viewable [here](https://lists.sr.ht/~icyphox/x)). Should you need it,
-my [PGP key](/static/gpg.txt). I'm also on IRC @ Freenode and Rizon, 
-usually as `icy` / `icyphox`.
+my [PGP key](/static/gpg.txt). Fingerprint:
+`FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4`
+
+I'm also on IRC @ Freenode and Rizon, usually as `icy` / `icyphox`.
 
 If you're interested in **hiring me** -- here's my
 [résumé](https://x@icyphox.sh/resume.pdf).
