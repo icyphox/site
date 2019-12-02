@@ -11,12 +11,7 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Instagram OPSEC</title><description><![CDATA[<p>Which I am not, of course. But seeing as most of my peers are, I am
-compelled to write this post. Using a social platform like Instagram
-automatically implies that the user understands (to some level) that
-their personally identifiable information is exposed to the public, or
-a subset of the public.</p>
-]]></description><link>https://icyphox.sh/blog/ig-opsec</link><pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/ig-opsec</guid></item><item><title>Save .ORG!</title><description><![CDATA[<p>The .ORG top-level domain introduced in 1985, has been operated by the
+<item><title>Save .ORG!</title><description><![CDATA[<p>The .ORG top-level domain introduced in 1985, has been operated by the
 <a href="https://en.wikipedia.org/wiki/Public_Interest_Registry">Public Interest Registry</a> since
 2003. The .ORG TLD is used primarily by communities, free and open source projects, 
 and other non-profit organizations &#8211; although the use of the TLD isn&#8217;t
@@ -26,7 +21,7 @@ restricted to non-profits.</p>
 decided to sell the registry over to a private equity firm &#8211; Ethos
 Capital.</p>
 
-<h3 id="whats-the-problem">What&#8217;s the problem?</h3>
+<h2 id="whats-the-problem">What&#8217;s the problem?</h2>
 
 <p>There are around 10 million .ORG TLDs registered, and a good portion of
 them are non-profits and non-governmental organizations. As the name
@@ -54,7 +49,7 @@ the process.</p></li>
 Such power can be abused and this would be severly detrimental to NGOs
 globally.</p>
 
-<h3 id="how-can-i-help">How can I help?</h3>
+<h2 id="how-can-i-help">How can I help?</h2>
 
 <p>We need to get the ISOC to <strong>stop the sale</strong>. Head over to
 <a href="https://savedotorg.org">https://savedotorg.org</a> and sign their letter. An email is sent on your
@@ -67,7 +62,7 @@ behalf to:</p>
 <li>Göran Marby, CEO, ICANN</li>
 </ul>
 
-<h3 id="closing-thoughts">Closing thoughts</h3>
+<h2 id="closing-thoughts">Closing thoughts</h2>
 
 <p>The Internet that we all love and care for is slowly being subsumed by
 megacorps and private firms, who&#8217;s only motive is to make a profit. The
@@ -77,7 +72,7 @@ freedom. The future looks bleak &#8211; I hope we aren&#8217;t too late.</p>
 exams. I get all these cool ideas for things to do, and it&#8217;s always
 during exams. Anyway, here&#8217;s a quick update on what I&#8217;ve been up to.</p>
 
-<h3 id="blog-post-queue">Blog post queue</h3>
+<h2 id="blog-post-queue">Blog post queue</h2>
 
 <p>I realized that I could use this site&#8217;s
 <a href="https://github.com/icyphox/site">repo</a>&#8217;s issues to track blog post ideas.
@@ -87,7 +82,7 @@ I&#8217;ve made a few, mostly just porting them over from my Google Keep note.</
 ideas for things I could possibly discuss &#8211; like in <a href="https://github.com/icyphox/site/issues/10">this
 issue</a>.</p>
 
-<h3 id="contemplating-a-vite-rewrite">Contemplating a <code>vite</code> rewrite</h3>
+<h2 id="contemplating-a-vite-rewrite">Contemplating a <code>vite</code> rewrite</h2>
 
 <p><a href="https://github.com/icyphox/vite"><code>vite</code></a>, despite what the name suggests
 &#8211; is awfully slow. Also, Python is bloat.
@@ -105,7 +100,7 @@ a couple of choices of languages to use in the rewrite:</p>
 I don&#8217;t want to have to redo my site structure or its templates. At the
 moment, I rely on Jinja2 for templating, so I&#8217;ll need something similar.</p>
 
-<h3 id="irc-bot">IRC bot</h3>
+<h2 id="irc-bot">IRC bot</h2>
 
 <p>My earlier post on <a href="/blog/irc-for-dms">IRC for DMs</a> got quite a bit of
 traction, which was pretty cool. I didn&#8217;t really talk much about the bot
@@ -124,7 +119,7 @@ track</li>
 <p>That&#8217;s it, really. I plan to add a <code>.nps</code>, or &#8220;now playing Spotify&#8221;
 command, since we share Spotify links pretty often.</p>
 
-<h3 id="other">Other</h3>
+<h2 id="other">Other</h2>
 
 <p>I&#8217;ve been reading some more manga, I&#8217;ll update the <a href="/reading">reading
 log</a> when I, well&#8230; get around to it. Haven&#8217;t had time to do
@@ -155,7 +150,7 @@ that&#8217;ll change this December. Or whenever.</p>
 daily communications, as opposed to non-free alternatives like WhatsApp
 or Telegram. This is an account of how that went.</p>
 
-<h3 id="the-status-quo-of-instant-messaging-apps">The status quo of instant messaging apps</h3>
+<h2 id="the-status-quo-of-instant-messaging-apps">The status quo of instant messaging apps</h2>
 
 <p>I&#8217;ve tried a <em>ton</em> of messaging applications &#8211; Signal, WhatsApp,
 Telegram, Wire, Jami (Ring), Matrix, Slack, Discord and more recently, DeltaChat.</p>
@@ -187,7 +182,7 @@ practice. Email isn&#8217;t instant, there&#8217;s always a delay of give or tak
 5 to 10 seconds, if not more. This affects the flow of conversation.
 I might write a small blog post later, revewing DeltaChat.<sup class="footnote-ref" id="fnref-deltachat"><a href="#fn-deltachat">2</a></sup></p>
 
-<h3 id="why-irc">Why IRC?</h3>
+<h2 id="why-irc">Why IRC?</h2>
 
 <p>It&#8217;s free, in all senses of the word. A lot of others have done a great
 job of answering this question in further detail, this is by far my
@@ -195,14 +190,14 @@ favourite:</p>
 
 <p><a href="https://drewdevault.com/2019/07/01/Absence-of-features-in-IRC.html">https://drewdevault.com/2019/07/01/Absence-of-features-in-IRC.html</a></p>
 
-<h3 id="using-ircs-private-messages">Using IRC&#8217;s private messages</h3>
+<h2 id="using-ircs-private-messages">Using IRC&#8217;s private messages</h2>
 
 <p>This was the next obvious choice, but personal message buffers don&#8217;t
 persist in ZNC and it&#8217;s very annoying to have to do a <code>/query
 nerdypepper</code> (Weechat) or to search and message a user via Revolution
 IRC. The only unexplored option &#8211; using a channel.</p>
 
-<h3 id="setting-up-a-channel-for-dms">Setting up a channel for DMs</h3>
+<h2 id="setting-up-a-channel-for-dms">Setting up a channel for DMs</h2>
 
 <p>A fairly easy process:</p>
 
@@ -228,7 +223,7 @@ It is by no means &#8220;good code&#8221;; it breaks spectacularly from time to
 time.</p></li>
 </ul>
 
-<h3 id="in-conclusion">In conclusion</h3>
+<h2 id="in-conclusion">In conclusion</h2>
 
 <p>As the subtitle suggests, using IRC has been great. It&#8217;s probably not
 for everyone though, but it fits my (and Nerdy&#8217;s) usecase perfectly.</p>
@@ -252,7 +247,7 @@ episode a couple of days ago, and it highlighted some interesting issues that
 intelligence organizations face when working with law enforcement. Side note: it&#8217;s a pretty
 good show if you like police procedurals.</p>
 
-<h3 id="the-problem">The problem</h3>
+<h2 id="the-problem">The problem</h2>
 
 <p>Consider the following scenario:</p>
 
@@ -298,7 +293,7 @@ could just be an itch that you want to scratch. And this is where
 <strong>hacky scripts</strong> come in. Unclear? Let me illustrate with a few
 examples.</p>
 
-<h3 id="now-playing-status-in-my-bar">Now playing status in my bar</h3>
+<h2 id="now-playing-status-in-my-bar">Now playing status in my bar</h2>
 
 <p>If you weren&#8217;t aware already &#8211; I rice my desktop. A lot. And a part of
 this cohesive experience I try to create involves a status bar up at the
@@ -361,7 +356,7 @@ what it looks like running:</p>
 
 <p><img src="/static/img/now_playing.png" alt="now playing status polybar" /></p>
 
-<h3 id="update-latest-post-on-the-index-page">Update latest post on the index page</h3>
+<h2 id="update-latest-post-on-the-index-page">Update latest post on the index page</h2>
 
 <p>This pertains to this very blog that you&#8217;re reading. I wanted a quick
 way to update the &#8220;latest post&#8221; section in the home page and the
@@ -448,7 +443,7 @@ be inferred from the post date.</p>
 
 <p>That said, here&#8217;s what I&#8217;ve been up to!</p>
 
-<h3 id="void-linux">Void Linux</h3>
+<h2 id="void-linux">Void Linux</h2>
 
 <p>Yes, I decided to ditch Alpine in favor of Void. Alpine was great,
 really. The very comfy <code>apk</code>, ultra mnml system&#8230; but having to
@@ -463,11 +458,11 @@ battery life though. I&#8217;ll see if I can run some tests.</p>
 
 <p>This <em>should</em> be the end of my distro hopping. Hopefully.</p>
 
-<h3 id="pycon">PyCon</h3>
+<h2 id="pycon">PyCon</h2>
 
 <p>Yeah yeah, enough already. Read <a href="/blog/pycon-wrap-up">my previous post</a>.</p>
 
-<h3 id="this-website">This website</h3>
+<h2 id="this-website">This website</h2>
 
 <p>I&#8217;ve moved out of GitHub Pages over to Netlify. This isn&#8217;t my first time
 using Netlify, though. I used to host my old blog which ran Hugo, there.
@@ -486,7 +481,7 @@ git subtree push --prefix build origin gh-pages
 by installing <a href="https://github.com/icyphox/vite">vite</a>, and running <code>vite
 build</code>. Very pleasant.</p>
 
-<h3 id="mnmlwms-status"><code>mnmlwm</code>&#8217;s status</h3>
+<h2 id="mnmlwms-status"><code>mnmlwm</code>&#8217;s status</h2>
 
 <p><a href="https://github.com/minimalwm/minimal">mnmlwm</a>, for those unaware, is my pet project which aims to be a simple
 window manager written in Nim. I&#8217;d taken a break from it for a while
@@ -494,7 +489,7 @@ because Xlib is such a pain to work with (or I&#8217;m just dense). Anyway,
 I&#8217;m planning on getting back to it, with some fresh inspiration from
 Dylan Araps&#8217; <a href="https://github.com/dylanaraps/sowm">sowm</a>.</p>
 
-<h3 id="other">Other</h3>
+<h2 id="other">Other</h2>
 
 <p>I&#8217;ve been reading a lot of manga lately. Finished <em>Kekkon Yubiwa
 Monogatari</em> (till the latest chapter) and <em>Another</em>, and I&#8217;ve just
@@ -510,7 +505,7 @@ talks I enjoyed.
 Forgive the lack of pictures &#8211; I prefer living the moment through my 
 eyes. </p>
 
-<h3 id="talks">Talks</h3>
+<h2 id="talks">Talks</h2>
 
 <p>So much ML! Not that it&#8217;s a bad thing, but definitely interesting to
 note. From what I counted, there were about 17 talks tagged under &#8220;Data
@@ -529,7 +524,7 @@ from what&#8217;s submitted. ;)</p>
 keynote</li>
 </ul>
 
-<h3 id="my-talk">My talk (!!!)</h3>
+<h2 id="my-talk">My talk (!!!)</h2>
 
 <p>My good buddy <a href="https://twitter.com/_vologue">Raghav</a> and I spoke about
 our smart lock security research. Agreed, it might have been less
@@ -540,7 +535,7 @@ many different hardware and software stacks. But, anyway&#8230;</p>
 <p>I was reassured by folks after the talk that the silence during Q/A was 
 the &#8220;good&#8221; kind of silence. Was it really? I&#8217;ll never know.</p>
 
-<h3 id="some-nice-people-i-met">Some nice people I met</h3>
+<h2 id="some-nice-people-i-met">Some nice people I met</h2>
 
 <ul>
 <li><a href="https://twitter.com/abhirathb">Abhirath</a> &#8211; A 200 IQ lad. Talked to
@@ -556,7 +551,7 @@ awesome.</li>
 <p>And a lot of other people doing really great stuff, whose names I&#8217;m
 forgetting.</p>
 
-<h3 id="pictures">Pictures!</h3>
+<h2 id="pictures">Pictures!</h2>
 
 <p>It&#8217;s not much, and
 I can&#8217;t be bothered to format them like a collage or whatever, so I&#8217;ll
@@ -567,7 +562,7 @@ just dump them here &#8211; as is.</p>
 <img src="/static/img/me_talking.jpg" alt="me talking" />
 <img src="/static/img/s443_pycon.jpg" alt="s443 @ pycon" /></p>
 
-<h3 id="cest-tout">C&#8217;est tout</h3>
+<h2 id="cest-tout">C&#8217;est tout</h2>
 
 <p>Overall, a great time and a weekend well spent. It was very different
 from your typical security conference &#8211; a lot more <em>chill</em>, if you
@@ -586,7 +581,7 @@ the phone &amp; the computer. Let&#8217;s start with the phone. The daily carry.
 The device that&#8217;s on our person from when we get out of bed, till we get
 back in bed.</p>
 
-<h3 id="the-phone">The phone</h3>
+<h2 id="the-phone">The phone</h2>
 
 <p>I&#8217;ve read about a lot of methods people employ to curb their phone
 usage. Some have tried grouping &#8220;distracting&#8221; apps into a separate
@@ -621,7 +616,7 @@ tap the place where its icon used to exist (now replaced with my mail
 client) on my launcher. The only &#8220;fun&#8221; thing left on my phone to do is
 read or listen to music. Which is okay, in my opinion.</p>
 
-<h3 id="the-computer">The computer</h3>
+<h2 id="the-computer">The computer</h2>
 
 <p>I didn&#8217;t do anything too nutty here, and most of the minimalism is
 mostly aesthetic. I like UIs that get out of the way. </p>
@@ -641,7 +636,7 @@ I guess time will tell.</p>
 uni&#8217;s fest. My last &#8220;weekly&#8221; update was 10 days ago, and a lot has happened
 since then. Let&#8217;s get right into it!</p>
 
-<h3 id="my-switch-to-alpine">My switch to Alpine</h3>
+<h2 id="my-switch-to-alpine">My switch to Alpine</h2>
 
 <p>Previously, I ran Debian with Buster/Sid repos, and ever since this happened</p>
 
@@ -672,21 +667,21 @@ soon. (hint: it involves chroots)</p>
 
 <p><img src="/static/img/rice-2019-09-27.png" alt="rice" /></p>
 
-<h3 id="packaging-for-alpine">Packaging for Alpine</h3>
+<h2 id="packaging-for-alpine">Packaging for Alpine</h2>
 
 <p>On a related note, I&#8217;ve been busy packaging some of the stuff I use for Alpine
 &#8211; you can see my personal <a href="https://github.com/icyphox/aports">aports</a>
 repository if you&#8217;re interested. I&#8217;m currently working on packaging Nim too, so
 keep an eye out for that in the coming week.</p>
 
-<h3 id="talk-selection-at-pycon-india">Talk selection at PyCon India!</h3>
+<h2 id="talk-selection-at-pycon-india">Talk selection at PyCon India!</h2>
 
 <p>Yes! My buddy Raghav (<a href="https://twitter.com/_vologue">@_vologue</a>) and I are
 going to be speaking at PyCon India about our recent smart lock security
 research. The conference is happening in Chennai, much to our convenience.
 If you&#8217;re attending too, hit me up on Twitter and we can hang!</p>
 
-<h3 id="other">Other</h3>
+<h2 id="other">Other</h2>
 
 <p>That essentially sums up the <em>technical</em> stuff that I did. My Russian is going
 strong, my reading however, hasn&#8217;t. I have <em>yet</em> to finish those books! This
@@ -722,7 +717,7 @@ things I read, IRL stuff, etc.</p>
 
 <p>With the meta stuff out of the way, here&#8217;s what went down last week!</p>
 
-<h3 id="my-discovery-of-the-xxiivv-webring">My discovery of the XXIIVV webring</h3>
+<h2 id="my-discovery-of-the-xxiivv-webring">My discovery of the XXIIVV webring</h2>
 
 <p>Did you notice the new fidget-spinner-like logo at the bottom? Click it! It&#8217;s a link to
 the <a href="https://webring.xxiivv.com">XXIIVV webring</a>. I really like the idea of webrings.
@@ -737,7 +732,7 @@ twtxt feed at <code>/twtxt.txt</code> (root of this site).</p>
 
 <p>Which brings me to the next thing I did this/last week.</p>
 
-<h3 id="twsh-a-twtxt-client-written-in-bash"><code>twsh</code>: a twtxt client written in Bash</h3>
+<h2 id="twsh-a-twtxt-client-written-in-bash"><code>twsh</code>: a twtxt client written in Bash</h2>
 
 <p>I&#8217;m not a fan of the official Python client, because you know, Python is bloat.
 As an advocate of <em>mnmlsm</em>, I can&#8217;t use it in good conscience. Thus, began my
@@ -745,7 +740,7 @@ authorship of a truly mnml client in pure Bash. You can find it <a href="https:/
 It&#8217;s not entirely useable as of yet, but it&#8217;s definitely getting there, with the help
 of <a href="https://nerdypepper.me">@nerdypepper</a>.</p>
 
-<h3 id="other">Other</h3>
+<h2 id="other">Other</h2>
 
 <p>I have been listening to my usual podcasts: Crime Junkie, True Crime Garage,
 Darknet Diaries &amp; Off the Pill. To add to this list, I&#8217;ve begun binging Vice&#8217;s CYBER.
@@ -790,7 +785,7 @@ key factors of any successful disinformation operation:</p>
 <p>In order to break monotony, I will also be using the terms &#8220;information operation&#8221;, or the shortened
 forms &#8211; &#8220;info op&#8221; &amp; &#8220;disinfo&#8221;.</p>
 
-<h3 id="creating-disinformation">Creating disinformation</h3>
+<h2 id="creating-disinformation">Creating disinformation</h2>
 
 <p>Crafting or creating disinformation is by no means a trivial task. Often, the quality
 of any disinformation sample is a huge indicator of the level of sophistication of the
@@ -821,7 +816,7 @@ The content of the photo is not fake. The reality of what it captured is fake. T
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-<h3 id="motivations-behind-an-information-operation">Motivations behind an information operation</h3>
+<h2 id="motivations-behind-an-information-operation">Motivations behind an information operation</h2>
 
 <p>I like to broadly categorize any info op as either proactive or reactive. 
 Proactively, disinformation is spread with the desire to influence the target
@@ -855,7 +850,7 @@ masses. The ongoing Hong Kong protests is a good example.<sup class="footnote-re
   &#8230;</p>
 </blockquote>
 
-<h3 id="media-used-to-disperse-disinfo">Media used to disperse disinfo</h3>
+<h2 id="media-used-to-disperse-disinfo">Media used to disperse disinfo</h2>
 
 <p>As seen in the above example of totalitarian governments, national TV and newspaper agencies
 play a key role in influence ops en masse. It guarantees outreach due to the channel/paper&#8217;s
@@ -878,7 +873,7 @@ this is disinformation without a motive, or the motive is hard to determine simp
 the source is impossible to trace, lost in forwards.<sup class="footnote-ref" id="fnref-5"><a href="#fn-5">5</a></sup>
 This is a difficult problem to combat, especially given the nature of the target audience.</p>
 
-<h3 id="the-actors-behind-disinfo-campaigns">The actors behind disinfo campaigns</h3>
+<h2 id="the-actors-behind-disinfo-campaigns">The actors behind disinfo campaigns</h2>
 
 <p>I doubt this requires further elaboration, but in short:</p>
 
@@ -891,7 +886,7 @@ This is a difficult problem to combat, especially given the nature of the target
 
 <p>This essentially sums up the what, why, how and who of disinformation. </p>
 
-<h3 id="personal-opsec">Personal OPSEC</h3>
+<h2 id="personal-opsec">Personal OPSEC</h2>
 
 <p>This is a fun one. Now, it&#8217;s common knowledge that
 <strong>STFU is the best policy</strong>. But sometimes, this might not be possible, because
@@ -914,7 +909,7 @@ tweet stuff like:</p>
 
 <p><img src="/static/img/mcafeetweet.png" alt="mcafee opsecfail" /></p>
 
-<h3 id="conclusion">Conclusion</h3>
+<h2 id="conclusion">Conclusion</h2>
 
 <p>The ability to influence someone&#8217;s decisions/thought process in just one tweet is 
 scary. There is no simple way to combat disinformation. Social media is hard to control.
@@ -958,7 +953,7 @@ for a containerized solution, that most importantly, runs on my cheap $5
 Digital Ocean VPS &#8212; 1 vCPU and 1 GB memory. Of which only around 500 MB
 is actually available. So yeah, <em>pretty</em> tight.</p>
 
-<h3 id="whats-available">What&#8217;s available</h3>
+<h2 id="whats-available">What&#8217;s available</h2>
 
 <p>Turns out, there are quite a few of these OOTB, ready to deply solutions.
 These are the ones I came across:</p>
@@ -976,7 +971,7 @@ nothing else on it. I can&#8217;t afford to do that.</p></li>
 <li><p><a href="https://github.com/tomav/docker-mailserver/">docker-mailserver</a>: <strong>The winner</strong>. </p></li>
 </ul>
 
-<h3 id="so-docker-mailserver">So… <code>docker-mailserver</code></h3>
+<h2 id="so-docker-mailserver">So… <code>docker-mailserver</code></h2>
 
 <p>The first thing that caught my eye in the README:</p>
 
@@ -1061,11 +1056,11 @@ the container, something like so:</p>
 <p>With this done, you shouldn&#8217;t have mail clients complaining about 
 wonky certs for which you&#8217;ll have to add an exception manually.</p>
 
-<h3 id="why-would-you">Why would you…?</h3>
+<h2 id="why-would-you">Why would you…?</h2>
 
 <p>There are a few good reasons for this:</p>
 
-<h4 id="privacy">Privacy</h4>
+<h2 id="privacy">Privacy</h2>
 
 <p>No really, this is <em>the</em> best choice for truly private
 email. Not ProtonMail, not Tutanota. Sure, they claim so and I don&#8217;t 
@@ -1083,7 +1078,7 @@ third-party.
 This isn&#8217;t an attempt to spread FUD. In the end, it all depends on your
 threat model™.</p>
 
-<h4 id="decentralization">Decentralization</h4>
+<h2 id="decentralization">Decentralization</h2>
 
 <p>Email today is basically run by Google. Gmail has over 1.2 <em>billion</em>
 active users. That&#8217;s obscene.
@@ -1093,7 +1088,7 @@ Google reads your mail. This again loops back to my previous point, privacy.
 Decentralization guarantees privacy. When you control your mail, you subsequently
 control who reads it.</p>
 
-<h4 id="personalization">Personalization</h4>
+<h2 id="personalization">Personalization</h2>
 
 <p>Can&#8217;t ignore this one. It&#8217;s cool to have a custom email address to flex.</p>
 
@@ -1119,7 +1114,7 @@ control who reads it.</p>
 </div>
 ]]></description><link>https://icyphox.sh/blog/mailserver</link><pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/mailserver</guid></item><item><title>Picking the FB50 smart lock (CVE-2019-13143)</title><description><![CDATA[<p>(<em>originally posted at <a href="http://blog.securelayer7.net/fb50-smart-lock-vulnerability-disclosure">SecureLayer7&#8217;s Blog</a>, with my edits</em>)</p>
 
-<h3 id="the-lock">The lock</h3>
+<h2 id="the-lock">The lock</h2>
 
 <p>The lock in question is the FB50 smart lock, manufactured by Shenzhen
 Dragon Brother Technology Co. Ltd. This lock is sold under multiple brands
@@ -1134,7 +1129,7 @@ and unlocking from a range via Bluetooth.</p>
 <p>We had two primary attack surfaces we decided to tackle — Bluetooth (BLE)
 and the Android app.</p>
 
-<h3 id="via-bluetooth-low-energy-ble">Via Bluetooth Low Energy (BLE)</h3>
+<h2 id="via-bluetooth-low-energy-ble">Via Bluetooth Low Energy (BLE)</h2>
 
 <p>Android phones have the ability to capture Bluetooth (HCI) traffic
 which can be enabled under Developer Options under Settings. We made 
@@ -1149,7 +1144,7 @@ around 4 &#8220;unlocks&#8221; from the Android phone, as seen in the screenshot
 <p>We attempted replaying these requests using <code>gattool</code> and <code>gattacker</code>,
 but that didn&#8217;t pan out, since the value being written was encrypted.<sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup></p>
 
-<h3 id="via-the-android-app">Via the Android app</h3>
+<h2 id="via-the-android-app">Via the Android app</h2>
 
 <p>Reversing the app using <code>jd-gui</code>, <code>apktool</code> and <code>dex2jar</code> didn&#8217;t get us too
 far since most of it was obfuscated. Why bother when there exists an 
@@ -1158,7 +1153,7 @@ easier approach &#8211; BurpSuite.</p>
 <p>We captured and played around with a bunch of requests and responses,
 and finally arrived at a working exploit chain.</p>
 
-<h3 id="the-exploit">The exploit</h3>
+<h2 id="the-exploit">The exploit</h2>
 
 <p>The entire exploit is a 4 step process consisting of authenticated 
 HTTP requests:</p>
@@ -1174,7 +1169,7 @@ to the lock</li>
 
 <p>This is what it looks like, in essence (personal info redacted).</p>
 
-<h4 id="request-1">Request 1</h4>
+<h3 id="request-1">Request 1</h3>
 
 <pre><code>POST /oklock/lock/queryDevice
 {"mac":"XX:XX:XX:XX:XX:XX"}
@@ -1205,7 +1200,7 @@ to the lock</li>
 }
 </code></pre>
 
-<h4 id="request-2">Request 2</h4>
+<h3 id="request-2">Request 2</h3>
 
 <pre><code>POST /oklock/lock/getDeviceInfo
 
@@ -1236,21 +1231,21 @@ to the lock</li>
    }
 </code></pre>
 
-<h4 id="request-3">Request 3</h4>
+<h3 id="request-3">Request 3</h3>
 
 <pre><code>POST /oklock/lock/unbind
 
 {"lockId":"&lt;LOCK ID&gt;","userId":&lt;USER ID&gt;}
 </code></pre>
 
-<h4 id="request-4">Request 4</h4>
+<h3 id="request-4">Request 4</h3>
 
 <pre><code>POST /oklock/lock/bind
 
 {"name":"newname","userId":&lt;USER ID&gt;,"mac":"XX:XX:XX:XX:XX:XX"}
 </code></pre>
 
-<h3 id="thats-it-the-scary-stuff">That&#8217;s it! (&amp; the scary stuff)</h3>
+<h2 id="thats-it-the-scary-stuff">That&#8217;s it! (&amp; the scary stuff)</h2>
 
 <p>You should have the lock transferred to your account. The severity of this
 issue lies in the fact that the original owner completely loses access to
@@ -1263,13 +1258,13 @@ Ilja, a cool dude I met on Telegram, noticed locks named &#8220;carlock&#8221;,
 
 <p><em>shudders</em></p>
 
-<h3 id="proof-of-concept">Proof of Concept</h3>
+<h2 id="proof-of-concept">Proof of Concept</h2>
 
 <p><a href="https://twitter.com/icyphox/status/1158396372778807296">PoC Video</a></p>
 
 <p><a href="https://github.com/icyphox/pwnfb50">Exploit code</a></p>
 
-<h3 id="disclosure-timeline">Disclosure timeline</h3>
+<h2 id="disclosure-timeline">Disclosure timeline</h2>
 
 <ul>
 <li><strong>26th June, 2019</strong>: Issue discovered at SecureLayer7, Pune</li>
@@ -1279,7 +1274,7 @@ Ilja, a cool dude I met on Telegram, noticed locks named &#8220;carlock&#8221;,
 <li><strong>2nd August 2019</strong>: Public disclosure</li>
 </ul>
 
-<h3 id="lessons-learnt">Lessons learnt</h3>
+<h2 id="lessons-learnt">Lessons learnt</h2>
 
 <p><strong>DO NOT</strong>. Ever. Buy. A smart lock. You&#8217;re better off with the &#8220;dumb&#8221; ones
 with keys. With the IoT plague spreading, it brings in a large attack surface
@@ -1293,7 +1288,7 @@ practices in general.</p>
 in these new exploitation possibilities. This also broadens the playing 
 field for cyber warfare and mass surveillance campaigns. </p>
 
-<h3 id="researcher-info">Researcher info</h3>
+<h2 id="researcher-info">Researcher info</h2>
 
 <p>This research was done at <a href="https://securelayer7.net">SecureLayer7</a>, Pune, IN by:</p>
 
@@ -1325,7 +1320,7 @@ assembly to follow along. I highly recommend
 Basics</a>. Once you’re
 comfortable with it, proceed with the next bit — environment setup.</p>
 
-<h3 id="setup">Setup</h3>
+<h2 id="setup">Setup</h2>
 
 <p>Since we’re working with the ARM architecture, there are two options to go
 forth with: </p>
@@ -1356,7 +1351,7 @@ trivially installed.</p>
 
 <p>With that out of the way, here’s a quick run down of what ROP actually is.</p>
 
-<h3 id="a-primer-on-rop">A primer on ROP</h3>
+<h2 id="a-primer-on-rop">A primer on ROP</h2>
 
 <p>ROP or Return Oriented Programming is a modern exploitation technique that’s
 used to bypass protections like the <strong>NX bit</strong> (no-execute bit) and <strong>code sigining</strong>.
@@ -1386,7 +1381,7 @@ Check it out, it might be just what you needed for that “aha!” moment :)</p>
 <p>Still don’t get it? Don’t fret, we’ll look at <em>actual</em> exploit code in a bit and hopefully
 that should put things into perspective.</p>
 
-<h3 id="exploring-our-binary">Exploring our binary</h3>
+<h2 id="exploring-our-binary">Exploring our binary</h2>
 
 <p>Start by running it, and entering any arbitrary string. On entering a fairly
 large string, say, “A” × 20, we
@@ -1432,7 +1427,7 @@ function.</p>
 <p>Now that we have an overview of what’s in the binary, let’s formulate a method
 of exploitation by messing around with inputs.</p>
 
-<h3 id="messing-around-with-inputs">Messing around with inputs :^)</h3>
+<h2 id="messing-around-with-inputs">Messing around with inputs :^)</h2>
 
 <p>Back to <code>gdb</code>, hit <code>r</code> to run and pass in a patterned input, like in the
 screenshot.</p>
@@ -1486,7 +1481,7 @@ print(string + gadget + binsh + system)
 
 <p>Clean and mean.</p>
 
-<h3 id="the-exploit">The exploit</h3>
+<h2 id="the-exploit">The exploit</h2>
 
 <p>To write the exploit, we’ll use Python and the absolute godsend of a library — <code>struct</code>.
 It allows us to pack the bytes of addresses to the endianness of our choice.
@@ -1524,14 +1519,14 @@ when the pipe closes, since there’s no input coming in from STDIN.
 To get around this, we use <code>cat(1)</code> which allows us to relay input through it
 to the shell. Nifty trick.</p>
 
-<h3 id="conclusion">Conclusion</h3>
+<h2 id="conclusion">Conclusion</h2>
 
 <p>This was a fairly basic challenge, with everything laid out conveniently. 
 Actual ropchaining is a little more involved, with a lot more gadgets to be chained
 to acheive code execution.</p>
 
 <p>Hopefully, I’ll get around to writing about heap exploitation on ARM too. That’s all for now.</p>
-]]></description><link>https://icyphox.sh/blog/rop-on-arm</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/rop-on-arm</guid></item><item><title>My Setup</title><description><![CDATA[<h3 id="hardware">Hardware</h3>
+]]></description><link>https://icyphox.sh/blog/rop-on-arm</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/rop-on-arm</guid></item><item><title>My Setup</title><description><![CDATA[<h2 id="hardware">Hardware</h2>
 
 <p>The only computer I have with me is my <a href="https://store.hp.com/us/en/mdp/laptops/envy-13">HP Envy 13 (2018)</a> (my model looks a little different). It’s a 13” ultrabook, with an i5 8250u,
 8 gigs of RAM and a 256 GB NVMe SSD. It’s a very comfy machine that does everything I need it to.</p>
@@ -1547,7 +1542,7 @@ For the little bit of gaming that I do, I use a <a href="https://www.hpshopping.
 <p>For my music, I use the <a href="https://www.boseindia.com/en_in/products/headphones/over_ear_headphones/soundlink-around-ear-wireless-headphones-ii.html">Bose SoundLink II</a>. 
 Great pair of headphones, although the ear cups need replacing.</p>
 
-<h3 id="and-the-software">And the software</h3>
+<h2 id="and-the-software">And the software</h2>
 
 <p><del>My distro of choice for the past ~1 year has been <a href="https://elementary.io">elementary OS</a>. I used to be an Arch Linux elitist, complete with an esoteric
 window manager, all riced. I now use whatever JustWorks™.</del></p>
@@ -1576,7 +1571,7 @@ The same box also serves as my IRC bouncer and OpenVPN (TCP), which I tunnel via
 
 <p>Rolling your own disassembly scripts can be immensely helpful when it comes to automating certain processes, and eventually build your own homebrew reversing toolchain of sorts. At least, that’s what I’m attempting anyway.</p>
 
-<h3 id="setup">Setup</h3>
+<h2 id="setup">Setup</h2>
 
 <p>As the title suggests, you’re going to need a Python 3 interpreter before
 anything else. Once you’ve confirmed beyond reasonable doubt that you do,
@@ -1620,7 +1615,7 @@ challenge.</p>
 <div class="codehilite"><pre><span></span><code><span class="gp">$</span> gcc chall.c -o chall.elf
 </code></pre></div>
 
-<h3 id="scripting">Scripting</h3>
+<h2 id="scripting">Scripting</h2>
 
 <p>For starters, let’s look at the different sections present in the binary.</p>
 
@@ -1846,7 +1841,7 @@ malloc 0x680
 
 <p><strong>Update</strong>: It&#8217;s because of compiler optimization. A <code>printf()</code> (in this case) is seen as a bit overkill, and hence gets simplified to a <code>puts()</code>.</p>
 
-<h3 id="conclusion">Conclusion</h3>
+<h2 id="conclusion">Conclusion</h2>
 
 <p>Wew, that took quite some time. But we’re done. If you’re a beginner, you might find this extremely confusing, or probably didn’t even understand what was going on. And that’s okay. Building an intuition for reading and grokking disassembly comes with practice. I’m no good at it either.</p>
 
