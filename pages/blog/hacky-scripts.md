@@ -23,7 +23,7 @@ could just be an itch that you want to scratch. And this is where
 **hacky scripts** come in. Unclear? Let me illustrate with a few
 examples.
 
-### Now playing status in my bar
+## Now playing status in my bar
 
 If you weren't aware already -- I rice my desktop. A lot. And a part of
 this cohesive experience I try to create involves a status bar up at the
@@ -85,7 +85,7 @@ what it looks like running:
 
 ![now playing status polybar](/static/img/now_playing.png)
 
-### Update latest post on the index page
+## Update latest post on the index page
 
 This pertains to this very blog that you're reading. I wanted a quick
 way to update the "latest post" section in the home page and the

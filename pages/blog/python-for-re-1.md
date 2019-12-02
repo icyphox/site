@@ -9,7 +9,7 @@ While solving complex reversing challenges, we often use established tools like 
 
 Rolling your own disassembly scripts can be immensely helpful when it comes to automating certain processes, and eventually build your own homebrew reversing toolchain of sorts. At least, that’s what I’m attempting anyway.
 
-### Setup
+## Setup
 
 As the title suggests, you’re going to need a Python 3 interpreter before
 anything else. Once you’ve confirmed beyond reasonable doubt that you do,
@@ -58,7 +58,7 @@ $ gcc chall.c -o chall.elf
 ```
 
 
-### Scripting
+## Scripting
 
 For starters, let’s look at the different sections present in the binary.
 
@@ -302,7 +302,7 @@ I’m not sure why it uses `puts` here? I might be missing something; perhaps `p
 
 **Update**: It's because of compiler optimization. A `printf()` (in this case) is seen as a bit overkill, and hence gets simplified to a `puts()`.
 
-### Conclusion
+## Conclusion
 
 Wew, that took quite some time. But we’re done. If you’re a beginner, you might find this extremely confusing, or probably didn’t even understand what was going on. And that’s okay. Building an intuition for reading and grokking disassembly comes with practice. I’m no good at it either.
 

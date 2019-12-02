@@ -13,7 +13,7 @@ talks I enjoyed.
 Forgive the lack of pictures -- I prefer living the moment through my 
 eyes. 
 
-### Talks
+## Talks
 
 So much ML! Not that it's a bad thing, but definitely interesting to
 note. From what I counted, there were about 17 talks tagged under "Data
@@ -30,7 +30,7 @@ With that point out of the way, here are some of the talks I really liked:
 - oh and of course, [David Beazley](https://twitter.com/dabeaz)'s closing
 keynote
 
-### My talk (!!!)
+## My talk (!!!)
 
 My good buddy [Raghav](https://twitter.com/_vologue) and I spoke about
 our smart lock security research. Agreed, it might have been less
@@ -41,7 +41,7 @@ many different hardware and software stacks. But, anyway...
 I was reassured by folks after the talk that the silence during Q/A was 
 the "good" kind of silence. Was it really? I'll never know.
 
-### Some nice people I met
+## Some nice people I met
 
 
 - [Abhirath](https://twitter.com/abhirathb) -- A 200 IQ lad. Talked to
@@ -56,7 +56,7 @@ awesome.
 And a lot of other people doing really great stuff, whose names I'm
 forgetting.
 
-### Pictures!
+## Pictures!
 
 It's not much, and
 I can't be bothered to format them like a collage or whatever, so I'll
@@ -67,7 +67,7 @@ just dump them here -- as is.
 ![me talking](/static/img/me_talking.jpg)
 ![s443 @ pycon](/static/img/s443_pycon.jpg)
 
-### C'est tout
+## C'est tout
 
 Overall, a great time and a weekend well spent. It was very different
 from your typical security conference -- a lot more _chill_, if you

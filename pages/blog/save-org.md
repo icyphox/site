@@ -15,7 +15,7 @@ The Internet Society or ISOC, the group that created the PIR, has
 decided to sell the registry over to a private equity firm -- Ethos
 Capital.
 
-### What's the problem?
+## What's the problem?
 
 There are around 10 million .ORG TLDs registered, and a good portion of
 them are non-profits and non-governmental organizations. As the name
@@ -43,7 +43,7 @@ Sure, these are just "what ifs" and speculations, but the risk is real.
 Such power can be abused and this would be severly detrimental to NGOs
 globally.
 
-### How can I help?
+## How can I help?
 
 We need to get the ISOC to **stop the sale**. Head over to
 https://savedotorg.org and sign their letter. An email is sent on your
@@ -54,7 +54,7 @@ behalf to:
 * Maarten Botterman, Board Chair, ICANN
 * Göran Marby, CEO, ICANN
 
-### Closing thoughts
+## Closing thoughts
 
 The Internet that we all love and care for is slowly being subsumed by
 megacorps and private firms, who's only motive is to make a profit. The
