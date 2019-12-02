@@ -9,6 +9,7 @@ subtitle: Computers, security & computer security.
 
 |     |     |
 | --- | --: |
+| [Instagram OPSEC](/blog/ig-opsec) | `2019-12-02` |
 | [Save .ORG!](/blog/save-org) | `2019-11-23` |
 | [Status update](/blog/2019-11-16) | `2019-11-16` |
 | [IRC for DMs](/blog/irc-for-dms) | `2019-11-03` |
