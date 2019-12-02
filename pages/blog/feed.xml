@@ -11,7 +11,128 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-<item><title>Save .ORG!</title><description><![CDATA[<p>The .ORG top-level domain introduced in 1985, has been operated by the
+    <item><title>Instagram OPSEC</title><description><![CDATA[<p>Which I am not, of course. But seeing as most of my peers are, I am
+compelled to write this post. Using a social platform like Instagram
+automatically implies that the user understands (to some level) that
+their personally identifiable information is exposed publicly, and they
+sign up for the service understanding this risk &#8211; or I think they do,
+anyway. But that&#8217;s about it, they go ham after that. Sharing every nitty
+gritty detail of their private lives without understanding the potential
+risks of doing so.</p>
+
+<p>The fundamentals of OPSEC dictacte that you develop a threat model, and
+Instgrammers are <em>obviously</em> incapable of doing that &#8211; so I&#8217;ll do it
+for them. </p>
+
+<h2 id="your-average-instagrammers-threat-model">Your average Instagrammer&#8217;s threat model</h2>
+
+<p>I stress on the word &#8220;average&#8221;, as in this doesn&#8217;t apply to those with
+more than a couple thousand followers. Those type of accounts inherently
+face different kinds of threats &#8211; those that come with having
+a celebrity status, and are not in scope of this analysis.</p>
+
+<ul>
+<li><p><strong>State actors</strong>: This doesn&#8217;t <em>really</em> fit into our threat model,
+since our target demographic is simply not important enough. That said,
+there are select groups of individuals that operate on
+Instagram<sup class="footnote-ref" id="fnref-ddepisode"><a href="#fn-ddepisode">1</a></sup>, and they can potentially be targetted by a state
+actor.</p></li>
+<li><p><strong>OSINT</strong>: This is probably the biggest threat vector, simply because
+of the amount of visual information shared on the platform. A lot can be
+gleaned from one simple picture in a nondescript alleyway. We&#8217;ll get
+into this in the DOs and DON&#8217;Ts in a bit.</p></li>
+<li><p><strong>Facebook &amp; LE</strong>: Instagram is the last place you want to be doing an
+illegal, because well, it&#8217;s logged and more importantly &#8211; not
+end-to-end encrypted. Law enforcement can subpoena any and all account
+information. Quoting Instagram&#8217;s 
+<a href="https://help.instagram.com/494561080557017">page on this</a>:</p></li>
+</ul>
+
+<blockquote>
+  <p>a search warrant issued under the procedures described in the Federal 
+  Rules of Criminal Procedure or equivalent state warrant procedures 
+  upon a showing of probable cause is required to compel the disclosure 
+  of the stored contents of any account, which may include messages, 
+  photos, comments, and location information.</p>
+</blockquote>
+
+<p>That out of the way, here&#8217;s a list of DOs and DON&#8217;Ts to keep in mind
+while posting on Instagram.</p>
+
+<h3 id="donts">DON&#8217;Ts</h3>
+
+<ul>
+<li><p>Use Instagram for planning and orchestrating illegal shit! I&#8217;ve
+explained why this is a terrible idea above. Use secure comms &#8211; even
+WhatsApp is a better choice, if you have nothing else. In fact, try
+avoiding IG DMs altogether, use alternatives that implement E2EE.</p></li>
+<li><p>Film live videos outside. Or try not to, if you can. You might
+unknowingly include information about your location: street signs,
+shops etc. These can be used to ascertain your current location.</p></li>
+<li><p>Film live videos in places you visit often. This compromises your
+security at places you&#8217;re bound to be at.</p></li>
+<li><p>Share your flight ticket in your story! I can&#8217;t stress this enough!!!
+Summer/winter break? &#8220;Look guys, I&#8217;m going home! Here&#8217;s where I live,
+and here&#8217;s my flight number &#8211; feel free to track me!&#8221;. This scenario is
+especially worrisome because the start and end points are known to the
+threat actor, and your arrival time can be trivially looked up &#8211; thanks
+to the flight number on your ticket. So, just don&#8217;t.</p></li>
+<li><p>Post screenshots with OS specific details. This might border on
+pendantic, but better safe than sorry. Your phone&#8217;s statusbar and navbar 
+are better cropped out of pictures. They reveal the time, notifications
+(apps that you use), and can be used to identify your phone&#8217;s operating
+system.  Besides, the status/nav bar isn&#8217;t very useful to your screenshot 
+anyway.</p></li>
+<li><p>Avoid sharing your voice, if avoidable. In general, reduce your
+footprint.</p></li>
+<li><p>Think you&#8217;re safe if your account is set to private. It doesn&#8217;t take
+much to get someone who follows you, to show show your profile on their
+device.</p></li>
+</ul>
+
+<h3 id="dos">DOs</h3>
+
+<ul>
+<li><p>Post pictures that pertain to a specific location, once you&#8217;ve moved
+out of the location. Also applies to stories. It can wait.</p></li>
+<li><p>Post pictures that have been shot indoors. Or try to; reasons above.
+Who woulda thunk I&#8217;d advocate bathroom selfies?</p></li>
+<li><p>Delete old posts that are irrelevant to your current audience. Your
+friends at work don&#8217;t need to know about where you went to high school.</p></li>
+</ul>
+
+<p>More DON&#8217;Ts than DOs, that&#8217;s very telling. Here are a few more points
+that are good OPSEC practices in general:</p>
+
+<ul>
+<li><strong>Think before you share</strong>. Does it conform to the rules mentioned above?</li>
+<li><strong>Compartmentalize</strong>. Separate as much as you can from what you share
+online, from what you do IRL. Limit information exposure.</li>
+<li><strong>Assess your risks</strong>: Do this often. People change, your environments
+change, and consequentially the risks do too.</li>
+</ul>
+
+<h2 id="fin">Fin</h2>
+
+<p>Instagram is&#8212;much to my dismay&#8212;far too popular for it to die any
+time soon. There are plenty of good reasons to stop using the platform
+altogether (hint: Facebook), but that&#8217;s a discussion for another day.</p>
+
+<p>Or be like me:</p>
+
+<p><img src="/static/img/ig.jpg" alt="0 posts lul" /></p>
+
+<p>And that pretty much wraps it up, with a neat little bow.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-ddepisode">
+<p><a href="https://darknetdiaries.com/episode/51/">https://darknetdiaries.com/episode/51/</a> &#8211; Jack talks about Indian hackers who operate on Instagram.&#160;<a href="#fnref-ddepisode" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+]]></description><link>https://icyphox.sh/blog/ig-opsec</link><pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/ig-opsec</guid></item><item><title>Save .ORG!</title><description><![CDATA[<p>The .ORG top-level domain introduced in 1985, has been operated by the
 <a href="https://en.wikipedia.org/wiki/Public_Interest_Registry">Public Interest Registry</a> since
 2003. The .ORG TLD is used primarily by communities, free and open source projects, 
 and other non-profit organizations &#8211; although the use of the TLD isn&#8217;t
