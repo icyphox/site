@@ -81,8 +81,8 @@ are better cropped out of pictures. They reveal the time, notifications
 system.  Besides, the status/nav bar isn't very useful to your screenshot 
 anyway.
 
-- Avoid sharing your voice, if avoidable. In general, reduce your
-footprint.
+- Share your voice. In general, reduce your footprint on the platform
+that can be used to identify you elsewhere.
 
 - Think you're safe if your account is set to private. It doesn't take
 much to get someone who follows you, to show show your profile on their
