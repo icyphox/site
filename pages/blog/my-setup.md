@@ -5,7 +5,7 @@ subtitle: My daily drivers — hardware, software and workflow
 date: 2019-05-13
 ---
 
-### Hardware
+## Hardware
 
 The only computer I have with me is my [HP Envy 13 (2018)](https://store.hp.com/us/en/mdp/laptops/envy-13) (my model looks a little different). It’s a 13” ultrabook, with an i5 8250u,
 8 gigs of RAM and a 256 GB NVMe SSD. It’s a very comfy machine that does everything I need it to.
@@ -21,7 +21,7 @@ For the little bit of gaming that I do, I use a [HP m150](https://www.hpshopping
 For my music, I use the [Bose SoundLink II](https://www.boseindia.com/en_in/products/headphones/over_ear_headphones/soundlink-around-ear-wireless-headphones-ii.html). 
 Great pair of headphones, although the ear cups need replacing.
 
-### And the software
+## And the software
 
 <del>My distro of choice for the past ~1 year has been [elementary OS](https://elementary.io). I used to be an Arch Linux elitist, complete with an esoteric
 window manager, all riced. I now use whatever JustWorks™.</del>

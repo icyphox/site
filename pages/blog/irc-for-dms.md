@@ -9,7 +9,7 @@ date: 2019-11-03
 daily communications, as opposed to non-free alternatives like WhatsApp
 or Telegram. This is an account of how that went.
 
-### The status quo of instant messaging apps
+## The status quo of instant messaging apps
 
 I've tried a _ton_ of messaging applications -- Signal, WhatsApp,
 Telegram, Wire, Jami (Ring), Matrix, Slack, Discord and more recently, DeltaChat.
@@ -41,7 +41,7 @@ practice. Email isn't instant, there's always a delay of give or take
 5 to 10 seconds, if not more. This affects the flow of conversation.
 I might write a small blog post later, revewing DeltaChat.[^deltachat]
 
-### Why IRC?
+## Why IRC?
 
 It's free, in all senses of the word. A lot of others have done a great
 job of answering this question in further detail, this is by far my
@@ -49,14 +49,14 @@ favourite:
 
 https://drewdevault.com/2019/07/01/Absence-of-features-in-IRC.html
 
-### Using IRC's private messages
+## Using IRC's private messages
  
 This was the next obvious choice, but personal message buffers don't
 persist in ZNC and it's very annoying to have to do a `/query
 nerdypepper` (Weechat) or to search and message a user via Revolution
 IRC. The only unexplored option -- using a channel.
 
-### Setting up a channel for DMs
+## Setting up a channel for DMs
 
 A fairly easy process:
 
@@ -82,7 +82,7 @@ place. The source is [here](https://github.com/icyphox/detotated).
 It is by no means "good code"; it breaks spectacularly from time to
 time.
 
-### In conclusion
+## In conclusion
 
 As the subtitle suggests, using IRC has been great. It's probably not
 for everyone though, but it fits my (and Nerdy's) usecase perfectly.

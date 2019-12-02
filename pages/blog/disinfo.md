@@ -25,7 +25,7 @@ At the end, we'll also look at how you can use disinformation techniques to main
 In order to break monotony, I will also be using the terms "information operation", or the shortened
 forms -- "info op" & "disinfo".
 
-### Creating disinformation
+## Creating disinformation
 
 Crafting or creating disinformation is by no means a trivial task. Often, the quality
 of any disinformation sample is a huge indicator of the level of sophistication of the
@@ -55,7 +55,7 @@ The content of the photo is not fake. The reality of what it captured is fake. T
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-### Motivations behind an information operation
+## Motivations behind an information operation
 
 I like to broadly categorize any info op as either proactive or reactive. 
 Proactively, disinformation is spread with the desire to influence the target
@@ -88,7 +88,7 @@ masses. The ongoing Hong Kong protests is a good example.[^4] According to [NPR]
 > ...
 
 
-### Media used to disperse disinfo
+## Media used to disperse disinfo
 
 As seen in the above example of totalitarian governments, national TV and newspaper agencies
 play a key role in influence ops en masse. It guarantees outreach due to the channel/paper's
@@ -111,7 +111,7 @@ this is disinformation without a motive, or the motive is hard to determine simp
 the source is impossible to trace, lost in forwards.[^5]
 This is a difficult problem to combat, especially given the nature of the target audience.
 
-### The actors behind disinfo campaigns
+## The actors behind disinfo campaigns
 
 I doubt this requires further elaboration, but in short:
 
@@ -122,7 +122,7 @@ I doubt this requires further elaboration, but in short:
 
 This essentially sums up the what, why, how and who of disinformation. 
 
-### Personal OPSEC
+## Personal OPSEC
 
 This is a fun one. Now, it's common knowledge that
 **STFU is the best policy**. But sometimes, this might not be possible, because
@@ -143,7 +143,7 @@ And please, don't do this:
 
 ![mcafee opsecfail](/static/img/mcafeetweet.png)
 
-### Conclusion
+## Conclusion
 
 The ability to influence someone's decisions/thought process in just one tweet is 
 scary. There is no simple way to combat disinformation. Social media is hard to control.

@@ -10,7 +10,7 @@ episode a couple of days ago, and it highlighted some interesting issues that
 intelligence organizations face when working with law enforcement. Side note: it's a pretty
 good show if you like police procedurals.
 
-### The problem
+## The problem
 
 Consider the following scenario:
 

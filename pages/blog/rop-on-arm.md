@@ -11,7 +11,7 @@ assembly to follow along. I highly recommend
 Basics](https://azeria-labs.com/writing-arm-assembly-part-1/). Once you’re
 comfortable with it, proceed with the next bit — environment setup.
 
-### Setup
+## Setup
 
 Since we’re working with the ARM architecture, there are two options to go
 forth with: 
@@ -41,7 +41,7 @@ $ gcc roplevel2.c -o rop2
 
 With that out of the way, here’s a quick run down of what ROP actually is.
 
-### A primer on ROP
+## A primer on ROP
 
 ROP or Return Oriented Programming is a modern exploitation technique that’s
 used to bypass protections like the **NX bit** (no-execute bit) and **code sigining**.
@@ -69,7 +69,7 @@ Check it out, it might be just what you needed for that “aha!” moment :)
 Still don’t get it? Don’t fret, we’ll look at _actual_ exploit code in a bit and hopefully
 that should put things into perspective.
 
-### Exploring our binary
+## Exploring our binary
 
 Start by running it, and entering any arbitrary string. On entering a fairly
 large string, say, “A” × 20, we
@@ -115,7 +115,7 @@ function.
 Now that we have an overview of what’s in the binary, let’s formulate a method
 of exploitation by messing around with inputs.
 
-### Messing around with inputs :^)
+## Messing around with inputs :^)
 
 Back to `gdb`, hit `r` to run and pass in a patterned input, like in the
 screenshot.
@@ -168,7 +168,7 @@ print(string + gadget + binsh + system)
 Clean and mean.
 
 
-### The exploit
+## The exploit
 
 To write the exploit, we’ll use Python and the absolute godsend of a library — `struct`.
 It allows us to pack the bytes of addresses to the endianness of our choice.
@@ -207,7 +207,7 @@ when the pipe closes, since there’s no input coming in from STDIN.
 To get around this, we use `cat(1)` which allows us to relay input through it
 to the shell. Nifty trick.
 
-### Conclusion
+## Conclusion
 
 This was a fairly basic challenge, with everything laid out conveniently. 
 Actual ropchaining is a little more involved, with a lot more gadgets to be chained

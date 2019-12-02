@@ -14,7 +14,7 @@ the phone & the computer. Let's start with the phone. The daily carry.
 The device that's on our person from when we get out of bed, till we get
 back in bed.
 
-### The phone
+## The phone
 
 I've read about a lot of methods people employ to curb their phone
 usage. Some have tried grouping "distracting" apps into a separate
@@ -47,7 +47,7 @@ tap the place where its icon used to exist (now replaced with my mail
 client) on my launcher. The only "fun" thing left on my phone to do is
 read or listen to music. Which is okay, in my opinion.
 
-### The computer
+## The computer
 
 I didn't do anything too nutty here, and most of the minimalism is
 mostly aesthetic. I like UIs that get out of the way. 
