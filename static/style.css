@@ -71,16 +71,6 @@ body {
   line-height: 1.8;
 }
 
-.content-index {
-	position: relative;
-	font-size: 17px;
-	top: 20%;
-  left: 30%;
-  right: 30%;
-  width: 40%;
-  line-height: 1.8;
-}
-
 pre {
   padding: 10px;
 }
@@ -114,7 +104,7 @@ a > code:hover {
 
 .logo {
 	width: 220px;
-  padding-bottom: 65px;
+  padding-bottom: 60px;
 }
 
 .footer {
