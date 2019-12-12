@@ -25,7 +25,7 @@ def update_index(posts):
     with open(path, "r") as f:
         md = f.readlines()
     ruler = md.index("| --- | --: |\n")
-    for post, i in zip(posts, range(4)):
+    for post, i in zip(posts, range(5)):
         md[ruler + i + 1] = post + "\n"
 
     with open(path, "w") as f:
@@ -41,13 +41,13 @@ def update_blog(s):
         print(l, end=""),
 
 
-top_four = []
+top_five = []
 metas = []
 lines = []
 fnames = []
 
-for i in range(4):
-    top_four.append(getrecents(blog)[i])
+for i in range(5):
+    top_five.append(getrecents(blog)[i])
     metas.append(markdown_path(getrecents(blog)[i], extras=["metadata"]).metadata)
     fnames.append(os.path.basename(os.path.splitext(getrecents(blog)[i])[0]))
 

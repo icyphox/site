@@ -11,7 +11,196 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Instagram OPSEC</title><description><![CDATA[<p>Which I am not, of course. But seeing as most of my peers are, I am
+    <item><title>Disinfo war: RU vs GB</title><description><![CDATA[<p>This entire sequence of events begins with the attempted poisoning of
+Sergei Skripal<sup class="footnote-ref" id="fnref-skripal"><a href="#fn-skripal">1</a></sup>, an ex-GRU officer who was a double-agent for
+the UK&#8217;s intelligence services. This hit attempt happened on the 4th of
+March, 2018. 8 days later, then-Prime Minister Theresa May formally
+accused Russia for the attack.</p>
+
+<p>The toxin used in the poisoning was a nerve agent called <em>Novichok</em>.
+In addition to the British military-research facility at Porton Down,
+a small number of labs around the world were tasked with confirming
+Porton Down&#8217;s conclusions on the toxin that was used, by the OPCW
+(Organisation for the Prohibition of Chemical Weapons).</p>
+
+<p>With the background on the matter out of the way, here are the different
+instances of well timed disinformation pushed out by Moscow.</p>
+
+<h2 id="the-russian-offense">The Russian offense</h2>
+
+<h3 id="april-14-2018">April 14, 2018</h3>
+
+<ul>
+<li>RT published an article claiming that Spiez had identified a different
+toxin &#8211; BZ, and not Novichok.</li>
+<li>This was an attempt to shift the blame from Russia (origin of Novichok),
+to NATO countries, where it was apparently in use.</li>
+<li>Most viral piece on the matter in all of 2018.</li>
+</ul>
+
+<p>Although technically correct, this isn&#8217;t the entire truth. As part of
+protocol, the OPCW added a new substance to the sample as a test. If any
+of the labs failed to identify this substance, their findings were
+deemed untrustworthy. This toxin was a derivative of BZ.</p>
+
+<p>Here are a few interesting things to note:</p>
+
+<ol>
+<li>The entire process starting with the OPCW and the labs is top-secret.
+How did Russia even know Speiz was one of the labs?</li>
+<li>On April 11th, the OPCW mentioned BZ in a report confirming Porton
+Down&#8217;s findings. Note that Russia is a part of OPCW, and are fully
+aware of the quality control measures in place. Surely they knew
+about the reason for BZ&#8217;s use?</li>
+</ol>
+
+<p>Regardless, the Russian version of the story spread fast. They cashed in
+on two major factors to plant this disinfo:</p>
+
+<ol>
+<li>&#8220;NATO bad&#8221; : Overused, but surprisingly works. People love a story
+that goes full 180°.</li>
+<li>Spiez can&#8217;t defend itself: At the risk of revealing that it was one
+of the facilities testing the toxin, Spiez was only able to &#8220;not
+comment&#8221;.</li>
+</ol>
+
+<h3 id="april-3-2018">April 3, 2018</h3>
+
+<ul>
+<li>The Independent publishes a story based on an interview with the chief
+executive of Porton Down, Gary Aitkenhead.</li>
+<li>Aitkenhead says they&#8217;ve identified Novichok but &#8220;have not identified
+the precise source&#8221;.</li>
+<li>Days earlier, Boris Johnson (then-Foreign Secretary) claimed that
+Porton Down confirmed the origin of the toxin to be Russia.</li>
+<li>This discrepancy was immediately promoted by Moscow, and its network
+all over.</li>
+</ul>
+
+<p>This one is especially interesting because of how <em>simple</em> it is to
+exploit a small contradiction, that could&#8217;ve been an honest mistake.
+This episode is also interesting because the British actually attempted
+damage control this time. Porton Down tried to clarify Aitkenhead&#8217;s
+statement via a tweet<sup class="footnote-ref" id="fnref-dstltweet"><a href="#fn-dstltweet">2</a></sup>:</p>
+
+<blockquote>
+  <p>Our experts have precisely identified the nerve agent as a Novichok. 
+  It is not, and has never been, our responsibility to confirm the source 
+  of the agent @skynews @UKmoments</p>
+</blockquote>
+
+<p>Quoting the <a href="https://www.defenseone.com/threats/2019/12/britains-secret-war-russia/161665/">Defense One</a> 
+article on the matter:</p>
+
+<blockquote>
+  <p>The episode is seen by those inside Britain’s security communications team 
+  as the most serious misstep of the crisis, which for a period caused real 
+  concern. U.K. officials told me that, in hindsight, Aikenhead could never 
+  have blamed Russia directly, because that was not his job—all he was 
+  qualified to do was identify the chemical. Johnson, in going too far, 
+  was more damaging. Two years on, he is now prime minister.</p>
+</blockquote>
+
+<h3 id="may-2018">May 2018</h3>
+
+<ul>
+<li>OPCW facilities receive an email from Spiez inviting them to
+a conference.</li>
+<li>The conference itself is real, and has been organized before.</li>
+<li>The email however, was not &#8211; attached was a Word document containing
+malware.</li>
+<li>Also seen were inconsistencies in the email formatting, from what was
+normal.</li>
+</ul>
+
+<p>This spearphishing campaign was never offically attributed to Moscow,
+but there are a lot of tells here that point to it being the work of
+a state actor:</p>
+
+<ol>
+<li>Attack targetting a specific group of individuals.</li>
+<li>Relatively high level of sophistication &#8211; email formatting,
+malicious Word doc, etc.</li>
+</ol>
+
+<p>However, the British NCSC have deemed with &#8220;high confidence&#8221; that the
+attack was perpetrated by GRU. In the UK intelligence parlance, &#8220;highly
+likely&#8221; / &#8220;high confidence&#8221; usually means &#8220;definitely&#8221;.</p>
+
+<h2 id="britains-defense">Britain&#8217;s defense</h2>
+
+<h3 id="september-5-2018">September 5, 2018</h3>
+
+<p>The UK took a lot of hits in 2018, but they eventually came back:</p>
+
+<ul>
+<li>Metropolitan Police has a meeting with the press, releasing their
+findings.</li>
+<li>CCTV footage showing the two Russian hitmen was released.</li>
+<li>Traces of Novichok identified in their hotel room.</li>
+</ul>
+
+<p>This sudden news explosion from Britan&#8217;s side completely
+bulldozed the information space pertaining to the entire event.
+According to Defense One:</p>
+
+<blockquote>
+  <p>Only two of the 10 most viral stories in the weeks following the announcement 
+  were sympathetic to Russia, according to NewsWhip. Finally, officials recalled, 
+  it felt as though the U.K. was the aggressor. “This was all kept secret to 
+  put the Russians on the hop,” one told me. “Their response was all over the 
+  place from this point. It was the turning point.”</p>
+</blockquote>
+
+<p>Earlier in April, 4 GRU agents were arrested in the Netherlands, who
+were there to execute a cyber operation against the OPCW (located in The
+Hague), via their WiFi networks. They were arrested by Dutch security,
+and later identifed as belonging to Unit 26165. They also seized a bunch
+of equipment from the room and their car.</p>
+
+<blockquote>
+  <p>The abandoned equipment revealed that the GRU unit involved had sent
+  officers around the world to conduct similar cyberattacks. They had
+  been in Malaysia trying to steal information about the investigation
+  into the downed Malaysia Airlines Flight 17, and at a hotel in Lausanne,
+  Switzerland, where a World Anti-Doping Agency (WADA) conference was taking
+  place as Russia faced sanctions from the International Olympic Committee.
+  Britain has said that the same GRU unit attempted to compromise Foreign
+  Office and Porton Down computer systems after the Skripal poisoning.</p>
+</blockquote>
+
+<h3 id="october-4-2018">October 4, 2018</h3>
+
+<p>UK made the arrests public, published a list of infractions commited by
+Russia, along with the specific GRU unit that was caught.</p>
+
+<p>During this period, just one of the top 25 viral stories was from
+a pro-Russian outlet, RT &#8211; that too a fairly straightforward piece.</p>
+
+<h2 id="wrapping-up">Wrapping up</h2>
+
+<p>As with conventional warfare, it&#8217;s hard to determine who won. Britain
+may have had the last blow, but Moscow&#8212;yet again&#8212;depicted their
+finesse in information warfare. Their ability to seize unexpected
+openings, gather intel to facilitate their disinformation campaigns, and
+their cyber capabilities makes them a formidable threat. </p>
+
+<p>2020 will be fun, to say the least.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-skripal">
+<p><a href="https://en.wikipedia.org/wiki/Sergei_Skripal">https://en.wikipedia.org/wiki/Sergei_Skripal</a>&#160;<a href="#fnref-skripal" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+
+<li id="fn-dstltweet">
+<p><a href="https://twitter.com/dstlmod/status/981220158680260613">https://twitter.com/dstlmod/status/981220158680260613</a>&#160;<a href="#fnref-dstltweet" class="footnoteBackLink" title="Jump back to footnote 2 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+]]></description><link>https://icyphox.sh/blog/ru-vs-gb</link><pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/ru-vs-gb</guid></item><item><title>Instagram OPSEC</title><description><![CDATA[<p>Which I am not, of course. But seeing as most of my peers are, I am
 compelled to write this post. Using a social platform like Instagram
 automatically implies that the user understands (to some level) that
 their personally identifiable information is exposed publicly, and they
@@ -83,8 +272,8 @@ are better cropped out of pictures. They reveal the time, notifications
 (apps that you use), and can be used to identify your phone&#8217;s operating
 system.  Besides, the status/nav bar isn&#8217;t very useful to your screenshot 
 anyway.</p></li>
-<li><p>Avoid sharing your voice, if avoidable. In general, reduce your
-footprint.</p></li>
+<li><p>Share your voice. In general, reduce your footprint on the platform
+that can be used to identify you elsewhere.</p></li>
 <li><p>Think you&#8217;re safe if your account is set to private. It doesn&#8217;t take
 much to get someone who follows you, to show show your profile on their
 device.</p></li>
