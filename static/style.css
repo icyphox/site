@@ -102,6 +102,16 @@ a > code:hover {
   	background: cyan;
 }
 
+details > summary {
+  list-style: none;
+  color: gray;
+  cursor: pointer;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 .logo {
 	width: 220px;
   padding-bottom: 60px;

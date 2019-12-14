@@ -9,12 +9,12 @@ subtitle: I read very infrequently, this might never get updated.
 
 ### Books
 
-|      |        |         |
-|:-----|:-------|--------:|
-| The Way of Kings | **Brandon Sanderson** |`2019-12-14` |
-| The Unending Game | **Vikram Sood** | `2019-08-08` |
-| By Way of Deception | **Victor Ostrovsky** |`2019-06-21`|
-| Terrorism and Counterintelligence | **Blake Mobley** |`2019-05-14` |
+|      |         |
+|:-----|--------:|
+| <details><summary>The Way of Kings</summary>by **Brandon Sanderson**</details> | `2019-12-14` |
+| <details><summary>The Unending Game</summary>by **Vikram Sood**</details> | `2019-08-08` |
+| <details><summary>By Way of Deception</summary>by **Victor Ostrovsky**</details> | `2019-06-21`|
+| <details><summary>Terrorism and Counterintelligence</summary>by **Blake Mobley**</details> | `2019-05-14` |
 
 ### Manga
 
@@ -23,4 +23,5 @@ subtitle: I read very infrequently, this might never get updated.
 | Kakegurui | `2019-10-15` |
 | Another | `2019-10-12` |
 | Kekkon Yubiwa Monogatari | `2019-10-08` |
-
+| Tokyo Ghoul (and :re) | `?` |
+| Death Note | `?` |
