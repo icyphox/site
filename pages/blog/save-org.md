@@ -8,11 +8,11 @@ date: 2019-11-23
 The .ORG top-level domain introduced in 1985, has been operated by the
 [Public Interest Registry](https://en.wikipedia.org/wiki/Public_Interest_Registry) since
 2003. The .ORG TLD is used primarily by communities, free and open source projects, 
-and other non-profit organizations -- although the use of the TLD isn't
+and other non-profit organizations---although the use of the TLD isn't
 restricted to non-profits.
 
 The Internet Society or ISOC, the group that created the PIR, has
-decided to sell the registry over to a private equity firm -- Ethos
+decided to sell the registry over to a private equity firm---Ethos
 Capital.
 
 ## What's the problem?
@@ -26,7 +26,7 @@ to the .ORG community:
 
 - They control the registration/renewal fees of the TLD. They can
 hike the price if they wish to. As is stands, NGOs already earn very
-little -- a .ORG price hike would put them in a very icky situation.
+little---a .ORG price hike would put them in a very icky situation.
 
 - They can introduce [Rights Protection
 Mechanisms](https://www.icann.org/resources/pages/rpm-drp-2017-10-04-en)
@@ -59,4 +59,4 @@ behalf to:
 The Internet that we all love and care for is slowly being subsumed by
 megacorps and private firms, who's only motive is to make a profit. The
 Internet was meant to be free, and we'd better act now if we want that
-freedom. The future looks bleak -- I hope we aren't too late.
+freedom. The future looks bleak---I hope we aren't too late.

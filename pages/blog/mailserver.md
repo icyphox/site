@@ -116,7 +116,7 @@ wonky certs for which you'll have to add an exception manually.
 ## Why would you…?
 There are a few good reasons for this:
 
-## Privacy 
+### Privacy 
 No really, this is *the* best choice for truly private
 email. Not ProtonMail, not Tutanota. Sure, they claim so and I don't 
 dispute it. Quoting Drew Devault[^3],
@@ -131,7 +131,7 @@ third-party.
 This isn't an attempt to spread FUD. In the end, it all depends on your
 threat model™.
 
-## Decentralization
+### Decentralization
 Email today is basically run by Google. Gmail has over 1.2 *billion*
 active users. That's obscene.
 Email was designed to be decentralized but big corps swooped in and
@@ -140,7 +140,7 @@ Google reads your mail. This again loops back to my previous point, privacy.
 Decentralization guarantees privacy. When you control your mail, you subsequently
 control who reads it.
 
-## Personalization
+### Personalization
 Can't ignore this one. It's cool to have a custom email address to flex.
 
 `x@icyphox.sh` vs `gabe.newell4321@gmail.com`

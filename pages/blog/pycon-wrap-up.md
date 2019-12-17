@@ -10,7 +10,7 @@ weekend---Oct 12th and 13th---was PyCon India 2019, in Chennai, India.
 It was my first PyCon, _and_ my first ever talk at a major conference!
 This is an account of the all the cool stuff I saw, people I met and the
 talks I enjoyed.
-Forgive the lack of pictures -- I prefer living the moment through my 
+Forgive the lack of pictures---I prefer living the moment through my 
 eyes. 
 
 ## Talks
@@ -44,10 +44,10 @@ the "good" kind of silence. Was it really? I'll never know.
 ## Some nice people I met
 
 
-- [Abhirath](https://twitter.com/abhirathb) -- A 200 IQ lad. Talked to
+- [Abhirath](https://twitter.com/abhirathb)---A 200 IQ lad. Talked to
 me about everything from computational biology to the physical
 implementation of quantum computers.
-- [Abin](https://twitter.com/meain_) -- He recognized me from my
+- [Abin](https://twitter.com/meain_)---He recognized me from my
 [r/unixporn](https://reddit.com/r/unixporn) posts, which was pretty
 awesome.
 - [Abhishek](https://twitter.com/h6165)
@@ -60,7 +60,7 @@ forgetting.
 
 It's not much, and
 I can't be bothered to format them like a collage or whatever, so I'll
-just dump them here -- as is.
+just dump them here---as is.
 
 ![nice badge](/static/img/silly_badge.jpg)
 ![awkward smile!](/static/img/abhishek_anmol.jpg)
@@ -70,7 +70,7 @@ just dump them here -- as is.
 ## C'est tout
 
 Overall, a great time and a weekend well spent. It was very different
-from your typical security conference -- a lot more _chill_, if you
+from your typical security conference---a lot more _chill_, if you
 will. The organizers did a fantastic job and the entire event was put
 together really well.
 I don't have much else to say, but I know for sure that I'll be
