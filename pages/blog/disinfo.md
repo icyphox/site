@@ -23,7 +23,7 @@ key factors of any successful disinformation operation:
 At the end, we'll also look at how you can use disinformation techniques to maintain OPSEC.
 
 In order to break monotony, I will also be using the terms "information operation", or the shortened
-forms -- "info op" & "disinfo".
+forms---"info op" & "disinfo".
 
 ## Creating disinformation
 

@@ -6,11 +6,11 @@ date: 2019-10-24
 ---
 
 As a CS student, I see a lot of people around me doing courses online
-to learn to code. Don't get me wrong -- it probably works for some.
+to learn to code. Don't get me wrong---it probably works for some.
 Everyone learns differently. But that's only going to get you so far.
 Great you know the syntax, you can solve some competitive programming
 problems, but that's not quite enough, is it? The actual learning comes
-from _applying_ it in solving _actual_ problems -- not made up ones.
+from _applying_ it in solving _actual_ problems---not made up ones.
 (_inb4 some seething CP bro comes at me_)
 
 Now, what's an actual problem? Some might define it as real world
@@ -25,7 +25,7 @@ examples.
 
 ## Now playing status in my bar
 
-If you weren't aware already -- I rice my desktop. A lot. And a part of
+If you weren't aware already---I rice my desktop. A lot. And a part of
 this cohesive experience I try to create involves a status bar up at the
 top of my screen, showing the time, date, volume and battery statuses etc.
 
@@ -45,7 +45,7 @@ My next avenue was the Spotify Web API. One look at the [docs](https://developer
 I realize that I'll have to make _more_ than one request to fetch the
 artist and track details. Nope, I need this to work fast.
 
-Last resort -- Last.fm's API. Spolier alert, this worked. Also, arguably
+Last resort---Last.fm's API. Spolier alert, this worked. Also, arguably
 the best choice, since it shows the track status regardless of where
 the music is being played. Here's the script in its entirety:
 
@@ -165,4 +165,4 @@ given that there are [so many](https://staticgen.com) of them, but
 I chose to write one myself.
 
 And that just about sums up what I wanted to say. The best and most fun
-way to learn to code -- write hacky scripts. You heard it here.
+way to learn to code---write hacky scripts. You heard it here.

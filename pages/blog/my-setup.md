@@ -1,7 +1,7 @@
 ---
 template: text.html
 title: My Setup
-subtitle: My daily drivers — hardware, software and workflow
+subtitle: My daily drivers---hardware, software and workflow
 date: 2019-05-13
 ---
 
@@ -35,7 +35,7 @@ Here’s a (riced) screenshot of my desktop.
 
 Most of my work is done in either the browser, or the terminal.
 My shell is pure [zsh](http://www.zsh.org), as in no plugin frameworks. It’s customized using built-in zsh functions. Yes, you don’t actually need
-a framework. It’s useless bloat. The prompt itself is generated using a framework I built in [Nim](https://nim-lang.org) — [nicy](https://github.com/icyphox/nicy).
+a framework. It’s useless bloat. The prompt itself is generated using a framework I built in [Nim](https://nim-lang.org)---[nicy](https://github.com/icyphox/nicy).
 My primary text editor is [nvim](https://neovim.org). Again, all configs in my dotfiles repo linked above.
 I manage all my passwords using [pass(1)](https://passwordstore.org), and I use [rofi-pass](https://github.com/carnager/rofi-pass) to access them via `rofi`.
 

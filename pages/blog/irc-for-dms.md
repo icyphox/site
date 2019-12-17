@@ -11,7 +11,7 @@ or Telegram. This is an account of how that went.
 
 ## The status quo of instant messaging apps
 
-I've tried a _ton_ of messaging applications -- Signal, WhatsApp,
+I've tried a _ton_ of messaging applications---Signal, WhatsApp,
 Telegram, Wire, Jami (Ring), Matrix, Slack, Discord and more recently, DeltaChat.
 
 **Signal**: It straight up sucks on Android. Not to mention the
@@ -35,7 +35,7 @@ really sucks for one-to-one chats.
 
 **Slack** / **Discord**: _sigh_
 
-**DeltaChat**: Pretty interesting idea -- on paper. Using existing email
+**DeltaChat**: Pretty interesting idea---on paper. Using existing email
 infrastructure for IM sounds great, but it isn't all that cash in
 practice. Email isn't instant, there's always a delay of give or take
 5 to 10 seconds, if not more. This affects the flow of conversation.
@@ -54,7 +54,7 @@ https://drewdevault.com/2019/07/01/Absence-of-features-in-IRC.html
 This was the next obvious choice, but personal message buffers don't
 persist in ZNC and it's very annoying to have to do a `/query
 nerdypepper` (Weechat) or to search and message a user via Revolution
-IRC. The only unexplored option -- using a channel.
+IRC. The only unexplored option---using a channel.
 
 ## Setting up a channel for DMs
 
@@ -72,10 +72,10 @@ modes.
 * Notifications: Also a trivial task; a quick modification to [lnotify.py](https://weechat.org/scripts/source/lnotify.py.html/)
 to send a notification for all messages in the specified buffer
 (`#crimson`) did the trick for Weechat. Revolution IRC, on the other
-hand, has an option to setup rules for notifications -- super
+hand, has an option to setup rules for notifications---super
 convenient.
 
-* A bot: Lastly, a bot for a few small tasks -- fetching URL titles, responding
+* A bot: Lastly, a bot for a few small tasks---fetching URL titles, responding
 to `.np` (now playing) etc. Writing an IRC bot is dead simple, and it
 took me about an hour or two to get most of the basic functionality in
 place. The source is [here](https://github.com/icyphox/detotated).

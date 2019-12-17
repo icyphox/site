@@ -308,4 +308,4 @@ Wew, that took quite some time. But we’re done. If you’re a beginner, you mi
 
 All the code used in this post is here: [https://github.com/icyphox/asdf/tree/master/reversing-elf](https://github.com/icyphox/asdf/tree/master/reversing-elf)
 
-Ciao for now, and I’ll see ya in #2 of this series — PE binaries. Whenever that is.
+Ciao for now, and I’ll see ya in #2 of this series---PE binaries. Whenever that is.
