@@ -24,7 +24,7 @@ def update_index(posts):
     path = "../pages/_index.md"
     with open(path, "r") as f:
         md = f.readlines()
-    ruler = md.index("| --- | --: |\n")
+    ruler = md.index("| :-- | --: |\n")
     for post, i in zip(posts, range(5)):
         md[ruler + i + 1] = post + "\n"
 
