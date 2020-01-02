@@ -11,7 +11,59 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Disinfo war: RU vs GB</title><description><![CDATA[<p>This entire sequence of events begins with the attempted poisoning of
+    <item><title>2019 in review</title><description><![CDATA[<p>Just landed in a rainy Chennai, back in campus for my 6th semester.
+A little late to the &#8220;year in review blog post&#8221; party; travel took up
+most of my time. Last year was pretty eventful (at least in my books),
+and I think I did a bunch of cool stuff&#8212;let&#8217;s see!</p>
+
+<h2 id="interning-at-securelayer7">Interning at SecureLayer7</h2>
+
+<p>Last summer, I interned at <a href="https://securelayer7.net">SecureLayer7</a>,
+a security consulting firm in Pune, India. My work was mostly in
+hardware and embededded security research. I learnt a ton about ARM and
+MIPS reversing and exploitation, UART and JTAG, firmware RE and
+enterprise IoT security.</p>
+
+<p>I also earned my first CVE! I&#8217;ve written about it in detail
+<a href="/blog/fb50">here</a>.</p>
+
+<h2 id="conferences">Conferences</h2>
+
+<p>I attended two major conferences last year&#8212;Nullcon Goa and PyCon
+India. Both super fun experiences and I met a ton of cool people!
+<a href="https://twitter.com/icyphox/status/1101022604851212288">Nullcon Twitter thread</a>
+and <a href="/blog/pycon-wrap-up">PyCon blog post</a>.</p>
+
+<h2 id="talks">Talks</h2>
+
+<p>I gave two talks last year:</p>
+
+<ol>
+<li><em>Intro to Reverse Engineering</em> at Cyware 2019</li>
+<li><em>"Smart lock? Nah dude."</em> at PyCon India</li>
+</ol>
+
+<h2 id="things-i-made">Things I made</h2>
+
+<p>Not in order, because I CBA:</p>
+
+<ul>
+<li><a href="https://github.com/icyphox/repl">repl</a>: More of a quick bash hack, 
+I don&#8217;t really use it.</li>
+<li><a href="https://github.com/icyphox/pw">pw</a>: A password manager. This,
+I actually do use. I&#8217;ve even written a tiny 
+<a href="https://github.com/icyphox/dotfiles/blob/master/bin/pwmenu.sh"><code>dmenu</code> wrapper</a>
+for it. </li>
+<li><a href="https://github.com/icyphox/twsh">twsh</a>: An incomplete twtxt client,
+in bash. I have yet to get around to finishing it.</li>
+<li><a href="https://github.com/icyphox/alpine">alpine ports</a>: My APKBUILDs for
+Alpine.</li>
+<li><a href="https://github.com/icyphox/detotated">detotated</a>: An IRC bot written
+in Python. See <a href="/blog/irc-for-dms">IRC for DMs</a>.</li>
+<li><a href="https://github.com/icyphox/icyrc">icyrc</a>: A no bullshit IRC client,
+because WeeChat is bloat.</li>
+</ul>
+]]></description><link>https://icyphox.sh/blog/2019-in-review</link><pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/2019-in-review</guid></item><item><title>Disinfo war: RU vs GB</title><description><![CDATA[<p>This entire sequence of events begins with the attempted poisoning of
 Sergei Skripal<sup class="footnote-ref" id="fnref-skripal"><a href="#fn-skripal">1</a></sup>, an ex-GRU officer who was a double-agent for
 the UK&#8217;s intelligence services. This hit attempt happened on the 4th of
 March, 2018. 8 days later, then-Prime Minister Theresa May formally
