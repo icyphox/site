@@ -20,8 +20,11 @@ subtitle: I read very infrequently, this might never get updated.
 
 |      |        |
 |:-----|--------|
+| Kimi wa Midara na Boku no Joou | `2019-12-26` |
+| Jumyou wo Kaitotte Moratta. Ichinen ni Tsuki, Ichimanen de. | `2019-12-25` |
 | Kakegurui | `2019-10-15` |
 | Another | `2019-10-12` |
 | Kekkon Yubiwa Monogatari | `2019-10-08` |
+| One Punch Man | `?` |
 | Tokyo Ghoul (and :re) | `?` |
 | Death Note | `?` |
