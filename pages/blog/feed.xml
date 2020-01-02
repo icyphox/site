@@ -63,6 +63,33 @@ in Python. See <a href="/blog/irc-for-dms">IRC for DMs</a>.</li>
 <li><a href="https://github.com/icyphox/icyrc">icyrc</a>: A no bullshit IRC client,
 because WeeChat is bloat.</li>
 </ul>
+
+<p>I probably missed something, but whatever.</p>
+
+<h2 id="blog-posts">Blog posts</h2>
+
+<pre><code>$ ls -1 pages/blog/*.md | wc -l
+20
+</code></pre>
+
+<p>So excluding today&#8217;s post, and <code>_index.md</code>, that&#8217;s 18 posts! I had
+initially planned to write one post a month, but hey, this is great. My
+plan for 2020 is to write one post a <em>week</em>&#8212;unrealistic, I know, but
+I will try nevertheless.</p>
+
+<p>I wrote about a bunch of things, ranging from programming to
+return-oriented-programming (heh), sysadmin and security stuff, and
+a hint of culture and philosophy. Nice!</p>
+
+<p>The <a href="/blog/python-for-re-1">Python for Reverse Engineering</a> post got
+a ton of attention on the interwebz, so that was cool.</p>
+
+<h2 id="bye-2019">Bye 2019</h2>
+
+<p>2019 was super productive! (in my terms). I learnt a lot of new things
+last year, and I can only hope to learn as much in 2020. :)</p>
+
+<p>I&#8217;ll see you next week.</p>
 ]]></description><link>https://icyphox.sh/blog/2019-in-review</link><pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/2019-in-review</guid></item><item><title>Disinfo war: RU vs GB</title><description><![CDATA[<p>This entire sequence of events begins with the attempted poisoning of
 Sergei Skripal<sup class="footnote-ref" id="fnref-skripal"><a href="#fn-skripal">1</a></sup>, an ex-GRU officer who was a double-agent for
 the UK&#8217;s intelligence services. This hit attempt happened on the 4th of
