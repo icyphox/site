@@ -307,21 +307,3 @@ hr {
     width: 180px;
   }
 }
-
-@media (prefers-color-scheme: light) {
-  body {
-    background: white;
-
-    .container {
-      color: #021012;
-    }
-    
-    .container-text {
-      color: #021012;
-    }
-
-    pre, pre code {
-      color: #021012;
-    }    
-  }
-}
