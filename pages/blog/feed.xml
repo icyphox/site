@@ -11,7 +11,150 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>2019 in review</title><description><![CDATA[<p>Just landed in a rainy Chennai, back in campus for my 6th semester.
+    <item><title>Five days in a TTY</title><description><![CDATA[<p>This new semester has been pretty easy on me, so far. I hardly every
+have any classes (again, so far), and I&#8217;ve a ton of free time on my
+hands. This calls for&#8212;yep&#8212;a distro hop! </p>
+
+<h2 id="why-kiss">Why KISS?</h2>
+
+<p><a href="https://getkiss.org">KISS</a> has been making rounds on the interwebz lately.<sup class="footnote-ref" id="fnref-hn"><a href="#fn-hn">1</a></sup>
+The Hacker News post spurred <em>quite</em> the discussion. But then again,
+that is to be expected from Valleybros who use macOS all day. :^)</p>
+
+<p>From the website,</p>
+
+<blockquote>
+  <p>An independent Linux® distribution with a focus on simplicity and the
+  concept of “less is more”. The distribution targets <em>only</em> the x86-64
+  architecture and the English language.</p>
+</blockquote>
+
+<p>Like many people did in the HN thread, &#8220;simplicity&#8221; here is not to be
+confused with &#8220;ease&#8221;. It is instead, simplicity in terms of lesser and
+cleaner code&#8212;no
+<a href="https://www.urbandictionary.com/define.php?term=poetterware">Poetterware</a>.</p>
+
+<p>This, I can get behind. A clean system with less code is like a clean
+table. It&#8217;s nice to work on. It also implies security to a certain
+extent since there&#8217;s a smaller attack surface. </p>
+
+<p>The <a href="https://github.com/kisslinux/kiss"><code>kiss</code></a> package manager is written
+is pure POSIX sh, and does <em>just enough</em>. Packages are compiled from
+source and <code>kiss</code> automatically performs dependency resolution. Creating
+packages is ridiculously easy too.</p>
+
+<p>Speaking of packages, all packages&#8212;both official &amp; community
+repos&#8212;are run through <code>shellcheck</code> before getting merged. This is
+awesome; I don&#8217;t think this is done in any other distro.</p>
+
+<p>In essence, KISS sucks less.</p>
+
+<h2 id="installing-kiss">Installing KISS</h2>
+
+<p>The <a href="https://getkiss.org/pages/install">install guide</a> is very easy to
+follow. Clear instructions that make it hard to screw up; that didn&#8217;t
+stop me from doing so, however.</p>
+
+<h3 id="day-1">Day 1</h3>
+
+<p>Although technically not in a TTY, it was still not <em>in</em> the KISS
+system&#8212;I&#8217;ll count it. I&#8217;d compiled the kernel in the chroot and
+decided to use <code>efibootmgr</code> instead of GRUB. <code>efibootmgr</code> is a neat tool
+to modify the Intel Extensible Firmware Interface (EFI). Essentially,
+you boot the <code>.efi</code> directly as opposed to choosing which boot entry
+you want to boot, through GRUB. Useful if you have just one OS on the
+system. Removes one layer of abstraction.</p>
+
+<p>Adding a new EFI entry is pretty easy. For me, the command was:</p>
+
+<pre><code>efibootmgr --create 
+           --disk /dev/nvme0n1 \
+           --part 1 \
+           --label KISS Linux \
+           --loader /vmlinuz
+           --unicode 'root=/dev/nvme0n1p3 rw'  # kernel parameters
+</code></pre>
+
+<p>Mind you, this didn&#8217;t work the first time, or the second, or the
+third &#8230; a bunch of trial and error (and asking on <code>#kisslinux</code>)
+later, it worked.</p>
+
+<p>Well, it booted, but not into KISS. Took a while to figure out that the
+culprit was <code>CONFIG_BLK_DEV_NVME</code> not having been set in the kernel
+config. Rebuild &amp; reboot later, I was in.</p>
+
+<h3 id="day-2">Day 2</h3>
+
+<p>Networking! How fun. An <code>ip a</code> and I see that both USB tethering
+(ethernet) and wireless don&#8217;t work. Great. Dug around a bit&#8212;missing
+wireless drivers was the problem. Found my driver, a binary <code>.ucode</code> from
+Intel (eugh!). The whole day was spent in figuring out why the kernel
+would never load the firmware. I tried different variations&#8212;loading
+it as a module (<code>=m</code>), baking it in (<code>=y</code>) but no luck.</p>
+
+<h3 id="day-3">Day 3</h3>
+
+<p>I then tried Alpine&#8217;s kernel config but that was so huge and had a <em>ton</em>
+of modules and took far too long to build each time, much to my
+annoyance. Diffing their config and mine was about ~3000 lines! Too much
+to sift through. On a whim, I decided to scrap my entire KISS install
+and start afresh. </p>
+
+<p>For some odd reason, after doing the <em>exact</em> same things I&#8217;d done
+earlier, my wireless worked this time. Ethernet didn&#8217;t, and still
+doesn&#8217;t, but that&#8217;s ok.</p>
+
+<p>Building <code>xorg-server</code> was next, which took about an hour, mostly thanks
+to spotty internet. The build went through fine, though what wasn&#8217;t was
+no input after starting X. Adding my user to the <code>input</code> group wasn&#8217;t
+enough. The culprit this time was a missing <code>xf86-xorg-input</code> package.
+Installing that gave me my mouse back, but not the keyboard!</p>
+
+<p>It was definitely not the kernel this time, because I had a working
+keyboard in the TTY. </p>
+
+<h3 id="day-4-day-5">Day 4 &amp; Day 5</h3>
+
+<p>This was probably the most annoying of all, since the fix was <em>trivial</em>.
+By this point I had exhausted all ideas, so I decided to build my
+essential packages and setup my system. Building Firefox took nearly
+9 hours, the other stuff were much faster.</p>
+
+<p>I was still chatting on IRC during this, trying to zero down on what the
+problem could be. And then:</p>
+
+<pre><code>&lt;dylanaraps&gt; For starters I think st fails due to no fonts.
+</code></pre>
+
+<p>Holy shit! Fonts. I hadn&#8217;t installed <em>any</em> fonts. Which is why none of
+the applications I tried launching via <code>sowm</code> ever launched, and hence,
+I was lead to believe my keyboard was dead.</p>
+
+<h2 id="worth-it">Worth it?</h2>
+
+<p>Absolutely. I <em>cannot</em> stress on how much of a learning experience this
+was. Also a test of my patience and perseverance, but yeah ok. I also
+think that this distro is my endgame (yeah, right), probably because
+other distros will be nothing short of disappointing, in one way or
+another.</p>
+
+<p>Huge thanks to the folks at <code>#kisslinux</code> on Freenode for helping me
+througout. And I mean, they <em>really</em> did. We chatted for hours on end
+trying to debug my issues.</p>
+
+<p>I&#8217;ll now conclude with an obligatory screenshot.</p>
+
+<p><img src="https://x.icyphox.sh/R6G.png" alt="scrot" /></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-hn">
+<p><a href="https://news.ycombinator.com/item?id=21021396">https://news.ycombinator.com/item?id=21021396</a>&#160;<a href="#fnref-hn" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+]]></description><link>https://icyphox.sh/blog/five-days-tty</link><pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/five-days-tty</guid></item><item><title>2019 in review</title><description><![CDATA[<p>Just landed in a rainy Chennai, back in campus for my 6th semester.
 A little late to the &#8220;year in review blog post&#8221; party; travel took up
 most of my time. Last year was pretty eventful (at least in my books),
 and I think I did a bunch of cool stuff&#8212;let&#8217;s see!</p>
@@ -776,7 +919,7 @@ this is what I ended up on, ultimately:</p>
 <span class="c1"># get the most recently created file</span>
 <span class="k">def</span> <span class="nf">getrecent</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="n">path</span> <span class="o">+</span> <span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">blog</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;_index.md&quot;</span><span class="p">,</span> <span class="s2">&quot;feed.xml&quot;</span><span class="p">]]</span>
-    <span class="n">files</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getmtime</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">files</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getmtime</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">files</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
 <span class="c1"># adding an entry to the markdown table</span>
@@ -797,14 +940,14 @@ this is what I ended up on, ultimately:</p>
     <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">fileinput</span><span class="o">.</span><span class="n">FileInput</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
         <span class="k">if</span> <span class="s2">&quot;--:&quot;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
             <span class="n">l</span> <span class="o">=</span> <span class="n">l</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">l</span> <span class="o">+</span> <span class="n">s</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">),</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">),</span>
 
 
 <span class="c1"># fetch title and date</span>
 <span class="n">meta</span> <span class="o">=</span> <span class="n">markdown_path</span><span class="p">(</span><span class="n">getrecent</span><span class="p">(</span><span class="n">blog</span><span class="p">),</span> <span class="n">extras</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;metadata&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">metadata</span>
 <span class="n">fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">getrecent</span><span class="p">(</span><span class="n">blog</span><span class="p">))[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;/blog/&quot;</span> <span class="o">+</span> <span class="n">fname</span>
-<span class="n">line</span> <span class="o">=</span> <span class="n">f</span><span class="s2">&quot;| [{meta[&#39;title&#39;]}]({url}) | `{meta[&#39;date&#39;]}` |&quot;</span>
+<span class="n">line</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;| [</span><span class="si">{meta[&#39;title&#39;]}</span><span class="s2">](</span><span class="si">{url}</span><span class="s2">) | `</span><span class="si">{meta[&#39;date&#39;]}</span><span class="s2">` |&quot;</span>
 
 <span class="n">update_index</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 <span class="n">update_blog</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
@@ -1894,7 +2037,7 @@ found from the disassmblies from earlier. Here’s the final exploit code:</p>
 <span class="n">gadget</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="mh">0x00010550</span><span class="p">)</span>
 <span class="n">system</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="mh">0x00010538</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">string</span> <span class="o">+</span> <span class="n">gadget</span> <span class="o">+</span> <span class="n">binsh</span> <span class="o">+</span> <span class="n">system</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span> <span class="o">+</span> <span class="n">gadget</span> <span class="o">+</span> <span class="n">binsh</span> <span class="o">+</span> <span class="n">system</span><span class="p">)</span>
 </code></pre></div>
 
 <p>Honestly, not too far off from our pseudo-code :)</p>
@@ -2015,7 +2158,7 @@ challenge.</p>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./chall.elf&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">e</span> <span class="o">=</span> <span class="n">ELFFile</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">iter_sections</span><span class="p">():</span>
-        <span class="k">print</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">section</span><span class="p">[</span><span class="s1">&#39;sh_addr&#39;</span><span class="p">]),</span> <span class="n">section</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">section</span><span class="p">[</span><span class="s1">&#39;sh_addr&#39;</span><span class="p">]),</span> <span class="n">section</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 </code></pre></div>
 
 <p>This script iterates through all the sections and also shows us where it’s loaded. This will be pretty useful later. Running it gives us</p>
@@ -2067,7 +2210,7 @@ challenge.</p>
     <span class="n">addr</span> <span class="o">=</span> <span class="n">code</span><span class="p">[</span><span class="s1">&#39;sh_addr&#39;</span><span class="p">]</span>
     <span class="n">md</span> <span class="o">=</span> <span class="n">Cs</span><span class="p">(</span><span class="n">CS_ARCH_X86</span><span class="p">,</span> <span class="n">CS_MODE_64</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">md</span><span class="o">.</span><span class="n">disasm</span><span class="p">(</span><span class="n">ops</span><span class="p">,</span> <span class="n">addr</span><span class="p">):</span>        
-        <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;0x{i.address:x}:</span><span class="se">\t</span><span class="s1">{i.mnemonic}</span><span class="se">\t</span><span class="s1">{i.op_str}&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;0x</span><span class="si">{i.address:x}</span><span class="s1">:</span><span class="se">\t</span><span class="si">{i.mnemonic}</span><span class="se">\t</span><span class="si">{i.op_str}</span><span class="s1">&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 <p>The code is fairly straightforward (I think). We should be seeing this, on running</p>
@@ -2108,12 +2251,12 @@ challenge.</p>
     <span class="n">e</span> <span class="o">=</span> <span class="n">ELFFile</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">iter_sections</span><span class="p">():</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">section</span><span class="p">,</span> <span class="n">RelocationSection</span><span class="p">):</span>
-            <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;{section.name}:&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{section.name}</span><span class="s1">:&#39;</span><span class="p">)</span>
             <span class="n">symbol_table</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">get_section</span><span class="p">(</span><span class="n">section</span><span class="p">[</span><span class="s1">&#39;sh_link&#39;</span><span class="p">])</span>
             <span class="k">for</span> <span class="n">relocation</span> <span class="ow">in</span> <span class="n">section</span><span class="o">.</span><span class="n">iter_relocations</span><span class="p">():</span>
                 <span class="n">symbol</span> <span class="o">=</span> <span class="n">symbol_table</span><span class="o">.</span><span class="n">get_symbol</span><span class="p">(</span><span class="n">relocation</span><span class="p">[</span><span class="s1">&#39;r_info_sym&#39;</span><span class="p">])</span>
                 <span class="n">addr</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="n">relocation</span><span class="p">[</span><span class="s1">&#39;r_offset&#39;</span><span class="p">])</span>
-                <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;{symbol.name} {addr}&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{symbol.name}</span><span class="s1"> </span><span class="si">{addr}</span><span class="s1">&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 <p>Let’s run through this code real quick. We first loop through the sections, and check if it’s of the type <code>RelocationSection</code>. We then iterate through the relocations from the symbol table for each section. Finally, running this gives us</p>
