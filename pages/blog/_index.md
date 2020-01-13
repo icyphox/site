@@ -1,6 +1,6 @@
 ---
 template: blogindex.html
-title: Blog
+title: blog
 subtitle: Computers, security & computer security.
 ---
 

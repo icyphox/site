@@ -6,6 +6,7 @@ header = """
         <a href="/">home</a>
         <a href="/blog">blog</a>
         <a href="/reading">reading</a>
+        <a href="/friends">friends</a>
         <a href="/about">about</a>
 """
 footer = """<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
