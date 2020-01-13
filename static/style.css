@@ -16,12 +16,6 @@ body {
 	left: 0;
 	right: 0;
 	color: white;
-
-	-webkit-animation: fadein 3s;
-	   -moz-animation: fadein 3s;
-	    -ms-animation: fadein 3s;
-	     -o-animation: fadein 3s;
-	        animation: fadein 3s;
 }
 
 .container-text {
@@ -31,28 +25,8 @@ body {
 	left: 0;
 	right: 0;
 	color: white;
-
-	-webkit-animation: fadein 1.5s;
-	   -moz-animation: fadein 1.5s;
-	    -ms-animation: fadein 1.5s;
-	     -o-animation: fadein 1.5s;
-	        animation: fadein 1.5s;
 }
 
-@keyframes fadein {
-	from { opacity: 0; }
-	to   { opacity: 1; }
-}
-
-@-moz-keyframes fadein {
-	from { opacity: 0; }
-	to   { opacity: 1; }
-}
-
-@-webkit-keyframes fadein {
-	from { opacity: 0; }
-	to   { opacity: 1; }
-}
 
 .introduction {
 	position: absolute;
@@ -209,6 +183,8 @@ img {
   max-width: 100%;
   margin: 0 auto;
   display: block;
+  border: 0px solid transparent;
+  border-radius: 5px;
 }
 
 
