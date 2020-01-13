@@ -1,6 +1,6 @@
 ---
 template: reading.html
-title: Reading Log
+title: reading log
 subtitle: I read very infrequently, this might never get updated.
 ---
 

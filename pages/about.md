@@ -1,6 +1,6 @@
 ---
 template: about.html
-title: About
+title: about
 subtitle: Stuff about me, and stuff.
 ---
 
