@@ -15,7 +15,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	color: white;
+	color: #eee;
 }
 
 .container-text {
@@ -24,7 +24,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	color: white;
+	color: #eee;
 }
 
 
@@ -51,7 +51,7 @@ pre {
 
 pre, pre code {
     background: #041b1e;
-    color: white;
+    color: #eee;
     word-wrap: break-word;
     overflow-x: auto;
     white-space: pre-wrap;
