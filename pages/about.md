@@ -9,7 +9,7 @@ subtitle: Stuff about me, and stuff.
 
 I'm Anirudh, and I go by **icyphox** on the Internet. I'm doing my
 undergrad right now, majoring in Computer Science. My primary interest
-is security -- information, operational and national. Tradecraft,
+is security---information, operational and national. Tradecraft,
 espionage and military tactics interest me deeply, and I love discussing
 them.
 
@@ -21,7 +21,7 @@ I write code at times, begrudgingly. Take a look at my projects on
 [GitHub](https://github.com/icyphox).
 
 My taste in music is very specific, and I hardly ever experiment. I like
-to stick to subgenres of metal, specifically -- metalcore and deathcore.
+to stick to subgenres of metal, specifically---metalcore and deathcore.
 
 Here are some of my links:
 
@@ -47,12 +47,12 @@ my [PGP key](/static/gpg.txt). Fingerprint:
 
 I'm also on IRC @ Freenode and Rizon, usually as `icy` / `icyphox`.
 
-If you're interested in **hiring me** -- here's my
+If you're interested in **hiring me**---here's my
 [résumé](https://x@icyphox.sh/resume.pdf).
 
 ## This site
 
-This site is built using a small static site generator written by me --
+This site is built using a small static site generator written by me---
 [vite](https://github.com/icyphox/vite). The source for this website is
 [here](https://github.com/icyphox/site). Built and served using Netlify.
 
