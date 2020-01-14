@@ -134,7 +134,7 @@ other distros will be nothing short of disappointing, in one way or
 another.
 
 Huge thanks to the folks at `#kisslinux` on Freenode for helping me
-througout. And I mean, they _really_ did. We chatted for hours on end
+throughout. And I mean, they _really_ did. We chatted for hours on end
 trying to debug my issues.
 
 I'll now conclude with an obligatory screenshot.
