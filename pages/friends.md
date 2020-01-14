@@ -19,9 +19,12 @@ subtitle: My friends and internet bros
 - [ine](https://wolowolo.com)
 - [eskimo](https://eskimo.dev)
 - [noise](https://noise.faith)
+- [flippy](https://jesseerwin.net)
 - [xero](https://xero.nu)
 - [squeal](https://karansaini.com)
 - [xrisk](https://rishav.io)
+- [vologue](https://vologue.cf)
+- [anon6405](https://anon6405.github.io/)
 
 ### Not people
 
