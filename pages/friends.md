@@ -7,7 +7,7 @@ subtitle: My friends and internet bros
 # друзья
 ## My friends and internet bros
 
-### People
+### `#rice`
 
 - [nerdypepper](https://nerdypepper.tech)
 - [eti](https://eti.tf)
@@ -16,16 +16,23 @@ subtitle: My friends and internet bros
 - [nil](https://monade.li)
 - [Leliana](https://revthefox.co.uk/)
 - [neeasade](https://neeasade.net)
+
+### `#homescreen`
+
 - [kelp](https://kelp.ml)
 - [ine](https://wolowolo.com)
 - [eskimo](https://eskimo.dev)
 - [noise](https://noise.faith)
 - [flippy](https://jesseerwin.net)
-- [xero](https://xero.nu)
+- [ye](https://haze.cool)
+
+### IRL / Twitter
+
 - [squeal](https://karansaini.com)
 - [xrisk](https://rishav.io)
 - [vologue](https://vologue.cf)
 - [anon6405](https://anon6405.github.io/)
+- [xero](https://xero.nu)
 
 ### Not people
 
