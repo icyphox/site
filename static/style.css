@@ -72,8 +72,8 @@ a > code {
 }
 
 a > code:hover {
-  	color: #021012;
-  	background: cyan;
+    color: #eee;
+    border-bottom: 1px solid cyan;
 }
 
 details > summary {
@@ -147,11 +147,19 @@ a {
 	margin: 0;
 	transition: all 200ms;
 	text-decoration: none;
+  outline: 0;
+}
+
+a:focus {
+  color: #eee;
+  border-bottom: 1px solid cyan;
+  background: #222;
 }
 
 a:hover {
-	color: #021012;
-	background: cyan;
+  color: #eee;
+	background: #222;
+  border-bottom: 1px solid cyan;
 }
 
 .left {
@@ -210,6 +218,9 @@ footer a:hover {
 
 .subtitle {
   font-style: italic;
+  color: gray;
+  background: #041b1e;
+  padding-bottom: 5px;
 }
 
 h1, h2, h3 {
@@ -241,7 +252,7 @@ hr {
 }
 
 ::selection {
-  background-color: cyan;
+  background-color: gray;
   color: #021012;
 }
 
