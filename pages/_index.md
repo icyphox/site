@@ -1,6 +1,6 @@
 ---
 template: index.html
-title: Anirudh (icyphox)
+title: icyphox
 subtitle: Memeing security since forever.
 ---
 
