@@ -15,6 +15,7 @@ subtitle: My friends and internet bros
 - [enju](https://enju.dev)
 - [nil](https://monade.li)
 - [Leliana](https://revthefox.co.uk/)
+- [neeasade](https://neeasade.net)
 - [kelp](https://kelp.ml)
 - [ine](https://wolowolo.com)
 - [eskimo](https://eskimo.dev)
@@ -28,5 +29,5 @@ subtitle: My friends and internet bros
 
 ### Not people
 
-- [homescreen](https://homescreen.org/irc)
+- [homescreen](https://homescreens.org/irc)
 - [rice](https://rizonrice.club)
