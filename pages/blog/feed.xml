@@ -11,7 +11,65 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Five days in a TTY</title><description><![CDATA[<p>This new semester has been pretty easy on me, so far. I hardly every
+    <item><title>Vimb: my Firefox replacement</title><description><![CDATA[<p>After having recently installed <a href="https://getkiss.org">KISS</a>, and
+building Firefox from source, I was exposed to the true monstrosity that
+Firefox&#8212;and web browsers in general&#8212;is. It took all of 9 hours to
+build the dependencies and then Firefox itself.</p>
+
+<p>Sure, KISS now ships Firefox binaries in the
+<a href="https://github.com/kisslinux/repo/tree/master/extra/firefox-bin">firefox-bin</a>
+package; I decided to get rid of that slow mess anyway.</p>
+
+<h2 id="enter-vimb">Enter vimb</h2>
+
+<p><a href="https://fanglingsu.github.io/vimb/">vimb</a> is a browser based on
+<a href="https://webkitgtk.org/">webkit2gtk</a>, with a Vim-like interface. 
+<code>webkit2gtk</code> builds in less than a minute&#8212;it blows Firefox out of
+the water, on that front.</p>
+
+<p>There isn&#8217;t much of a UI to it&#8212;if you&#8217;ve used Vimperator/Pentadactyl
+(Firefox plugins), vimb should look familiar to you.
+It can be configured via a <code>config.h</code> or a text based config file at
+<code>~/.config/vimb/config</code>.
+Each &#8220;tab&#8221; opens a new instance of vimb, in a new window but this can
+get messy really fast if you have a lot of tabs open.</p>
+
+<h2 id="enter-tabbed">Enter tabbed</h2>
+
+<p><a href="https://tools.suckless.org/tabbed/">tabbed</a> is a tool to <em>embed</em> X apps
+which support xembed into a tabbed UI. This can be used in conjunction
+with vimb, like so:</p>
+
+<pre><code>tabbed vimb -e
+</code></pre>
+
+<p>Where the <code>-e</code> flag is populated with the <code>XID</code>, by tabbed. Configuring
+Firefox-esque keybinds in tabbed&#8217;s <code>config.h</code> is relatively easy. Once
+that&#8217;s done&#8212;voilà! A fairly sane, Vim-like browsing experience that&#8217;s
+faster and has a smaller footprint than Firefox.</p>
+
+<h2 id="ad-blocking">Ad blocking</h2>
+
+<p>Ad blocking support isn&#8217;t built-in and there is no plugin system
+available. There are two options for ad blocking:</p>
+
+<ol>
+<li><a href="https://github.com/jun7/wyebadblock">wyebadblock</a></li>
+<li><code>/etc/hosts</code></li>
+</ol>
+
+<h2 id="caveats">Caveats</h2>
+
+<p><em>Some</em> websites tend to not work because they detect vimb as an older
+version of Safari (same web engine). This is a minor inconvenience, and
+not a dealbreaker for me. I also cannot login to Google&#8217;s services for
+some reason, which is mildly annoying, but it&#8217;s good in a way&#8212;I am now
+further incentivised to dispose of my Google account.</p>
+
+<p>And here&#8217;s the screenshot y&#8217;all were waiting for:</p>
+
+<p><img src="/static/img/vimb.png" alt="vimb" /></p>
+]]></description><link>https://icyphox.sh/blog/mnml-browsing</link><pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/mnml-browsing</guid></item><item><title>Five days in a TTY</title><description><![CDATA[<p>This new semester has been pretty easy on me, so far. I hardly every
 have any classes (again, so far), and I&#8217;ve a ton of free time on my
 hands. This calls for&#8212;yep&#8212;a distro hop! </p>
 
