@@ -11,7 +11,74 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Vimb: my Firefox replacement</title><description><![CDATA[<p>After having recently installed <a href="https://getkiss.org">KISS</a>, and
+    <item><title>Status update</title><description><![CDATA[<p>It&#8217;s only been a two weeks since I got back to campus, and we&#8217;ve
+<em>already</em> got our first round of cycle tests starting this Tuesday.
+Granted, I returned a whole week late, but&#8230;that&#8217;s nuts!</p>
+
+<p>We&#8217;re two whole weeks into 2020; I should&#8217;ve been working on something
+status update worthy, right? Not really, but we&#8217;ll see.</p>
+
+<h2 id="no-more-cloudflare">No more Cloudflare!</h2>
+
+<p>Yep. If you weren&#8217;t aware&#8212;pre-2020 this site was behind Cloudflare
+SSL and their DNS. I have since migrated off it to
+<a href="https://he.net">he.net</a>, thanks to highly upvoted Lobste.rs comment.
+Because of this switch, I infact, learnt a ton about DNS.</p>
+
+<p>Migrating to HE was very painless, but I did have to research a lot
+about PTR records&#8212;Cloudflare kinda dumbs it down. In my case, I had to
+rename my DigitalOcean VPS instance to the FQDN, which then
+automagically created a PTR record at DO&#8217;s end.</p>
+
+<h2 id="i-dropped-icyrc">I dropped icyrc</h2>
+
+<p>The IRC client I was working on during the end of last
+December&#8211;early-January? Yeah, I lost interest. Apparently writing C and
+ncurses isn&#8217;t very fun or stimulating.</p>
+
+<p>This also means I&#8217;m back on weechat. Until I find another client that
+plays well with ZNC, that is.</p>
+
+<h2 id="kiss-stuff">KISS stuff</h2>
+
+<p>I now maintain two new packages in the KISS community repository&#8212;2bwm
+and aerc! The KISS package system is stupid simple to work with. Creating
+packages has never been easier.</p>
+
+<h2 id="icyphoxshfriendsfriends"><a href="/friends">icyphox.sh/friends</a></h2>
+
+<p>Did you notice that yet? I&#8217;ve been curating a list of people I know IRL
+and online, and linking to their online presence. This is like a webring
+of sorts, and promotes inter-site traffic&#8212;making the web more &#8220;web&#8221;
+again.</p>
+
+<p>If you know me, feel free to <a href="/about#contact">hit me up</a> and I&#8217;ll link
+your site too! My apologies if I&#8217;ve forgotten your name.</p>
+
+<h2 id="patreon">Patreon!</h2>
+
+<p>Is this big news? I dunno, but yes&#8212;I now have a Patreon. I figured I&#8217;d
+cash in on the newfound traffic my site&#8217;s been getting. There won&#8217;t be
+any exclusive content or any tiers or whatever. Nothing will change.
+Just a place for y&#8217;all to toss me some $$$ if you wish to do so. ;)</p>
+
+<p>Oh, and it&#8217;s at <a href="https://patreon.com/icyphox">patreon.com/icyphox</a>.</p>
+
+<h2 id="misc">Misc.</h2>
+
+<p>The Stormlight Archive is likely the <em>best</em> epic I have ever read till
+date. I&#8217;m still not done yet; about 500 odd pages to go as of this
+writing. But wow, Brandon really does know how to build worlds and magic
+systems. I cannot wait to read all about the
+<a href="https://coppermind.net/wiki/Cosmere">cosmere</a>.</p>
+
+<p>I have also been working out for the past month or so. I can see them
+gainzzz. I plan to keep track of my progress, I just don&#8217;t know how to
+quantify it. Perhaps I&#8217;ll log the number of reps × sets I do each time,
+and with what weights. I can then look back to see if either the weights
+have increased since, or the number of reps × sets have. If you know of
+a better way to quantify progress, let me know! I&#8217;m pretty new to this.</p>
+]]></description><link>https://icyphox.sh/blog/2020-01-18</link><pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/2020-01-18</guid></item><item><title>Vimb: my Firefox replacement</title><description><![CDATA[<p>After having recently installed <a href="https://getkiss.org">KISS</a>, and
 building Firefox from source, I was exposed to the true monstrosity that
 Firefox&#8212;and web browsers in general&#8212;is. It took all of 9 hours to
 build the dependencies and then Firefox itself.</p>
