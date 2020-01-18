@@ -50,7 +50,12 @@ I'm also on IRC @ Freenode and Rizon, usually as `icy` / `icyphox`.
 If you're interested in **hiring me**---here's my
 [résumé](https://x@icyphox.sh/resume.pdf).
 
-## This site
+## Donate
+
+I have a [Patreon](https://www.patreon.com/icyphox)! If you feel like
+dropping a buck or two, I won't stop you. ;)
+
+## This website
 
 This site is built using a small static site generator written by me---
 [vite](https://github.com/icyphox/vite). The source for this website is
@@ -58,6 +63,9 @@ This site is built using a small static site generator written by me---
 
 The spinner icon at the bottom? That's the [XXIIVV
 webring](https://webring.xxiivv.com), and this site is on it!
+
+I don't really care about site traffic/analytics, and I never will; 
+I am not interested in who is reading and I respect your privacy.
 
 All the content on this site is licensed under Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International 
