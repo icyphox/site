@@ -3,11 +3,13 @@
 title = 'icyphox'
 author = ''
 header = """
+    <div class="navbar">
         <a href="/">home</a>
         <a href="/blog">blog</a>
         <a href="/reading">reading</a>
         <a href="/friends">friends</a>
         <a href="/about">about</a>
+    </div>
 """
 footer = """<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
         <img class="footimgs" src="/static/cc.svg">
