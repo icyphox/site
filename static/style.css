@@ -6,39 +6,39 @@ html { font-family: 'Inter', sans-serif; }
 
 html,
 body {
-  background: #021012;
+  background: #151B1B;
 }
 
 .container {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	color: #eee;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #eee;
 }
 
 .container-text {
   position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	color: #eee;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #eee;
 }
 
 
 .introduction {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 }
 
 .content {
-	position: relative;
-	font-size: 17px;
-	top: 10%;
+  position: relative;
+  font-size: 17px;
+  top: 10%;
   left: 30%;
   right: 30%;
   width: 40%;
@@ -50,7 +50,7 @@ pre {
 }
 
 pre, pre code {
-    background: #041b1e;
+    background: #1D2122;
     color: #eee;
     word-wrap: break-word;
     overflow-x: auto;
@@ -58,23 +58,23 @@ pre, pre code {
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
+    border: 0px solid transparent;
+    border-radius: 5px;
 }
 
 code {
     color: cyan;
-    background: #041b1e;
+    /*background: #041b1e;*/
     padding: 1px;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    border-bottom: unset;
 }
 
 a > code {
     transition: all 200ms;
-    color: gray;
 }
 
-a > code:hover {
-    color: #eee;
-    border-bottom: 1px solid cyan;
-}
 
 details > summary {
   list-style: none;
@@ -87,27 +87,27 @@ details > summary::-webkit-details-marker {
 }
 
 .logo {
-	width: 220px;
+  width: 220px;
   padding-bottom: 60px;
 }
 
 .footer {
-	color: gray;
-	bottom: 20px;
-	position: absolute;
-	width: 100%;
-	text-align: center;
-	margin-bottom: 20px;
+  color: gray;
+  bottom: 20px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .header {
-	color: cyan;
-	top: 30px;
+  color: cyan;
+  top: 30px;
   display: inline-block;
-	position: absolute;
-	width: 100%;
+  position: absolute;
+  width: 100%;
   align: center;
-	text-align: center;
+  text-align: center;
 }
 
 .header a {
@@ -123,7 +123,8 @@ details > summary::-webkit-details-marker {
 }
 
 .muted a {
-  color: cyan
+  color: cyan;
+	border-bottom: unset;
 }
 
 table {
@@ -142,19 +143,43 @@ td:first-child {
   overflow: hidden;
 }
 
-a {
+.navbar a {
+  border-bottom: unset;
+}
+
+.navbar a:hover {
+	background: #222;
+}
+
+.posts a {
+  border-bottom: unset;
+}
+
+.posts a:hover {
+	background: #222;
+}
+
+/*a {
 	color: gray;
 	margin: 0;
 	transition: all 200ms;
 	text-decoration: none;
   outline: 0;
+}*/
+
+a {
+  color: gray;
+  margin: 0;
+  transition: all 200ms;
+  text-decoration: none;
+  outline: 0;
 }
 
-a:focus {
-  color: #eee;
+/*a:hover {
+  color: #021012;
+  background: cyan;
   border-bottom: 1px solid cyan;
-  background: #222;
-}
+}*/
 
 a:hover {
   color: #eee;
@@ -163,19 +188,19 @@ a:hover {
 }
 
 .left {
-	display: inline-block;
-	margin-bottom: 30px;
-	margin-left: 0;
-	margin-right: 30px;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-left: 0;
+  margin-right: 30px;
 }
 
 .right {
-	display: inline-block;
+  display: inline-block;
 }
 
 .right a {
-	display: inline-block;
-	margin-right: 30px;
+  display: inline-block;
+  margin-right: 30px;
 }
 
 .noselect {
@@ -196,6 +221,7 @@ img {
 }
 
 
+
 footer img {
   all: initial;
 }
@@ -211,17 +237,24 @@ footer img {
   cursor: pointer;
 }
 
+footer a {
+  color: unset;
+  background: unset;
+  border-bottom: unset;
+}
+
 footer a:hover {
   color: unset;
   background: unset;
+  border-bottom: unset;
 }
 
 .subtitle {
   font-style: italic;
-  color: gray;
-  background: #041b1e;
-  padding-bottom: 5px;
+  color: #eee;
+  padding-bottom: 30px;
 }
+
 
 h1, h2, h3 {
   font-weight: normal;
@@ -253,34 +286,34 @@ hr {
 
 ::selection {
   background-color: gray;
-  color: #021012;
+  color: cyan;
 }
 
 @media only screen and (max-width: 70em) {
-	.left {
-		display: block;
-		margin-right: 0;
-	}
-	.right {
-		display: block;
-	}
+  .left {
+    display: block;
+    margin-right: 0;
+  }
+  .right {
+    display: block;
+  }
   .right a {
     margin-right: 15px;
   }
-	.right a:last-child {
-		margin-right: 0;
-	}
+  .right a:last-child {
+    margin-right: 0;
+  }
   
 /*  .container-text {
     overflow-y: auto;
   }*/
 
-	.content {
-		left: 5%;
+  .content {
+    left: 5%;
     right: 5%;
     bottom: 10%;
-		width: 90%;
-	}
+    width: 90%;
+  }
 
   .content h1, h2, h3 {
     line-height: 1.5;
