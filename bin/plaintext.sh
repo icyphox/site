@@ -12,5 +12,6 @@ basename() {
 for p in pages/blog/*.md; do
     basename "$p"
     [ "$base" != "_index.md" ] &&
-        cp "$p" "build/blog/${base%.*}.txt"
+        pandoc -s -f "markdown+gutenberg" \
+            "$p" -o "build/blog/${base%.*}.txt"
 done
