@@ -3,6 +3,7 @@ date: '2019-09-10'
 subtitle: 'Misinformation, but deliberate'
 template: text.html
 title: Disinformation demystified
+url: disinfo
 ---
 
 As with the disambiguation of any word, let's start with its etymology

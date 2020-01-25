@@ -2183,7 +2183,7 @@ Actual ropchaining is a little more involved, with a lot more gadgets to be chai
 to acheive code execution.</p>
 
 <p>Hopefully, I’ll get around to writing about heap exploitation on ARM too. That’s all for now.</p>
-]]></description><link>https://icyphox.sh/blog/rop-on-arm</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/rop-on-arm</guid></item><item><title>My Setup</title><description><![CDATA[<h2 id="hardware">Hardware</h2>
+]]></description><link>https://icyphox.sh/blog/rop-on-arm</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/rop-on-arm</guid></item><item><title>My setup</title><description><![CDATA[<h2 id="hardware">Hardware</h2>
 
 <p>The only computer I have with me is my <a href="https://store.hp.com/us/en/mdp/laptops/envy-13">HP Envy 13 (2018)</a> (my model looks a little different). It’s a 13” ultrabook, with an i5 8250u,
 8 gigs of RAM and a 256 GB NVMe SSD. It’s a very comfy machine that does everything I need it to.</p>

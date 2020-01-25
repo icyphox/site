@@ -3,6 +3,7 @@ template: text.html
 title: Python for Reverse Engineering #1: ELF Binaries
 subtitle: Building your own disassembly tooling for — that’s right — fun and profit
 date: 2019-02-08
+url: python-for-re-1
 ---
 
 While solving complex reversing challenges, we often use established tools like radare2 or IDA for disassembling and debugging. But there are times when you need to dig in a little deeper and understand how things work under the hood.

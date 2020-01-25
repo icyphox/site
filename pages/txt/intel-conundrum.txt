@@ -2,6 +2,7 @@
 date: '2019-10-28'
 subtitle: 'To protect an asset, or to protect the people?'
 title: The intelligence conundrum
+url: 'intel-conundrum'
 ---
 
 I watched the latest

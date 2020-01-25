@@ -3,6 +3,7 @@ date: '2019-08-05'
 subtitle: ... and lessons learnt in IoT security
 template: text.html
 title: 'Picking the FB50 smart lock (CVE-2019-13143)'
+url: fb50.md
 ---
 
 (*originally posted at [SecureLayer7's

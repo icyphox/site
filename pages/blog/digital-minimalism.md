@@ -3,6 +3,7 @@ template:
 title: Thoughts on digital minimalism 
 subtitle: Put that screen down!
 date: 2019-10-05
+url: digital-minimalism
 ---
 
 Ah yes, yet another article on the internet on this beaten to death

@@ -3,7 +3,9 @@ template:
 title: Vimb: my Firefox replacement
 subtitle: Web browsing, suckless style
 date: 2020-01-16
+url: mnml-browsing
 ---
+
 
 After having recently installed [KISS](https://getkiss.org), and
 building Firefox from source, I was exposed to the true monstrosity that

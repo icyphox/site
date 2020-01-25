@@ -1,8 +1,9 @@
 ---
 template: text.html
-title: My Setup
+title: My setup
 subtitle: My daily drivers---hardware, software and workflow
 date: 2019-05-13
+url: my-setup
 ---
 
 ## Hardware

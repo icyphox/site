@@ -3,6 +3,7 @@ date: '2019-06-06'
 subtitle: 'Making stack-based exploitation great again!'
 template: text.html
 title: 'Return Oriented Programming on ARM (32-bit)'
+url: 'rop-on-arm'
 ---
 
 Before we start *anything*, you're expected to know the basics of ARM

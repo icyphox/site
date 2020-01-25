@@ -3,6 +3,7 @@ template: text.html
 title: Setting up my personal mailserver
 subtitle: This is probably a terrible idea…
 date: 2019-08-15
+url: mailserver
 ---
 
 A mailserver was a long time coming. I'd made an attempt at setting one up

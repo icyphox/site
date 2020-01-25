@@ -2,6 +2,7 @@
 date: '2020-01-18'
 subtitle: 'New year...new stuff?'
 title: Status update
+url: '2020-01-18'
 ---
 
 It's only been a two weeks since I got back to campus, and we've

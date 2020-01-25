@@ -2,6 +2,7 @@
 date: '2019-10-15'
 subtitle: 'Pretty fun weekend, I''d say'
 title: 'PyCon India 2019 wrap-up'
+url: 'pycon-wrap-up'
 ---
 
 I'm writing this article as I sit in class, back on the grind. Last
