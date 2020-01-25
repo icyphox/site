@@ -11,7 +11,10 @@ basename() {
 
 for p in pages/blog/*.md; do
     basename "$p"
-    [ "$base" != "_index.md" ] &&
+    [ "$base" != "_index.md" ] && {
         pandoc -s -f "markdown+gutenberg" \
-            "$p" -o "build/blog/${base%.*}.txt"
+            "$p" -o "pages/txt/${base%.*}.txt"
+    }
 done
+
+cp pages/txt/*.txt build/blog/
