@@ -16,6 +16,7 @@ The Hacker News post spurred _quite_ the discussion. But then again,
 that is to be expected from Valleybros who use macOS all day. :^)
 
 From the website,
+
 > An independent Linux® distribution with a focus on simplicity and the
 > concept of “less is more”. The distribution targets *only* the x86-64
 > architecture and the English language.
