@@ -3,6 +3,7 @@ template:
 title: Instagram OPSEC
 subtitle: Operational security for the average zoomer
 date: 2019-12-02
+url: ig-opsec
 ---
 
 Which I am not, of course. But seeing as most of my peers are, I am

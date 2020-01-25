@@ -2,6 +2,7 @@
 date: '2019-10-05'
 subtitle: 'Put that screen down!'
 title: Thoughts on digital minimalism
+url: 'digital-minimalism'
 ---
 
 Ah yes, yet another article on the internet on this beaten to death

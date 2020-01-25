@@ -2,6 +2,7 @@
 date: '2019-10-24'
 subtitle: The most fun way to learn to code
 title: Hacky scripts
+url: 'hacky-scripts'
 ---
 
 As a CS student, I see a lot of people around me doing courses online to

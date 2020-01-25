@@ -2,6 +2,7 @@
 date: '2019-12-02'
 subtitle: Operational security for the average zoomer
 title: Instagram OPSEC
+url: 'ig-opsec'
 ---
 
 Which I am not, of course. But seeing as most of my peers are, I am

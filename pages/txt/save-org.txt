@@ -3,6 +3,7 @@ date: '2019-11-23'
 subtitle: 'PIR is getting sold to a private firm, and here''s why it''s
   bad'
 title: 'Save .ORG!'
+url: 'save-org'
 ---
 
 The .ORG top-level domain introduced in 1985, has been operated by the

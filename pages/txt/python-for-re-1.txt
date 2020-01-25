@@ -4,6 +4,7 @@ subtitle: 'Building your own disassembly tooling for --- that''s
   right --- fun and profit'
 template: text.html
 title: Python for Reverse Engineering
+url: 'python-for-re-1'
 ---
 
 While solving complex reversing challenges, we often use established

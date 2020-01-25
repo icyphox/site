@@ -12,6 +12,7 @@ basename() {
 for p in pages/blog/*.md; do
     basename "$p"
     [ "$base" != "_index.md" ] && {
+        echo "$base"
         pandoc -s -f "markdown+gutenberg" \
             "$p" -o "pages/txt/${base%.*}.txt"
     }

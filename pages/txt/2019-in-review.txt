@@ -2,6 +2,7 @@
 date: '2020-01-02'
 subtitle: A look back at last year
 title: 2019 in review
+url: '2019-in-review'
 ---
 
 Just landed in a rainy Chennai, back in campus for my 6th semester. A

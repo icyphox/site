@@ -2,6 +2,7 @@
 date: '2019-10-16'
 subtitle: 'Not weekly anymore, but was it ever?'
 title: Status update
+url: '2019-10-16'
 ---
 
 I've decided to drop the "Weekly" part of the status update posts, since

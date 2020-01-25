@@ -3,6 +3,7 @@ date: '2019-09-27'
 subtitle: Alpine Linux shenaningans and more
 template: text.html
 title: 'Weekly status update, 09/17--09/27'
+url: '2019-09-27'
 ---
 
 It's a lazy Friday afternoon here; yet another off day this week thanks

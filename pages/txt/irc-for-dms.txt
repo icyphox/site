@@ -2,6 +2,7 @@
 date: '2019-11-03'
 subtitle: 'Honestly, it''s pretty great'
 title: IRC for DMs
+url: 'irc-for-dms'
 ---
 
 [Nerdy](https://nerdypepper.me) and I decided to try and use IRC for our
