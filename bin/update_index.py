@@ -62,7 +62,7 @@ for i in range(5):
 
 for meta, fname in zip(metas, fnames):
     url = "/blog/" + fname
-    new_line = f"| [{meta['title']}]({url}) | `{meta['date']}` |"
+    new_line = f"| [{meta['title']}]({url}) | {meta['date']} |"
     lines.append(new_line)
 
 #update_index(lines)
