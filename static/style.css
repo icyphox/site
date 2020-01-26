@@ -1,7 +1,9 @@
 @import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html { 
+    font-family: 'Inter var', sans-serif; 
+    font-feature-settings: 'ss01' 1, 'ss02' 1, 'kern' 1, 'liga' 1, 'zero' 1;     
+  }
 }
 
 html,
@@ -37,7 +39,7 @@ body {
 
 .content {
   position: relative;
-  font-size: 17px;
+  font-size: 18px;
   top: 10%;
   left: 30%;
   right: 30%;
@@ -256,7 +258,7 @@ footer a:hover {
 }
 
 
-h1, h2, h3 {
+h2, h3 {
   font-weight: normal;
 }
 
