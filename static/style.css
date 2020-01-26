@@ -288,8 +288,8 @@ hr {
 }
 
 ::selection {
-  background-color: gray;
-  color: cyan;
+  background-color: #444;
+  color: white;
 }
 
 @media only screen and (max-width: 70em) {
