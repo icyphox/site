@@ -1,11 +1,11 @@
 ---
 template: about.html
 title: friends
-subtitle: My friends and internet bros
+subtitle: My friends and internet bros.
 ---
 
 # друзья
-## My friends and internet bros
+## My friends and internet bros.
 
 ### `#rice`
 
@@ -38,3 +38,5 @@ subtitle: My friends and internet bros
 
 - [homescreen](https://homescreens.org/irc)
 - [rice](https://rizonrice.club)
+- [thugcrowd](https://thugcrowd.com)
+- [0x00sec](https://0x00sec.org)
