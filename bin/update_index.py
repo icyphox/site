@@ -65,5 +65,5 @@ for meta, fname in zip(metas, fnames):
     new_line = f"| [{meta['title']}]({url}) | {meta['date']} |"
     lines.append(new_line)
 
-#update_index(lines)
+update_index(lines)
 update_blog(lines[0])
