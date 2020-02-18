@@ -11,7 +11,154 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Status update</title><description><![CDATA[<p>It&#8217;s only been a two weeks since I got back to campus, and we&#8217;ve
+    <item><title>Setting up Prosody for XMPP</title><description><![CDATA[<p>Remember the <a href="/blog/irc-for-dms/">IRC for DMs</a> article I wrote a while
+back? Well&#8230;it&#8217;s safe to say that IRC didn&#8217;t hold up too well. It first
+started with the bot. Buggy code, crashed a lot&#8212;we eventually gave up
+and didn&#8217;t bring the bot back up. Then came the notifications, or lack
+thereof. Revolution IRC has a bug where your custom notification rules
+just get ignored after a while. In my case, this meant that
+notifications for <code>#crimson</code> stopped entirely. Unless, of course, Nerdy
+pinged me each time.</p>
+
+<p>Again, none of these problems are inherent to IRC itself. IRC is
+fantastic, but perhaps wasn&#8217;t the best fit for our usecase. I still do
+use IRC though, just not for 1-on-1 conversations.</p>
+
+<h2 id="why-xmpp">Why XMPP?</h2>
+
+<p>For one, it&#8217;s better suited for 1-on-1 conversations. It also has
+support for end-to-end encryption (via OMEMO), something IRC doesn&#8217;t
+have.<sup class="footnote-ref" id="fnref-otr"><a href="#fn-otr">1</a></sup> Also, it isn&#8217;t centralized (think: email).</p>
+
+<h2 id="soprosody">So&#8230;Prosody</h2>
+
+<p><a href="https://prosody.im">Prosody</a> is an XMPP server. Why did I choose this
+over ejabberd, OpenFire, etc.? No reason, really. Their website looked
+cool, I guess.</p>
+
+<h3 id="installing">Installing</h3>
+
+<p>Setting it up was pretty painless (I&#8217;ve <a href="/blog/mailserver">experienced
+worse</a>). If you&#8217;re on a Debian-derived system, add:</p>
+
+<pre><code># modify according to your distro
+deb https://packages.prosody.im/debian buster main 
+</code></pre>
+
+<p>to your <code>/etc/apt/sources.list</code>, and:</p>
+
+<pre><code># apt update
+# apt install prosody
+</code></pre>
+
+<h3 id="configuring">Configuring</h3>
+
+<p>Once installed, you will find the config file at
+<code>/etc/prosody/prosody.cfg.lua</code>. Add your XMPP user (we will make this
+later), to the <code>admins = {}</code> line.</p>
+
+<pre><code>admins = {"user@chat.example.com"}
+</code></pre>
+
+<p>Head to the <code>modules_enabled</code> section, and add this to it:</p>
+
+<pre><code>modules_enabled = {
+    "posix";
+    "omemo_all_access";
+...
+    -- uncomment these
+    "groups";
+    "mam";
+    -- and any others you think you may need
+}
+</code></pre>
+
+<p>We will install the <code>omemo_all_access</code> module later.</p>
+
+<p>Set <code>c2s_require_encryption</code>, <code>s2s_require_encryption</code>, and
+<code>s2s_secure_auth</code> to <code>true</code>.
+Set the <code>pidfile</code> to <code>/tmp/prosody.pid</code> (or just leave it as default?).</p>
+
+<p>By default, Prosody stores passwords in plain-text, so fix that by
+setting <code>authentication</code> to <code>"internal_hashed"</code></p>
+
+<p>Head to the <code>VirtualHost</code> section, and add your vhost. Right above it,
+set the path to the HTTPS certificate and key:</p>
+
+<pre><code>certificates = "certs"    -- relative to your config file location
+https_certificate = "certs/chat.example.com.crt"
+https_key = "certs/chat.example.com.key"
+...
+
+VirtualHost "chat.example.com"
+</code></pre>
+
+<p>I generated these certs using Let&#8217;s Encrypt&#8217;s <code>certbot</code>, you can use
+whatever. Here&#8217;s what I did:</p>
+
+<pre><code># certbot --nginx -d chat.example.com
+</code></pre>
+
+<p>This generates certs at <code>/etc/letsencrypt/live/chat.example.com/</code>. You can
+trivially import these certs into Prosody&#8217;s <code>/etc/prosody/certs/</code> directory using:</p>
+
+<pre><code># prosodyctl cert import /etc/letsencrypt/live/chat.example.com
+</code></pre>
+
+<h3 id="plugins">Plugins</h3>
+
+<p>All the modules for Prosody can be <code>hg clone</code>&#8217;d from
+<a href="https://hg.prosody.im/prosody-modules.">https://hg.prosody.im/prosody-modules.</a> You will, obviously, need
+Mercurial installed for this.</p>
+
+<p>Clone it somewhere, and: </p>
+
+<pre><code># cp -R prosody-modules/mod_omemo_all_access /usr/lib/prosody/modules
+</code></pre>
+
+<p>Do the same thing for whatever other module you choose to install. Don&#8217;t
+forget to add it to the <code>modules_enabled</code> section in the config.</p>
+
+<h3 id="adding-users">Adding users</h3>
+
+<p><code>prosodyctl</code> makes this a fairly simple task:</p>
+
+<pre><code>$ prosodyctl adduser user@chat.example.com
+</code></pre>
+
+<p>You will be prompted for a password. You can optionally, enable
+user registrations from XMPP/Jabber clients (security risk!), by setting
+<code>allow_registration = true</code>.</p>
+
+<p>I may have missed something important, so here&#8217;s <a href="https://x.icyphox.sh/prosody.cfg.lua">my
+config</a> for reference.</p>
+
+<h2 id="closing-notes">Closing notes</h2>
+
+<p>That&#8217;s pretty much all you need for 1-on-1 E2EE chats. I don&#8217;t know much
+about group chats just yet&#8212;trying to create a group in Conversations
+gives a &#8220;No group chat server found&#8221;. I will figure it out later.</p>
+
+<p>Another thing that doesn&#8217;t work in Conversations is adding an account
+using an <code>SRV</code> record.<sup class="footnote-ref" id="fnref-srv"><a href="#fn-srv">2</a></sup> Which kinda sucks, because having a <code>chat.</code>
+subdomain isn&#8217;t very clean, but whatever.</p>
+
+<p>Oh, also&#8212;you can message me at
+<a href="xmpp:icy@chat.icyphox.sh">icy@chat.icyphox.sh</a>.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-otr">
+<p>I&#8217;m told IRC supports OTR, but I haven&#8217;t ever tried.&#160;<a href="#fnref-otr" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+
+<li id="fn-srv">
+<p><a href="https://prosody.im/doc/dns">https://prosody.im/doc/dns</a>&#160;<a href="#fnref-srv" class="footnoteBackLink" title="Jump back to footnote 2 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+]]></description><link>https://icyphox.sh/blog/prosody</link><pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/prosody</guid></item><item><title>Status update</title><description><![CDATA[<p>It&#8217;s only been a two weeks since I got back to campus, and we&#8217;ve
 <em>already</em> got our first round of cycle tests starting this Tuesday.
 Granted, I returned a week late, but&#8230;that&#8217;s nuts!</p>
 
