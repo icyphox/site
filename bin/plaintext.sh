@@ -16,5 +16,3 @@ for p in pages/blog/*.md; do
             "$p" -o "pages/txt/${base%.*}.txt"
     }
 done
-
-cp pages/txt/*.txt build/blog/
