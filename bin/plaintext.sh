@@ -9,13 +9,15 @@ basename() {
     base="${dir:-/}"
 }
 
+# prepare the '_redirects' file
+printf 'http://icyphox.netlify.com/* http://icyphox.sh/:splat 301!\n' > build/_redirects
 for p in pages/blog/*.md; do
     basename "$p"
     no_ext="${base%.*}"
     [ "$base" != "_index.md" ] && {
         pandoc --quiet -s -f "markdown+gutenberg" \
             "$p" -o "pages/txt/$no_ext.txt"
-            printf '%s\n' "/txt/$no_ext.txt    /txt/$no_ext    301" >> _redirects
+            printf '%s\n' "/txt/$no_ext.txt /txt/$no_ext 301" >> build/_redirects
     }
 done
 
