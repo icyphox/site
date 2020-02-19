@@ -11,8 +11,11 @@ basename() {
 
 for p in pages/blog/*.md; do
     basename "$p"
+    no_ext="${base%.*}"
     [ "$base" != "_index.md" ] && {
         pandoc --quiet -s -f "markdown+gutenberg" \
-            "$p" -o "pages/txt/${base%.*}.txt"
+            "$p" -o "pages/txt/$no_ext.txt"
+            printf '%s\n' "/txt/$no_ext.txt /txt/$no_ext" >> _redirects
     }
 done
+
