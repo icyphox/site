@@ -15,7 +15,7 @@ for p in pages/blog/*.md; do
     [ "$base" != "_index.md" ] && {
         pandoc --quiet -s -f "markdown+gutenberg" \
             "$p" -o "pages/txt/$no_ext.txt"
-            printf '%s\n' "/txt/$no_ext.txt /txt/$no_ext" >> _redirects
+            printf '%s\n' "/txt/$no_ext.txt    /txt/$no_ext    301" >> _redirects
     }
 done
 
