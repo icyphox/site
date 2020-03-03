@@ -33,6 +33,7 @@ subtitle: My friends and internet bros.
 - [vologue](https://vologue.cf)
 - [anon6405](https://anon6405.github.io/)
 - [xero](https://xero.nu)
+- [awalvie](https://awalvie.github.io/)
 
 ### Not people
 
