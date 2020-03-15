@@ -57,7 +57,7 @@ dropping a buck or two, I won't stop you. ;)
 
 ## This website
 
-This site is built using a small static site generator written by me---
+This site is built using a small static site generator written by me:
 [vite](https://github.com/icyphox/vite). The source for this website is
 [here](https://github.com/icyphox/site). Built and served using Netlify.
 

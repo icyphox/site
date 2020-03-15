@@ -9,7 +9,7 @@
 
 html,
 body {
-  background: #151B1B;
+  /*background: #151B1B*/;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  color: #eee;
+  color: #222;
 }
 
 .container-text {
@@ -27,7 +27,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  color: #eee;
+  color: #222;
 }
 
 
@@ -53,8 +53,7 @@ pre {
 }
 
 pre, pre code {
-    background: #1D2122;
-    color: #eee;
+    color: #666;
     word-wrap: break-word;
     overflow-x: auto;
     white-space: pre-wrap;
@@ -66,9 +65,8 @@ pre, pre code {
 }
 
 code {
-    color: cyan;
-    /*background: #041b1e;*/
-    padding: 1px;
+    color: #00cece;
+    padding: 2px;
     border: 0px solid transparent;
     border-radius: 5px;
     border-bottom: unset;
@@ -126,7 +124,7 @@ details > summary::-webkit-details-marker {
 }
 
 .muted a {
-  color: cyan;
+  color: #00cece;
 	border-bottom: unset;
 }
 
@@ -151,7 +149,7 @@ td:first-child {
 }
 
 .navbar a:hover {
-	background: #222;
+	background: #eee;
 }
 
 .posts a {
@@ -159,7 +157,7 @@ td:first-child {
 }
 
 .posts a:hover {
-	background: #222;
+	background: #eee;
 }
 
 /*a {
@@ -185,9 +183,9 @@ a {
 }*/
 
 a:hover {
-  color: #eee;
-	background: #222;
-  border-bottom: 1px solid cyan;
+  color: #222;
+	background: #eee;
+  border-bottom: 1px solid #00cece;
 }
 
 .left {
@@ -254,7 +252,7 @@ footer a:hover {
 
 .subtitle {
   font-style: italic;
-  color: #eee;
+  color: #222;
   padding-bottom: 30px;
 }
 
@@ -268,7 +266,7 @@ h2 {
 }
 
 h3 {
-  color: cyan;
+  color: black;
 }
 
 p {
