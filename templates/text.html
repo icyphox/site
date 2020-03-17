@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang=en>
-<link rel="stylesheet" href="/static/style.css" type="text/css">
-<link rel="stylesheet" href="/static/syntax.css" type="text/css">
-<link rel="shortcut icon" type="images/x-icon" href="/static/favicon.ico">
-<meta charset="UTF-8">
-<meta name="description" content="{{ subtitle }}">
-<meta name="viewport" content="initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta content="#151B1B" name="theme-color">
-<meta name="HandheldFriendly" content="true">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@icyphox">
-<meta name="twitter:title" content="{{ title }}">
-<meta name="twitter:description" content="{{ subtitle }}">
-<meta name="twitter:image" content="/static/icyphox.png">
-<meta property="og:title" content="{{ title }}">
-<meta property="og:type" content="website">
-<meta property="og:description" content="{{ subtitle }}">
-<meta property="og:url" content="https://icyphox.sh">
-<meta property="og:image" content="/static/icyphox.png">
-<html>
+  <link rel="stylesheet" href="/static/style.css" type="text/css">
+  <link rel="stylesheet" href="/static/syntax.css" type="text/css">
+  <link rel="shortcut icon" type="images/x-icon" href="/static/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="description" content="{{ subtitle }}">
+  <meta name="viewport" content="initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta content="#151B1B" name="theme-color">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@icyphox">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ subtitle }}">
+  <meta name="twitter:image" content="/static/icyphox.png">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="{{ subtitle }}">
+  <meta property="og:url" content="https://icyphox.sh">
+  <meta property="og:image" content="/static/icyphox.png">
   <title>
     {{ title }}
   </title>
-<div class="container-text">
   <header class="header">
     {{ header }}
   </header>
-<body> 
-   <div class="content">
-     <div style="float: right">
-       view in <a href="/txt/{{ url }}">plain-text</a>
-     </div>
-    <div style="float: left">
-      {{ date }}
+  <body> 
+    <div class="content">
+      <div style="float: right">
+        view in <a href="/txt/{{ url }}">plain-text</a>
+      </div>
+      <div style="float: left">
+        {{ date }}
+      </div>
+      <div style="clear: both" align="left">
+        <h1>{{ title }}</h1>
+        <h2 class="subtitle">{{ subtitle }}</h2>
+        {{ body }} 
+      </div>
+      <p class="muted">Questions or comments? 
+      Send an email to 
+      <a href="mailto:~icyphox/x@lists.sr.ht?Subject=Re: {{ title }}">~icyphox/x@lists.sr.ht</a>—my <a href="https://lists.sr.ht/~icyphox/x">public inbox</a>.</p>
     </div>
-    <div style="clear: both" align="left">
-      <h1>{{ title }}</h1>
-      <h2 class="subtitle">{{ subtitle }}</h2>
-      {{ body }} 
-    </div>
-    <p class="muted">Questions or comments? 
-    Send an email to 
-    <a href="mailto:~icyphox/x@lists.sr.ht?Subject=Re: {{ title }}">~icyphox/x@lists.sr.ht</a> — my <a href="https://lists.sr.ht/~icyphox/x">public inbox</a>.</p>
-    <footer>
-      {{ footer }}
-    </footer>
   </body>
-  </div>
- </html>
+  <footer>
+    {{ footer }}
+  </footer>
+</html>
