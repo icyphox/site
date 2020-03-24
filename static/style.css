@@ -42,7 +42,6 @@ html {
 
 .pull-right {
   padding-top: 20%;
-  padding-left: 7%;
   text-align: left;
   grid-column: 1 / 13;
   grid-row: 2;
