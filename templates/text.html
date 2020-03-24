@@ -22,28 +22,32 @@
   <title>
     {{ title }}
   </title>
-  <header class="header">
-    {{ header }}
-  </header>
   <body> 
-    <div class="content">
-      <div style="float: right">
-        view in <a href="/txt/{{ url }}">plain-text</a>
+    <div class="container">
+      <div class="pull-left">
+        <div class="content">
+          <header>
+            {{ header }}
+          </header>
+          <div style="float: right">
+            view in <a href="/txt/{{ url }}">plain-text</a>
+          </div>
+          <div style="float: left">
+            {{ date }}
+          </div>
+          <div style="clear: both" align="left">
+            <h1>{{ title }}</h1>
+            <h2 class="subtitle">{{ subtitle }}</h2>
+            {{ body }} 
+          </div>
+          <p class="muted">Questions or comments? 
+          Send an email to 
+          <a href="mailto:~icyphox/x@lists.sr.ht?Subject=Re: {{ title }}">~icyphox/x@lists.sr.ht</a>—my <a href="https://lists.sr.ht/~icyphox/x">public inbox</a>.</p>
+        </div>
       </div>
-      <div style="float: left">
-        {{ date }}
+      <div class="pull-right">
+        {{ footer }}
       </div>
-      <div style="clear: both" align="left">
-        <h1>{{ title }}</h1>
-        <h2 class="subtitle">{{ subtitle }}</h2>
-        {{ body }} 
-      </div>
-      <p class="muted">Questions or comments? 
-      Send an email to 
-      <a href="mailto:~icyphox/x@lists.sr.ht?Subject=Re: {{ title }}">~icyphox/x@lists.sr.ht</a>—my <a href="https://lists.sr.ht/~icyphox/x">public inbox</a>.</p>
     </div>
   </body>
-  <footer>
-    {{ footer }}
-  </footer>
 </html>
