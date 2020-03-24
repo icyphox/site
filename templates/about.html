@@ -21,15 +21,23 @@
   <title>
     {{ title }}
   </title>
-  <header>
-    {{ header }}
-  </header>
   <body> 
-    <div class="content">
-      {{ body }} 
-    </div>
+    <section class="container"> 
+
+      <div class="pull-left">
+        <div class="content">
+
+          <header>
+            {{ header }}
+          </header>
+
+
+          {{ body }} 
+        </div>
+      </div>
+      <div class="pull-right">
+        {{ footer }}
+      </div>
+    </section>
   </body>
-  <footer>
-    {{ footer }}
-  </footer>
 </html>
