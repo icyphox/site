@@ -80,8 +80,8 @@ html {
   .pull-right {
     text-align: left;
     max-width: 100%;
-    grid-column: 10;
-    padding-left: 15%;
+    grid-column: 11;
+    padding-left: 0%;
     grid-row: 1;
   }
 
@@ -107,7 +107,7 @@ html {
     max-width: 100%;
     text-align: left;
     grid-column: 9;
-    padding-left: 15%;
+    padding-left: 0%;
     grid-row: 1;
   }
 
