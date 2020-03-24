@@ -52,7 +52,7 @@ html {
   margin: 0px;
   padding-top: 2%;
   padding-left: 3%;
-  padding-bottom: 3%;
+  padding-bottom: 1%;
 }
 
 .pull-right h3 {
@@ -76,10 +76,12 @@ html {
   text-align: left;
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 800px) {
   .pull-right {
     text-align: left;
+    max-width: 100%;
     grid-column: 10;
+    padding-left: 15%;
     grid-row: 1;
   }
 
@@ -102,8 +104,10 @@ html {
 
 @media only screen and (min-width: 1400px) {
   .pull-right {
+    max-width: 100%;
     text-align: left;
     grid-column: 9;
+    padding-left: 15%;
     grid-row: 1;
   }
 
@@ -111,7 +115,7 @@ html {
     display: hidden;
   }
   .pull-left {
-    grid-column: 4 / 9;
+    grid-column: 4 / 8;
     grid-row: 1;
   }
   .content {
