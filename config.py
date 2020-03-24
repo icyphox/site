@@ -7,10 +7,6 @@ header = """<a href="/"><- back</a>"""
 # actually the sidebar
 footer = """
     <img class="logo" src="/static/icyphox.png" alt="icyphox's avatar" />
-    <p class="muted">
-    Memeing security since forever.
-    </p>
-
     <p>
     <span class="sidebar-link">email</span>
     <br>
