@@ -36,7 +36,7 @@ def update_index(posts):
 
 
 def update_blog(s):
-    path = "../pages/blog/_index.md"
+    path = "../pages/_index.md"
     s = s + "\n"
     with open(path) as f:
         tempf = f.readlines()
