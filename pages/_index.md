@@ -1,6 +1,6 @@
 ---
 template: index.html
-title: blog
+title: icyphox's blog
 subtitle: Computers, security & computer security.
 ---
 
