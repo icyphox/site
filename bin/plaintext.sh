@@ -17,7 +17,8 @@ for p in pages/blog/*.md; do
             "$p" -o "pages/txt/$no_ext.txt"
             # we have to 'mv' each file because of how pandoc treats
             # output to plaintext. it's weird.
-            mv "pages/txt/$no_ext.txt" "pages/txt/$no_ext"
     }
 done
+
+mv pages/txt/*.txt build/blog/
 
