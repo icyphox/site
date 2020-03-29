@@ -15,10 +15,8 @@ for p in pages/blog/*.md; do
     [ "$base" != "_index.md" ] && {
         pandoc --quiet -s -f "markdown+gutenberg" \
             "$p" -o "pages/txt/$no_ext.txt"
-            # we have to 'mv' each file because of how pandoc treats
-            # output to plaintext. it's weird.
     }
 done
 
-mv pages/txt/*.txt build/blog/
+cp pages/txt/*.txt build/blog/
 
