@@ -43,6 +43,9 @@ footer = """
     </p>
 
     <div class="license">
+    <a href="https://liberapay.com/icyphox/donate">
+    <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg">
+    </a>
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
     <img class="footimgs" src="/static/cc.svg">
     </a>
