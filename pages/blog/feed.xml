@@ -11,7 +11,72 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>COVID-19 disinformation</title><description><![CDATA[<p>The virus spreads around the world, along with a bunch of disinformation
+    <item><title>Introducing mael</title><description><![CDATA[<p>I&#8217;ve been on the lookout for a good terminal-based email client since
+forever, and I&#8217;ve tried almost all of them. The one I use right now
+sucks a little less&#8212;<a href="https://git.sr.ht/~sircmpwn/aerc">aerc</a>. I have
+some gripes with it though, like the problem with outgoing emails not
+getting copied to the Sent folder, and instead erroring out with
+a cryptic <code>EOF</code>&#8212;that&#8217;s literally all it says.
+I&#8217;ve tried mutt, but I find it a little excessive. It feels like the
+weechat of email&#8212;to many features that you&#8217;ll probably never use.</p>
+
+<p>I need something clean and simple, less bloated (for the lack of
+a better term). This is what motivated me to try writing my own. The
+result of this (and not to mention, being holed up at home with nothing
+better to do), is <strong>mael</strong>.<sup class="footnote-ref" id="fnref-oss"><a href="#fn-oss">1</a></sup></p>
+
+<p>mael isn&#8217;t like your usual TUI clients. I envision this to turn out
+similar to mailx&#8212;a prompt-based UI. The reason behind this UX decision
+is simple: it&#8217;s easier for me to write. :)</p>
+
+<p>Speaking of writing it, it&#8217;s being written in a mix of Python and bash.
+Why? Because Python&#8217;s <code>email</code> and <code>mailbox</code> modules are fantastic, and
+I don&#8217;t think I want to parse Maildirs in bash. &#8220;But why not pure
+Python?&#8221; Well, I&#8217;m going to be shelling out a lot (more on this in a bit), 
+and writing interactive UIs in bash is a lot more intuitive, thanks to
+some of the nifty features that later versions of bash have&#8212;<code>read</code>,
+<code>mapfile</code> etc.</p>
+
+<p>The reason I&#8217;m shelling out is because two key components to this
+client, that I haven&#8217;t yet talked about&#8212;<code>mbsync</code> and <code>msmtp</code> are in
+use, for IMAP and SMTP respectively. And <code>mbsync</code> uses the Maildir
+format, which is why I&#8217;m relying on Python&#8217;s <code>mailbox</code> package. Why is
+this in the standard library anyway?!</p>
+
+<p>The architecture of the client is pretty interesting (and possibly very
+stupid), but here&#8217;s what happens:</p>
+
+<ul>
+<li>UI and prompt stuff in bash</li>
+<li>emails are read using <code>less</code></li>
+<li>email templates (RFC 2822) are parsed and generated in Python</li>
+<li>this is sent to bash in STDOUT, like</li>
+</ul>
+
+<div class="codehilite"><pre><span></span><code><span class="nv">msg</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>./mael-parser <span class="s2">&quot;</span><span class="nv">$maildir_message_path</span><span class="s2">&quot;</span><span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
+
+<p>These kind of one-way (bash -> Python) calls are what drive the entire
+process. I&#8217;m not sure what to think of it. Perhaps I might just give up
+and write the entire thing in Python.
+Or&#8230;I might just scrap this entirely and just shut up and use aerc.
+I don&#8217;t know yet. The code does seem to be growing in size rapidly. It&#8217;s
+about ~350 LOC in two days of writing (Python + bash). New problems
+arise every now and then and it&#8217;s pretty hard to keep track of all of
+this. </p>
+
+<p>Sigh. Why can&#8217;t stuff JustWork™?</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-oss">
+<p>I have yet to open source it; this post will be updated with
+a link to it when I do.&#160;<a href="#fnref-oss" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+]]></description><link>https://icyphox.sh/blog/mael</link><pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/mael</guid></item><item><title>COVID-19 disinformation</title><description><![CDATA[<p>The virus spreads around the world, along with a bunch of disinformation
 and potential malware / phishing campaigns. There are many actors,
 pushing many narratives&#8212;some similar, some different. </p>
 
