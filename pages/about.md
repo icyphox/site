@@ -52,8 +52,9 @@ If you're interested in **hiring me**---here's my
 
 ## Donate
 
-I have a [Patreon](https://www.patreon.com/icyphox)! If you feel like
-dropping a buck or two, I won't stop you. ;)
+I have [Liberapay](https://liberapay.com/icyphox) and
+[Patreon](https://patreon.com/icyphox)! I don't particularly _need_ it,
+but it does help with domain and server costs. :)
 
 ## This website
 
