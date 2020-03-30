@@ -6,6 +6,8 @@ subtitle: An experimental mail client
 date: 2020-03-29
 ---
 
+**Update**: The code lives here: https://github.com/icyphox/mael
+
 I've been on the lookout for a good terminal-based email client since
 forever, and I've tried almost all of them. The one I use right now
 sucks a little less---[aerc](https://git.sr.ht/~sircmpwn/aerc). I have
