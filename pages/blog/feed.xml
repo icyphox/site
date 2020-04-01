@@ -11,7 +11,9 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Introducing mael</title><description><![CDATA[<p>I&#8217;ve been on the lookout for a good terminal-based email client since
+    <item><title>Introducing mael</title><description><![CDATA[<p><strong>Update</strong>: The code lives here: <a href="https://github.com/icyphox/mael">https://github.com/icyphox/mael</a></p>
+
+<p>I&#8217;ve been on the lookout for a good terminal-based email client since
 forever, and I&#8217;ve tried almost all of them. The one I use right now
 sucks a little less&#8212;<a href="https://git.sr.ht/~sircmpwn/aerc">aerc</a>. I have
 some gripes with it though, like the problem with outgoing emails not
