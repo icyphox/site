@@ -11,7 +11,143 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Introducing mael</title><description><![CDATA[<p><strong>Update</strong>: The code lives here: <a href="https://github.com/icyphox/mael">https://github.com/icyphox/mael</a></p>
+    <item><title>KISS Linux: 4 months on</title><description><![CDATA[<p><a href="/blog/five-days-tty">I installed KISS</a> early in January on my main
+machine&#8212;an HP Envy 13 (2017), and I have since noticed a lot of changes
+in my workflow, my approach to software (and its development), and in
+life as a whole. I wouldn&#8217;t call KISS &#8220;life changing&#8221;, as that would be
+overly dramatic, but it has definitely reshaped my outlook towards
+technology&#8212;for better or worse.</p>
+
+<p>When I talk about KISS to people&#8212;online or IRL&#8212;I get some pretty
+interesting reactions and comments.<sup class="footnote-ref" id="fnref-bringing-up-kiss"><a href="#fn-bringing-up-kiss">1</a></sup> 
+Ranging from &#8220;Oh cool.&#8221; to &#8220;You must be
+retarded.&#8221;, I&#8217;ve heard it all. A classic and a personal favourite of
+mine, &#8220;I don&#8217;t use meme distros because I actually get work done.&#8221; It is
+actually, quite the opposite&#8212;I&#8217;ve been so much more productive using
+KISS than any other operating system. I&#8217;ll explain why shortly.</p>
+
+<p>The beauty of this &#8220;distro&#8221;, is it isn&#8217;t much of a distribution at all.
+There is no big team, no mailing lists, no infrastructure. The entire
+setup is so loose, and this makes it very convenient to swap things out
+for alternatives. The main (and potentially community) repos all reside
+locally on your system. In the event that Dylan decides to call it
+quits and switches to Windows, we can simply just bump versions
+ourselves, locally! The <a href="https://k1ss.org/guidestones">KISS Guidestones</a>
+document is a good read.</p>
+
+<p>In the subseqent paragraphs, I&#8217;ve laid out the different things about
+KISS that stand out to me, and make using the system a lot more
+enjoyable.</p>
+
+<h2 id="the-package-system">the package system</h2>
+
+<p>Packaging for KISS has been delightful, to say the least. It takes me
+about 2 mins to write and publish a new package. Here&#8217;s the <code>radare2</code>
+package, which I maintain, for example.</p>
+
+<p>The <code>build</code> file (executable):</p>
+
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/sh -e</span>
+
+./configure <span class="se">\</span>
+    --prefix<span class="o">=</span>/usr
+
+make
+make <span class="nv">DESTDIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> install
+</code></pre></div>
+
+<p>The <code>version</code> file:</p>
+
+<pre><code>4.3.1 1
+</code></pre>
+
+<p>The <code>checksums</code> file (generated using <code>kiss checksum radare2</code>):</p>
+
+<pre><code>4abcb9c9dff24eab44d64d392e115ae774ab1ad90d04f2c983d96d7d7f9476aa  4.3.1.tar.gz
+</code></pre>
+
+<p>And finally, the <code>sources</code> file:</p>
+
+<pre><code>https://github.com/radareorg/radare2/archive/4.3.1.tar.gz
+</code></pre>
+
+<p>This is literally the bare minimum that you need to define a package.
+There&#8217;s also the <code>depends</code> file where you specify the dependencies for
+your package.
+<code>kiss</code> also generates a <code>manifests</code> file to track all the files and
+directories that your package creates during installation, for their
+removal, if and when that occurs. Now compare this process with any
+other distribution&#8217;s.</p>
+
+<h2 id="the-community">the community</h2>
+
+<p>As far as I know, it mostly consists of the <code>#kisslinux</code> channel on
+Freenode and the <a href="https://old.reddit.com/r/kisslinux">r/kisslinux</a>
+subreddit. It&#8217;s not that big, but it&#8217;s suprisingly active, and super
+helpful. There have been some interested new KISS-related projects
+too: <a href="https://github.com/sdsddsd1/kiss-games">kiss-games</a>&#8212;a repository
+for, well, Linux games; <a href="https://github.com/jedavies-dev/kiss-ppc64le">kiss-ppc64le</a>
+and <a href="https://github.com/jedavies-dev/kiss-aarch64">kiss-aarch64</a>&#8212;KISS
+Linux ports for PowerPC and ARM64 architectures; 
+<a href="https://github.com/wyvertux/wyvertux">wyvertux</a>&#8212;an attempt at
+a GNU-free Linux distribution, using KISS as a base; and tons more.</p>
+
+<h2 id="the-philosophy">the philosophy</h2>
+
+<p>Software today is far too complex. And its complexity is only growing.
+Some might argue that this is inevitable, and it is in fact progress.
+I disagree. Blindly adding layers and layers of abstraction (Docker,
+modern web &#8220;apps") isn&#8217;t progress. Look at the Linux desktop ecosystem
+today, for example&#8212;monstrosities like GNOME and KDE are a result of
+this&#8230;new wave software engineering.</p>
+
+<p>I see KISS as a symbol of defiance against this malformed notion. You
+don&#8217;t <em>need</em> all the bloat these DEs ship with to have a usable system.
+Agreed, it&#8217;s a bit more effort to get up and running, but it is entirely
+worth it. Think of it as a clean table&#8212;feels good to sit down and work on,
+doesn&#8217;t it? </p>
+
+<p>Let&#8217;s take my own experience, for example. One of the initial few
+software I used to install on a new system was <code>dunst</code>&#8212;a notification
+daemon. Unfortunately, it depends on D-Bus, which is Poetterware; ergo,
+not on KISS. However, using a system without notifications has been very
+pleasant. Nothing to distract you while you&#8217;re in the zone.</p>
+
+<p>Another instance, again involving D-Bus (or not), is Bluetooth audio. As
+it happens, my laptop&#8217;s 3.5mm jack is rekt, and I need to use Bluetooth
+for audio, if at all. Sadly, Bluetooth audio on Linux hard-depends on
+D-Bus. Bluetooth stacks that don&#8217;t rely on D-Bus do exist, like on Android, 
+but porting them over to desktop is non-trivial. However, I used this to
+my advantage and decided not to consume media on my laptop. This has
+drastically boosted my productivity, since I literally cannot watch
+YouTube even if I wanted to. My laptop is now strictly work-only.
+If I do need to watch the occasional video / listen to music, I use my
+phone. Compartmentalizing work and play to separate devices has worked
+out pretty well for me.</p>
+
+<p>I&#8217;m slowly noticing myself favor low-tech (or no-tech) solutions to
+simple problems too. Like notetaking&#8212;I&#8217;ve tried plaintext files, Vim
+Wiki, Markdown, but nothing beats actually using pen and paper. Tech,
+from what I can see, doesn&#8217;t solve problems very effectively. In some
+cases, it only causes more of them. I might write another post
+discussing my thoughts on this in further detail. </p>
+
+<p>I&#8217;m not sure what I intended this post to be, but I&#8217;m pretty happy with
+the mindspill. To conclude this already long monologue, let me clarify
+one little thing y&#8217;all are probably thinking, &#8220;Okay man, are you
+suggesting that we regress to the Dark Ages?&#8221;. No, I&#8217;m not suggesting
+that we regress, but rather, progress mindfully.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-bringing-up-kiss">
+<p>No, I don&#8217;t go &#8220;I use KISS btw&#8221;. I don&#8217;t bring it
+up unless provoked.&#160;<a href="#fnref-bringing-up-kiss" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+]]></description><link>https://icyphox.sh/blog/kiss-4-mos</link><pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/kiss-4-mos</guid></item><item><title>Introducing mael</title><description><![CDATA[<p><strong>Update</strong>: The code lives here: <a href="https://github.com/icyphox/mael">https://github.com/icyphox/mael</a></p>
 
 <p>I&#8217;ve been on the lookout for a good terminal-based email client since
 forever, and I&#8217;ve tried almost all of them. The one I use right now

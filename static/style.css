@@ -37,7 +37,8 @@ html {
 .container {
   padding-top: 1%;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  min-width: 0;
 }
 
 .pull-right {
@@ -47,7 +48,7 @@ html {
   grid-row: 2;
 }
 
-.pull-right p:not(:last-child) {
+.pull-right > p:not(:last-child) {
   padding: 0px;
   margin: 0px;
   padding-top: 2%;
@@ -55,7 +56,7 @@ html {
   padding-bottom: 1%;
 }
 
-.pull-right h3 {
+.pull-right > h3 {
   color: var(--dark);
   padding: 0px;
   margin: 0px;
@@ -76,11 +77,29 @@ html {
   text-align: left;
 }
 
+pre {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px;
+  min-width: 0;
+}
+
+
+code {
+  color: var(--cyan);
+  border-bottom: unset;
+}
+
+pre > code {
+  color: var(--code);
+  background: unset;
+}
+
 @media only screen and (min-width: 800px) {
   .pull-right {
     text-align: left;
     max-width: 100%;
-    grid-column: 10;
+    grid-column: 10 / 12;
     padding-left: 20%;
     grid-row: 1;
   }
@@ -106,8 +125,8 @@ html {
   .pull-right {
     max-width: 100%;
     text-align: left;
-    grid-column: 8;
-    padding-left: 20%;
+    grid-column: 8 / 10;
+    padding-left: 10%;
     grid-row: 1;
   }
 
@@ -127,26 +146,6 @@ html {
   }
 }
 
-pre, pre code {
-  padding: 10px;
-  color: var(--code);
-  word-wrap: break-word;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  border: 0px solid transparent;
-  border-radius: 5px;
-}
-
-
-code {
-  color: var(--cyan); padding: 2px;
-  border: 0px solid transparent;
-  border-radius: 5px;
-  border-bottom: unset;
-}
 
 .logo {
   width: 180px;
@@ -275,12 +274,6 @@ hr {
 ::selection {
   background-color: var(--sel);
   color: white;
-}
-
-@media only screen and (max-width: 70em) {
-  pre {
-    overflow-x: auto;
-  }
 }
 
 .license img {

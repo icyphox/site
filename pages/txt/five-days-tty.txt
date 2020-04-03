@@ -2,6 +2,7 @@
 date: '2020-01-13'
 subtitle: I installed KISS Linux
 title: Five days in a TTY
+url: 'five-days-tty'
 ---
 
 This new semester has been pretty easy on me, so far. I hardly every

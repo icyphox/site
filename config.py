@@ -8,7 +8,7 @@ header = """<a href="/"><- back</a>"""
 footer = """
     <img class="logo" src="/static/icyphox.png" alt="icyphox's avatar" />
 
-    <p>
+    <p align="center" style="padding-bottom: 10%;">
     нет риса &mdash; нет жизни
     </p>
 
