@@ -9,7 +9,7 @@ subtitle: Computers, security & computer security.
 
 |     |     |
 | :-- | --: |
-| [KISS Linux: 4 months on](/blog/kiss-4-mos) | 2020-04-03 |
+| [The Zen of KISS Linux](/blog/kiss-zen) | 2020-04-03 |
 | [Introducing mael](/blog/mael) | 2020-03-29 |
 | [COVID-19 disinformation](/blog/covid19-disinfo) | 2020-03-15 |
 | [Nullcon 2020](/blog/nullcon-2020) | 2020-03-09 |

@@ -11,7 +11,7 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>KISS Linux: 4 months on</title><description><![CDATA[<p><a href="/blog/five-days-tty">I installed KISS</a> early in January on my main
+    <item><title>The Zen of KISS Linux</title><description><![CDATA[<p><a href="/blog/five-days-tty">I installed KISS</a> early in January on my main
 machine&#8212;an HP Envy 13 (2017), and I have since noticed a lot of changes
 in my workflow, my approach to software (and its development), and in
 life as a whole. I wouldn&#8217;t call KISS &#8220;life changing&#8221;, as that would be
@@ -147,7 +147,7 @@ up unless provoked.&#160;<a href="#fnref-bringing-up-kiss" class="footnoteBackLi
 </li>
 </ol>
 </div>
-]]></description><link>https://icyphox.sh/blog/kiss-4-mos</link><pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/kiss-4-mos</guid></item><item><title>Introducing mael</title><description><![CDATA[<p><strong>Update</strong>: The code lives here: <a href="https://github.com/icyphox/mael">https://github.com/icyphox/mael</a></p>
+]]></description><link>https://icyphox.sh/blog/kiss-zen</link><pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/kiss-zen</guid></item><item><title>Introducing mael</title><description><![CDATA[<p><strong>Update</strong>: The code lives here: <a href="https://github.com/icyphox/mael">https://github.com/icyphox/mael</a></p>
 
 <p>I&#8217;ve been on the lookout for a good terminal-based email client since
 forever, and I&#8217;ve tried almost all of them. The one I use right now
