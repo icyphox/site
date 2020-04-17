@@ -10,7 +10,6 @@ subtitle: Computers, security & computer security.
 |     |     |
 | :-- | --: |
 | [OpenBSD on the HP Envy 13](/blog/openbsd-hp-envy) | 2020-04-17 |
-| [OpenBSD on the HP Envy 13](/blog/openbsd-hp-envy) | 2020-04-16 |
 | [The Zen of KISS Linux](/blog/kiss-zen) | 2020-04-03 |
 | [Introducing mael](/blog/mael) | 2020-03-29 |
 | [COVID-19 disinformation](/blog/covid19-disinfo) | 2020-03-15 |
