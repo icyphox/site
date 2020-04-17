@@ -11,7 +11,134 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>The Zen of KISS Linux</title><description><![CDATA[<p><a href="/blog/five-days-tty">I installed KISS</a> early in January on my main
+    <item><title>OpenBSD on the HP Envy 13</title><description><![CDATA[<p>My existing KISS install broke because I thought it would be a great
+idea to have <a href="https://github.com/alpinelinux/apk-tools">apk-tools</a>
+alongside the <code>kiss</code> package manager. It&#8217;s safe to say, that did not end
+well&#8212;especially when I installed, and then removed a package. With
+a semi-broken install that I didn&#8217;t feel like fixing, I figured I&#8217;d give
+OpenBSD a try. And I did.</p>
+
+<h2 id="installation-and-setup">installation and setup</h2>
+
+<p>Ran into some trouble booting off the USB initially, turned out to be
+a faulty stick. Those things aren&#8217;t built to last, sadly. Flashed a new
+stick, booted up. Setup was pleasant, very straightforward. Didn&#8217;t
+really have to intervene much.</p>
+
+<p>After booting in, I was greeted with a very archaic looking FVWM
+desktop. It&#8217;s not the prettiest thing, and especially annoying to work
+with when you don&#8217;t have your mouse setup, i.e. no tap-to-click. </p>
+
+<p>I needed wireless, and my laptop doesn&#8217;t have an Ethernet port. USB
+tethering just works, but the connection kept dying. I&#8217;m not sure why.
+Instead, I downloaded the <a href="http://man.openbsd.org/iwm.4">iwm(4)</a>
+firmware from <a href="http://firmware.openbsd.org/firmware/6.6/">here</a>, loaded
+it up on a USB stick and copied it over to <code>/etc/firmware</code>. After that,
+it was as simple as running
+<a href="http://man.openbsd.org/fw_update.1">fw_update(1)</a>
+and the firmware is auto-detected and loaded. In fact, if you have working 
+Internet, <code>fw_update</code> will download the required firmware for you, too.</p>
+
+<p>Configuring wireless is painless and I&#8217;m so glad to see that there&#8217;s no
+<code>wpa_supplicant</code> horror to deal with. It&#8217;s as simple as:</p>
+
+<pre><code>$ doas ifconfig iwm0 nwid YOUR_SSID wpakey YOUR_PSK
+</code></pre>
+
+<p>Also see <a href="http://man.openbsd.org/hostname.if.5">hostname.if(5)</a> to make
+this persist. After that, it&#8217;s only a matter of specifying your desired
+SSID, and <code>ifconfig</code> will automatically auth and procure an IP lease.</p>
+
+<pre><code>$ doas ifconfig iwm0 nwid YOUR_SSID
+</code></pre>
+
+<p>By now I was really starting to get exasperated by FVWM, and decided to
+switch to something nicer. I tried building 2bwm (my previous WM), but
+that failed. I didn&#8217;t bother trying to figure this out, so I figured I&#8217;d
+give <a href="http://man.openbsd.org/cwm.1">cwm(1)</a> a shot. Afterall, people
+sing high praises of it.</p>
+
+<p>And boy, is it good. The config is a breeze, and actually pretty
+powerful. <a href="https://github.com/icyphox/dotfiles/blob/master/home/.cwmrc">Here&#8217;s mine</a>.
+cwm also has a built-in launcher, so dmenu isn&#8217;t necessary anymore.
+Refer to <a href="https://man.openbsd.org/cwmrc.5">cwmrc(5)</a> for all the config
+options.</p>
+
+<p>Touchpad was pretty simple to setup too&#8212;OpenBSD has
+<a href="http://man.openbsd.org/wsconsctl.8">wsconsctl(8)</a>, which lets you set
+your tap-to-click, mouse acceleration etc. However, more advanced
+configuration can be achieved by getting Xorg to use the Synaptics
+driver. Just add a <code>70-synaptics.conf</code> to <code>/etc/X11/xorg.conf.d</code> (make
+the dir if it doesn&#8217;t exist), containing:</p>
+
+<pre><code>Section "InputClass"
+    Identifier "touchpad catchall"
+    Driver "synaptics"
+    MatchIsTouchpad "on"
+    Option "TapButton1" "1"
+    Option "TapButton2" "3"
+    Option "TapButton3" "2"
+    Option "VertEdgeScroll" "on"
+    Option "VertTwoFingerScroll" "on"
+    Option "HorizEdgeScroll" "on"
+    Option "HorizTwoFingerScroll" "on"
+    Option "VertScrollDelta" "111"
+    Option "HorizScrollDelta" "111"
+EndSection  
+</code></pre>
+
+<p>There are a lot more options that can be configured, see
+<a href="http://man.openbsd.org/synaptics.4">synaptics(4)</a>.</p>
+
+<p>Suspend and hibernate just work, thanks to
+<a href="http://man.openbsd.org/apm.8">apm(8)</a>. Suspend on lid-close just needs
+one <code>sysctl</code> tweak:</p>
+
+<pre><code>$ sysctl machdep.lidaction=1
+</code></pre>
+
+<p>I believe it&#8217;s set to 1 by default on some installs, but I&#8217;m not sure.</p>
+
+<h2 id="impressions">impressions</h2>
+
+<p>I already really like the philosophy of OpenBSD&#8212;security and
+simplicity, while not losing out on sanity. The default install is
+plentiful, and has just about everything you&#8217;d need to get going. 
+I especially enjoy how everything just works! I was pleasantly surprised
+to see my brightness and volume keys work without any configuration!
+It&#8217;s clear that the devs
+actually dogfood OpenBSD, unlike uh, <em>cough</em> Free- <em>cough</em>. Gosh I hope
+it&#8217;s not <em>the</em> flu. :^)</p>
+
+<p>Oh and did you notice all the manpage links I&#8217;ve littered throughout
+this post? They have manpages for <em>everything</em>; it&#8217;s ridiculous. And
+they&#8217;re very thorough. Arch Wiki is good, but it&#8217;s incorrect at times,
+or simply outdated. OpenBSD&#8217;s manpages, although catering only to
+OpenBSD have never failed me. </p>
+
+<p>Performance and battery life are fine. Battery is in fact, identical, if
+not better than on Linux. OpenBSD disables HyperThreading/SMT for
+security reasons, but you can manually enable it if you wish to do so:</p>
+
+<pre><code>$ sysctl hw.smt=1
+</code></pre>
+
+<p>Package management is probably the only place where OpenBSD falls short. 
+<a href="http://man.openbsd.org/pkg_add.1">pkg_add(1)</a> isn&#8217;t particularly fast,
+considering it&#8217;s written in Perl. The ports selection is fine, I have
+yet to find something that I need not on there. I also wish they
+debloated packages; maybe I&#8217;ve just been spoilt by KISS. I now have
+D-Bus on my system thanks to Firefox. :(</p>
+
+<p>I appreciate the fact that they don&#8217;t have a political document&#8212;a Code
+of Conduct. CoCs are awful, and have only proven to be harmful for
+projects. Oh wait, OpenBSD does have one: <a href="https://www.openbsd.org/mail.html">https://www.openbsd.org/mail.html</a>
+;)</p>
+
+<p>I&#8217;ll be exploring <a href="http://man.openbsd.org/vmd.8">vmd(8)</a> to see if I can
+get a Linux environment going. Perhaps that&#8217;ll be my next post, but when
+have I ever delivered?</p>
+]]></description><link>https://icyphox.sh/blog/openbsd-hp-envy</link><pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/openbsd-hp-envy</guid></item><item><title>The Zen of KISS Linux</title><description><![CDATA[<p><a href="/blog/five-days-tty">I installed KISS</a> early in January on my main
 machine&#8212;an HP Envy 13 (2017), and I have since noticed a lot of changes
 in my workflow, my approach to software (and its development), and in
 life as a whole. I wouldn&#8217;t call KISS &#8220;life changing&#8221;, as that would be
@@ -1609,7 +1736,7 @@ this is what I ended up on, ultimately:</p>
 <span class="n">meta</span> <span class="o">=</span> <span class="n">markdown_path</span><span class="p">(</span><span class="n">getrecent</span><span class="p">(</span><span class="n">blog</span><span class="p">),</span> <span class="n">extras</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;metadata&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">metadata</span>
 <span class="n">fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">getrecent</span><span class="p">(</span><span class="n">blog</span><span class="p">))[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;/blog/&quot;</span> <span class="o">+</span> <span class="n">fname</span>
-<span class="n">line</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;| [</span><span class="si">{meta[&#39;title&#39;]}</span><span class="s2">](</span><span class="si">{url}</span><span class="s2">) | `</span><span class="si">{meta[&#39;date&#39;]}</span><span class="s2">` |&quot;</span>
+<span class="n">line</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;| [</span><span class="si">{</span><span class="n">meta</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">](</span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s2">) | `</span><span class="si">{</span><span class="n">meta</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">` |&quot;</span>
 
 <span class="n">update_index</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 <span class="n">update_blog</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
@@ -2872,7 +2999,7 @@ challenge.</p>
     <span class="n">addr</span> <span class="o">=</span> <span class="n">code</span><span class="p">[</span><span class="s1">&#39;sh_addr&#39;</span><span class="p">]</span>
     <span class="n">md</span> <span class="o">=</span> <span class="n">Cs</span><span class="p">(</span><span class="n">CS_ARCH_X86</span><span class="p">,</span> <span class="n">CS_MODE_64</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">md</span><span class="o">.</span><span class="n">disasm</span><span class="p">(</span><span class="n">ops</span><span class="p">,</span> <span class="n">addr</span><span class="p">):</span>        
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;0x</span><span class="si">{i.address:x}</span><span class="s1">:</span><span class="se">\t</span><span class="si">{i.mnemonic}</span><span class="se">\t</span><span class="si">{i.op_str}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;0x</span><span class="si">{</span><span class="n">i</span><span class="o">.</span><span class="n">address</span><span class="si">:</span><span class="s1">x</span><span class="si">}</span><span class="s1">:</span><span class="se">\t</span><span class="si">{</span><span class="n">i</span><span class="o">.</span><span class="n">mnemonic</span><span class="si">}</span><span class="se">\t</span><span class="si">{</span><span class="n">i</span><span class="o">.</span><span class="n">op_str</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 <p>The code is fairly straightforward (I think). We should be seeing this, on running</p>
@@ -2913,12 +3040,12 @@ challenge.</p>
     <span class="n">e</span> <span class="o">=</span> <span class="n">ELFFile</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">iter_sections</span><span class="p">():</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">section</span><span class="p">,</span> <span class="n">RelocationSection</span><span class="p">):</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{section.name}</span><span class="s1">:&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">section</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">:&#39;</span><span class="p">)</span>
             <span class="n">symbol_table</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">get_section</span><span class="p">(</span><span class="n">section</span><span class="p">[</span><span class="s1">&#39;sh_link&#39;</span><span class="p">])</span>
             <span class="k">for</span> <span class="n">relocation</span> <span class="ow">in</span> <span class="n">section</span><span class="o">.</span><span class="n">iter_relocations</span><span class="p">():</span>
                 <span class="n">symbol</span> <span class="o">=</span> <span class="n">symbol_table</span><span class="o">.</span><span class="n">get_symbol</span><span class="p">(</span><span class="n">relocation</span><span class="p">[</span><span class="s1">&#39;r_info_sym&#39;</span><span class="p">])</span>
                 <span class="n">addr</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="n">relocation</span><span class="p">[</span><span class="s1">&#39;r_offset&#39;</span><span class="p">])</span>
-                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{symbol.name}</span><span class="s1"> </span><span class="si">{addr}</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">symbol</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">addr</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 <p>Let’s run through this code real quick. We first loop through the sections, and check if it’s of the type <code>RelocationSection</code>. We then iterate through the relocations from the symbol table for each section. Finally, running this gives us</p>
