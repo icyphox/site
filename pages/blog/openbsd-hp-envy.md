@@ -139,3 +139,17 @@ Oh wait, OpenBSD does have one: https://www.openbsd.org/mail.html
 I'll be exploring [vmd(8)](http://man.openbsd.org/vmd.8) to see if I can
 get a Linux environment going. Perhaps that'll be my next post, but when
 have I ever delivered?
+
+I'll close this post off with my new rice, and a sick ASCII art I made.
+
+```
+      \.-----./  
+      / ^ ^ ^ \
+    (o)(o) ^ ^ |_/|
+     {} ^ ^ > ^| \|
+      \^ ^ ^ ^/
+       /-----\
+                    ~icy
+```
+
+![openbsd rice](https://x.icyphox.sh/zDYdj.png)

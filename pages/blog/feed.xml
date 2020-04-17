@@ -132,12 +132,26 @@ D-Bus on my system thanks to Firefox. :(</p>
 
 <p>I appreciate the fact that they don&#8217;t have a political document&#8212;a Code
 of Conduct. CoCs are awful, and have only proven to be harmful for
-projects. Oh wait, OpenBSD does have one: <a href="https://www.openbsd.org/mail.html">https://www.openbsd.org/mail.html</a>
+projects; part of the reason why I&#8217;m sick of Linux and its community.
+Oh wait, OpenBSD does have one: <a href="https://www.openbsd.org/mail.html">https://www.openbsd.org/mail.html</a>
 ;)</p>
 
 <p>I&#8217;ll be exploring <a href="http://man.openbsd.org/vmd.8">vmd(8)</a> to see if I can
 get a Linux environment going. Perhaps that&#8217;ll be my next post, but when
 have I ever delivered?</p>
+
+<p>I&#8217;ll close this post off with my new rice, and a sick ASCII art I made.</p>
+
+<pre><code>      \.-----./  
+      / ^ ^ ^ \
+    (o)(o) ^ ^ |_/|
+     {} ^ ^ &gt; ^| \|
+      \^ ^ ^ ^/
+       /-----\
+                    ~icy
+</code></pre>
+
+<p><img src="https://x.icyphox.sh/zDYdj.png" alt="openbsd rice" /></p>
 ]]></description><link>https://icyphox.sh/blog/openbsd-hp-envy</link><pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/openbsd-hp-envy</guid></item><item><title>The Zen of KISS Linux</title><description><![CDATA[<p><a href="/blog/five-days-tty">I installed KISS</a> early in January on my main
 machine&#8212;an HP Envy 13 (2017), and I have since noticed a lot of changes
 in my workflow, my approach to software (and its development), and in
