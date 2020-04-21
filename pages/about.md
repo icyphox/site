@@ -48,7 +48,7 @@ my [PGP key](/static/gpg.txt). Fingerprint:
 I'm also on IRC @ Freenode and Rizon, usually as `icy` / `icyphox`.
 
 If you're interested in **hiring me**---here's my
-[résumé](https://x@icyphox.sh/resume.pdf).
+[résumé](https://x.icyphox.sh/resume.pdf).
 
 ## Donate
 
