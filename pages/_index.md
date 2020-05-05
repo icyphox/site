@@ -9,6 +9,7 @@ subtitle: Computers, security & computer security.
 
 |     |     |
 | :-- | --: |
+| [Stop joining mastodon.social](/blog/mastodon-social) | 2020-05-05 |
 | [OpenBSD on the HP Envy 13](/blog/openbsd-hp-envy) | 2020-04-17 |
 | [The Zen of KISS Linux](/blog/kiss-zen) | 2020-04-03 |
 | [Introducing mael](/blog/mael) | 2020-03-29 |

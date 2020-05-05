@@ -11,7 +11,61 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>OpenBSD on the HP Envy 13</title><description><![CDATA[<p>My existing KISS install broke because I thought it would be a great
+    <item><title>Stop joining mastodon.social</title><description><![CDATA[<p>No, really. Do you actually understand why the Mastodon network exists,
+and what it stands for, or are you just LARPing? If you&#8217;re going to just
+cross-post from Twitter, why are you even on Mastodon?</p>
+
+<p>Okay, so Mastodon is a &#8220;federated network&#8221;. What does that mean? You
+have a bunch of instances, each having their own userbase, and each
+instance <em>federates</em> with other instances, forming a distributed
+network. Got that? Cool. Now let&#8217;s get to the problem with
+mastodon.social.</p>
+
+<p>mastodon.social is the instance run by the lead developer. Why does
+everybody flock to it? I&#8217;m really not sure, but if I were to hazard
+a guess, I&#8217;d say it&#8217;s because people don&#8217;t really understand federation.
+&#8220;Oh, big instance? I should probably join that.&#8221; Herd mentality?
+I dunno.</p>
+
+<p>And what happens when every damn user joins just one instance? It becomes
+more Twitter, that&#8217;s what. The federation is gone. Nearly all activity
+is generated from just one instance. Here are some numbers:</p>
+
+<ul>
+<li>Total number of users on Mastodon: ~2.2 million.</li>
+<li>Number of users on mastodon.social: 529923</li>
+</ul>
+
+<p>Surprisingly, there&#8217;s an instance even bigger than
+mastodon.social&#8212;pawoo.net. I have no idea why it&#8217;s so big and it&#8217;s
+primarily Japanese. Its user count is over 620k. So mastodon.social and
+pawoo.net put together form over 1 million users, that&#8217;s <em>more than</em> 50%
+of the entire Mastodon populace. That&#8217;s nuts.<sup class="footnote-ref" id="fnref-federation-fallacy"><a href="#fn-federation-fallacy">1</a></sup></p>
+
+<p>And you&#8217;re only enabling this centralization by joining mastodon.social! Really, what
+even <em>is there</em> on mastodon.social? Have you even seen its local
+timeline? Probably not. Join an instance with more flavor. Are you into,
+say, the BSDs? Join bsd.network. Free software? fosstodon.org. Or host
+your own for yourself and your friends. </p>
+
+<p>If you really do care about decentralization and freedom, and aren&#8217;t
+just memeing to look cool on Twitter, then move your account to another
+instance.<sup class="footnote-ref" id="fnref-move-account"><a href="#fn-move-account">2</a></sup></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-federation-fallacy">
+<p><a href="https://rosenzweig.io/blog/the-federation-fallacy.html">https://rosenzweig.io/blog/the-federation-fallacy.html</a>&#160;<a href="#fnref-federation-fallacy" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+
+<li id="fn-move-account">
+<p>Go to <code>/settings/migration</code> from your instance&#8217;s web
+page.&#160;<a href="#fnref-move-account" class="footnoteBackLink" title="Jump back to footnote 2 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+]]></description><link>https://icyphox.sh/blog/mastodon-social</link><pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/mastodon-social</guid></item><item><title>OpenBSD on the HP Envy 13</title><description><![CDATA[<p>My existing KISS install broke because I thought it would be a great
 idea to have <a href="https://github.com/alpinelinux/apk-tools">apk-tools</a>
 alongside the <code>kiss</code> package manager. It&#8217;s safe to say, that did not end
 well&#8212;especially when I installed, and then removed a package. With
