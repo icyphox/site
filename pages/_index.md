@@ -9,6 +9,7 @@ subtitle: Computers, security & computer security.
 
 |     |     |
 | :-- | --: |
+| [The S-nail mail client](/blog/s-nail) | 2020-05-06 |
 | [Stop joining mastodon.social](/blog/mastodon-social) | 2020-05-05 |
 | [OpenBSD on the HP Envy 13](/blog/openbsd-hp-envy) | 2020-04-17 |
 | [The Zen of KISS Linux](/blog/kiss-zen) | 2020-04-03 |
