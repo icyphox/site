@@ -11,7 +11,51 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>The S-nail mail client</title><description><![CDATA[<p>TL;DR: Here&#8217;s my <a href="https://github.com/icyphox/dotfiles/blob/master/home/.mailrc"><code>.mailrc</code></a>.</p>
+    <item><title>Simplicity (mostly) guarantees security</title><description><![CDATA[<p>Although it is a very comfy one, it&#8217;s not just an aesthetic. Simplicity
+and minimalism, in technology, is great for security too. I say &#8220;mostly&#8221;
+in the title because human error cannot be discounted, and nothing is
+perfect. However, the simpler your tech stack is, it is inherentely more
+secure than complex monstrosities.</p>
+
+<p>Let&#8217;s look at systemd, for example. It&#8217;s got over 1.2 million
+lines of code. &#8220;Hurr durr but LoC doesn&#8217;t mean anything!&#8221; Sure ok, but
+can you <em>imagine</em> auditing this? How many times has it even been
+audited? I couldn&#8217;t find any audit reports. No, the developers are not
+security engineers and a trustworthy audit must be done by
+a third-party. What&#8217;s scarier, is this thing runs on a huge percentage 
+of the world&#8217;s critical infrastructure and contains privileged core
+subsystems. </p>
+
+<p>&#8220;B-but Linux is much bigger!&#8221; Indeed, it is, but it has a thousand times
+(if not more) the number of eyes looking at the code, and there have been
+multiple third-party audits. There are hundreds of independent orgs and
+multiple security teams looking at it. That&#8217;s not the case with
+systemd&#8212;it&#8217;s probably just RedHat.</p>
+
+<p>Compare this to a bunch of shell scripts. Agreed, writing safe shell can
+be hard and there are a ton of weird edge-cases depending on your shell
+implementation, but the distinction here is <em>you</em> wrote it. Which means,
+you can identify what went wrong&#8212;things are predictable.
+systemd, however, is a large blackbox, and its state at runtime is largely
+unprovable and unpredictable. I am certain even the developers don&#8217;t
+know.</p>
+
+<p>And this is why I whine about complexity so much. A complex,
+unpredictable system is nothing more than a large attack surface. Drew
+DeVault, head of <a href="https://sourcehut.org">sourcehut</a> wrote something
+similar (yes that&#8217;s the link, yes it has a typo).: </p>
+
+<p><a href="https://sourcehut.org/blog/2020-04-20-prioritizing-simplitity/">https://sourcehut.org/blog/2020-04-20-prioritizing-simplitity/</a></p>
+
+<p>He manually provisions all
+sourcehut infrastructure, because tools like Salt, Kubernetes etc. are
+just like systemd in our example&#8212;large monstrosities which can get you
+RCE&#8217;d. Don&#8217;t believe me? See 
+<a href="https://threatpost.com/salt-bugs-full-rce-root-cloud-servers/155383/">this</a>.</p>
+
+<p><em>This was day 3 of the #100DaysToOffload challenge. It came out like
+a systemd-hate post, but really, I couldn&#8217;t think of a better example.</em></p>
+]]></description><link>https://icyphox.sh/blog/simplicity-security</link><pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/simplicity-security</guid></item><item><title>The S-nail mail client</title><description><![CDATA[<p>TL;DR: Here&#8217;s my <a href="https://github.com/icyphox/dotfiles/blob/master/home/.mailrc"><code>.mailrc</code></a>.</p>
 
 <p>As I&#8217;d mentioned in my blog post about <a href="/blog/mael">mael</a>, I&#8217;ve been on
 the lookout for a good, usable mail client. As it happens, I found

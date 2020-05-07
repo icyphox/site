@@ -9,6 +9,7 @@ subtitle: Computers, security & computer security.
 
 |     |     |
 | :-- | --: |
+| [Simplicity (mostly) guarantees security](/blog/simplicity-security) | 2020-05-07 |
 | [The S-nail mail client](/blog/s-nail) | 2020-05-06 |
 | [Stop joining mastodon.social](/blog/mastodon-social) | 2020-05-05 |
 | [OpenBSD on the HP Envy 13](/blog/openbsd-hp-envy) | 2020-04-17 |
