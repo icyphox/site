@@ -11,7 +11,88 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Simplicity (mostly) guarantees security</title><description><![CDATA[<p>Although it is a very comfy one, it&#8217;s not just an aesthetic. Simplicity
+    <item><title>The efficacy of deepfakes</title><description><![CDATA[<p>A few days back, NPR put out an article discussing why deepfakes aren&#8217;t
+all that powerful in spreading disinformation.
+<a href="https://www.npr.org/2020/05/07/851689645/why-fake-video-audio-may-not-be-as-powerful-in-spreading-disinformation-as-feare">Link to article</a>.</p>
+
+<p>According to the article:</p>
+
+<blockquote>
+  <p>&#8220;We&#8217;ve already passed the stage at which they would have been most
+  effective,&#8221; said Keir Giles, a Russia specialist with the Conflict
+  Studies Research Centre in the United Kingdom. &#8220;They&#8217;re the dog that
+  never barked.&#8221;</p>
+</blockquote>
+
+<p>I agree. This might be the case when it comes to Russian influence.
+There are simpler, more cost-effective ways to conduct <a href="https://en.wikipedia.org/wiki/Active_measures">active
+measures</a>, like memes.
+Besides, America already has the infrastructure in place to combat
+influence ops, and have been doing so for a while now. </p>
+
+<p>However, there are certain demographics whose governments may not have
+the capability to identify and perform damage control when
+a disinformation campaign hits, let alone deepfakes. An example of this
+demographic: India.</p>
+
+<h2 id="the-indian-landscape">the Indian landscape</h2>
+
+<p>The disinformation problem in India is way more sophisticated, and
+harder to combat than in the West. There are a couple of reasons for
+this:</p>
+
+<ul>
+<li>The infrastructure for fake news already exists: WhatsApp</li>
+<li>Fact checking media in 22 different languages is non-trivial</li>
+</ul>
+
+<p>India has had a long-standing problem with misinformation. The 2019
+elections, the recent CAA controversy and even more recently&#8212;the
+coronavirus. In some cases, it has even lead to 
+<a href="https://www.npr.org/2018/07/18/629731693/fake-news-turns-deadly-in-india">mob violence</a>.</p>
+
+<p>All of this shows that the populace is easily influenced, and deepfakes
+are only going to simplify this. What&#8217;s worse is explaining to a rural
+crowd that something like a deepfake can exist&#8212;comprehension and
+adoption of technology has always been slow in India, and can be
+attributed to socio-economic factors. </p>
+
+<p>There also exists a majority of the population that&#8217;s already been
+influenced to a certain degree: the right wing. A deepfake of a Muslim
+leader trashing Hinduism will be eaten up instantly. They are inclined
+to believe it is true, by virtue of prior influence and given the
+present circumstances.</p>
+
+<h2 id="countering-deepfakes">countering deepfakes</h2>
+
+<p>The thing about deepfakes is the tech to spot them already exists. In
+fact, some can even be eyeballed. Deepfake imagery tends to have weird
+artifacting, which can be noticed upon closer inspection. Deepfake
+videos, of people specifically, blink / move weirdly. The problem at
+hand, however, is the general public cannot be expected to notice these
+at a quick glance, and the task of proving a fake is left to researchers
+and fact checkers.</p>
+
+<p>Further, India does not have the infrastructure to combat deepfakes at
+scale. By the time a research group / think tank catches wind of it, the
+damage is likely already done. Besides, disseminating contradictory
+information, i.e. &#8220;this video is fake&#8221;, is also a task of its own.
+Public opinion has already been swayed, and the brain dislikes
+contradictions.</p>
+
+<h2 id="why-havent-we-seen-it-yet">why haven&#8217;t we seen it yet?</h2>
+
+<p>Creating a deepfake isn&#8217;t trivial. Rather, creating a <em>convincing</em> one
+isn&#8217;t. I would also assume that most political propaganda outlets are
+just large social media operations. They lack the technical prowess and
+/ or the funding to produce a deepfake. This doesn&#8217;t mean they can&#8217;t
+ever. </p>
+
+<p>It goes without saying, but this post isn&#8217;t specific to India. I&#8217;d say
+other countries with a similar socio-economic status are in a similar
+predicament. Don&#8217;t write off deepfakes as a non-issue just because
+America did.</p>
+]]></description><link>https://icyphox.sh/blog/efficacy-deepfakes</link><pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/efficacy-deepfakes</guid></item><item><title>Simplicity (mostly) guarantees security</title><description><![CDATA[<p>Although it is a very comfy one, it&#8217;s not just an aesthetic. Simplicity
 and minimalism, in technology, is great for security too. I say &#8220;mostly&#8221;
 in the title because human error cannot be discounted, and nothing is
 perfect. However, the simpler your tech stack is, it is inherentely more
