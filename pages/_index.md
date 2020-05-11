@@ -9,6 +9,7 @@ subtitle: Computers, security & computer security.
 
 |     |     |
 | :-- | --: |
+| [The efficacy of deepfakes](/blog/efficacy-deepfakes) | 2020-05-11 |
 | [Simplicity (mostly) guarantees security](/blog/simplicity-security) | 2020-05-07 |
 | [The S-nail mail client](/blog/s-nail) | 2020-05-06 |
 | [Stop joining mastodon.social](/blog/mastodon-social) | 2020-05-05 |
