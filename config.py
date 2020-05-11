@@ -20,11 +20,16 @@ footer = """
     </p> 
 
     <p>
-    <span class="sidebar-link">twitter</span>
+    <span class="sidebar-link">mastodon</span>
     <br>
-      <a href="https://twitter.com/icyphox">icyphox</a>
+      <a href="https://freeradical.zone/@icyphox">@icyphox@freeradical.zone</a>
     </p> 
 
+    <p>
+    <span class="sidebar-link">twitter</span>
+    <br>
+      <a href="https://twitter.com/icyphox">@icyphox</a>
+    </p>
 
     <p>
     <span class="sidebar-link">pgp</span>
