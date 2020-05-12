@@ -25,13 +25,12 @@ to stick to subgenres of metal, specifically---metalcore and deathcore.
 
 Here are some of my links:
 
-- [Lobsters](https://lobste.rs/u/icyphox)
+- [Lobsters](https://lobste.rs/u/icy)
 - [Hacker News](https://news.ycombinator.com/user?id=Icyphox)
 - [Reddit](https://reddit.com/u/icyphox)
 - [Steam](https://steamcommunity.com/id/icyphox)
 - [Last.fm](https://last.fm/user/icyphox)
 - [Twitter](https://twitter.com/icyphox)
-- [Keybase](https://keybase.io/icyphox)
 
 My presence on the fediverse:
 
