@@ -9,7 +9,7 @@ subtitle: My friends and internet bros.
 
 ### `#rice`
 
-- [nerdypepper](https://nerdypepper.tech)
+- [nerdypepper](https://peppe.rs)
 - [eti](https://eti.tf)
 - [bushidoboy](https://bushidoboy.com)
 - [enju](https://enju.dev)
