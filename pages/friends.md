@@ -31,7 +31,7 @@ subtitle: My friends and internet bros.
 - [squeal](https://karansaini.com)
 - [xrisk](https://rishav.io)
 - [vologue](https://vologue.cf)
-- [anon6405](https://anon6405.github.io/)
+- [fd0e](https://fd0e.ml)
 - [xero](https://xero.nu)
 - [awalvie](https://awalvie.github.io/)
 
