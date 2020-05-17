@@ -32,18 +32,16 @@ Here are some of my links:
 - [Last.fm](https://last.fm/user/icyphox)
 - [Twitter](https://twitter.com/icyphox)
 
-My presence on the fediverse:
+Note that my Twitter is now read-only. I'm more active on the fediverse
+[@icyphox@freeradical.zone](https://freeradical.zone/@icyphox). 
 
-- @[icyphox@freeradical.zone](https://freeradical.zone/@icyphox)
-- @[icyphox@pixelfed.social](https://pixelfed.social/icyphox)
 
 ## Contact
 
-My Twitter DMs are open, but I may take a while to reply. You can also
-email me at [x@icyphox.sh](mailto:x@icyphox.sh). Should you need it,
-my [PGP key](/static/gpg.txt). Fingerprint:
-`FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4`.
-
+Send mail to [x@icyphox.sh](mailto:x@icyphox.sh). It is also my XMPP
+address; please use OMEMO.
+Should you need it, my [PGP key](/static/gpg.txt). Fingerprint: `FE1B
+8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4`.
 I'm also on IRC @ Freenode and Rizon, usually as `icy` / `icyphox`.
 
 If you're interested in **hiring me**---here's my
