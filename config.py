@@ -26,12 +26,6 @@ footer = """
     </p> 
 
     <p>
-    <span class="sidebar-link">twitter</span>
-    <br>
-      <a href="https://twitter.com/icyphox">@icyphox</a>
-    </p>
-
-    <p>
     <span class="sidebar-link">pgp</span>
     <br>
       <a href="/static/gpg.txt">0x8A93F96F78C5D4C4</a>
