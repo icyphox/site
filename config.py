@@ -22,7 +22,7 @@ footer = """
     <p>
     <span class="sidebar-link">mastodon</span>
     <br>
-      <a href="https://freeradical.zone/@icyphox">@icyphox@freeradical.zone</a>
+      <a rel="me" href="https://freeradical.zone/@icyphox">@icyphox@freeradical.zone</a>
     </p> 
 
     <p>
