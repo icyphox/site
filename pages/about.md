@@ -32,8 +32,8 @@ Here are some of my links:
 - [Last.fm](https://last.fm/user/icyphox)
 - [Twitter](https://twitter.com/icyphox)
 
-Note that my Twitter is now read-only. I'm more active on the fediverse
-[@icyphox@freeradical.zone](https://freeradical.zone/@icyphox). 
+Note that my Twitter is now read-only. I'm more active on the fediverse:
+https://freeradical.zone/@icyphox
 
 
 ## Contact
