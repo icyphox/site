@@ -54,4 +54,5 @@ footer = """
     </div>
         """
 template = 'text.html'  # default is index.html
-post_build = ['./bin/rss.py', './bin/plaintext.sh', './bin/update_index.py']
+pre_build = ['./bin/openring.py']
+post_build = ['./bin/rss.py', './bin/update_index.py']
