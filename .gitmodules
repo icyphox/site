@@ -1,0 +1,3 @@
+[submodule "bin/openring"]
+	path = bin/openring
+	url = https://github.com/icyphox/openring.py
