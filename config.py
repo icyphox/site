@@ -54,5 +54,5 @@ footer = """
     </div>
         """
 template = 'text.html'  # default is index.html
-pre_build = ['./bin/openring/openring.py']
+pre_build = ['/home/icy/code/openring/openring.py']
 post_build = ['./bin/rss.py', './bin/update_index.py']

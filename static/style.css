@@ -39,6 +39,7 @@ html {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   min-width: 0;
+  margin-bottom: 20px;
 }
 
 .pull-right {
@@ -294,7 +295,6 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   min-width: 0;
-  margin-bottom: 20px;
 }
 
 .openring-feed {
