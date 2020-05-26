@@ -119,6 +119,19 @@ pre > code {
   html {
     font-size: 18px;
   }
+  
+  .openring {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    min-width: 0;
+  }
+  
+  .openring-feed {
+    grid-row: 1;
+    font-size: 16px;
+    padding: 4px 8px 4px;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -143,6 +156,18 @@ pre > code {
 
   html {
     font-size: 18px;
+  }
+
+  .openring {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    min-width: 0;
+  }
+  
+  .openring-feed {
+    grid-row: 1;
+    font-size: 16px;
+    padding: 4px 8px 4px;
   }
 }
 
@@ -292,13 +317,11 @@ hr {
 }
 
 .openring {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: block;
   min-width: 0;
 }
 
 .openring-feed {
-  grid-row: 1;
   font-size: 16px;
   padding: 4px 8px 4px;
 }
