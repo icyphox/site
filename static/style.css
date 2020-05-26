@@ -242,7 +242,7 @@ img {
   padding-bottom: 30px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: normal;
 }
 
@@ -265,7 +265,6 @@ blockquote {
   margin: .8rem 0;
   padding: .5rem 1rem
 }
-
 hr {
   width: 20%;
 }
@@ -289,4 +288,17 @@ hr {
   max-width: 100%;
   padding-bottom: 5px;
   cursor: pointer;
+}
+
+.openring {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-width: 0;
+  margin-bottom: 20px;
+}
+
+.openring-feed {
+  grid-row: 1;
+  font-size: 16px;
+  padding: 4px 8px 4px;
 }
