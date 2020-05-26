@@ -39,11 +39,10 @@ for f in random.sample(feeds, 3):
     post_title = fp.entries[0].title
 
     html_out.append(f"""<div class="openring-feed">
-    <h4><a href="{post_link}">{post_title}</a></h4>
+    <h4>{pretty_date} <a href="{post_link}">{post_title}</a></h4>
     <p>{trunc_summ}</p>
 
     <p>via <a href="{feed_link}">{feed_title}</a></p>
-    {pretty_date}
     </div>
     """
     )
