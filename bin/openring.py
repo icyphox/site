@@ -48,6 +48,9 @@ for f in random.sample(feeds, 3):
     """
     )
 
-rendered = jinja_render(html_out, "templates/openring.html")
-with open("templates/text.html", "w") as t:
-    t.write(rendered)
+if sys.argv[1] == "-j":
+    rendered = jinja_render(html_out, "templates/openring.html")
+    with open("templates/text.html", "w") as t:
+        t.write(rendered)
+else:
+    print(html_out)
