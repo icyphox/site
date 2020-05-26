@@ -70,6 +70,14 @@ html {
   grid-row: 1;
 }
 
+.openring {
+display: inline-block;
+}
+
+.openring-feed {
+padding: 4px 8px 4px;
+}
+
 .sep {
   display: visible;
 }
@@ -314,14 +322,4 @@ hr {
   max-width: 100%;
   padding-bottom: 5px;
   cursor: pointer;
-}
-
-.openring {
-  display: block;
-  min-width: 0;
-}
-
-.openring-feed {
-  font-size: 16px;
-  padding: 4px 8px 4px;
 }
