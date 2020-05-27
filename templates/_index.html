@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang=en>
+  <link rel="stylesheet" href="/static/style.css" type="text/css">
+  <link rel="shortcut icon" type="images/x-icon" href="/static/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://icyphox.sh/blog/feed.xml"> 
+  <meta name="description" content="{{ subtitle }}">
+  <meta name="viewport" content="initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="UTF-8">
+  <meta content="#ffffff" name="theme-color">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@icyphox">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ subtitle }}">
+  <meta name="twitter:image" content="/static/icyphox.png">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="{{ subtitle }}">
+  <meta property="og:url" content="https://icyphox.sh">
+  <meta property="og:image" content="/static/icyphox.png">
+
+  <title>
+    {{ title }}
+  </title>
+  <body> 
+    <section class="container"> 
+      <div class="pull-left">
+        <div class="content">
+          {{ body }}
+          <table>
+            <tbody>
+          {% for p in posts %}
+            <tr>
+              <td align="left"><a href="/blog/{{ p.url }}">{{ p.title }}</a></td>
+              <td align="right">{{ p.date }}</td>
+            </tr>
+          {% endfor %}
+          </table>
+        </div>
+      </div>
+      <div class="pull-right">
+        {{ footer }}
+      </div>
+    </section>
+  </body>
+</html>
