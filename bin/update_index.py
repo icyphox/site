@@ -1,68 +1,37 @@
 #!/usr/bin/env python3
 
-from markdown2 import markdown_path
 import os
-import fileinput
-import sys
-
-# change our cwd
-os.chdir("bin")
-
-blog = "../pages/blog/"
-
-print("this is going to take a while...")
-print("you might as well serve the site!")
-
-# order files by recency
-def get_recents(path):
-    files = [path + f for f in os.listdir(blog) if f not in ["_index.md", "feed.xml"]]
-    files.sort(
-        key=lambda f: markdown_path(f, extras=["metadata"]).metadata["date"],
-        reverse=True,
-    )
-    return files
+import frontmatter as fm
+import jinja2
+from jinja2 import DebugUndefined
 
 
-def update_index(posts):
-    path = "../pages/_index.md"
-    with open(path, "r") as f:
-        md = f.readlines()
-    ruler = md.index("| :-- | --: |\n")
-    for post, i in zip(posts, range(5)):
-        md[ruler + i + 1] = post + "\n"
-
-    with open(path, "w") as f:
-        f.writelines(md)
-
-
-def update_blog(s):
-    path = "../pages/_index.md"
-    s = s + "\n"
-    with open(path) as f:
-        tempf = f.readlines()
-
-    if s in tempf:
-        print("index has already been updated. quitting...")
-        sys.exit()
-    for l in fileinput.FileInput(path, inplace=1):
-        if "--:" in l:
-            l = l.replace(l, l + s)
-        print(l, end=""),
+def get_metas(blog):
+    all_metas = []
+    files  = [ blog + f for f in os.listdir(blog) if f not in ["_index.md", "feed.xml"]]
+    for f in files:
+        with open(f) as fx:
+            meta, _ = fm.parse(fx.read())
+            all_metas.append(meta)
+    
+    all_metas.sort(key=lambda x: x['date'], reverse=True)
+    return all_metas
 
 
-top_five = []
-metas = []
-lines = []
-fnames = []
+def jinja_render(posts, tmpl):
+    template_loader = jinja2.FileSystemLoader("./")
+    env = jinja2.Environment(loader=template_loader, undefined=DebugUndefined)
+    try:
+        template = env.get_template(tmpl)
+    except jinja2.exceptions.TemplateNotFound:
+        print("error: template not found")
 
-for i in range(5):
-    top_five.append(get_recents(blog)[i])
-    metas.append(markdown_path(get_recents(blog)[i], extras=["metadata"]).metadata)
-    fnames.append(os.path.basename(os.path.splitext(get_recents(blog)[i])[0]))
+    out = template.render(posts=posts)
+    return out
 
-for meta, fname in zip(metas, fnames):
-    url = "/blog/" + fname
-    new_line = f"| [{meta['title']}]({url}) | {meta['date']} |"
-    lines.append(new_line)
 
-update_blog(lines[0])
+if __name__ == "__main__":
+    all_metas = get_metas("pages/blog/")
+    rendered = jinja_render(all_metas, "templates/_index.html") 
+    with open("templates/index.html", "w") as f:
+        f.write(rendered)

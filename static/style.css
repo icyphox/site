@@ -35,7 +35,6 @@ html {
 }
 
 .container {
-  padding-top: 1%;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   min-width: 0;

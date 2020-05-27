@@ -1,6 +1,6 @@
 ---
 template:
-title: Vimb: my Firefox replacement
+title: Vimb&#58; my Firefox replacement
 subtitle: Web browsing, suckless style
 date: 2020-01-16
 url: mnml-browsing
