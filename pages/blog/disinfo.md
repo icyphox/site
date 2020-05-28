@@ -8,7 +8,7 @@ url: disinfo
 
 As with the disambiguation of any word, let's start with its etymology and definiton.
 According to [Wikipedia](https://en.wikipedia.org/wiki/Disinformation),
-_disinformation_ has been borrowed from the Russian word --- _dezinformatisya_ (дезинформа́ция),
+_disinformation_ has been borrowed from the Russian word  --  _dezinformatisya_ (дезинформа́ция),
 derived from the title of a KGB black propaganda department.
 
 > Disinformation is false information spread deliberately to deceive.
@@ -24,7 +24,7 @@ key factors of any successful disinformation operation:
 At the end, we'll also look at how you can use disinformation techniques to maintain OPSEC.
 
 In order to break monotony, I will also be using the terms "information operation", or the shortened
-forms---"info op" & "disinfo".
+forms -- "info op" & "disinfo".
 
 ## Creating disinformation
 
@@ -32,15 +32,15 @@ Crafting or creating disinformation is by no means a trivial task. Often, the qu
 of any disinformation sample is a huge indicator of the level of sophistication of the
 actor involved, i.e. is it a 12 year old troll or a nation state?
 
-Well crafted disinformation always has one primary characteristic --- "plausibility".
+Well crafted disinformation always has one primary characteristic  --  "plausibility".
 The disinfo must sound reasonable. It must induce the notion it's _likely_ true. 
-To achieve this, the target --- be it an individual, a specific demographic or an entire
-nation --- must be well researched. A deep understanding of the target's culture, history,
+To achieve this, the target  --  be it an individual, a specific demographic or an entire
+nation  --  must be well researched. A deep understanding of the target's culture, history,
 geography and psychology is required. It also needs circumstantial and situational awareness,
 of the target.
 
 There are many forms of disinformation. A few common ones are staged videos / photographs, 
-recontextualized videos / photographs, blog posts, news articles & most recently --- deepfakes.
+recontextualized videos / photographs, blog posts, news articles & most recently  --  deepfakes.
 
 Here's a tweet from [the grugq](https://twitter.com/thegrugq), showing a case of recontextualized
 imagery:
@@ -101,7 +101,7 @@ info ops. Essentially, an actor attempts to create "discussions" amongst "users"
 to push their narrative(s). Twitter also provides analytics for every tweet, enabling actors to
 get realtime insights into what sticks and what doesn't.
 The use of Twitter was seen during the previously discussed MH17 case, where Russia employed its troll
-factory --- the [Internet Research Agency](https://en.wikipedia.org/wiki/Internet_Research_Agency) (IRA)
+factory  --  the [Internet Research Agency](https://en.wikipedia.org/wiki/Internet_Research_Agency) (IRA)
 to create discussions about alternative theories.
 
 In India, disinformation is often spread via YouTube, WhatsApp and Facebook. Political parties

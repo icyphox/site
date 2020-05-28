@@ -9,7 +9,7 @@ url: 2019-in-review
 Just landed in a rainy Chennai, back in campus for my 6th semester.
 A little late to the "year in review blog post" party; travel took up
 most of my time. Last year was pretty eventful (at least in my books),
-and I think I did a bunch of cool stuff---let's see!
+and I think I did a bunch of cool stuff -- let's see!
 
 ## Interning at SecureLayer7
 
@@ -24,7 +24,7 @@ I also earned my first CVE! I've written about it in detail
 
 ## Conferences
 
-I attended two major conferences last year---Nullcon Goa and PyCon
+I attended two major conferences last year -- Nullcon Goa and PyCon
 India. Both super fun experiences and I met a ton of cool people!
 [Nullcon Twitter thread](https://twitter.com/icyphox/status/1101022604851212288)
 and [PyCon blog post](/blog/pycon-wrap-up).
@@ -66,7 +66,7 @@ $ ls -1 pages/blog/*.md | wc -l
 
 So excluding today's post, and `_index.md`, that's 18 posts! I had
 initially planned to write one post a month, but hey, this is great. My
-plan for 2020 is to write one post a _week_---unrealistic, I know, but
+plan for 2020 is to write one post a _week_ -- unrealistic, I know, but
 I will try nevertheless.
 
 I wrote about a bunch of things, ranging from programming to

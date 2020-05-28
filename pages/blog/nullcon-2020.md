@@ -13,10 +13,10 @@ Paula, and its associated party at Cidade de Goa, also by Taj.
 Great choice of venue, perhaps even better than last time. The food was
 fine, the views were better.
 
-With _those_ things out of the way---let's talk talks. I think
-I preferred the panels to the talks---I enjoy a good, stimulating
+With _those_ things out of the way -- let's talk talks. I think
+I preferred the panels to the talks -- I enjoy a good, stimulating
 discussion as opposed to only half-understanding a deeply technical
-talk---but that's just me. But there was this one talk that I really
+talk -- but that's just me. But there was this one talk that I really
 enjoyed, perhaps due to its unintended comedic value; I'll get into that
 later.
 
@@ -52,7 +52,7 @@ Saumil's statements.
 He proposed that the security industry trust the user more, and let them
 make the decisions pertaining to personal security / privacy.
 Except...that's just not going to happen. If all users were capable
-of making good, security-first choices---we as an industry don't
+of making good, security-first choices -- we as an industry don't
 need to exist. But that is unfortunately not the case.
 Users are dumb. They value convenience and immediacy over
 security. That's the sad truth of the modern age.
@@ -63,7 +63,7 @@ Another thing he proposed was that the Indian Government build our own
 _...what?_
 
 A "security professional" suggesting that we roll our own crypto? What
-even. Oh and, to top it off---when
+even. Oh and, to top it off -- when
 [Raman](https://twitter.com/tame_wildcard), very rightly countered
 saying that the biggest opponent to encryption _is_ the Government, and
 trusting them to build safe cryptosystems is probably not wise, he
@@ -95,6 +95,6 @@ a personal attack. I think you're a cool guy.
 
 Note to the Nullcon organizers: you guys did a fantastic job running the
 conference despite Corona-chan's best efforts. I'd like to suggest one
-little thing though---please VET YOUR SPEAKERS more!
+little thing though -- please VET YOUR SPEAKERS more!
 
 ![group pic](/static/img/nullcon_beach.jpg)

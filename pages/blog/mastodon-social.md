@@ -30,7 +30,7 @@ is generated from just one instance. Here are some numbers:
 - Number of users on mastodon.social: 529923
 
 Surprisingly, there's an instance even bigger than
-mastodon.social---pawoo.net. I have no idea why it's so big and it's
+mastodon.social -- pawoo.net. I have no idea why it's so big and it's
 primarily Japanese. Its user count is over 620k. So mastodon.social and
 pawoo.net put together form over 1 million users, that's _more than_ 50%
 of the entire Mastodon populace. That's nuts.[^federation-fallacy]

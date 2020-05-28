@@ -28,7 +28,7 @@ instances of well timed disinformation pushed out by Moscow.
 ### April 14, 2018
 
 - RT published an article claiming that Spiez had identified a different
-toxin---BZ, and not Novichok.
+toxin -- BZ, and not Novichok.
 - This was an attempt to shift the blame from Russia (origin of Novichok),
 to NATO countries, where it was apparently in use.
 - Most viral piece on the matter in all of 2018.
@@ -94,7 +94,7 @@ article on the matter:
 - OPCW facilities receive an email from Spiez inviting them to
 a conference.
 - The conference itself is real, and has been organized before.
-- The email however, was not---attached was a Word document containing
+- The email however, was not -- attached was a Word document containing
 malware.
 - Also seen were inconsistencies in the email formatting, from what was
 normal.
@@ -104,7 +104,7 @@ but there are a lot of tells here that point to it being the work of
 a state actor:
 
 1. Attack targetting a specific group of individuals.
-2. Relatively high level of sophistication---email formatting,
+2. Relatively high level of sophistication -- email formatting,
    malicious Word doc, etc.
 
 However, the British NCSC have deemed with "high confidence" that the
@@ -153,12 +153,12 @@ UK made the arrests public, published a list of infractions commited by
 Russia, along with the specific GRU unit that was caught.
 
 During this period, just one of the top 25 viral stories was from
-a pro-Russian outlet, RT---that too a fairly straightforward piece.
+a pro-Russian outlet, RT -- that too a fairly straightforward piece.
 
 ## Wrapping up
 
 As with conventional warfare, it's hard to determine who won. Britain
-may have had the last blow, but Moscow---yet again---depicted their
+may have had the last blow, but Moscow -- yet again---depicted their
 finesse in information warfare. Their ability to seize unexpected
 openings, gather intel to facilitate their disinformation campaigns, and
 their cyber capabilities makes them a formidable threat. 

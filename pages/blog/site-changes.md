@@ -17,8 +17,8 @@ can see at the very bottom of this post!
 
 ## speeding up index page generation
 
-The old script---the one that featured in [Hacky
-scripts](/blog/hacky-scripts)---was absolutely ridiculous, and not to
+The old script -- the one that featured in [Hacky
+scripts](/blog/hacky-scripts) -- was absolutely ridiculous, and not to
 mention _super_ slow. Here's what it did:
 
 - got the most recent file (latest post) by sorting all posts by
@@ -30,7 +30,7 @@ mention _super_ slow. Here's what it did:
 line = f"| [{meta['title']}]({url}) | `{meta['date']}` |"
 ```
 - updated the markdown table (in `_index.md`) by in-place editing the
-  markdown, with the line created earlier---for the latest post.
+  markdown, with the line created earlier -- for the latest post.
 - finally, I'd have to _rebuild_ the entire site since this markdown
   hackery would happen at the very end of the build, i.e, didn't
   actually get rendered itself. 
@@ -104,5 +104,5 @@ vite. Currently, it reads a random sample of 3 feeds from a list of
 feeds provided in a `feeds.txt` file, and updates the webring with those
 posts. Like a feed-bingo of sorts. ;)
 
-I really like how it turned out---especially the fact that I got my CSS
+I really like how it turned out -- especially the fact that I got my CSS
 grid correct in the first try!

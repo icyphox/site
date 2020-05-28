@@ -10,14 +10,14 @@ Before we start _anything_, you’re expected to know the basics of ARM
 assembly to follow along. I highly recommend
 [Azeria’s](https://twitter.com/fox0x01) series on [ARM Assembly
 Basics](https://azeria-labs.com/writing-arm-assembly-part-1/). Once you’re
-comfortable with it, proceed with the next bit---environment setup.
+comfortable with it, proceed with the next bit -- environment setup.
 
 ## Setup
 
 Since we’re working with the ARM architecture, there are two options to go
 forth with: 
 
-1. Emulate---head over to [qemu.org/download](https://www.qemu.org/download/) and install QEMU. 
+1. Emulate -- head over to [qemu.org/download](https://www.qemu.org/download/) and install QEMU. 
 And then download and extract the ARMv6 Debian Stretch image from one of the links [here](https://blahcat.github.io/qemu/).
 The scripts found inside should be self-explanatory.
 2. Use actual ARM hardware, like an RPi.
@@ -131,7 +131,7 @@ Since we know the offset at which the `pc` gets overwritten, we can now
 control program execution flow. Let’s try jumping to the `winner` function.
 
 Disassemble `winner` again using `disas winner` and note down the offset
-of the second instruction---`add r11, sp, #4`. 
+of the second instruction -- `add r11, sp, #4`. 
 For this, we’ll use Python to print our input string replacing `FFFF` with
 the address of `winner`. Note the endianness.
 
@@ -171,7 +171,7 @@ Clean and mean.
 
 ## The exploit
 
-To write the exploit, we’ll use Python and the absolute godsend of a library---`struct`.
+To write the exploit, we’ll use Python and the absolute godsend of a library -- `struct`.
 It allows us to pack the bytes of addresses to the endianness of our choice.
 It probably does a lot more, but who cares.
 

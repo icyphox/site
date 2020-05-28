@@ -7,18 +7,18 @@ date: 2020-04-03
 ---
 
 [I installed KISS](/blog/five-days-tty) early in January on my main
-machine---an HP Envy 13 (2017), and I have since noticed a lot of changes
+machine -- an HP Envy 13 (2017), and I have since noticed a lot of changes
 in my workflow, my approach to software (and its development), and in
 life as a whole. I wouldn't call KISS "life changing", as that would be
 overly dramatic, but it has definitely reshaped my outlook towards
-technology---for better or worse.
+technology -- for better or worse.
 
-When I talk about KISS to people---online or IRL---I get some pretty
+When I talk about KISS to people -- online or IRL---I get some pretty
 interesting reactions and comments.[^bringing-up-kiss] 
 Ranging from "Oh cool." to "You must be
 retarded.", I've heard it all. A classic and a personal favourite of
 mine, "I don't use meme distros because I actually get work done." It is
-actually, quite the opposite---I've been so much more productive using
+actually, quite the opposite -- I've been so much more productive using
 KISS than any other operating system. I'll explain why shortly.
 
 [^bringing-up-kiss]: No, I don't go "I use KISS btw". I don't bring it
@@ -84,11 +84,11 @@ As far as I know, it mostly consists of the `#kisslinux` channel on
 Freenode and the [r/kisslinux](https://old.reddit.com/r/kisslinux)
 subreddit. It's not that big, but it's suprisingly active, and super
 helpful. There have been some interested new KISS-related projects
-too: [kiss-games](https://github.com/sdsddsd1/kiss-games)---a repository
+too: [kiss-games](https://github.com/sdsddsd1/kiss-games) -- a repository
 for, well, Linux games; [kiss-ppc64le](https://github.com/jedavies-dev/kiss-ppc64le)
-and [kiss-aarch64](https://github.com/jedavies-dev/kiss-aarch64)---KISS
+and [kiss-aarch64](https://github.com/jedavies-dev/kiss-aarch64) -- KISS
 Linux ports for PowerPC and ARM64 architectures; 
-[wyvertux](https://github.com/wyvertux/wyvertux)---an attempt at
+[wyvertux](https://github.com/wyvertux/wyvertux) -- an attempt at
 a GNU-free Linux distribution, using KISS as a base; and tons more.
 
 ## the philosophy
@@ -97,17 +97,17 @@ Software today is far too complex. And its complexity is only growing.
 Some might argue that this is inevitable, and it is in fact progress.
 I disagree. Blindly adding layers and layers of abstraction (Docker,
 modern web "apps") isn't progress. Look at the Linux desktop ecosystem
-today, for example---monstrosities like GNOME and KDE are a result of
+today, for example -- monstrosities like GNOME and KDE are a result of
 this...new wave software engineering.
 
 I see KISS as a symbol of defiance against this malformed notion. You
 don't _need_ all the bloat these DEs ship with to have a usable system.
 Agreed, it's a bit more effort to get up and running, but it is entirely
-worth it. Think of it as a clean table---feels good to sit down and work on,
+worth it. Think of it as a clean table -- feels good to sit down and work on,
 doesn't it? 
 
 Let's take my own experience, for example. One of the initial few
-software I used to install on a new system was `dunst`---a notification
+software I used to install on a new system was `dunst` -- a notification
 daemon. Unfortunately, it depends on D-Bus, which is Poetterware; ergo,
 not on KISS. However, using a system without notifications has been very
 pleasant. Nothing to distract you while you're in the zone.
@@ -125,7 +125,7 @@ phone. Compartmentalizing work and play to separate devices has worked
 out pretty well for me.
 
 I'm slowly noticing myself favor low-tech (or no-tech) solutions to
-simple problems too. Like notetaking---I've tried plaintext files, Vim
+simple problems too. Like notetaking -- I've tried plaintext files, Vim
 Wiki, Markdown, but nothing beats actually using pen and paper. Tech,
 from what I can see, doesn't solve problems very effectively. In some
 cases, it only causes more of them. I might write another post

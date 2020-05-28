@@ -13,7 +13,7 @@ I almost did this time too.[^1]
 For this attempt, I wanted a simpler approach. I recall how terribly
 confusing Dovecot & Postfix were to configure and hence I decided to look
 for a containerized solution, that most importantly, runs on my cheap $5 
-Digital Ocean VPS --- 1 vCPU and 1 GB memory. Of which only around 500 MB
+Digital Ocean VPS  --  1 vCPU and 1 GB memory. Of which only around 500 MB
 is actually available. So yeah, *pretty* tight.
 
 ## What's available
@@ -62,7 +62,7 @@ Error response from daemon: cannot stop container: 2377e5c0b456: Cannot kill con
 ```
 But it eventually worked after a couple of attempts.
 
-The next thing I struggled with --- DNS. Specifically, the with the step where
+The next thing I struggled with  --  DNS. Specifically, the with the step where
 the DKIM keys are generated[^2]. The output under  
 `config/opendkim/keys/domain.tld/mail.txt`  
 isn't exactly CloudFlare friendly; they can't be directly copy-pasted into
@@ -72,11 +72,11 @@ This is what it looks like.
 ```
 mail._domainkey	IN	TXT	( "v=DKIM1; h=sha256; k=rsa; "
 	  "p=<key>"
-	  "<more key>" )  ; ----- DKIM key mail for icyphox.sh
+	  "<more key>" )  ;  -- -- DKIM key mail for icyphox.sh
 ```
 But while configuring the record, you set "Type" to `TXT`, "Name" to `mail._domainkey`,
 and the "Value" to what's inside the parenthesis `(  )`, *removing* the quotes `""`. 
-Also remove the part that appears to be a comment `; ----- ...`.
+Also remove the part that appears to be a comment `;  -- -- ...`.
 
 To simplify debugging DNS issues later, it's probably a good idea to
 point to your mailserver using a subdomain like `mail.domain.tld` using an 
@@ -84,11 +84,11 @@ point to your mailserver using a subdomain like `mail.domain.tld` using an
 You'll then have to set an `MX` record with the "Name" as `@` (or whatever your DNS provider
 uses to denote the root domain) and the "Value" to `mail.domain.tld`.
 And finally, the `PTR` (pointer record, I think), which is the reverse of 
-your `A` record --- "Name" as the server IP and "Value" as `mail.domain.tld`.
+your `A` record  --  "Name" as the server IP and "Value" as `mail.domain.tld`.
 I learnt this part the hard way, when my outgoing email kept getting
 rejected by Tutanota's servers.
 
-Yet another hurdle --- SSL/TLS certificates. This isn't very properly
+Yet another hurdle  --  SSL/TLS certificates. This isn't very properly
 documented, unless you read through the [wiki](https://github.com/tomav/docker-mailserver/wiki/Installation-Examples)
 and look at an example. In short, install `certbot`, have port 80 free,
 and run 
