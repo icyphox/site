@@ -18,7 +18,7 @@ emails with its [very friendly author](https://www.sdaoden.eu). I did it
 so you don't have to[^read-man], and I present to you
 this guide.
 
-[^read-man]: Honestly, read the man page (and email Steffen!)---there's
+[^read-man]: Honestly, read the man page (and email Steffen!) -- there's
     a ton of useful options in there.
 
 ## basic settings
@@ -66,7 +66,7 @@ set autosort=date
 ## authentication
 
 With these out of the way, we can move on to configuring our
-account---authenticating IMAP and SMTP. Before that, however, we'll
+account -- authenticating IMAP and SMTP. Before that, however, we'll
 have to create a `~/.netrc` file to store our account credentials. 
 
 (This of course, assumes that your SMTP and IMAP credentials are the

@@ -21,14 +21,14 @@ I've read about a lot of methods people employ to curb their phone
 usage. Some have tried grouping "distracting" apps into a separate
 folder, and this supposedly helps reduce their usage. Now, I fail to see
 how this would work, but YMMV. Another technique I see often is using
-a time governance app---like OnePlus' Zen Mode---to enforce how much
+a time governance app -- like OnePlus' Zen Mode---to enforce how much
 time you spend using specific apps, or the phone itself. I've tried this
 for myself, but I constantly found myself counting down the minutes
 after which the phone would become usable again. Not helpful.
 
 My solution to this is a lot more brutal. I straight up uninstalled the
 apps that I found myself using too often. There's a simple principle
-behind it---if the app has a desktop alternative, like Twitter,
+behind it -- if the app has a desktop alternative, like Twitter,
 Reddit, etc. use that instead. Here's a list of apps that got nuked from
 my phone:
 
@@ -56,7 +56,7 @@ mostly aesthetic. I like UIs that get out of the way.
 My setup right now is just a simple bar at the top showing the time,
 date, current volume and battery %, along with my workspace indicators.
 No fancy colors, no flashy buttons and sliders. And that's it. I don't
-try to force myself to not use stuff---after all, I've reduced it
+try to force myself to not use stuff -- after all, I've reduced it
 elsewhere. :)
 
 Now the question arises: Is this just a phase, or will I stick to it?

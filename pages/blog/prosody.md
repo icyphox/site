@@ -8,7 +8,7 @@ date: 2020-02-18
 
 Remember the [IRC for DMs](/blog/irc-for-dms/) article I wrote a while
 back? Well...it's safe to say that IRC didn't hold up too well. It first
-started with the bot. Buggy code, crashed a lot---we eventually gave up
+started with the bot. Buggy code, crashed a lot -- we eventually gave up
 and didn't bring the bot back up. Then came the notifications, or lack
 thereof. Revolution IRC has a bug where your custom notification rules
 just get ignored after a while. In my case, this meant that
@@ -141,14 +141,14 @@ config](https://x.icyphox.sh/prosody.cfg.lua) for reference.
 ## Closing notes
 
 That's pretty much all you need for 1-on-1 E2EE chats. I don't know much
-about group chats just yet---trying to create a group in Conversations
+about group chats just yet -- trying to create a group in Conversations
 gives a "No group chat server found". I will figure it out later.
 
 Another thing that doesn't work in Conversations is adding an account
 using an `SRV` record.[^srv] Which kinda sucks, because having a `chat.`
 subdomain isn't very clean, but whatever.
 
-Oh, also---you can message me at
+Oh, also -- you can message me at
 [icy@chat.icyphox.sh](xmpp:icy@chat.icyphox.sh).
 
 [^srv]: https://prosody.im/doc/dns

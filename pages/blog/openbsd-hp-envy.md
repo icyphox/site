@@ -9,7 +9,7 @@ date: 2020-04-17
 My existing KISS install broke because I thought it would be a great
 idea to have [apk-tools](https://github.com/alpinelinux/apk-tools)
 alongside the `kiss` package manager. It's safe to say, that did not end
-well---especially when I installed, and then removed a package. With
+well -- especially when I installed, and then removed a package. With
 a semi-broken install that I didn't feel like fixing, I figured I'd give
 OpenBSD a try. And I did.
 
@@ -61,7 +61,7 @@ cwm also has a built-in launcher, so dmenu isn't necessary anymore.
 Refer to [cwmrc(5)](https://man.openbsd.org/cwmrc.5) for all the config
 options.
 
-Touchpad was pretty simple to setup too---OpenBSD has
+Touchpad was pretty simple to setup too -- OpenBSD has
 [wsconsctl(8)](http://man.openbsd.org/wsconsctl.8), which lets you set
 your tap-to-click, mouse acceleration etc. However, more advanced
 configuration can be achieved by getting Xorg to use the Synaptics
@@ -100,7 +100,7 @@ I believe it's set to 1 by default on some installs, but I'm not sure.
 
 ## impressions
 
-I already really like the philosophy of OpenBSD---security and
+I already really like the philosophy of OpenBSD -- security and
 simplicity, while not losing out on sanity. The default install is
 plentiful, and has just about everything you'd need to get going. 
 I especially enjoy how everything just works! I was pleasantly surprised
@@ -130,7 +130,7 @@ yet to find something that I need not on there. I also wish they
 debloated packages; maybe I've just been spoilt by KISS. I now have
 D-Bus on my system thanks to Firefox. :(
 
-I appreciate the fact that they don't have a political document---a Code
+I appreciate the fact that they don't have a political document -- a Code
 of Conduct. CoCs are awful, and have only proven to be harmful for
 projects; part of the reason why I'm sick of Linux and its community.
 Oh wait, OpenBSD does have one: https://www.openbsd.org/mail.html
@@ -143,12 +143,12 @@ have I ever delivered?
 I'll close this post off with my new rice, and a sick ASCII art I made.
 
 ```
-      \.-----./  
+      \. -- --./  
       / ^ ^ ^ \
     (o)(o) ^ ^ |_/|
      {} ^ ^ > ^| \|
       \^ ^ ^ ^/
-       /-----\
+       / -- --\
                     ~icy
 ```
 

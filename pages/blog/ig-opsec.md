@@ -10,20 +10,20 @@ Which I am not, of course. But seeing as most of my peers are, I am
 compelled to write this post. Using a social platform like Instagram
 automatically implies that the user understands (to some level) that
 their personally identifiable information is exposed publicly, and they
-sign up for the service understanding this risk---or I think they do,
+sign up for the service understanding this risk -- or I think they do,
 anyway. But that's about it, they go ham after that. Sharing every nitty
 gritty detail of their private lives without understanding the potential
 risks of doing so.
 
 The fundamentals of OPSEC dictacte that you develop a threat model, and
-Instgrammers are _obviously_ incapable of doing that---so I'll do it
+Instgrammers are _obviously_ incapable of doing that -- so I'll do it
 for them. 
 
 ## Your average Instagrammer's threat model
 
 I stress on the word "average", as in this doesn't apply to those with
 more than a couple thousand followers. Those type of accounts inherently
-face different kinds of threats---those that come with having
+face different kinds of threats -- those that come with having
 a celebrity status, and are not in scope of this analysis.
 
 - **State actors**: This doesn't _really_ fit into our threat model,
@@ -32,7 +32,7 @@ there are select groups of individuals that operate on
 Instagram[^ddepisode], and they can potentially be targetted by a state
 actor.
 
-[^ddepisode]: https://darknetdiaries.com/episode/51/---Jack talks about Indian hackers who operate on Instagram.
+[^ddepisode]: https://darknetdiaries.com/episode/51/ -- Jack talks about Indian hackers who operate on Instagram.
 
 - **OSINT**: This is probably the biggest threat vector, simply because
 of the amount of visual information shared on the platform. A lot can be
@@ -40,7 +40,7 @@ gleaned from one simple picture in a nondescript alleyway. We'll get
 into this in the DOs and DON'Ts in a bit.
 
 - **Facebook & LE**: Instagram is the last place you want to be doing an
-illegal, because well, it's logged and more importantly---not
+illegal, because well, it's logged and more importantly -- not
 end-to-end encrypted. Law enforcement can subpoena any and all account
 information. Quoting Instagram's 
 [page on this](https://help.instagram.com/494561080557017):
@@ -57,7 +57,7 @@ while posting on Instagram.
 ### DON'Ts
 
 - Use Instagram for planning and orchestrating illegal shit! I've
-explained why this is a terrible idea above. Use secure comms---even
+explained why this is a terrible idea above. Use secure comms -- even
 WhatsApp is a better choice, if you have nothing else. In fact, try
 avoiding IG DMs altogether, use alternatives that implement E2EE.
 
@@ -70,9 +70,9 @@ security at places you're bound to be at.
 
 - Share your flight ticket in your story! I can't stress this enough!!!
 Summer/winter break? "Look guys, I'm going home! Here's where I live,
-and here's my flight number---feel free to track me!". This scenario is
+and here's my flight number -- feel free to track me!". This scenario is
 especially worrisome because the start and end points are known to the
-threat actor, and your arrival time can be trivially looked up---thanks
+threat actor, and your arrival time can be trivially looked up -- thanks
 to the flight number on your ticket. So, just don't.
 
 - Post screenshots with OS specific details. This might border on
@@ -111,7 +111,7 @@ change, and consequentially the risks do too.
 
 ## Fin
 
-Instagram is---much to my dismay---far too popular for it to die any
+Instagram is -- much to my dismay---far too popular for it to die any
 time soon. There are plenty of good reasons to stop using the platform
 altogether (hint: Facebook), but that's a discussion for another day.
 

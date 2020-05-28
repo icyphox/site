@@ -20,7 +20,7 @@ Consider the following scenario:
 - 3-letter org steps in, wants him released.
 
 So here's the thing, his presence is a threat to public but at the same time, 
-he can be a valuable long term asset---giving info on drug inflow, exchanges and perhaps even 
+he can be a valuable long term asset -- giving info on drug inflow, exchanges and perhaps even 
 actionable intel on bigger fish who exist on top of the ladder. But he also
 seeks security. The 3-letter org must provide him with protection, 
 in case he's blown. And like in our case, they'd have to step in if he gets arrested.
@@ -29,7 +29,7 @@ Herein lies the problem. How far should an intelligence organization go to prote
 Who matters more, the people they've sworn to protect, or the asset? 
 Because afterall, in the bigger picture, local PD and intel orgs are on the same side.
 
-Thus, the question arises---how can we measure the "usefulness" of an
+Thus, the question arises -- how can we measure the "usefulness" of an
 asset to better quantify the tradeoff that is to be made? 
 Is the intel gained worth the loss of public safety?
 This question remains largely unanswered, and is quite the 

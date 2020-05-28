@@ -201,7 +201,7 @@ malloc 0x200fd0
 ```
 
 
-Remember the function call at `0x200fe0` from earlier? Yep, so that was a call to the well known `__libc_start_main`. Again, according to [linuxbase.org](http://refspecs.linuxbase.org/LSB_3.1.0/LSB-generic/LSB-generic/baselib---libc-start-main-.html)
+Remember the function call at `0x200fe0` from earlier? Yep, so that was a call to the well known `__libc_start_main`. Again, according to [linuxbase.org](http://refspecs.linuxbase.org/LSB_3.1.0/LSB-generic/LSB-generic/baselib -- libc-start-main-.html)
 > The `__libc_start_main()` function shall perform any necessary initialization of the execution environment, call the *main* function with appropriate arguments, and handle the return from `main()`. If the `main()` function returns, the return value shall be passed to the `exit()` function.
 
 And its definition is like so
@@ -309,4 +309,4 @@ Wew, that took quite some time. But we’re done. If you’re a beginner, you mi
 
 All the code used in this post is here: [https://github.com/icyphox/asdf/tree/master/reversing-elf](https://github.com/icyphox/asdf/tree/master/reversing-elf)
 
-Ciao for now, and I’ll see ya in #2 of this series---PE binaries. Whenever that is.
+Ciao for now, and I’ll see ya in #2 of this series -- PE binaries. Whenever that is.

@@ -25,12 +25,12 @@ subsystems.
 (if not more) the number of eyes looking at the code, and there have been
 multiple third-party audits. There are hundreds of independent orgs and
 multiple security teams looking at it. That's not the case with
-systemd---it's probably just RedHat.
+systemd -- it's probably just RedHat.
 
 Compare this to a bunch of shell scripts. Agreed, writing safe shell can
 be hard and there are a ton of weird edge-cases depending on your shell
 implementation, but the distinction here is _you_ wrote it. Which means,
-you can identify what went wrong---things are predictable.
+you can identify what went wrong -- things are predictable.
 systemd, however, is a large blackbox, and its state at runtime is largely
 unprovable and unpredictable. I am certain even the developers don't
 know.
@@ -44,7 +44,7 @@ https://sourcehut.org/blog/2020-04-20-prioritizing-simplitity/
 
 He manually provisions all
 sourcehut infrastructure, because tools like Salt, Kubernetes etc. are
-just like systemd in our example---large monstrosities which can get you
+just like systemd in our example -- large monstrosities which can get you
 RCE'd. Don't believe me? See 
 [this](https://threatpost.com/salt-bugs-full-rce-root-cloud-servers/155383/).
 

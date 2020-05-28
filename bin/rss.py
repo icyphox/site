@@ -2,7 +2,7 @@
 # generate an rss item
 
 import html
-from markdown2 import markdown
+from myrkdown import markdown
 import sys
 import os
 from collections import namedtuple

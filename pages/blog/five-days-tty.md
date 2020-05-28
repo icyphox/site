@@ -8,7 +8,7 @@ date: 2020-01-13
 
 This new semester has been pretty easy on me, so far. I hardly every
 have any classes (again, so far), and I've a ton of free time on my
-hands. This calls for---yep---a distro hop! 
+hands. This calls for -- yep---a distro hop! 
 
 ## Why KISS?
 
@@ -24,7 +24,7 @@ From the website,
 
 Like many people did in the HN thread, "simplicity" here is not to be
 confused with "ease". It is instead, simplicity in terms of lesser and
-cleaner code---no
+cleaner code -- no
 [Poetterware](https://www.urbandictionary.com/define.php?term=poetterware).
 
 [^hn]: https://news.ycombinator.com/item?id=21021396
@@ -38,8 +38,8 @@ is pure POSIX sh, and does _just enough_. Packages are compiled from
 source and `kiss` automatically performs dependency resolution. Creating
 packages is ridiculously easy too.
 
-Speaking of packages, all packages---both official & community
-repos---are run through `shellcheck` before getting merged. This is
+Speaking of packages, all packages -- both official & community
+repos -- are run through `shellcheck` before getting merged. This is
 awesome; I don't think this is done in any other distro.
 
 In essence, KISS sucks less.
@@ -53,7 +53,7 @@ stop me from doing so, however.
 ### Day 1
 
 Although technically not in a TTY, it was still not _in_ the KISS
-system---I'll count it. I'd compiled the kernel in the chroot and
+system -- I'll count it. I'd compiled the kernel in the chroot and
 decided to use `efibootmgr` instead of GRUB. `efibootmgr` is a neat tool
 to modify the Intel Extensible Firmware Interface (EFI). Essentially,
 you boot the `.efi` directly as opposed to choosing which boot entry
@@ -82,10 +82,10 @@ config. Rebuild & reboot later, I was in.
 ### Day 2
 
 Networking! How fun. An `ip a` and I see that both USB tethering
-(ethernet) and wireless don't work. Great. Dug around a bit---missing
+(ethernet) and wireless don't work. Great. Dug around a bit -- missing
 wireless drivers was the problem. Found my driver, a binary `.ucode` from
 Intel (eugh!). The whole day was spent in figuring out why the kernel
-would never load the firmware. I tried different variations---loading
+would never load the firmware. I tried different variations -- loading
 it as a module (`=m`), baking it in (`=y`) but no luck.
 
 ### Day 3

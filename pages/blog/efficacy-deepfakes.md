@@ -38,13 +38,13 @@ this:
 - Fact checking media in 22 different languages is non-trivial
 
 India has had a long-standing problem with misinformation. The 2019
-elections, the recent CAA controversy and even more recently---the
+elections, the recent CAA controversy and even more recently -- the
 coronavirus. In some cases, it has even lead to 
 [mob violence](https://www.npr.org/2018/07/18/629731693/fake-news-turns-deadly-in-india).
 
 All of this shows that the populace is easily influenced, and deepfakes
 are only going to simplify this. What's worse is explaining to a rural
-crowd that something like a deepfake can exist---comprehension and
+crowd that something like a deepfake can exist -- comprehension and
 adoption of technology has always been slow in India, and can be
 attributed to socio-economic factors. 
 
