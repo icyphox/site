@@ -22,8 +22,8 @@ can see at the very bottom of this post!</p>
 
 <h2 id="speeding-up-index-page-generation">speeding up index page generation</h2>
 
-<p>The old script---the one that featured in <a href="/blog/hacky-scripts">Hacky
-scripts</a>---was absolutely ridiculous, and not to
+<p>The old script&#8212;the one that featured in <a href="/blog/hacky-scripts">Hacky
+scripts</a>&#8212;was absolutely ridiculous, and not to
 mention <em>super</em> slow. Here&#8217;s what it did:</p>
 
 <ul>
@@ -38,7 +38,7 @@ like: </li>
 
 <ul>
 <li>updated the markdown table (in <code>_index.md</code>) by in-place editing the
-markdown, with the line created earlier---for the latest post.</li>
+markdown, with the line created earlier&#8212;for the latest post.</li>
 <li>finally, I&#8217;d have to <em>rebuild</em> the entire site since this markdown
 hackery would happen at the very end of the build, i.e, didn&#8217;t
 actually get rendered itself. </li>
@@ -111,7 +111,7 @@ vite. Currently, it reads a random sample of 3 feeds from a list of
 feeds provided in a <code>feeds.txt</code> file, and updates the webring with those
 posts. Like a feed-bingo of sorts. ;)</p>
 
-<p>I really like how it turned out---especially the fact that I got my CSS
+<p>I really like how it turned out&#8212;especially the fact that I got my CSS
 grid correct in the first try!</p>
 ]]></description><link>https://icyphox.sh/blog/site-changes</link><pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/site-changes</guid></item><item><title>The efficacy of deepfakes</title><description><![CDATA[<p>A few days back, NPR put out an article discussing why deepfakes aren&#8217;t
 all that powerful in spreading disinformation.
@@ -149,13 +149,13 @@ this:</p>
 </ul>
 
 <p>India has had a long-standing problem with misinformation. The 2019
-elections, the recent CAA controversy and even more recently---the
+elections, the recent CAA controversy and even more recently&#8212;the
 coronavirus. In some cases, it has even lead to 
 <a href="https://www.npr.org/2018/07/18/629731693/fake-news-turns-deadly-in-india">mob violence</a>.</p>
 
 <p>All of this shows that the populace is easily influenced, and deepfakes
 are only going to simplify this. What&#8217;s worse is explaining to a rural
-crowd that something like a deepfake can exist---comprehension and
+crowd that something like a deepfake can exist&#8212;comprehension and
 adoption of technology has always been slow in India, and can be
 attributed to socio-economic factors. </p>
 
@@ -213,12 +213,12 @@ subsystems. </p>
 (if not more) the number of eyes looking at the code, and there have been
 multiple third-party audits. There are hundreds of independent orgs and
 multiple security teams looking at it. That&#8217;s not the case with
-systemd---it&#8217;s probably just RedHat.</p>
+systemd&#8212;it&#8217;s probably just RedHat.</p>
 
 <p>Compare this to a bunch of shell scripts. Agreed, writing safe shell can
 be hard and there are a ton of weird edge-cases depending on your shell
 implementation, but the distinction here is <em>you</em> wrote it. Which means,
-you can identify what went wrong---things are predictable.
+you can identify what went wrong&#8212;things are predictable.
 systemd, however, is a large blackbox, and its state at runtime is largely
 unprovable and unpredictable. I am certain even the developers don&#8217;t
 know.</p>
@@ -232,7 +232,7 @@ similar (yes that&#8217;s the link, yes it has a typo).: </p>
 
 <p>He manually provisions all
 sourcehut infrastructure, because tools like Salt, Kubernetes etc. are
-just like systemd in our example---large monstrosities which can get you
+just like systemd in our example&#8212;large monstrosities which can get you
 RCE&#8217;d. Don&#8217;t believe me? See 
 <a href="https://threatpost.com/salt-bugs-full-rce-root-cloud-servers/155383/">this</a>.</p>
 
@@ -295,7 +295,7 @@ set autosort=date
 <h2 id="authentication">authentication</h2>
 
 <p>With these out of the way, we can move on to configuring our
-account---authenticating IMAP and SMTP. Before that, however, we&#8217;ll
+account&#8212;authenticating IMAP and SMTP. Before that, however, we&#8217;ll
 have to create a <code>~/.netrc</code> file to store our account credentials. </p>
 
 <p>(This of course, assumes that your SMTP and IMAP credentials are the
@@ -408,7 +408,7 @@ it? I dunno. We&#8217;ll see.</em></p>
 <hr />
 <ol>
 <li id="fn-read-man">
-<p>Honestly, read the man page (and email Steffen!)---there&#8217;s
+<p>Honestly, read the man page (and email Steffen!)&#8212;there&#8217;s
 a ton of useful options in there.&#160;<a href="#fnref-read-man" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
 </li>
 </ol>
@@ -439,7 +439,7 @@ is generated from just one instance. Here are some numbers:</p>
 </ul>
 
 <p>Surprisingly, there&#8217;s an instance even bigger than
-mastodon.social---pawoo.net. I have no idea why it&#8217;s so big and it&#8217;s
+mastodon.social&#8212;pawoo.net. I have no idea why it&#8217;s so big and it&#8217;s
 primarily Japanese. Its user count is over 620k. So mastodon.social and
 pawoo.net put together form over 1 million users, that&#8217;s <em>more than</em> 50%
 of the entire Mastodon populace. That&#8217;s nuts.<sup class="footnote-ref" id="fnref-federation-fallacy"><a href="#fn-federation-fallacy">1</a></sup></p>
@@ -470,7 +470,7 @@ page.&#160;<a href="#fnref-move-account" class="footnoteBackLink" title="Jump ba
 ]]></description><link>https://icyphox.sh/blog/mastodon-social</link><pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/mastodon-social</guid></item><item><title>OpenBSD on the HP Envy 13</title><description><![CDATA[<p>My existing KISS install broke because I thought it would be a great
 idea to have <a href="https://github.com/alpinelinux/apk-tools">apk-tools</a>
 alongside the <code>kiss</code> package manager. It&#8217;s safe to say, that did not end
-well---especially when I installed, and then removed a package. With
+well&#8212;especially when I installed, and then removed a package. With
 a semi-broken install that I didn&#8217;t feel like fixing, I figured I&#8217;d give
 OpenBSD a try. And I did.</p>
 
@@ -520,7 +520,7 @@ cwm also has a built-in launcher, so dmenu isn&#8217;t necessary anymore.
 Refer to <a href="https://man.openbsd.org/cwmrc.5">cwmrc(5)</a> for all the config
 options.</p>
 
-<p>Touchpad was pretty simple to setup too---OpenBSD has
+<p>Touchpad was pretty simple to setup too&#8212;OpenBSD has
 <a href="http://man.openbsd.org/wsconsctl.8">wsconsctl(8)</a>, which lets you set
 your tap-to-click, mouse acceleration etc. However, more advanced
 configuration can be achieved by getting Xorg to use the Synaptics
@@ -557,7 +557,7 @@ one <code>sysctl</code> tweak:</p>
 
 <h2 id="impressions">impressions</h2>
 
-<p>I already really like the philosophy of OpenBSD---security and
+<p>I already really like the philosophy of OpenBSD&#8212;security and
 simplicity, while not losing out on sanity. The default install is
 plentiful, and has just about everything you&#8217;d need to get going. 
 I especially enjoy how everything just works! I was pleasantly surprised
@@ -586,7 +586,7 @@ yet to find something that I need not on there. I also wish they
 debloated packages; maybe I&#8217;ve just been spoilt by KISS. I now have
 D-Bus on my system thanks to Firefox. :(</p>
 
-<p>I appreciate the fact that they don&#8217;t have a political document---a Code
+<p>I appreciate the fact that they don&#8217;t have a political document&#8212;a Code
 of Conduct. CoCs are awful, and have only proven to be harmful for
 projects; part of the reason why I&#8217;m sick of Linux and its community.
 Oh wait, OpenBSD does have one: <a href="https://www.openbsd.org/mail.html">https://www.openbsd.org/mail.html</a>
@@ -598,29 +598,29 @@ have I ever delivered?</p>
 
 <p>I&#8217;ll close this post off with my new rice, and a sick ASCII art I made.</p>
 
-<pre><code>      \.-----./  
+<pre><code>      \. -- --./  
       / ^ ^ ^ \
     (o)(o) ^ ^ |_/|
      {} ^ ^ &gt; ^| \|
       \^ ^ ^ ^/
-       /-----\
+       / -- --\
                     ~icy
 </code></pre>
 
 <p><img src="https://x.icyphox.sh/zDYdj.png" alt="openbsd rice" /></p>
 ]]></description><link>https://icyphox.sh/blog/openbsd-hp-envy</link><pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/openbsd-hp-envy</guid></item><item><title>The Zen of KISS Linux</title><description><![CDATA[<p><a href="/blog/five-days-tty">I installed KISS</a> early in January on my main
-machine---an HP Envy 13 (2017), and I have since noticed a lot of changes
+machine&#8212;an HP Envy 13 (2017), and I have since noticed a lot of changes
 in my workflow, my approach to software (and its development), and in
 life as a whole. I wouldn&#8217;t call KISS &#8220;life changing&#8221;, as that would be
 overly dramatic, but it has definitely reshaped my outlook towards
-technology---for better or worse.</p>
+technology&#8212;for better or worse.</p>
 
-<p>When I talk about KISS to people---online or IRL---I get some pretty
+<p>When I talk about KISS to people&#8212;online or IRL---I get some pretty
 interesting reactions and comments.<sup class="footnote-ref" id="fnref-bringing-up-kiss"><a href="#fn-bringing-up-kiss">1</a></sup> 
 Ranging from &#8220;Oh cool.&#8221; to &#8220;You must be
 retarded.&#8221;, I&#8217;ve heard it all. A classic and a personal favourite of
 mine, &#8220;I don&#8217;t use meme distros because I actually get work done.&#8221; It is
-actually, quite the opposite---I&#8217;ve been so much more productive using
+actually, quite the opposite&#8212;I&#8217;ve been so much more productive using
 KISS than any other operating system. I&#8217;ll explain why shortly.</p>
 
 <p>The beauty of this &#8220;distro&#8221;, is it isn&#8217;t much of a distribution at all.
@@ -682,11 +682,11 @@ other distribution&#8217;s.</p>
 Freenode and the <a href="https://old.reddit.com/r/kisslinux">r/kisslinux</a>
 subreddit. It&#8217;s not that big, but it&#8217;s suprisingly active, and super
 helpful. There have been some interested new KISS-related projects
-too: <a href="https://github.com/sdsddsd1/kiss-games">kiss-games</a>---a repository
+too: <a href="https://github.com/sdsddsd1/kiss-games">kiss-games</a>&#8212;a repository
 for, well, Linux games; <a href="https://github.com/jedavies-dev/kiss-ppc64le">kiss-ppc64le</a>
-and <a href="https://github.com/jedavies-dev/kiss-aarch64">kiss-aarch64</a>---KISS
+and <a href="https://github.com/jedavies-dev/kiss-aarch64">kiss-aarch64</a>&#8212;KISS
 Linux ports for PowerPC and ARM64 architectures; 
-<a href="https://github.com/wyvertux/wyvertux">wyvertux</a>---an attempt at
+<a href="https://github.com/wyvertux/wyvertux">wyvertux</a>&#8212;an attempt at
 a GNU-free Linux distribution, using KISS as a base; and tons more.</p>
 
 <h2 id="the-philosophy">the philosophy</h2>
@@ -695,17 +695,17 @@ a GNU-free Linux distribution, using KISS as a base; and tons more.</p>
 Some might argue that this is inevitable, and it is in fact progress.
 I disagree. Blindly adding layers and layers of abstraction (Docker,
 modern web &#8220;apps") isn&#8217;t progress. Look at the Linux desktop ecosystem
-today, for example---monstrosities like GNOME and KDE are a result of
+today, for example&#8212;monstrosities like GNOME and KDE are a result of
 this&#8230;new wave software engineering.</p>
 
 <p>I see KISS as a symbol of defiance against this malformed notion. You
 don&#8217;t <em>need</em> all the bloat these DEs ship with to have a usable system.
 Agreed, it&#8217;s a bit more effort to get up and running, but it is entirely
-worth it. Think of it as a clean table---feels good to sit down and work on,
+worth it. Think of it as a clean table&#8212;feels good to sit down and work on,
 doesn&#8217;t it? </p>
 
 <p>Let&#8217;s take my own experience, for example. One of the initial few
-software I used to install on a new system was <code>dunst</code>---a notification
+software I used to install on a new system was <code>dunst</code>&#8212;a notification
 daemon. Unfortunately, it depends on D-Bus, which is Poetterware; ergo,
 not on KISS. However, using a system without notifications has been very
 pleasant. Nothing to distract you while you&#8217;re in the zone.</p>
@@ -723,7 +723,7 @@ phone. Compartmentalizing work and play to separate devices has worked
 out pretty well for me.</p>
 
 <p>I&#8217;m slowly noticing myself favor low-tech (or no-tech) solutions to
-simple problems too. Like notetaking---I&#8217;ve tried plaintext files, Vim
+simple problems too. Like notetaking&#8212;I&#8217;ve tried plaintext files, Vim
 Wiki, Markdown, but nothing beats actually using pen and paper. Tech,
 from what I can see, doesn&#8217;t solve problems very effectively. In some
 cases, it only causes more of them. I might write another post
@@ -748,12 +748,12 @@ up unless provoked.&#160;<a href="#fnref-bringing-up-kiss" class="footnoteBackLi
 
 <p>I&#8217;ve been on the lookout for a good terminal-based email client since
 forever, and I&#8217;ve tried almost all of them. The one I use right now
-sucks a little less---<a href="https://git.sr.ht/~sircmpwn/aerc">aerc</a>. I have
+sucks a little less&#8212;<a href="https://git.sr.ht/~sircmpwn/aerc">aerc</a>. I have
 some gripes with it though, like the problem with outgoing emails not
 getting copied to the Sent folder, and instead erroring out with
-a cryptic <code>EOF</code>---that&#8217;s literally all it says.
+a cryptic <code>EOF</code>&#8212;that&#8217;s literally all it says.
 I&#8217;ve tried mutt, but I find it a little excessive. It feels like the
-weechat of email---to many features that you&#8217;ll probably never use.</p>
+weechat of email&#8212;to many features that you&#8217;ll probably never use.</p>
 
 <p>I need something clean and simple, less bloated (for the lack of
 a better term). This is what motivated me to try writing my own. The
@@ -761,7 +761,7 @@ result of this (and not to mention, being holed up at home with nothing
 better to do), is <strong>mael</strong>.<sup class="footnote-ref" id="fnref-oss"><a href="#fn-oss">1</a></sup></p>
 
 <p>mael isn&#8217;t like your usual TUI clients. I envision this to turn out
-similar to mailx---a prompt-based UI. The reason behind this UX decision
+similar to mailx&#8212;a prompt-based UI. The reason behind this UX decision
 is simple: it&#8217;s easier for me to write. :)</p>
 
 <p>Speaking of writing it, it&#8217;s being written in a mix of Python and bash.
@@ -769,11 +769,11 @@ Why? Because Python&#8217;s <code>email</code> and <code>mailbox</code> modules 
 I don&#8217;t think I want to parse Maildirs in bash. &#8220;But why not pure
 Python?&#8221; Well, I&#8217;m going to be shelling out a lot (more on this in a bit), 
 and writing interactive UIs in bash is a lot more intuitive, thanks to
-some of the nifty features that later versions of bash have---<code>read</code>,
+some of the nifty features that later versions of bash have&#8212;<code>read</code>,
 <code>mapfile</code> etc.</p>
 
 <p>The reason I&#8217;m shelling out is because two key components to this
-client, that I haven&#8217;t yet talked about---<code>mbsync</code> and <code>msmtp</code> are in
+client, that I haven&#8217;t yet talked about&#8212;<code>mbsync</code> and <code>msmtp</code> are in
 use, for IMAP and SMTP respectively. And <code>mbsync</code> uses the Maildir
 format, which is why I&#8217;m relying on Python&#8217;s <code>mailbox</code> package. Why is
 this in the standard library anyway?!</p>
@@ -813,13 +813,13 @@ a link to it when I do.&#160;<a href="#fnref-oss" class="footnoteBackLink" title
 </div>
 ]]></description><link>https://icyphox.sh/blog/mael</link><pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/mael</guid></item><item><title>COVID-19 disinformation</title><description><![CDATA[<p>The virus spreads around the world, along with a bunch of disinformation
 and potential malware / phishing campaigns. There are many actors,
-pushing many narratives---some similar, some different. </p>
+pushing many narratives&#8212;some similar, some different. </p>
 
 <p>Interestingly, the three big players in the information warfare
-space---Russia, Iran and China seem to be running similar stories on
+space&#8212;Russia, Iran and China seem to be running similar stories on
 their state-backed media outlets. While they all tend to lean towards
-the same, fairly anti-U.S. sentiments---that is, blaming the US for
-weaponizing the crisis for political gain---Iran and Russia&#8217;s content
+the same, fairly anti-U.S. sentiments&#8212;that is, blaming the US for
+weaponizing the crisis for political gain&#8212;Iran and Russia&#8217;s content
 come off as more&#8230;conspiratorial.
 In essence, they claim that the COVID-19 virus is a &#8220;bioweapon&#8221;
 developed by the U.S.</p>
@@ -840,7 +840,7 @@ Another article by RT,
 suggests the virus&#8217; impact on financial markets might bring about the
 reinvention of communism and the end of the global capitalist system.
 Russian state-sponsored media can also be seen amplifying Iranian
-conspiracy theories---including the Islamic Revolutionary Guard Corps&#8217;
+conspiracy theories&#8212;including the Islamic Revolutionary Guard Corps&#8217;
 (IRGC) suggestion that COVID-19 
 <a href="https://www.rt.com/news/482405-iran-coronavirus-us-biological-weapon/">is a U.S. bioweapon</a>.</p>
 
@@ -878,11 +878,11 @@ to battle the coronavirus. They <a href="http://www.globaltimes.cn/content/11784
 for unfair media coverage against China, and other <a href="http://www.globaltimes.cn/content/1180630.shtml">anti-China
 narratives</a>.
 There are a ton other articles that play the racism/discrimination
-card---I wouldn&#8217;t blame them though. <a href="http://www.globaltimes.cn/content/1178465.shtml">Here&#8217;s one</a>.</p>
+card&#8212;I wouldn&#8217;t blame them though. <a href="http://www.globaltimes.cn/content/1178465.shtml">Here&#8217;s one</a>.</p>
 
 <p>In the case of India, most disinfo (actually, misinfo) is mostly just
 pseudoscientific / alternative medicine / cures in the form of WhatsApp
-forwards---"Eat foo! Eat bar!&#8221;.<sup class="footnote-ref" id="fnref-cowpiss"><a href="#fn-cowpiss">1</a></sup></p>
+forwards&#8212;&#8220;Eat foo! Eat bar!&#8221;.<sup class="footnote-ref" id="fnref-cowpiss"><a href="#fn-cowpiss">1</a></sup></p>
 
 <p>I&#8217;ve also been noticing a <em>ton</em> of COVID-19 / coronavirus related domain
 registrations happening. Expect phishing and malware campaigns using the
@@ -891,7 +891,7 @@ registered.</p>
 
 <p><img src="/static/img/corona_domains.png" alt="corona domains" /></p>
 
-<p>Anywho, there are bigger problems at hand---like the fact that my uni
+<p>Anywho, there are bigger problems at hand&#8212;like the fact that my uni
 still hasn&#8217;t suspended classes!</p>
 
 <div class="footnotes">
@@ -909,10 +909,10 @@ Paula, and its associated party at Cidade de Goa, also by Taj.
 Great choice of venue, perhaps even better than last time. The food was
 fine, the views were better.</p>
 
-<p>With <em>those</em> things out of the way---let&#8217;s talk talks. I think
-I preferred the panels to the talks---I enjoy a good, stimulating
+<p>With <em>those</em> things out of the way&#8212;let&#8217;s talk talks. I think
+I preferred the panels to the talks&#8212;I enjoy a good, stimulating
 discussion as opposed to only half-understanding a deeply technical
-talk---but that&#8217;s just me. But there was this one talk that I really
+talk&#8212;but that&#8217;s just me. But there was this one talk that I really
 enjoyed, perhaps due to its unintended comedic value; I&#8217;ll get into that
 later.</p>
 
@@ -952,7 +952,7 @@ Saumil&#8217;s statements.</p>
 <p>He proposed that the security industry trust the user more, and let them
 make the decisions pertaining to personal security / privacy.
 Except&#8230;that&#8217;s just not going to happen. If all users were capable
-of making good, security-first choices---we as an industry don&#8217;t
+of making good, security-first choices&#8212;we as an industry don&#8217;t
 need to exist. But that is unfortunately not the case.
 Users are dumb. They value convenience and immediacy over
 security. That&#8217;s the sad truth of the modern age.</p>
@@ -963,7 +963,7 @@ security. That&#8217;s the sad truth of the modern age.</p>
 <p><em>&#8230;what?</em></p>
 
 <p>A &#8220;security professional&#8221; suggesting that we roll our own crypto? What
-even. Oh and, to top it off---when
+even. Oh and, to top it off&#8212;when
 <a href="https://twitter.com/tame_wildcard">Raman</a>, very rightly countered
 saying that the biggest opponent to encryption <em>is</em> the Government, and
 trusting them to build safe cryptosystems is probably not wise, he
@@ -995,12 +995,12 @@ a personal attack. I think you&#8217;re a cool guy.</p>
 
 <p>Note to the Nullcon organizers: you guys did a fantastic job running the
 conference despite Corona-chan&#8217;s best efforts. I&#8217;d like to suggest one
-little thing though---please VET YOUR SPEAKERS more!</p>
+little thing though&#8212;please VET YOUR SPEAKERS more!</p>
 
 <p><img src="/static/img/nullcon_beach.jpg" alt="group pic" /></p>
 ]]></description><link>https://icyphox.sh/blog/nullcon-2020</link><pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/nullcon-2020</guid></item><item><title>Setting up Prosody for XMPP</title><description><![CDATA[<p>Remember the <a href="/blog/irc-for-dms/">IRC for DMs</a> article I wrote a while
 back? Well&#8230;it&#8217;s safe to say that IRC didn&#8217;t hold up too well. It first
-started with the bot. Buggy code, crashed a lot---we eventually gave up
+started with the bot. Buggy code, crashed a lot&#8212;we eventually gave up
 and didn&#8217;t bring the bot back up. Then came the notifications, or lack
 thereof. Revolution IRC has a bug where your custom notification rules
 just get ignored after a while. In my case, this meant that
@@ -1123,14 +1123,14 @@ config</a> for reference.</p>
 <h2 id="closing-notes">Closing notes</h2>
 
 <p>That&#8217;s pretty much all you need for 1-on-1 E2EE chats. I don&#8217;t know much
-about group chats just yet---trying to create a group in Conversations
+about group chats just yet&#8212;trying to create a group in Conversations
 gives a &#8220;No group chat server found&#8221;. I will figure it out later.</p>
 
 <p>Another thing that doesn&#8217;t work in Conversations is adding an account
 using an <code>SRV</code> record.<sup class="footnote-ref" id="fnref-srv"><a href="#fn-srv">2</a></sup> Which kinda sucks, because having a <code>chat.</code>
 subdomain isn&#8217;t very clean, but whatever.</p>
 
-<p>Oh, also---you can message me at
+<p>Oh, also&#8212;you can message me at
 <a href="xmpp:icy@chat.icyphox.sh">icy@chat.icyphox.sh</a>.</p>
 
 <div class="footnotes">
@@ -1154,13 +1154,13 @@ status update worthy, right? Not really, but we&#8217;ll see.</p>
 
 <h2 id="no-more-cloudflare">No more Cloudflare!</h2>
 
-<p>Yep. If you weren&#8217;t aware---pre-2020 this site was behind Cloudflare
+<p>Yep. If you weren&#8217;t aware&#8212;pre-2020 this site was behind Cloudflare
 SSL and their DNS. I have since migrated off it to
 <a href="https://he.net">he.net</a>, thanks to highly upvoted Lobste.rs comment.
 Because of this switch, I infact, learnt a ton about DNS.</p>
 
 <p>Migrating to HE was very painless, but I did have to research a lot
-about PTR records---Cloudflare kinda dumbs it down. In my case, I had to
+about PTR records&#8212;Cloudflare kinda dumbs it down. In my case, I had to
 rename my DigitalOcean VPS instance to the FQDN, which then
 automagically created a PTR record at DO&#8217;s end.</p>
 
@@ -1175,7 +1175,7 @@ plays well with ZNC, that is.</p>
 
 <h2 id="kiss-stuff">KISS stuff</h2>
 
-<p>I now maintain two new packages in the KISS community repository---2bwm
+<p>I now maintain two new packages in the KISS community repository&#8212;2bwm
 and aerc! The KISS package system is stupid simple to work with. Creating
 packages has never been easier.</p>
 
@@ -1183,7 +1183,7 @@ packages has never been easier.</p>
 
 <p>Did you notice that yet? I&#8217;ve been curating a list of people I know IRL
 and online, and linking to their online presence. This is like a webring
-of sorts, and promotes inter-site traffic---making the web more &#8220;web&#8221;
+of sorts, and promotes inter-site traffic&#8212;making the web more &#8220;web&#8221;
 again.</p>
 
 <p>If you know me, feel free to <a href="/about#contact">hit me up</a> and I&#8217;ll link
@@ -1191,7 +1191,7 @@ your site too! My apologies if I&#8217;ve forgotten your name.</p>
 
 <h2 id="patreon">Patreon!</h2>
 
-<p>Is this big news? I dunno, but yes---I now have a Patreon. I figured I&#8217;d
+<p>Is this big news? I dunno, but yes&#8212;I now have a Patreon. I figured I&#8217;d
 cash in on the newfound traffic my site&#8217;s been getting. There won&#8217;t be
 any exclusive content or any tiers or whatever. Nothing will change.
 Just a place for y&#8217;all to toss me some $$$ if you wish to do so. ;)</p>
@@ -1214,7 +1214,7 @@ have increased since, or the number of reps × sets have. If you know of
 a better way to quantify progress, let me know! I&#8217;m pretty new to this.</p>
 ]]></description><link>https://icyphox.sh/blog/2020-01-18</link><pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/2020-01-18</guid></item><item><title>Vimb&amp;#58; my Firefox replacement</title><description><![CDATA[<p>After having recently installed <a href="https://getkiss.org">KISS</a>, and
 building Firefox from source, I was exposed to the true monstrosity that
-Firefox---and web browsers in general---is. It took all of 9 hours to
+Firefox&#8212;and web browsers in general---is. It took all of 9 hours to
 build the dependencies and then Firefox itself.</p>
 
 <p>Sure, KISS now ships Firefox binaries in the
@@ -1225,10 +1225,10 @@ package; I decided to get rid of that slow mess anyway.</p>
 
 <p><a href="https://fanglingsu.github.io/vimb/">vimb</a> is a browser based on
 <a href="https://webkitgtk.org/">webkit2gtk</a>, with a Vim-like interface. 
-<code>webkit2gtk</code> builds in less than a minute---it blows Firefox out of
+<code>webkit2gtk</code> builds in less than a minute&#8212;it blows Firefox out of
 the water, on that front.</p>
 
-<p>There isn&#8217;t much of a UI to it---if you&#8217;ve used Vimperator/Pentadactyl
+<p>There isn&#8217;t much of a UI to it&#8212;if you&#8217;ve used Vimperator/Pentadactyl
 (Firefox plugins), vimb should look familiar to you.
 It can be configured via a <code>config.h</code> or a text based config file at
 <code>~/.config/vimb/config</code>.
@@ -1246,7 +1246,7 @@ with vimb, like so:</p>
 
 <p>Where the <code>-e</code> flag is populated with the <code>XID</code>, by tabbed. Configuring
 Firefox-esque keybinds in tabbed&#8217;s <code>config.h</code> is relatively easy. Once
-that&#8217;s done---voilà! A fairly sane, Vim-like browsing experience that&#8217;s
+that&#8217;s done&#8212;voilà! A fairly sane, Vim-like browsing experience that&#8217;s
 faster and has a smaller footprint than Firefox.</p>
 
 <h2 id="ad-blocking">Ad blocking</h2>
@@ -1264,7 +1264,7 @@ available. There are two options for ad blocking:</p>
 <p><em>Some</em> websites tend to not work because they detect vimb as an older
 version of Safari (same web engine). This is a minor inconvenience, and
 not a dealbreaker for me. I also cannot login to Google&#8217;s services for
-some reason, which is mildly annoying, but it&#8217;s good in a way---I am now
+some reason, which is mildly annoying, but it&#8217;s good in a way&#8212;I am now
 further incentivised to dispose of my Google account.</p>
 
 <p>And here&#8217;s the screenshot y&#8217;all were waiting for:</p>
@@ -1272,7 +1272,7 @@ further incentivised to dispose of my Google account.</p>
 <p><img src="/static/img/vimb.png" alt="vimb" /></p>
 ]]></description><link>https://icyphox.sh/blog/mnml-browsing</link><pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/mnml-browsing</guid></item><item><title>Five days in a TTY</title><description><![CDATA[<p>This new semester has been pretty easy on me, so far. I hardly every
 have any classes (again, so far), and I&#8217;ve a ton of free time on my
-hands. This calls for---yep---a distro hop! </p>
+hands. This calls for&#8212;yep---a distro hop! </p>
 
 <h2 id="why-kiss">Why KISS?</h2>
 
@@ -1290,7 +1290,7 @@ that is to be expected from Valleybros who use macOS all day. :^)</p>
 
 <p>Like many people did in the HN thread, &#8220;simplicity&#8221; here is not to be
 confused with &#8220;ease&#8221;. It is instead, simplicity in terms of lesser and
-cleaner code---no
+cleaner code&#8212;no
 <a href="https://www.urbandictionary.com/define.php?term=poetterware">Poetterware</a>.</p>
 
 <p>This, I can get behind. A clean system with less code is like a clean
@@ -1302,8 +1302,8 @@ is pure POSIX sh, and does <em>just enough</em>. Packages are compiled from
 source and <code>kiss</code> automatically performs dependency resolution. Creating
 packages is ridiculously easy too.</p>
 
-<p>Speaking of packages, all packages---both official &amp; community
-repos---are run through <code>shellcheck</code> before getting merged. This is
+<p>Speaking of packages, all packages&#8212;both official &amp; community
+repos&#8212;are run through <code>shellcheck</code> before getting merged. This is
 awesome; I don&#8217;t think this is done in any other distro.</p>
 
 <p>In essence, KISS sucks less.</p>
@@ -1317,7 +1317,7 @@ stop me from doing so, however.</p>
 <h3 id="day-1">Day 1</h3>
 
 <p>Although technically not in a TTY, it was still not <em>in</em> the KISS
-system---I&#8217;ll count it. I&#8217;d compiled the kernel in the chroot and
+system&#8212;I&#8217;ll count it. I&#8217;d compiled the kernel in the chroot and
 decided to use <code>efibootmgr</code> instead of GRUB. <code>efibootmgr</code> is a neat tool
 to modify the Intel Extensible Firmware Interface (EFI). Essentially,
 you boot the <code>.efi</code> directly as opposed to choosing which boot entry
@@ -1345,10 +1345,10 @@ config. Rebuild &amp; reboot later, I was in.</p>
 <h3 id="day-2">Day 2</h3>
 
 <p>Networking! How fun. An <code>ip a</code> and I see that both USB tethering
-(ethernet) and wireless don&#8217;t work. Great. Dug around a bit---missing
+(ethernet) and wireless don&#8217;t work. Great. Dug around a bit&#8212;missing
 wireless drivers was the problem. Found my driver, a binary <code>.ucode</code> from
 Intel (eugh!). The whole day was spent in figuring out why the kernel
-would never load the firmware. I tried different variations---loading
+would never load the firmware. I tried different variations&#8212;loading
 it as a module (<code>=m</code>), baking it in (<code>=y</code>) but no luck.</p>
 
 <h3 id="day-3">Day 3</h3>
@@ -1416,7 +1416,7 @@ trying to debug my issues.</p>
 ]]></description><link>https://icyphox.sh/blog/five-days-tty</link><pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/five-days-tty</guid></item><item><title>2019 in review</title><description><![CDATA[<p>Just landed in a rainy Chennai, back in campus for my 6th semester.
 A little late to the &#8220;year in review blog post&#8221; party; travel took up
 most of my time. Last year was pretty eventful (at least in my books),
-and I think I did a bunch of cool stuff---let&#8217;s see!</p>
+and I think I did a bunch of cool stuff&#8212;let&#8217;s see!</p>
 
 <h2 id="interning-at-securelayer7">Interning at SecureLayer7</h2>
 
@@ -1431,7 +1431,7 @@ enterprise IoT security.</p>
 
 <h2 id="conferences">Conferences</h2>
 
-<p>I attended two major conferences last year---Nullcon Goa and PyCon
+<p>I attended two major conferences last year&#8212;Nullcon Goa and PyCon
 India. Both super fun experiences and I met a ton of cool people!
 <a href="https://twitter.com/icyphox/status/1101022604851212288">Nullcon Twitter thread</a>
 and <a href="/blog/pycon-wrap-up">PyCon blog post</a>.</p>
@@ -1476,7 +1476,7 @@ because WeeChat is bloat.</li>
 
 <p>So excluding today&#8217;s post, and <code>_index.md</code>, that&#8217;s 18 posts! I had
 initially planned to write one post a month, but hey, this is great. My
-plan for 2020 is to write one post a <em>week</em>---unrealistic, I know, but
+plan for 2020 is to write one post a <em>week</em>&#8212;unrealistic, I know, but
 I will try nevertheless.</p>
 
 <p>I wrote about a bunch of things, ranging from programming to
@@ -1513,7 +1513,7 @@ instances of well timed disinformation pushed out by Moscow.</p>
 
 <ul>
 <li>RT published an article claiming that Spiez had identified a different
-toxin---BZ, and not Novichok.</li>
+toxin&#8212;BZ, and not Novichok.</li>
 <li>This was an attempt to shift the blame from Russia (origin of Novichok),
 to NATO countries, where it was apparently in use.</li>
 <li>Most viral piece on the matter in all of 2018.</li>
@@ -1589,7 +1589,7 @@ article on the matter:</p>
 <li>OPCW facilities receive an email from Spiez inviting them to
 a conference.</li>
 <li>The conference itself is real, and has been organized before.</li>
-<li>The email however, was not---attached was a Word document containing
+<li>The email however, was not&#8212;attached was a Word document containing
 malware.</li>
 <li>Also seen were inconsistencies in the email formatting, from what was
 normal.</li>
@@ -1601,7 +1601,7 @@ a state actor:</p>
 
 <ol>
 <li>Attack targetting a specific group of individuals.</li>
-<li>Relatively high level of sophistication---email formatting,
+<li>Relatively high level of sophistication&#8212;email formatting,
 malicious Word doc, etc.</li>
 </ol>
 
@@ -1657,12 +1657,12 @@ of equipment from the room and their car.</p>
 Russia, along with the specific GRU unit that was caught.</p>
 
 <p>During this period, just one of the top 25 viral stories was from
-a pro-Russian outlet, RT---that too a fairly straightforward piece.</p>
+a pro-Russian outlet, RT&#8212;that too a fairly straightforward piece.</p>
 
 <h2 id="wrapping-up">Wrapping up</h2>
 
 <p>As with conventional warfare, it&#8217;s hard to determine who won. Britain
-may have had the last blow, but Moscow---yet again---depicted their
+may have had the last blow, but Moscow&#8212;yet again---depicted their
 finesse in information warfare. Their ability to seize unexpected
 openings, gather intel to facilitate their disinformation campaigns, and
 their cyber capabilities makes them a formidable threat. </p>
@@ -1685,20 +1685,20 @@ their cyber capabilities makes them a formidable threat. </p>
 compelled to write this post. Using a social platform like Instagram
 automatically implies that the user understands (to some level) that
 their personally identifiable information is exposed publicly, and they
-sign up for the service understanding this risk---or I think they do,
+sign up for the service understanding this risk&#8212;or I think they do,
 anyway. But that&#8217;s about it, they go ham after that. Sharing every nitty
 gritty detail of their private lives without understanding the potential
 risks of doing so.</p>
 
 <p>The fundamentals of OPSEC dictacte that you develop a threat model, and
-Instgrammers are <em>obviously</em> incapable of doing that---so I&#8217;ll do it
+Instgrammers are <em>obviously</em> incapable of doing that&#8212;so I&#8217;ll do it
 for them. </p>
 
 <h2 id="your-average-instagrammers-threat-model">Your average Instagrammer&#8217;s threat model</h2>
 
 <p>I stress on the word &#8220;average&#8221;, as in this doesn&#8217;t apply to those with
 more than a couple thousand followers. Those type of accounts inherently
-face different kinds of threats---those that come with having
+face different kinds of threats&#8212;those that come with having
 a celebrity status, and are not in scope of this analysis.</p>
 
 <ul>
@@ -1712,7 +1712,7 @@ of the amount of visual information shared on the platform. A lot can be
 gleaned from one simple picture in a nondescript alleyway. We&#8217;ll get
 into this in the DOs and DON&#8217;Ts in a bit.</p></li>
 <li><p><strong>Facebook &amp; LE</strong>: Instagram is the last place you want to be doing an
-illegal, because well, it&#8217;s logged and more importantly---not
+illegal, because well, it&#8217;s logged and more importantly&#8212;not
 end-to-end encrypted. Law enforcement can subpoena any and all account
 information. Quoting Instagram&#8217;s 
 <a href="https://help.instagram.com/494561080557017">page on this</a>:</p></li>
@@ -1733,7 +1733,7 @@ while posting on Instagram.</p>
 
 <ul>
 <li><p>Use Instagram for planning and orchestrating illegal shit! I&#8217;ve
-explained why this is a terrible idea above. Use secure comms---even
+explained why this is a terrible idea above. Use secure comms&#8212;even
 WhatsApp is a better choice, if you have nothing else. In fact, try
 avoiding IG DMs altogether, use alternatives that implement E2EE.</p></li>
 <li><p>Film live videos outside. Or try not to, if you can. You might
@@ -1743,9 +1743,9 @@ shops etc. These can be used to ascertain your current location.</p></li>
 security at places you&#8217;re bound to be at.</p></li>
 <li><p>Share your flight ticket in your story! I can&#8217;t stress this enough!!!
 Summer/winter break? &#8220;Look guys, I&#8217;m going home! Here&#8217;s where I live,
-and here&#8217;s my flight number---feel free to track me!&#8221;. This scenario is
+and here&#8217;s my flight number&#8212;feel free to track me!&#8221;. This scenario is
 especially worrisome because the start and end points are known to the
-threat actor, and your arrival time can be trivially looked up---thanks
+threat actor, and your arrival time can be trivially looked up&#8212;thanks
 to the flight number on your ticket. So, just don&#8217;t.</p></li>
 <li><p>Post screenshots with OS specific details. This might border on
 pendantic, but better safe than sorry. Your phone&#8217;s statusbar and navbar 
@@ -1784,7 +1784,7 @@ change, and consequentially the risks do too.</li>
 
 <h2 id="fin">Fin</h2>
 
-<p>Instagram is---much to my dismay---far too popular for it to die any
+<p>Instagram is&#8212;much to my dismay---far too popular for it to die any
 time soon. There are plenty of good reasons to stop using the platform
 altogether (hint: Facebook), but that&#8217;s a discussion for another day.</p>
 
@@ -1798,18 +1798,18 @@ altogether (hint: Facebook), but that&#8217;s a discussion for another day.</p>
 <hr />
 <ol>
 <li id="fn-ddepisode">
-<p><a href="https://darknetdiaries.com/episode/51/---Jack">https://darknetdiaries.com/episode/51/---Jack</a> talks about Indian hackers who operate on Instagram.&#160;<a href="#fnref-ddepisode" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+<p><a href="https://darknetdiaries.com/episode/51/">https://darknetdiaries.com/episode/51/</a>&#8212;Jack talks about Indian hackers who operate on Instagram.&#160;<a href="#fnref-ddepisode" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">&#8617;</a></p>
 </li>
 </ol>
 </div>
 ]]></description><link>https://icyphox.sh/blog/ig-opsec</link><pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/ig-opsec</guid></item><item><title>Save .ORG!</title><description><![CDATA[<p>The .ORG top-level domain introduced in 1985, has been operated by the
 <a href="https://en.wikipedia.org/wiki/Public_Interest_Registry">Public Interest Registry</a> since
 2003. The .ORG TLD is used primarily by communities, free and open source projects, 
-and other non-profit organizations---although the use of the TLD isn&#8217;t
+and other non-profit organizations&#8212;although the use of the TLD isn&#8217;t
 restricted to non-profits.</p>
 
 <p>The Internet Society or ISOC, the group that created the PIR, has
-decided to sell the registry over to a private equity firm---Ethos
+decided to sell the registry over to a private equity firm&#8212;Ethos
 Capital.</p>
 
 <h2 id="whats-the-problem">What&#8217;s the problem?</h2>
@@ -1824,11 +1824,11 @@ to the .ORG community:</p>
 <ul>
 <li><p>They control the registration/renewal fees of the TLD. They can
 hike the price if they wish to. As is stands, NGOs already earn very
-little---a .ORG price hike would put them in a very icky situation.</p></li>
+little&#8212;a .ORG price hike would put them in a very icky situation.</p></li>
 <li><p>They can introduce <a href="https://www.icann.org/resources/pages/rpm-drp-2017-10-04-en">Rights Protection
 Mechanisms</a>
-or RPMs, which are essentially legal statements that can---if not
-correctly developed---jeopardize / censor completely legal non-profit
+or RPMs, which are essentially legal statements that can&#8212;if not
+correctly developed&#8212;jeopardize / censor completely legal non-profit
 activities.</p></li>
 <li><p>Lastly, they can suspend domains at the whim of state actors. It isn&#8217;t
 news that nation states go after NGOs, targetting them with allegations
@@ -1858,7 +1858,7 @@ behalf to:</p>
 <p>The Internet that we all love and care for is slowly being subsumed by
 megacorps and private firms, who&#8217;s only motive is to make a profit. The
 Internet was meant to be free, and we&#8217;d better act now if we want that
-freedom. The future looks bleak---I hope we aren&#8217;t too late.</p>
+freedom. The future looks bleak&#8212;I hope we aren&#8217;t too late.</p>
 ]]></description><link>https://icyphox.sh/blog/save-org</link><pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/save-org</guid></item><item><title>Status update</title><description><![CDATA[<p>This month is mostly just unfun stuff, lined up in a neat schedule --
 exams. I get all these cool ideas for things to do, and it&#8217;s always
 during exams. Anyway, here&#8217;s a quick update on what I&#8217;ve been up to.</p>
@@ -1870,7 +1870,7 @@ during exams. Anyway, here&#8217;s a quick update on what I&#8217;ve been up to.
 I&#8217;ve made a few, mostly just porting them over from my Google Keep note.</p>
 
 <p>This method of using issues is great, because readers can chime in with
-ideas for things I could possibly discuss---like in <a href="https://github.com/icyphox/site/issues/10">this
+ideas for things I could possibly discuss&#8212;like in <a href="https://github.com/icyphox/site/issues/10">this
 issue</a>.</p>
 
 <h2 id="contemplating-a-vite-rewrite">Contemplating a <code>vite</code> rewrite</h2>
@@ -1887,7 +1887,7 @@ a couple of choices of languages to use in the rewrite:</p>
 (<code>shite</code>?)</li>
 </ul>
 
-<p>Oh, and did I mention---I want it to be compatible with <code>vite</code>.
+<p>Oh, and did I mention&#8212;I want it to be compatible with <code>vite</code>.
 I don&#8217;t want to have to redo my site structure or its templates. At the
 moment, I rely on Jinja2 for templating, so I&#8217;ll need something similar.</p>
 
@@ -1914,7 +1914,7 @@ command, since we share Spotify links pretty often.</p>
 
 <p>I&#8217;ve been reading some more manga, I&#8217;ll update the <a href="/reading">reading
 log</a> when I, well&#8230; get around to it. Haven&#8217;t had time to do
-much in the past few weeks---the time at the end of a semester tends to
+much in the past few weeks&#8212;the time at the end of a semester tends to
 get pretty tight. Here&#8217;s what I plan to get back to during this winter break:</p>
 
 <ul>
@@ -1943,7 +1943,7 @@ or Telegram. This is an account of how that went.</p>
 
 <h2 id="the-status-quo-of-instant-messaging-apps">The status quo of instant messaging apps</h2>
 
-<p>I&#8217;ve tried a <em>ton</em> of messaging applications---Signal, WhatsApp,
+<p>I&#8217;ve tried a <em>ton</em> of messaging applications&#8212;Signal, WhatsApp,
 Telegram, Wire, Jami (Ring), Matrix, Slack, Discord and more recently, DeltaChat.</p>
 
 <p><strong>Signal</strong>: It straight up sucks on Android. Not to mention the
@@ -1967,7 +1967,7 @@ really sucks for one-to-one chats.</p>
 
 <p><strong>Slack</strong> / <strong>Discord</strong>: <em>sigh</em></p>
 
-<p><strong>DeltaChat</strong>: Pretty interesting idea---on paper. Using existing email
+<p><strong>DeltaChat</strong>: Pretty interesting idea&#8212;on paper. Using existing email
 infrastructure for IM sounds great, but it isn&#8217;t all that cash in
 practice. Email isn&#8217;t instant, there&#8217;s always a delay of give or take
 5 to 10 seconds, if not more. This affects the flow of conversation.
@@ -1986,7 +1986,7 @@ favourite:</p>
 <p>This was the next obvious choice, but personal message buffers don&#8217;t
 persist in ZNC and it&#8217;s very annoying to have to do a <code>/query
 nerdypepper</code> (Weechat) or to search and message a user via Revolution
-IRC. The only unexplored option---using a channel.</p>
+IRC. The only unexplored option&#8212;using a channel.</p>
 
 <h2 id="setting-up-a-channel-for-dms">Setting up a channel for DMs</h2>
 
@@ -2004,9 +2004,9 @@ modes.</p></li>
 <li><p>Notifications: Also a trivial task; a quick modification to <a href="https://weechat.org/scripts/source/lnotify.py.html/">lnotify.py</a>
 to send a notification for all messages in the specified buffer
 (<code>#crimson</code>) did the trick for Weechat. Revolution IRC, on the other
-hand, has an option to setup rules for notifications---super
+hand, has an option to setup rules for notifications&#8212;super
 convenient.</p></li>
-<li><p>A bot: Lastly, a bot for a few small tasks---fetching URL titles, responding
+<li><p>A bot: Lastly, a bot for a few small tasks&#8212;fetching URL titles, responding
 to <code>.np</code> (now playing) etc. Writing an IRC bot is dead simple, and it
 took me about an hour or two to get most of the basic functionality in
 place. The source is <a href="https://github.com/icyphox/detotated">here</a>.
@@ -2049,7 +2049,7 @@ good show if you like police procedurals.</p>
 </ul>
 
 <p>So here&#8217;s the thing, his presence is a threat to public but at the same time, 
-he can be a valuable long term asset---giving info on drug inflow, exchanges and perhaps even 
+he can be a valuable long term asset&#8212;giving info on drug inflow, exchanges and perhaps even 
 actionable intel on bigger fish who exist on top of the ladder. But he also
 seeks security. The 3-letter org must provide him with protection, 
 in case he&#8217;s blown. And like in our case, they&#8217;d have to step in if he gets arrested.</p>
@@ -2058,7 +2058,7 @@ in case he&#8217;s blown. And like in our case, they&#8217;d have to step in if 
 Who matters more, the people they&#8217;ve sworn to protect, or the asset? 
 Because afterall, in the bigger picture, local PD and intel orgs are on the same side.</p>
 
-<p>Thus, the question arises---how can we measure the &#8220;usefulness&#8221; of an
+<p>Thus, the question arises&#8212;how can we measure the &#8220;usefulness&#8221; of an
 asset to better quantify the tradeoff that is to be made? 
 Is the intel gained worth the loss of public safety?
 This question remains largely unanswered, and is quite the 
@@ -2067,11 +2067,11 @@ predicament should you find yourself in it.</p>
 <p>This was a fairly short post, but an interesting problem to ponder
 nonetheless.</p>
 ]]></description><link>https://icyphox.sh/blog/intel-conundrum</link><pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/intel-conundrum</guid></item><item><title>Hacky scripts</title><description><![CDATA[<p>As a CS student, I see a lot of people around me doing courses online
-to learn to code. Don&#8217;t get me wrong---it probably works for some.
+to learn to code. Don&#8217;t get me wrong&#8212;it probably works for some.
 Everyone learns differently. But that&#8217;s only going to get you so far.
 Great you know the syntax, you can solve some competitive programming
 problems, but that&#8217;s not quite enough, is it? The actual learning comes
-from <em>applying</em> it in solving <em>actual</em> problems---not made up ones.
+from <em>applying</em> it in solving <em>actual</em> problems&#8212;not made up ones.
 (<em>inb4 some seething CP bro comes at me</em>)</p>
 
 <p>Now, what&#8217;s an actual problem? Some might define it as real world
@@ -2086,7 +2086,7 @@ examples.</p>
 
 <h2 id="now-playing-status-in-my-bar">Now playing status in my bar</h2>
 
-<p>If you weren&#8217;t aware already---I rice my desktop. A lot. And a part of
+<p>If you weren&#8217;t aware already&#8212;I rice my desktop. A lot. And a part of
 this cohesive experience I try to create involves a status bar up at the
 top of my screen, showing the time, date, volume and battery statuses etc.</p>
 
@@ -2108,7 +2108,7 @@ I spent a while in that rabbit hole but eventually gave up.</p>
 I realize that I&#8217;ll have to make <em>more</em> than one request to fetch the
 artist and track details. Nope, I need this to work fast.</p>
 
-<p>Last resort---Last.fm&#8217;s API. Spolier alert, this worked. Also, arguably
+<p>Last resort&#8212;Last.fm&#8217;s API. Spolier alert, this worked. Also, arguably
 the best choice, since it shows the track status regardless of where
 the music is being played. Here&#8217;s the script in its entirety:</p>
 
@@ -2186,7 +2186,7 @@ this is what I ended up on, ultimately:</p>
     <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;../pages/_index.md&quot;</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">md</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
-    <span class="n">ruler</span> <span class="o">=</span> <span class="n">md</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;| --- | --: |</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">ruler</span> <span class="o">=</span> <span class="n">md</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;|  --  | --: |</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">md</span><span class="p">[</span><span class="n">ruler</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
 
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -2226,9 +2226,9 @@ given that there are <a href="https://staticgen.com">so many</a> of them, but
 I chose to write one myself.</p>
 
 <p>And that just about sums up what I wanted to say. The best and most fun
-way to learn to code---write hacky scripts. You heard it here.</p>
+way to learn to code&#8212;write hacky scripts. You heard it here.</p>
 ]]></description><link>https://icyphox.sh/blog/hacky-scripts</link><pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/hacky-scripts</guid></item><item><title>Status update</title><description><![CDATA[<p>I&#8217;ve decided to drop the &#8220;Weekly&#8221; part of the status update posts, since
-they were never weekly and---let&#8217;s be honest---they aren&#8217;t going to be.
+they were never weekly and&#8212;let&#8217;s be honest---they aren&#8217;t going to be.
 These posts are, henceforth, just &#8220;Status updates&#8221;. The date range can
 be inferred from the post date.</p>
 
@@ -2287,13 +2287,13 @@ Monogatari</em> (till the latest chapter) and <em>Another</em>, and I&#8217;ve j
 started <em>Kakegurui</em>. I&#8217;ll reserve my opinions for when I update the
 <a href="/reading">reading log</a>.</p>
 
-<p>That&#8217;s about it, and I&#8217;ll see you---definitely not next week.</p>
+<p>That&#8217;s about it, and I&#8217;ll see you&#8212;definitely not next week.</p>
 ]]></description><link>https://icyphox.sh/blog/2019-10-17</link><pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/2019-10-17</guid></item><item><title>PyCon India 2019 wrap-up</title><description><![CDATA[<p>I&#8217;m writing this article as I sit in class, back on the grind. Last
-weekend---Oct 12th and 13th---was PyCon India 2019, in Chennai, India.
+weekend&#8212;Oct 12th and 13th---was PyCon India 2019, in Chennai, India.
 It was my first PyCon, <em>and</em> my first ever talk at a major conference!
 This is an account of the all the cool stuff I saw, people I met and the
 talks I enjoyed.
-Forgive the lack of pictures---I prefer living the moment through my 
+Forgive the lack of pictures&#8212;I prefer living the moment through my 
 eyes. </p>
 
 <h2 id="talks">Talks</h2>
@@ -2329,10 +2329,10 @@ the &#8220;good&#8221; kind of silence. Was it really? I&#8217;ll never know.</p
 <h2 id="some-nice-people-i-met">Some nice people I met</h2>
 
 <ul>
-<li><a href="https://twitter.com/abhirathb">Abhirath</a>---A 200 IQ lad. Talked to
+<li><a href="https://twitter.com/abhirathb">Abhirath</a>&#8212;A 200 IQ lad. Talked to
 me about everything from computational biology to the physical
 implementation of quantum computers.</li>
-<li><a href="https://twitter.com/meain_">Abin</a>---He recognized me from my
+<li><a href="https://twitter.com/meain_">Abin</a>&#8212;He recognized me from my
 <a href="https://reddit.com/r/unixporn">r/unixporn</a> posts, which was pretty
 awesome.</li>
 <li><a href="https://twitter.com/h6165">Abhishek</a></li>
@@ -2346,7 +2346,7 @@ forgetting.</p>
 
 <p>It&#8217;s not much, and
 I can&#8217;t be bothered to format them like a collage or whatever, so I&#8217;ll
-just dump them here---as is.</p>
+just dump them here&#8212;as is.</p>
 
 <p><img src="/static/img/silly_badge.jpg" alt="nice badge" />
 <img src="/static/img/abhishek_anmol.jpg" alt="awkward smile!" />
@@ -2356,7 +2356,7 @@ just dump them here---as is.</p>
 <h2 id="cest-tout">C&#8217;est tout</h2>
 
 <p>Overall, a great time and a weekend well spent. It was very different
-from your typical security conference---a lot more <em>chill</em>, if you
+from your typical security conference&#8212;a lot more <em>chill</em>, if you
 will. The organizers did a fantastic job and the entire event was put
 together really well.
 I don&#8217;t have much else to say, but I know for sure that I&#8217;ll be
@@ -2378,14 +2378,14 @@ back in bed.</p>
 usage. Some have tried grouping &#8220;distracting&#8221; apps into a separate
 folder, and this supposedly helps reduce their usage. Now, I fail to see
 how this would work, but YMMV. Another technique I see often is using
-a time governance app---like OnePlus&#8217; Zen Mode---to enforce how much
+a time governance app&#8212;like OnePlus&#8217; Zen Mode---to enforce how much
 time you spend using specific apps, or the phone itself. I&#8217;ve tried this
 for myself, but I constantly found myself counting down the minutes
 after which the phone would become usable again. Not helpful.</p>
 
 <p>My solution to this is a lot more brutal. I straight up uninstalled the
 apps that I found myself using too often. There&#8217;s a simple principle
-behind it---if the app has a desktop alternative, like Twitter,
+behind it&#8212;if the app has a desktop alternative, like Twitter,
 Reddit, etc. use that instead. Here&#8217;s a list of apps that got nuked from
 my phone:</p>
 
@@ -2415,7 +2415,7 @@ mostly aesthetic. I like UIs that get out of the way. </p>
 <p>My setup right now is just a simple bar at the top showing the time,
 date, current volume and battery %, along with my workspace indicators.
 No fancy colors, no flashy buttons and sliders. And that&#8217;s it. I don&#8217;t
-try to force myself to not use stuff---after all, I&#8217;ve reduced it
+try to force myself to not use stuff&#8212;after all, I&#8217;ve reduced it
 elsewhere. :)</p>
 
 <p>Now the question arises: Is this just a phase, or will I stick to it?
@@ -2535,7 +2535,7 @@ of <a href="https://nerdypepper.me">@nerdypepper</a>.</p>
 
 <p>I have been listening to my usual podcasts: Crime Junkie, True Crime Garage,
 Darknet Diaries &amp; Off the Pill. To add to this list, I&#8217;ve begun binging Vice&#8217;s CYBER.
-It&#8217;s pretty good---each episode is only about 30 mins and it hits the sweet spot,
+It&#8217;s pretty good&#8212;each episode is only about 30 mins and it hits the sweet spot,
 delvering both interesting security content and news.</p>
 
 <p>My reading needs a ton of catching up. Hopefully I&#8217;ll get around to finishing up
@@ -2544,7 +2544,7 @@ delvering both interesting security content and news.</p>
 <p>I&#8217;ve begun learning Russian! I&#8217;m really liking it so far, and it&#8217;s been surprisingly
 easy to pick up. Learning the Cyrillic script will require some relearning, especially
 with letters like в, н, р, с, etc. that look like English but sound entirely different.
-I think I&#8217;m pretty serious about learning this language---I&#8217;ve added the Russian keyboard
+I think I&#8217;m pretty serious about learning this language&#8212;I&#8217;ve added the Russian keyboard
 to my Google Keyboard to aid in my familiarization of the alphabet. I&#8217;ve added the <code>RU</code>
 layout to my keyboard map too:</p>
 
@@ -2554,7 +2554,7 @@ layout to my keyboard map too:</p>
 <p>With that ends my weekly update, and I&#8217;ll see you next week!</p>
 ]]></description><link>https://icyphox.sh/blog/2019-09-17</link><pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/2019-09-17</guid></item><item><title>Disinformation demystified</title><description><![CDATA[<p>As with the disambiguation of any word, let&#8217;s start with its etymology and definiton.
 According to <a href="https://en.wikipedia.org/wiki/Disinformation">Wikipedia</a>,
-<em>disinformation</em> has been borrowed from the Russian word --- <em>dezinformatisya</em> (дезинформа́ция),
+<em>disinformation</em> has been borrowed from the Russian word &#8212; <em>dezinformatisya</em> (дезинформа́ция),
 derived from the title of a KGB black propaganda department.</p>
 
 <blockquote>
@@ -2574,7 +2574,7 @@ key factors of any successful disinformation operation:</p>
 <p>At the end, we&#8217;ll also look at how you can use disinformation techniques to maintain OPSEC.</p>
 
 <p>In order to break monotony, I will also be using the terms &#8220;information operation&#8221;, or the shortened
-forms---"info op&#8221; &amp; &#8220;disinfo&#8221;.</p>
+forms&#8212;&#8220;info op&#8221; &amp; &#8220;disinfo&#8221;.</p>
 
 <h2 id="creating-disinformation">Creating disinformation</h2>
 
@@ -2582,15 +2582,15 @@ forms---"info op&#8221; &amp; &#8220;disinfo&#8221;.</p>
 of any disinformation sample is a huge indicator of the level of sophistication of the
 actor involved, i.e. is it a 12 year old troll or a nation state?</p>
 
-<p>Well crafted disinformation always has one primary characteristic --- &#8220;plausibility&#8221;.
+<p>Well crafted disinformation always has one primary characteristic &#8212; &#8220;plausibility&#8221;.
 The disinfo must sound reasonable. It must induce the notion it&#8217;s <em>likely</em> true. 
-To achieve this, the target --- be it an individual, a specific demographic or an entire
-nation --- must be well researched. A deep understanding of the target&#8217;s culture, history,
+To achieve this, the target &#8212; be it an individual, a specific demographic or an entire
+nation &#8212; must be well researched. A deep understanding of the target&#8217;s culture, history,
 geography and psychology is required. It also needs circumstantial and situational awareness,
 of the target.</p>
 
 <p>There are many forms of disinformation. A few common ones are staged videos / photographs, 
-recontextualized videos / photographs, blog posts, news articles &amp; most recently --- deepfakes.</p>
+recontextualized videos / photographs, blog posts, news articles &amp; most recently &#8212; deepfakes.</p>
 
 <p>Here&#8217;s a tweet from <a href="https://twitter.com/thegrugq">the grugq</a>, showing a case of recontextualized
 imagery:</p>
@@ -2653,7 +2653,7 @@ info ops. Essentially, an actor attempts to create &#8220;discussions&#8221; amo
 to push their narrative(s). Twitter also provides analytics for every tweet, enabling actors to
 get realtime insights into what sticks and what doesn&#8217;t.
 The use of Twitter was seen during the previously discussed MH17 case, where Russia employed its troll
-factory --- the <a href="https://en.wikipedia.org/wiki/Internet_Research_Agency">Internet Research Agency</a> (IRA)
+factory &#8212; the <a href="https://en.wikipedia.org/wiki/Internet_Research_Agency">Internet Research Agency</a> (IRA)
 to create discussions about alternative theories.</p>
 
 <p>In India, disinformation is often spread via YouTube, WhatsApp and Facebook. Political parties
@@ -2741,7 +2741,7 @@ I almost did this time too.<sup class="footnote-ref" id="fnref-1"><a href="#fn-1
 <p>For this attempt, I wanted a simpler approach. I recall how terribly
 confusing Dovecot &amp; Postfix were to configure and hence I decided to look
 for a containerized solution, that most importantly, runs on my cheap $5 
-Digital Ocean VPS --- 1 vCPU and 1 GB memory. Of which only around 500 MB
+Digital Ocean VPS &#8212; 1 vCPU and 1 GB memory. Of which only around 500 MB
 is actually available. So yeah, <em>pretty</em> tight.</p>
 
 <h2 id="whats-available">What&#8217;s available</h2>
@@ -2795,7 +2795,7 @@ of memory.</p>
 
 <p>But it eventually worked after a couple of attempts.</p>
 
-<p>The next thing I struggled with --- DNS. Specifically, the with the step where
+<p>The next thing I struggled with &#8212; DNS. Specifically, the with the step where
 the DKIM keys are generated<sup class="footnote-ref" id="fnref-2"><a href="#fn-2">2</a></sup>. The output under <br />
 <code>config/opendkim/keys/domain.tld/mail.txt</code> <br />
 isn&#8217;t exactly CloudFlare friendly; they can&#8217;t be directly copy-pasted into
@@ -2805,12 +2805,12 @@ a <code>TXT</code> record. </p>
 
 <pre><code>mail._domainkey IN  TXT ( "v=DKIM1; h=sha256; k=rsa; "
       "p=&lt;key&gt;"
-      "&lt;more key&gt;" )  ; ----- DKIM key mail for icyphox.sh
+      "&lt;more key&gt;" )  ;  -- -- DKIM key mail for icyphox.sh
 </code></pre>
 
 <p>But while configuring the record, you set &#8220;Type&#8221; to <code>TXT</code>, &#8220;Name&#8221; to <code>mail._domainkey</code>,
 and the &#8220;Value&#8221; to what&#8217;s inside the parenthesis <code>(  )</code>, <em>removing</em> the quotes <code>""</code>. 
-Also remove the part that appears to be a comment <code>; ----- ...</code>.</p>
+Also remove the part that appears to be a comment <code>;  -- -- ...</code>.</p>
 
 <p>To simplify debugging DNS issues later, it&#8217;s probably a good idea to
 point to your mailserver using a subdomain like <code>mail.domain.tld</code> using an 
@@ -2818,11 +2818,11 @@ point to your mailserver using a subdomain like <code>mail.domain.tld</code> usi
 You&#8217;ll then have to set an <code>MX</code> record with the &#8220;Name&#8221; as <code>@</code> (or whatever your DNS provider
 uses to denote the root domain) and the &#8220;Value&#8221; to <code>mail.domain.tld</code>.
 And finally, the <code>PTR</code> (pointer record, I think), which is the reverse of 
-your <code>A</code> record --- &#8220;Name&#8221; as the server IP and &#8220;Value&#8221; as <code>mail.domain.tld</code>.
+your <code>A</code> record &#8212; &#8220;Name&#8221; as the server IP and &#8220;Value&#8221; as <code>mail.domain.tld</code>.
 I learnt this part the hard way, when my outgoing email kept getting
 rejected by Tutanota&#8217;s servers.</p>
 
-<p>Yet another hurdle --- SSL/TLS certificates. This isn&#8217;t very properly
+<p>Yet another hurdle &#8212; SSL/TLS certificates. This isn&#8217;t very properly
 documented, unless you read through the <a href="https://github.com/tomav/docker-mailserver/wiki/Installation-Examples">wiki</a>
 and look at an example. In short, install <code>certbot</code>, have port 80 free,
 and run </p>
@@ -2917,7 +2917,7 @@ account before further functionality is available.
 It also facilitates configuring the fingerprint,
 and unlocking from a range via Bluetooth.</p>
 
-<p>We had two primary attack surfaces we decided to tackle---Bluetooth (BLE)
+<p>We had two primary attack surfaces we decided to tackle&#8212;Bluetooth (BLE)
 and the Android app.</p>
 
 <h2 id="via-bluetooth-low-energy-ble">Via Bluetooth Low Energy (BLE)</h2>
@@ -2939,7 +2939,7 @@ but that didn&#8217;t pan out, since the value being written was encrypted.<sup 
 
 <p>Reversing the app using <code>jd-gui</code>, <code>apktool</code> and <code>dex2jar</code> didn&#8217;t get us too
 far since most of it was obfuscated. Why bother when there exists an 
-easier approach---BurpSuite.</p>
+easier approach&#8212;BurpSuite.</p>
 
 <p>We captured and played around with a bunch of requests and responses,
 and finally arrived at a working exploit chain.</p>
@@ -3109,7 +3109,7 @@ field for cyber warfare and mass surveillance campaigns. </p>
 assembly to follow along. I highly recommend
 <a href="https://twitter.com/fox0x01">Azeria’s</a> series on <a href="https://azeria-labs.com/writing-arm-assembly-part-1/">ARM Assembly
 Basics</a>. Once you’re
-comfortable with it, proceed with the next bit---environment setup.</p>
+comfortable with it, proceed with the next bit&#8212;environment setup.</p>
 
 <h2 id="setup">Setup</h2>
 
@@ -3117,7 +3117,7 @@ comfortable with it, proceed with the next bit---environment setup.</p>
 forth with: </p>
 
 <ol>
-<li>Emulate---head over to <a href="https://www.qemu.org/download/">qemu.org/download</a> and install QEMU. 
+<li>Emulate&#8212;head over to <a href="https://www.qemu.org/download/">qemu.org/download</a> and install QEMU. 
 And then download and extract the ARMv6 Debian Stretch image from one of the links <a href="https://blahcat.github.io/qemu/">here</a>.
 The scripts found inside should be self-explanatory.</li>
 <li>Use actual ARM hardware, like an RPi.</li>
@@ -3233,7 +3233,7 @@ So we smashed the stack alright, but more importantly, it’s at the letter ‘F
 control program execution flow. Let’s try jumping to the <code>winner</code> function.</p>
 
 <p>Disassemble <code>winner</code> again using <code>disas winner</code> and note down the offset
-of the second instruction---<code>add r11, sp, #4</code>. 
+of the second instruction&#8212;<code>add r11, sp, #4</code>. 
 For this, we’ll use Python to print our input string replacing <code>FFFF</code> with
 the address of <code>winner</code>. Note the endianness.</p>
 
@@ -3274,7 +3274,7 @@ print(string + gadget + binsh + system)
 
 <h2 id="the-exploit">The exploit</h2>
 
-<p>To write the exploit, we’ll use Python and the absolute godsend of a library---<code>struct</code>.
+<p>To write the exploit, we’ll use Python and the absolute godsend of a library&#8212;<code>struct</code>.
 It allows us to pack the bytes of addresses to the endianness of our choice.
 It probably does a lot more, but who cares.</p>
 
@@ -3347,7 +3347,7 @@ running <a href="https://i3wm.org">i3</a> as my window manager. If you want, you
 
 <p>Most of my work is done in either the browser, or the terminal.
 My shell is pure <a href="http://www.zsh.org">zsh</a>, as in no plugin frameworks. It’s customized using built-in zsh functions. Yes, you don’t actually need
-a framework. It’s useless bloat. The prompt itself is generated using a framework I built in <a href="https://nim-lang.org">Nim</a>---<a href="https://github.com/icyphox/nicy">nicy</a>.
+a framework. It’s useless bloat. The prompt itself is generated using a framework I built in <a href="https://nim-lang.org">Nim</a>&#8212;<a href="https://github.com/icyphox/nicy">nicy</a>.
 My primary text editor is <a href="https://neovim.org">nvim</a>. Again, all configs in my dotfiles repo linked above.
 I manage all my passwords using <a href="https://passwordstore.org">pass(1)</a>, and I use <a href="https://github.com/carnager/rofi-pass">rofi-pass</a> to access them via <code>rofi</code>.</p>
 
@@ -3539,7 +3539,7 @@ challenge.</p>
 <span class="go">malloc 0x200fd0</span>
 </code></pre></div>
 
-<p>Remember the function call at <code>0x200fe0</code> from earlier? Yep, so that was a call to the well known <code>__libc_start_main</code>. Again, according to <a href="http://refspecs.linuxbase.org/LSB_3.1.0/LSB-generic/LSB-generic/baselib---libc-start-main-.html">linuxbase.org</a></p>
+<p>Remember the function call at <code>0x200fe0</code> from earlier? Yep, so that was a call to the well known <code>__libc_start_main</code>. Again, according to <a href="http://refspecs.linuxbase.org/LSB_3.1.0/LSB-generic/LSB-generic/baselib&#8212;libc-start-main-.html">linuxbase.org</a></p>
 
 <blockquote>
   <p>The <code>__libc_start_main()</code> function shall perform any necessary initialization of the execution environment, call the <em>main</em> function with appropriate arguments, and handle the return from <code>main()</code>. If the <code>main()</code> function returns, the return value shall be passed to the <code>exit()</code> function.</p>
@@ -3638,6 +3638,6 @@ malloc 0x680
 
 <p>All the code used in this post is here: <a href="https://github.com/icyphox/asdf/tree/master/reversing-elf">https://github.com/icyphox/asdf/tree/master/reversing-elf</a></p>
 
-<p>Ciao for now, and I’ll see ya in #2 of this series---PE binaries. Whenever that is.</p>
+<p>Ciao for now, and I’ll see ya in #2 of this series&#8212;PE binaries. Whenever that is.</p>
 ]]></description><link>https://icyphox.sh/blog/python-for-re-1</link><pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/python-for-re-1</guid></item></channel>
 </rss>

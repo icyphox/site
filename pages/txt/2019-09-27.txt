@@ -1,22 +1,20 @@
 ---
-date: '2019-09-27'
-subtitle: Alpine Linux shenaningans and more
 template: text.html
-title: 'Weekly status update, 09/17--09/27'
-url: '2019-09-27'
+title: Weekly status update, 09/17–09/27
+subtitle: Alpine Linux shenaningans and more
+date: 2019-09-27
+url: 2019-09-27
 ---
 
-It's a lazy Friday afternoon here; yet another off day this week thanks
-to my uni's fest. My last "weekly" update was 10 days ago, and a lot has
-happened since then. Let's get right into it!
+It's a lazy Friday afternoon here; yet another off day this week thanks to my
+uni's fest. My last "weekly" update was 10 days ago, and a lot has happened
+since then. Let's get right into it!
 
-My switch to Alpine
--------------------
+## My switch to Alpine
 
-Previously, I ran Debian with Buster/Sid repos, and ever since this
-happened
+Previously, I ran Debian with Buster/Sid repos, and ever since this happened
 
-``` {.shell}
+```shell
 $ dpkg --list | wc -l
 3817
 
@@ -25,60 +23,52 @@ $ dpkg --list | wc -l
 
 I've been wanting to reduce my system's package count.
 
-Thus, I began my search for a smaller, simpler and lighter distro with a
-fairly sane package manager. I did come across Dylan Araps' [KISS
-Linux](https://getkiss.org) project, but it seemed a little too hands-on
-for me (and still relatively new). I finally settled on [Alpine
-Linux](https://alpinelinux.org). According to their website:
+Thus, I began my search for a smaller, simpler and lighter distro with a fairly
+sane package manager. I did come across Dylan Araps'
+[KISS Linux](https://getkiss.org) project, but it seemed a little too hands-on
+for me (and still relatively new). I finally settled on
+[Alpine Linux](https://alpinelinux.org). According to their website:
 
-> Alpine Linux is a security-oriented, lightweight Linux distribution
-> based on musl libc and busybox.
+> Alpine Linux is a security-oriented, lightweight Linux distribution based 
+> on musl libc and busybox.
 
-The installation was a breeze, and I was quite surprised to see WiFi
-working OOTB. In the past week of my using this distro, the only major
-hassle I faced was getting my Minecraft launcher to run. The JRE isn't
-fully ported to `musl` yet.[^1] The solution to that is fairly trivial
-and I plan to write about it soon. (hint: it involves chroots)
+The installation was a breeze, and I was quite surprised to see WiFi working
+OOTB. In the past week of my using this distro, the only major hassle I faced
+was getting my Minecraft launcher to run. The JRE isn't fully ported to `musl`
+yet.[^1] The solution to that is fairly trivial and I plan to write about it
+soon. (hint: it involves chroots)
 
 ![rice](/static/img/rice-2019-09-27.png)
 
-Packaging for Alpine
---------------------
+## Packaging for Alpine
 
-On a related note, I've been busy packaging some of the stuff I use for
-Alpine -- you can see my personal
-[aports](https://github.com/icyphox/aports) repository if you're
-interested. I'm currently working on packaging Nim too, so keep an eye
-out for that in the coming week.
+On a related note, I've been busy packaging some of the stuff I use for Alpine
+-- you can see my personal [aports](https://github.com/icyphox/aports)
+repository if you're interested. I'm currently working on packaging Nim too, so
+keep an eye out for that in the coming week.
 
-Talk selection at PyCon India!
-------------------------------
+## Talk selection at PyCon India!
 
-Yes! My buddy Raghav ([@_vologue](https://twitter.com/\_vologue)) and I
-are going to be speaking at PyCon India about our recent smart lock
-security research. The conference is happening in Chennai, much to our
-convenience. If you're attending too, hit me up on Twitter and we can
-hang!
+Yes! My buddy Raghav ([@_vologue](https://twitter.com/_vologue)) and I are
+going to be speaking at PyCon India about our recent smart lock security
+research. The conference is happening in Chennai, much to our convenience.
+If you're attending too, hit me up on Twitter and we can hang!
 
-Other
------
+## Other
 
-That essentially sums up the *technical* stuff that I did. My Russian is
-going strong, my reading however, hasn't. I have *yet* to finish those
-books! This week, for sure.
+That essentially sums up the _technical_ stuff that I did. My Russian is going
+strong, my reading however, hasn't. I have _yet_ to finish those books! This
+week, for sure.
 
-Musically, I've been experimenting. I tried a bit of hip-hop and
-chilltrap, and I think I like it? I still find myself coming back to
-metalcore/deathcore. Here's a list of artists I discovered (and liked)
-recently:
+Musically, I've been experimenting. I tried a bit of hip-hop and chilltrap, and
+I think I like it? I still find myself coming back to metalcore/deathcore.
+Here's a list of artists I discovered (and liked) recently:
 
--   [Before I Turn](https://www.youtube.com/watch?v=r3uKGwcwGWA)
--   生 Conform 死 (couldn't find any official YouTube video, check
-    Spotify)
--   [Treehouse Burning](https://www.youtube.com/watch?v=66eFK1ttdC4)
--   [Lee McKinney](https://www.youtube.com/watch?v=m-w3XM2PwOY)
--   [Berried Alive](https://www.youtube.com/watch?v=cUibXK7F3PM)
-    (rediscovered)
+- [Before I Turn](https://www.youtube.com/watch?v=r3uKGwcwGWA)
+- 生 Conform 死 (couldn't find any official YouTube video, check Spotify)
+- [Treehouse Burning](https://www.youtube.com/watch?v=66eFK1ttdC4)
+- [Lee McKinney](https://www.youtube.com/watch?v=m-w3XM2PwOY)
+- [Berried Alive](https://www.youtube.com/watch?v=cUibXK7F3PM) (rediscovered)
 
 That's it for now, I'll see you next week!
 
