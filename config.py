@@ -55,4 +55,4 @@ footer = """
         """
 template = 'text.html'  # default is index.html
 pre_build = [['./bin/openring.py', '-j'], './bin/update_index.py']
-post_build = ['./bin/rss.py', './bin/plaintext.sh']
+post_build = ['./bin/rss.py', './bin/plaintext.sh', './bin/acme.sh']
