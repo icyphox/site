@@ -22,7 +22,7 @@ footer = """
     <p>
     <span class="sidebar-link">mastodon</span>
     <br>
-      <a rel="me" href="https://freeradical.zone/@icyphox">@icyphox@freeradical.zone</a>
+    <a rel="me" href="https://toot.icyphox.sh/@x">@x@icyphox.sh</a>
     </p> 
 
     <p>
@@ -55,4 +55,4 @@ footer = """
         """
 template = 'text.html'  # default is index.html
 pre_build = [['./bin/openring.py', '-j'], './bin/update_index.py']
-post_build = ['./bin/rss.py', './bin/plaintext.sh', './bin/webfinger.sh']
+post_build = ['./bin/rss.py', './bin/plaintext.sh']
