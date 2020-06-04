@@ -7,21 +7,19 @@ subtitle: Stuff about me, and stuff.
 # обо мне
 ## Hi.
 
-I'm Anirudh, and I go by **icyphox** on the Internet. I'm doing my
-undergrad right now, majoring in Computer Science. My primary interest
-is security---information, operational and national. Tradecraft,
-espionage and military tactics interest me deeply, and I love discussing
-them.
+I'm Anirudh, but you'll often find me as **icyphox** (or just **icy**),
+on the Internet. I'm majoring in Computer Science currently. My primary
+interest is security -- with a focus on influence operations,
+information warfare and state-sponsored actors. I write code on the
+occasion, most of which you can find on my
+[GitHub](https://github.com/icyphox).
 
 I care about software freedom and digital privacy, and I am a staunch
 advocate of the same. I try to use free alternatives to software, if
 they exist.
 
-I write code at times, begrudgingly. Take a look at my projects on
-[GitHub](https://github.com/icyphox).
-
 My taste in music is very specific, and I hardly ever experiment. I like
-to stick to subgenres of metal, specifically---metalcore and deathcore.
+to stick to subgenres of metal, specifically -- metalcore and deathcore.
 
 Here are some of my links:
 
@@ -33,7 +31,7 @@ Here are some of my links:
 - [Twitter](https://twitter.com/icyphox)
 
 Note that my Twitter is now read-only. I'm more active on the fediverse:
-https://freeradical.zone/@icyphox
+https://toot.icyphox.sh/@x
 
 
 ## Contact
@@ -44,7 +42,7 @@ Should you need it, my [PGP key](/static/gpg.txt). Fingerprint: `FE1B
 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4`.
 I'm also on IRC @ Freenode and Rizon, usually as `icy` / `icyphox`.
 
-If you're interested in **hiring me**---here's my
+If you're interested in **hiring me** -- here's my
 [résumé](https://x.icyphox.sh/resume.pdf).
 
 ## Donate
@@ -57,7 +55,8 @@ but it does help with domain and server costs. :)
 
 This site is built using a small static site generator written by me:
 [vite](https://github.com/icyphox/vite). The source for this website is
-[here](https://github.com/icyphox/site). Built and served using Netlify.
+[here](https://github.com/icyphox/site). Served from my Raspberry Pi 4B,
+sitting at home!
 
 The spinner icon at the bottom? That's the [XXIIVV
 webring](https://webring.xxiivv.com), and this site is on it!
