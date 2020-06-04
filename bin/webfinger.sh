@@ -3,7 +3,7 @@
 
 well_known="build/.well-known"
 host_meta="host-meta"
-mkdir -p "$acme_dir"
+mkdir -p "$well_known"
 touch "$well_known/$host_meta"
 
 echo "<?xml version="1.0" encoding="UTF-8"?>
