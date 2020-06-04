@@ -11,7 +11,86 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Site changes</title><description><![CDATA[<p>The past couple of days, I&#8217;ve spent a fair amount of time tweaking this
+    <item><title>Migrating to the RPi</title><description><![CDATA[<p>I&#8217;d ordered the Raspberry Pi 4B (the 4GB variant), sometime early
+this year, thinking I&#8217;d get to self-hosting everything on it as soon as
+it arrived. As things turn out, it ended up sitting in its box up until
+two weeks ago&#8212;it took me <em>that</em> long to order an SD card for it. No,
+I didn&#8217;t have one. Anyway, from there began quite the wild ride.</p>
+
+<h2 id="flashing-the-sd-card">flashing the SD card</h2>
+
+<p>You&#8217;d think this would be easy right? Just plug it into your laptop&#8217;s SD
+card reader (or microSD), and flash it like you would a USB drive. Well,
+nope. Of the three laptops at home one doesn&#8217;t have an SD card reader,
+mine&#8212;running OpenBSD&#8212;didn&#8217;t detect it, and my brother&#8217;s&#8212;running
+Void&#8212;didn&#8217;t detect it either. </p>
+
+<p>Then it hit me: my phone (my brother&#8217;s, actually), has an SD card slot
+that actually works. Perhaps I can use the phone to flash the image?
+Took a bit of DDG&#8217;ing (ducking?), but we eventually figured out that the
+block-device for the SD on the phone was <code>/dev/mmcblk1</code>. Writing to it
+was just the usual <code>dd</code> invocation.</p>
+
+<h2 id="got-natd">got NAT&#8217;d</h2>
+
+<p>After the initial setup, I was eager to move my services off the Digital
+Ocean VPS, to the RPi. I set up the SSH port forward through my router
+config, as a test. Turns out my ISP has me NAT&#8217;d. The entirety of my
+apartment is serviced by these fellas, and they have us all under
+a CG-NAT. Fantastic.</p>
+
+<p>Evading this means I either lease a public IP from the ISP, or
+I continue using my VPS, and port forward traffic from it via a tunnel.
+I went with option two since it gives me something to do.</p>
+
+<h2 id="nat-evasion">NAT evasion</h2>
+
+<p>This was fairly simple to setup with Wireguard and <code>iptables</code>. I don&#8217;t
+really want to get into detail here, since it&#8217;s been documented aplenty
+online, but in essence you put your VPS and the Pi on the same network,
+and forward traffic hitting your internet facing interface (<code>eth0</code>) 
+to the VPN&#8217;s (<code>wg0</code>). Fairly simple stuff.</p>
+
+<h2 id="setting-up-mastodon-on-the-pi">setting up Mastodon on the Pi</h2>
+
+<p>Mastodon was kind of annoying to get working. My initial plan was to
+port forward only a few selected ports, have Mastodon exposed on the Pi
+at some port via nginx, and then front <em>that</em> nginx via the VPS. So
+basically: Mastodon (localhost on Pi) &lt;-> nginx (on Pi) &lt;-> nginx (on
+VPS, via Wireguard). I hope that made sense.</p>
+
+<p>Anyway, this setup would require having Mastodon run on HTTP, since I&#8217;ll
+be HTTPS&#8217;ing at the VPS. If you think about it, it&#8217;s kinda like what
+Cloudflare does. But, Mastodon doesn&#8217;t like running on HTTP. It just
+wasn&#8217;t working. So I went all in and decided to forward all 80/443
+traffic and serve everything off the Pi.</p>
+
+<p>Getting back to Mastodon&#8212;the initial few hiccups aside, I was able to
+get it running at <code>toot.icyphox.sh</code>. However, as a seeker of aesthetics,
+I wanted my handle to be <code>@icyphox.sh</code>. Turns out, this can be achieved
+fairly easily. </p>
+
+<p>Add a new <code>WEB_DOMAIN</code> variable to your <code>.env.production</code> file, found in
+your Mastodon root dir. Set <code>WEB_DOMAIN</code> to your desired domain, and
+<code>LOCAL_DOMAIN</code> to the, well, undesired one. In my case:</p>
+
+<pre><code>WEB_DOMAIN=icyphox.sh
+LOCAL_DOMAIN=toot.icyphox.sh
+</code></pre>
+
+<p>Funnily enough, the 
+<a href="https://github.com/tootsuite/documentation/blob/archive/Running-Mastodon/Serving_a_different_domain.md">official documentation for this</a>
+says the exact opposite, which&#8230;doesn&#8217;t work.</p>
+
+<p>I don&#8217;t really understand, but whatever it works and now my Mastodon is
+<a href="https://toot.icyphox.sh/@x">@<a href="x@icyphox.sh">x@icyphox.sh</a></a>. I&#8217;m not complaining. Send
+mail if you know what&#8217;s going on here.</p>
+
+<p>And oh, here&#8217;s the protective case <a href="https://peppe.rs">nerd</a> fashioned
+out of cardboard.</p>
+
+<p><img src="/static/img/pi-case.jpg" alt="raspberry pi case" /></p>
+]]></description><link>https://icyphox.sh/blog/pi</link><pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/pi</guid></item><item><title>Site changes</title><description><![CDATA[<p>The past couple of days, I&#8217;ve spent a fair amount of time tweaking this
 site. My site&#8217;s build process involves
 <a href="https://github.com/icyphox/vite">vite</a> and a bunch of
 <a href="https://github.com/icyphox/site/tree/master/bin">scripts</a>. These
