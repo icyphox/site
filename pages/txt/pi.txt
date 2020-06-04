@@ -77,7 +77,7 @@ Funnily enough, the
 says the exact opposite, which...doesn't work.
 
 I don't really understand, but whatever it works and now my Mastodon is
-[@x@icyphox.sh](https://toot.icyphox.sh/@x). I'm not complaining. Send
+@[x@icyphox.sh](https://toot.icyphox.sh/@x). I'm not complaining. Send
 mail if you know what's going on here.
 
 And oh, here's the protective case [nerd](https://peppe.rs) fashioned
