@@ -39,8 +39,6 @@ a:hover {
   border-bottom: 1px solid var(--cyan);
 }
 
-
-
 .navbar {
   margin: 2px 0;
 }
@@ -259,13 +257,13 @@ img {
 }
 
 
-.license a {
+.icons a {
   color: unset;
   background: unset;
   border-bottom: unset;
 }
 
-.license a:hover {
+.icons a:hover {
   color: unset;
   background: unset;
   border-bottom: unset;
@@ -309,11 +307,11 @@ hr {
   color: white;
 }
 
-.license img {
+.icons img {
   all: initial;
 }
 
-.license img {
+.icons img {
   padding-left: 3%;
   padding-top: 10px;
   max-height: 2rem;
