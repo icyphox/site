@@ -11,7 +11,67 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Migrating to the RPi</title><description><![CDATA[<p>I&#8217;d ordered the Raspberry Pi 4B (the 4GB variant), sometime early
+    <item><title>You don't need news</title><description><![CDATA[<p>News&#8212;the never ending feed of information pertaining to &#8220;current
+events&#8221;, politics, trivia, and other equally useless junk. News today is
+literally just this: &#8220;&lt;big name person&gt; did/said &lt;dumb thing&gt;!&#8221;,
+&#8220;&lt;group&gt; protests against &lt;bad thing&gt;!&#8221;, and so on. Okay, shit&#8217;s going
+on in this world. Another day, another thing to be <code>$FEELING</code> about.</p>
+
+<p>Now here&#8217;s a question for you: do you remember what news you consumed
+yesterday? The day before? Last week? Heck no! Maybe some major
+headlines, but really, what did you gain from learning that information?
+Must&#8217;ve been interesting to read <em>at that</em> time. Hence, news, by
+virtue of its &#8220;newness&#8221;, is given importance&#8212;and get this, it isn&#8217;t
+even important enough for you to bother remembering it for a few days.</p>
+
+<p>News is entertainment. Quick gratification that lasts a day, at max.</p>
+
+<h2 id="actionable-news">actionable news</h2>
+
+<p>So what is useful news, then? I think I&#8217;ll go out on a limb here, and
+say &#8220;anything that is actionable&#8221;. By that I mean anything that you can
+physically affect / information that you can actually put to use. Again,
+there are probably edge-cases and this isn&#8217;t a rule that fits all, but
+it&#8217;s a decent principle to follow.</p>
+
+<p>As an example, to readers living outside of the US, news regarding
+police brutality &amp; the Black Lives Matter movement are unactionable.
+I&#8217;m not saying those problems don&#8217;t exist or don&#8217;t matter, but <em>what</em>
+are you really doing to help the cause? Sending thoughts and prayers?
+Posting angrily on Instagram? Tweeting about it? Stop, and think for
+yourself if these things actually make any difference. Your time might
+be better invested in doing something else.</p>
+
+<h2 id="other-problems">other problems</h2>
+
+<p>There are other, more concerning problems with modern news&#8212;it is no
+longer purely objective. The sad state of news / reporting today is it&#8217;s
+inherently biased. I mean political bias, of course. All news is either
+left-leaning or right-leaning, and narratives are developed to fit their
+political stance. This is essentially propaganda. Today&#8217;s news <em>is</em>
+propaganda. If anything, this should be reason enough to avoid it.</p>
+
+<h2 id="but-i-compare-multiple-sources">but I compare multiple sources!</h2>
+
+<p>Okay, so you read the same thing written by CNN, BBC, The New York
+Times, etc.? Do you realize how much time you wasted doing this?
+Ultimately to what end&#8212;to forget about it by the next day, and do it
+all over again. What a dull, braindead process.</p>
+
+<h2 id="wont-i-be-ignorant-then">won&#8217;t I be ignorant then?</h2>
+
+<p>If you think keeping up with current events makes you intellectually
+superior somehow&#8230;boy are you wrong. Do something that actually
+stimulates your gray matter. But, here&#8217;s the thing, if the &#8220;news&#8221; is big
+enough, you&#8217;re bound to come across it anyway! You might hear your
+friend discuss it, or see it on Twitter, so on and so forth. How you
+process it thereafter is what matters.</p>
+
+<p>Give it a thought. Imagine if all that social media, news, and general
+internet noise didn&#8217;t clog your head. I think it&#8217;ll be much nicer. You
+might not, and that&#8217;s okay. Mail your thoughts or @ me on the fedi&#8212;I&#8217;d 
+like to hear them.</p>
+]]></description><link>https://icyphox.sh/blog/dont-news</link><pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/dont-news</guid></item><item><title>Migrating to the RPi</title><description><![CDATA[<p>I&#8217;d ordered the Raspberry Pi 4B (the 4GB variant), sometime early
 this year, thinking I&#8217;d get to self-hosting everything on it as soon as
 it arrived. As things turn out, it ended up sitting in its box up until
 two weeks ago&#8212;it took me <em>that</em> long to order an SD card for it. No,
