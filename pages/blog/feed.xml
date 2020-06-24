@@ -11,7 +11,113 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>You don't need news</title><description><![CDATA[<p>News&#8212;the never ending feed of information pertaining to &#8220;current
+    <item><title>Flask-JWT-Extended × Flask-Login</title><description><![CDATA[<p>For the past few months, I&#8217;ve been working on building a backend for
+<code>$STARTUP</code>, with a bunch of friends. I&#8217;ll probably write in detail about
+it when we launch our beta. The backend is your bog standard REST API,
+built on Flask&#8212;if you didn&#8217;t guess from the title already.</p>
+
+<p>Our existing codebase heavily relies on
+<a href="https://flask-login.readthedocs.io">Flask-Login</a>; it offers some pretty
+neat interfaces for dealing with users and their states. However, its
+default mode of operation&#8212;sessions&#8212;don&#8217;t really fit into a Flask
+app that&#8217;s really just an API. It&#8217;s not optimal. Besides, this is what
+<a href="https://jwt.io">JWTs</a> were built for. </p>
+
+<p>I won&#8217;t bother delving deep into JSON web tokens, but the general
+flow is like so:</p>
+
+<ul>
+<li>client logs in via say <code>/login</code></li>
+<li>a unique token is sent in the response</li>
+<li>each subsequent request authenticated request is sent with the token</li>
+</ul>
+
+<p>The neat thing about tokens is you can store stuff in them&#8212;&#8220;claims&#8221;,
+as they&#8217;re called.</p>
+
+<h2 id="returning-an-access_token-to-the-client">returning an <code>access_token</code> to the client</h2>
+
+<p>The <code>access_token</code> is sent to the client upon login. The idea is simple,
+perform your usual checks (username / password etc.) and login the user
+via <code>flask_login.login_user</code>. Generate an access token using
+<code>flask_jwt_extended.create_access_token</code>, store your user identity in it
+(and other claims) and return it to the user in your <code>200</code> response.</p>
+
+<p>Here&#8217;s the excerpt from our codebase.</p>
+
+<div class="codehilite"><pre><span></span><code><span class="n">access_token</span> <span class="o">=</span> <span class="n">create_access_token</span><span class="p">(</span><span class="n">identity</span><span class="o">=</span><span class="n">email</span><span class="p">)</span>
+<span class="n">login_user</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">remember</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">json</span><span class="p">[</span><span class="s2">&quot;remember&quot;</span><span class="p">])</span>
+<span class="k">return</span> <span class="n">good</span><span class="p">(</span><span class="s2">&quot;Logged in successfully!&quot;</span><span class="p">,</span> <span class="n">access_token</span><span class="o">=</span><span class="n">access_token</span><span class="p">)</span>
+</code></pre></div>
+
+<p>But, for <code>login_user</code> to work, we need to setup a custom user loader to
+pull out the identity from the request and return the user object.</p>
+
+<h2 id="defining-a-custom-user-loader-in-flask-login">defining a custom user loader in Flask-Login</h2>
+
+<p>By default, Flask-Login handles user loading via the <code>user_loader</code>
+decorator, which should return a user object. However, since we want to
+pull a user object from the incoming request (the token contains it),
+we&#8217;ll have to write a custom user loader via the <code>request_loader</code>
+decorator.</p>
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># Checks the &#39;Authorization&#39; header by default.</span>
+<span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;JWT_TOKEN_LOCATION&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;json&quot;</span><span class="p">]</span>
+
+<span class="c1"># Defaults to &#39;identity&#39;, but the spec prefers &#39;sub&#39;.</span>
+<span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;JWT_IDENTITY_CLAIM&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;sub&quot;</span>
+
+<span class="nd">@login</span><span class="o">.</span><span class="n">request_loader</span>
+<span class="k">def</span> <span class="nf">load_person_from_request</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">token</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">json</span><span class="p">[</span><span class="s2">&quot;access_token&quot;</span><span class="p">]</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">decode_token</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+    <span class="c1"># this can be your &#39;User&#39; class</span>
+    <span class="n">person</span> <span class="o">=</span> <span class="n">PersonSignup</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">email</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;sub&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">person</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">person</span>
+    <span class="k">return</span> <span class="kc">None</span>
+</code></pre></div>
+
+<p>There&#8217;s just one mildly annoying thing to deal with, though.
+Flask-Login insists on setting a session cookie. We will have to disable
+this behaviour ourselves. And the best part? There&#8217;s no documentation
+for this&#8212;well there is, but it&#8217;s incomplete and points to deprecated
+functions.</p>
+
+<h2 id="disabling-flask-logins-session-cookie">disabling Flask-Login&#8217;s session cookie</h2>
+
+<p>To do this, we define a custom session interface, like so:</p>
+
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask.sessions</span> <span class="kn">import</span> <span class="n">SecureCookieSessionInterface</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">g</span>
+<span class="kn">from</span> <span class="nn">flask_login</span> <span class="kn">import</span> <span class="n">user_loaded_from_request</span>
+
+<span class="nd">@user_loaded_from_request</span><span class="o">.</span><span class="n">connect</span>
+<span class="k">def</span> <span class="nf">user_loaded_from_request</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">login_via_request</span> <span class="o">=</span> <span class="kc">True</span>
+
+
+<span class="k">class</span> <span class="nc">CustomSessionInterface</span><span class="p">(</span><span class="n">SecureCookieSessionInterface</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">should_set_cookie</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="nf">save_session</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">g</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;login_via_request&quot;</span><span class="p">):</span>
+            <span class="k">return</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">CustomSessionInterface</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">save_session</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+
+<span class="n">app</span><span class="o">.</span><span class="n">session_interface</span> <span class="o">=</span> <span class="n">CustomSessionInterface</span><span class="p">()</span>
+</code></pre></div>
+
+<p>In essence, this checks the global store <code>g</code> for <code>login_via_request</code> and
+and doesn&#8217;t set a cookie in that case. I&#8217;ve submitted a PR upstream for
+this to be included in the docs
+(<a href="https://github.com/maxcountryman/flask-login/pull/514">#514</a>).</p>
+]]></description><link>https://icyphox.sh/blog/flask-jwt-login</link><pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/flask-jwt-login</guid></item><item><title>You don't need news</title><description><![CDATA[<p>News&#8212;the never ending feed of information pertaining to &#8220;current
 events&#8221;, politics, trivia, and other equally useless junk. News today is
 literally just this: &#8220;&lt;big name person&gt; did/said &lt;dumb thing&gt;!&#8221;,
 &#8220;&lt;group&gt; protests against &lt;bad thing&gt;!&#8221;, and so on. Okay, shit&#8217;s going
