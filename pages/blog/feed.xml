@@ -11,7 +11,32 @@
     </image>
     <language>en-us</language>
 	<copyright>Creative Commons BY-NC-SA 4.0</copyright>
-    <item><title>Flask-JWT-Extended × Flask-Login</title><description><![CDATA[<p>For the past few months, I&#8217;ve been working on building a backend for
+    <item><title>Status update</title><description><![CDATA[<p>I realize I haven&#8217;t updated this site in a while&#8212;mostly due to lack
+of time. The past two weeks have been pretty busy (read: I now actually
+have work to do), which also means I have very little time to devote to
+personal projects. Anyway, on with the update.</p>
+
+<h2 id="i-now-work-at-cometchat">I now work at CometChat</h2>
+
+<p>I&#8217;ve begun working as an Engineering Intern at CometChat. It&#8217;s been
+a very interesting experience so far. Most of my work revolves around
+infrastructure and platform engineering&#8212;pretty exciting stuff. Fun
+fact: one of the world&#8217;s biggest music festivals&#8212;Tomorrowland&#8212;is
+being hosted online, on our platform! As a result, a lot of the work
+being done infra-side is scaling up for it.</p>
+
+<p>I have also been extensively dabbling in XMPP and websocket internals,
+as I&#8217;m writing a websocket proxy of sorts. I&#8217;ll probably talk about it
+in a future blog post, once I get approval org-side. :^)</p>
+
+<h2 id="thats-literally-it">that&#8217;s literally it</h2>
+
+<p>I sat all day thinking of what else to add to this post&#8212;there&#8217;s <em>got
+to be</em> something else right? Not really. I don&#8217;t think I did anything
+worthwhile. I did get some pretty interesting emails from people who
+read this blog, so yes, please email me&#8212;even if it&#8217;s just to say hi.
+I always reply.</p>
+]]></description><link>https://icyphox.sh/blog/2020-07-20</link><pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate><guid>https://icyphox.sh/blog/2020-07-20</guid></item><item><title>Flask-JWT-Extended × Flask-Login</title><description><![CDATA[<p>For the past few months, I&#8217;ve been working on building a backend for
 <code>$STARTUP</code>, with a bunch of friends. I&#8217;ll probably write in detail about
 it when we launch our beta. The backend is your bog standard REST API,
 built on Flask&#8212;if you didn&#8217;t guess from the title already.</p>
