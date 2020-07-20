@@ -12,7 +12,8 @@ on the Internet. I'm majoring in Computer Science currently. My primary
 interest is security -- with a focus on influence operations,
 information warfare and state-sponsored actors. I write code on the
 occasion, most of which you can find on my
-[GitHub](https://github.com/icyphox).
+[GitHub](https://github.com/icyphox). I currently work for
+[CometChat](https://www.cometchat.com).
 
 I care about software freedom and digital privacy, and I am a staunch
 advocate of the same. I try to use free alternatives to software, if
