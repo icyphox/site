@@ -16,10 +16,8 @@ personal projects. Anyway, on with the update.
 I've begun working as an Engineering Intern at
 [CometChat](https://www.cometchat.com). It's been a very interesting
 experience so far. Most of my work revolves around infrastructure and
-platform engineering -- pretty exciting stuff. Fun fact: one of the
-world's biggest music festivals -- Tomorrowland -- is being hosted
-online, on our platform! As a result, a lot of the work being done
-infra-side is scaling up for it.
+platform engineering -- pretty exciting stuff. [Oops, redacted]
+
 
 I have also been extensively dabbling in XMPP and websocket internals,
 as I'm writing a websocket proxy of sorts. I'll probably talk about it
