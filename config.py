@@ -5,34 +5,34 @@ author = ""
 header = """<a href="/"><- back</a>"""
 
 # gets the latest commit 
-import subprocess
-
-def get_commit():
-    out = subprocess.run(
-            ["git", "rev-parse", "--short", "HEAD"], 
-            stdout=subprocess.PIPE)
-    commit = out.stdout.decode("utf-8").strip()
-    return commit
-
-def get_big_commit():
-    out = subprocess.run(
-            ["git", "rev-parse", "HEAD"],
-            stdout=subprocess.PIPE
-            )
-    big_commit = out.stdout.decode("utf-8").strip()
-    return big_commit
-
-
-def get_commit_date(commit):
-    out = subprocess.run(
-            ["git", "show", "-s", "--format=%cd", "--date=short", commit],
-            stdout=subprocess.PIPE)
-    date = out.stdout.decode("utf-8").strip()
-    return date
-
-commit = get_commit()
-big_commit = get_big_commit()
-date = get_commit_date(commit)
+# import subprocess
+# 
+# def get_commit():
+#     out = subprocess.run(
+#             ["git", "rev-parse", "--short", "HEAD"], 
+#             stdout=subprocess.PIPE)
+#     commit = out.stdout.decode("utf-8").strip()
+#     return commit
+# 
+# def get_big_commit():
+#     out = subprocess.run(
+#             ["git", "rev-parse", "HEAD"],
+#             stdout=subprocess.PIPE
+#             )
+#     big_commit = out.stdout.decode("utf-8").strip()
+#     return big_commit
+# 
+# 
+# def get_commit_date(commit):
+#     out = subprocess.run(
+#             ["git", "show", "-s", "--format=%cd", "--date=short", commit],
+#             stdout=subprocess.PIPE)
+#     date = out.stdout.decode("utf-8").strip()
+#     return date
+# 
+# commit = get_commit()
+# big_commit = get_big_commit()
+# date = get_commit_date(commit)
 
 # actually the sidebar
 footer = f"""
@@ -60,12 +60,6 @@ footer = f"""
     <br>
       <a href="/static/gpg.txt">0x8A93F96F78C5D4C4</a>
     </p> 
-
-    <p>
-    <span class="sidebar-link">last updated</span>
-    <br>
-    <a href="https://github.com/icyphox/site/commit/{big_commit}">{commit}</a> on {date}
-    </p>
 
     <h3>friends</h3>
     <p>
