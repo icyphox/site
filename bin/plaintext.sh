@@ -16,8 +16,5 @@ for p in pages/blog/*.md; do
 #        pandoc --quiet -s -f "markdown+gutenberg" \
 #            "$p" -o "pages/txt/$no_ext.txt"
 #    }
-    cp "$p" "pages/txt/$no_ext.txt"
+    cp "$p" "build/txt/$no_ext.txt"
 done
-
-cp pages/txt/*.txt build/txt/
-
