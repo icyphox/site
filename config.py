@@ -4,39 +4,9 @@ title = "icyphox"
 author = ""
 header = """<a href="/"><- back</a>"""
 
-# gets the latest commit 
-# import subprocess
-# 
-# def get_commit():
-#     out = subprocess.run(
-#             ["git", "rev-parse", "--short", "HEAD"], 
-#             stdout=subprocess.PIPE)
-#     commit = out.stdout.decode("utf-8").strip()
-#     return commit
-# 
-# def get_big_commit():
-#     out = subprocess.run(
-#             ["git", "rev-parse", "HEAD"],
-#             stdout=subprocess.PIPE
-#             )
-#     big_commit = out.stdout.decode("utf-8").strip()
-#     return big_commit
-# 
-# 
-# def get_commit_date(commit):
-#     out = subprocess.run(
-#             ["git", "show", "-s", "--format=%cd", "--date=short", commit],
-#             stdout=subprocess.PIPE)
-#     date = out.stdout.decode("utf-8").strip()
-#     return date
-# 
-# commit = get_commit()
-# big_commit = get_big_commit()
-# date = get_commit_date(commit)
-
 # actually the sidebar
 footer = f"""
-    <img class="logo" src="/static/icyphox.png" alt="icyphox's avatar" />
+    <img class="logo" src="/static/white.svg" alt="icyphox's avatar" style="width: 55%"/>
     <p>
     <span class="sidebar-link">email</span>
     <br>

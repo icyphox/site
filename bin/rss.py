@@ -79,5 +79,5 @@ for article in articles:
     chan.append(generate_node(article[1], article[2]))
 
 out = ET.tostring(tree, encoding="unicode")
-with open("pages/blog/feed.xml", "w") as f:
+with open("build/blog/feed.xml", "w") as f:
     f.write(out)
