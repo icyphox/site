@@ -29,17 +29,17 @@
           <header>
             {{ header }}
           </header>
-          <div style="float: right">
+          <section style="float: right">
             view in <a href="/txt/{{ url }}.txt">plain-text</a>
-          </div>
-          <div style="float: left">
+          </section>
+          <section style="float: left">
             {{ date }}
-          </div>
-          <div style="clear: both" align="left">
+          </section>
+          <article style="clear: both" align="left">
             <h1>{{ title }}</h1>
             <h2 class="subtitle">{{ subtitle }}</h2>
             {{ body }} 
-          </div>
+          </article>
           <p class="muted">Questions or comments? 
           Send an email to 
           <a href="mailto:~icyphox/x@lists.sr.ht?Subject=Re: {{ title }}">~icyphox/x@lists.sr.ht</a>—my <a href="https://lists.sr.ht/~icyphox/x">public inbox</a>.</p>

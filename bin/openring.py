@@ -29,6 +29,7 @@ html_out = []
 for f in random.sample(feeds, 3):
     fp = feedparser.parse(f)
     feed_link = fp.feed.link
+    print(fp.feed.link)
     feed_title = fp.feed.title
     print(feed_title)
     full_summ = str(html.fromstring(fp.entries[0].summary).text_content())

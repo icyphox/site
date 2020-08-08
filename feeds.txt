@@ -2,5 +2,4 @@ https://peppe.rs/index.xml
 https://drewdevault.com/feed.xml
 https://bellingcat.com/feed/
 https://k1ss.org/blog/blog.xml
-https://jcs.org/rss
 https://gru.gq/feed/
