@@ -1,13 +1,6 @@
 @font-face {
   font-family: 'Inter';
-  src: url('fonts/Inter-V.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'EB Garamond', serif;
-  src: url('fonts/EBGaramond-VariableFont_wght.ttf') format('truetype'),
-       url('fonts/EBGaramond-Regular.woff2') format('woff2'),
-       url('fonts/EBGaramond-Regular.woff') format('woff');
+  src: url('/static/fonts/Inter-V.otf') format('opentype');
 }
 
 @supports (font-variation-settings: normal) {
@@ -16,6 +9,13 @@
     font-feature-settings: 'ss01' 1, 'kern' 1, 'liga' 1, 'zero' 1, 
     'cv03' 1, 'cv02' 1, 'cv04' 1, 'tnum' 1; 
   }
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('/static/fonts/EBGaramond-Regular.ttf') format('truetype');
+  src: url('/static/fonts/EBGaramond-Regular.woff2') format('woff2');
+  src: url('/static/fonts/EBGaramond-Regular.woff') format('woff');
 }
 
 :root {
@@ -41,7 +41,7 @@ html {
 article > p, blockquote {
   font-size: 21px;
   line-height: 1.4;
-  font-family: 'EB Garamond';
+  font-family: 'Garamond';
   font-feature-settings: normal;
 }
 
