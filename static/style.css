@@ -1,13 +1,15 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url('/static/fonts/Inter-V.otf');
+@import url('/static/fonts/EBGaramond-VariableFont_wght.ttf');
 @supports (font-variation-settings: normal) {
   html { 
-    font-family: 'Inter var', sans-serif; 
+    font-family: 'Inter', sans-serif; 
     font-feature-settings: 'ss01' 1, 'kern' 1, 'liga' 1, 'zero' 1, 
     'cv03' 1, 'cv02' 1, 'cv04' 1, 'tnum' 1; 
   }
 }
 
 :root {
+  --dull: #f4f4f4;
   --cyan: #1e9191;
   --light-gray: #eee;
   --gray: gray;
@@ -21,8 +23,16 @@ body {
 }
 
 html {
+  background: var(--dull);
   font-size: 18px;
   line-height: 1.5;
+}
+
+article > p, blockquote {
+  font-size: 21px;
+  line-height: 1.4;
+  font-family: 'EB Garamond';
+  font-feature-settings: normal;
 }
 
 a {
@@ -34,9 +44,8 @@ a {
 }
 
 a:hover {
-  color: var(--dark);
-  background: var(--light-gray);
-  border-bottom: 1px solid var(--cyan);
+  color: var(--light-gray);
+  background: var(--dark);
 }
 
 .navbar {
@@ -137,9 +146,6 @@ pre > code {
     margin: 0 auto;
   }
   
-  html {
-    font-size: 18px;
-  }
   
   .openring {
     display: grid;

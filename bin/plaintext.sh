@@ -9,6 +9,9 @@ basename() {
     base="${dir:-/}"
 }
 
+
+mkdir "build/txt/"
+
 for p in pages/blog/*.md; do
     basename "$p"
     no_ext="${base%.*}"
