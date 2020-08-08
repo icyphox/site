@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Inter';
-  src: url('/static/fonts/Inter-V.otf');
+  src: url('fonts/Inter-V.otf');
 }
 
 @font-face {
   font-family: 'EB Garamond', serif;
-  src: url('/static/fonts/EBGaramond-VariableFont_wght.ttf');
+  src: url('fonts/EBGaramond-VariableFont_wght.ttf');
 }
 
 @supports (font-variation-settings: normal) {
