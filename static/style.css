@@ -1,5 +1,13 @@
-@import url('/static/fonts/Inter-V.otf');
-@import url('/static/fonts/EBGaramond-VariableFont_wght.ttf');
+@font-face {
+  font-family: 'Inter';
+  src: url('/static/fonts/Inter-V.otf');
+}
+
+@font-face {
+  font-family: 'EB Garamond', serif;
+  src: url('/static/fonts/EBGaramond-VariableFont_wght.ttf');
+}
+
 @supports (font-variation-settings: normal) {
   html { 
     font-family: 'Inter', sans-serif; 
