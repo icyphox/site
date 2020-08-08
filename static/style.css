@@ -5,7 +5,9 @@
 
 @font-face {
   font-family: 'EB Garamond', serif;
-  src: url('fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
+  src: url('fonts/EBGaramond-VariableFont_wght.ttf') format('truetype'),
+       url('fonts/EBGaramond-Regular.woff2') format('woff2'),
+       url('fonts/EBGaramond-Regular.woff') format('woff');
 }
 
 @supports (font-variation-settings: normal) {
