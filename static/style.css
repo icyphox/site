@@ -15,6 +15,7 @@
   font-family: 'Garamond';
   src: url('/static/fonts/EBGaramond-Italic.ttf') format('truetype');
   font-style: italic;
+  font-size: 20;
 }
 
 @font-face {
@@ -44,11 +45,14 @@ html {
   line-height: 1.5;
 }
 
-article > p, blockquote {
-  font-size: 21px;
+.content > article, p, blockquote, ul {
   line-height: 1.4;
   font-family: 'Garamond';
   font-feature-settings: normal;
+}
+
+.content > h1, h2, h3, h4 {
+  font-family: 'Inter';
 }
 
 a {
@@ -139,7 +143,7 @@ code {
 
 pre > code {
   color: var(--code);
-  background: unset;
+  background: var(--dull)
 }
 
 @media only screen and (min-width: 800px) {
