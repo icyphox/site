@@ -11,7 +11,7 @@
   }
 }
 
-@font-face {
+/*@font-face {
   font-family: 'Garamond';
   src: url('/static/fonts/EBGaramond-Italic.ttf') format('truetype');
   font-style: italic;
@@ -23,7 +23,7 @@
   src: url('/static/fonts/EBGaramond-Regular.ttf') format('truetype');
   src: url('/static/fonts/EBGaramond-Regular.woff2') format('woff2');
   src: url('/static/fonts/EBGaramond-Regular.woff') format('woff');
-}
+}*/
 
 :root {
   --dull: #f4f4f4;
@@ -45,15 +45,15 @@ html {
   line-height: 1.5;
 }
 
-.content > article, p, blockquote, ul {
+/*.content > article, p, blockquote, ul {
   line-height: 1.4;
   font-family: 'Garamond';
   font-feature-settings: normal;
-}
+}*/
 
-.content > h1, h2, h3, h4 {
+/*.content > h1, h2, h3, h4 {
   font-family: 'Inter';
-}
+}*/
 
 a {
   color: var(--gray);
