@@ -13,7 +13,7 @@ fairly limited. All imports from China don't get through, and imports
 from elsewhere have a _fat_ duty slapped on it -- sometimes up to
 300%[^1]. It's obscene!
 
-[^1]: https://www.reddit.com/r/mkindia/comments/hzyoof/i_see_many_spreading_misinformation_about_import/
+[^1]: [Reddit link](https://www.reddit.com/r/mkindia/comments/hzyoof/i_see_many_spreading_misinformation_about_import/)
 
 The only reliable source I've found (and folks on
 [r/mkindia](https://reddit.com/r/mkindia) will concur), is

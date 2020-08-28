@@ -59,9 +59,9 @@ html {
   font-family:  'Inter';
 }
 
-.content > h1, h2, h3, h4 {
+/*.content > h1, h2, h3, h4 {
   font-family: 'Inter';
-}
+}*/
 
 a {
   color: var(--gray);
@@ -121,11 +121,12 @@ a:hover {
 }
 
 .openring {
-display: inline-block;
+  display: inline-block;
 }
 
-.openring-feed {
-padding: 4px 8px 4px;
+.openring-feed > p {
+  padding: 4px 8px 4px;
+  font-family: 'Inter';
 }
 
 .sep {
@@ -262,6 +263,7 @@ header a:last-child {
 
 .muted {
   color: var(--gray);
+  font-family: 'Inter';
 }
 
 .muted a {
