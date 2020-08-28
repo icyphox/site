@@ -11,19 +11,23 @@
   }
 }
 
-/*@font-face {
-  font-family: 'Garamond';
-  src: url('/static/fonts/EBGaramond-Italic.ttf') format('truetype');
+@font-face {
+  font-family: 'Charter';
+  src: url('/static/fonts/charter_italic.woff') format('woff');
   font-style: italic;
-  font-size: 20;
+}
+
+
+@font-face {
+  font-family: 'Charter';
+  src: url('/static/fonts/charter_bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Garamond';
-  src: url('/static/fonts/EBGaramond-Regular.ttf') format('truetype');
-  src: url('/static/fonts/EBGaramond-Regular.woff2') format('woff2');
-  src: url('/static/fonts/EBGaramond-Regular.woff') format('woff');
-}*/
+  font-family: 'Charter';
+  src: url('/static/fonts/charter_regular.woff') format('woff');
+}
+
 
 :root {
   --dull: #f4f4f4;
@@ -45,15 +49,19 @@ html {
   line-height: 1.5;
 }
 
-/*.content > article, p, blockquote, ul {
+.content > article, p, blockquote, ul {
   line-height: 1.4;
-  font-family: 'Garamond';
+  font-family: 'Charter';
   font-feature-settings: normal;
-}*/
+}
 
-/*.content > h1, h2, h3, h4 {
+.pull-right > p {
+  font-family:  'Inter';
+}
+
+.content > h1, h2, h3, h4 {
   font-family: 'Inter';
-}*/
+}
 
 a {
   color: var(--gray);
@@ -143,6 +151,9 @@ code {
 
 pre > code {
   color: var(--code);
+}
+
+pre {
   background: var(--dull)
 }
 
