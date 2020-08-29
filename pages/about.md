@@ -37,11 +37,10 @@ https://toot.icyphox.sh/@x
 
 ## Contact
 
-Send mail to [x@icyphox.sh](mailto:x@icyphox.sh). It is also my XMPP
-address; please use OMEMO.
-Should you need it, my PGP key:
-[FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4](/static/gpg.txt).
-I'm also on IRC @ Freenode and Rizon, usually as `icy` / `icyphox`.
+Send mail to [x@icyphox.sh](mailto:x@icyphox.sh). Should you need it, my
+PGP key: [FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5
+D4C4](/static/gpg.txt). I'm also on IRC @ Freenode and Rizon, usually as
+`icy` / `icyphox`.
 
 If you're interested in **hiring me** -- here's my
 [résumé](https://x.icyphox.sh/resume.pdf).
