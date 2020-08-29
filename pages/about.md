@@ -4,7 +4,6 @@ title: about
 subtitle: Stuff about me, and stuff.
 ---
 
-# обо мне
 ## Hi.
 
 I'm Anirudh, but you'll often find me as **icyphox** (or just **icy**),

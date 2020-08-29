@@ -4,7 +4,6 @@ title: friends
 subtitle: My friends and internet bros.
 ---
 
-# друзья
 ## My friends and internet bros.
 
 ### `#rice`
@@ -12,6 +11,7 @@ subtitle: My friends and internet bros.
 - [nerdypepper](https://peppe.rs)
 - [eti](https://eti.tf)
 - [bushidoboy](https://bushidoboy.com)
+- [uoya](https://hugo.md)
 - [enju](https://enju.dev)
 - [nil](https://monade.li)
 - [Leliana](https://revthefox.co.uk/)

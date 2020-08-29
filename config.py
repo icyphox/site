@@ -2,7 +2,7 @@
 
 title = "icyphox"
 author = ""
-header = """<a href="/">← back</a>"""
+header = ""
 
 # actually the sidebar
 footer = f"""
@@ -43,14 +43,17 @@ footer = f"""
 
     <div class="icons">
     <a href="https://creativecommons.org/licensjes/by-nc-sa/4.0/">
-    <img class="footimgs" src="/static/cc.svg">
+    <img class="footimgs" alt="cc nc-by-sa" src="/static/cc.svg">
     </a>
     <a href="https://webring.xxiivv.com/#random" target="_blank">
     <img class="footimgs" alt="xxiivv webring" src="/static/webring.svg">
+    </a>
+    <a href="/blog/feed.xml" >
+    <img class="footimgs" alt="rss feed" src="/static/rss.svg">
     </a>
     </div>
 
         """
 template = 'text.html'  # default is index.html
-#pre_build = [['bin/openring.py', '-j'], 'bin/update_index.py']
+pre_build = ['bin/update_index.py']
 post_build = ['bin/rss.py', 'bin/plaintext.sh']

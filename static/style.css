@@ -35,8 +35,7 @@
   --light-gray: #eee;
   --gray: gray;
   --code: #666;
-  --dark: #222;
-  --sel: #444;
+  --dark: #444;
 }
 
 body {
@@ -264,6 +263,7 @@ header a:last-child {
 .muted {
   color: var(--gray);
   font-family: 'Charter';
+  font-size: 18px;
 }
 
 .muted a {
@@ -314,7 +314,7 @@ img {
   padding-bottom: 30px;
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
   font-weight: normal;
 }
 
@@ -342,7 +342,7 @@ hr {
 }
 
 ::selection {
-  background-color: var(--sel);
+  background-color: var(--dark);
   color: white;
 }
 
