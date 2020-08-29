@@ -1,11 +1,11 @@
-@font-face {
+/*@font-face {
   font-family: 'Inter';
   src: url('/static/fonts/Inter-V.otf') format('opentype');
-}
+}*/
 
 @supports (font-variation-settings: normal) {
   html { 
-    font-family: 'Inter', sans-serif; 
+    font-family: 'Charter', sans-serif; 
     font-feature-settings: 'ss01' 1, 'kern' 1, 'liga' 1, 'zero' 1, 
     'cv03' 1, 'cv02' 1, 'cv04' 1, 'tnum' 1; 
   }
@@ -30,7 +30,7 @@
 
 
 :root {
-  --dull: #f4f4f4;
+  --bg: #fff;
   --cyan: #1e9191;
   --light-gray: #eee;
   --gray: gray;
@@ -44,19 +44,19 @@ body {
 }
 
 html {
-  background: var(--dull);
-  font-size: 18px;
+  background: var(--bg);
+  font-size: 21px;
   line-height: 1.5;
 }
 
 .content > article, p, blockquote, ul {
-  line-height: 1.4;
+  line-height: 1.3;
   font-family: 'Charter';
   font-feature-settings: normal;
 }
 
 .pull-right > p {
-  font-family:  'Inter';
+  font-family:  'Charter';
 }
 
 /*.content > h1, h2, h3, h4 {
@@ -126,7 +126,7 @@ a:hover {
 
 .openring-feed > p {
   padding: 4px 8px 4px;
-  font-family: 'Inter';
+  font-family: 'Charter';
 }
 
 .sep {
@@ -155,7 +155,7 @@ pre > code {
 }
 
 pre {
-  background: var(--dull)
+  background: var(--bg)
 }
 
 @media only screen and (min-width: 800px) {
@@ -214,7 +214,7 @@ pre {
   }
 
   html {
-    font-size: 18px;
+    font-size: 21px;
   }
 
   .openring {
@@ -263,7 +263,7 @@ header a:last-child {
 
 .muted {
   color: var(--gray);
-  font-family: 'Inter';
+  font-family: 'Charter';
 }
 
 .muted a {

@@ -2,7 +2,7 @@
 
 title = "icyphox"
 author = ""
-header = """<a href="/"><- back</a>"""
+header = """<a href="/">← back</a>"""
 
 # actually the sidebar
 footer = f"""
@@ -52,5 +52,5 @@ footer = f"""
 
         """
 template = 'text.html'  # default is index.html
-pre_build = [['bin/openring.py', '-j'], 'bin/update_index.py']
+#pre_build = [['bin/openring.py', '-j'], 'bin/update_index.py']
 post_build = ['bin/rss.py', 'bin/plaintext.sh']
