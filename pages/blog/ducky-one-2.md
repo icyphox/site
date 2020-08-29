@@ -8,7 +8,7 @@ date: 2020-08-22
 
 Thanks to the pandemic yada yada I've been working from home (and
 attending college from home), and I figured my WFH setup could use an
-upgrade. Unfortuntely, the choices for mechanical keyboards in India are
+upgrade. Unfortunately, the choices for mechanical keyboards in India are
 fairly limited. All imports from China don't get through, and imports
 from elsewhere have a _fat_ duty slapped on it -- sometimes up to
 300%[^1]. It's obscene!
