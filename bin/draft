@@ -1,0 +1,17 @@
+#!/bin/sh
+
+draft() {
+    mv "$1" drafts/
+}
+
+undraft() {
+    mv "$1" pages/blog/
+}
+
+post="$1"
+if [ "$1" == "u" ]; then
+    post="$2"
+    undraft "$post"
+else
+    draft "$post"
+fi

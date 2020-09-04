@@ -1,3 +1,3 @@
 #!/bin/sh
 
-rsync -avz build/* fern-remote:~/www/icy/site
+rsync -avz build/* fern:~/www/icy/site

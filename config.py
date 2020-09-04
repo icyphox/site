@@ -20,9 +20,9 @@ footer = f"""
     </p> 
 
     <p>
-    <span class="sidebar-link">mastodon</span>
+    <span class="sidebar-link">fediverse</span>
     <br>
-    <a rel="me" href="https://toot.icyphox.sh/@x">@x@icyphox.sh</a>
+    <a rel="me" href="https://toot.icyphox.sh/@x">@x@toot.icyphox.sh</a>
     </p> 
 
     <p>
