@@ -18,7 +18,9 @@ you have Mastodon and Pleroma (source, not OTP) installed -- probably at
 `/home/mastodon/live` and `/opt/pleroma`, respectively.
 
 Once you have Erlang and Elixir compiled and sitting in your `PATH`,
-pull [soapbox-pub/migrator](https://gitlab.com/soapbox-pub/migrator). 
+pull [soapbox-pub/migrator](https://gitlab.com/soapbox-pub/migrator).
+Now read the readme and the `do_migration.sh` script to get an idea of
+what you're getting into.
 
 Move into the cloned directory and create a `.env`:
 
