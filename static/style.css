@@ -310,16 +310,18 @@ img {
 
 .subtitle {
   font-style: italic;
+  font-weight: normal;
+  font-variant: unset;
   color: var(--dark);
   padding-bottom: 30px;
 }
 
 h2, h3, h4 {
-  font-weight: normal;
+  font-variant: all-small-caps;
 }
 
 h2 { 
-  color: var(--gray);
+  color: var(--dark);
 }
 
 h3 {
