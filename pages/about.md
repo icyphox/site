@@ -28,9 +28,8 @@ Here are some of my links:
 - [Reddit](https://reddit.com/u/icyphox)
 - [Steam](https://steamcommunity.com/id/icyphox)
 - [Last.fm](https://last.fm/user/icyphox)
-- [Twitter](https://twitter.com/icyphox)
 
-Note that my Twitter is now read-only. I'm more active on the fediverse:
+The only social media I actively use is the fediverse:
 https://toot.icyphox.sh/@x
 
 
