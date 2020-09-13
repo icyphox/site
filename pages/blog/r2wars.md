@@ -1,0 +1,203 @@
+---
+template:
+url: r2wars
+title: My submissions for r2wars 2020
+subtitle: If I learnt one thing, it's that ARM is the future
+date: 2020-09-13
+---
+
+[r2wars](https://github.com/radareorg/r2wars) is
+a [CoreWar](http://corewars.org)-like game thar runs within the radare2
+[ESIL](https://radare.gitbooks.io/radare2book/content/disassembling/esil.html)
+virtual machine. In short, you have two programs running in a shared
+memory space (1kb), with the goal of killing the other and surviving as
+long as possible. r2wars was conducted as a part of
+[r2con2020](https://rada.re/con/2020).
+
+## day 1
+
+My first submission was an incredibly simple "bomber". All it does is
+write code to a location, jump there, and continue executing the same
+thing over and over.
+
+```asm
+mov eax, 0xfeebfeeb; just some bad jumps
+mov ebx, eax
+mov ecx, eax
+mov edx, eax
+mov ebp, eax
+mov edi, eax
+mov esp, 0x3fc
+mov esi, 0x3fd
+mov [esi], 0xe6ff60
+jmp esi
+```
+
+Specifically, it writes `0xe6ff60`, which is
+```asm
+pushal
+jmp esi
+```
+effectively looping over and over. `pushal` is a very interesting x86
+instruction, that pushes all the registers and decrements the stack
+pointer `esp` by how many ever bytes were pushed. Nifty, especially if
+you're looking for high throughput (to bomb the address space). Here, it
+starts bombing from `0x3fc` - `0x000` (and below, because there's no
+bounds checking in place), and ends up killing itself, since writing
+outside of the arena (`0x000` - `0x400`) is illegal.
+
+Ultimately, this bot placed 7th out of 9 contestants -- an underwhelming
+outcome. I had to fix this.
+
+![day 1](https://x.icyphox.sh/gk1i0.png)
+
+## day 2
+
+I sat for a second and recollected the different reasons for my bot
+getting killed, and the one that occurred the most was my bot
+insta-dying to bad instructions being written from `0x400` -- i.e. from
+near where I'm positioned. Nearly all competing bots write from bottom
+up, because `pushal` _decrements_ the stack pointer. So the obvious
+solution was to reposition my initial payload way above, at `0x000`. And
+of course, it goes without saying that this assumes everyone's using
+`pushal` (they are).
+
+```asm
+mov eax, 0xffffffff
+mov ecx, eax
+mov edx, eax
+mov ebx, eax
+mov ebp, eax
+mov esi, eax
+
+check:
+    mov edi, 0x000
+    cmp [edi], 0
+    jne planb
+    mov esp, 0x400
+    inc edi
+    mov [edi], 0xe7ff6060; pushal, jmp edi
+    jmp edi
+
+planb:
+    mov edi, 0x3fb
+    mov [edi], 0xe7ff6060
+    mov esp, 0x3fa
+    jmp edi
+```
+
+I also added a (pretty redundant) check to see if the stuff at `edi` was
+0, since the entire arena is initially `0x0`. My reasoning, albeit
+flawed, was that if it wasn't 0, then it was unsafe to go there. In
+hindsight, it would've been _safer_, since it's already been written
+over by somebody. In any case, `planb` never got executed because of
+what I'd mentioned earlier -- *everyone* writes from `0x400`. Or
+anywhere above `0x000`, for that matter. So I'm relatively safer than
+I was in day 1.
+
+These changes paid off, though. I placed 4th on day 2, out of 13
+contestants! This screenshot was taken on my phone as I was eating
+dinner.
+
+![day 2](https://x.icyphox.sh/5ZJfT.png)
+
+All wasn't well though -- I still lost 4 matches, for the reasons below:
+
+1. I'd get snuffed out before my bomb wave from `0x400` would reach
+   the opponent.
+2. I'd end up bombing myself without hitting anyone on the way up.
+
+## day 3
+
+I needed to add some checks to prevent killing myself in the process of
+bombing.
+```asm
+mov eax, 0xffffffff
+mov ecx, eax
+mov edx, eax
+mov ebx, eax
+mov ebp, eax
+mov esi, eax
+
+mov edi, 0x000
+mov esp, 0x400
+mov [edi], 0x20fc8360
+mov [edi+4], 0xff600374
+mov [edi+8], 0x0400bce7
+mov [edi+12], 0xe7ff0000
+jmp edi
+```
+
+If you noticed, the initial payload I'm writing to the address at `edi`
+is a bit more complex this time -- let's break it down.
+
+```
+0x20fc8360
+0xff600374
+0x0400bce7
+0xe7ff0000
+```
+
+This translates to:
+```asm
+60                pushal 
+83 FC 20          cmp    esp, 0x20
+74 03             je     9
+60                pushal 
+FF E7             jmp    edi
+BC 04 00 00 00    mov    esp, 0x400; <- 0x9
+FF E7             jmp    edi
+```
+
+I check if the stack pointer is `0x20` (decrements from `0x400` due to
+`pushal`); if yes, reset to `0x400`, else continue looping. This
+prevented me from writing myself over, and also resets bombing from
+`0x400` -- better chance of hitting someone we missed in our first wave.
+
+Sounds good? That's what I thought too. Day 3 had a bunch of new bot
+submissions (and some updated submissions), and a lot of them checked
+`0x000` for existence of a bot, effectively recking me. I placed 8th out
+of 14 contestants, with 7 wins and 6 losses. Tough day.
+
+![day 3](https://x.icyphox.sh/IKqxD.png)
+
+## day 4: the finals
+
+I spent a lot of time refactoring my bot. I tried all kinds of things,
+even reworked it to be entirely mobile using the `pushal` + `jmp esp`
+trick, but I just wasn't satisfied. In the end, I decided to address the
+problem in the simplest way possible. You're checking `0x000`? Okay,
+I'll reposition my initial payload to `0xd`. 
+
+And this surprisingly tiny change landed me in 4th place out of 15
+contestants, which was _way_ better than I'd anticipated! The top spots
+were all claimed by ARM, and naturally so -- they had a potential
+throughput of 64 bytes per cycle thanks to `stmia`, compared to x86's 32
+bytes. Pretty neat!
+
+![day 4](https://x.icyphox.sh/DJbEE.png)
+
+## links and references
+
+- [Anisse's r2wars 2019 post](https://anisse.astier.eu/r2wars-2019.html)
+- [Emile's intro to r2wars](https://www.tildeho.me/r2wars/)
+- [How not to suck at r2wars](https://bananamafia.dev/post/r2wars-2019/)
+- [r2wars: Shall we play a game?](https://ackcent.com/r2wars-shall-we-play-a-game/)
+- [Shell Storm's online (dis)assembler](http://shell-storm.org/online/Online-Assembler-and-Disassembler)
+- [radare2](https://github.com/radareorg/radare2)
+- [r2wars game engine](https://github.com/radareorg/r2wars)
+- [Anisse's bot workspace](https://github.com/anisse/r2warsbots)
+- [My bot dev workspace](https://github.com/icyphox/r2wars-bots)
+- [r2con YouTube](https://www.youtube.com/channel/UCZo6gyBPj6Vgg8u2dfIhY4Q)
+
+## closing thoughts
+
+This was my first ever r2wars, and it was an incredible experience. Who
+woulda thunk staring at colored boxes on the screen would be so much
+fun?! So much so that my parents walked over to see what all the fuss
+was about. Shoutout to [Abel](https://twitter.com/sanguinawer)
+and [pancake](https://twitter.com/trufae) for taking the time out to
+work on this, and _especially_ Abel for dealing with all the last minute
+updates and bot submissions!
+
+All things said, mine was still the best x86 bot -- so that's a win. ;)
