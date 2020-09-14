@@ -4,7 +4,7 @@ title: about
 subtitle: Stuff about me, and stuff.
 ---
 
-## Hi.
+# Hi.
 
 I'm Anirudh, but you'll often find me as **icyphox** (or just **icy**),
 on the Internet. I'm majoring in Computer Science currently. My primary

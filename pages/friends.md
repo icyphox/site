@@ -4,7 +4,7 @@ title: friends
 subtitle: My friends and internet bros.
 ---
 
-## My friends and internet bros.
+# My friends and internet bros.
 
 ### `#rice`
 
