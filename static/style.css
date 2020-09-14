@@ -71,8 +71,8 @@ a {
 }
 
 a:hover {
-  color: var(--light-gray);
-  background: var(--dark);
+  background: #eee;
+  color: var(--dark);
 }
 
 .navbar {
