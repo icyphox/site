@@ -24,7 +24,7 @@ subtitle: My friends and internet bros.
 - [eskimo](https://eskimo.dev)
 - [noise](https://noise.faith)
 - [flippy](https://jesseerwin.net)
-- [ye](https://haze.cool)
+- [ye](https://haz.ee)
 
 ### IRL / Twitter
 
