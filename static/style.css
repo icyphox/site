@@ -49,7 +49,7 @@ html {
 }
 
 .content > article, p, blockquote, ul {
-  line-height: 1.3;
+  line-height: 1.5;
   font-family: 'Charter';
   font-feature-settings: normal;
 }
