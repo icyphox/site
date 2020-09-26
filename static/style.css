@@ -64,14 +64,20 @@ html {
 
 a {
   color: var(--gray);
-  margin: 0;
   text-decoration: none;
-  outline: 0;
 }
 
 a:hover {
   background: #eee;
   color: var(--dark);
+}
+
+
+article a, a:hover {
+  color: inherit;
+  background: 0;
+  text-decoration: underline;
+  outline: 0;
 }
 
 .navbar {
@@ -243,7 +249,6 @@ footer {
 }
 
 header {
-  color: var(--cyan);
   top: 30px;
   display: inline-block;
   width: 100%;
@@ -277,6 +282,8 @@ table {
 td {
   white-space: nowrap;
 }
+
+
 
 td:first-child {
   width: 100%;
