@@ -54,10 +54,7 @@ but it does help with domain and server costs. :)
 This site is built using a small static site generator written by me:
 [vite](https://github.com/icyphox/vite). The source for this website is
 [here](https://github.com/icyphox/site). Served from my Raspberry Pi 4B,
-sitting at home!
-
-The spinner icon at the bottom? That's the [XXIIVV
-webring](https://webring.xxiivv.com), and this site is on it!
+sitting at home.
 
 I don't really care about site traffic/analytics, and I never will; 
 I am not interested in who is reading and I respect your privacy.
