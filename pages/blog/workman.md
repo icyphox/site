@@ -3,7 +3,7 @@ template:
 url: workman
 title: The Workman keyboard layout
 subtitle: I have a lot of free time on my hands (heh)
-date: 2020-09-24
+date: 2020-10-24
 ---
 
 I've been at my computer everyday, for at least 10 hours at minimum.
