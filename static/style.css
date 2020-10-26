@@ -44,7 +44,7 @@ body {
 
 html {
   background: var(--bg);
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -218,7 +218,7 @@ pre {
   }
 
   html {
-    font-size: 21px;
+    font-size: 19px;
   }
 
   .openring {
