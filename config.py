@@ -2,7 +2,7 @@
 
 title = "icyphox"
 author = ""
-header = "<a href=/>← back</a>"
+header = "<a href=/>← all posts</a>"
 
 # actually the sidebar
 footer = f"""
