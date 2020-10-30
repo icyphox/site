@@ -1,11 +1,6 @@
-# config.py - Vite's configuration script
-
-title = "icyphox"
-author = ""
-header = "<a href=/>← all posts</a>"
-
-# actually the sidebar
-footer = f"""
+title: icyphox's blog
+header: "<a href=/>← all posts</a>"
+footer: |
     <img class="logo" src="/static/white.svg" alt="icyphox's avatar" style="width: 55%"/>
     <p>
     <span class="sidebar-link">email</span>
@@ -53,7 +48,8 @@ footer = f"""
     </a>
     </div>
 
-        """
-template = 'text.html'  # default is index.html
-pre_build = ['bin/update_index.py']
-post_build = ['bin/rss.py', 'bin/plaintext.sh']
+prebuild:
+    # - bin/update_index.py
+postbuild:
+    - bin/rss.py
+    - bin/plaintext.sh

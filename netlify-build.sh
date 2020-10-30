@@ -1,6 +1,7 @@
 #!/bin/sh
 
-pip install git+https://github.com/icyphox/vite
+git clone https://github.com/icyphox/go-vite
+cd go-vite && make && cd ..
 mkdir build
 pip install feedparser arrow python-frontmatter
-vite build
+go-vite/vite build

@@ -150,20 +150,19 @@ pre {
   overflow-y: hidden;
   padding: 10px;
   min-width: 0;
-}
-
-
-code {
-  color: var(--cyan);
-  border-bottom: unset;
+  background: var(--bg)
+  font-size: 18px;
 }
 
 pre > code {
   color: var(--code);
 }
 
-pre {
-  background: var(--bg)
+code {
+  font-variant: normal;
+  font-size: 19px;
+  color: var(--dark);
+  border-bottom: unset;
 }
 
 @media only screen and (min-width: 800px) {
@@ -176,6 +175,10 @@ pre {
 
   html {
     font-size: 21px;
+  }
+
+  pre {
+    font-size: 19px;
   }
 
   .sep {

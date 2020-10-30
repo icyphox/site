@@ -4,45 +4,45 @@
   <link rel="stylesheet" href="/static/syntax.css" type="text/css">
   <link rel="shortcut icon" type="images/x-icon" href="/static/favicon.ico">
   <meta charset="UTF-8">
-  <meta name="description" content="{{ subtitle }}">
+  <meta name="description" content="{{ .Fm.Subtitle }}">
   <meta name="viewport" content="initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta content="#222" name="theme-color">
   <meta name="HandheldFriendly" content="true">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@icyphox">
-  <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ subtitle }}">
+  <meta name="twitter:title" content="{{ .Fm.Title }}">
+  <meta name="twitter:description" content="{{ .Fm.Subtitle }}">
   <meta name="twitter:image" content="/static/icyphox.png">
-  <meta property="og:title" content="{{ title }}">
+  <meta property="og:title" content="{{ .Fm.Title }}">
   <meta property="og:type" content="website">
-  <meta property="og:description" content="{{ subtitle }}">
+  <meta property="og:description" content="{{ .Fm.Subtitle }}">
   <meta property="og:url" content="https://icyphox.sh">
   <meta property="og:image" content="/static/icyphox.png">
   <title>
-    {{ title }}
+    {{ .Fm.Title }}
   </title>
   <body> 
     <div class="container">
       <div class="pull-left">
         <div class="content">
           <header>
-            {{ header }}
+            {{ .Cfg.Header }}
           </header>
           <section style="float: right">
-            view in <a href="/txt/{{ url }}.txt">plain-text</a>
+            view in <a href="/txt/{{ .Fm.URL }}.txt">plain-text</a>
           </section>
           <section style="float: left">
-            {{ date }}
+            {{ .Fm.Date }}
           </section>
           <article style="clear: both" align="left">
-            <h1>{{ title }}</h1>
-            <h2 class="subtitle">{{ subtitle }}</h2>
-            {{ body }} 
+            <h1>{{ .Fm.Title }}</h1>
+            <h2 class="subtitle">{{ .Fm.Subtitle }}</h2>
+            {{ .Fm.Body }} 
           </article>
           <p class="muted">Questions or comments? 
           Send an email to 
-          <a href="mailto:~icyphox/x@lists.sr.ht?Subject=Re: {{ title }}">~icyphox/x@lists.sr.ht</a>—my <a href="https://lists.sr.ht/~icyphox/x">public inbox</a>.</p>
+          <a href="mailto:~icyphox/x@lists.sr.ht?Subject=Re: {{ .Fm.Title }}">~icyphox/x@lists.sr.ht</a>—my <a href="https://lists.sr.ht/~icyphox/x">public inbox</a>.</p>
         </div>
       </div>
     </div>
