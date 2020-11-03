@@ -51,5 +51,5 @@ footer: |
 prebuild:
     # - bin/update_index.py
 postbuild:
-    - bin/rss.py
+    # - bin/rss.py
     - bin/plaintext.sh

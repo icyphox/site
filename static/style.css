@@ -36,6 +36,7 @@
   --gray: #6a6a6a;
   --code: #666;
   --dark: #444;
+  --code-bg: #0000000a;
 }
 
 body {
@@ -43,7 +44,7 @@ body {
 }
 
 html {
-  background: var(--bg);
+  /* background: var(--bg);*/
   font-size: 19px;
   line-height: 1.5;
 }
@@ -79,7 +80,7 @@ a:hover {
 
 article a, a:hover {
   color: inherit;
-  background: 0;
+   background: 0;
   text-decoration: underline;
   outline: 0;
 }
@@ -150,8 +151,8 @@ pre {
   overflow-y: hidden;
   padding: 10px;
   min-width: 0;
-  background: var(--bg)
-  font-size: 18px;
+  background-color: var(--code-bg) !important;
+  font-size: 18px !important;
 }
 
 pre > code {
@@ -160,7 +161,7 @@ pre > code {
 
 code {
   font-variant: normal;
-  font-size: 19px;
+  font-size: 18px !important;
   color: var(--dark);
   border-bottom: unset;
 }
@@ -171,14 +172,6 @@ code {
     max-width: 100%;
     grid-column: 9 / 13;
     grid-row: 1;
-  }
-
-  html {
-    font-size: 21px;
-  }
-
-  pre {
-    font-size: 19px;
   }
 
   .sep {
@@ -214,6 +207,18 @@ code {
     grid-column: 8 / 10;
     padding-left: 10%;
     grid-row: 1;
+  }
+
+  html {
+    font-size: 20px;
+  }
+
+  code {
+    font-size: 19px;
+  }
+
+  pre {
+    font-size: 19px;
   }
 
   .sep {
