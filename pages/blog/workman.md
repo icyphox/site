@@ -65,12 +65,12 @@ keys in normal mode. Well, everything except for the <kbd>H</kbd>,
 bothersome and I uninstalled the plugin to search for a better solution.
 
 Wait, don't I have a sick new [programmable mechanical
-keyboard](/blog/ducky-one-2)? What if I configure a layer on it just for
-the <kbd>H</kbd>, <kbd>J</kbd>, <kbd>K</kbd>, <kbd>L</kbd> keys? After
-pouring through the manual for a bit, I eventually got it set up. I even
-remapped the <kbd>Caps Lock</kbd> key to <kbd>Fn</kbd> so it's easier to
-access the layer. So now, hitting <kbd>Caps Lock</kbd>
-+ <kbd>Y</kbd>/<kbd>N</kbd>/<kbd>E</kbd>/<kbd>O</kbd> results in
+keyboard](/blog/ducky-one-2)? What if I configure a layer on it just for the
+<kbd>H</kbd>, <kbd>J</kbd>, <kbd>K</kbd>, <kbd>L</kbd> keys? After pouring
+through the manual for a bit, I eventually got it set up. I even remapped
+the <kbd>Caps Lock</kbd> key to <kbd>Fn</kbd> so it's easier to access the
+layer. So now, hitting <kbd>Caps
+Lock</kbd>+<kbd>Y</kbd>/<kbd>N</kbd>/<kbd>E</kbd>/<kbd>O</kbd> results in
 <kbd>HJKL</kbd> being pressed. This took a little bit of getting used to,
 but it got easier with a bit of practice. 
 
