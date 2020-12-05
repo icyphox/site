@@ -3,6 +3,7 @@ header: "<a href=/>← all posts</a>"
 siteurl: "https://icyphox.sh"
 rssprefixurl: "https://icyphox.sh/blog/" 
 description: "Computers, security and computer security."
+datefmt: "02 January, 2006"
 author: 
      name: "Anirudh Oppiliappan"
      email: "x@icyphox.sh"
