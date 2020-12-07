@@ -1,5 +1,5 @@
 ---
-template: about.html
+template: page.html
 title: friends
 subtitle: My friends and internet bros.
 ---

@@ -1,5 +1,5 @@
 title: icyphox's blog
-header: "<a href=/>← all posts</a>"
+header: "<a href=/>← back</a>"
 siteurl: "https://icyphox.sh"
 rssprefixurl: "https://icyphox.sh/blog/" 
 description: "Computers, security and computer security."
@@ -42,6 +42,12 @@ footer: |
     <p>
     More <a href="/about">about me</a> and my work.
     </p>
+
+    <h3>uses</h3>
+    <p>
+    Hardware and software <a href="/uses">that I use</a>.
+    </p>
+
 
     <div class="icons">
     <a href="https://creativecommons.org/licensjes/by-nc-sa/4.0/">

@@ -1,5 +1,5 @@
 ---
-template: about.html
+template: page.html
 title: about
 subtitle: Stuff about me, and stuff.
 ---

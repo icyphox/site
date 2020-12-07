@@ -78,9 +78,9 @@ a:hover {
 }
 
 
-article a, a:hover {
+.sitemap a, article a, a:hover {
   color: inherit;
-   background: 0;
+  background: 0;
   text-decoration: underline;
   outline: 0;
 }
