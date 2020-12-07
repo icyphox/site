@@ -2,22 +2,20 @@
 
 # from the pure sh bible; see: 
 # https://github.com/dylanaraps/pure-sh-bible#get-the-base-name-of-a-file-path
-basename() {
-    dir=${1%${1##*[!/]}}
-    dir=${dir##*/}
-    dir=${dir%"$2"}
-    base="${dir:-/}"
-}
 
+mkdir -p build/txt
+for p in build/blog/**/index.html; do
+    ppath="${p%%\/index.html}"
+    pname="${ppath##build\/blog\/}"
 
-mkdir "build/txt/"
+    temp="$ppath/temp.html"
+    # Not POSIX, I know
+    sed -e '29,34d' "$p" > "$temp"
+    cat "$temp" | awk -v OFS='\n\n' '/class="muted"/{n=3}; n {n--; next;} 1' > "$temp.new"
+    mv "$temp.new" "$temp"
 
-for p in pages/blog/*.md; do
-    basename "$p"
-    no_ext="${base%.*}"
-#    [ "$base" != "_index.md" ] && {
-#        pandoc --quiet -s -f "markdown+gutenberg" \
-#            "$p" -o "pages/txt/$no_ext.txt"
-#    }
-    cp "$p" "build/txt/$no_ext.txt"
+    txt="build/txt/$pname.txt"
+    lynx -dump "$temp" | tail -n +1 > "$txt"
+    rm "$temp"
+    sed -i 's/file:\/\/\//https:\/\/icyphox\.sh\//' "$txt"
 done
