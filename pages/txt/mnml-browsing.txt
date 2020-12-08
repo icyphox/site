@@ -1,0 +1,65 @@
+   16 January, 2020
+
+Vimb: my Firefox replacement
+
+Web browsing, suckless style
+
+   After having recently installed [1]KISS, and building Firefox from
+   source, I was exposed to the true monstrosity that Firefox -- and web
+   browsers in general---is. It took all of 9 hours to build the
+   dependencies and then Firefox itself.
+
+   Sure, KISS now ships Firefox binaries in the [2]firefox-bin package; I
+   decided to get rid of that slow mess anyway.
+
+Enter vimb
+
+   [3]vimb is a browser based on [4]webkit2gtk, with a Vim-like interface.
+   webkit2gtk builds in less than a minute -- it blows Firefox out of the
+   water, on that front.
+
+   There isn't much of a UI to it -- if you've used Vimperator/Pentadactyl
+   (Firefox plugins), vimb should look familiar to you. It can be
+   configured via a config.h or a text based config file at
+   ~/.config/vimb/config. Each "tab" opens a new instance of vimb, in a
+   new window but this can get messy really fast if you have a lot of tabs
+   open.
+
+Enter tabbed
+
+   [5]tabbed is a tool to embed X apps which support xembed into a tabbed
+   UI. This can be used in conjunction with vimb, like so:
+tabbed vimb -e
+
+   Where the -e flag is populated with the XID, by tabbed. Configuring
+   Firefox-esque keybinds in tabbed's config.h is relatively easy. Once
+   that's done -- voilà! A fairly sane, Vim-like browsing experience
+   that's faster and has a smaller footprint than Firefox.
+
+Ad blocking
+
+   Ad blocking support isn't built-in and there is no plugin system
+   available. There are two options for ad blocking:
+    1. [6]wyebadblock
+    2. /etc/hosts
+
+Caveats
+
+   Some websites tend to not work because they detect vimb as an older
+   version of Safari (same web engine). This is a minor inconvenience, and
+   not a dealbreaker for me. I also cannot login to Google's services for
+   some reason, which is mildly annoying, but it's good in a way -- I am
+   now further incentivised to dispose of my Google account.
+
+   And here's the screenshot y'all were waiting for:
+
+   vimb
+
+References
+
+   1. https://getkiss.org/
+   2. https://github.com/kisslinux/repo/tree/master/extra/firefox-bin
+   3. https://fanglingsu.github.io/vimb/
+   4. https://webkitgtk.org/
+   5. https://tools.suckless.org/tabbed/
+   6. https://github.com/jun7/wyebadblock

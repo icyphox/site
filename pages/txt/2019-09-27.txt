@@ -1,0 +1,85 @@
+   27 September, 2019
+
+Weekly status update, 09/17-09/27
+
+Alpine Linux shenaningans and more
+
+   It's a lazy Friday afternoon here; yet another off day this week thanks
+   to my uni's fest. My last "weekly" update was 10 days ago, and a lot
+   has happened since then. Let's get right into it!
+
+My switch to Alpine
+
+   Previously, I ran Debian with Buster/Sid repos, and ever since this
+   happened
+$ dpkg --list | wc -l
+3817
+
+# or something in that ballpark
+
+   I've been wanting to reduce my system's package count.
+
+   Thus, I began my search for a smaller, simpler and lighter distro with
+   a fairly sane package manager. I did come across Dylan Araps' [1]KISS
+   Linux project, but it seemed a little too hands-on for me (and still
+   relatively new). I finally settled on [2]Alpine Linux. According to
+   their website:
+
+     Alpine Linux is a security-oriented, lightweight Linux distribution
+     based on musl libc and busybox.
+
+   The installation was a breeze, and I was quite surprised to see WiFi
+   working OOTB. In the past week of my using this distro, the only major
+   hassle I faced was getting my Minecraft launcher to run. The JRE isn't
+   fully ported to musl yet.^[3]1 The solution to that is fairly trivial
+   and I plan to write about it soon. (hint: it involves chroots)
+
+   rice
+
+Packaging for Alpine
+
+   On a related note, I've been busy packaging some of the stuff I use for
+   Alpine -- you can see my personal [4]aports repository if you're
+   interested. I'm currently working on packaging Nim too, so keep an eye
+   out for that in the coming week.
+
+Talk selection at PyCon India!
+
+   Yes! My buddy Raghav ([5]@_vologue) and I are going to be speaking at
+   PyCon India about our recent smart lock security research. The
+   conference is happening in Chennai, much to our convenience. If you're
+   attending too, hit me up on Twitter and we can hang!
+
+Other
+
+   That essentially sums up the technical stuff that I did. My Russian is
+   going strong, my reading however, hasn't. I have yet to finish those
+   books! This week, for sure.
+
+   Musically, I've been experimenting. I tried a bit of hip-hop and
+   chilltrap, and I think I like it? I still find myself coming back to
+   metalcore/deathcore. Here's a list of artists I discovered (and liked)
+   recently:
+     * [6]Before I Turn
+     * Conform » (couldn't find any official YouTube video, check Spotify)
+     * [7]Treehouse Burning
+     * [8]Lee McKinney
+     * [9]Berried Alive (rediscovered)
+
+   That's it for now, I'll see you next week!
+     __________________________________________________________________
+
+    1. The [10]Portola Project
+
+References
+
+   1. https://getkiss.org/
+   2. https://alpinelinux.org/
+   3. https://icyphox.sh/home/icy/leet/site/build/blog/2019-09-27/temp.html#fn:1
+   4. https://github.com/icyphox/aports
+   5. https://twitter.com/_vologue
+   6. https://www.youtube.com/watch?v=r3uKGwcwGWA
+   7. https://www.youtube.com/watch?v=66eFK1ttdC4
+   8. https://www.youtube.com/watch?v=m-w3XM2PwOY
+   9. https://www.youtube.com/watch?v=cUibXK7F3PM
+  10. https://aboullaite.me/protola-alpine-java/

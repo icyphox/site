@@ -3,7 +3,6 @@
 # from the pure sh bible; see: 
 # https://github.com/dylanaraps/pure-sh-bible#get-the-base-name-of-a-file-path
 
-mkdir -p build/txt
 for p in build/blog/**/index.html; do
     ppath="${p%%\/index.html}"
     pname="${ppath##build\/blog\/}"
@@ -14,7 +13,7 @@ for p in build/blog/**/index.html; do
     cat "$temp" | awk -v OFS='\n\n' '/class="muted"/{n=3}; n {n--; next;} 1' > "$temp.new"
     mv "$temp.new" "$temp"
 
-    txt="build/txt/$pname.txt"
+    txt="pages/txt/$pname.txt"
     lynx -dump "$temp" | tail -n +1 > "$txt"
     rm "$temp"
     sed -i 's/file:\/\/\//https:\/\/icyphox\.sh\//' "$txt"
