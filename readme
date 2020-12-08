@@ -1,0 +1,19 @@
+site
+----
+
+Found at https://icyphox.sh; built using vite[0].
+
+
+LICENSE
+
+The entirety of the content is licensed under CC BY-NC-SA.  The site's
+source is licensed under MIT.
+
+
+CREDITS
+
+NerdyPepper[1] for the original motif design.
+
+
+[0]: https://git.icyphox.sh/vite
+[1]: https://peppe.rs
