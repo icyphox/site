@@ -64,4 +64,4 @@ footer: |
 prebuild:
     # - bin/update_index.py
 postbuild:
-    # - bin/plaintext.sh
+    - bin/plaintext.sh
