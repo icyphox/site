@@ -36,6 +36,7 @@
   --gray: #6a6a6a;
   --code: #666;
   --dark: #444;
+  --darker: #222;
   --code-bg: #0000000a;
 }
 
@@ -91,7 +92,7 @@ a:hover {
 
 .sidebar-link {
   font-size: 15px;
-  color: var(--dark);
+  color: var(--darker);
 }
 
 .container {
@@ -331,10 +332,6 @@ img {
   font-variant: unset;
   color: var(--dark);
   padding-bottom: 30px;
-}
-
-h2, h3, h4 {
-  font-variant: all-small-caps;
 }
 
 h2 { 
