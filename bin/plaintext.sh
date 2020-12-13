@@ -1,9 +1,6 @@
 #!/bin/sh 
 
-# from the pure sh bible; see: 
-# https://github.com/dylanaraps/pure-sh-bible#get-the-base-name-of-a-file-path
-
-if ! command -v lynx &> /dev/null
+if ! command -v lynx
 then
     printf '%s\n' "lynx not found, not going to run"
     exit
