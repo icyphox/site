@@ -29,9 +29,9 @@
           <header>
             {{ .Cfg.Header }}
           </header>
-          <section style="float: right">
+          <!--<section style="float: right">
             view in <a href="/txt/{{ .Fm.URL }}.txt">plain-text</a>
-          </section>
+          </section>-->
           <section style="float: left">
             {{ .Fm.Date }}
           </section>
@@ -44,6 +44,9 @@
           Send an email to 
           <a href="mailto:~icyphox/x@lists.sr.ht?Subject=Re: {{ .Fm.Title }}">~icyphox/x@lists.sr.ht</a>—my <a href="https://lists.sr.ht/~icyphox/x">public inbox</a>.</p>
         </div>
+        <footer>
+        {{ .Cfg.Footer }}
+      </footer>
       </div>
     </div>
   </body>

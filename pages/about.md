@@ -7,16 +7,10 @@ subtitle: Stuff about me, and stuff.
 # Hi.
 
 I'm Anirudh, but you'll often find me as **icyphox** (or just **icy**),
-on the Internet. I'm majoring in Computer Science currently. My primary
-interest is security -- with a focus on influence operations,
-information warfare and state-sponsored actors. I write code on the
-occasion, most of which you can find on my
-[GitHub](https://github.com/icyphox). I currently work for
-[CometChat](https://www.cometchat.com).
-
-I care about software freedom and digital privacy, and I am a staunch
-advocate of the same. I try to use free alternatives to software, if
-they exist.
+on the Internet. I'm majoring in Computer Science. My primary interest
+is security -- with a focus on influence operations, information warfare
+and state-sponsored actors. I care about software freedom, privacy and
+freedom of speech. 
 
 My taste in music is very specific, and I hardly ever experiment. I like
 to stick to subgenres of metal, specifically -- metalcore and deathcore.
@@ -25,15 +19,16 @@ Here are some of my links:
 
 - [Lobsters](https://lobste.rs/u/icy)
 - [Hacker News](https://news.ycombinator.com/user?id=Icyphox)
-- [Reddit](https://reddit.com/u/icyphox)
 - [Steam](https://steamcommunity.com/id/icyphox)
+- [GitHub](https://github.com/icyphox)
+- [git.icyphox.sh](https://git.icyphox.sh)
 - [Last.fm](https://last.fm/user/icyphox)
 
 The only social media I actively use is the fediverse:
 https://toot.icyphox.sh/@x
 
 
-## Contact
+## contact
 
 Send mail to [x@icyphox.sh](mailto:x@icyphox.sh). Should you need it, my
 PGP key: [FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5
@@ -43,13 +38,7 @@ D4C4](/static/gpg.txt). I'm also on IRC @ Freenode and Rizon, usually as
 If you're interested in **hiring me** -- here's my
 [résumé](https://x.icyphox.sh/resume.pdf).
 
-## Donate
-
-I have [Liberapay](https://liberapay.com/icyphox) and
-[Patreon](https://patreon.com/icyphox)! I don't particularly _need_ it,
-but it does help with domain and server costs. :)
-
-## This website
+## this website
 
 This site is built using a small static site generator written by me:
 [vite](https://github.com/icyphox/go-vite). The source for this website

@@ -4,4 +4,8 @@ title: icyphox's blog
 subtitle: Computers, security & computer security.
 ---
 
-# icyphox's blog
+<section class="hero">
+<a href=/>
+<img class="logo" src="/static/white.svg" alt="icyphox's avatar"/>
+</a>
+</section>

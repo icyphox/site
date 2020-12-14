@@ -27,6 +27,10 @@
     <section class="container"> 
       <div class="pull-left">
         <div class="content">
+          <!--
+          <header>
+            {{ .Cfg.Header }}
+          </header>-->
           {{ .Fm.Body }}
           <table>
             <tbody>
@@ -38,10 +42,11 @@
           </table>
           <p><em><b>Note</b>: My current opinions may differ from those expressed in these posts.</em>
         </div>
-      </div>
-      <div class="pull-right">
+      <footer>
         {{ .Cfg.Footer }}
+      </footer>
       </div>
+
     </section>
   </body>
 </html>

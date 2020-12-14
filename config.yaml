@@ -1,5 +1,10 @@
 title: icyphox's blog
-header: "<a href=/>← back</a>"
+header: | 
+    <section class="hero">
+    <a href=/>
+    <img class="logo" src="/static/white.svg" alt="icyphox's avatar"/>
+    </a>
+    </section>
 siteurl: "https://icyphox.sh"
 rssprefixurl: "https://icyphox.sh/blog/" 
 description: "Computers, security and computer security."
@@ -8,8 +13,7 @@ author:
      name: "Anirudh Oppiliappan"
      email: "x@icyphox.sh"
 footer: |
-    <img class="logo" src="/static/white.svg" alt="icyphox's avatar" style="width: 55%"/>
-    <p>
+    <!--<p>
     <span class="sidebar-link">email</span>
     <br>
       <a href="mailto:x@icyphox.sh">x@icyphox.sh</a>
@@ -17,8 +21,8 @@ footer: |
 
     <p>
     <span class="sidebar-link">git</span>
-        <br>
-      <a href="https://git.icyphox.sh">git.icyphox.sh</a>
+    <br>
+    <a href="https://git.icyphox.sh">git.icyphox.sh</a>
     </p> 
 
     <p>
@@ -33,35 +37,32 @@ footer: |
       <a href="/static/gpg.txt">0x8A93F96F78C5D4C4</a>
     </p> 
 
-    <h3>friends</h3>
-    <p>
-    Some of <a href="/friends">my friends</a> and internet bros.
-    </p>
+    -->
 
-    <h3>about</h3>
-    <p>
-    More <a href="/about">about me</a> and my work.
-    </p>
+    <hr>
+    <section>
+        <p>
+        <a href="/about">about</a>
+        &middot;
+        <a href="/uses">uses</a>
+        &middot;
+        <a href="/friends">friends</a>
+        </p>
+    </section>
+    <section class="icons">
+        <a href="https://creativecommons.org/licensjes/by-nc-sa/4.0/">
+        <img class="footimgs" alt="cc nc-by-sa" src="/static/cc.svg">
+        </a>
+        <a href="https://webring.xxiivv.com/#random" target="_blank">
+        <img class="footimgs" alt="xxiivv webring" src="/static/webring.svg">
+        </a>
+        <a href="/blog/feed.xml" >
+        <img class="footimgs" alt="rss feed" src="/static/rss.svg">
+        </a>
+    </section>
 
-    <h3>uses</h3>
-    <p>
-    Hardware and software <a href="/uses">that I use</a>.
-    </p>
-
-
-    <div class="icons">
-    <a href="https://creativecommons.org/licensjes/by-nc-sa/4.0/">
-    <img class="footimgs" alt="cc nc-by-sa" src="/static/cc.svg">
-    </a>
-    <a href="https://webring.xxiivv.com/#random" target="_blank">
-    <img class="footimgs" alt="xxiivv webring" src="/static/webring.svg">
-    </a>
-    <a href="/blog/feed.xml" >
-    <img class="footimgs" alt="rss feed" src="/static/rss.svg">
-    </a>
-    </div>
 
 prebuild:
     # - bin/update_index.py
 postbuild:
-    - bin/plaintext.sh
+    # - bin/plaintext.sh

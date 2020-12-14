@@ -52,7 +52,7 @@ html {
 
 .content > article, p, blockquote, ul {
   line-height: 1.5;
-  font-family: 'Charter';
+  font-family: 'Charter', serif;
   font-feature-settings: normal;
 }
 
@@ -61,7 +61,7 @@ html {
 }
 
 .pull-right > p {
-  font-family:  'Charter';
+  font-family:  'Charter', serif;
 }
 
 /*.content > h1, h2, h3, h4 {
@@ -79,7 +79,7 @@ a:hover {
 }
 
 
-.sitemap a, article a, a:hover {
+article a, a:hover, footer a {
   color: inherit;
   background: 0;
   text-decoration: underline;
@@ -136,7 +136,7 @@ a:hover {
 
 .openring-feed > p {
   padding: 4px 8px 4px;
-  font-family: 'Charter';
+  font-family: 'Charter', serif;
 }
 
 .sep {
@@ -180,7 +180,7 @@ code {
   }
 
   .pull-left {
-    grid-column: 2 / 9;
+    grid-column: 3 / 11;
     grid-row: 1;
   }
   .content {
@@ -226,7 +226,7 @@ code {
     display: hidden;
   }
   .pull-left {
-    grid-column: 4 / 8;
+    grid-column: 5 / 9;
     grid-row: 1;
   }
   .content {
@@ -246,18 +246,20 @@ code {
   }
 }
 
-
 .logo {
-  width: 180px;
-  margin-bottom: 20px;
+  width: 10%;
 }
 
 footer {
-  color: var(--gray);
   bottom: 20px;
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.hero {
+  display: flex;
+  align-items: center; 
 }
 
 header {
@@ -278,7 +280,7 @@ header a:last-child {
 
 .muted {
   color: var(--gray);
-  font-family: 'Charter';
+  font-family: 'Charter', serif;
   font-size: 18px;
 }
 
@@ -308,7 +310,7 @@ td:first-child {
 img {
   max-width: 100%;
   margin: 0 auto;
-  display: block;
+/*  display: block; */
   border: 0px solid transparent;
   border-radius: 5px;
 }
@@ -318,6 +320,7 @@ img {
   color: unset;
   background: unset;
   border-bottom: unset;
+  text-decoration: none;
 }
 
 .icons a:hover {
