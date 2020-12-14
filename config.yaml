@@ -13,32 +13,6 @@ author:
      name: "Anirudh Oppiliappan"
      email: "x@icyphox.sh"
 footer: |
-    <!--<p>
-    <span class="sidebar-link">email</span>
-    <br>
-      <a href="mailto:x@icyphox.sh">x@icyphox.sh</a>
-    </p> 
-
-    <p>
-    <span class="sidebar-link">git</span>
-    <br>
-    <a href="https://git.icyphox.sh">git.icyphox.sh</a>
-    </p> 
-
-    <p>
-    <span class="sidebar-link">fediverse</span>
-    <br>
-    <a rel="me" href="https://toot.icyphox.sh/@x">@x@toot.icyphox.sh</a>
-    </p> 
-
-    <p>
-    <span class="sidebar-link">pgp</span>
-    <br>
-      <a href="/static/gpg.txt">0x8A93F96F78C5D4C4</a>
-    </p> 
-
-    -->
-
     <hr>
     <section>
         <p>
