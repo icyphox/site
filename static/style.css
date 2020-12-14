@@ -258,8 +258,7 @@ footer {
 }
 
 .hero {
-  display: flex;
-  align-items: center; 
+  float: left;
 }
 
 header {
