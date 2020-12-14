@@ -5,4 +5,4 @@ git clone https://github.com/icyphox/go-vite
 cd go-vite && make && cd ..
 mkdir build
 go-vite/vite build
-mv pages/txt build/
+# mv pages/txt build/
