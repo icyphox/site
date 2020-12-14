@@ -175,6 +175,9 @@ code {
     grid-row: 1;
   }
 
+  .logo {
+    width: 10% !important;
+  }
   .sep {
     display: hidden;
   }
@@ -208,6 +211,10 @@ code {
     grid-column: 8 / 10;
     padding-left: 10%;
     grid-row: 1;
+  }
+
+  .logo {
+    width: 10% !important;
   }
 
   html {
@@ -247,7 +254,7 @@ code {
 }
 
 .logo {
-  width: 10%;
+  width: 14%;
 }
 
 footer {
