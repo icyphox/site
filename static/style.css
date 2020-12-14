@@ -338,6 +338,11 @@ img {
 
 h2 { 
   color: var(--dark);
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 28px;
 }
 
 h3 {
