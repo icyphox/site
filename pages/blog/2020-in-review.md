@@ -96,7 +96,7 @@ starting a full-time job at a company I find really exciting!
 I have a few blog post ideas that I didn't get around to writing this
 year, so expect to see a few of those. The new job will involve a lot of
 infra-related work -- I'm certain my incredibly sought after insights on
-those things will find their way here.
+those things will find their way here, as well.
 
 Anyway, I'm going to enjoy the rest of this year playing Runeterra and
 Halo MCC. On to greater things in 2021, and I'll see you next year!
