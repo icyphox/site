@@ -18,7 +18,7 @@ to stick to subgenres of metal, specifically -- metalcore and deathcore.
 Here are some of my links:
 
 - [Lobsters](https://lobste.rs/u/icy)
-- [Hacker News](https://news.ycombinator.com/user?id=Icyphox)
+- [Hacker News](https://news.ycombinator.com/user?id=icy)
 - [Steam](https://steamcommunity.com/id/icyphox)
 - [GitHub](https://github.com/icyphox)
 - [git.icyphox.sh](https://git.icyphox.sh)
