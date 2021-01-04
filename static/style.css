@@ -5,29 +5,11 @@
 
 @supports (font-variation-settings: normal) {
   html { 
-    font-family: 'Charter', sans-serif; 
+    font-family: sans-serif; 
     font-feature-settings: 'ss01' 1, 'kern' 1, 'liga' 1, 'zero' 1, 
     'cv03' 1, 'cv02' 1, 'cv04' 1, 'tnum' 1; 
   }
 }
-
-@font-face {
-  font-family: 'Charter';
-  src: url('/static/fonts/charter_italic.woff') format('woff');
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'Charter';
-  src: url('/static/fonts/charter_bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Charter';
-  src: url('/static/fonts/charter_regular.woff') format('woff');
-}
-
 
 :root {
   --bg: #fff;
@@ -52,7 +34,7 @@ html {
 
 .content > article, p, blockquote, ul {
   line-height: 1.5;
-  font-family: 'Charter', serif;
+  font-family: serif;
   font-feature-settings: normal;
 }
 
@@ -61,7 +43,7 @@ html {
 }
 
 .pull-right > p {
-  font-family:  'Charter', serif;
+  font-family:  serif;
 }
 
 /*.content > h1, h2, h3, h4 {
@@ -136,7 +118,7 @@ article a, a:hover, footer a {
 
 .openring-feed > p {
   padding: 4px 8px 4px;
-  font-family: 'Charter', serif;
+  font-family: serif;
 }
 
 .sep {
@@ -292,7 +274,7 @@ header a:last-child {
 
 .muted {
   color: var(--gray);
-  font-family: 'Charter', serif;
+  font-family: serif;
   font-size: 18px;
 }
 
