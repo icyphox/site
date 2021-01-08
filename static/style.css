@@ -15,7 +15,7 @@ body {
 
 html {
   /* background: var(--bg);*/
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -182,15 +182,15 @@ code {
   }
 
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   code {
-    font-size: 19px;
+    font-size: 17px;
   }
 
   pre {
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .sep {
@@ -360,4 +360,9 @@ hr {
   max-width: 100%;
   padding-bottom: 5px;
   cursor: pointer;
+}
+
+.post-date {
+  float: left;
+  color: var(--gray);
 }
