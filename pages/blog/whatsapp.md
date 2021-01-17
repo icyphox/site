@@ -6,6 +6,9 @@ subtitle: Let's not act surprised here, this was bound to happen
 date: 2021-01-08
 ---
 
+**Update 2021-01-17**: I'm now using Signal. It's fine for now, but [we
+can do better](/blog/signal).
+
 Ever since Facebook acquired WhatsApp for $19bn, it was blatantly
 obvious that they wanted in on the massive userbase, and consequently,
 the data they could collect. The acquisition wasn't all too bad at
