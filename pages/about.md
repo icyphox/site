@@ -13,9 +13,9 @@ and state-sponsored actors. I also dabble in infrastructure. I
 currently work for [DeepSource](https://deepsource.io).
 
 I care about software freedom, privacy and freedom of speech -- yes I'm
-a free speech absolutist. I have other varied interests, but to sum them
-up: I listen to heavy music (metalcore/deathcore), read high fantasy,
-and play card games.
+a free speech absolutist. I have other varied interests, in summary: I
+listen to heavy music (metalcore/deathcore), read high fantasy, and play
+card games.
 
 Here are some of my links:
 
