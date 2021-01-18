@@ -9,11 +9,13 @@ subtitle: Stuff about me, and stuff.
 I'm Anirudh, but you'll often find me as **icyphox** (or just **icy**),
 on the Internet. I'm majoring in Computer Science. My primary interest
 is security -- with a focus on influence operations, information warfare
-and state-sponsored actors. I care about software freedom, privacy and
-freedom of speech. 
+and state-sponsored actors. I also dabble in infrastructure. I
+currently work for [DeepSource](https://deepsource.io).
 
-My taste in music is very specific, and I hardly ever experiment. I like
-to stick to subgenres of metal, specifically -- metalcore and deathcore.
+I care about software freedom, privacy and freedom of speech -- yes I'm
+a free speech absolutist. I have other varied interests, but to sum them
+up: I listen to heavy music (metalcore/deathcore), read high fantasy,
+and play card games.
 
 Here are some of my links:
 
