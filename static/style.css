@@ -127,7 +127,7 @@ pre > code {
 
 code {
   font-variant: normal;
-  font-size: 18px !important;
+  font-size: 16px !important;
   color: var(--dark);
   border-bottom: unset;
 }
@@ -183,7 +183,7 @@ code {
   }
 
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   code {
@@ -258,7 +258,7 @@ header a:last-child {
 .muted {
   color: var(--gray);
   font-family: serif;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .muted a {
@@ -297,16 +297,20 @@ img {
   font-weight: normal;
   font-variant: unset;
   color: var(--dark);
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 h2 { 
   color: var(--dark);
-  font-size: 22px;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 24px;
+  margin: 0px;
+  padding: 0px;
 }
 
 h3 {
