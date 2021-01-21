@@ -36,6 +36,7 @@ html {
 a {
   color: var(--gray);
   text-decoration: none;
+  word-wrap: break-word;
 }
 
 a:hover {
