@@ -35,14 +35,12 @@
             {{ .Cfg.Header }}
           </header>-->
           {{ .Fm.Body }}
-          <table>
-            <tbody>
             {{ range $_, $post := .Posts }}
-            <tr>
-              <td align="left"><a href="/blog/{{ $post.Fm.URL }}">{{ $post.Fm.Title }}</a></td>
-            </tr>
+            <section class="post">
+              <time>{{ $post.Fm.Date.Format "02 January, 2006" }}</time>
+              <a href="/blog/{{ $post.Fm.URL }}">{{ $post.Fm.Title }}</a>
+            </section>
             {{ end }}
-          </table>
           <p><em><b>Note</b>: My current opinions may differ from those expressed in these posts.</em>
         </div>
       <footer>

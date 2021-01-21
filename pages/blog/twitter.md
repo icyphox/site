@@ -116,5 +116,5 @@ own echo chambers like Gab. Oh, and the other side propagates massive
 blocklists for the tiniest of infractions (defined by them), so they
 effectively echo chambered themselves too. I'm not complaining.
 
-> "All social media sucks, but the fediverse sucks less."
->                                           — Me, 2020
+> "All social media sucks, but the fediverse sucks less."  
+> — Me, 2020

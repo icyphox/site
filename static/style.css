@@ -332,7 +332,7 @@ p {
 
 blockquote {
   border-left: 0.25rem solid var(--gray);
-  color: var(--gray);
+  color: var(--dark);
   font-style: italic;
   margin: .8rem 0;
   padding: .5rem 1rem
@@ -365,4 +365,13 @@ hr {
 .post-date {
   float: left;
   color: var(--gray);
+}
+
+.post {
+  height: 100%;
+  padding: 7px 0 7px 0;
+}
+
+time {
+  float: right;
 }
