@@ -15,7 +15,7 @@ body {
 
 html {
   /* background: var(--bg);*/
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -117,7 +117,7 @@ pre {
   padding: 10px;
   min-width: 0;
   background-color: var(--code-bg) !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
 }
 
 pre > code {
@@ -269,20 +269,6 @@ table {
   width: 100%;
 }
 
-td {
-  white-space: nowrap;
-}
-
-
-
-td:first-child {
-  width: 100%;
-  max-width: 1px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
 img {
   max-width: 100%;
   margin: 0 auto;
@@ -367,11 +353,11 @@ hr {
   color: var(--gray);
 }
 
-.post {
-  height: 100%;
-  padding: 7px 0 7px 0;
+.index-date {
+  white-space: nowrap;
+  vertical-align: baseline;
 }
 
-time {
-  float: right;
+.index-post {
+  padding-bottom: 5px;
 }
