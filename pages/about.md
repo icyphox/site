@@ -7,15 +7,32 @@ subtitle: Stuff about me, and stuff.
 # Hi.
 
 I'm Anirudh, but you'll often find me as **icyphox** (or just **icy**),
-on the Internet. I'm majoring in Computer Science. My primary interest
-is security -- with a focus on influence operations, information warfare
-and state-sponsored actors. I also dabble in infrastructure. I
-currently work for [DeepSource](https://deepsource.io).
+on the Internet. I currently work as a Site Reliability Engineer at
+[DeepSource](https://deepsource.io).
 
-I care about software freedom, privacy and freedom of speech -- yes I'm
-a free speech absolutist. I have other varied interests, in summary: I
-listen to heavy music (metalcore/deathcore), read high fantasy, and play
-card games.
+Here's a list of things that I'm interested in, or care deeply about
+(also serve as good conversation starters if you want to talk to me!):
+
+- security
+    - low level stuff (think: binary/kernel exploitation)
+    - threat research
+    - physical vectors
+    - disinformation
+    - state-sponsored actors
+- privacy
+    - secure communications
+    - operational security
+    - anti-surveillance
+- free software
+- infrastructure
+    - monitoring and observability
+    - distributed systems
+- heavy music
+    - metalcore
+    - deathcore
+- strategy games (I'm not very good at them)
+    - Runeterra
+    - Dota 2
 
 Here are some of my links:
 
@@ -35,7 +52,8 @@ https://toot.icyphox.sh/@x
 Send mail to [x@icyphox.sh](mailto:x@icyphox.sh). Should you need it, my
 PGP key: [FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5
 D4C4](/static/gpg.txt). I'm also on IRC @ Freenode and Rizon, usually as
-`icy` / `icyphox`.
+`icy` / `icyphox`. I welcome you to reach out to me, even if it's just
+to say hi! I always reply.
 
 If you're interested in **hiring me** -- here's my
 [résumé](https://x.icyphox.sh/resume.pdf).
