@@ -36,9 +36,10 @@
           </header>-->
           {{ .Fm.Body }}
             <table>
+            {{ $datefmt := .Cfg.DateFmt }}
             {{ range $_, $post := .Posts }}
             <tr>
-              <td align="left" class="index-date">{{ $post.Fm.Date.Format "02 Jan 2006" }}</td>
+              <td align="left" class="index-date">{{ $post.Fm.Date.Format $datefmt }}</td>
               <td align="left" class="index-post">
               <a href="/blog/{{ $post.Fm.URL }}">{{ $post.Fm.Title }}</a>
               </td>
