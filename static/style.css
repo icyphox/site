@@ -240,11 +240,8 @@ footer {
 }
 
 header {
-  top: 30px;
-  display: inline-block;
   width: 100%;
   text-align: left;
-  padding-bottom: 2%;
 }
 
 header a {
