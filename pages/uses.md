@@ -17,6 +17,9 @@ my primarily computing device. A comfy machine, fairly future-proof
 machine that happens to support Linux/BSD incredibly well
 out-of-the-box.
 
+**MacBook Pro 13" (2019)**: i5, 8GB RAM, 128GB SSD. My work machine. Not
+a huge fan of macOS, but hey -- it could be worse.
+
 **Ducky One 2 SF**: 65% mechanical keyboard, Cherry MX Speed Silver
 switches. I've written about it in detail [here](/blog/ducky-one-2).
 
