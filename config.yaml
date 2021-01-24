@@ -1,10 +1,18 @@
 title: icyphox's blog
 header: | 
-    <section class="hero">
+    <div class="topnav">
     <a href=/>
     <img class="logo" src="/static/white.svg" alt="icyphox's avatar"/>
     </a>
-    </section>
+    <nav>
+    <a href="/about">about</a>
+    &middot;
+    <a href="/uses">uses</a>
+    &middot;
+    <a href="/friends">friends</a>
+    </nav>
+    </div>
+
 siteurl: "https://icyphox.sh"
 rssprefixurl: "https://icyphox.sh/blog/" 
 description: "Computers, security and computer security."
@@ -13,16 +21,6 @@ author:
      name: "Anirudh Oppiliappan"
      email: "x@icyphox.sh"
 footer: |
-    <hr>
-    <section>
-        <p>
-        <a href="/about">about</a>
-        &middot;
-        <a href="/uses">uses</a>
-        &middot;
-        <a href="/friends">friends</a>
-        </p>
-    </section>
     <section class="icons">
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
         <img class="footimgs" alt="cc nc-by-sa" src="/static/cc.svg">

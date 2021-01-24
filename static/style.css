@@ -44,7 +44,7 @@ a:hover {
   color: var(--dark);
 }
 
-article a, a:hover, footer a {
+article a, a:hover, footer a, header a {
   color: inherit;
   background: 0;
   text-decoration: underline;
@@ -235,21 +235,9 @@ footer {
   padding-left: 0.3em;
 }
 
-.hero {
-  float: left;
-}
-
-header {
-  width: 100%;
-  text-align: left;
-}
-
-header a {
-  margin-right: 20px;
-}
-
-header a:last-child {
-  margin-right: 0
+nav {
+  padding-top: 14px;
+  float: right;
 }
 
 .muted {
@@ -351,7 +339,6 @@ hr {
 }
 
 .post-date {
-  float: left;
   color: var(--gray);
 }
 

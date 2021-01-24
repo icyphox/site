@@ -32,13 +32,11 @@
           <header>
             {{ .Cfg.Header }}
           </header>
-          <!--<section style="float: right">
-            view in <a href="/txt/{{ .Fm.URL }}.txt">plain-text</a>
-          </section>-->
-          <section class="post-date">
-            {{ .Fm.Date }}
-          </section>
           <article style="clear: both" align="left">
+            <section class="post-date">
+              {{ .Fm.Date }}
+            </section>
+
             <h1>{{ .Fm.Title }}</h1>
             <h2 class="subtitle">{{ .Fm.Subtitle }}</h2>
             {{ .Fm.Body }} 
