@@ -1,6 +1,5 @@
 title: icyphox's blog
 header: | 
-    <div class="topnav">
     <a href=/>
     <img class="logo" src="/static/white.svg" alt="icyphox's avatar"/>
     </a>
@@ -11,7 +10,6 @@ header: |
     &middot;
     <a href="/friends">friends</a>
     </nav>
-    </div>
 
 siteurl: "https://icyphox.sh"
 rssprefixurl: "https://icyphox.sh/blog/" 

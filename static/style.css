@@ -51,10 +51,6 @@ article a, a:hover, footer a, header a {
   outline: 0;
 }
 
-.navbar {
-  margin: 2px 0;
-}
-
 .sidebar-link {
   font-size: 15px;
   color: var(--darker);
@@ -236,8 +232,12 @@ footer {
 }
 
 nav {
-  padding-top: 14px;
   float: right;
+  transform: translateY(60%);
+}
+
+header {
+  margin-bottom: 10px;
 }
 
 .muted {
