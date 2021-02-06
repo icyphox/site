@@ -32,7 +32,7 @@ subtitle: My friends and internet bros.
 - [xrisk](https://rishav.io)
 - [vologue](https://vologue.cf)
 - [pryr](https://pryr.xyz)
-- [awalvie](https://awalwie.me)
+- [awalvie](https://awalvie.me)
 - [deavmi](http://deavmi.assigned.network/)
 
 ### not people
