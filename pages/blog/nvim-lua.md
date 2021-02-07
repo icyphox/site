@@ -306,4 +306,4 @@ all be Vim plugin artists now.
 
 [^5]: A less bloated alternative to fzf, written in C.
 [^6]: [GitHub link](https://github.com/icyphox/dotfiles/tree/master/config/nvim) --
-  if you're into that sort of thing.
+      if you're into that sort of thing.
