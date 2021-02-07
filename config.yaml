@@ -18,6 +18,7 @@ datefmt: "02 Jan, 2006"
 author: 
      name: "Anirudh Oppiliappan"
      email: "x@icyphox.sh"
+syntax: 'bw'
 footer: |
     <section class="icons">
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
@@ -36,3 +37,4 @@ prebuild:
     # - bin/update_index.py
 postbuild:
     # - bin/plaintext.sh
+
