@@ -253,9 +253,9 @@ highlights yet, so whip out that `vim.api.nvim_exec()`.
 
 vim.api.nvim_exec(
 [[
-	hi PrimaryBlock   ctermfg=06 ctermbg=00
-	hi SecondaryBlock ctermfg=08 ctermbg=00
-	hi Blanks   ctermfg=07 ctermbg=00
+  hi PrimaryBlock   ctermfg=06 ctermbg=00
+  hi SecondaryBlock ctermfg=08 ctermbg=00
+  hi Blanks   ctermfg=07 ctermbg=00
 ]], false)
 ```
 
@@ -282,7 +282,8 @@ local stl = {
 }
 ```
 
-Finally, with the power of `table.concat()`, set your statusline.
+Finally, with the power of `table.concat()`, set your statusline. This
+is akin to doing a series of string concatenations, but way faster.
 
 ```lua
 -- statusline.lua
