@@ -297,10 +297,14 @@ vim.o.statusline = table.concat(stl)
 
 You can now write that plugin you always wished for! I sat down to write
 a plugin for [fzy](https://github.com/jhawthorn/fzy)[^5], which you can
-find [here](https://git.icyphox.sh/dotfiles/tree/config/nvim/lua/fzy). I
-plan to port a the last of my `plugin/` directory over to Lua, soon™.
+find [here](https://git.icyphox.sh/dotfiles/tree/config/nvim/lua/fzy)
+along with my entire Neovim config[^6]. I plan to port a the last of my
+`plugin/` directory over to Lua, soon™.
 
 And it's only going to get better when the Lua API is completed. We can
 all be Vim plugin artists now.
 
 [^5]: A less bloated alternative to fzf, written in C.
+[^6]: [GitHub
+  link](https://github.com/icyphox/dotfiles/tree/master/config/nvim) --
+  if you're into that sort of thing.
