@@ -305,6 +305,5 @@ And it's only going to get better when the Lua API is completed. We can
 all be Vim plugin artists now.
 
 [^5]: A less bloated alternative to fzf, written in C.
-[^6]: [GitHub
-  link](https://github.com/icyphox/dotfiles/tree/master/config/nvim) --
+[^6]: [GitHub link](https://github.com/icyphox/dotfiles/tree/master/config/nvim) --
   if you're into that sort of thing.
