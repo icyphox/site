@@ -40,6 +40,7 @@ generate_index() {
             fi
         }
     done
+    exit 0
 }
 
 link() {
