@@ -6,13 +6,11 @@ url: identity
 date: 2021-03-17
 ---
 
-## the name
+![the motif](/static/white.svg)
 
 There isn't much behind **icyphox**. A common explaination I like to
 give: I like the color of ice, and I like foxes; "icyfox" was taken, so
 "icyphox" was the next best thing.
-
-## the colors and  fonts
 
 I used to use shades of cyan (`#00ffff`) along with a cyanish black
 (`#021012`) in the past. You may have noticed this if you had visited
@@ -23,13 +21,9 @@ foregrounds, and a plain white background.
 The fonts are set to `serif`, in this site's CSS. You are viewing your
 local system's serif font.
 
-## the motif
-
 There were many iterations of the motif, but I finally settled down on
-the monochrome, silhouette-esque one. Naturallly, the motif is inspired
-by a fox. I am, however, not a furry.
-
-![the motif](/static/white.svg)
+the monochrome, silhouette-esque one. Naturallly, the motif draws
+inspiration from the fox.
 
 The original design by [nerdypepper](https://peppe.rs):
 
