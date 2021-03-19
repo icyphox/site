@@ -23,7 +23,7 @@ template: page.html
 }
 
 generate_index() {
-    mapfile -d $'\0' entries < <(find "$WIKI_PATH" ! -path "$WIKI_PATH" -print0)
+    mapfile -t entries < <(find "$WIKI_PATH" ! -path "$WIKI_PATH")
     prevdir=''
     for r in "${entries[@]}"; do
         path="$(basename "$r")"
