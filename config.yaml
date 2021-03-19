@@ -32,7 +32,7 @@ footer: |
 
 
 prebuild:
-  - bin/wiki.sh
+  # - bin/wiki.sh
 postbuild:
     # - bin/plaintext.sh
 
