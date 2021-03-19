@@ -6,8 +6,8 @@ subtitle: Reaching me, if you need to.
 date: 2021-03-19
 ---
 
-Send mail to x@icyphox.sh. Should you need it, my [PGP
-key](/static/gpg.txt):
+Send mail to [x@icyphox.sh](mailto:x@icyphox.sh). Should you need it, my
+[PGP key](/static/gpg.txt):
 
 ```
 FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4
