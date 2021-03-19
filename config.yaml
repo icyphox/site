@@ -4,11 +4,9 @@ header: |
     <img class="logo" src="/static/white.svg" alt="icyphox's avatar"/>
     </a>
     <nav>
-    <a href="/about">about</a>
+    <a href="/">blog</a>
     &middot;
-    <a href="/uses">uses</a>
-    &middot;
-    <a href="/friends">friends</a>
+    <a href="/wiki">wiki</a>
     </nav>
 
 siteurl: "https://icyphox.sh"

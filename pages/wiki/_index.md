@@ -1,10 +1,11 @@
 ---
-title: wiki
+title: Wiki
 subtitle: Ideas, beliefs and thoughts.
+date: 2021-03-19
 template: page.html
 ---
 
-# The wiki.
-
 - [identity](/wiki/identity)
-  - [name](/wiki/identity/name)
+- [about](/wiki/about)
+  - [anirudh](/wiki/about/anirudh)
+  - [contact](/wiki/about/contact)

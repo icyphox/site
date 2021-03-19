@@ -2,37 +2,8 @@
 template: page.html
 title: about
 subtitle: Stuff about me, and stuff.
+date: 2021-03-18
 ---
-
-# Hi.
-
-I'm Anirudh, but you'll often find me as **icyphox** (or just **icy**),
-on the Internet. I currently work as a Site Reliability Engineer at
-[DeepSource](https://deepsource.io).
-
-Here's a list of things that I'm interested in, or care deeply about
-(also serve as good conversation starters if you want to talk to me!):
-
-- security
-    - low level stuff (think: binary/kernel exploitation)
-    - threat research
-    - physical vectors
-    - disinformation
-    - state-sponsored actors
-- privacy
-    - secure communications
-    - operational security
-    - anti-surveillance
-- free software
-- infrastructure
-    - monitoring and observability
-    - distributed systems
-- heavy music
-    - metalcore
-    - deathcore
-- strategy games (I'm not very good at them)
-    - Runeterra
-    - Dota 2
 
 Here are some of my links:
 

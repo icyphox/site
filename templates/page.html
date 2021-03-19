@@ -23,20 +23,23 @@
   <meta name="theme-color" content="#ffffff">
 </head>
   <title>
-    {{ .Fm.Title }}
+    {{ .Fm.URL }}
   </title>
 
   <body> 
     <section class="container"> 
-
       <div class="pull-left">
         <div class="content">
-
       <header>
         {{ .Cfg.Header }}
       </header>
+      <article style="clear: both" align="left">
+        <small style="float: right">
+          updated: {{ .Fm.Date }}
+        </small>
 
-      <article>
+        <h1>{{ .Fm.Title }}</h1>
+        <h2 class="subtitle">{{ .Fm.Subtitle }}</h2>
         {{ .Fm.Body }} 
       </article>
         </div>
