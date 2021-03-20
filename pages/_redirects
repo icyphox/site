@@ -1,1 +1,3 @@
 http://icyphox.netlify.com/* http://icyphox.sh/:splat 301!
+/about /wiki/about
+/friends /wiki/friends
