@@ -33,4 +33,4 @@ This is a list of terms that I associate with:
     - deathcore
 
 
-_also see_: [identity](/wiki/identity)
+_also see_: [identity](/wiki/about/identity)
