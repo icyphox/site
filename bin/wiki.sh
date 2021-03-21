@@ -12,13 +12,13 @@ noext() {
 
 topic() {
     entry="$1"
-    mkdir "$WIKI_PATH"/entry
+    mkdir "$WIKI_PATH/$entry"
     printf '%s' "---
 title: $entry
 subtitle:
 date: $(date +'%Y-%m-%d')
 template: page.html
----" > "$WIKI_PATH"/entry/_index.md
+---" > "$WIKI_PATH/$entry/"_index.md
 
 }
 

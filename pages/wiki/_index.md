@@ -11,3 +11,5 @@ template: page.html
   - [identity](/wiki/about/identity)
 - [friends](/wiki/friends)
 - [todo](/wiki/todo)
+- [tools](/wiki/tools)
+  - [cwm](/wiki/tools/cwm)
