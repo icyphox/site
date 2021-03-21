@@ -3,16 +3,18 @@ template: page.html
 url: anirudh
 title: anirudh
 subtitle: This is who I am.
-date: 2021-03-19
+date: 2021-03-21
 ---
 
 ![anirudh masked](https://x.icyphox.sh/anirudh-mask.jpeg)
 
-My real name is **Anirudh Oppiiappan**, but you'll find me as
+My real name is **Anirudh Oppiliappan**, but you'll find me as
 **icyphox** (or just **icy**), on the Internet. I currently work as a
 Site Reliability Engineer at [DeepSource](https://deepsource.io).
 
-This is a list of terms that I associate with:
+I currently reside in **Bangalore, India**.
+
+Some of my interests include:
 
 - security
     - threat research
@@ -32,5 +34,7 @@ This is a list of terms that I associate with:
     - metalcore
     - deathcore
 
-
-_also see_: [identity](/wiki/about/identity)
+> A hacker is someone who enjoys playful cleverness -- not necessarily
+> with computers.
+>
+> -- Richard Matthew Stallman
