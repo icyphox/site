@@ -2,7 +2,7 @@
 template: page.html
 url: anirudh
 title: anirudh
-subtitle: This is who I am.
+subtitle: A systems generalist, with roots in security, privacy and software freedom.
 date: 2021-03-21
 ---
 

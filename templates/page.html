@@ -34,13 +34,15 @@
         {{ .Cfg.Header }}
       </header>
       <article style="clear: both" align="left">
-        <small style="float: right">
-          updated: {{ .Fm.Date }}
-        </small>
 
         <h1>{{ .Fm.Title }}</h1>
         <h2 class="subtitle">{{ .Fm.Subtitle }}</h2>
         {{ .Fm.Body }} 
+
+        <p class="post-date">
+          <em>last updated</em>: {{ .Fm.Date }}
+        </p>
+
       </article>
         </div>
         <footer>
