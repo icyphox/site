@@ -5,7 +5,7 @@ subtitle: This website serves my mind, digitized.
 date: 2021-03-20
 ---
 
-This site is built using [vite](https://git.icyphox.sh/vite) a static
+This site is built using [vite](https://git.icyphox.sh/vite) -- a static
 site generator written in Go. The wiki index is generated using a [shell
 script](https://git.icyphox.sh/site/tree/bin/wiki.sh), with heavy use of
 bashisms. This script runs prior to vite, and preps the wiki index
