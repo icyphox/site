@@ -267,9 +267,11 @@ table {
 img {
   max-width: 100%;
   margin: 0 auto;
+}
+
+article img {
+  max-width: 100%;
 /*  display: block; */
-  border: 0px solid transparent;
-  border-radius: 5px;
 }
 
 

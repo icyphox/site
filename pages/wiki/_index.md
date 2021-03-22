@@ -1,7 +1,7 @@
 ---
 title: Wiki
 subtitle: Ideas, beliefs and thoughts.
-date: 2021-03-21
+date: 2021-03-22
 template: page.html
 ---
 
@@ -13,3 +13,4 @@ template: page.html
 - [todo](/wiki/todo)
 - [tools](/wiki/tools)
   - [cwm](/wiki/tools/cwm)
+  - [laptop](/wiki/tools/laptop)
