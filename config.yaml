@@ -18,6 +18,7 @@ author:
      email: "x@icyphox.sh"
 syntax: 'bw'
 footer: |
+    <hr>
     <section class="icons">
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
         <img class="footimgs" alt="cc nc-by-sa" src="/static/cc.svg">
@@ -28,7 +29,7 @@ footer: |
         <a href="/blog/feed.xml" >
         <img class="footimgs" alt="rss feed" src="/static/rss.svg">
         </a>
-    </section>
+      </section>
 
 
 prebuild:
