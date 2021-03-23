@@ -1,7 +1,7 @@
 title: icyphox's blog
 header: |
     <a href=/>
-    <img class="logo" src="/static/white.svg" alt="icyphox's avatar"/>
+    <img src="/static/white.svg" alt="icyphox's avatar" height="70"/>
     </a>
     <nav>
     <a href="/">blog</a>
@@ -18,7 +18,6 @@ author:
      email: "x@icyphox.sh"
 syntax: 'bw'
 footer: |
-    <hr>
     <section class="icons">
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
         <img class="footimgs" alt="cc nc-by-sa" src="/static/cc.svg">

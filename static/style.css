@@ -12,12 +12,25 @@
 * {
   box-sizing: border-box;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 main {
-  padding: 10px;
   font-family: serif;
-  font-size: 16px
+  font-size: 16px;
+  padding: 0;
+  margin: 10px;
+  line-height: 160%;
+}
+
+main h2:first-of-type {
+  font-size: 20px;
+  padding: 0 0 20px 0;
+}
+
+main h1, h2, h3 {
+  padding: 30px 0 20px 0;  
 }
 
 .icons img {
@@ -38,10 +51,6 @@ a {
   color: #000
 }
 
-main {
-  margin: 0;
-}
-
 main a {
   color: var(--darker);
   text-decoration: underline;
@@ -57,18 +66,22 @@ table a:hover {
 
 body {
   max-width: 640px;
+  padding: 30px;
+  margin: 0;
 }
 
-main img {
+main article img {
   max-width: 100%;
   display: block;
-  margin: 0 0 15px;
+  margin: 0 0 15px 0;
 }
 
-main h2 {
-  font-size: 20px;
-  margin: 0px;
-  padding: 0px;
+main ul, main ol {
+	margin: 0 30px 30px 30px
+}
+
+main ul ul {
+	margin-bottom: 0
 }
 
 .subtitle {
@@ -77,10 +90,6 @@ main h2 {
   font-variant: unset;
   color: var(--dark);
   padding-bottom: 20px;
-}
-
-header img {
-  max-width: 10%;
 }
 
 .muted {
@@ -115,6 +124,7 @@ table {
 .index-date {
   white-space: nowrap;
   vertical-align: baseline;
+  color: var(--gray);
 }
 
 .index-post {
@@ -123,7 +133,7 @@ table {
 
 nav {
   float: right;
-  transform: translateY(-200%);
+  transform: translateY(30%);
 }
 
 hr {
@@ -133,5 +143,13 @@ hr {
 }
 
 footer {
-  margin: 20px 0 40px 0px;
+  margin: 20px 0 40px 10px;
+}
+
+header img {
+  transform: translateY(-30%);
+}
+
+.post-date {
+  color: var(--gray);
 }
