@@ -71,7 +71,7 @@ table a:hover {
 
 body {
   max-width: 640px;
-  padding: 30px;
+  padding: 20px;
   margin: 0;
 }
 
@@ -152,7 +152,7 @@ footer {
 }
 
 header img {
-  transform: translateY(-30%);
+  transform: translateY(-10%);
 }
 
 .post-date {
