@@ -24,13 +24,17 @@ main {
   line-height: 160%;
 }
 
+main h1 {
+  padding: 10px 0 10px 0;
+}
+
+main h2, h3 {
+  padding: 30px 0 20px 0;
+}
+
 main h2:first-of-type {
   font-size: 20px;
   padding: 0 0 20px 0;
-}
-
-main h1, h2, h3 {
-  padding: 30px 0 20px 0;  
 }
 
 .icons img {
@@ -49,6 +53,7 @@ a {
   box-sizing: border-box;
   text-decoration: none;
   color: #000
+  word-wrap: break-word;
 }
 
 main a {
@@ -152,4 +157,11 @@ header img {
 
 .post-date {
   color: var(--gray);
+}
+
+blockquote p {
+  font-style: italic;
+  color: var(--darker);
+  padding-left: 20px;
+  border-left: 3px solid var(--gray);
 }
