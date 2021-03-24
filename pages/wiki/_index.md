@@ -1,5 +1,5 @@
 ---
-title: Wiki
+title: the wiki
 subtitle: Ideas, beliefs and thoughts.
 date: 2021-03-23
 template: page.html
