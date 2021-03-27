@@ -12,7 +12,7 @@ My real name is **Anirudh Oppiliappan**, but you'll find me as
 **icyphox** (or just **icy**), on the Internet. I currently work as a
 Site Reliability Engineer at [DeepSource](https://deepsource.io).
 
-I currently reside in **Bangalore, India**.
+At present, I reside in **Bangalore, India**.
 
 Some of my interests include:
 
