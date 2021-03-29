@@ -20,13 +20,16 @@ syntax: 'bw'
 footer: |
     <section class="icons">
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-        <img class="footimgs" alt="cc nc-by-sa" src="/static/cc.svg">
+        <img alt="cc nc-by-sa" src="/static/cc.svg">
         </a>
         <a href="https://webring.xxiivv.com/#random" target="_blank">
-        <img class="footimgs" alt="xxiivv webring" src="/static/webring.svg">
+        <img alt="xxiivv webring" src="/static/webring.svg">
         </a>
         <a href="/blog/feed.xml" >
-        <img class="footimgs" alt="rss feed" src="/static/rss.svg">
+        <img alt="rss feed" src="/static/rss.svg">
+        </a>
+        <a href="https://git.icyphox.sh">
+        <img alt="git" src="/static/git.svg">
         </a>
       </section>
 

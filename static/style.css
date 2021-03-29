@@ -43,7 +43,7 @@ main h2:first-of-type {
   vertical-align: text-top;
   image-orientation: from-image;
   max-width: 100%;
-  padding-bottom: 5px;
+  padding: 0 0 5px 3px;
   cursor: pointer;
 }
 
