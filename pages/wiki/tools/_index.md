@@ -12,5 +12,4 @@ This is a meta-page, with links to each tool.
 - [openbsd](/wiki/tools/openbsd)
 - [cwm](/wiki/tools/cwm)
 - [phone](/wiki/tools/phone)
-- [keyboard](/wiki/tools/keyboard)
 - [laptop](/wiki/tools/laptop)
