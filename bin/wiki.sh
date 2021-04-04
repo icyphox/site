@@ -58,7 +58,7 @@ link() {
 if [ "$#" -eq 0 ]; then
     printf '%s' "---
 title: the wiki
-subtitle: Ideas, beliefs and thoughts.
+subtitle: Ideas, thoughts and strongy held opinions.
 date: $(date +'%Y-%m-%d')
 template: page.html
 ---

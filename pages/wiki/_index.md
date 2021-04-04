@@ -1,6 +1,6 @@
 ---
 title: the wiki
-subtitle: Ideas, beliefs and thoughts.
+subtitle: Ideas, thoughts and strongy held opinions.
 date: 2021-04-04
 template: page.html
 ---
