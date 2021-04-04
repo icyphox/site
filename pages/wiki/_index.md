@@ -1,7 +1,7 @@
 ---
 title: the wiki
 subtitle: Ideas, beliefs and thoughts.
-date: 2021-03-29
+date: 2021-04-04
 template: page.html
 ---
 
@@ -14,5 +14,7 @@ template: page.html
 - [tools](/wiki/tools)
   - [cwm](/wiki/tools/cwm)
   - [laptop](/wiki/tools/laptop)
+  - [neovim](/wiki/tools/neovim)
+  - [openbsd](/wiki/tools/openbsd)
   - [phone](/wiki/tools/phone)
   - [vite](/wiki/tools/vite)
