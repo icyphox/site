@@ -26,10 +26,10 @@ footer: |
         <img alt="xxiivv webring" src="/static/webring.svg">
         </a>
         <a href="/blog/feed.xml" >
-        <img alt="rss feed" src="/static/rss.svg">
+        <img alt="rss feed" src="/static/rss.svg" width="30">
         </a>
         <a href="https://git.icyphox.sh">
-        <img alt="git" src="/static/git.svg">
+        <img alt="git" src="/static/git.svg" width="35">
         </a>
       </section>
 
