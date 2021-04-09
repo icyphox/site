@@ -1,7 +1,7 @@
 ---
 title: the wiki
 subtitle: Ideas, thoughts and strongy held opinions.
-date: 2021-04-07
+date: 2021-04-09
 template: page.html
 ---
 
