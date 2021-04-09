@@ -63,5 +63,4 @@ is no "correct" way to censor -- so don't even try! If you don't want
 your software to be "misused", release it under a license that is
 capable of enforcing that.[^1]
 
-[^1]: Protip: you can't. Ethical source licenses exist, but they're
-  practically dead in the water.
+[^1]: Protip: you can't. Ethical source licenses exist, but they're practically dead in the water.

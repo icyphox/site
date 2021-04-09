@@ -82,7 +82,7 @@ main article img {
 }
 
 main ul, main ol {
-	margin: 0 30px 30px 30px
+	margin: 0 30px 7px 30px;
 }
 
 main ul ul {
@@ -106,7 +106,7 @@ main ul ul {
 }
 
 article p {
-  padding: 15px 0 15px 0;
+  padding: 7px 0 7px 0;
 }
 
 pre {
@@ -164,6 +164,9 @@ header img {
   color: var(--gray);
 }
 
+blockquote {
+  margin: 7px 0 7px 0;
+}
 blockquote p {
   font-style: italic;
   color: var(--darker);
