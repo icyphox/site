@@ -5,7 +5,7 @@ date: 2021-03-21
 template: page.html
 ---
 
-This is a meta-page, with links to each tool.
+This is a meta-page.
 
 - [neovim](/wiki/tools/neovim)
 - [vite](/wiki/tools/vite)

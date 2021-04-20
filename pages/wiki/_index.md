@@ -1,7 +1,7 @@
 ---
 title: the wiki
-subtitle: Ideas, thoughts and strongy held opinions.
-date: 2021-04-09
+subtitle: A collection of notes on various topics.
+date: 2021-04-20
 template: page.html
 ---
 
@@ -10,6 +10,8 @@ template: page.html
   - [contact](/wiki/about/contact)
   - [identity](/wiki/about/identity)
 - [friends](/wiki/friends)
+- [ideas](/wiki/ideas)
+  - [free-software](/wiki/ideas/free-software)
 - [todo](/wiki/todo)
 - [tools](/wiki/tools)
   - [cwm](/wiki/tools/cwm)
