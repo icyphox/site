@@ -9,11 +9,6 @@
   --code-bg: #0000000a;
 }
 
-html {
-  display: grid;
-  place-items: center;
-}
-
 * {
   box-sizing: border-box;
   text-decoration: none;
