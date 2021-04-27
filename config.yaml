@@ -4,9 +4,7 @@ header: |
     <img src="/static/white.svg" alt="icyphox's avatar" height="40" width="40"/>
     </a>
     <nav>
-    <a href="/">blog</a>
-    &middot;
-    <a href="/wiki">wiki</a>
+    <!-- i'll add things here -->
     </nav>
 
 siteurl: "https://icyphox.sh"
@@ -35,7 +33,7 @@ footer: |
 
 
 prebuild:
-   - bin/wiki.sh
+  # - bin/wiki.sh
 postbuild:
-    # - bin/plaintext.sh
+  # - bin/plaintext.sh
 
