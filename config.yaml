@@ -4,7 +4,7 @@ header: |
     <img src="/static/white.svg" alt="icyphox's avatar" height="40" width="40"/>
     </a>
     <nav>
-    <!-- i'll add things here -->
+    <a href="/about">about</a>
     </nav>
 
 siteurl: "https://icyphox.sh"
