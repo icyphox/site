@@ -25,6 +25,7 @@ main {
 }
 
 main h1 {
+  font-size: 25px;
   padding: 10px 0 10px 0;
 }
 
@@ -32,10 +33,6 @@ main h2, h3 {
   padding: 20px 0 15px 0;
 }
 
-main h2:first-of-type {
-  font-size: 20px;
-  padding: 0 0 20px 0;
-}
 
 .icons img {
   max-height: 2.5rem;
@@ -94,7 +91,7 @@ main ul ul {
   font-weight: normal;
   font-variant: unset;
   color: var(--dark);
-  padding-bottom: 20px;
+  padding: 0 0 20px 0;
 }
 
 .muted {

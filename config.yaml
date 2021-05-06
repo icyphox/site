@@ -5,13 +5,19 @@ header: |
     </a>
     <nav>
     <a href="/about">about</a>
+    &middot;
+    <a href="/uses">uses</a>
+    &middot;
+    <a href="https://git.icyphox.sh">git</a>
+    &middot;
+    <a href="/feed.xml">rss</a>
     </nav>
 
 siteurl: "https://icyphox.sh"
 rssprefixurl: "https://icyphox.sh/blog/" 
 description: "Computers, security and computer security."
 datefmt: "02 Jan, 2006"
-author: 
+author:
      name: "Anirudh Oppiliappan"
      email: "x@icyphox.sh"
 syntax: 'bw'
@@ -23,13 +29,8 @@ footer: |
         <a href="https://webring.xxiivv.com/#random" target="_blank">
         <img alt="xxiivv webring" src="/static/webring.svg">
         </a>
-        <a href="/blog/feed.xml" >
-        <img alt="rss feed" src="/static/rss.svg" width="30">
-        </a>
-        <a href="https://git.icyphox.sh">
-        <img alt="git" src="/static/git.svg" width="35">
-        </a>
-      </section>
+        <span style="float: right">Anirudh Oppiliappan &copy; 2021 &mdash; BY-NC-SA</span>
+    </section>
 
 
 prebuild:

@@ -1,10 +1,7 @@
 ---
 template: page.html
 title: uses
-subtitle: Uses this.
 ---
-
-# Uses this.
 
 I often get asked about my computing setup -- so I created this page to link it
 whenever. Also because I've seen it on other sites, and I don't want to miss
