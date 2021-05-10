@@ -49,7 +49,6 @@ a {
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  color: #000;
   word-wrap: break-word;
 }
 
@@ -79,11 +78,11 @@ main article img {
 }
 
 main ul, main ol {
-	margin: 0 30px 7px 30px;
+  margin: 0 30px 7px 30px;
 }
 
 main ul ul {
-	margin-bottom: 0
+  margin-bottom: 0
 }
 
 .subtitle {
@@ -104,6 +103,10 @@ main ul ul {
 
 article p {
   padding: 7px 0 7px 0;
+}
+
+article a {
+  color: var(--cyan);
 }
 
 pre {
