@@ -32,7 +32,7 @@ deeply rooted in [4chan](/wiki/culture/4chan) culture.
 - [ine](https://wolowolo.com)
 - [eskimo](https://eskimo.dev)
 - [noise](https://noise.faith)
-- [flippy](https://jesseerwin.net)
+- [flippy](https://jesseerwin.net) (Rest easy, retard)
 - [ye](https://haz.ee)
 
 ### elsewhere
