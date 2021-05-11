@@ -38,10 +38,7 @@ If you're interested in **hiring me** -- here's my
 ## this site
 
 This site is built using [vite](https://git.icyphox.sh/vite) -- a static
-site generator written in Go. The wiki index is generated using a [shell
-script](https://git.icyphox.sh/site/tree/bin/wiki.sh), with heavy use of
-bashisms. This script runs prior to vite, and preps the wiki index
-page's markdown.
+site generator written in Go.
 
 Nearly all media content, barring some old images, are served from my
 file host at https://x.icyphox.sh. This is hosted on my Raspberry Pi, at
