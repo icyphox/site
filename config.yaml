@@ -8,9 +8,7 @@ header: |
     &middot;
     <a href="/uses">uses</a>
     &middot;
-    <a href="https://git.icyphox.sh">git</a>
-    &middot;
-    <a href="/feed.xml">rss</a>
+    <a href="/friends">friends</a>
     </nav>
 
 siteurl: "https://icyphox.sh"
@@ -29,6 +27,13 @@ footer: |
         <a href="https://webring.xxiivv.com/#random" target="_blank">
         <img alt="xxiivv webring" src="/static/webring.svg">
         </a>
+        <a href="/blog/feed.xml" >
+        <img alt="rss feed" src="/static/rss.svg" width="30">
+        </a>
+        <a href="https://git.icyphox.sh">
+        <img alt="git" src="/static/git.svg" width="35">
+        </a>
+      </section>
     </section>
 
 
