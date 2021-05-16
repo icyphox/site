@@ -67,8 +67,8 @@ table a:hover {
 
 body {
   max-width: 640px;
-  padding: 20px;
-  margin: 0;
+  padding: 0 10px;
+  margin: 40px auto;
 }
 
 main article img {
