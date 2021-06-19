@@ -13,7 +13,7 @@ it _is_ my highest voted comment after all. But to be fair, I'm not
 running mine for a static blog. In fact, I'm not even hosting my blog on
 the cluster; but I digress. Why did I do this anyway? Simply put: I was
 bored. I had a 4 day weekend at work and with nothing better to do to
-other than play Valorant, and risk losing my hard earned Bronze 2, I
+other than play Valorant, and risk losing my hard earned Bronze 2 -- I
 decided to setup a K8s cluster. These are the nodes in use:
 
 - `fern`: Raspberry Pi 4B (armhf, 4GB, 4 cores)
