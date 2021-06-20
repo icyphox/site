@@ -174,7 +174,7 @@ There's just one catch -- at least, in my case. They don't have armhf
 images, so all their resources need:
 
 ```yaml
-nodeSelector: kubernetes.io/arch=arm
+nodeSelector: kubernetes.io/arch=amd64
 ```
 
 Consequently, all pods using a PVC can only run on non-armhf nodes. This
