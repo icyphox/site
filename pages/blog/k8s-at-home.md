@@ -162,7 +162,7 @@ Each ingress you define will be exposed on the same `LoadBalancer` IP.
 
 Storage on bare metal is always a pain in the wrong place. Longhorn is
 pretty refreshing, as it literally just works. Point it to your block
-volumes, setup a `StorageClass`, and just like that -- automagic PV(C)
+volumes, setup a `StorageClass`, and just like that -- automagic PV/C
 provisioning. Adding block volumes can be done via the UI, accessed by
 portforwarding the service:
 
