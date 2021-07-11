@@ -6,6 +6,12 @@ subtitle: My self-hosted infra, given the cloud native™ treatment
 date: 2021-06-19
 ---
 
+**Update 2021-07-11**: It was fun while it lasted. I took down the
+cluster today and probably won't go back to using it. It was way too
+much maintenance, and Kubernetes really struggles with just 1GB of RAM
+on a node. Constant outages, volumes getting corrupted (had to `fsck`),
+etc. Not worth the headache.
+
 I still remember my
 [Lobste.rs](https://lobste.rs/s/kqucr4/unironically_using_kubernetes_for_my#c_kfldyw)
 comment, mocking some guy for running Kubernetes for his static blog --
