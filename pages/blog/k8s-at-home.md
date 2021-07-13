@@ -35,7 +35,7 @@ block volume storage. All for free.[^1] Great for messing around.
 Since my RPi is behind a CG-NAT, I'm running a Wireguard mesh that looks
 something like this:
 
-![wireguard mesh](https://x.icyphox.sh/X4kgT.png)
+![wireguard mesh](https://x.icyphox.sh/1Xkvh.png)
 
 Wireguard is fairly trivial to set up, and there are tons of guides
 online, so I'll skip that bit.
