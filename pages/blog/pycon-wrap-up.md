@@ -3,7 +3,7 @@ template:
 title: PyCon India 2019 wrap-up
 subtitle: Pretty fun weekend, I'd say
 date: 2019-10-15
-url: pycon-wrap-up
+slug: pycon-wrap-up
 ---
 
 I'm writing this article as I sit in class, back on the grind. Last

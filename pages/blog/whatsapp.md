@@ -1,6 +1,6 @@
 ---
 template:
-url: whatsapp
+slug: whatsapp
 title: What's next after WhatsApp?
 subtitle: Let's not act surprised here, this was bound to happen
 date: 2021-01-08

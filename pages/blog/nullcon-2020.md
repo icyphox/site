@@ -1,6 +1,6 @@
 ---
 template:
-url: nullcon-2020
+slug: nullcon-2020
 title: Nullcon 2020
 subtitle: An opinion-filled review of Nullcon Goa, 2020
 date: 2020-03-09

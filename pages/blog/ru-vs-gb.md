@@ -3,7 +3,7 @@ template:
 title: Disinfo war&#58; RU vs GB
 subtitle: A look at Russian info ops against Britain
 date: 2019-12-12
-url: ru-vs-gb
+slug: ru-vs-gb
 ---
 
 This entire sequence of events begins with the attempted poisoning of

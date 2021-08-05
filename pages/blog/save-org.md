@@ -3,7 +3,7 @@ template:
 title: Save .ORG!
 subtitle: PIR is getting sold to a private firm, and here's why it's bad
 date: 2019-11-23
-url: save-org
+slug: save-org
 ---
 
 The .ORG top-level domain introduced in 1985, has been operated by the

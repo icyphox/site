@@ -1,6 +1,6 @@
 ---
 template:
-url: workman
+slug: workman
 title: The Workman keyboard layout
 subtitle: I have a lot of free time on my hands (heh)
 date: 2020-10-24

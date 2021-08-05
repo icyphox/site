@@ -1,7 +1,7 @@
 ---
 template:
 title: Five days in a TTY
-url: five-days-tty
+slug: five-days-tty
 subtitle: I installed KISS Linux
 date: 2020-01-13
 ---

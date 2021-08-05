@@ -1,6 +1,6 @@
 ---
 template:
-url: ducky-one-2
+slug: ducky-one-2
 title: The Ducky One 2 SF
 subtitle: I fell for the mechanical keyboard meme
 date: 2020-08-22

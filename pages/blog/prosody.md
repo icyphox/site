@@ -1,6 +1,6 @@
 ---
 template:
-url: prosody
+slug: prosody
 title: Setting up Prosody for XMPP
 subtitle: I setup Prosody yesterday—here's how I did it
 date: 2020-02-18

@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang=en>
   <head>
-    <link rel="stylesheet" href="/static/style.css" type="text/css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://icyphox.sh/blog/feed.xml"> 
-    <meta name="description" content="{{ .Fm.Subtitle }}">
-    <meta name="viewport" content="initial-scale=1,width">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta charset="UTF-8">
-    <meta name="HandheldFriendly" content="true">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-    <meta name="theme-color" content="#ffffff">
+    {{ template "head.html" }}
   </head>
 
   <title>
-    {{ .Fm.Title }}
+    {{ index .Meta "title" }}
   </title>
 <body>
   <main> 
     <header>
-      {{ .Cfg.Header }}
+      {{ template "nav.html" }}
     </header>
-    {{ .Fm.Body }}
+    {{ .Body }}
     <table>
-      {{ $datefmt := .Cfg.DateFmt }}
       {{ range $_, $post := .Posts }}
       <tr>
         <td align="left" class="index-post">
-          <a href="/blog/{{ $post.Fm.URL }}">{{ $post.Fm.Title }}</a>
+          <a href=/blog/{{ index $post.Meta "slug" }}>{{ index $post.Meta "title" }}</a>
         </td>
-        <td align="right" class="index-date">{{ $post.Fm.Date.Format $datefmt }}</td>
+        {{ $dateStr := index $post.Meta "date" }}
+        {{ $date := parsedate $dateStr }}
+        <td align="right" class="index-date">{{ $date.Format "02 Jan, 2006" }}</td>
       </tr>
       {{ end }}
     </table>
@@ -36,7 +29,7 @@
     </section>
   </main>
   <footer>
-    {{ .Cfg.Footer }}
+    {{ template "footer.html" }}
   </footer>
 </body>
 

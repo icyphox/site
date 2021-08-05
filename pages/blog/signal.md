@@ -1,6 +1,6 @@
 ---
 template:
-url: signal
+slug: signal
 title: We can do better than Signal
 subtitle: Centralized silos are never the solution
 date: 2021-01-17

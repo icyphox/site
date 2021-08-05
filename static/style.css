@@ -33,15 +33,29 @@ main h2, h3 {
   padding: 20px 0 15px 0;
 }
 
+.logo {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
-.icons img {
+.footer img {
   max-height: 2.5rem;
   display: inline-block;
   vertical-align: middle;
   image-orientation: from-image;
   max-width: 100%;
-  padding: 0 0 5px 3px;
+  padding: 0 0px 5px 5px;
   cursor: pointer;
+}
+
+.footer span {
+  float: right;
+  display: inline-block;
+  padding: 0;
+  margin-top: 10px;
+  word-wrap: break-word;
 }
 
 a {
@@ -153,7 +167,9 @@ hr {
 }
 
 footer {
+  border-top: 1.5px solid;
   margin: 20px 0 40px 10px;
+  padding-top: 30px;
 }
 
 header img {
@@ -167,9 +183,12 @@ header img {
 blockquote {
   margin: 7px 0 7px 0;
 }
+
 blockquote p {
   font-style: italic;
   color: var(--darker);
   padding-left: 20px;
   border-left: 3px solid var(--gray);
 }
+
+

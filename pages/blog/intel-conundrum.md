@@ -3,7 +3,7 @@ template:
 title: The intelligence conundrum
 subtitle: To protect an asset, or to protect the people?
 date: 2019-10-28
-url: intel-conundrum
+slug: intel-conundrum
 ---
 
 I watched the latest [S.W.A.T.](https://en.wikipedia.org/wiki/S.W.A.T._(2017_TV_series))

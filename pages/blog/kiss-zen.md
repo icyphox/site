@@ -1,6 +1,6 @@
 ---
 template:
-url: kiss-zen
+slug: kiss-zen
 title: The Zen of KISS Linux
 subtitle: My thoughts on the distro, the philosophy and my experience in general
 date: 2020-04-03

@@ -1,6 +1,6 @@
 ---
 template:
-url: mastodon-to-pleroma
+slug: mastodon-to-pleroma
 title: Migrating from Mastodon to Pleroma
 subtitle: Mastodon bad. Pleroma good.
 date: 2020-09-04

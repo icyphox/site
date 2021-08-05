@@ -1,39 +1,23 @@
 <!DOCTYPE html>
 <html lang=en>
   <head>
-    <link rel="stylesheet" href="/static/style.css" type="text/css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://icyphox.sh/blog/feed.xml"> 
-    <meta name="description" content="{{ .Fm.Subtitle }}">
-    <meta name="viewport" content="initial-scale=1,width">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta charset="UTF-8">
-    <meta name="HandheldFriendly" content="true">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-    <meta name="theme-color" content="#ffffff">
+    {{ template "head.html" }}
   </head>
   <title>
-    {{ .Fm.Title }}
+    {{ index .Meta "title" }}
   </title>
   <body>
-  <main> 
+  <main>
     <header>
-      {{ .Cfg.Header }}
+      {{ template "nav.html" }}
     </header>
     <article align="left">
-
-      <h1>{{ .Fm.Title }}</h1>
-      <!--      <h2 class="subtitle">{{ .Fm.Subtitle }}</h2>--!>
-      {{ .Fm.Body }}
-
-      <!--
-      <section class="post-date">
-        <em>last updated</em>: {{ .Fm.Date }}
-        </section>--!>
-
+      <h1>{{ index .Meta "title" }}</h1>
+      {{ .Body }}
     </article>
   </main>
   <footer>
-    {{ .Cfg.Footer }}
+    {{ template "footer.html" }}
   </footer>
 </body>
 

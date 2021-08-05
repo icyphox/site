@@ -1,6 +1,6 @@
 ---
 template:
-url: simplicity-security
+slug: simplicity-security
 title: Simplicity (mostly) guarantees security
 subtitle: This is why I meme mnmlsm so much
 date: 2020-05-07

@@ -1,6 +1,6 @@
 ---
 template:
-url: free-sw-censor
+slug: free-sw-censor
 title: Free software should not censor
 subtitle: If you write free software, don't deny freedom zero
 date: 2021-04-07

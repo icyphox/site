@@ -1,43 +1,6 @@
 title: icyphox's blog
-header: |
-    <a href=/>
-    <img src="/static/white.svg" alt="icyphox's avatar" height="40" width="40"/>
-    </a>
-    <nav>
-    <a href="/about">about</a>
-    &middot;
-    <a href="/uses">uses</a>
-    &middot;
-    <a href="/friends">friends</a>
-    </nav>
-
-siteurl: "https://icyphox.sh"
-rssprefixurl: "https://icyphox.sh/blog/" 
-description: "Computers, security and computer security."
-datefmt: "02 Jan, 2006"
+url: "https://icyphox.sh"
+desc: "Computers, security and computer security."
 author:
      name: "Anirudh Oppiliappan"
      email: "x@icyphox.sh"
-footer: |
-    <section class="icons">
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-        <img alt="cc nc-by-sa" src="/static/cc.svg">
-        </a>
-        <a href="https://webring.xxiivv.com/#random" target="_blank">
-        <img alt="xxiivv webring" src="/static/webring.svg">
-        </a>
-        <a href="/blog/feed.xml" >
-        <img alt="rss feed" src="/static/rss.svg" width="30">
-        </a>
-        <a href="https://git.icyphox.sh">
-        <img alt="git" src="/static/git.svg" width="35">
-        </a>
-      </section>
-    </section>
-
-
-prebuild:
-  # - bin/wiki.sh
-postbuild:
-  # - bin/plaintext.sh
-

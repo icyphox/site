@@ -1,6 +1,6 @@
 ---
 template:
-url: music-streaming
+slug: music-streaming
 title: My music streaming setup
 subtitle: Think Spotify, but self-hosted and not as good
 date: 2020-12-13

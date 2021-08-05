@@ -1,6 +1,6 @@
 ---
 template:
-url: dont-news
+slug: dont-news
 title: You don't need news
 subtitle: My hot 'n' spicy take on "news" today
 date: 2020-06-21

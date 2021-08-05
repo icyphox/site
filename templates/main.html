@@ -1,0 +1,23 @@
+<html lang=en>
+  <head>
+    {{ template "head.html" }}
+  </head>
+  <title>
+    {{ index .Meta "title" }}
+  </title>
+  <body>
+    <main>
+     <header>
+        {{ template "nav-noimg.html" }}
+      </header>
+      <article>
+        <div class="logo">
+          <img src=/static/white.svg>
+        </div>
+      </article>
+    </main>
+    <footer>
+      {{ template "footer.html" }}
+    </footer>
+  </body>
+</html>

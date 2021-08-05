@@ -1,6 +1,6 @@
 ---
 template:
-url: mastodon-social
+slug: mastodon-social
 title: Stop joining mastodon.social
 subtitle: Do you even understand federation?
 date: 2020-05-05

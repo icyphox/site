@@ -1,6 +1,6 @@
 ---
 template:
-url: twitter
+slug: twitter
 title: Some thoughts on Twitter
 subtitle: I've begun avoiding Twitter, here's why
 date: 2020-08-03

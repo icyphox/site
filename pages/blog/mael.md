@@ -1,6 +1,6 @@
 ---
 template:
-url: mael
+slug: mael
 title: Introducing mael
 subtitle: An experimental mail client
 date: 2020-03-29

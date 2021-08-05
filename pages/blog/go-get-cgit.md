@@ -1,6 +1,6 @@
 ---
 template:
-url: go-get-cgit
+slug: go-get-cgit
 title: Make cgit go gettable
 subtitle: go get git.icyphox.sh/* works!
 date: 2021-07-14

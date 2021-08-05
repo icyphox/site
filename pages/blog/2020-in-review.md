@@ -1,6 +1,6 @@
 ---
 template:
-url: 2020-in-review
+slug: 2020-in-review
 title: 2020 in review
 subtitle: Oh boy, here we go
 date: 2020-12-24

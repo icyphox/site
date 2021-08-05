@@ -3,7 +3,7 @@ template:
 title: IRC for DMs
 subtitle: Honestly, it's pretty great
 date: 2019-11-03
-url: irc-for-dms
+slug: irc-for-dms
 ---
 
 [Nerdy](https://nerdypepper.me) and I decided to try and use IRC for our

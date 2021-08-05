@@ -1,6 +1,6 @@
 ---
 template:
-url: s-nail
+slug: s-nail
 title: The S-nail mail client
 subtitle: And how to achieve a usable configuration for IMAP/SMTP
 date: 2020-05-06

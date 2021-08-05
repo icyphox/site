@@ -3,7 +3,7 @@ template:
 title: Hacky scripts
 subtitle: The most fun way to learn to code
 date: 2019-10-24
-url: hacky-scripts
+slug: hacky-scripts
 ---
 
 As a CS student, I see a lot of people around me doing courses online

@@ -1,6 +1,6 @@
 ---
 template:
-url: site-changes
+slug: site-changes
 title: Site changes
 subtitle: New stuff at the {back,front}end
 date: 2020-05-27

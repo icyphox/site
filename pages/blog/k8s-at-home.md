@@ -1,6 +1,6 @@
 ---
 template:
-url: k8s-at-home
+slug: k8s-at-home
 title: Setting up a multi-arch Kubernetes cluster at home
 subtitle: My self-hosted infra, given the cloud native™ treatment
 date: 2021-06-19

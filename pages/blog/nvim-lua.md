@@ -1,6 +1,6 @@
 ---
 template:
-url: nvim-lua
+slug: nvim-lua
 title: Configuring Neovim using Lua
 subtitle: And switching from init.vim to init.lua
 date: 2021-02-07

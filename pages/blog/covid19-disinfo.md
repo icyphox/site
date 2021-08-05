@@ -1,6 +1,6 @@
 ---
 template:
-url: covid19-disinfo
+slug: covid19-disinfo
 title: COVID-19 disinformation
 subtitle: A lot of actors cashing in on the epidemic
 date: 2020-03-15

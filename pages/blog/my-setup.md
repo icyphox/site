@@ -3,7 +3,7 @@ template: text.html
 title: My setup
 subtitle: My daily drivers—hardware, software and workflow
 date: 2019-05-13
-url: my-setup
+slug: my-setup
 ---
 
 **Update**: I now maintain a [uses](/uses) page. This post is out of

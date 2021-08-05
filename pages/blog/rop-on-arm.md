@@ -3,7 +3,7 @@ template: text.html
 title: Return Oriented Programming on ARM (32-bit)
 subtitle: Making stack-based exploitation great again!
 date: 2019-06-06
-url: rop-on-arm
+slug: rop-on-arm
 ---
 
 Before we start _anything_, you’re expected to know the basics of ARM

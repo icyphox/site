@@ -1,6 +1,6 @@
 ---
 template:
-url: pi
+slug: pi
 title: Migrating to the RPi
 subtitle: Raspberry Pi shenanigans, and other things
 date: 2020-06-04

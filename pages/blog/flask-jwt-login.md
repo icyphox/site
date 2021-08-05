@@ -1,6 +1,6 @@
 ---
 template:
-url: flask-jwt-login
+slug: flask-jwt-login
 title: Flask-JWT-Extended × Flask-Login
 subtitle: Apparently I do webshit now
 date: 2020-06-24
