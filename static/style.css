@@ -34,9 +34,9 @@ main h2, h3 {
 }
 
 .logo {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 80%;
+  margin: 50px auto 50px auto;
+  padding: 50px 0 20px 0;
   display: block;
 }
 
@@ -46,14 +46,13 @@ main h2, h3 {
   vertical-align: middle;
   image-orientation: from-image;
   max-width: 100%;
-  padding: 0 0px 5px 5px;
+  padding: 0 0 5px 5px;
   cursor: pointer;
 }
 
 .footer span {
-  float: right;
   display: inline-block;
-  padding: 0;
+  padding: 0 0 0 10px;
   margin-top: 10px;
   word-wrap: break-word;
 }
