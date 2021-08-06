@@ -16,6 +16,7 @@ subtitle: My friends and internet bros.
 - [Leliana](https://revthefox.co.uk/)
 - [neeasade](https://neeasade.net)
 - [azahi](https://azahi.cc)
+- [lew](https://lew.digital)
 
 ### `#homescreen` @ rizon
 
