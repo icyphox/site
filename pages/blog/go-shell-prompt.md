@@ -22,10 +22,9 @@ the chase.
 
 ## the basics
 
-In my prompt, the absolute basic piece of information I like to see is
-the current working directory. I also prefer having them shortened; for
-example: `/home/icy/docs/books/foo.epub` → `~/d/b/foo.epub`. Let's write
-a function `trimPath` to do this for us:
+The current working directory is the bare minimum in a prompt. I prefer
+having it shortened; for example: `/home/icy/docs/books/foo.epub` →
+`~/d/b/foo.epub`. Let's write a function `trimPath` to do this for us:
 
 ```go
 // Truncates the current working directory:
@@ -64,7 +63,8 @@ completely, just to be sure.
 
 We then split the path at `/`[^2], and truncate each item in the
 resulting list -- except for the last -- down to the first character.
-Join it all together and return the resulting string.
+Join it all together and return the resulting string -- we have
+`~/d/b/foo.epub`.
 
 [^2]: I don't care about Windows.
 
