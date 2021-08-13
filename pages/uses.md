@@ -10,11 +10,11 @@ out.
 ## hardware
 
 **HP Envy 13 (2017)**: 13.3" FHD, i5 8250u, 8GB RAM, 256GB SSD. This is
-my primarily computing device. A comfy machine, fairly future-proof
+my primary computing device. A comfy machine, fairly future-proof
 machine that happens to support Linux/BSD incredibly well
 out-of-the-box.
 
-**MacBook Pro 13" (2019)**: i5, 8GB RAM, 128GB SSD. My work machine. Not
+**MacBook Pro 13" (2020)**: i5, 16GB RAM, 512GB SSD. My work machine. Not
 a huge fan of macOS, but hey -- it could be worse.
 
 **Ducky One 2 SF**: 65% mechanical keyboard, Cherry MX Speed Silver
@@ -22,14 +22,10 @@ switches. I've written about it in detail [here](/blog/ducky-one-2).
 
 **Logitech M221**: An el cheapo wireless mouse that mouses just enough.
 
-**Bose Soundsport Wired**: Wired earphones that sound good enough, and fit
-well. I also have their wireless model, but don't use them with my laptop.
+**realme Buds Q2**: Truly wireless earphones, with ANC. Picked them up
+for 2500 INR (≈33 USD).
 
-**OnePlus 6T**: Great phone for the price (SD 845, 8GB/128GB) -- running
-OmniROM microG.
-
-**iPad (6th generation)**: A very sophisticated e-reader. I must admit -- Apple
-Books offers a very nice reading experience.
+**OnePlus 6T**: Great phone for the price (SD 845, 8GB/128GB). No GApps.
 
 ## software
 
