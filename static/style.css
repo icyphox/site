@@ -186,10 +186,6 @@ footer {
   padding-top: 30px;
 }
 
-header img {
-  transform: translateY(-10%);
-}
-
 .post-date {
   color: var(--gray);
 }
