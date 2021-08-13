@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    {{ template "head.html" }}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://icyphox.sh/blog/feed.xml"> 
+  </head>
+
+  <title>
+    {{ index .Meta "title" }}
+  </title>
+<body>
+  <main> 
+    <header>
+      {{ template "nav.html" }}
+    </header>
+    {{ .Body }}
+    <table>
+      {{ range $_, $post := .Posts }}
+      <tr>
+        <td align="left" class="index-post">
+          <a href=/blog/{{ index $post.Meta "slug" }}>{{ index $post.Meta "title" }}</a>
+        </td>
+        {{ $dateStr := index $post.Meta "date" }}
+        {{ $date := parsedate $dateStr }}
+        <td align="right" class="index-date">{{ $date.Format "02 Jan, 2006" }}</td>
+      </tr>
+      {{ end }}
+    </table>
+    <p><em><b>Note</b>: Opinions expressed in these posts may differ from those that I hold presently.</em></p>
+    </section>
+  </main>
+  <footer>
+    {{ template "footer.html" }}
+  </footer>
+</body>
+
+</html>
