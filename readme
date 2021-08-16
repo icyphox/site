@@ -1,7 +1,8 @@
 site
 ----
 
-Found at https://icyphox.sh; built using vite[0].
+Found at https://icyphox.sh; built using vite[0]. The blog has an RSS
+feed at https://icyphox.sh/blog/feed.xml.
 
 
 LICENSE
@@ -12,7 +13,7 @@ source is licensed under MIT.
 
 CREDITS
 
-NerdyPepper[1] for the original motif design.
+nerdypepper[1] for the original motif design.
 
 
 [0]: https://git.icyphox.sh/vite
