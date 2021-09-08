@@ -7,7 +7,7 @@ slug: pycon-wrap-up
 ---
 
 I'm writing this article as I sit in class, back on the grind. Last
-weekend -- Oct 12th and 13th---was PyCon India 2019, in Chennai, India.
+weekend -- Oct 12th and 13th -- was PyCon India 2019, in Chennai, India.
 It was my first PyCon, _and_ my first ever talk at a major conference!
 This is an account of the all the cool stuff I saw, people I met and the
 talks I enjoyed.

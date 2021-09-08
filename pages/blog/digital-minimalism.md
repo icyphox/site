@@ -21,7 +21,7 @@ I've read about a lot of methods people employ to curb their phone
 usage. Some have tried grouping "distracting" apps into a separate
 folder, and this supposedly helps reduce their usage. Now, I fail to see
 how this would work, but YMMV. Another technique I see often is using
-a time governance app -- like OnePlus' Zen Mode---to enforce how much
+a time governance app -- like OnePlus' Zen Mode -- to enforce how much
 time you spend using specific apps, or the phone itself. I've tried this
 for myself, but I constantly found myself counting down the minutes
 after which the phone would become usable again. Not helpful.

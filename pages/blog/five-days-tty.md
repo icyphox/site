@@ -8,7 +8,7 @@ date: 2020-01-13
 
 This new semester has been pretty easy on me, so far. I hardly every
 have any classes (again, so far), and I've a ton of free time on my
-hands. This calls for -- yep---a distro hop! 
+hands. This calls for -- yep -- a distro hop! 
 
 ## Why KISS?
 

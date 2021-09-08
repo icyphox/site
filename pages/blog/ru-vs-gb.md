@@ -158,7 +158,7 @@ a pro-Russian outlet, RT -- that too a fairly straightforward piece.
 ## Wrapping up
 
 As with conventional warfare, it's hard to determine who won. Britain
-may have had the last blow, but Moscow -- yet again---depicted their
+may have had the last blow, but Moscow -- yet again -- depicted their
 finesse in information warfare. Their ability to seize unexpected
 openings, gather intel to facilitate their disinformation campaigns, and
 their cyber capabilities makes them a formidable threat. 

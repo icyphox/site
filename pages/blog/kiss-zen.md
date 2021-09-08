@@ -13,7 +13,7 @@ life as a whole. I wouldn't call KISS "life changing", as that would be
 overly dramatic, but it has definitely reshaped my outlook towards
 technology -- for better or worse.
 
-When I talk about KISS to people -- online or IRL---I get some pretty
+When I talk about KISS to people -- online or IRL -- I get some pretty
 interesting reactions and comments.[^bringing-up-kiss] 
 Ranging from "Oh cool." to "You must be
 retarded.", I've heard it all. A classic and a personal favourite of

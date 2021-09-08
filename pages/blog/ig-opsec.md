@@ -111,7 +111,7 @@ change, and consequentially the risks do too.
 
 ## Fin
 
-Instagram is -- much to my dismay---far too popular for it to die any
+Instagram is -- much to my dismay -- far too popular for it to die any
 time soon. There are plenty of good reasons to stop using the platform
 altogether (hint: Facebook), but that's a discussion for another day.
 

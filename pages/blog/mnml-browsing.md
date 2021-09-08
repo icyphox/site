@@ -9,7 +9,7 @@ slug: mnml-browsing
 
 After having recently installed [KISS](https://getkiss.org), and
 building Firefox from source, I was exposed to the true monstrosity that
-Firefox -- and web browsers in general---is. It took all of 9 hours to
+Firefox -- and web browsers in general -- is. It took all of 9 hours to
 build the dependencies and then Firefox itself.
 
 Sure, KISS now ships Firefox binaries in the
