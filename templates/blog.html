@@ -3,6 +3,7 @@
   <head>
     {{ template "head.html" }}
     <link rel="alternate" type="application/rss+xml" title="RSS" href="https://icyphox.sh/blog/feed.xml"> 
+    <meta name="description" content="{{ index .Meta "title" }}">
   </head>
 
   <title>

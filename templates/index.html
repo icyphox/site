@@ -1,6 +1,7 @@
 <html lang=en>
   <head>
     {{ template "head.html" }}
+    <meta name="description" content="{{ index .Meta "title" }}">
   </head>
   <title>
     {{ index .Meta "title" }}
