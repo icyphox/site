@@ -132,7 +132,8 @@ article a {
 }
 
 .tagline {
-  font-size: 20px;
+  font-size: 40px;
+  font-style: normal;
   padding: 150px 0 150px 0;
   text-align: center;
 }
