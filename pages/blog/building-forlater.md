@@ -102,7 +102,7 @@ all delivered over the weekend.
 Neither of these "features" are confirmed to happen, primarily because
 forlater is feature-complete for my use. That said, I'm happy to
 consider any improvements or suggestions that you might have -- please
-[shoot them my way](mailto:x@icyphox.sh).
+[email me](mailto:x@icyphox.sh).
 
 Finally, thanks to everyone who tossed a few bucks my way -- mighty kind
 of you.
