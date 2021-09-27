@@ -31,7 +31,7 @@ Pictured above is how forlater works. Each component is explained below.
 
 Mail containing links to be saved arrive here. OpenSMTPD is beautiful
 software, and its configuration is stupid simple
-([smtpd.conf(5)](https://man.openbsd.org/smtpd.conf):
+([smtpd.conf(5)](https://man.openbsd.org/smtpd.conf)):
 
 ```conf
 table blocklist file:/etc/smtpd/blocklist
