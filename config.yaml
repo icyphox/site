@@ -1,5 +1,6 @@
 title: icyphox's blog
-url: "https://icyphox.sh"
+# note the trailing slash!
+url: "https://icyphox.sh/"
 desc: "Computers, security and computer security."
 author:
      name: "Anirudh Oppiliappan"
