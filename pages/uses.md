@@ -10,9 +10,8 @@ out.
 ## hardware
 
 **HP Envy 13 (2017)**: 13.3" FHD, i5 8250u, 8GB RAM, 256GB SSD. This is
-my primary computing device. A comfy machine, fairly future-proof
-machine that happens to support Linux/BSD incredibly well
-out-of-the-box.
+my primary computing device. A comfy, fairly future-proof machine that
+happens to support Linux/BSD incredibly well out-of-the-box.
 
 **MacBook Pro 13" (2020)**: i5, 16GB RAM, 512GB SSD. My work machine. Not
 a huge fan of macOS, but hey -- it could be worse.
