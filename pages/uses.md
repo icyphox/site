@@ -25,7 +25,8 @@ switches. I've written about it in detail [here](/blog/ducky-one-2).
 **realme Buds Q2**: Truly wireless earphones, with ANC. Picked them up
 for 2500 INR (≈33 USD).
 
-**OnePlus 6T**: Great phone for the price (SD 845, 8GB/128GB). No GApps.
+**iPhone 13 mini**: The only actually small phone in the market (right
+now).
 
 ## software
 
@@ -35,14 +36,11 @@ for 2500 INR (≈33 USD).
 **cwm**: The Calm Window Manager. The best out-of-the-box experience you can
 get in a window manager. Period.
 
-**st**: No BS terminal emulator. I use the "ligatures", "copyurl" and "bold is
-not bright" patches.
+**xterm**: Reliable and rock solid terminal emulator.
 
 **tmux**: Most of my actual window management happens here. I usually have
 3 - 4 workspaces -- general throwaway terminals, work, music and IRC. It also
 handles scrollback for me, so that's nice.
-
-**cmus**: With [cmusfm](https://github.com/Arkq/cmusfm) for music.
 
 **weechat**: IRC client that's infinitely riceable.
 
