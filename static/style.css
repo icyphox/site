@@ -59,13 +59,6 @@ main h2, h3 {
   cursor: pointer;
 }
 
-.footer span {
-  display: inline-block;
-  padding: 0 0 0 10px;
-  margin-top: 10px;
-  word-wrap: break-word;
-}
-
 a {
   margin: 0;
   padding: 0;
