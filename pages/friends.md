@@ -1,8 +1,7 @@
 ---
 template: page.html
 title: friends
-url: friends
-subtitle: My friends and internet bros.
+subtitle: My friends: online and IRL.
 ---
 
 ### `#rice` @ rizon

@@ -10,10 +10,10 @@
     {{ index .Meta "title" }}
   </title>
 <body>
-  <main> 
-    <header>
+  <main>
+    <div class="sidenav">
       {{ template "nav.html" }}
-    </header>
+    </div>
     {{ .Body }}
     <table>
       {{ range $_, $post := .Posts }}
@@ -27,7 +27,6 @@
       </tr>
       {{ end }}
     </table>
-    <p><em><b>Note</b>: Opinions expressed in these posts may differ from those that I hold presently.</em></p>
     </section>
   </main>
   <footer>

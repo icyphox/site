@@ -1,6 +1,7 @@
 ---
 template: page.html
 title: uses
+subtitle: Hardware and software that I use.
 ---
 
 I often get asked about my computing setup -- so I created this page to link it

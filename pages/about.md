@@ -1,6 +1,7 @@
 ---
 template: page.html
 title: about
+subtitle: About me.
 ---
 
 <img src="https://x.icyphox.sh/9rUNl.jpeg" width=300 style="text-align: center">

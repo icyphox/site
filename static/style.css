@@ -31,6 +31,25 @@ main {
   padding: 0;
   margin: 10px;
   line-height: 160%;
+
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  row-gap: 2rem;
+  width: 100%;
+/*  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-auto-rows: 50%;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem; */
+}
+
+main article, table {
+  flex-basis: 85%;
+}
+
+.sidenav {
+  flex-basis: 15%;
 }
 
 main h1 {
@@ -121,7 +140,7 @@ article p {
 }
 
 article a {
-  color: var(--cyan);
+  color: var(--dark);
 }
 
 .tagline {
@@ -139,6 +158,10 @@ pre {
   background-color: var(--code-bg) !important;
   font-size: 15px !important;
   margin-bottom: 10px;
+}
+
+code {
+  background-color: var(--light-gray);
 }
 
 pre > code {
@@ -163,11 +186,6 @@ table {
   padding-bottom: 7px;
 }
 
-nav {
-  float: right;
-  transform: translateY(30%);
-}
-
 header {
   padding-bottom: 20px;
 }
@@ -179,7 +197,6 @@ hr {
 }
 
 footer {
-  border-top: 1.5px solid;
   margin: 20px 0 40px 10px;
   padding-top: 30px;
 }
@@ -198,3 +215,11 @@ blockquote p {
   padding-left: 20px;
   border-left: 3px solid var(--gray);
 }
+
+/* side nav */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+

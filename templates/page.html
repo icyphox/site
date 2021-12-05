@@ -9,9 +9,9 @@
   </title>
   <body>
   <main>
-    <header>
+    <div class="sidenav">
       {{ template "nav.html" }}
-    </header>
+    </div>
     <article align="left">
       <h1>{{ index .Meta "title" }}</h1>
       {{ .Body }}
