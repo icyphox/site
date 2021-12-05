@@ -38,13 +38,10 @@ main {
   flex-direction: row;
   row-gap: 2rem;
   width: 100%;
-/*  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
-    grid-auto-rows: 50%;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem; */
 }
 
 main article, table {
+  flex-grow: 1;
   flex-basis: 85%;
 }
 
