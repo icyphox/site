@@ -35,6 +35,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  grid-column-gap: 1.9rem;
   row-gap: 2rem;
   width: 100%;
 }
@@ -44,10 +45,6 @@ main article, table {
   flex-basis: 85%;
 }
 
-.sidenav {
-  flex-basis: 15%;
-}
-
 main h1 {
   font-size: 25px;
   padding: 10px 0 10px 0;
@@ -55,13 +52,6 @@ main h1 {
 
 main h2, h3 {
   padding: 20px 0 15px 0;
-}
-
-.logo {
-  width: 75%;
-  margin: 50px auto 50px auto;
-  padding: 50px 0 20px 0;
-  display: block;
 }
 
 .footer img {
@@ -193,7 +183,6 @@ hr {
 }
 
 footer {
-  margin: 20px 0 40px 10px;
   padding-top: 30px;
 }
 
@@ -219,3 +208,12 @@ nav ul {
   list-style-type: none;
 }
 
+nav img {
+  height: 40px;
+  width: 40px;
+}
+
+.sidenav {
+  flex-basis: 10%;
+  text-align: right;
+}
