@@ -42,7 +42,7 @@ main {
 
 main article, table {
   flex-grow: 1;
-  flex-basis: 85%;
+  flex-basis: 80%;
 }
 
 main h1 {
@@ -214,6 +214,6 @@ nav img {
 }
 
 .sidenav {
-  flex-basis: 10%;
+  flex-basis: 5%;
   text-align: right;
 }
