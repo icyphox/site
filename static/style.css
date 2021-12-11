@@ -37,11 +37,10 @@ main {
   flex-direction: row;
   grid-column-gap: 1.9rem;
   row-gap: 2rem;
-  width: 100%;
 }
 
 main article, table {
-  flex-grow: 1;
+  min-width: 0;
   flex-basis: 80%;
 }
 
@@ -93,6 +92,7 @@ body {
 
 main article img {
   max-width: 100%;
+  width: 100%;
   display: block;
   margin: 0 0 15px 0;
 }
