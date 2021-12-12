@@ -30,18 +30,10 @@ main {
   font-size: 18px;
   padding: 0;
   line-height: 160%;
-
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  grid-column-gap: 1.9rem;
-  row-gap: 2rem;
 }
 
 main article, table {
   min-width: 0;
-  flex-basis: 80%;
 }
 
 main h1 {
@@ -80,8 +72,9 @@ table a {
   text-decoration: none;
 }
 
-table a:hover {
+a:hover {
   text-decoration: underline;
+  background: var(--light-gray);
 }
 
 body {
@@ -92,7 +85,7 @@ body {
 
 main article img {
   max-width: 100%;
-  width: 100%;
+  width: 70%;
   display: block;
   margin: 0 0 15px 0;
 }
@@ -130,10 +123,7 @@ article a {
 }
 
 .tagline {
-  font-size: 40px;
-  font-style: normal;
-  padding: 150px 0 150px 0;
-  text-align: center;
+  padding: 50px 0 50px 0;
 }
 
 pre {
@@ -205,15 +195,18 @@ blockquote p {
 nav ul {
   padding: 0;
   margin: 0;
-  list-style-type: none;
+  list-style: none;
+  padding-bottom: 20px;
 }
 
-nav img {
+nav ul li {
+  padding-right: 7px;
+  display: inline-block;
+}
+
+nav a img {
+  text-decoration: none;
+  background: none;
   height: 40px;
   width: 40px;
-}
-
-.sidenav {
-  flex-basis: 5%;
-  text-align: right;
 }
