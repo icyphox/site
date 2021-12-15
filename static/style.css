@@ -45,6 +45,21 @@ main h2, h3 {
   padding: 20px 0 15px 0;
 }
 
+.logo img {
+  height: 40px;
+  vertical-align: middle;
+  transform: translateY(-5%);
+}
+
+.logo  {
+  text-decoration: none;
+  background: unset !important;
+}
+
+.footer a {
+  all: unset !important;
+}
+
 .footer img {
   max-height: 2.5rem;
   max-width: 2.5rem;
@@ -191,7 +206,6 @@ blockquote p {
   border-left: 3px solid var(--gray);
 }
 
-/* side nav */
 nav ul {
   padding: 0;
   margin: 0;
@@ -200,13 +214,12 @@ nav ul {
 }
 
 nav ul li {
-  padding-right: 7px;
+  padding-right: 10px;
   display: inline-block;
 }
 
-nav a img {
-  text-decoration: none;
-  background: none;
-  height: 40px;
-  width: 40px;
+@media (max-width: 385px) {
+  nav ul li {
+    display: block;
+  }
 }

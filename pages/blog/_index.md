@@ -1,5 +1,5 @@
 ---
 template: blog.html
-title: icyphox's blog
+title: blog
 subtitle: Computers, security & computer security.
 ---
