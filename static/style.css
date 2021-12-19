@@ -46,7 +46,8 @@ main h2, h3 {
 }
 
 .logo img {
-  height: 40px;
+  max-height: 2.5rem;
+  max-width: 2.5rem;
   vertical-align: middle;
   transform: translateY(-5%);
 }
