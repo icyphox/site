@@ -6,7 +6,6 @@
   --code: #666;
   --dark: #444;
   --darker: #222;
-  --code-bg: #0000000a;
 }
 
 html {
@@ -37,8 +36,12 @@ main article, table {
 }
 
 main h1 {
-  font-size: 25px;
+  font: 25px;
   padding: 10px 0 10px 0;
+}
+
+main h2 {
+  font-size: 25px;
 }
 
 main h2, h3 {
@@ -101,7 +104,7 @@ body {
 
 main article img {
   max-width: 100%;
-  width: 70%;
+  width: 100%;
   display: block;
   margin: 0 0 15px 0;
 }
@@ -147,8 +150,7 @@ pre {
   overflow-y: hidden;
   padding: 10px;
   min-width: 0;
-  background-color: var(--code-bg) !important;
-  font-size: 15px !important;
+  background-color: var(--light-gray) !important;
   margin-bottom: 10px;
 }
 
