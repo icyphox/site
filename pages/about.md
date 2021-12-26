@@ -4,11 +4,10 @@ title: about
 subtitle: About me.
 ---
 
-<img src="https://x.icyphox.sh/9rUNl.jpeg" width=300 style="text-align: center">
+![anirudh](https://x.icyphox.sh/9rUNl.jpeg)
 
 I'm Anirudh, but you'll find me as **icyphox** (or just **icy**), on the
-Internet. I currently work as a Site Reliability Engineer at
-[DeepSource](https://deepsource.io).
+Internet.
 
 ## contact
 
