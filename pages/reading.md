@@ -8,7 +8,9 @@ I've read a whole bunch more, but I can't remember beyond 2020.
 
 ## 2021
 
-- [Dune](https://en.wikipedia.org/wiki/Dune_\(novel\)) -- now reading
+- [Permanent
+  Record](https://en.wikipedia.org/wiki/Permanent_Record_\(autobiography\)) -- now reading
+- [Dune](https://en.wikipedia.org/wiki/Dune_\(novel\))
 - [The Final
   Empire](https://en.wikipedia.org/wiki/Mistborn:_The_Final_Empire)
 - [The Well of
