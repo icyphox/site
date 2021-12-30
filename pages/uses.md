@@ -14,11 +14,9 @@ out.
 my primary computing device. A comfy, fairly future-proof machine that
 happens to support Linux/BSD incredibly well out-of-the-box.
 
-**MacBook Pro 13" (2020)**: i5, 16GB RAM, 512GB SSD. My work machine. Not
-a huge fan of macOS, but hey -- it could be worse.
-
 **Ducky One 2 SF**: 65% mechanical keyboard, Cherry MX Speed Silver
-switches. I've written about it in detail [here](/blog/ducky-one-2).
+switches and blank DSA keycaps. I've written about it in detail
+[here](/blog/ducky-one-2).
 
 **Logitech M221**: An el cheapo wireless mouse that mouses just enough.
 
