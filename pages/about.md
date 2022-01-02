@@ -6,13 +6,14 @@ subtitle: About me.
 
 ![anirudh](https://x.icyphox.sh/9rUNl.jpeg)
 
-I'm Anirudh, but you'll find me as **icyphox** (or just **icy**), on the
-Internet.
+I'm Anirudh Oppiliappan, but you'll often find me as **icyphox** (or
+just **icy**), on the Internet.
 
 ## contact
 
-Send mail to [x@icyphox.sh](mailto:x@icyphox.sh). Should you need it, my
-[PGP key](/static/gpg.txt):
+Send mail to [x@icyphox.sh](mailto:x@icyphox.sh) or
+[anirudh@oppiliappan.com](mailto:anirudh@oppiliappan.com). Should you
+need it, my [PGP key](/static/gpg.txt):
 
 ```
 FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4
