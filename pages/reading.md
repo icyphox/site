@@ -7,7 +7,7 @@ subtitle: Books I've read.
 I've read a whole bunch more, but I can't remember beyond 2020.
 
 ## 2021
-
+- [The Game](https://en.wikipedia.org/wiki/Tom_Wood_\(author\)#Victor_the_Assassin_Series)
 - [Permanent
   Record](https://en.wikipedia.org/wiki/Permanent_Record_\(autobiography\))
 - [Dune](https://en.wikipedia.org/wiki/Dune_\(novel\))
