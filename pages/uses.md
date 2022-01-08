@@ -8,6 +8,8 @@ I often get asked about my computing setup -- so I created this page to link it
 whenever. Also because I've seen it on other sites, and I don't want to miss
 out.
 
+![battlestation](https://x.icyphox.sh/SX0CU.jpg)
+
 ## hardware
 
 **HP Envy 13 (2017)**: 13.3" FHD, i5 8250u, 8GB RAM, 256GB SSD. This is
