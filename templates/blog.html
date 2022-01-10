@@ -7,7 +7,7 @@
   </head>
 
   <title>
-    {{ index .Meta "title" }}
+    {{ index .Meta "title" }} &mdash; {{ .Cfg.Title }}
   </title>
 <body>
   <main>
@@ -27,7 +27,6 @@
       </tr>
       {{ end }}
     </table>
-    </section>
   </main>
   <footer>
     {{ template "footer.html" }}

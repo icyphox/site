@@ -25,7 +25,7 @@ html {
 }
 
 main {
-  font-family: "Charter", "Georgia", "Noto Serif", serif;
+  font-family: "San Francisco", "Inter", "Roboto", sans-serif;
   font-size: 18px;
   padding: 0;
   line-height: 160%;
@@ -164,6 +164,7 @@ pre > code {
 
 .post-date {
   color: var(--gray);
+  text-transform: lowercase;
 }
 
 table {
@@ -174,6 +175,7 @@ table {
   white-space: nowrap;
   vertical-align: baseline;
   color: var(--gray);
+  text-transform: lowercase;
 }
 
 .index-post {
@@ -194,9 +196,6 @@ footer {
   padding-top: 30px;
 }
 
-.post-date {
-  color: var(--gray);
-}
 
 blockquote {
   margin: 7px 0 7px 0;

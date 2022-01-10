@@ -4,10 +4,9 @@ title: about
 subtitle: About me.
 ---
 
-![anirudh](https://x.icyphox.sh/9rUNl.jpeg)
-
-I'm Anirudh Oppiliappan, but you'll often find me as **icyphox** (or
-just **icy**), on the Internet.
+I'm Anirudh Oppiliappan, a doer of computery things. You'll often find
+me as **icyphox** (or just **icy**), on the Internet. I work at
+[Ory](https://ory.sh) as a Systems Reliability Engineer.
 
 ## contact
 
@@ -19,9 +18,8 @@ need it, my [PGP key](/static/gpg.txt):
 FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4
 ```
 
-I generally always reply within the day. Alternative means of
-communication, like my phone number, are only given out on a
-need-to-know basis.
+I'm also available on IRC as `icy` on [libera.chat](https://libera.chat)
+and [rizon.net](https://rizon.net).
 
 Some of my links:
 
@@ -30,7 +28,7 @@ Some of my links:
 - [Steam](https://steamcommunity.com/id/icyphox)
 - [GitHub](https://github.com/icyphox)
 
-The only social media I actively use is the fediverse:
+The only social media I somewhat actively use is the fediverse:
 https://toot.icyphox.sh/@x
 
 If you're interested in **hiring me** -- here's my
