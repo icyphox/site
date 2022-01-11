@@ -25,7 +25,7 @@ html {
 }
 
 main {
-  font-family: "San Francisco", "Inter", "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Roboto", "Segoe UI", sans-serif;
   font-size: 18px;
   padding: 0;
   line-height: 160%;
