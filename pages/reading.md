@@ -6,6 +6,10 @@ subtitle: Books I've read.
 
 I've read a whole bunch more, but I can't remember beyond 2020.
 
+## 2022
+
+- [The Eye of the World](https://en.wikipedia.org/wiki/The_Eye_of_the_World) -- now reading
+
 ## 2021
 - [The Game](https://en.wikipedia.org/wiki/Tom_Wood_\(author\)#Victor_the_Assassin_Series)
 - [Permanent
