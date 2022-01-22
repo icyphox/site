@@ -22,7 +22,7 @@ used since like, my mom was born (I'm looking at you Intel 8086), I am
 now a Bachelor of Technology in Computer Science and Engineering. I say
 barely because I actually did pretty terribly. I'm still mildly
 surprised that given my GPA, the degree certificate classifies it as a
-"First Class". I think they just sorry for us lot.
+"First Class". I think they just felt sorry for us lot.
 
 Was it a waste of time? A lot of the coursework, sadly, was. But my time
 in college -- however little -- was actually quite fun. One thing's for
