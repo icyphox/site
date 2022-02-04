@@ -5,7 +5,7 @@ subtitle: About me.
 ---
 
 I'm Anirudh Oppiliappan, a doer of computery things. You'll often find
-me as **icyphox** (or just **icy**) on the Internet. I work for Ory
+me as **icyphox** (or just **icy**) on the Internet. I work for
 [Ory](https://ory.sh) as a Site Reliability Engineer.
 
 ## contact
