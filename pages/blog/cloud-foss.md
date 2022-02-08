@@ -35,6 +35,16 @@ of a company built this way. Unless of course, I'm gravely mistaken
 one yourself -- please [email me](mailto:x@icyphox.sh); I'll be happy to
 mention it here.
 
+**Update**: I was indeed mistaken. Here are a few companies built
+similary:
+- [jmp.chat](https://jmp.chat/) -- free-as-in-freedom US/Canadian phone
+  numbers
+- [Frappe](https://frappe.io/) -- Indian company building a suite of
+  free software products
+- [Plausible Analytics](https://plausible.io) -- free software analytics
+  platform. The self-hosted version has a less frequent (LTS) release
+  schedule.
+
 For those unaware, sourcehut is an entirely free software
 company/startup that's building a software development platform; a suite
 of tools and services like git/hg hosting, CI, mailing lists, issue
@@ -83,8 +93,8 @@ will most likely be irrelevant to them -- usually catering to larger
 deployments (support for say, CockroachDB), or enterprise-level
 deployments (Active Directory support, SSO), etc.
 
-The business model is quite simple -- get initial traction via the
-self-hosted open source software, while building out your cloud
+The business model is quite straightforward -- get initial traction via
+the self-hosted open source software, while building out your cloud
 offering. The community built around the self-hosted software are your
 initial pool of potential paying customers. Generally, these are either
 early-stage startups (seed to series A) who don't have a large enough
