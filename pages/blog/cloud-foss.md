@@ -36,7 +36,7 @@ one yourself -- please [email me](mailto:x@icyphox.sh); I'll be happy to
 mention it here.
 
 **Update**: I was indeed mistaken. Here are a few companies built
-similary:
+similarly:
 - [jmp.chat](https://jmp.chat/) -- free-as-in-freedom US/Canadian phone
   numbers
 - [Frappe](https://frappe.io/) -- Indian company building a suite of
