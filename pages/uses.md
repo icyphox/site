@@ -36,8 +36,6 @@ now).
 **cwm**: The Calm Window Manager. The best out-of-the-box experience you can
 get in a window manager. Period.
 
-**xterm**: Reliable and rock solid terminal emulator.
-
 **tmux**: Most of my actual window management happens here. I usually have
 3 - 4 workspaces -- general throwaway terminals, work, music and IRC. It also
 handles scrollback for me, so that's nice.
