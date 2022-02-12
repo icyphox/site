@@ -117,7 +117,7 @@ altogether (hint: Facebook), but that's a discussion for another day.
 
 Or be like me:
 
-![0 posts lul](/static/img/ig.jpg)
+![](https://x.icyphox.sh/fI7nL.jpg)
 
 
 And that pretty much wraps it up, with a neat little bow.

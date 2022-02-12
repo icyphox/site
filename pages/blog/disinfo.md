@@ -142,7 +142,7 @@ Of course, if you're a nobody on Twitter (like me), this is a non-issue for you.
 
 And please, don't do this:
 
-![mcafee opsecfail](/static/img/mcafeetweet.png)
+![](https://x.icyphox.sh/gqoHr.png)
 
 ## Conclusion
 

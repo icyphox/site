@@ -83,4 +83,4 @@ mail if you know what's going on here.
 And oh, here's the protective case [nerd](https://peppe.rs) fashioned
 out of cardboard.
 
-![raspberry pi case](/static/img/pi-case.jpg)
+![](https://x.icyphox.sh/zn2I3.jpg)

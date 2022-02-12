@@ -63,10 +63,10 @@ It's not much, and
 I can't be bothered to format them like a collage or whatever, so I'll
 just dump them here -- as is.
 
-![nice badge](/static/img/silly_badge.jpg)
-![awkward smile!](/static/img/abhishek_anmol.jpg)
-![me talking](/static/img/me_talking.jpg)
-![s443 @ pycon](/static/img/s443_pycon.jpg)
+![](https://x.icyphox.sh/4oTZB.jpg)
+![](https://x.icyphox.sh/EApua.jpg)
+![](https://x.icyphox.sh/40hAp.jpg)
+![](https://x.icyphox.sh/uCDR-.jpg)
 
 ## C'est tout
 

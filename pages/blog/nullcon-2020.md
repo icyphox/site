@@ -97,4 +97,4 @@ Note to the Nullcon organizers: you guys did a fantastic job running the
 conference despite Corona-chan's best efforts. I'd like to suggest one
 little thing though -- please VET YOUR SPEAKERS more!
 
-![group pic](/static/img/nullcon_beach.jpg)
+![](https://x.icyphox.sh/EjO-E.jpg)

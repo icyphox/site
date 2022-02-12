@@ -63,4 +63,4 @@ further incentivised to dispose of my Google account.
 
 And here's the screenshot y'all were waiting for:
 
-![vimb](/static/img/vimb.png)
+![](https://x.icyphox.sh/d03i0.png)
