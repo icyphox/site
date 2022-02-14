@@ -8,7 +8,9 @@ I've read a whole bunch more, but I can't remember beyond 2020.
 
 ## 2022
 
-- [The Eye of the World](https://en.wikipedia.org/wiki/The_Eye_of_the_World) -- now reading
+- [The Great Hunt](https://en.wikipedia.org/wiki/The_Great_Hunt) -- now
+  reading
+- [The Eye of the World](https://en.wikipedia.org/wiki/The_Eye_of_the_World)
 
 ## 2021
 - [The Game](https://en.wikipedia.org/wiki/Tom_Wood_\(author\)#Victor_the_Assassin_Series)
