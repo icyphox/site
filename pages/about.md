@@ -4,9 +4,17 @@ title: about
 subtitle: About me.
 ---
 
-I'm Anirudh Oppiliappan, a doer of computery things. You'll often find
-me as **icyphox** (or just **icy**) on the Internet. I work for
-[Ory](https://ory.sh) as a Site Reliability Engineer.
+I'm Anirudh Oppiliappan, often found as **icyphox** (or sometimes just
+**icy**) on the Internet. I live in Bangalore, India and work for
+[Ory](https://ory.sh) as a Site Reliability Engineer. Below are a few
+things that interest me, and can serve as conversation starters for you:
+- security -- in and around cloud-native tech/containers, opsec, threat intel
+- infrastructure
+- geopolitics and natsec -- specifically Russia and eastern Europe
+- motorsport -- Formula 1/2/3/E
+- fitness
+- OpenBSD
+- the Go programming language
 
 ## contact
 
