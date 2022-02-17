@@ -12,6 +12,7 @@ things that interest me, and can serve as conversation starters for you:
 - infrastructure
 - geopolitics and natsec -- specifically Russia and eastern Europe
 - motorsport -- Formula 1/2/3/E
+- startups
 - fitness
 - OpenBSD
 - the Go programming language
