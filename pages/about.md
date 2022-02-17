@@ -31,14 +31,14 @@ I'm also available on IRC as `icy` on [libera.chat](https://libera.chat)
 and [rizon.net](https://rizon.net).
 
 Some of my links:
+- Lobsters [@icy](https://lobste.rs/u/icy)
+- Hacker News [@icy](https://news.ycombinator.com/user?id=icy)
+- Steam [@icyphox](https://steamcommunity.com/id/icyphox)
+- GitHub [@icyphox](https://github.com/icyphox)
+- Fediverse [@x@toot.icyphox.sh](https://toot.icyphox.sh/@x)
+- Twitter [@icyphox](https://twitter.com/icyphox)
 
-- [Lobsters](https://lobste.rs/u/icy)
-- [Hacker News](https://news.ycombinator.com/user?id=icy)
-- [Steam](https://steamcommunity.com/id/icyphox)
-- [GitHub](https://github.com/icyphox)
-
-The only social media I somewhat actively use is the fediverse:
-https://toot.icyphox.sh/@x
+I'm generally uninterested in social media and don't often post on any.
 
 If you're interested in **hiring me** -- here's my
 [résumé](https://x.icyphox.sh/resume.pdf).
@@ -46,15 +46,9 @@ If you're interested in **hiring me** -- here's my
 ## this site
 
 This site is built using [vite](https://git.icyphox.sh/vite) -- a static
-site generator written in Go.
+site generator written in Go. The source for this site is
+[here](https://git.icyphox.sh/site), licensed under MIT. All content on
+this site is available under the Creative Commons BY-NC-SA license.
 
-Nearly all media content, barring some old images, are served from my
-file host at https://x.icyphox.sh. This is hosted on my Raspberry Pi, at
-home. If you notice slow image loads, this is why. At present, I have no
-plans to change this setup.
-
-The source for this site is [here](https://git.icyphox.sh/site).
-
-I don't care for analytics or statistics; I value your privacy. All
-content hosted on this site is available under the **Creative Commons
-BY-NC-SA** license. All source for this site is available under **MIT**.
+At present, this site is hosted on Netlify. It loads no third-party
+scripts. I don't care for analytics or statistics; I value your privacy.
