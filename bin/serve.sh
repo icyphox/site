@@ -1,4 +1,4 @@
 #!/bin/sh
 
-python3 -m http.server --directory build &> /dev/null
+vite serve &
 find pages/ | entr vite build

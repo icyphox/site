@@ -30,8 +30,9 @@ now).
 
 ## software
 
-**OpenBSD**: Fantastic OS by fantastic devs. What's not to love? Also read
-[OpenBSD on the HP Envy 13](/blog/openbsd-hp-envy).
+**NixOS**: Had to switch to a Linux distribution for work, and this
+seemed liked the least-shit choice. I can't claim I understand even half
+of Nix (the language), but it gets the job done.
 
 **cwm**: The Calm Window Manager. The best out-of-the-box experience you can
 get in a window manager. Period.
@@ -43,4 +44,5 @@ handles scrollback for me, so that's nice.
 **weechat**: IRC client that's infinitely riceable.
 
 And the [dotfiles](https://github.com/icyphox/dotfiles) for all software
-mentioned, and more.
+mentioned, and more. You might be interested in the `old` branch for my
+pre-NixOS configs.
