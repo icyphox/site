@@ -87,10 +87,6 @@ main a {
   text-decoration: underline;
 }
 
-table a {
-  text-decoration: none;
-}
-
 a:hover {
   text-decoration: underline;
   background: var(--light-gray);
@@ -168,7 +164,16 @@ pre > code {
 }
 
 table {
+  table-layout: fixed;
   width: 100%;
+}
+
+table a {
+  text-decoration: none;
+}
+
+td {
+  padding-top: 2px;
 }
 
 .index-date {

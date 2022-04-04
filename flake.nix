@@ -1,5 +1,5 @@
 {
-  description = "icyphox/site";
+  description = "site";
 
   outputs = { self, nixpkgs }: {
     devShell.x86_64-linux =
