@@ -5,9 +5,9 @@ subtitle: Tracking my reading.
 ---
 
 | | | |
-| :--- | ---: | ---: |
+| :--- | --- | ---: |
 | **2022** | | |
-| [Busy Doing Nothing](https://hundredrabbits.itch.io/busy-doing-nothing) | Hundred Rabbits | now reading |
+| [Busy Doing Nothing](https://hundredrabbits.itch.io/busy-doing-nothing) | Hundred Rabbits | _now reading_ |
 | [The Great Hunt](https://en.wikipedia.org/wiki/The_Great_Hunt) | Robert Jordan | ★★★★ |
 | [The Eye of the World](https://en.wikipedia.org/wiki/The_Eye_of_the_World) | Robert Jordan | ★★★★ |
 | **2021** | | |

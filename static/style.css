@@ -173,7 +173,15 @@ table a {
 }
 
 td {
-  padding-top: 2px;
+  padding: 2px 11px 0 11px;
+}
+
+td:first-child {
+  padding-left: 0;
+}
+
+td:last-child {
+  padding-right: 0;
 }
 
 .index-date {
@@ -226,6 +234,16 @@ nav ul li {
 }
 
 @media (max-width: 385px) {
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  td {
+    padding: 0;
+    text-align: left;
+  }
+  tr {
+    padding: 10px 0 10px 0;
+  }
   nav ul li {
     display: block;
   }
