@@ -8,8 +8,10 @@ I've read a whole bunch more, but I can't remember beyond 2020.
 
 ## 2022
 
-- [The Great Hunt](https://en.wikipedia.org/wiki/The_Great_Hunt) -- now
+- [Busy Doing
+  Nothing](https://hundredrabbits.itch.io/busy-doing-nothing) -- now
   reading
+- [The Great Hunt](https://en.wikipedia.org/wiki/The_Great_Hunt)
 - [The Eye of the World](https://en.wikipedia.org/wiki/The_Eye_of_the_World)
 
 ## 2021
