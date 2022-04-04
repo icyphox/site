@@ -173,7 +173,7 @@ table a {
 }
 
 td {
-  padding: 2px 11px 0 11px;
+  padding: 7px 11px 0 11px;
 }
 
 td:first-child {
@@ -189,10 +189,6 @@ td:last-child {
   vertical-align: baseline;
   color: var(--gray);
   text-transform: lowercase;
-}
-
-.index-post {
-  padding-bottom: 7px;
 }
 
 header {
