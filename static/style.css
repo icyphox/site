@@ -1,20 +1,20 @@
 :root {
-  --bg: #f4f4f4;
+  --light: #f4f4f4;
   --cyan: #509c93;
   --light-gray: #eee;
+  --medium-gray: #ddd;
   --gray: #6a6a6a;
-  --code: #666;
   --dark: #444;
   --darker: #222;
 }
 
 html {
-  background: var(--bg);
+  background: var(--light);
 }
 
 ::selection {
-  background: var(--dark);
-  color: var(--bg);
+  background: var(--medium-gray);
+  opacity: 0.3;
 }
 
 * {
@@ -89,7 +89,7 @@ main a {
 
 a:hover {
   text-decoration: underline;
-  background: var(--light-gray);
+  background: var(--medium-gray);
 }
 
 body {
@@ -152,10 +152,6 @@ pre {
 
 code {
   background-color: var(--light-gray);
-}
-
-pre > code {
-  color: var(--code);
 }
 
 .post-date {
