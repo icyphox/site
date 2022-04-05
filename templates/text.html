@@ -1,6 +1,6 @@
 <html lang=en>
   <head>
-    {{ template "head.html" }}
+    {{ template "partials/head.html" }}
     <meta name="description" content="{{ index .Meta "subtitle" }}">
   </head>
   <title>
@@ -9,7 +9,7 @@
   <body>
     <main>
       <div class="sidenav">
-        {{ template "nav.html" }}
+        {{ template "partials/nav.html" }}
       </div>
       <article align="left">
         <section class="post-date">
@@ -28,7 +28,7 @@
       </article>
     </main>
     <footer>
-      {{ template "footer.html" }}
+      {{ template "partials/footer.html" }}
     </footer>
   </body>
 

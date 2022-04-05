@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=en>
   <head>
-    {{ template "head.html" }}
+    {{ template "partials/head.html" }}
     <meta name="description" content="{{ index .Meta "subtitle" }}">
   </head>
   <title>
@@ -10,7 +10,7 @@
   <body>
   <main>
     <div class="sidenav">
-      {{ template "nav.html" }}
+      {{ template "partials/nav.html" }}
     </div>
     <article align="left">
       <h1>{{ index .Meta "title" }}</h1>
@@ -18,7 +18,7 @@
     </article>
   </main>
   <footer>
-    {{ template "footer.html" }}
+    {{ template "partials/footer.html" }}
   </footer>
 </body>
 
