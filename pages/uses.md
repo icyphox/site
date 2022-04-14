@@ -16,9 +16,12 @@ out.
 my primary computing device. A comfy, fairly future-proof machine that
 happens to support Linux/BSD incredibly well out-of-the-box.
 
-**Ducky One 2 SF**: 65% mechanical keyboard, Cherry MX Speed Silver
+![lotus58 keyboard](https://x.icyphox.sh/wsHGX.jpg)
+**Lotus58**: Split-ortho mechanical keyboard, Gazzew Boba LT switches.
+
+~~**Ducky One 2 SF**: 65% mechanical keyboard, Cherry MX Speed Silver
 switches and blank DSA keycaps. I've written about it in detail
-[here](/blog/ducky-one-2).
+[here](/blog/ducky-one-2).~~
 
 **Logitech M221**: An el cheapo wireless mouse that mouses just enough.
 
