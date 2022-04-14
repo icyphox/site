@@ -28,7 +28,7 @@ subtitle: Tracking my reading.
 | [Edgedancer](https://en.wikipedia.org/wiki/Edgedancer) | Brandon Sanderson | ★★★★★ |
 | [Dawnshard](https://en.wikipedia.org/wiki/The_Stormlight_Archive#Books) | Brandon Sanderson | ★★★★★ |
 | [Rhythm of War](https://en.wikipedia.org/wiki/Rhythm_of_War) | Brandon Sanderson | ★★★★★ |
-| [Elantris](https://en.wikipedia.org/wiki/Elantris) | Brandon Sanderson | dropped |
+| [Elantris](https://en.wikipedia.org/wiki/Elantris) | Brandon Sanderson | _dropped_ |
 | [Warbreaker](https://en.wikipedia.org/wiki/Warbreaker) | Brandon Sanderson | ★★★★★ |
 | [Sixth of the Dusk](https://en.wikipedia.org/wiki/Brandon_Sanderson_bibliography#Cosmere_short_works) | Brandon Sanderson | ★★★ |
 | [Shadows for Silence in the Forests of Hell](https://en.wikipedia.org/wiki/Brandon_Sanderson_bibliography#Cosmere_short_works) | Brandon Sanderson | ★★★★ |
