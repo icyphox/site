@@ -4,6 +4,13 @@ title: reading
 subtitle: Tracking my reading.
 ---
 
+I generally read a lot of high-fantasy, as is evident from my Sanderson
+streaks. I'm trying to get into more non-fiction, "Hacker News" type of
+literature.
+
+I've obviously read a lot more than this, but I can't remember beyond
+2020.
+
 | | | |
 | :--- | --- | ---: |
 | **2022** | | |
