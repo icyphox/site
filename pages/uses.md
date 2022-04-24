@@ -8,20 +8,14 @@ I often get asked about my computing setup -- so I created this page to link it
 whenever. Also because I've seen it on other sites, and I don't want to miss
 out.
 
-![battlestation](https://x.icyphox.sh/SX0CU.jpg)
-
 ## hardware
 
-**HP Envy 13 (2017)**: 13.3" FHD, i5 8250u, 8GB RAM, 256GB SSD. This is
-my primary computing device. A comfy, fairly future-proof machine that
-happens to support Linux/BSD incredibly well out-of-the-box.
+**Asus ROG Flow X13 (2021)**: 13.4" 4K, Ryzen 9 5900HS, 32GB RAM, 1TB
+SSD, Nvidia GTX 1650 Max-Q. Even more future proof than the Envy --
+evidently. Runs Linux quite well; not sure about BSD.
 
 ![lotus58 keyboard](https://x.icyphox.sh/wsHGX.jpg)
 **Lotus58**: Split-ortho mechanical keyboard, Gazzew Boba LT switches.
-
-~~**Ducky One 2 SF**: 65% mechanical keyboard, Cherry MX Speed Silver
-switches and blank DSA keycaps. I've written about it in detail
-[here](/blog/ducky-one-2).~~
 
 **Logitech M221**: An el cheapo wireless mouse that mouses just enough.
 
@@ -30,6 +24,17 @@ for 2500 INR (≈33 USD).
 
 **iPhone 13 mini**: The only actually small phone in the market (right
 now).
+
+### old hardware (no longer in active use)
+
+**HP Envy 13 (2017)** : 13.3" FHD, i5 8250u, 8GB RAM, 256GB SSD. A
+comfy, fairly future-proof machine that happens to support Linux/BSD
+incredibly well out-of-the-box.
+
+**Ducky One 2 SF** : 65% mechanical keyboard, Cherry MX Speed Silver
+switches and blank DSA keycaps. I've written about it in detail
+[here](/blog/ducky-one-2).
+
 
 ## software
 
