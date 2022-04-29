@@ -35,7 +35,7 @@ block volume storage. All for free.[^1] Great for messing around.
 Since my RPi is behind a CG-NAT, I'm running a Wireguard mesh that looks
 something like this:
 
-![wireguard mesh](https://x.icyphox.sh/1Xkvh.png)
+![wireguard mesh](https://cdn.icyphox.sh/1Xkvh.png)
 
 Wireguard is fairly trivial to set up, and there are tons of guides
 online, so I'll skip that bit.
@@ -124,7 +124,7 @@ In essence, it makes one of your nodes attract all the traffic,
 assigning each `LoadBalancer` service an IP from a configured address
 pool (not your node IP). In my case:
 
-![jade loadbalancer](https://x.icyphox.sh/zuy96.png)
+![jade loadbalancer](https://cdn.icyphox.sh/zuy96.png)
 
 However, this assumes that our load balancer node has a public IP. Well
 it does, but we're still within our Wireguard network. To actually

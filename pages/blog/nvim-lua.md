@@ -291,7 +291,7 @@ is akin to doing a series of string concatenations, but way faster.
 vim.o.statusline = table.concat(stl)
 ```
 
-![statusline](https://x.icyphox.sh/statusline.png)
+![statusline](https://cdn.icyphox.sh/statusline.png)
 
 ## this is what being tpope feels like
 

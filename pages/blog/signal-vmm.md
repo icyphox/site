@@ -102,7 +102,7 @@ status="$(vmctl status ubuntu | grep running)"
 ssh -Y pantwo signal-desktop &> /dev/null
 ```
 
-![signal desktop](https://x.icyphox.sh/HwF45.png)
+![signal desktop](https://cdn.icyphox.sh/HwF45.png)
 
 ## caveats
 

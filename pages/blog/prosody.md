@@ -136,7 +136,7 @@ user registrations from XMPP/Jabber clients (security risk!), by setting
 `allow_registration = true`.
 
 I may have missed something important, so here's [my
-config](https://x.icyphox.sh/prosody.cfg.lua) for reference.
+config](https://cdn.icyphox.sh/prosody.cfg.lua) for reference.
 
 ## Closing notes
 

@@ -63,10 +63,10 @@ It's not much, and
 I can't be bothered to format them like a collage or whatever, so I'll
 just dump them here -- as is.
 
-![](https://x.icyphox.sh/4oTZB.jpg)
-![](https://x.icyphox.sh/EApua.jpg)
-![](https://x.icyphox.sh/40hAp.jpg)
-![](https://x.icyphox.sh/uCDR-.jpg)
+![](https://cdn.icyphox.sh/4oTZB.jpg)
+![](https://cdn.icyphox.sh/EApua.jpg)
+![](https://cdn.icyphox.sh/40hAp.jpg)
+![](https://cdn.icyphox.sh/uCDR-.jpg)
 
 ## C'est tout
 

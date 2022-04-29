@@ -23,7 +23,7 @@ service that works via email. Email is the perfect tool for this
 use-case: works offline; you can organize it however you like; you own
 your data.
 
-![forlater arch](https://x.icyphox.sh/JNAn4.png)
+![forlater arch](https://cdn.icyphox.sh/JNAn4.png)
 
 Pictured above is how forlater works. Each component is explained below.
 

@@ -56,7 +56,7 @@ things running on my Pi right now:
 - [radicale](https://radicale.org): Cal/CardDAV server
 - [Pleroma](https://pleroma.social): Single-user federated social media
     instance
-- [filehost](https://x.icyphox.sh)
+- [filehost](https://cdn.icyphox.sh)
 - [gonic](https://github.com/sentriz/gonic): Music streaming server
 - [crxn](http://deavmi.assigned.network/docs/crxn/site/): Cool network
     of cool people.

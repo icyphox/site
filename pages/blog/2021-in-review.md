@@ -41,8 +41,8 @@ cloud-native security, and some more Kubernetes.
 
 Oh, and here are a few pictures from our trip to the Maldives.[^1]
 
-![maldives 1](https://x.icyphox.sh/FX~bI.jpg)
-![maldives 2](https://x.icyphox.sh/DMHDG.jpg)
+![maldives 1](https://cdn.icyphox.sh/FX~bI.jpg)
+![maldives 2](https://cdn.icyphox.sh/DMHDG.jpg)
 
 [^1]:  If you're in Bangalore and are looking for work, definitely
     consider [applying to DeepSource](https://careers.deepsource.io)!

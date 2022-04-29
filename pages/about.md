@@ -41,7 +41,7 @@ Some of my links:
 I'm generally uninterested in social media and don't often post on any.
 
 If you're interested in **hiring me** -- here's my
-[résumé](https://x.icyphox.sh/resume.pdf).
+[résumé](https://cdn.icyphox.sh/resume.pdf).
 
 ## this site
 

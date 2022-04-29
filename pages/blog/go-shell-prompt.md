@@ -223,7 +223,7 @@ PS1='$(~/dotfiles/prompt/prompt) '
 ```
 
 And here's what it looks like, rendered:
-![go prompt](https://x.icyphox.sh/boh7u.png)
+![go prompt](https://cdn.icyphox.sh/boh7u.png)
 
 ## benchmarking
 

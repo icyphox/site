@@ -117,7 +117,7 @@ altogether (hint: Facebook), but that's a discussion for another day.
 
 Or be like me:
 
-![](https://x.icyphox.sh/fI7nL.jpg)
+![](https://cdn.icyphox.sh/fI7nL.jpg)
 
 
 And that pretty much wraps it up, with a neat little bow.

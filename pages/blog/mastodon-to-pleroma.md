@@ -66,7 +66,7 @@ apparently the only two who have it working. 2/2.
 
 Because Pleroma is cleaner, leaner[^3] and prettier looking[^4]. Oh, and we
 have chats.
-![screenshot of pleroma + soapbox-fe](https://x.icyphox.sh/l8g5y.png)
+![screenshot of pleroma + soapbox-fe](https://cdn.icyphox.sh/l8g5y.png)
 
 [^1]: [Erlang install guide](http://erlang.org/doc/installation_guide/INSTALL.html)
 [^2]: [Elixir install guide](https://elixir-lang.org/install.html#compiling-from-source-unix-and-mingw)

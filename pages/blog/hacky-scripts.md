@@ -84,7 +84,7 @@ involves JSON parsing with [`jq`](https://stedolan.github.io/jq/).
 That's it! It's so small, but I learnt a ton. For those curious, here's
 what it looks like running:
 
-![](https://x.icyphox.sh/orGJ9.png)
+![](https://cdn.icyphox.sh/orGJ9.png)
 
 ## Update latest post on the index page
 

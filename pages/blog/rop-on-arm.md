@@ -76,16 +76,16 @@ Start by running it, and entering any arbitrary string. On entering a fairly
 large string, say, “A” × 20, we
 see a segmentation fault occur.
 
-![](https://x.icyphox.sh/qrN69.png)
+![](https://cdn.icyphox.sh/qrN69.png)
 
 Now, open it up in `gdb` and look at the functions inside it.
 
-![](https://x.icyphox.sh/3j-MJ.png)
+![](https://cdn.icyphox.sh/3j-MJ.png)
 
 There are three functions that are of importance here, `main`, `winner` and 
 `gadget`. Disassembling the `main` function:
 
-![](https://x.icyphox.sh/p2iFF.png)
+![](https://cdn.icyphox.sh/p2iFF.png)
 
 We see a buffer of 16 bytes being created (`sub	sp, sp, #16`), and some calls
 to `puts()`/`printf()` and `scanf()`. Looks like `winner` and `gadget` are 
@@ -93,7 +93,7 @@ never actually called.
 
 Disassembling the `gadget` function:
 
-![](https://x.icyphox.sh/1T8XT.png)
+![](https://cdn.icyphox.sh/1T8XT.png)
 
 This is fairly simple, the stack is being initialized by `push`ing `{r11}`,
 which is also the frame pointer (`fp`). What’s interesting is the `pop {r0, pc}`
@@ -107,7 +107,7 @@ in `pc`. Neat.
 
 Moving on to the disassembly of the `winner` function:
 
-![](https://x.icyphox.sh/BDtJr.png)
+![](https://cdn.icyphox.sh/BDtJr.png)
 
 Here, we see a calls to `puts()`, `system()` and finally, `exit()`.
 So our end goal here is to, quite obviously, execute code via the `system()`
@@ -121,7 +121,7 @@ of exploitation by messing around with inputs.
 Back to `gdb`, hit `r` to run and pass in a patterned input, like in the
 screenshot.
 
-![](https://x.icyphox.sh/7IDsI.png)
+![](https://cdn.icyphox.sh/7IDsI.png)
 
 We hit a segfault because of invalid memory at address `0x46464646`. Notice
 the `pc` has been overwritten with our input.
@@ -139,7 +139,7 @@ the address of `winner`. Note the endianness.
 $ python -c 'print("AAAABBBBCCCCDDDDEEEE\x28\x05\x01\x00")' | ./rop2
 ```
 
-![](https://x.icyphox.sh/A~RaT.png)
+![](https://cdn.icyphox.sh/A~RaT.png)
 
 The reason we don’t jump to the first instruction is because we want to control the stack
 ourselves. If we allow `push {rll, lr}` (first instruction) to occur, the program will `pop`
@@ -182,7 +182,7 @@ at `main`, hit `r` to run, and search the entire address space for the string �
 ```
 (gdb) find &system, +9999999, "/bin/sh"
 ```
-![](https://x.icyphox.sh/SiNzl.png)
+![](https://cdn.icyphox.sh/SiNzl.png)
 
 One hit at `0xb6f85588`. The addresses of `gadget` and `system()` can be
 found from the disassmblies from earlier. Here’s the final exploit code:
@@ -201,7 +201,7 @@ Honestly, not too far off from our pseudo-code :)
 
 Let’s see it in action:
 
-![](https://x.icyphox.sh/9ob4r.png)
+![](https://cdn.icyphox.sh/9ob4r.png)
 
 Notice that it doesn’t work the first time, and this is because `/bin/sh` terminates
 when the pipe closes, since there’s no input coming in from STDIN.

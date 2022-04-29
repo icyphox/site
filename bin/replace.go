@@ -18,7 +18,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	oldLine, newLine := os.Args[1], os.Args[2]
+	oldStr, newStr := os.Args[1], os.Args[2]
 
 	posts, err := os.ReadDir(dir)
 	if err != nil {
@@ -33,8 +33,9 @@ func main() {
 
 		lines := strings.Split(string(input), "\n")
 		for i, line := range lines {
-			if strings.Contains(line, oldLine) {
-				lines[i] = newLine
+			if strings.Contains(line, oldStr) {
+				line = strings.ReplaceAll(line, oldStr, newStr)
+				lines[i] = line
 			}
 		}
 		output := strings.Join(lines, "\n")

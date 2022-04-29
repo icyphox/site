@@ -21,7 +21,7 @@ The only reliable source I've found (and folks on
 variety, but there's some decent prebuilts that you can pick up on
 there -- and I copped the Ducky One 2 SF.
 
-![Ducky One 2 SF side view](https://x.icyphox.sh/5LSG7.jpg)
+![Ducky One 2 SF side view](https://cdn.icyphox.sh/5LSG7.jpg)
 
 It's a 65% board, so unlike standard 60% boards, this comes with arrow
 keys and the `Del`, `PgUp` and `PgDn` keys. I don't _really_ need the
@@ -31,7 +31,7 @@ for example. Since this board lacks the function row, the `Esc` and the
 as usual), and `Fn + Esc` for the backtick. Takes a bit of relearning,
 but it's manageable.
 
-![Ducky One 2 SF top-down view](https://x.icyphox.sh/tRdNw.jpg)
+![Ducky One 2 SF top-down view](https://cdn.icyphox.sh/tRdNw.jpg)
 
 The key switches I went with were the Cherry MX Speed Silvers -- like
 Reds but actuate a bit faster. As it's my first ever mechanical

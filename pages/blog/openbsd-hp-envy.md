@@ -152,4 +152,4 @@ I'll close this post off with my new rice, and a sick ASCII art I made.
                     ~icy
 ```
 
-![openbsd rice](https://x.icyphox.sh/zDYdj.png)
+![openbsd rice](https://cdn.icyphox.sh/zDYdj.png)

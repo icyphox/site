@@ -72,7 +72,7 @@ container. This is convenient for many reasons, keeps your global
 namespace clean and a single command to drop into a Kali shell.
 
 I use a DigitalOcean droplet (BLR1) as a public filehost, found at
-[x.icyphox.sh](https://x.icyphox.sh). The UI is the wonderful
+[cdn.icyphox.sh](https://cdn.icyphox.sh). The UI is the wonderful
 [serve](https://github.com/zeit/serve), by [ZEIT](https://zeit.co). The
 same box also serves as my IRC bouncer and OpenVPN (TCP), which I tunnel
 via SSH running on 443. Campus firewall woes. 

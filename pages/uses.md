@@ -14,7 +14,7 @@ out.
 SSD, Nvidia GTX 1650 Max-Q. Even more future proof than the Envy --
 evidently. Runs Linux quite well; not sure about BSD.
 
-![lotus58 keyboard](https://x.icyphox.sh/wsHGX.jpg)
+![lotus58 keyboard](https://cdn.icyphox.sh/wsHGX.jpg)
 **Lotus58**: Split-ortho mechanical keyboard, Gazzew Boba LT switches.
 
 **Logitech M221**: An el cheapo wireless mouse that mouses just enough.

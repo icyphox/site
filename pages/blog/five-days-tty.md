@@ -141,4 +141,4 @@ trying to debug my issues.
 
 I'll now conclude with an obligatory screenshot.
 
-![scrot](https://x.icyphox.sh/R6G.png)
+![scrot](https://cdn.icyphox.sh/R6G.png)

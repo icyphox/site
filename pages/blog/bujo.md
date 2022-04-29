@@ -88,7 +88,7 @@ break it down. Hence, the running weekly log.
 I can't go without posting what it actually looks like in my notebook;
 so here, have a FOIA-declassified-looking picture of my bullet journal.
 
-![bullet journal](https://x.icyphox.sh/QzrdK.jpeg)
+![bullet journal](https://cdn.icyphox.sh/QzrdK.jpeg)
 
 This was when I first attempted the weekly log. Evidently, I struggled
 to compute dates accurately.  And yes, "rice acme" was a task -- one
@@ -99,7 +99,7 @@ the book with a pencil and I plan to continue with it until I finsh this
 notebook -- there's still about half of it left. I plan to cop a dotgrid
 notebook for my next one, and start using a pen.
 
-![notebook with sticker](https://x.icyphox.sh/0psb8.jpeg)
+![notebook with sticker](https://cdn.icyphox.sh/0psb8.jpeg)
 
 At first I was sceptical. I didn't think I'd stick to it. But hey, looks
 like I did. I've been using my bullet journal spinoff method to great

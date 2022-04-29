@@ -49,7 +49,7 @@ vote each recieve extra power during the race. Yup. You read that right.
 They made a World Championship racing series a social media popularity
 contest.
 
-![formula e broadcast](https://x.icyphox.sh/VOodw.png)
+![formula e broadcast](https://cdn.icyphox.sh/VOodw.png)
 
 My last gripe is with the broadcast. It's so bad! They really should
 lose the gamer graphics. The driver list on the left is not color coded

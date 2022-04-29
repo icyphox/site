@@ -82,7 +82,7 @@ registrations happening. Expect phishing and malware campaigns using the
 virus as a theme. In the past 24 hrs, ~450 `.com` domains alone were
 registered.
 
-![](https://x.icyphox.sh/SgswL.png)
+![](https://cdn.icyphox.sh/SgswL.png)
 
 Anywho, there are bigger problems at hand -- like the fact that my uni
 still hasn't suspended classes!
