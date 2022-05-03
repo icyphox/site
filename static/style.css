@@ -39,12 +39,12 @@ main article, table {
 }
 
 main h1 {
-  font: 25px;
+  font-size: 20px;
   padding: 10px 0 10px 0;
 }
 
 main h2 {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 main h2, h3 {
@@ -154,7 +154,7 @@ pre {
 }
 
 code {
-  font-size: 12px;
+  font-size: 13px;
   background-color: var(--light-gray);
 }
 
