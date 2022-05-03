@@ -10,6 +10,7 @@
 
 html {
   background: var(--light);
+  -webkit-text-size-adjust: none;
 }
 
 ::selection {
@@ -239,8 +240,5 @@ nav ul li {
   }
   tr {
     padding: 10px 0 10px 0;
-  }
-  nav ul li {
-    display: block;
   }
 }
