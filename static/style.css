@@ -29,7 +29,7 @@ del {
 
 main {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Roboto", "Segoe UI", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   padding: 0;
   line-height: 160%;
 }
@@ -154,6 +154,7 @@ pre {
 }
 
 code {
+  font-size: 12px;
   background-color: var(--light-gray);
 }
 
