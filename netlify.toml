@@ -1,3 +1,8 @@
 [build]
     publish = "build/"
     command = "make ci" 
+
+[[redirects]]
+    from = "/.well-known/webfinger"
+    to = "https://h.icyphox.sh/.well-known/webfinger"
+    force = true
