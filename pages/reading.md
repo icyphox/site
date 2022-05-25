@@ -14,6 +14,7 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2022** | | |
+| [People We Meet on Vacation](https://en.wikipedia.org/wiki/People_We_Meet_on_Vacation) | Emily Henry | _now reading_ |
 | [The Bands of Mourning](https://en.wikipedia.org/wiki/Mistborn:_The_Bands_of_Mourning) | Brandon Sanderson | ★★★★★ |
 | [The Power of Now](https://en.wikipedia.org/wiki/The_Power_of_Now) | Eckhart Tolle | ★★★★★ |
 | [Shadows of Self](https://en.wikipedia.org/wiki/Mistborn:_Shadows_of_Self) | Brandon Sanderson | ★★★★★ |
