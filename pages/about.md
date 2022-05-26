@@ -8,14 +8,18 @@ I'm Anirudh Oppiliappan, often found as **icyphox** (or sometimes just
 **icy**) on the Internet. I live in Bangalore, India and work for
 [Ory](https://ory.sh) as a Site Reliability Engineer. Below are a few
 things that interest me, and can serve as conversation starters for you:
-- security -- in and around cloud-native tech/containers, opsec, threat intel
-- infrastructure
-- geopolitics and natsec -- specifically Russia and eastern Europe
-- motorsport -- Formula 1/2/3/E
-- startups
-- fitness
-- OpenBSD
-- the Go programming language
+
+- Security. All kinds of it: operational, physical, threat intel,
+  cloud-native, etc.
+- Infrastructure. Kubernetes, containers, observability.
+- Geopolitics and national security; mostly eastern Europe and Russia.
+- Motorsport. I closely follow F1, F2 and F3.
+- Startups. I work (and worked) for one.
+- Fitness. Strength training, calisthenics.
+- The Go programming language. I love Go and I swear by the standard
+  library.
+- Language learning. Spoken, obviously. Currently learning Russian. Big
+  fan of total immersion and comprehensible input.
 
 ## contact
 
@@ -35,7 +39,7 @@ Some of my links:
 - Hacker News [@icy](https://news.ycombinator.com/user?id=icy)
 - Steam [@icyphox](https://steamcommunity.com/id/icyphox)
 - GitHub [@icyphox](https://github.com/icyphox)
-- Fediverse [@x@toot.icyphox.sh](https://toot.icyphox.sh/@x)
+- Fediverse [@icy@icyphox.sh](https://h.icyphox.sh/u/icy)
 - Twitter [@icyphox](https://twitter.com/icyphox)
 
 I'm generally uninterested in social media and don't often post on any.
