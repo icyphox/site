@@ -6,3 +6,8 @@
     from = "/.well-known/webfinger"
     to = "https://h.icyphox.sh/.well-known/webfinger"
     force = true
+
+[[redirects]]
+    from = "/*"
+    to = "/404"
+    status = 404
