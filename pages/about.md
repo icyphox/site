@@ -21,19 +21,6 @@ things that interest me, and can serve as conversation starters for you:
 - Language learning. Spoken, obviously. Currently learning Russian. Big
   fan of total immersion and comprehensible input.
 
-## contact
-
-Send mail to [x@icyphox.sh](mailto:x@icyphox.sh) or
-[anirudh@oppiliappan.com](mailto:anirudh@oppiliappan.com). Should you
-need it, my [PGP key](/static/gpg.txt):
-
-```
-FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4
-```
-
-I'm also available on IRC as `icy` on [libera.chat](https://libera.chat)
-and [rizon.net](https://rizon.net).
-
 Some of my links:
 - Lobsters [@icy](https://lobste.rs/u/icy)
 - Hacker News [@icy](https://news.ycombinator.com/user?id=icy)
@@ -46,6 +33,26 @@ I'm generally uninterested in social media and don't often post on any.
 
 If you're interested in **hiring me** -- here's my
 [résumé](https://cdn.icyphox.sh/resume.pdf).
+
+## contact
+
+Send mail to [x@icyphox.sh](mailto:x@icyphox.sh) or
+[anirudh@oppiliappan.com](mailto:anirudh@oppiliappan.com). Should you
+need it, my [PGP key](/static/gpg.txt):
+
+```
+FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4
+```
+
+I have both Signal and Session. If you know me personally, you probably
+already have my number for Signal. If not, here's my Session ID:
+```
+055ac04903fdb8653de6155d89da651f3ca3d4dc8047587887cc39574a8b28d460
+```
+
+I'm available on IRC as `icy` on [libera.chat](https://libera.chat) and
+[rizon.net](https://rizon.net) but I'm likely to miss messages as I
+don't get notified. Use the above methods instead.
 
 ## this site
 
