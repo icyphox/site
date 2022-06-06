@@ -14,7 +14,7 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2022** | | |
-| [The Spanish Love Deception](https://en.wikipedia.org/wiki/The_Spanish_Love_Deception) | Elena Armas | _now reading_ |
+| [The Spanish Love Deception](https://en.wikipedia.org/wiki/The_Spanish_Love_Deception) | Elena Armas | ★★ |
 | [People We Meet on Vacation](https://en.wikipedia.org/wiki/People_We_Meet_on_Vacation) | Emily Henry | ★★★ |
 | [The Bands of Mourning](https://en.wikipedia.org/wiki/Mistborn:_The_Bands_of_Mourning) | Brandon Sanderson | ★★★★★ |
 | [The Power of Now](https://en.wikipedia.org/wiki/The_Power_of_Now) | Eckhart Tolle | ★★★★★ |
