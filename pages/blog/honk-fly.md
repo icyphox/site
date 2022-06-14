@@ -228,7 +228,7 @@ understand the code, didn't enjoy having to upgrade Elixir/Erlang OTP
 whatever, `mix.deps get` blah blah; a single Go binary + sqlite + HTML
 templates speaks to me.
 
-Go follow me at [icy@icyphox.h](https://h.icyphox.sh/u/icy). It's why I
+Go follow me at [icy@icyphox.sh](https://h.icyphox.sh/u/icy). It's why I
 even wrote this post. Not that I can see it, honk doesn't have those
 ego-numbers.
 
