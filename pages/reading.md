@@ -5,8 +5,8 @@ subtitle: Tracking my reading.
 ---
 
 I generally read a lot of high-fantasy, as is evident from my Sanderson
-streaks. I'm trying to get into more non-fiction, "Hacker News" type of
-literature.
+streaks. For 2022, I'm switching it up a bit and picking up books from
+varied genres and authors to try and expand my interests.
 
 I've obviously read a lot more than this, but I can't remember beyond
 2020.
@@ -14,7 +14,8 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2022** | | |
-| [Damascus Station](https://www.goodreads.com/book/show/56769571-damascus-station) | David McCloskey | _now reading_ |
+| [Gone Girl](https://en.wikipedia.org/wiki/Gone_Girl_(novel\)) | Gillian Flynn | _now reading_ |
+| [Damascus Station](https://www.goodreads.com/book/show/56769571-damascus-station) | David McCloskey | ★★★★ |
 | [The Spanish Love Deception](https://en.wikipedia.org/wiki/The_Spanish_Love_Deception) | Elena Armas | ★★ |
 | [People We Meet on Vacation](https://en.wikipedia.org/wiki/People_We_Meet_on_Vacation) | Emily Henry | ★★★ |
 | [The Bands of Mourning](https://en.wikipedia.org/wiki/Mistborn:_The_Bands_of_Mourning) | Brandon Sanderson | ★★★★★ |
