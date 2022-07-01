@@ -14,16 +14,19 @@ out.
 SSD, Nvidia GTX 1650 Max-Q. Even more future proof than the Envy --
 evidently. Runs Linux quite well; not sure about BSD.
 
-![lotus58 keyboard](https://cdn.icyphox.sh/wsHGX.jpg)
+![lotus58 keyboard](https://cdn.icyphox.sh/wsHGX.jpg){300x0}
+
 - **Lotus58**: Split-ortho mechanical keyboard, Gazzew Boba LT switches.
 
-- **Logitech M221**: An el cheapo wireless mouse that mouses just enough.
+- **Logitech Ergo M575**: Wireless ergonomic thumb trackball mouse. 
 
 - **realme Buds Q2**: Truly wireless earphones, with ANC. Picked them up
 for 2500 INR (≈33 USD).
 
-- **iPhone 13 mini**: The only actually small phone in the market (right
-now).
+- **iPhone 13 mini**: The only actually small phone in the market.
+
+- **Kindle KT4**: Jailbroken using [WatchThis](https://www.mobileread.com/forums/showthread.php?t=346037)
+  and running KOReader.
 
 ### old hardware (no longer in active use)
 
