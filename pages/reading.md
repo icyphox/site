@@ -14,12 +14,13 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2022** | | |
-| [Gone Girl](https://en.wikipedia.org/wiki/Gone_Girl_(novel\)) | Gillian Flynn | _now reading_ |
-| [Damascus Station](https://www.goodreads.com/book/show/56769571-damascus-station) | David McCloskey | ★★★★ |
+| [The Name of the Wind](https://en.wikipedia.org/wiki/The_Name_of_the_Wind) | Patrick Rothfuss | _now reading_ |
+| [Gone Girl](https://en.wikipedia.org/wiki/Gone_Girl_(novel\)) | Gillian Flynn | ★★★★ |
+| [Damascus Station](https://www.goodreads.com/book/show/56769571-damascus-station) | David McCloskey | ★★★ |
 | [The Spanish Love Deception](https://en.wikipedia.org/wiki/The_Spanish_Love_Deception) | Elena Armas | ★★ |
 | [People We Meet on Vacation](https://en.wikipedia.org/wiki/People_We_Meet_on_Vacation) | Emily Henry | ★★★ |
 | [The Bands of Mourning](https://en.wikipedia.org/wiki/Mistborn:_The_Bands_of_Mourning) | Brandon Sanderson | ★★★★★ |
-| [The Power of Now](https://en.wikipedia.org/wiki/The_Power_of_Now) | Eckhart Tolle | ★★★★★ |
+| [The Power of Now](https://en.wikipedia.org/wiki/The_Power_of_Now) | Eckhart Tolle | ★★★★ |
 | [Shadows of Self](https://en.wikipedia.org/wiki/Mistborn:_Shadows_of_Self) | Brandon Sanderson | ★★★★★ |
 | [Busy Doing Nothing](https://hundredrabbits.itch.io/busy-doing-nothing) | Hundred Rabbits | ★★ |
 | [The Great Hunt](https://en.wikipedia.org/wiki/The_Great_Hunt) | Robert Jordan | ★★★★ |
