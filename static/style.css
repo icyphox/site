@@ -97,7 +97,7 @@ a:hover {
 }
 
 body {
-  max-width: 640px;
+  max-width: 655px;
   padding: 0 13px;
   margin: 40px auto;
 }
@@ -106,7 +106,7 @@ main article img {
   max-width: 100%;
   width: 100%;
   display: block;
-  margin: 0 auto 4px auto;
+  margin: 10px auto 4px auto;
 }
 
 main ul, main ol {
