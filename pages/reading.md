@@ -14,7 +14,7 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2022** | | |
-| [The Name of the Wind](https://en.wikipedia.org/wiki/The_Name_of_the_Wind) | Patrick Rothfuss | _now reading_ |
+| [The Name of the Wind](https://en.wikipedia.org/wiki/The_Name_of_the_Wind) | Patrick Rothfuss | ★★★★★ |
 | [Gone Girl](https://en.wikipedia.org/wiki/Gone_Girl_(novel\)) | Gillian Flynn | ★★★★ |
 | [Damascus Station](https://www.goodreads.com/book/show/56769571-damascus-station) | David McCloskey | ★★★ |
 | [The Spanish Love Deception](https://en.wikipedia.org/wiki/The_Spanish_Love_Deception) | Elena Armas | ★★ |
