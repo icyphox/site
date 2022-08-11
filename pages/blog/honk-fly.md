@@ -6,6 +6,10 @@ subtitle: Running honk on fly.io
 date: 2022-05-25
 ---
 
+**Update 2022-08-11**: As with literally every update of mine, I'm no
+longer running honk on Fly. It's way easier to simply run it on a server
+myself, behind nginx. Huh -- who knew?
+
 For those unaware -- first of all, how? it's literally everywhere --
 [fly.io](https://fly.io) is the new platform-as-a-service du jour. The
 idea is to give them a Dockerfile (or a pre-built image, or just generic
