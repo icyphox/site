@@ -14,7 +14,8 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2022** | | |
-| [The Wise Man's Fear](https://en.wikipedia.org/wiki/The_Wise_Man%27s_Fear) | Patrick Rothfuss | _now reading_ |
+| [The Silent Patient](https://en.wikipedia.org/wiki/The_Silent_Patient) | Alex Michaelides | _now reading_ |
+| [The Wise Man's Fear](https://en.wikipedia.org/wiki/The_Wise_Man%27s_Fear) | Patrick Rothfuss | ★★★★ |
 | [The Name of the Wind](https://en.wikipedia.org/wiki/The_Name_of_the_Wind) | Patrick Rothfuss | ★★★★★ |
 | [Gone Girl](https://en.wikipedia.org/wiki/Gone_Girl_(novel\)) | Gillian Flynn | ★★★★ |
 | [Damascus Station](https://www.goodreads.com/book/show/56769571-damascus-station) | David McCloskey | ★★★ |
