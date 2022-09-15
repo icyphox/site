@@ -14,9 +14,13 @@ out.
 SSD, Nvidia GTX 1650 Max-Q. Even more future proof than the Envy --
 evidently. Runs Linux quite well; not sure about BSD.
 
-![lotus58 keyboard](https://cdn.icyphox.sh/wsHGX.jpg){300x0}
+- **HP Envy 13 (2017)**: 13.3" FHD, i5 8250u, 8GB RAM, 256GB SSD. A
+comfy, fairly future-proof machine that happens to support Linux/BSD
+incredibly well out-of-the-box -- and macOS -- which happens to be what
+it currently runs via OpenCore.
 
-- **Lotus58**: Split-ortho mechanical keyboard, Gazzew Boba LT switches.
+- **Ferricy**: 34-key wireless split keyboard designed by me, based on
+  the Ferris Sweep. See: https://github.com/icyphox/ferricy
 
 - **Logitech Ergo M575**: Wireless ergonomic thumb trackball mouse. 
 
@@ -30,14 +34,11 @@ for 2500 INR (≈33 USD).
 
 ### old hardware (no longer in active use)
 
-- **HP Envy 13 (2017)**: 13.3" FHD, i5 8250u, 8GB RAM, 256GB SSD. A
-comfy, fairly future-proof machine that happens to support Linux/BSD
-incredibly well out-of-the-box.
-
 - **Ducky One 2 SF**: 65% mechanical keyboard, Cherry MX Speed Silver
 switches and blank DSA keycaps. I've written about it in detail
 [here](/blog/ducky-one-2).
 
+- **Lotus58**: Split-ortho mechanical keyboard, Gazzew Boba LT switches.
 
 ## software
 
