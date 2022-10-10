@@ -14,7 +14,8 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2022** | | |
-| [The Kill Artist](https://en.wikipedia.org/wiki/The_Kill_Artist) | Daniel Silva | _now reading_ |
+| [Six of Crows](https://en.wikipedia.org/wiki/Six_of_Crows) | Leigh Bardugo | _now reading_ |
+| [The Kill Artist](https://en.wikipedia.org/wiki/The_Kill_Artist) | Daniel Silva | _dropped_ |
 | [The Silent Patient](https://en.wikipedia.org/wiki/The_Silent_Patient) | Alex Michaelides | ★★★ |
 | [The Wise Man's Fear](https://en.wikipedia.org/wiki/The_Wise_Man%27s_Fear) | Patrick Rothfuss | ★★★★ |
 | [The Name of the Wind](https://en.wikipedia.org/wiki/The_Name_of_the_Wind) | Patrick Rothfuss | ★★★★★ |
