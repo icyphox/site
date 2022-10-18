@@ -44,3 +44,5 @@ it on a separate Unicode layer.
 The unfortunate caveat is it only works where IBus works, and it doesn't
 seem to work in Qt applications. Granted, I only really need it in my
 browser and Signal/Slack Desktop (Electron) so that isn't a dealbreaker.
+
+My ZMK config is [here](https://github.com/icyphox/ferricy-zmk).
