@@ -14,7 +14,8 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2022** | | |
-| [The Flatshare](https://www.goodreads.com/book/show/36478784-the-flatshare) | Beth O'Leary | _now reading_ |
+| [Assassin's Apprentice](https://en.wikipedia.org/wiki/Assassin%27s_Apprentice) | Robin Hobb | _now reading_ |
+| [The Flatshare](https://www.goodreads.com/book/show/36478784-the-flatshare) | Beth O'Leary | ★★★ |
 | [Six of Crows](https://en.wikipedia.org/wiki/Six_of_Crows) | Leigh Bardugo | ★★★ |
 | [The Kill Artist](https://en.wikipedia.org/wiki/The_Kill_Artist) | Daniel Silva | _dropped_ |
 | [The Silent Patient](https://en.wikipedia.org/wiki/The_Silent_Patient) | Alex Michaelides | ★★★ |
