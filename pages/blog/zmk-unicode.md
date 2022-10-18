@@ -3,7 +3,7 @@ template:
 slug: zmk-unicode
 title: Unicode text input in ZMK
 subtitle: A hacky interim solution using macros
-date: 2022-09-18
+date: 2022-10-18
 ---
 
 As a highly cultured em-dash (over-)user, being able to type '—' easily
