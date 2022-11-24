@@ -30,7 +30,7 @@ del {
 
 main {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Roboto", "Segoe UI", sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   padding: 0;
   line-height: 160%;
 }
@@ -161,7 +161,7 @@ pre {
 }
 
 code {
-  font-size: 13px;
+  font-size: 0.9rem;
   background-color: var(--light-gray);
 }
 
@@ -224,6 +224,22 @@ blockquote p {
   border-left: 3px solid var(--gray);
 }
 
+article ul {
+  list-style: none;
+}
+
+article ul > li::before {
+  display: inline-block;
+  height: .375rem;
+  width: .375rem;
+  border-radius: 50%;
+  background-color: var(--dark);
+  opacity: .6;
+  content: "";
+  margin-right: .5rem;
+  margin-bottom: .1rem;
+}
+
 nav ul {
   padding: 0;
   margin: 0;
@@ -234,6 +250,65 @@ nav ul {
 nav ul li {
   padding-right: 10px;
   display: inline-block;
+}
+
+
+ol {
+  list-style: none;
+  counter-reset: counter;
+}
+ol li {
+  counter-increment: counter;
+}
+ol li:not(.footnotes)::before {
+  content: counter(counter);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.2rem;
+  color: var(--darker);
+  background: var(--medium-gray);
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  margin-right: .5rem;
+  box-sizing: content-box;
+  display: inline-block;
+  transform: translate(-1.9rem, 0.7rem);
+  position: absolute;
+}
+
+.footnote-ref a {
+  text-decoration: none;
+  color: var(--light);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.8rem;
+  background: var(--cyan);
+  width: 0.8rem;
+  height: 0.8rem;
+  font-size: 0.6rem;
+  display: inline-block;
+}
+
+.footnotes > ol li::before {
+  content: counter(counter);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.2rem;
+  color: var(--light);
+  background: var(--cyan);
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  margin-right: .5rem;
+  box-sizing: content-box;
+  display: inline-block;
+  position: relative;
+  transform: unset;
+}
+
+.footnotes ol li:not(:last-child) {
+  padding-bottom: 2rem;
 }
 
 @media (max-width: 385px) {
