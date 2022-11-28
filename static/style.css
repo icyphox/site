@@ -224,22 +224,6 @@ blockquote p {
   border-left: 3px solid var(--gray);
 }
 
-article ul {
-  list-style: none;
-}
-
-article ul > li::before {
-  display: inline-block;
-  height: .375rem;
-  width: .375rem;
-  border-radius: 50%;
-  background-color: var(--dark);
-  opacity: .6;
-  content: "";
-  margin-right: .5rem;
-  margin-bottom: .1rem;
-}
-
 nav ul {
   padding: 0;
   margin: 0;
