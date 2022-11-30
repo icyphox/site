@@ -27,9 +27,6 @@ Some of my links:
 - Steam [@icyphox](https://steamcommunity.com/id/icyphox)
 - GitHub [@icyphox](https://github.com/icyphox)
 - Fediverse [@icy@icyphox.sh](https://h.icyphox.sh/u/icy)
-- Twitter [@icyphox](https://twitter.com/icyphox)
-
-I'm generally uninterested in social media and don't often post on any.
 
 If you're interested in **hiring me** -- here's my
 [résumé](https://cdn.icyphox.sh/resume.pdf).
@@ -39,7 +36,6 @@ If you're interested in **hiring me** -- here's my
 Send mail to [x@icyphox.sh](mailto:x@icyphox.sh) or
 [anirudh@oppiliappan.com](mailto:anirudh@oppiliappan.com). Should you
 need it, my [PGP key](/static/gpg.txt):
-
 ```
 FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4
 ```
@@ -61,5 +57,6 @@ site generator written in Go. The source for this site is
 [here](https://git.icyphox.sh/site), licensed under MIT. All content on
 this site is available under the Creative Commons BY-NC-SA license.
 
-At present, this site is hosted on Netlify. It loads no third-party
-scripts. I don't care for analytics or statistics; I value your privacy.
+The server is hosted on Oracle Cloud, running OpenBSD and serves this
+site using [httpd(8)](http://man.openbsd.org/httpd.8) and
+[relayd(8)](http://man.openbsd.org/relayd.8).
