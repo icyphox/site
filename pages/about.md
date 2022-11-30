@@ -58,5 +58,5 @@ site generator written in Go. The source for this site is
 this site is available under the Creative Commons BY-NC-SA license.
 
 The server is hosted on an Oracle Cloud instance running OpenBSD, and
-serves site using [httpd(8)](http://man.openbsd.org/httpd.8) and
+serves this site using [httpd(8)](http://man.openbsd.org/httpd.8) and
 [relayd(8)](http://man.openbsd.org/relayd.8).
