@@ -28,7 +28,7 @@ del {
   margin: 0;
 }
 
-main {
+main, footer {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Roboto", "Segoe UI", sans-serif;
   font-size: 1rem;
   padding: 0;
@@ -64,11 +64,11 @@ main h2, h3 {
   background: unset !important;
 }
 
-.footer a {
+.footimgs a {
   all: unset !important;
 }
 
-.footer img {
+.footimgs img {
   max-height: 2.5rem;
   max-width: 2.5rem;
   display: inline-block;
@@ -94,6 +94,21 @@ main a {
 a:hover {
   text-decoration: underline;
   background: var(--medium-gray);
+}
+
+.credits span {
+  vertical-align: bottom;
+  display: inline-block;
+  transform: translate(100%, 50%);
+}
+
+.credits a {
+  color: var(--darker);
+  text-decoration: underline;
+}
+
+.footer {
+  column-count: 2;
 }
 
 body {
@@ -296,6 +311,13 @@ ol li:not(.footnotes)::before {
 }
 
 @media (max-width: 385px) {
+  .footer {
+    column-count: 1;
+  }
+
+  .credits span {
+    transform: unset;
+  }
   table, thead, tbody, th, td, tr { 
     display: block; 
   }
