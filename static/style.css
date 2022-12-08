@@ -41,6 +41,11 @@ main article, table {
 
 main h1, h2, h3 {
   font-family: "InterDisplay", apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", sans-serif;
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 500;
 }
 
 main h1 {
@@ -98,17 +103,6 @@ main a {
 a:hover {
   text-decoration: underline;
   background: var(--medium-gray);
-}
-
-.credits span {
-  vertical-align: bottom;
-  display: inline-block;
-  transform: translate(100%, 50%);
-}
-
-.credits a {
-  color: var(--darker);
-  text-decoration: underline;
 }
 
 .footer {
@@ -319,9 +313,6 @@ ol li:not(.footnotes)::before {
     column-count: 1;
   }
 
-  .credits span {
-    transform: unset;
-  }
   table, thead, tbody, th, td, tr { 
     display: block; 
   }
