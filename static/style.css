@@ -242,7 +242,7 @@ blockquote p {
   font-style: italic;
   color: var(--darker);
   padding-left: 20px;
-  border-left: 3px solid var(--gray);
+  border-left: 1.5px solid var(--medium-gray);
 }
 
 nav ul {
