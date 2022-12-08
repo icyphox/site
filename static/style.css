@@ -70,7 +70,12 @@ main h2, h3 {
 
 .logo  {
   text-decoration: none;
+  border-bottom: unset;
   background: unset !important;
+}
+
+.logo:hover {
+  border-bottom: unset;
 }
 
 .footimgs a {
@@ -97,12 +102,11 @@ a {
 
 main a {
   color: var(--darker);
-  text-decoration: underline;
+  border-bottom: 1.5px solid var(--medium-gray);
 }
 
 a:hover {
-  text-decoration: underline;
-  background: var(--medium-gray);
+  border-bottom: 1.5px solid var(--gray);
 }
 
 .footer {
@@ -193,7 +197,11 @@ table a {
 }
 
 td {
-  padding: 7px 11px 0 11px;
+  padding: 7px 11px 7px 11px;
+}
+
+td p#subtitle {
+  color: var(--gray);
 }
 
 td:first-child {
