@@ -153,7 +153,7 @@ main ul ul {
 }
 .muted a {
   color: var(--cyan);
-  text-decoration: underline;
+  border-bottom: 1.5px solid var(--cyan);
 }
 
 article p {
