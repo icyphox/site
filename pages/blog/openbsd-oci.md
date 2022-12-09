@@ -17,8 +17,8 @@ rather unconventional:
 
 This works perfectly for Alpine, I'll have you know but not so much for
 OpenBSD. I don't know why. Anyway, with that rather useless preface
-aside, OpenBSD now supports booting on amd64 OCI instances (from
-https://www.openbsd.org/72.html):
+aside, [OpenBSD now supports](https://openbsd.org/72.html) booting on
+amd64 OCI instances:
 
 > Allowed bsd.rd and bsd/bsd.mp to boot on Oracle Cloud amd64 instances.
 
