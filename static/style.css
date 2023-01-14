@@ -58,7 +58,7 @@ main h2 {
 }
 
 main h2, h3 {
-  padding: 20px 0 15px 0;
+  padding: 20px 0 5px 0;
 }
 
 .logo img {
@@ -137,7 +137,7 @@ main ul ul {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px 7px 0;
+  padding: 0 0.5rem 0.5rem 0;
 }
 
 .subtitle {
