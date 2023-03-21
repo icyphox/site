@@ -15,19 +15,22 @@ conversation starters for you:
 - Infrastructure. Kubernetes, containers, observability.
 - Geopolitics and national security; mostly eastern Europe and Russia.
 - Motorsport. I closely follow F1, F2 and F3.
-- Startups. I work (and worked) for one.
+- Startups and indie-hacking. Admittedly, I don't know much but I follow
+  the space.
 - Fitness. Strength training, calisthenics.
 - The Go programming language. I love Go and I swear by the standard
   library.
 - Language learning. Spoken, obviously. Currently learning Russian. Big
   fan of total immersion and comprehensible input.
+- Self-hosting and homelabbing.
+- Ergonomic keyboards. I like to build them. I also like to use them.
 
 Some of my links:
 - Lobsters [@icy](https://lobste.rs/u/icy)
 - Hacker News [@icy](https://news.ycombinator.com/user?id=icy)
 - Steam [@icyphox](https://steamcommunity.com/id/icyphox)
 - GitHub [@icyphox](https://github.com/icyphox)
-- Fediverse [@icy@icyphox.sh](https://h.icyphox.sh/u/icy)
+- Fediverse [@icy@icyphox.sh](https://h.icyphox.sh/@icy)
 
 If you're interested in **hiring me** -- here's my
 [résumé](https://cdn.icyphox.sh/resume.pdf).
@@ -51,7 +54,7 @@ I'm available on IRC as `icy` on [libera.chat](https://libera.chat) and
 [rizon.net](https://rizon.net) but I'm likely to miss messages as I
 don't get notified. Use the above methods instead.
 
-## this site
+## colophon
 
 This site is built using [vite](https://git.icyphox.sh/vite) -- a static
 site generator written in Go. The source for this site is
@@ -62,6 +65,4 @@ The font in use is [Inter
 4.0-beta7](https://github.com/rsms/inter/releases/tag/v4.0-beta7), with
 Inter for text, and Inter Display for headings and titles.
 
-This server is hosted on an Oracle Cloud instance running OpenBSD; this
-site is served by [httpd(8)](http://man.openbsd.org/httpd.8) and
-[relayd(8)](http://man.openbsd.org/relayd.8).
+This site is [hosted at home](/uses#home-server-denna) on OpenBSD.
