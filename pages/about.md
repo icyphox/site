@@ -24,6 +24,7 @@ conversation starters for you:
   fan of total immersion and comprehensible input.
 - Self-hosting and homelabbing.
 - Ergonomic keyboards. I like to build them. I also like to use them.
+- Electric skateboarding and PEVs.
 
 Some of my links:
 - Lobsters [@icy](https://lobste.rs/u/icy)
