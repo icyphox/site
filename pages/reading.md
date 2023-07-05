@@ -14,7 +14,8 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
-| [The Dispossessed](https://en.wikipedia.org/wiki/The_Dispossessed) | Ursula Le Guin | _now reading_ |
+| [Slate Star Codex Abridged](https://www.slatestarcodexabridged.com) | Scott Alexander | _now reading_ |
+| [The Dispossessed](https://en.wikipedia.org/wiki/The_Dispossessed) | Ursula Le Guin | ★★ |
 | **2022** | | |
 | [Assassin's Apprentice](https://en.wikipedia.org/wiki/Assassin%27s_Apprentice) | Robin Hobb | _dropped_ |
 | [The Flatshare](https://www.goodreads.com/book/show/36478784-the-flatshare) | Beth O'Leary | ★★★ |
