@@ -14,7 +14,7 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
-| [Dark Matter](https://en.wikipedia.org/wiki/Dark_Matter_(Crouch_novel)) | Blake Crouch | _now reading_ |
+| [Dark Matter](https://en.wikipedia.org/wiki/Dark_Matter_\(Crouch_novel\)) | Blake Crouch | _now reading_ |
 | [Slate Star Codex Abridged](https://www.slatestarcodexabridged.com) | Scott Alexander | _now reading_ |
 | [The Dispossessed](https://en.wikipedia.org/wiki/The_Dispossessed) | Ursula Le Guin | ★★ |
 | **2022** | | |
