@@ -14,8 +14,9 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
-| [Dark Matter](https://en.wikipedia.org/wiki/Dark_Matter_\(Crouch_novel\)) | Blake Crouch | _now reading_ |
+| [Tender is the Flesh](https://en.wikipedia.org/wiki/Tender_Is_the_Flesh) | Agustina Bazterrica | _now reading_ |
 | [Slate Star Codex Abridged](https://www.slatestarcodexabridged.com) | Scott Alexander | _now reading_ |
+| [Dark Matter](https://en.wikipedia.org/wiki/Dark_Matter_\(Crouch_novel\)) | Blake Crouch | ★★★ |
 | [The Dispossessed](https://en.wikipedia.org/wiki/The_Dispossessed) | Ursula Le Guin | ★★ |
 | **2022** | | |
 | [Assassin's Apprentice](https://en.wikipedia.org/wiki/Assassin%27s_Apprentice) | Robin Hobb | _dropped_ |
