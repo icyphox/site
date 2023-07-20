@@ -14,26 +14,27 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
-| [Tender is the Flesh](https://en.wikipedia.org/wiki/Tender_Is_the_Flesh) | Agustina Bazterrica | _now reading_ |
+| [The Slow Regard of Silent Things](https://en.wikipedia.org/wiki/The_Slow_Regard_of_Silent_Things) | Patrick Rothfuss | _now reading_ |
 | [Slate Star Codex Abridged](https://www.slatestarcodexabridged.com) | Scott Alexander | _now reading_ |
+| [Tender is the Flesh](https://en.wikipedia.org/wiki/Tender_Is_the_Flesh) | Agustina Bazterrica | ★★★ |
 | [Dark Matter](https://en.wikipedia.org/wiki/Dark_Matter_\(Crouch_novel\)) | Blake Crouch | ★★★ |
 | [The Dispossessed](https://en.wikipedia.org/wiki/The_Dispossessed) | Ursula Le Guin | ★★ |
 | **2022** | | |
 | [Assassin's Apprentice](https://en.wikipedia.org/wiki/Assassin%27s_Apprentice) | Robin Hobb | _dropped_ |
-| [The Flatshare](https://www.goodreads.com/book/show/36478784-the-flatshare) | Beth O'Leary | ★★★ |
+| [The Flatshare](https://www.goodreads.com/book/show/36478784-the-flatshare) | Beth O'Leary | ★★ |
 | [Six of Crows](https://en.wikipedia.org/wiki/Six_of_Crows) | Leigh Bardugo | ★★★ |
 | [The Kill Artist](https://en.wikipedia.org/wiki/The_Kill_Artist) | Daniel Silva | _dropped_ |
 | [The Silent Patient](https://en.wikipedia.org/wiki/The_Silent_Patient) | Alex Michaelides | ★★★ |
-| [The Wise Man's Fear](https://en.wikipedia.org/wiki/The_Wise_Man%27s_Fear) | Patrick Rothfuss | ★★★★ |
+| [The Wise Man's Fear](https://en.wikipedia.org/wiki/The_Wise_Man%27s_Fear) | Patrick Rothfuss | ★★★★★ |
 | [The Name of the Wind](https://en.wikipedia.org/wiki/The_Name_of_the_Wind) | Patrick Rothfuss | ★★★★★ |
 | [Gone Girl](https://en.wikipedia.org/wiki/Gone_Girl_(novel\)) | Gillian Flynn | ★★★★ |
 | [Damascus Station](https://www.goodreads.com/book/show/56769571-damascus-station) | David McCloskey | ★★★ |
-| [The Spanish Love Deception](https://en.wikipedia.org/wiki/The_Spanish_Love_Deception) | Elena Armas | ★★ |
+| [The Spanish Love Deception](https://en.wikipedia.org/wiki/The_Spanish_Love_Deception) | Elena Armas | ★ |
 | [People We Meet on Vacation](https://en.wikipedia.org/wiki/People_We_Meet_on_Vacation) | Emily Henry | ★★★ |
 | [The Bands of Mourning](https://en.wikipedia.org/wiki/Mistborn:_The_Bands_of_Mourning) | Brandon Sanderson | ★★★★★ |
 | [The Power of Now](https://en.wikipedia.org/wiki/The_Power_of_Now) | Eckhart Tolle | ★★★★ |
 | [Shadows of Self](https://en.wikipedia.org/wiki/Mistborn:_Shadows_of_Self) | Brandon Sanderson | ★★★★★ |
-| [Busy Doing Nothing](https://hundredrabbits.itch.io/busy-doing-nothing) | Hundred Rabbits | ★★ |
+| [Busy Doing Nothing](https://hundredrabbits.itch.io/busy-doing-nothing) | Hundred Rabbits | ★★★ |
 | [The Great Hunt](https://en.wikipedia.org/wiki/The_Great_Hunt) | Robert Jordan | ★★★★ |
 | [The Eye of the World](https://en.wikipedia.org/wiki/The_Eye_of_the_World) | Robert Jordan | ★★★★ |
 | **2021** | | |
