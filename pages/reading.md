@@ -14,9 +14,10 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2023** | | |
+| [Imaginary Friend](https://en.wikipedia.org/wiki/Imaginary_Friend_\(novel\)) | Stephen Chbosky | _now reading_ |
 | [Tress of the Emerald Sea](https://en.wikipedia.org/wiki/Tress_of_the_Emerald_Sea) | Brandon Sanderson | _now reading_ |
-| [Slate Star Codex Abridged](https://www.slatestarcodexabridged.com) | Scott Alexander | _now reading_ |
-| [Vera Wong's Unsolicited Advice for Murderers](https://www.goodreads.com/en/book/show/61827543) | Jesse Q. Sutanto | ★★★★ | 
+| [Slate Star Codex Abridged](https://www.slatestarcodexabridged.com) | Scott Alexander | ★★★★★ |
+| [Vera Wong's Unsolicited Advice for Murderers](https://www.goodreads.com/en/book/show/61827543) | Jesse Q. Sutanto | ★★★★ |
 | [The Slow Regard of Silent Things](https://en.wikipedia.org/wiki/The_Slow_Regard_of_Silent_Things) | Patrick Rothfuss | ★★★ |
 | [Tender is the Flesh](https://en.wikipedia.org/wiki/Tender_Is_the_Flesh) | Agustina Bazterrica | ★★★ |
 | [Dark Matter](https://en.wikipedia.org/wiki/Dark_Matter_\(Crouch_novel\)) | Blake Crouch | ★★★ |

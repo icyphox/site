@@ -20,11 +20,12 @@ conversation starters for you:
 - Fitness. Strength training, calisthenics.
 - The Go programming language. I love Go and I swear by the standard
   library.
-- Language learning. Spoken, obviously. Currently learning Russian. Big
+- (Spoken) language learning. Currently learning Finnish. Big
   fan of total immersion and comprehensible input.
 - Self-hosting and homelabbing.
 - Ergonomic keyboards. I like to build them. I also like to use them.
 - Electric skateboarding and PEVs.
+- 35mm film photography.
 
 Some of my links:
 - Lobsters [@icy](https://lobste.rs/u/icy)
