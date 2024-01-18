@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    {{ template "partials/head.html" }}
+    <meta name="description" content="{{ index .Meta "subtitle" }}">
+  <style>
+    h2 {
+      margin-bottom: 1px;
+    }
+    h3 {
+      margin-top: 0px;
+      padding-top: 2px;
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+  </style>
+  </head>
+  <title>
+    {{ index .Meta "title" }} &mdash; {{ .Cfg.Title }}
+  </title>
+  <body>
+  <main>
+    <div class="sidenav">
+      {{ template "partials/nav.html" }}
+    </div>
+    <article align="left">
+      <h1>{{ index .Meta "title" }}</h1>
+      {{ .Body }}
+    </article>
+  </main>
+  <footer>
+    {{ template "partials/footer.html" }}
+  </footer>
+</body>
+
+</html>

@@ -111,6 +111,7 @@ a:hover {
 
 .footer {
   column-count: 2;
+  column-gap: 12px;
 }
 
 body {
@@ -138,6 +139,22 @@ main ul ul {
   display: flex;
   flex-wrap: wrap;
   padding: 0 0.5rem 0.5rem 0;
+}
+
+.image-grid {
+  column-count: 2;
+}
+
+.image-grid img {
+  all: unset;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.image-grid a {
+  border-bottom: unset;
 }
 
 .subtitle {
@@ -318,6 +335,10 @@ ol li:not(.footnotes)::before {
 
 @media (max-width: 385px) {
   .footer {
+    column-count: 1;
+  }
+
+  .image-grid {
     column-count: 1;
   }
 
