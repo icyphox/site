@@ -126,9 +126,7 @@ devices:
 - **Logitech Ergo M575**: Wireless ergonomic thumb trackball mouse. I've
   [written about it](/blog/m575) in depth.
 
-- **realme Buds Air 3s**: El-cheapo truly-wireless earphones. They look
-  pretty slick, and fit very comfortably. I mostly use them at the gym
-  or while commuting in the metro.
+- **Airpods Pro**: Great quality, even better noise cancellation.
 
 - **iPhone 13 mini**: It's unfortunate that I have to use an Apple
   device but it's also the only real small phone in the market. I quite
@@ -136,15 +134,10 @@ devices:
   screen with one hand. I plan to stick to this until Apple stops
   updating it.
 
-- **Kindle KT4**: Jailbroken using
-  [WatchThis](https://www.mobileread.com/forums/showthread.php?t=346037)
-  and running KOReader.
+- **iPhone 15 Pro**: "Work" phone. Not a fan of its size, but I love the
+  refresh rate. This is currently my main phone.
 
 - **Tailscale**: I used to setup WireGuard networks by hand, but that
   got unweildy after 3 hosts. With Tailscale I now have around 8
   different machines running Linux, OpenBSD, macOS and iOS all
   seamlessly connected. It's incredibly handy.
-
-- **Migadu**: I too, like everyone else, gave up on self-hosting my
-  email. Migadu is very straightforward, and very cheap (19 EUR/year).
-  Works great with all my email clients.
