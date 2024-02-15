@@ -13,8 +13,10 @@ I've obviously read a lot more than this, but I can't remember beyond
 
 | | | |
 | :--- | --- | ---: |
-| **2023** | | |
+| **2024** | | |
 | [Tress of the Emerald Sea](https://en.wikipedia.org/wiki/Tress_of_the_Emerald_Sea) | Brandon Sanderson | _now reading_ |
+| [The Three-Body Problem](https://en.wikipedia.org/wiki/The_Three-Body_Problem_\(novel\)) | Cixin Liu | ★★★★ |
+| **2023** | | |
 | [Piranesi](https://en.wikipedia.org/wiki/Piranesi_\(novel\)) | Susanna Clarke | ★★★★ |
 | [Imaginary Friend](https://en.wikipedia.org/wiki/Imaginary_Friend_\(novel\)) | Stephen Chbosky | _dropped_ |
 | [Slate Star Codex Abridged](https://www.slatestarcodexabridged.com) | Scott Alexander | ★★★★★ |
