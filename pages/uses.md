@@ -134,6 +134,10 @@ devices:
   screen with one hand. I plan to stick to this until Apple stops
   updating it.
 
+- **Kindle KT4**: Jailbroken using
+  [WatchThis](https://www.mobileread.com/forums/showthread.php?t=346037)
+  and running KOReader.
+
 - **iPhone 15 Pro**: "Work" phone. Not a fan of its size, but I love the
   refresh rate. This is currently my main phone.
 
