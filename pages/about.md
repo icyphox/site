@@ -46,11 +46,9 @@ need it, my [PGP key](/static/gpg.txt):
 FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4
 ```
 
-I have both Signal and Session. If you know me personally, you probably
-already have my number for Signal. If not, here's my Session ID:
-```
-055ac04903fdb8653de6155d89da651f3ca3d4dc8047587887cc39574a8b28d460
-```
+If you have my phone number, you can reach me on Signal/iMessage. My
+Signal username is
+[icy.19](https://signal.me/#eu/Nphsc2OCoWjih4d8jfuRRV0v6fJNPOXG9lY1X6B4vYb7KPR4wdpKu6SScSzuztil).
 
 I'm available on IRC as `icy` on [libera.chat](https://libera.chat) and
 [rizon.net](https://rizon.net) but I'm likely to miss messages as I
