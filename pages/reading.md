@@ -14,6 +14,7 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2024** | | |
+| [Animal Liberation Now](https://www.goodreads.com/en/book/show/62119780) | Peter Singer | _now reading_ |
 | [Lessons in Chemistry](https://en.wikipedia.org/wiki/Lessons_in_Chemistry_\(novel\)) | Bonnie Garmus | ★★★★ |
 | [Tress of the Emerald Sea](https://en.wikipedia.org/wiki/Tress_of_the_Emerald_Sea) | Brandon Sanderson | _now reading_ |
 | [The Three-Body Problem](https://en.wikipedia.org/wiki/The_Three-Body_Problem_\(novel\)) | Cixin Liu | ★★★★ |

@@ -26,6 +26,7 @@ conversation starters for you:
 - Ergonomic keyboards. I like to build them. I also like to use them.
 - Electric skateboarding and PEVs.
 - 35mm film photography.
+- Veganism, ethics and plant-based nutrition.
 
 Some of my links:
 - Lobsters [@icy](https://lobste.rs/u/icy)
