@@ -6,7 +6,7 @@ season: Summer 2023
 camera: Olympus OM-10
 lens: 50mm f/1.8
 film: Fujicolor 200
-date: 2006-01-02
+date: 2023-05-01
 ---
 
 <div class="image-grid">

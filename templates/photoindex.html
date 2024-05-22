@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    {{ template "partials/head.html" }}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://icyphox.sh/blog/feed.xml">
+    <meta name="description" content="{{ index .Meta "subtitle" }}">
+
+    <style>
+    table {
+      padding-top: 30px;
+    }
+    </style>
+  </head>
+
+
+  <title>
+    {{ .Meta.title }} &mdash; {{ .Cfg.Title }}
+  </title>
+<body>
+  <main>
+    <div class="sidenav">
+      {{ template "partials/nav.html" }}
+    </div>
+    {{ .Body }}
+    <table>
+      {{ range .Posts }}
+      <tr>
+        <td align="left">
+          <p><a href=/photos/{{ .Meta.slug }}>{{ .Meta.title }} &mdash; {{ .Meta.season }}</a></p>
+          <p id="subtitle"> {{ .Meta.camera }} · {{ .Meta.lens }} · {{ .Meta.film }} </p>
+        </td>
+      </tr>
+      {{ end }}
+    </table>
+  </main>
+  <footer>
+    {{ template "partials/footer.html" }}
+  </footer>
+</body>
+
+</html>

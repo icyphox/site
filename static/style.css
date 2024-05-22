@@ -158,11 +158,10 @@ main ul ul {
 }
 
 .subtitle {
-  font-style: italic;
-  font-weight: normal;
-  font-variant: unset;
-  color: var(--dark);
-  padding: 0 0 20px 0;
+  padding: 2px 0 20px 0;
+  margin-top: 3px !important;
+  margin-bottom: 5px;
+  color: var(--gray);
 }
 
 .muted {
