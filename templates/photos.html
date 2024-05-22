@@ -4,13 +4,14 @@
     {{ template "partials/head.html" }}
     <meta name="description" content="{{ index .Meta "subtitle" }}">
   <style>
-    h2 {
-      margin-bottom: 1px;
+    h1 {
+      margin: 0px;
+      padding: 0px;
     }
-    h3 {
-      margin-top: 0px;
+    h2 {
       padding-top: 2px;
-      font-size: 0.9rem;
+      margin-top: 3px !important;
+      margin-bottom: 5px;
       color: var(--gray);
     }
   </style>
@@ -24,7 +25,8 @@
       {{ template "partials/nav.html" }}
     </div>
     <article align="left">
-      <h1>{{ index .Meta "title" }}</h1>
+      <h1>{{ .Meta.title }} &mdash; {{ .Meta.season }}</h1>
+      <h2> {{ .Meta.camera }} · {{ .Meta.lens }} · {{ .Meta.film }} </h2>
       {{ .Body }}
     </article>
   </main>

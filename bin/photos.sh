@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# usage: printf "<bunch of photos>" | ./bin/photos.sh | pages/photos.md
+# usage: printf "<bunch of photos>" | ./bin/photos.sh >> pages/photos.md
 
 prefix="$1"
 printf '<div class="image-grid">\n'

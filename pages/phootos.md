@@ -101,30 +101,6 @@ Jump to:
   </a>
 </div>
 
-## Helsinki, Finland  --  Summer 2023
-### Olympus OM-10, 50mm f/1.8, Fujicolor 200
-
-<div class="image-grid">
-  <a href="https://cdn.icyphox.sh/film/2023/summer/helsinki/001863460003.jpg">
-    <img src="https://cdn.icyphox.sh/fit?file=2023/summer/helsinki/001863460003.jpg&width=1000&height=1000" />
-  </a>
-  <a href="https://cdn.icyphox.sh/film/2023/summer/helsinki/001863460008.jpg">
-    <img src="https://cdn.icyphox.sh/fit?file=2023/summer/helsinki/001863460008.jpg&width=1000&height=1000" />
-  </a>
-  <a href="https://cdn.icyphox.sh/film/2023/summer/helsinki/001863460012.jpg">
-    <img src="https://cdn.icyphox.sh/fit?file=2023/summer/helsinki/001863460012.jpg&width=1000&height=1000" />
-  </a>
-  <a href="https://cdn.icyphox.sh/film/2023/summer/helsinki/001863460014.jpg">
-    <img src="https://cdn.icyphox.sh/fit?file=2023/summer/helsinki/001863460014.jpg&width=1000&height=1000" />
-  </a>
-  <a href="https://cdn.icyphox.sh/film/2023/summer/helsinki/001863460023.jpg">
-    <img src="https://cdn.icyphox.sh/fit?file=2023/summer/helsinki/001863460023.jpg&width=1000&height=1000" />
-  </a>
-  <a href="https://cdn.icyphox.sh/film/2023/summer/helsinki/001863460029.jpg">
-    <img src="https://cdn.icyphox.sh/fit?file=2023/summer/helsinki/001863460029.jpg&width=1000&height=1000" />
-  </a>
-</div>
-
 ## Helsinki, Finland  --  Autumn 2023
 ### Canon EOS 55, 50mm f/1.8, Fomapan 100 (pushed to 400)
 
