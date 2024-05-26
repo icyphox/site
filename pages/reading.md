@@ -14,6 +14,7 @@ I've obviously read a lot more than this, but I can't remember beyond
 | | | |
 | :--- | --- | ---: |
 | **2024** | | |
+| [Dune Messiah](https://en.wikipedia.org/wiki/Dune_Messiah) | Frank Herbert | _now reading_ |
 | [Tress of the Emerald Sea](https://en.wikipedia.org/wiki/Tress_of_the_Emerald_Sea) | Brandon Sanderson | ★★★ |
 | [Animal Liberation Now](https://www.goodreads.com/en/book/show/62119780) | Peter Singer | ★★★★★ |
 | [Lessons in Chemistry](https://en.wikipedia.org/wiki/Lessons_in_Chemistry_\(novel\)) | Bonnie Garmus | ★★★★ |
