@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    {{ template "partials/head.html" }}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://icyphox.sh/blog/feed.xml">
+    <meta name="description" content="{{ index .Meta "subtitle" }}">
+
+  <title>
+    {{ .Meta.title }} &mdash; {{ .Cfg.Title }}
+  </title>
+<body>
+  <main>
+    <div class="sidenav">
+      {{ template "partials/nav.html" }}
+    </div>
+    <h1>{{ .Meta.title }}</h1>
+    {{- $books := .Yaml.books }}
+    {{- range $i, $yearMap := $books }}
+    {{- range $year, $books := $yearMap }}
+    <h2>{{ $year }}</h2>
+    <table>
+      <tbody>
+        {{- range $book := $books }}
+        <tr>
+          <td><a href="{{ $book.link }}">{{ $book.name }}</a></td>
+          <td>{{ $book.author }}</td>
+          <td>{{ $book.status }}</td>
+        </tr>
+        {{- end }}
+      </tbody>
+    </table>
+    {{- end }}
+    {{- end }}
+  </main>
+  <footer>
+    {{ template "partials/footer.html" }}
+  </footer>
+</body>
+
+</html>

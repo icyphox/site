@@ -3,19 +3,211 @@ meta:
   title: reading
   subtitle: Tracking my reading.
 
+
 books:
   - 2024:
     - name: Dune Messiah
       link: https://en.wikipedia.org/wiki/Dune_Messiah
       author: Frank Herbert
       status: now reading
-    - name: Foo Bar
-      link: https://en.wikipedia.org/wiki/Foo_Bar
-      author: Baz Boo
-      status: ★★★★
-
-  - 2023:
     - name: Tress of the Emerald Sea
       link: https://en.wikipedia.org/wiki/Tress_of_the_Emerald_Sea
       author: Brandon Sanderson
       status: ★★★
+    - name: Animal Liberation Now
+      link: https://www.goodreads.com/en/book/show/62119780
+      author: Peter Singer
+      status: ★★★★★
+    - name: Lessons in Chemistry
+      link: https://en.wikipedia.org/wiki/Lessons_in_Chemistry_(novel)
+      author: Bonnie Garmus
+      status: ★★★★
+    - name: The Three-Body Problem
+      link: https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)
+      author: Cixin Liu
+      status: ★★★★
+
+  - 2023:
+    - name: Piranesi
+      link: https://en.wikipedia.org/wiki/Piranesi_(novel)
+      author: Susanna Clarke
+      status: ★★★★
+    - name: Imaginary Friend
+      link: https://en.wikipedia.org/wiki/Imaginary_Friend_(novel)
+      author: Stephen Chbosky
+      status: dropped
+    - name: Slate Star Codex Abridged
+      link: https://www.slatestarcodexabridged.com
+      author: Scott Alexander
+      status: ★★★★★
+    - name: Vera Wong's Unsolicited Advice for Murderers
+      link: https://www.goodreads.com/en/book/show/61827543
+      author: Jesse Q. Sutanto
+      status: ★★★★
+    - name: The Slow Regard of Silent Things
+      link: https://en.wikipedia.org/wiki/The_Slow_Regard_of_Silent_Things
+      author: Patrick Rothfuss
+      status: ★★★
+    - name: Tender is the Flesh
+      link: https://en.wikipedia.org/wiki/Tender_Is_the_Flesh
+      author: Agustina Bazterrica
+      status: ★★★
+    - name: Dark Matter
+      link: https://en.wikipedia.org/wiki/Dark_Matter_(Crouch_novel)
+      author: Blake Crouch
+      status: ★★★
+    - name: The Dispossessed
+      link: https://en.wikipedia.org/wiki/The_Dispossessed
+      author: Ursula Le Guin
+      status: ★★
+
+  - 2022:
+    - name: Assassin's Apprentice
+      link: https://en.wikipedia.org/wiki/Assassin%27s_Apprentice
+      author: Robin Hobb
+      status: dropped
+    - name: The Flatshare
+      link: https://www.goodreads.com/book/show/36478784-the-flatshare
+      author: Beth O'Leary
+      status: ★★
+    - name: Six of Crows
+      link: https://en.wikipedia.org/wiki/Six_of_Crows
+      author: Leigh Bardugo
+      status: ★★★
+    - name: The Kill Artist
+      link: https://en.wikipedia.org/wiki/The_Kill_Artist
+      author: Daniel Silva
+      status: dropped
+    - name: The Silent Patient
+      link: https://en.wikipedia.org/wiki/The_Silent_Patient
+      author: Alex Michaelides
+      status: ★★★
+    - name: The Wise Man's Fear
+      link: https://en.wikipedia.org/wiki/The_Wise_Man%27s_Fear
+      author: Patrick Rothfuss
+      status: ★★★★★
+    - name: The Name of the Wind
+      link: https://en.wikipedia.org/wiki/The_Name_of_the_Wind
+      author: Patrick Rothfuss
+      status: ★★★★★
+    - name: Gone Girl
+      link: https://en.wikipedia.org/wiki/Gone_Girl_(novel)
+      author: Gillian Flynn
+      status: ★★★★
+    - name: Damascus Station
+      link: https://www.goodreads.com/book/show/56769571-damascus-station
+      author: David McCloskey
+      status: ★★★
+    - name: The Spanish Love Deception
+      link: https://en.wikipedia.org/wiki/The_Spanish_Love_Deception
+      author: Elena Armas
+      status: ★
+    - name: People We Meet on Vacation
+      link: https://en.wikipedia.org/wiki/People_We_Meet_on_Vacation
+      author: Emily Henry
+      status: ★★★
+    - name: The Bands of Mourning
+      link: https://en.wikipedia.org/wiki/Mistborn:_The_Bands_of_Mourning
+      author: Brandon Sanderson
+      status: ★★★★★
+    - name: The Power of Now
+      link: https://en.wikipedia.org/wiki/The_Power_of_Now
+      author: Eckhart Tolle
+      status: ★★★★
+    - name: Shadows of Self
+      link: https://en.wikipedia.org/wiki/Mistborn:_Shadows_of_Self
+      author: Brandon Sanderson
+      status: ★★★★★
+    - name: Busy Doing Nothing
+      link: https://hundredrabbits.itch.io/busy-doing-nothing
+      author: Hundred Rabbits
+      status: ★★★
+    - name: The Great Hunt
+      link: https://en.wikipedia.org/wiki/The_Great_Hunt
+      author: Robert Jordan
+      status: ★★★★
+    - name: The Eye of the World
+      link: https://en.wikipedia.org/wiki/The_Eye_of_the_World
+      author: Robert Jordan
+      status: ★★★★
+
+  - 2021:
+    - name: The Game
+      link: https://en.wikipedia.org/wiki/Tom_Wood_(author)#Victor_the_Assassin_Series
+      author: Tom Wood
+      status: ★★★
+    - name: Permanent Record
+      link: https://en.wikipedia.org/wiki/Permanent_Record_(autobiography)
+      author: Edward Snowden
+      status: ★★★★★
+    - name: Dune
+      link: https://en.wikipedia.org/wiki/Dune_(novel)
+      author: Frank Herbert
+      status: ★★★★
+    - name: The Final Empire
+      link: https://en.wikipedia.org/wiki/Mistborn:_The_Final_Empire
+      author: Brandon Sanderson
+      status: ★★★★
+    - name: The Well of Ascension
+      link: https://en.wikipedia.org/wiki/Mistborn:_The_Well_of_Ascension
+      author: Brandon Sanderson
+      status: ★★★★
+    - name: The Hero of Ages
+      link: https://en.wikipedia.org/wiki/Mistborn:_The_Hero_of_Ages
+      author: Brandon Sanderson
+      status: ★★★★★
+    - name: The Alloy of Law
+      link: https://en.wikipedia.org/wiki/Mistborn:_The_Alloy_of_Law
+      author: Brandon Sanderson
+      status: ★★★
+    - name: The Hunter
+      link: https://en.wikipedia.org/wiki/Tom_Wood_(author)#Victor_the_Assassin_Series
+      author: Tom Wood
+      status: ★★★★
+    - name: The Enemy
+      link: https://en.wikipedia.org/wiki/Tom_Wood_(author)#Victor_the_Assassin_Series
+      author: Tom Wood
+      status: ★★★
+
+  - 2020:
+    - name: The Way of Kings
+      link: https://en.wikipedia.org/wiki/The_Way_of_Kings
+      author: Brandon Sanderson
+      status: ★★★★★
+    - name: Words of Radiance
+      link: https://en.wikipedia.org/wiki/Words_of_Radiance
+      author: Brandon Sanderson
+      status: ★★★★★
+    - name: Oathbringer
+      link: https://en.wikipedia.org/wiki/Oathbringer
+      author: Brandon Sanderson
+      status: ★★★★★
+    - name: Edgedancer
+      link: https://en.wikipedia.org/wiki/Edgedancer
+      author: Brandon Sanderson
+      status: ★★★★★
+    - name: Dawnshard
+      link: https://en.wikipedia.org/wiki/The_Stormlight_Archive#Books
+      author: Brandon Sanderson
+      status: ★★★★★
+    - name: Rhythm of War
+      link: https://en.wikipedia.org/wiki/Rhythm_of_War
+      author: Brandon Sanderson
+      status: ★★★★★
+    - name: Elantris
+      link: https://en.wikipedia.org/wiki/Elantris
+      author: Brandon Sanderson
+      status: dropped
+    - name: Warbreaker
+      link: https://en.wikipedia.org/wiki/Warbreaker
+      author: Brandon Sanderson
+      status: ★★★★★
+    - name: Sixth of the Dusk
+      link: https://en.wikipedia.org/wiki/Brandon_Sanderson_bibliography#Cosmere_short_works
+      author: Brandon Sanderson
+      status: ★★★
+    - name: Shadows for Silence in the Forests of Hell
+      link: https://en.wikipedia.org/wiki/Brandon_Sanderson_bibliography#Cosmere_short_works
+      author: Brandon Sanderson
+      status: ★★★★
+
