@@ -13,7 +13,9 @@
     <div class="sidenav">
       {{ template "partials/nav.html" }}
     </div>
+    <article align="left">
     <h1>{{ .Meta.title }}</h1>
+    <p> {{ .Meta.description }}</p>
     {{- $books := .Yaml.books }}
     {{- range $i, $yearMap := $books }}
     {{- range $year, $books := $yearMap }}
@@ -31,6 +33,7 @@
     </table>
     {{- end }}
     {{- end }}
+    </article>
   </main>
   <footer>
     {{ template "partials/footer.html" }}

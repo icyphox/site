@@ -2,7 +2,9 @@ meta:
   template: reading.html
   title: reading
   subtitle: Tracking my reading.
-
+  description: |
+    I use this page to track my reading. I have obviously read more than this,
+    but I cannot remember beyond 2020.
 
 books:
   - 2024:
