@@ -1,0 +1,21 @@
+meta:
+  template: reading.html
+  title: reading
+  subtitle: Tracking my reading.
+
+books:
+  - 2024:
+    - name: Dune Messiah
+      link: https://en.wikipedia.org/wiki/Dune_Messiah
+      author: Frank Herbert
+      status: now reading
+    - name: Foo Bar
+      link: https://en.wikipedia.org/wiki/Foo_Bar
+      author: Baz Boo
+      status: ★★★★
+
+  - 2023:
+    - name: Tress of the Emerald Sea
+      link: https://en.wikipedia.org/wiki/Tress_of_the_Emerald_Sea
+      author: Brandon Sanderson
+      status: ★★★
