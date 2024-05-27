@@ -8,6 +8,9 @@
     <style>
     table {
       padding-top: 30px;
+      article p {
+        padding: 0;
+      }
     }
     </style>
   </head>
@@ -21,17 +24,20 @@
     <div class="sidenav">
       {{ template "partials/nav.html" }}
     </div>
+    <article align="left">
+    <h1>{{ .Meta.title }}</h1>
     {{ .Body }}
     <table>
       {{ range .Posts }}
       <tr>
         <td align="left">
-          <p><a href=/photos/{{ .Meta.slug }}>{{ .Meta.title }} &mdash; {{ .Meta.season }}</a></p>
-          <p id="subtitle"> {{ .Meta.camera }} · {{ .Meta.lens }} · {{ .Meta.film }} </p>
+          <a href=/photos/{{ .Meta.slug }}>{{ .Meta.title }} &mdash; {{ .Meta.season }}</a>
+          <p id="subtitle"> {{ .Meta.camera }} · {{ .Meta.lens }} · {{ .Meta.film }}</p>
         </td>
       </tr>
       {{ end }}
     </table>
+    </article>
   </main>
   <footer>
     {{ template "partials/footer.html" }}
