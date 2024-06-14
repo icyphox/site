@@ -5,7 +5,7 @@ title: Helsinki, Finland
 season: Summer 2023
 camera: Olympus OM-10
 lens: 50mm f/1.8
-film: Fujicolor 200
+film: Fomapan 200
 date: 2023-09-01
 ---
 
