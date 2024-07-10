@@ -15,11 +15,11 @@
         {
           devShell = pkgs.mkShell {
             buildInputs = [
-              vite.packages.${system}.default
-              pkgs.go
+              vite.packages.${system}.vite
               pkgs.gotools
               pkgs.gnumake
               pkgs.entr
+              pkgs.awscli2
             ];
           };
         }
