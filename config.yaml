@@ -5,4 +5,6 @@ desc: "Computers, security and computer security."
 author:
      name: "Anirudh Oppiliappan"
      email: "x@icyphox.sh"
-default-template: text.html
+defaultTemplate: text.html
+postBuild:
+  - ./bin/webfinger.sh

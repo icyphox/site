@@ -7,7 +7,7 @@ serve:
 ci:
 	@./bin/build.sh
 
-deploy:
+deploy: build
 	aws s3 sync build s3://site/
 
 .PHONY: build serve ci
