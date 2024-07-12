@@ -63,7 +63,8 @@ site generator written in Go. The source for this site is
 this site is available under the Creative Commons BY-NC-SA license.
 
 The font in use is [Inter
-4.0-beta7](https://github.com/rsms/inter/releases/tag/v4.0-beta7), with
+4.0](https://rsms.me/inter/), with
 Inter for text, and Inter Display for headings and titles.
 
-This site is [hosted at home](/uses#home-server-denna) on OpenBSD.
+This site is [hosted at home](/uses#homelab-k3s-cluster) on
+[Garage](https://garagehq.deuxfleurs.fr/).
