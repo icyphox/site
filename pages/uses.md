@@ -28,9 +28,8 @@ have much preferred a more sane language like Lua.
 
 Other software I use on this machine:
 
-- **KDE Plasma**: It's been alright as a desktop environment but I only
-  care to use it for Wayland and I don't have time to dick around with a
-  window manager. But that might change.
+- **GNOME**: I'm liking it a ton more than KDE Plasma. Especially love
+  the trackpad gestures and general feel of the UI.
 
 - **tmux**: Most of my actual "window" management happens here. I have
   it
@@ -42,7 +41,7 @@ Other software I use on this machine:
   awaited 0.5.0 branch that introduced Lua support [very
   early](/blog/nvim-lua/) and haven't looked back since. I use a [custom
   duotone
-  colorscheme](https://git.icyphox.sh/dotfiles/blob/master/config/nvim/colors/plain.vim).
+  colorscheme](https://git.icyphox.sh/dotfiles/blob/master/nvim/colors/plain.lua).
 
 - **QtPass**: Frontend for passwords managed using GPG.
 
@@ -50,13 +49,10 @@ Other software I use on this machine:
   use:
   * Don't F* with Paste: for those pesky bank logins that block paste in
     the password fields
-  * Refined Hacker News
   * Sidebery: tab-tree on the left
   * Simple Translate: for Finnish/Russian
   * SponsorBlock
   * uBlock Origin
-  * Web Scrobbler
-  * Multi-Account Containers
 
 ## work laptop (kvothe)
 
@@ -64,53 +60,19 @@ For work, I use a **14" M1 MacBook Pro**. I use
 [nix-darwin](https://github.com/LnL7/nix-darwin) to configure most of my
 basic applications (neovim, tmux, bash, ...). Software of note:
 
-- **iTerm2**: I don't use 90% of its features but I like that it lets me
-  cofigure terminal padding. I prefer to run a single instance of iTerm,
-  full-screened and without any borders. I use tmux for everything else.
+- **alacritty**: Much faster than iTerm and a whole bunch lighter. And I
+can configure it using Nix!
 
-- **Rectangle**: For the occasional window management.
+- **Raycast**: Launcher and window management.
 
-## home server (denna)
+## homelab k3s cluster
 
-![denna under the table](https://cdn.icyphox.sh/fxIFy.jpg)
+3-node K3s cluster:
+- sini: 8GB, i5-6500T, 256GB SSD
+- iso: 8GB, i5-6500, 500GB HDD
+- denna: 8GB, N100, 128GB eMMC
 
-My latest addition. I bought this HP EliteDesk on
-[Tori.fi](https://tori.fi) for a princely sum of 60 EUR. It has an i5
-6500, 8GB of RAM and a 500GB HDD. I installed OpenBSD on it at work by
-wiring it up to a monitor using DisplayPort (it does not have HDMI).
-It now runs very quitely under my table, plugged into the router.
-
-I didn't feel like paying my ISP for a static IP and since I work for a
-[cloud provider](https://upcloud.com), I spun up a VPS with a public IP
-and setup a quick Nginx TCP proxy to forward traffic to my home server.
-
-```conf
-stream {
-        server {
-                listen 80;
-                listen [::]:80;
-                proxy_pass denna:80;
-        }
-        server {
-                listen 443;
-                listen [::]:443;
-                proxy_pass denna:443;
-        }
-}
-```
-
-Then, using [httpd(8)](https://man.openbsd.org/httpd.8) and
-[relayd(8)](https://man.openbsd.org/relayd.8) I run a few services (with
-more to come):
-
-- This website.
-- [legit](https://git.icyphox.sh/legit): Web frontend for git, written
-  in Go.
-- [honk](https://h.icyphox.sh): ActivityPub server.
-- [fsrv](https://git.icyphox.sh/fsrv): File hosting and upload server,
-  written in Go.
-- [radicale](https://radicale.org): Contacts and calendar (Cal/CardDav)
-  server.
+More info at [git.icyphox.sh/infra](https://git.icyphox.sh/infra).
 
 ## other technology
 
