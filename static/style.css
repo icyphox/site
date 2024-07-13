@@ -332,7 +332,7 @@ ol li:not(.footnotes)::before {
   padding-bottom: 2rem;
 }
 
-@media (max-width: 385px) {
+@media (max-width: 400px) {
   .footer {
     column-count: 1;
   }
