@@ -1,8 +1,8 @@
-title: icyphox
+title: anirudh
 # note the trailing slash!
-url: "https://icyphox.sh/"
-desc: "Computers, security and computer security."
+url: "https://anirudh.fi/"
+description: ""
 author:
      name: "Anirudh Oppiliappan"
-     email: "x@icyphox.sh"
+     email: "anirudh@oppiliappan.com"
 defaultTemplate: text.html

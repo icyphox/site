@@ -72,11 +72,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1721772624,
-        "narHash": "sha256-onSMBoWOpCPZId1/wmv7yQwPsmNv6qLwZOfmUtPQc98=",
+        "lastModified": 1721773517,
+        "narHash": "sha256-ov8Tiz0w3TPbE8F4BGA9KoUlSXimVmZgkwbbdQ71JQM=",
         "owner": "icyphox",
         "repo": "go-vite",
-        "rev": "3fb201f38e7e127f8d2000217cd50c1e723666a7",
+        "rev": "c6535b7c59b827e8ff6b172a8779996ef7ee32be",
         "type": "github"
       },
       "original": {
