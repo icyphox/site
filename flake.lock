@@ -21,8 +21,8 @@
     "nixpkgs": {
       "locked": {
         "lastModified": 0,
-        "narHash": "sha256-4zSIhSRRIoEBwjbPm3YiGtbd8HDWzFxJjw5DYSDy1n8=",
-        "path": "/nix/store/z71lmgd0ydfnax1b13zbrls5idf1y7ak-source",
+        "narHash": "sha256-ZgnNHuKV6h2+fQ5LuqnUaqZey1Lqqt5dTUAiAnqH0QQ=",
+        "path": "/nix/store/xr9wjzx0cdnwkmhzz74h8lphgn5jmyv3-source",
         "type": "path"
       },
       "original": {
@@ -72,11 +72,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1720819612,
-        "narHash": "sha256-+Bq+XlzVgj0wnTwWf1zW68DUzHzbbty96kltTxvFe60=",
+        "lastModified": 1721772624,
+        "narHash": "sha256-onSMBoWOpCPZId1/wmv7yQwPsmNv6qLwZOfmUtPQc98=",
         "owner": "icyphox",
         "repo": "go-vite",
-        "rev": "1ba292b8a8589cd78155ddf1cdbde2f2edc87596",
+        "rev": "3fb201f38e7e127f8d2000217cd50c1e723666a7",
         "type": "github"
       },
       "original": {

@@ -16,7 +16,8 @@
     </div>
     {{ .Body }}
     <table>
-      {{ range .Posts }}
+      {{ $posts := .Extra }}
+      {{ range $posts }}
       <tr>
         <td align="left">
           <p><a href=/blog/{{ .Meta.slug }}>{{ .Meta.title }}</a></p>

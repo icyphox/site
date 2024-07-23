@@ -8,6 +8,10 @@ meta:
 
 books:
   - 2024:
+    - name: Wool
+      link: https://en.wikipedia.org/wiki/Silo_(series)
+      author: Hugh Howey
+      status: now listening
     - name: Dune Messiah
       link: https://en.wikipedia.org/wiki/Dune_Messiah
       author: Frank Herbert
@@ -212,4 +216,3 @@ books:
       link: https://en.wikipedia.org/wiki/Brandon_Sanderson_bibliography#Cosmere_short_works
       author: Brandon Sanderson
       status: ★★★★
-

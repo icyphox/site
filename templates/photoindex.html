@@ -28,7 +28,8 @@
     <h1>{{ .Meta.title }}</h1>
     {{ .Body }}
     <table>
-      {{ range .Posts }}
+      {{ $posts := .Extra }}
+      {{ range $posts }}
       <tr>
         <td align="left">
           <a href=/photos/{{ .Meta.slug }}>{{ .Meta.title }} &mdash; {{ .Meta.season }}</a>
