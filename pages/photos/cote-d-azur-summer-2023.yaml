@@ -1,0 +1,27 @@
+meta:
+  template: photos.html
+  slug: cote-d-azur-summer-2023
+  title: Côte d'Azur, France
+  season: Summer 2023
+  camera: Olympus OM-10
+  lens: 50mm f/1.8
+  film: Fujicolor 200
+  date: 2023-06-02
+
+defaults:
+  width: 1000
+  height: 1000
+photos:
+  - film/2023/summer/cote-d-azur/001789350002.jpg
+  - film/2023/summer/cote-d-azur/001789350006.jpg
+  - film/2023/summer/cote-d-azur/001789350013.jpg
+  - film/2023/summer/cote-d-azur/001789350015.jpg
+  - film/2023/summer/cote-d-azur/001789350017.jpg
+  - film/2023/summer/cote-d-azur/001789350018.jpg
+  - film/2023/summer/cote-d-azur/001789350019.jpg
+  - film/2023/summer/cote-d-azur/001789350020.jpg
+  - film/2023/summer/cote-d-azur/001789350021.jpg
+  - film/2023/summer/cote-d-azur/001789350024.jpg
+  - film/2023/summer/cote-d-azur/001789350027.jpg
+  - film/2023/summer/cote-d-azur/001789350029.jpg
+  - film/2023/summer/cote-d-azur/001789350030.jpg

@@ -1,0 +1,25 @@
+meta:
+  template: photos.html
+  slug: ltlv-summer-2023
+  title: Riga, Latvia & Vilnius/Kaunas, Lithuania
+  season: Summer 2023
+  camera: Olympus OM-10
+  lens: 50mm f/1.8
+  film: Kodak Gold 200
+  date: 2023-08-01
+
+defaults:
+  width: 1000
+  height: 1000
+
+photos:
+  - film/2023/summer/ltlv/001863450004.jpg
+  - film/2023/summer/ltlv/001863450005.jpg
+  - film/2023/summer/ltlv/001863450007.jpg
+  - film/2023/summer/ltlv/001863450008.jpg
+  - film/2023/summer/ltlv/001863450009.jpg
+  - film/2023/summer/ltlv/001863450011.jpg
+  - film/2023/summer/ltlv/001863450014.jpg
+  - film/2023/summer/ltlv/001863450015.jpg
+  - film/2023/summer/ltlv/001863450016.jpg
+  - film/2023/summer/ltlv/001863450034.jpg

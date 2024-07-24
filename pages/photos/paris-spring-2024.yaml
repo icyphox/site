@@ -1,0 +1,23 @@
+meta:
+  template: photos.html
+  slug: paris-spring-2024
+  title: Paris, France
+  season: Spring 2024
+  camera: Canon EOS 55
+  lens: 50mm f/1.8
+  film: Fujicolor 200
+  date: 2024-03-05
+
+defaults:
+  width: 1000
+  height: 1000
+photos:
+  - film/2024/spring/paris/IMG_0001.jpg
+  - film/2024/spring/paris/IMG_0009.jpg
+  - film/2024/spring/paris/IMG_0002.jpg
+  - film/2024/spring/paris/IMG_0011.jpg
+  - film/2024/spring/paris/IMG_0012_01.jpg
+  - film/2024/spring/paris/IMG_0014.jpg
+  - film/2024/spring/paris/IMG_0015.jpg
+  - film/2024/spring/paris/IMG_0017.jpg
+  - film/2024/spring/paris/IMG_0018.jpg

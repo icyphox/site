@@ -1,0 +1,22 @@
+meta:
+  template: photos.html
+  slug: helsinki-autumn-2023
+  title: Helsinki, Finland
+  season: Autumn 2023
+  camera: Olympus OM-10
+  lens: 50mm f/1.8
+  film: Fomapan 200
+  date: 2023-09-01
+
+defaults:
+  width: 1000
+  height: 1000
+photos:
+  - film/2023/autumn/helsinki/001936000006.jpg
+  - film/2023/autumn/helsinki/001936000008.jpg
+  - film/2023/autumn/helsinki/001936000009.jpg
+  - film/2023/autumn/helsinki/001936000011.jpg
+  - film/2023/autumn/helsinki/001936000012.jpg
+  - film/2023/autumn/helsinki/001936000013.jpg
+  - film/2023/autumn/helsinki/001936000017.jpg
+  - film/2023/autumn/helsinki/001936000020.jpg

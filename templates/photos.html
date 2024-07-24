@@ -21,7 +21,15 @@
     <article align="left">
       <h1>{{ .Meta.title }} &mdash; {{ .Meta.season }}</h1>
       <h2 class="subtitle"> {{ .Meta.camera }} · {{ .Meta.lens }} · {{ .Meta.film }} </h2>
-      {{ .Body }}
+      <div class="image-grid">
+      {{ $photos := .Yaml.photos }}
+      {{ $d := .Yaml.defaults }}
+      {{ range $photos }}
+        <a href="https://cdn.icyphox.sh/{{ . }}">
+          <img src="https://cdn.icyphox.sh/fit?url=http://files.garage.koti.lan/{{ . }}&width={{ $d.width }}&height={{ $d.height }}" />
+        </a>
+      {{- end }}
+      </div>
     </article>
   </main>
   <footer>
