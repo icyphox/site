@@ -4,16 +4,15 @@ title: about
 subtitle: About me.
 ---
 
+<img src="https://cdn.icyphox.sh/fit?url=http://files.garage.koti.lan/IMG_1570.jpg&width=1000&height=1000" />
+
 I'm Anirudh Oppiliappan, often found as **icyphox** (or sometimes just
 **icy**) on the Internet. I currently live in beautiful Helsinki,
 Finland and work for [UpCloud](https://upcloud.com) as a Kubernetes
 Engineer. Below are a few things that interest me, and can serve as
 conversation starters for you:
 
-- Security. All kinds of it: operational, physical, threat intel,
-  cloud-native, etc.
-- Infrastructure. Kubernetes, containers, observability.
-- Geopolitics and national security; mostly eastern Europe and Russia.
+- Infrastructure and distributed systems.
 - Motorsport. I closely follow F1, F2 and F3.
 - Startups and indie-hacking. Admittedly, I don't know much but I follow
   the space.
@@ -40,12 +39,7 @@ If you're interested in **hiring me** -- here's my
 
 ## contact
 
-Send mail to [x@icyphox.sh](mailto:x@icyphox.sh) or
-[anirudh@oppiliappan.com](mailto:anirudh@oppiliappan.com). Should you
-need it, my [PGP key](/static/gpg.txt):
-```
-FE1B 8FCF E6C1 6222 F157 1C8E 8A93 F96F 78C5 D4C4
-```
+Send mail to [anirudh@oppiliappan.com](mailto:anirudh@oppiliappan.com).
 
 If you have my phone number, you can reach me on Signal/iMessage. My
 Signal username is
