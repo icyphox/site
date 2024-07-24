@@ -1,5 +1,5 @@
 ---
-title: anirudh's 
+title: anirudh.fi
 subtitle: Anirudh Oppiliappan
 template: index.html
 ---
