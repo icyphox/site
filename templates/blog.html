@@ -14,6 +14,7 @@
     <div class="sidenav">
       {{ template "partials/nav.html" }}
     </div>
+    <h1>{{ index .Meta "title" }}</h1>
     {{ .Body }}
     <table>
       {{ $posts := .Extra }}
