@@ -33,7 +33,7 @@ Other software I use on this machine:
 
 - **tmux**: Most of my actual "window" management happens here. I have
   it
-  [configured](https://git.icyphox.sh/dotfiles/blob/master/nix/programs/tmux.nix)
+  [configured](https://git.icyphox.sh/dotfiles/blob/master/programs/tmux.nix)
   to show my current working directory and git info in the statusline --
   this helps me keep my actual prompt clean and quick.
 
