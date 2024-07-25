@@ -9,7 +9,7 @@ I run on them, how I host my services, and other choices of personal
 technology. This is a relatively up-to-date list detailing what I'm
 currently using.
 
-## personal laptop (lapis)
+## personal laptop (wyndle)
 
 My primary laptop that I use for everything non-work is my [**Asus ROG
 Flow X13 (2021)**](/blog/flow-x13). It's got a Ryzen 9 5900HS, Nvidia
