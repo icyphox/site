@@ -5,10 +5,10 @@
   inputs.vite.url = "github:icyphox/go-vite";
 
   outputs =
-    {
-      self,
-      nixpkgs,
-      vite,
+    { self
+    , nixpkgs
+    , vite
+    ,
     }:
     let
       supportedSystems = [
@@ -57,6 +57,7 @@
             type = "app";
             program = "${pkgs.writeShellScriptBin "s3-sync" ''
                 #!/usr/bin/env bash
+                ${vite.packages.${system}.vite}/bin/vite build
                 ${pkgs.awscli2}/bin/aws s3 sync build s3://site/ --size-only
             ''}/bin/s3-sync";
           };
