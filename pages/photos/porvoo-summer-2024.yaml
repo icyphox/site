@@ -1,0 +1,24 @@
+meta:
+  template: photos.html
+  slug: porvoo-summer-2024
+  title: Porvoo (and a few in Helsinki), Finland
+  season: Summer 2024
+  camera: Canon EOS 55
+  lens: 50mm f/1.8
+  film: Kodak Vision3 250D
+  date: 2024-08-05
+
+defaults:
+  width: 1000
+  height: 1000
+
+photos:
+  - film/2024/summer/porvoo/IMG_0030.jpg
+  - film/2024/summer/porvoo/IMG_0002_04.jpg
+  - film/2024/summer/porvoo/IMG_0006_04.jpg
+  - film/2024/summer/porvoo/IMG_0009_03.jpg
+  - film/2024/summer/porvoo/IMG_0012_03.jpg
+  - film/2024/summer/porvoo/IMG_0014_04.jpg
+  - film/2024/summer/porvoo/IMG_0023_02.jpg
+  - film/2024/summer/porvoo/IMG_0027.jpg
+
