@@ -43,16 +43,13 @@ Other software I use on this machine:
   duotone
   colorscheme](https://git.icyphox.sh/dotfiles/blob/master/nvim/colors/plain.lua).
 
-- **QtPass**: Frontend for passwords managed using GPG.
+- **Zed**: I've been dailying Zed for while now and it has replaced
+  Neovim for most of my editing tasks scoped to projects. I still reach
+  for Neovim for one-off edits in the terminal.
 
-- **Firefox**: It works; not much else to say. These are the add-ons I
-  use:
-  * Don't F* with Paste: for those pesky bank logins that block paste in
-    the password fields
-  * Sidebery: tab-tree on the left
-  * Simple Translate: for Finnish/Russian
-  * SponsorBlock
-  * uBlock Origin
+- **Bitwarden**: I run a Vaultwarden server in my homelab K3s cluster
+  and use the official Bitwarden clients everywhere else.
+
 
 ## work laptop (kvothe)
 
@@ -64,6 +61,8 @@ basic applications (neovim, tmux, bash, ...). Software of note:
 can configure it using Nix!
 
 - **Raycast**: Launcher and window management.
+
+- **Orion**: Safari but better.
 
 ## homelab k3s cluster
 
