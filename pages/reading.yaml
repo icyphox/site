@@ -8,14 +8,14 @@ meta:
 
 books:
   - 2024:
-    - name: Dust
-      link: https://en.wikipedia.org/wiki/Silo_(series)
-      author: Hugh Howey
-      status: now listening
     - name: Dune Messiah
       link: https://en.wikipedia.org/wiki/Dune_Messiah
       author: Frank Herbert
       status: now reading
+    - name: Dust
+      link: https://en.wikipedia.org/wiki/Silo_(series)
+      author: Hugh Howey
+      status: ★★★
     - name: Shift
       link: https://en.wikipedia.org/wiki/Silo_(series)
       author: Hugh Howey
