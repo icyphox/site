@@ -29,7 +29,7 @@ del {
 }
 
 main, footer {
-  font-family: "InterVar", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", sans-serif;
+  font-family: "InterVariable", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", sans-serif;
   font-size: 1.05rem;
   padding: 0;
   line-height: 160%;
