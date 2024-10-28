@@ -28,6 +28,7 @@ conversation starters for you:
 - Veganism, ethics and plant-based nutrition.
 
 Some of my links:
+- Bluesky [@icyphox.sh](https://bsky.app/profile/icyphox.sh)
 - Lobsters [@icy](https://lobste.rs/u/icy)
 - Hacker News [@icy](https://news.ycombinator.com/user?id=icy)
 - Steam [@icyphox](https://steamcommunity.com/id/icyphox)
