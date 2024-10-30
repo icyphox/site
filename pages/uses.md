@@ -9,22 +9,16 @@ I run on them, how I host my services, and other choices of personal
 technology. This is a relatively up-to-date list detailing what I'm
 currently using.
 
+![desk oct 2024](https://cdn.icyphox.sh/desk-oct-2024.png)
+
 ## personal laptop (wyndle)
 
 My primary laptop that I use for everything non-work is my [**Asus ROG
 Flow X13 (2021)**](/blog/flow-x13). It's got a Ryzen 9 5900HS, Nvidia
 GTX 1650 Max-Q, 32GB of RAM and a 1TB SSD. I bought this machine in
 early 2022, when I was working remotely as a contractor. The 4K display
-doesn't help with its battery life (about 7 hours) but it looks
-absolutely fantastic.
-
-![flow x13 at oodi](https://cdn.icyphox.sh/w6UH4.jpg)
-
-This laptop currently runs NixOS. I would ideally like to run OpenBSD,
-but I figured I'd make use of its GPU for the occasional game and run
-Linux instead; NixOS just seemed like the least-shit choice. I like its
-declarative approach to system configuration, but I won't pretend -- I'd
-have much preferred a more sane language like Lua.
+doesn't help with its battery life (about 5 hours) but it looks
+absolutely fantastic. This machine runs NixOS.
 
 Other software I use on this machine:
 
@@ -89,11 +83,8 @@ devices:
 
 - **Airpods Pro**: Great quality, even better noise cancellation.
 
-- **iPhone 13 mini**: It's unfortunate that I have to use an Apple
-  device but it's also the only real small phone in the market. I quite
-  enjoy how it fits in my palm, and being able to reach the top of the
-  screen with one hand. I plan to stick to this until Apple stops
-  updating it.
+- **iPhone 13 mini**: The only actual small phone -- it's unfortunate
+  Apple killed this line.
 
 - **Kindle KT4**: Jailbroken using
   [WatchThis](https://www.mobileread.com/forums/showthread.php?t=346037)
