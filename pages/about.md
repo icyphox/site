@@ -57,9 +57,10 @@ site generator written in Go. The source for this site is
 [here](https://git.icyphox.sh/site), licensed under MIT. All content on
 this site is available under the Creative Commons BY-NC-SA license.
 
-The font in use is [Inter
-4.0](https://rsms.me/inter/), with
-Inter for text, and Inter Display for headings and titles.
+The fonts in use are:
+* [Instrument Serif](https://github.com/Instrument/instrument-serif) for headings
+* [Geist Sans](https://vercel.com/font) for body (with [these OpenType
+features](https://git.icyphox.sh/site/blob/6c3d6e69f1f4641125508bdbadbef80e7d3dd5e5/static/style.css#L45))
 
 This site is [hosted at home](/uses#homelab-k3s-cluster) on
 [Garage](https://garagehq.deuxfleurs.fr/).
