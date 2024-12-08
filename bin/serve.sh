@@ -16,6 +16,6 @@ kill_vite() {
 trap "kill_vite" INT
 
 "$vite" serve &
-find pages/ static/ templates/ | entr "$vite" build
+find pages/ static/ templates/ | entr "$vite" build --drafts
 
 trap SIGINT

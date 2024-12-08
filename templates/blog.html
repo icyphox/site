@@ -21,7 +21,11 @@
       {{ range $posts }}
       <tr>
         <td align="left">
+          {{ if .Meta.draft }}
+          <p><a href=/blog/{{ .Meta.slug }}>{{ .Meta.title }}</a> <span class="draft">[draft]</span></p>
+          {{ else }}
           <p><a href=/blog/{{ .Meta.slug }}>{{ .Meta.title }}</a></p>
+          {{ end }}
           <p id="subtitle">{{ .Meta.subtitle }}</p>
         </td>
         {{ $dateStr := .Meta.date }}

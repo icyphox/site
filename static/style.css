@@ -180,6 +180,7 @@ main ul ul {
     margin-top: 3px !important;
     margin-bottom: 5px;
     color: var(--gray);
+    font-style: italic;
 }
 
 .muted {
@@ -346,6 +347,13 @@ ol li:not(.footnotes)::before {
 
 .footnotes ol li:not(:last-child) {
     padding-bottom: 2rem;
+}
+
+.draft {
+    color: red;
+    font-weight: bold;
+    font-family: sans;
+    font-size: 1rem;
 }
 
 @media (max-width: 400px) {
