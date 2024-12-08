@@ -1,6 +1,6 @@
 ---
-title: anirudh.fi
-subtitle: Anirudh Oppiliappan
+title: Anirudh Oppiliappan
+subtitle: Writing, photography and more by Anirudh Oppiliappan.
 template: index.html
 ---
 
