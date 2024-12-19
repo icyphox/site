@@ -19,6 +19,7 @@
         {{ $date.Format "02 Jan, 2006" }}
         </section>
 
+
         {{ if .Meta.draft }}
         <h1>{{ index .Meta "title" }} <span class="draft">[draft]</span></h1>
         {{ else }}

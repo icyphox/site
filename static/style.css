@@ -34,10 +34,6 @@
         border-bottom: 1.5px solid var(--medium-gray);
     }
 
-    a:hover {
-        border-bottom: 1.5px solid var(--gray);
-    }
-
     blockquote p {
         border-left: 1.5px solid var(--gray);
     }
@@ -100,7 +96,7 @@ strong {
 
 main h1 {
     font-size: 30px;
-    padding: 40px 0 20px 0;
+    padding: 20px 0 20px 0;
 }
 
 main h2 {
@@ -158,7 +154,8 @@ main a {
 }
 
 a:hover {
-    border-bottom: 1.5px solid var(--cyan-trans);
+    border-bottom: unset;
+    border-bottom: 1.5px solid var(--dark);
 }
 
 .footer {
@@ -253,6 +250,7 @@ code {
 }
 
 .post-date {
+    padding-top: 20px;
     color: var(--gray);
     text-transform: lowercase;
 }
