@@ -27,6 +27,8 @@ conversation starters for you:
 - 35mm film photography.
 - Veganism, ethics and plant-based nutrition.
 
+I maintain a somewhat active list of tech that I [use](/uses).
+
 ## contact
 
 Send mail to [anirudh@oppiliappan.com](mailto:anirudh@oppiliappan.com).

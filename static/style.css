@@ -46,6 +46,7 @@
     blockquote p {
         border-left: 1.5px solid var(--gray);
     }
+
 }
 
 html {
@@ -428,6 +429,11 @@ ol li:not(.footnotes)::marker {
     .image-grid {
         column-count: 1;
     }
+
+    body {
+        padding: 2rem 1rem 10rem;
+    }
+
 
     table,
     thead,
