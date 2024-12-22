@@ -16,24 +16,26 @@
     </div>
     <h1>{{ index .Meta "title" }}</h1>
     {{ .Body }}
-    <table>
-      {{ $posts := .Extra }}
-      {{ range $posts }}
-      <tr>
-        <td align="left">
-          {{ if .Meta.draft }}
-          <p><a href=/blog/{{ .Meta.slug }}>{{ .Meta.title }}</a> <span class="draft">[draft]</span></p>
-          {{ else }}
-          <p><a href=/blog/{{ .Meta.slug }}>{{ .Meta.title }}</a></p>
+
+    <section class="posts">
+      <ul>
+          {{ $posts := .Extra }}
+          {{ range $posts }}
+              <li>
+                <div class="post">
+                  <a href=/blog/{{ .Meta.slug }}>{{ .Meta.title }}</a>
+                  {{ if .Meta.draft }}
+                    (<span class="draft">draft</span>)
+                  {{ end }}
+                  <p class="subtitle">{{ .Meta.subtitle }}</p>
+                </div>
+                {{ $dateStr := .Meta.date }}
+                {{ $date := parsedate $dateStr }}
+                <div class="index-date">{{ $date.Format "02 Jan, 2006" }}</div>
+              </li>
           {{ end }}
-          <p id="subtitle">{{ .Meta.subtitle }}</p>
-        </td>
-        {{ $dateStr := .Meta.date }}
-        {{ $date := parsedate $dateStr }}
-        <td align="right" class="index-date">{{ $date.Format "02 Jan, 2006" }}</td>
-      </tr>
-      {{ end }}
-    </table>
+        </ul>
+    </section>
   </main>
   <footer>
     {{ template "partials/footer.html" }}

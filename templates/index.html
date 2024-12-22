@@ -12,8 +12,34 @@
       <div class="sidenav">
         {{ template "partials/nav.html" }}
       </div>
-      <article class="tagline">
+      <article>
+        <section class="tagline">
         {{ .Body }}
+        </section>
+
+        <hr>
+
+        <section class="posts">
+        <h2>writing</h2>
+          <ul>
+              {{ $posts := .Extra.blog }}
+              {{ range slice $posts 0 3 }}
+                  <li>
+                    <div class="post">
+                      <a href=/blog/{{ .Meta.slug }}>{{ .Meta.title }}</a>
+                      {{ if .Meta.draft }}
+                        (<span class="draft">draft</span>)
+                      {{ end }}
+                      <p class="subtitle">{{ .Meta.subtitle }}</p>
+                    </div>
+                    {{ $dateStr := .Meta.date }}
+                    {{ $date := parsedate $dateStr }}
+                    <div class="index-date">{{ $date.Format "02 Jan, 2006" }}</div>
+                  </li>
+              {{ end }}
+            </ul>
+        <a style="border-bottom: unset;" href="/blog"><span>more &RightArrow;</span></a>
+        </section>
       </article>
     </main>
     <footer>

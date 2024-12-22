@@ -20,17 +20,19 @@
     {{- range $i, $yearMap := $books }}
     {{- range $year, $books := $yearMap }}
     <h2>{{ $year }}</h2>
-    <table>
-      <tbody>
-        {{- range $book := $books }}
-        <tr>
-          <td><a href="{{ $book.link }}">{{ $book.name }}</a></td>
-          <td>{{ $book.author }}</td>
-          <td>{{ $book.status }}</td>
-        </tr>
-        {{- end }}
-      </tbody>
-    </table>
+    <section class="book-posts">
+    <ul>
+      {{- range $book := $books }}
+        <li>
+          <div class="post">
+            <a href="{{ $book.link }}">{{ $book.name }}</a>
+            <p class="subtitle author">{{ $book.author }}</p>
+          </div>
+          <span class="status">{{ $book.status }}</span>
+        </li>
+      {{- end }}
+    </ul>
+    </section>
     {{- end }}
     {{- end }}
     </article>

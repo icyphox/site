@@ -27,17 +27,6 @@ conversation starters for you:
 - 35mm film photography.
 - Veganism, ethics and plant-based nutrition.
 
-Some of my links:
-- Bluesky [@icyphox.sh](https://bsky.app/profile/icyphox.sh)
-- Lobsters [@icy](https://lobste.rs/u/icy)
-- Hacker News [@icy](https://news.ycombinator.com/user?id=icy)
-- Steam [@icyphox](https://steamcommunity.com/id/icyphox)
-- GitHub [@icyphox](https://github.com/icyphox)
-- Fediverse [@icy@icyphox.sh](https://h.icyphox.sh/@icy)
-
-If you're interested in **hiring me** -- here's my
-[résumé](https://cdn.icyphox.sh/resume.pdf).
-
 ## contact
 
 Send mail to [anirudh@oppiliappan.com](mailto:anirudh@oppiliappan.com).
@@ -50,12 +39,24 @@ I'm available on IRC as `icy` on [libera.chat](https://libera.chat) and
 [rizon.net](https://rizon.net) but I'm likely to miss messages as I
 don't get notified. Use the above methods instead.
 
+Some other ways to find me:
+- Bluesky [@icyphox.sh](https://bsky.app/profile/icyphox.sh)
+- Lobsters [@icy](https://lobste.rs/u/icy)
+- Hacker News [@icy](https://news.ycombinator.com/user?id=icy)
+- Steam [@icyphox](https://steamcommunity.com/id/icyphox)
+- GitHub [@icyphox](https://github.com/icyphox)
+- Fediverse [@icy@icyphox.sh](https://h.icyphox.sh/@icy)
+
+If you're interested in **hiring me** -- here's my
+[résumé](https://cdn.icyphox.sh/resume.pdf).
+
 ## colophon
 
-This site is built using [vite](https://git.icyphox.sh/vite) -- a static
-site generator written in Go. The source for this site is
-[here](https://git.icyphox.sh/site), licensed under MIT. All content on
-this site is available under the Creative Commons BY-NC-SA license.
-
-This site is [hosted at home](/uses#homelab-k3s-cluster) on
+The website is built using [vite](https://git.icyphox.sh/vite) -- a
+static site generator written in Go and [hosted at
+home](/uses#homelab-k3s-cluster) on
 [Garage](https://garagehq.deuxfleurs.fr/).
+
+The source code is available [here](https://git.icyphox.sh/site),
+licensed under MIT. All content is published under the [Creative Commons
+BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
