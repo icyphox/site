@@ -173,11 +173,7 @@ main article img {
 
 main ul,
 main ol {
-    margin: 0 30px 7px 30px;
-}
-
-main ul ul {
-    margin-bottom: 0;
+    margin: 10px 30px 10px 30px;
 }
 
 .row {
@@ -347,7 +343,7 @@ blockquote p {
     border-left: 1.5px solid var(--medium-gray);
 }
 
-ul li::marker {
+li::marker {
     color: var(--mediumer-gray);
 }
 
@@ -409,7 +405,7 @@ ol li:not(.footnotes)::marker {
     width: 18px;
     height: 18px;
     font-size: 11px;
-    margin-right: 0.5rem;
+    margin-right: 0.8rem;
     box-sizing: content-box;
     display: inline-block;
     position: relative;

@@ -26,6 +26,12 @@ conversation starters for you:
 - Electric skateboarding and PEVs.
 - 35mm film photography.
 - Veganism, ethics and plant-based nutrition.
+- Effective altruism, albeit mostly focused on animal welfare for now. I
+  donate to:
+  * [Good Food Institute](https://gfi.org)
+  * [ACE Recommended
+  Charities](https://animalcharityevaluators.org/recommended-charities/)
+
 
 I maintain a somewhat active list of tech that I [use](/uses).
 
