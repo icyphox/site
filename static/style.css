@@ -108,23 +108,24 @@ h3 {
     margin: 40px 0 20px 0;
 }
 
-.logo svg {
+.logo {
+  svg {
     max-height: 2.5rem;
     max-width: 2.5rem;
     transform: translateY(-10%);
     fill: var(--fg);
-}
 
-.logo {
-    flex-grow: 1;
-    margin-right: 1rem;
-    text-decoration: none;
-    border-bottom: unset;
-    background: unset !important;
-}
+  }
 
-.logo:hover {
+  flex-grow: 1;
+  margin-right: 1rem;
+  text-decoration: none;
+  border-bottom: unset;
+  background: unset !important;
+
+  a, a:hover {
     border-bottom: unset;
+  }
 }
 
 .footimgs a {
@@ -283,6 +284,7 @@ article a {
         vertical-align: baseline;
         color: var(--gray);
         text-transform: lowercase;
+        padding-left: 0.8rem;
         float: right;
     }
 }

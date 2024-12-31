@@ -23,11 +23,11 @@
           {{ range $posts }}
               <li>
                 <div class="post">
-                  <a href=/blog/{{ .Meta.slug }}>{{ .Meta.title }}</a>
+                  <a style="text-transform: lowercase" href=/blog/{{ .Meta.slug }}>{{ .Meta.title }}</a>
                   {{ if .Meta.draft }}
                     (<span class="draft">draft</span>)
                   {{ end }}
-                  <p class="subtitle">{{ .Meta.subtitle }}</p>
+                  <p style="text-transform: lowercase" class="subtitle">{{ .Meta.subtitle }}</p>
                 </div>
                 {{ $dateStr := .Meta.date }}
                 {{ $date := parsedate $dateStr }}
