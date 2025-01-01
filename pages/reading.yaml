@@ -7,6 +7,12 @@ meta:
     but I cannot remember beyond 2020.
 
 books:
+  - 2025:
+    - name: Ultra-Processed People
+      link: https://en.wikipedia.org/wiki/Ultra-Processed_People
+      author: Chris van Tulleken
+      status: now reading
+
   - 2024:
     - name: Dune Messiah
       link: https://en.wikipedia.org/wiki/Dune_Messiah
