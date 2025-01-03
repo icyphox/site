@@ -21,9 +21,9 @@
 
 
         {{ if .Meta.draft }}
-        <h1>{{ index .Meta "title" }} <span class="draft">[draft]</span></h1>
+        <h1 class="title">{{ index .Meta "title" }} <span class="draft">[draft]</span></h1>
         {{ else }}
-        <h1>{{ index .Meta "title" }}</h1>
+        <h1 class="title">{{ index .Meta "title" }}</h1>
         {{ end }}
         <h2 class="subtitle">{{ index .Meta "subtitle" }}</h2>
         {{ .Body }}
