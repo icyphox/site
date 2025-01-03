@@ -19,10 +19,10 @@ However, I quickly realised a glaring issue with this system: it needed
 me, this failed constantly:
 
 * I didn't check it often enough and missed time-critical tasks
-* I checked it but I *forgot* because I was distracted
+* I checked it but I *forgot* to do the thing because I was distracted
 
-As an example, every so often during the day -- I'd note down a task to
-say, "buy oat milk". Easy enough, I can do that on my way home from
+As an example, every so often during the day, I'd note down a task to
+say "buy oat milk". Easy enough. I can do that on my way home from
 work. There's a supermarket at my nearest metro station so popping by
 there before walking home should be a trivial task.
 
@@ -37,8 +37,8 @@ intervals. Especially given that said information has an arbitrary TTL
 in my head, and the poll interval is not fixed, there are several of
 these blind spots where tasks get missed.
 
-And so, my new push-based system -- one that I've been using to great effect
-for the better part of last year -- came about. At its core, it's
+And so, my new push-based system -- one that I've been using to great
+effect for the better part of last year -- came about. At its core it's
 incredibly simple: my phone's Reminders app. I use Apple Reminders but
 really, this works with any similar app.
 
