@@ -70,6 +70,8 @@ location is very powerful.
 </div>
 
 I now get reminded to "buy oat milk" when I'm arriving at the metro
-station's shopping center.[^2] And to post this once I get home.
+station's shopping center.[^2] Or of a restaurant in an area that I've
+been meaning to check out. Or to text someone when I'm in their city at
+a future date. Or to post this once I get home.
 
 [^2]: _kauppakeskus_ in Finnish.
