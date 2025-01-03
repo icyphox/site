@@ -4,7 +4,6 @@ slug: push
 title: Push-based productivity
 subtitle: Getting told when to get things done
 date: 2025-01-03
-draft: false
 ---
 
 Way back in 2021, I wrote about [my productivity endeavours][prod],
