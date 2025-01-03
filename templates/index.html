@@ -26,7 +26,7 @@
               {{ range slice $posts 0 3 }}
                   <li>
                     <div class="post">
-                      <a style="text-transform: lowercase" href=/blog/{{ .Meta.slug }}>{{ .Meta.title }}</a>
+                      <a href=/blog/{{ .Meta.slug }}>{{ .Meta.title }}</a>
                       {{ if .Meta.draft }}
                         (<span class="draft">draft</span>)
                       {{ end }}
