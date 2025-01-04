@@ -84,7 +84,6 @@ table {
     min-width: 0;
 }
 
-h1,
 h2,
 h3 {
     font-weight: 400 !important;
@@ -95,12 +94,14 @@ strong {
 }
 
 main h1 {
-    font-size: 30px;
+    font-size: calc(1.35em + 0.35vw);
     padding: 30px 0 30px 0;
+    font-weight: 500;
 }
 
 main h2 {
     color: var(--dark);
+    font-size: calc(1.20em + 0.25vw);
 }
 
 main h2,
@@ -170,6 +171,7 @@ main article img {
     width: 100%;
     display: block;
     margin: 10px auto 4px auto;
+    border-radius: 6px;
 }
 
 main ul,

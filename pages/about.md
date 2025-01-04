@@ -1,6 +1,6 @@
 ---
 template: page.html
-title: about
+title: about me
 subtitle: About me.
 ---
 
