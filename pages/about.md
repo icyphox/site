@@ -48,6 +48,7 @@ I'm available on IRC as `icy` on [libera.chat](https://libera.chat) and
 don't get notified. Use the above methods instead.
 
 Some other ways to find me:
+- X [@icyphox](https://x.com/icyphox)
 - Bluesky [@icyphox.sh](https://bsky.app/profile/icyphox.sh)
 - Lobsters [@icy](https://lobste.rs/u/icy)
 - Hacker News [@icy](https://news.ycombinator.com/user?id=icy)
