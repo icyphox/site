@@ -1,24 +1,25 @@
 ---
 template: page.html
 title: about me
-subtitle: About me.
+subtitle: About me and my interests.
 ---
 
-<img src="https://cdn.icyphox.sh/fit?url=http://files.garage.koti.lan/IMG_1570.jpg&width=1000&height=1000" />
+![me](https://cdn.icyphox.sh/fit?url=http://files.garage.koti.lan/IMG_1570.jpg&width=1000&height=1000)
 
-I'm Anirudh Oppiliappan, often found as **icyphox** (or sometimes just
-**icy**) on the Internet. I currently live in beautiful Helsinki,
-Finland and work for [UpCloud](https://upcloud.com) as a Kubernetes
-Engineer. Below are a few things that interest me, and can serve as
+I'm Anirudh Oppiliappan. I'm building [Kapy
+Cluster](https://kapycluster.com), a serverless Kubernetes platform.
+Before that, I worked at UpCloud on the Managed Kubernetes team for two
+years. I currently live in Helsinki, Finland.
+
+Below are a few things that excite me, and can serve as
 conversation starters for you:
 
 - Infrastructure and distributed systems.
-- Motorsport. I closely follow F1, F2 and F3.
-- Startups and indie-hacking. Admittedly, I don't know much but I follow
-  the space.
-- Fitness. Strength training, calisthenics.
 - The Go programming language. I love Go and I swear by the standard
   library.
+- Startups and VC.
+- Motorsport. I closely follow F1, F2 and F3.
+- Fitness. Strength training, calisthenics.
 - (Spoken) language learning. Currently learning Finnish. Big
   fan of total immersion and comprehensible input.
 - Self-hosting and homelabbing.
@@ -31,7 +32,6 @@ conversation starters for you:
   * [Good Food Institute](https://gfi.org)
   * [ACE Recommended
   Charities](https://animalcharityevaluators.org/recommended-charities/)
-
 
 I maintain a somewhat active list of tech that I [use](/uses).
 
