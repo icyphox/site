@@ -43,9 +43,9 @@ If you have my phone number, you can reach me on Signal/iMessage. My
 Signal username is
 [icy.19](https://signal.me/#eu/Nphsc2OCoWjih4d8jfuRRV0v6fJNPOXG9lY1X6B4vYb7KPR4wdpKu6SScSzuztil).
 
-I'm available on IRC as `icy` on [libera.chat](https://libera.chat) and
-[rizon.net](https://rizon.net) but I'm likely to miss messages as I
-don't get notified. Use the above methods instead.
+You may also book time with me for a [quick
+chat](https://cal.com/icyphox/chat) -- I love meeting new people or
+simply reconnecting.
 
 Some other ways to find me:
 - X [@icyphox](https://x.com/icyphox)
@@ -56,8 +56,6 @@ Some other ways to find me:
 - GitHub [@icyphox](https://github.com/icyphox)
 - Fediverse [@icy@icyphox.sh](https://h.icyphox.sh/@icy)
 
-If you're interested in **hiring me** -- here's my
-[résumé](https://cdn.icyphox.sh/resume.pdf).
 
 ## colophon
 
