@@ -8,8 +8,8 @@ subtitle: About me and my interests.
 
 I'm Anirudh Oppiliappan. I'm building [Kapy
 Cluster](https://kapycluster.com), a serverless Kubernetes platform.
-Before that, I worked at UpCloud on the Managed Kubernetes team for two
-years. I currently live in Helsinki, Finland.
+From 2023-2025, I worked at UpCloud on the Managed Kubernetes team. I
+currently live in Helsinki, Finland.
 
 Below are a few things that excite me, and can serve as
 conversation starters for you:
