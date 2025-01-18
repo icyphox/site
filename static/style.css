@@ -389,40 +389,33 @@ ol li:not(.footnotes)::marker {
     color: var(--gray);
 }
 
-.footnote-ref a {
-    text-decoration: none;
-    color: var(--light);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 0.8rem;
-    background: var(--cyan);
-    width: 0.8rem;
-    height: 0.8rem;
-    font-size: 0.6rem;
-    display: inline-block;
-    border-bottom: unset;
-}
-
-.footnotes > ol {
-    list-style-type: none;
-    counter-reset: counter;
+.footnotes > ol li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
 }
 
 .footnotes > ol li::before {
     content: counter(counter);
     border-radius: 50%;
     text-align: center;
-    line-height: 1.2rem;
+    line-height: 160%;
     color: var(--light);
     background: var(--cyan);
     width: 18px;
     height: 18px;
     font-size: 11px;
-    margin-right: 0.8rem;
-    box-sizing: content-box;
     display: inline-block;
-    position: relative;
-    transform: translateY(-2px);
+    flex-shrink: 0;
+}
+
+.footnotes > ol li p {
+    margin: 0;
+    line-height: 160%;
+}
+
+.footnote-return {
+  margin-left: auto;
 }
 
 .footnotes ol li:not(:last-child) {
