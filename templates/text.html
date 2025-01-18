@@ -20,7 +20,7 @@
         </section>
 
 
-        {{ if .Meta.draft }}
+        {{ if eq .Meta.draft "true" }}
         <h1 class="title">{{ index .Meta "title" }} <span class="draft">[draft]</span></h1>
         {{ else }}
         <h1 class="title">{{ index .Meta "title" }}</h1>

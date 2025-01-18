@@ -4,7 +4,6 @@ slug: identity
 title: atproto and ownership of identity
 subtitle: The new age of social-enabled apps
 date: 2025-01-18
-draft: false
 ---
 
 [atproto](https://atproto.com) is very exciting to me as it's the
