@@ -37,9 +37,11 @@ their two biggest problems solved for free:
 1. The need for a new account (for users), and
 2. The social graph.
 
-This paves the wave for all kinds of new "social-enabled" services to
+This paves the way for all kinds of new "social-enabled" services to
 emerge: forums, long-form writing, and potentially even more complex
-ones like code forges and more -- all sharing the same account.
+ones like code forges and more -- all sharing the same account. The same
+behavior is rather cumbersome in the above fediverse model because of
+poor interoperability and lack of unified identity.
 
 Further, the separation of the app and user layers now allows for
 building "apps" that are viable businesses. The app layer can be a
