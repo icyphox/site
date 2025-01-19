@@ -1,1 +1,3 @@
-/blog/* /:splat
+/blog/*  /:splat
+!/blog/  /blog/  200
+
