@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: openbsd-oci
 title: Installing OpenBSD on Oracle Cloud
 subtitle: It finally works in 7.2!

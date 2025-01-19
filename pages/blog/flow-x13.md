@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: flow-x13
 title: The Asus ROG Flow X13
 subtitle: My hunt for a new laptop has finally concluded

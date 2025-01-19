@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: building-forlater
 title: How I built forlater.email
 subtitle: A technical breakdown of my first big side-project

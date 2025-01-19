@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 title: 2019 in review
 subtitle: A look back at last year
 date: 2020-01-02

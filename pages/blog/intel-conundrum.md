@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 title: The intelligence conundrum
 subtitle: To protect an asset, or to protect the people?
 date: 2019-10-28

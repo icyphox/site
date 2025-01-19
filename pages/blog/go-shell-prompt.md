@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: go-shell-prompt
 title: Writing a shell prompt in Go
 subtitle: Kinda faster than bash

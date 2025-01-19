@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: dont-news
 title: You don't need news
 subtitle: My hot 'n' spicy take on "news" today

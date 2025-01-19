@@ -1,5 +1,6 @@
 ---
 template: text.html
+atroot: true
 title: Setting up my personal mailserver
 subtitle: This is probably a terrible idea…
 date: 2019-08-15

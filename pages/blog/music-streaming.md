@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: music-streaming
 title: My music streaming setup
 subtitle: Think Spotify, but self-hosted and not as good

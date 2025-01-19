@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: forlater
 title: Launching forlater.email
 subtitle: An email-based bookmarking service

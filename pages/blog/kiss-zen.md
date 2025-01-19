@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: kiss-zen
 title: The Zen of KISS Linux
 subtitle: My thoughts on the distro, the philosophy and my experience in general

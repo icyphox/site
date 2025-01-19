@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: push
 title: Push-based productivity
 subtitle: Getting told when to get things done

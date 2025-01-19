@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: prosody
 title: Setting up Prosody for XMPP
 subtitle: I setup Prosody yesterday—here's how I did it

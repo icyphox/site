@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 title: IRC for DMs
 subtitle: Honestly, it's pretty great
 date: 2019-11-03

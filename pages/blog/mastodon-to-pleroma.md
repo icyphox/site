@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: mastodon-to-pleroma
 title: Migrating from Mastodon to Pleroma
 subtitle: Mastodon bad. Pleroma good.

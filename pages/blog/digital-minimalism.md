@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 title: Thoughts on digital minimalism 
 subtitle: Put that screen down!
 date: 2019-10-05

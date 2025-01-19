@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 title: PyCon India 2019 wrap-up
 subtitle: Pretty fun weekend, I'd say
 date: 2019-10-15

@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: go-get-cgit
 title: Make cgit go gettable
 subtitle: go get git.icyphox.sh/* works!

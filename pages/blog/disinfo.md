@@ -1,5 +1,6 @@
 ---
 template: text.html
+atroot: true
 title: Disinformation demystified
 subtitle: Misinformation, but deliberate
 date: 2019-09-10

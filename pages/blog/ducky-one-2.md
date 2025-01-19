@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: ducky-one-2
 title: The Ducky One 2 SF
 subtitle: I fell for the mechanical keyboard meme

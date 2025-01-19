@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 title: Five days in a TTY
 slug: five-days-tty
 subtitle: I installed KISS Linux

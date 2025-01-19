@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: s-nail
 title: The S-nail mail client
 subtitle: And how to achieve a usable configuration for IMAP/SMTP

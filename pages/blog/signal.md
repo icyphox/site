@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: signal
 title: We can do better than Signal
 subtitle: Centralized silos are never the solution

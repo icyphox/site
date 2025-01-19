@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: signal-vmm
 title: Signal Desktop on OpenBSD via vmm(4)
 subtitle: X11 forwarding to the rescue

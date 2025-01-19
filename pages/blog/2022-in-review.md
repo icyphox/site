@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: 2022-in-review
 title: 2022 in review
 subtitle: Late again because I was busy packing

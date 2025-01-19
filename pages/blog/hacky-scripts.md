@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 title: Hacky scripts
 subtitle: The most fun way to learn to code
 date: 2019-10-24

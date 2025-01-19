@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: covid19-disinfo
 title: COVID-19 disinformation
 subtitle: A lot of actors cashing in on the epidemic

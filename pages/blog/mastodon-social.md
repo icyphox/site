@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: mastodon-social
 title: Stop joining mastodon.social
 subtitle: Do you even understand federation?

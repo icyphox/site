@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: honk-fly
 title: Honkin' on the Fly
 subtitle: Running honk on fly.io

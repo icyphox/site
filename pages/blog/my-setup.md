@@ -1,5 +1,6 @@
 ---
 template: text.html
+atroot: true
 title: My setup
 subtitle: My daily drivers—hardware, software and workflow
 date: 2019-05-13

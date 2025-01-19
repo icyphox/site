@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: better
 title: Being better
 subtitle: My epistemic breakthrough to better living

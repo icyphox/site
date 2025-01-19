@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: whatsapp
 title: What's next after WhatsApp?
 subtitle: Let's not act surprised here, this was bound to happen

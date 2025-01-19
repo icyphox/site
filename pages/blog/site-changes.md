@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: site-changes
 title: Site changes
 subtitle: New stuff at the {back,front}end

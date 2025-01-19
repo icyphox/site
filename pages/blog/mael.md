@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: mael
 title: Introducing mael
 subtitle: An experimental mail client

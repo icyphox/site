@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 title: Save .ORG!
 subtitle: PIR is getting sold to a private firm, and here's why it's bad
 date: 2019-11-23

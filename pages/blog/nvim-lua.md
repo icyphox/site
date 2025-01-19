@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: nvim-lua
 title: Configuring Neovim using Lua
 subtitle: And switching from init.vim to init.lua

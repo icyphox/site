@@ -1,5 +1,6 @@
 ---
 template: text.html
+atroot: true
 title: Return Oriented Programming on ARM (32-bit)
 subtitle: Making stack-based exploitation great again!
 date: 2019-06-06

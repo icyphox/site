@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: flask-jwt-login
 title: Flask-JWT-Extended × Flask-Login
 subtitle: Apparently I do webshit now

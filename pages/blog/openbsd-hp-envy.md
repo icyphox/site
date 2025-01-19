@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: openbsd-hp-envy
 title: OpenBSD on the HP Envy 13
 subtitle: I put a blowfish in my laptop this week

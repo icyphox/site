@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 title: Instagram OPSEC
 subtitle: Operational security for the average zoomer
 date: 2019-12-02

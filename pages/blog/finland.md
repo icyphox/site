@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: finland
 title: I am moving to Finland
 subtitle: This is what I was packing for

@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: formula-e
 title: I can't take Formula E seriously
 subtitle: Toy cars racing in parking lots

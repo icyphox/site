@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: simplicity-security
 title: Simplicity (mostly) guarantees security
 subtitle: This is why I meme mnmlsm so much

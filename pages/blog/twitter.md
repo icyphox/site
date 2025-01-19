@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: twitter
 title: Some thoughts on Twitter
 subtitle: I've begun avoiding Twitter, here's why

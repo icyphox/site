@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: k8s-at-home
 title: Setting up a multi-arch Kubernetes cluster at home
 subtitle: My self-hosted infra, given the cloud native™ treatment

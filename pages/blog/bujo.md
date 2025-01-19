@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: bujo
 title: The quest to optimize productivity
 subtitle: This blog is devolving into a techbro cliché

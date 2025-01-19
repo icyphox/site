@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: cloud-foss
 title: Cloud (F)OSS is a good model
 subtitle: On building (mostly) open source startups

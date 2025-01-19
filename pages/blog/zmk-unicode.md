@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: zmk-unicode
 title: Unicode text input in ZMK
 subtitle: A hacky interim solution using macros

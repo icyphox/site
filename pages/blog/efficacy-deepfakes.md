@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: efficacy-deepfakes
 title: The efficacy of deepfakes
 subtitle: Can we really write it off as "not a threat"?

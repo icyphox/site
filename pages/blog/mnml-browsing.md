@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 title: Vimb&#58; my Firefox replacement
 subtitle: Web browsing, suckless style
 date: 2020-01-16

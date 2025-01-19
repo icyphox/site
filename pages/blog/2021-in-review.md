@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: 2021-in-review
 title: 2021 in review
 subtitle: The post-year ramble is here, slightly late this time

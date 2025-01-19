@@ -1,5 +1,6 @@
 ---
 template:
+atroot: true
 slug: nullcon-2020
 title: Nullcon 2020
 subtitle: An opinion-filled review of Nullcon Goa, 2020
