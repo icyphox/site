@@ -26,7 +26,7 @@
               {{ range slice $posts 0 3 }}
                   <li>
                     <div class="post">
-                      <a href=/blog/{{ .Meta.slug }}>{{ .Meta.title }}</a>
+                      <a href=/{{ .Meta.slug }}>{{ .Meta.title }}</a>
                       {{ if .Meta.draft }}
                         (<span class="draft">draft</span>)
                       {{ end }}
@@ -38,7 +38,7 @@
                   </li>
               {{ end }}
             </ul>
-        <a style="border-bottom: unset;" href="/blog"><span>more &RightArrow;</span></a>
+        <a style="border-bottom: unset;" href="/blog/"><span>more &RightArrow;</span></a>
         </section>
       </article>
     </main>

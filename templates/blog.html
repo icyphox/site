@@ -23,7 +23,7 @@
           {{ range $posts }}
               <li>
                 <div class="post">
-                  <a href=/blog/{{ .Meta.slug }}>{{ .Meta.title }}</a>
+                  <a href=/{{ .Meta.slug }}>{{ .Meta.title }}</a>
                   {{ if .Meta.draft }}
                     (<span class="draft">draft</span>)
                   {{ end }}
