@@ -1,3 +1,4 @@
 /blog/  /blog/  200
+/blog/feed.xml  /blog/feed.xml  200
 /blog/*  /:splat
 
