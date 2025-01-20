@@ -409,12 +409,34 @@ ol li:not(.footnotes)::marker {
     flex-shrink: 0;
 }
 
+.footnote-ref a {
+    text-decoration: none;
+    color: var(--light);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 0.8rem;
+    background: var(--cyan);
+    width: 0.8rem;
+    height: 0.8rem;
+    font-size: 0.6rem;
+    display: inline-block;
+    border-bottom: unset;
+}
+
 .footnotes > ol li p {
     margin: 0;
     line-height: 160%;
 }
 
 .footnote-return {
+  border-bottom: unset;
+  color: var(--cyan);
+  margin-left: auto;
+}
+
+.footnote-return:hover {
+  border-bottom: unset;
+  color: var(--cyan);
   margin-left: auto;
 }
 
