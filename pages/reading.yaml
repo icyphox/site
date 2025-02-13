@@ -8,14 +8,14 @@ meta:
 
 books:
   - 2025:
-    - name: Ultra-Processed People
-      link: https://en.wikipedia.org/wiki/Ultra-Processed_People
-      author: Chris van Tulleken
-      status: now reading
     - name: The Scout Mindset
       link: https://en.wikipedia.org/wiki/The_Scout_Mindset
       author: Julia Galef
       status: now reading
+    - name: Ultra-Processed People
+      link: https://en.wikipedia.org/wiki/Ultra-Processed_People
+      author: Chris van Tulleken
+      status: ★★★★
 
   - 2024:
     - name: Dune Messiah
