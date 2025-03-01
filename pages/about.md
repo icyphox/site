@@ -6,8 +6,9 @@ subtitle: About me and my interests.
 
 ![me](https://cdn.icyphox.sh/fit?url=http://files.garage.koti.lan/IMG_1570.jpg&width=1000&height=1000)
 
-I'm Anirudh Oppiliappan. I work at UpCloud on the Managed Kubernetes
-team. I currently live in Helsinki, Finland.
+I'm Anirudh Oppiliappan, and I currently live in Helsinki, Finland. Most
+recently, I worked at UpCloud on the Managed Kubernetes product. Right
+now, I'm taking three months off to try and build a company with Antler.
 
 Below are a few things that excite me, and can serve as
 conversation starters for you:
