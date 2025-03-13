@@ -11,14 +11,13 @@ currently using.
 
 ![desk oct 2024](https://cdn.icyphox.sh/desk-oct-2024.png)
 
-## personal laptop (wyndle)
+## at home machine (wyndle)
 
 My primary laptop that I use for everything non-work is my [**Asus ROG
 Flow X13 (2021)**](/blog/flow-x13). It's got a Ryzen 9 5900HS, Nvidia
-GTX 1650 Max-Q, 32GB of RAM and a 1TB SSD. I bought this machine in
-early 2022, when I was working remotely as a contractor. The 4K display
-doesn't help with its battery life (about 5 hours) but it looks
-absolutely fantastic. This machine runs NixOS.
+GTX 1650 Max-Q, 32GB of RAM and a 1TB SSD. The 4K display doesn't help
+with its battery life (about 5 hours) but it looks absolutely fantastic.
+This machine runs NixOS.
 
 Other software I use on this machine:
 
@@ -45,9 +44,9 @@ Other software I use on this machine:
   and use the official Bitwarden clients everywhere else.
 
 
-## work laptop (kvothe)
+## on the move machine (kvothe)
 
-For work, I use a **14" M1 MacBook Pro**. I use
+I also use a **14" M1 MacBook Pro**. I use
 [nix-darwin](https://github.com/LnL7/nix-darwin) to configure most of my
 basic applications (neovim, tmux, bash, ...). Software of note:
 
@@ -78,9 +77,6 @@ devices:
   low actuation force of the MX one more. Some [pictures
   here](/blog/2022-in-review/#keyboards-my-first-new-expensive-hobby).
 
-- **Logitech Ergo M575**: Wireless ergonomic thumb trackball mouse. I've
-  [written about it](/blog/m575) in depth.
-
 - **Airpods Pro**: Great quality, even better noise cancellation.
 
 - **iPhone 13 mini**: The only actual small phone -- it's unfortunate
@@ -89,11 +85,3 @@ devices:
 - **Kindle KT4**: Jailbroken using
   [WatchThis](https://www.mobileread.com/forums/showthread.php?t=346037)
   and running KOReader.
-
-- **iPhone 15 Pro**: "Work" phone. Not a fan of its size, but I love the
-  refresh rate. This is currently my main phone.
-
-- **Tailscale**: I used to setup WireGuard networks by hand, but that
-  got unweildy after 3 hosts. With Tailscale I now have around 8
-  different machines running Linux, OpenBSD, macOS and iOS all
-  seamlessly connected. It's incredibly handy.
