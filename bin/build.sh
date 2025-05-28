@@ -1,13 +1,15 @@
 #!/bin/sh
 
 
+npm install tailwindcss @tailwindcss/cli
+
 rm -rf go-vite
-git clone https://github.com/icyphox/go-vite
-cd go-vite && make && cd ..
+git clone https://tangled.sh/@icyphox.sh/vite
+cd vite && make && cd ..
 mkdir build
 
 if [ "$VITE_ENV" = "production" ]; then
-  go-vite/vite build
+  vite/vite build
 else
-  go-vite/vite build --drafts
+  vite/vite build --drafts
 fi
