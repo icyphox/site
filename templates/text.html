@@ -9,28 +9,25 @@
   </title>
   <body>
     <main>
-      <div class="sidenav">
+      <div>
         {{ template "partials/nav.html" }}
       </div>
-      <article align="left">
-        <section class="post-date">
+      <article>
+        <section class="text-gray lowercase">
         {{ $dateStr := index .Meta "date" }}
         {{ $date := parsedate $dateStr }}
         {{ $date.Format "02 Jan, 2006" }}
         </section>
 
-
-        {{ if eq .Meta.draft "true" }}
-        <h1 class="title">{{ index .Meta "title" }} <span class="draft">[draft]</span></h1>
-        {{ else }}
-        <h1 class="title">{{ index .Meta "title" }}</h1>
-        {{ end }}
-        <h2 class="subtitle">{{ index .Meta "subtitle" }}</h2>
+        <section>
+        <h1 class="-mb-4">{{ index .Meta "title" }} {{ if eq .Meta.draft "true" }}
+            <span class="text-base text-red-400">[draft]</span>{{ end }}
+        </h1>
+        <h2 class="text-gray">{{ index .Meta "subtitle" }}</h2>
+        <div class="mt-12">
         {{ .Body }}
-
-        <p class="muted" align="center">Questions or comments?
-        Send an
-        <a href="mailto:x@icyphox.sh?Subject=Re: {{ index .Meta "title" }}">email</a>.
+        </div>
+        </section>
       </article>
     </main>
     <footer>

@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@layer base {
+    @theme {
+        --color-cyan: #509c93;
+        --color-light: #fff9eb;
+        --color-light-gray: #fceccc;
+        --color-medium-gray: #e6dcd1;
+        --color-mediumer-gray: #d8cbbe;
+        --color-gray: #776e63;
+        --color-dark: #4a443d;
+        --color-darker: #2a261f;
+        --color-warm: #fffdf5;
+        --color-fg: #100f0f;
+        --color-selection: rgba(143, 105, 213, 0.2);
+
+        --color-dark-light: #2a261f;
+        --color-dark-light-gray: #4a443d;
+        --color-dark-medium-gray: #6b635a;
+        --color-dark-gray: #d3cec1;
+        --color-dark-fg: #fff6e3;
+        --color-dark-dark: #e6dcd1;
+        --color-dark-darker: #fff9eb;
+        --color-dusk: #100f0f;
+        --color-dark-selection: rgba(80, 156, 147, 0.2);
+
+        --breakpoint-md: 400px;
+    }
+
+    h1 {
+        @apply text-2xl;
+        @apply font-medium;
+        @apply pt-4 pb-3;
+    }
+
+    h2 {
+        @apply text-xl;
+        @apply font-normal;
+        @apply text-darker;
+        @apply pt-4 pb-3;
+    }
+
+    ::selection {
+        @apply bg-selection;
+        @apply dark:bg-dark-selection;
+    }
+
+    html {
+        @apply bg-warm dark:bg-dusk;
+        @apply text-fg dark:text-dark-fg;
+    }
+
+    main {
+        @apply text-base p-0 font-normal;
+        @apply text-base/relaxed;
+        article {
+            @apply py-5;
+            p {
+                @apply py-2;
+            }
+            strong {
+                @apply font-medium;
+            }
+
+            ul {
+                @apply list-disc;
+                @apply mx-8 my-2;
+                @apply marker:text-mediumer-gray;
+            }
+
+            ol {
+                counter-reset: counter;
+                li {
+                    counter-increment: counter;
+                }
+                @apply list-decimal;
+                @apply mx-8 my-2;
+                @apply marker:text-gray;
+            }
+
+            code {
+                @apply bg-light text-[0.9rem];
+            }
+            pre {
+                @apply bg-light p-4 my-2 overflow-x-auto overflow-y-hidden;
+            }
+
+            .footnotes {
+                hr {
+                    @apply border-t border-light-gray pt-6 mt-6;
+                }
+            }
+
+            .footnotes > ol li {
+                @apply flex items-center gap-3;
+            }
+
+            .footnotes > ol li::before {
+                @apply content-[counter(counter)];
+                @apply rounded-full text-center leading-4 text-light bg-cyan;
+                @apply w-4 h-4 text-xs inline-block flex-shrink-0;
+            }
+
+            .footnote-ref a {
+                @apply no-underline text-light rounded-full text-center bg-cyan border-b-0;
+                @apply w-3 h-3 text-[0.6rem] leading-3 inline-block;
+            }
+
+            .footnotes > ol li p {
+                @apply m-0 leading-4;
+            }
+
+            .footnote-return {
+                @apply border-b-0 text-cyan ml-auto;
+            }
+
+            .footnote-return:hover {
+                @apply border-b-0 text-cyan ml-auto;
+            }
+
+            .footnotes ol li:not(:last-child) {
+                @apply pb-8;
+            }
+        }
+    }
+
+    body {
+        @apply max-w-[655px];
+        @apply px-4 pt-8 pb-80;
+        @apply my-4 mx-auto;
+    }
+
+    a {
+        @apply text-darker dark:text-gray;
+        @apply border-b border-medium-gray hover:border-gray;
+    }
+
+    img {
+        @apply max-w-full;
+        @apply w-full;
+        @apply block;
+        @apply mx-auto my-[10px_auto_4px_auto];
+        @apply rounded-md;
+    }
+
+    .row {
+        @apply flex flex-col md:flex-row items-center justify-between;
+        @apply gap-4 md:gap-2;
+    }
+}

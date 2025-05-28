@@ -6,7 +6,7 @@ meta:
   camera: Canon EOS 55
   lens: 50mm f/1.8
   film: Mira 400 and Lomo 400
-  date: 2024-02-01
+  date: "2024-02-01"
 
 defaults:
   width: 1000

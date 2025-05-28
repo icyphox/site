@@ -13,32 +13,32 @@
         {{ template "partials/nav.html" }}
       </div>
       <article>
-        <section class="tagline">
+        <section class="my-12 py-12 border-b border-light-gray">
         {{ .Body }}
         </section>
 
-        <hr>
-
-        <section class="posts">
-        <h2>writing</h2>
-          <ul>
+        <section>
+        <h2 class="pb-6">writing</h2>
+          <ul class="m-0 p-0">
               {{ $posts := .Extra.blog }}
               {{ range slice $posts 0 3 }}
-                  <li>
-                    <div class="post">
+                  <li class="list-none py-2">
+                    <div class="flex md:flex-row flex-col justify-between">
+                    <div>
                       <a href=/{{ .Meta.slug }}>{{ .Meta.title }}</a>
                       {{ if .Meta.draft }}
                         (<span class="draft">draft</span>)
                       {{ end }}
-                      <p class="subtitle">{{ .Meta.subtitle }}</p>
+                      <p class="text-gray">{{ .Meta.subtitle }}</p>
                     </div>
                     {{ $dateStr := .Meta.date }}
                     {{ $date := parsedate $dateStr }}
-                    <div class="index-date">{{ $date.Format "02 Jan, 2006" }}</div>
+                    <div class="text-gray lowercase">{{ $date.Format "02 Jan, 2006" }}</div>
+                    </div>
                   </li>
               {{ end }}
             </ul>
-        <a style="border-bottom: unset;" href="/blog/"><span>more &RightArrow;</span></a>
+        <a class="border-b-0" href="/blog/"><span>more &RightArrow;</span></a>
         </section>
       </article>
     </main>

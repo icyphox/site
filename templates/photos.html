@@ -3,30 +3,24 @@
   <head>
     {{ template "partials/head.html" }}
     <meta name="description" content="{{ index .Meta "subtitle" }}">
-  <style>
-    h1 {
-      margin: 0px;
-      padding: 0px;
-    }
-  </style>
   </head>
   <title>
     {{ .Meta.title }} ({{ .Meta.season }}) &mdash; {{ .Cfg.Title }}
   </title>
   <body>
   <main>
-    <div class="sidenav">
+    <div>
       {{ template "partials/nav.html" }}
     </div>
     <article align="left">
       <h1>{{ .Meta.title }} &mdash; {{ .Meta.season }}</h1>
       <h2 class="subtitle"> {{ .Meta.camera }} · {{ .Meta.lens }} · {{ .Meta.film }} </h2>
-      <div class="image-grid">
+      <div class="columns-1 md:columns-2">
       {{ $photos := .Yaml.photos }}
       {{ $d := .Yaml.defaults }}
       {{ range $photos }}
         <a href="https://cdn.icyphox.sh/{{ . }}">
-          <img src="https://cdn.icyphox.sh/fit?url=http://files.garage.koti.lan/{{ . }}&width={{ $d.width }}&height={{ $d.height }}" />
+          <img class="object-cover relative w-full mb-3" src="https://cdn.icyphox.sh/fit?url=http://files.garage.koti.lan/{{ . }}&width={{ $d.width }}&height={{ $d.height }}" />
         </a>
       {{- end }}
       </div>

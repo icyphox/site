@@ -1,8 +1,9 @@
 title: Anirudh Oppiliappan
-# note the trailing slash!
 url: "https://anirudh.fi/"
 description: ""
 author:
-     name: "Anirudh Oppiliappan"
-     email: "anirudh@oppiliappan.com"
+  name: "Anirudh Oppiliappan"
+  email: "anirudh@oppiliappan.com"
 defaultTemplate: text.html
+preBuild:
+  - tailwindcss -i input.css -o static/styles/tw.css

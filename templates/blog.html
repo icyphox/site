@@ -2,7 +2,7 @@
 <html lang=en>
   <head>
     {{ template "partials/head.html" }}
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://icyphox.sh/blog/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://anirudh.fi/blog/feed.xml">
     <meta name="description" content="{{ index .Meta "subtitle" }}">
   </head>
 
@@ -11,31 +11,36 @@
   </title>
 <body>
   <main>
-    <div class="sidenav">
+    <div>
       {{ template "partials/nav.html" }}
     </div>
+
+    <article>
     <h1>{{ index .Meta "title" }}</h1>
     {{ .Body }}
 
-    <section class="posts">
-      <ul>
-          {{ $posts := .Extra }}
-          {{ range $posts }}
-              <li>
-                <div class="post">
-                  <a href=/{{ .Meta.slug }}>{{ .Meta.title }}</a>
-                  {{ if .Meta.draft }}
-                    (<span class="draft">draft</span>)
-                  {{ end }}
-                  <p class="subtitle">{{ .Meta.subtitle }}</p>
-                </div>
-                {{ $dateStr := .Meta.date }}
-                {{ $date := parsedate $dateStr }}
-                <div class="index-date">{{ $date.Format "02 Jan, 2006" }}</div>
-              </li>
-          {{ end }}
-        </ul>
+    <section class="mt-12">
+        <ul class="m-0 p-0">
+            {{ $posts := .Extra }}
+            {{ range $posts }}
+                <li class="list-none py-2">
+                  <div class="flex md:flex-row flex-col justify-between">
+                    <div>
+                      <a href=/{{ .Meta.slug }}>{{ .Meta.title }}</a>
+                      {{ if .Meta.draft }}
+                        (<span class="text-red-200">draft</span>)
+                      {{ end }}
+                      <p class="text-gray">{{ .Meta.subtitle }}</p>
+                    </div>
+                    {{ $dateStr := .Meta.date }}
+                    {{ $date := parsedate $dateStr }}
+                    <div class="index-date text-gray lowercase">{{ $date.Format "02 Jan, 2006" }}</div>
+                  </div>
+                </li>
+            {{ end }}
+          </ul>
     </section>
+    </article>
   </main>
   <footer>
     {{ template "partials/footer.html" }}

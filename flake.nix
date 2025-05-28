@@ -2,7 +2,7 @@
   description = "site";
 
   inputs.nixpkgs.url = "github:nixos/nixpkgs";
-  inputs.vite.url = "github:icyphox/go-vite";
+  inputs.vite.url = "git+https://tangled.sh/@icyphox.sh/vite";
 
   outputs =
     { self
@@ -34,10 +34,12 @@
               pkgs.gnumake
               pkgs.entr
               pkgs.awscli2
+              pkgs.tailwindcss_4
             ];
           };
         }
       );
+
 
       apps = forAllSystems (
         system:

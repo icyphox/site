@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1737316331,
-        "narHash": "sha256-Gev1DE6Or+xzTIiTRrvnmVyUHj6x/Gtk6EO4iJJ58So=",
+        "lastModified": 1748204564,
+        "narHash": "sha256-eSYjZMXGo7BGaaREt9LdGKCUEobIwvvb9/2OjpEhWxI=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "20d2e6da70836953b778f6cd95e9312e65391ef9",
+        "rev": "7ed13552a51b57aab87896737cbef2853aa684d7",
         "type": "github"
       },
       "original": {
@@ -41,17 +41,17 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1737316691,
-        "narHash": "sha256-EUo4/8wpIF8ZposFbH+d77c2wDzR8/oGA2qE7nVDo+Y=",
-        "owner": "icyphox",
-        "repo": "go-vite",
-        "rev": "39b8d08cf911e22d238d5b30f18434a346c02733",
-        "type": "github"
+        "lastModified": 1745387732,
+        "narHash": "sha256-CdHBCqAzRynF39kDEktFNtYgD5f7vFIkKFupPIZhORY=",
+        "ref": "refs/heads/master",
+        "rev": "a64168bad0f8492be51dbb22991e12f2607ec3e2",
+        "revCount": 92,
+        "type": "git",
+        "url": "https://tangled.sh/@icyphox.sh/vite"
       },
       "original": {
-        "owner": "icyphox",
-        "repo": "go-vite",
-        "type": "github"
+        "type": "git",
+        "url": "https://tangled.sh/@icyphox.sh/vite"
       }
     }
   },

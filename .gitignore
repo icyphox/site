@@ -4,3 +4,4 @@ bin/replace
 .direnv
 .aider*
 .env
+static/styles/tw.css

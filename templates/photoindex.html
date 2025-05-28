@@ -27,18 +27,20 @@
     <article align="left">
     <h1>{{ .Meta.title }}</h1>
     {{ .Body }}
-    <section class="posts">
-    <ul>
+    <section class="mt-12">
+    <ul class="m-0 p-0">
       {{ $posts := .Extra }}
       {{ range $posts }}
-        <li>
-          <div class="post">
+        <li class="list-none py-2">
+          <div class="flex md:flex-row flex-col justify-between">
+          <div>
             <a href=/photos/{{ .Meta.slug }}>{{ .Meta.title }} &mdash; {{ .Meta.season }}</a>
-            <p class="subtitle">{{ .Meta.camera }} · {{ .Meta.lens }} · {{ .Meta.film }}</p>
+            <p class="text-gray">{{ .Meta.camera }} · {{ .Meta.lens }} · {{ .Meta.film }}</p>
           </div>
           {{ $dateStr := .Meta.date }}
           {{ $date := parsedate $dateStr }}
-          <div class="index-date">{{ $date.Format "02 Jan, 2006" }}</div>
+          <div class="text-gray lowercase">{{ $date.Format "02 Jan, 2006" }}</div>
+          </div>
         </li>
       {{ end }}
     </ul>
