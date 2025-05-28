@@ -13,7 +13,7 @@
         {{ template "partials/nav.html" }}
       </div>
       <article>
-        <section class="my-12 py-12 border-b border-light-gray">
+        <section class="my-12 py-12 border-b dark:border-dark-light-gray border-light-gray">
         {{ .Body }}
         </section>
 
@@ -29,11 +29,11 @@
                       {{ if .Meta.draft }}
                         (<span class="draft">draft</span>)
                       {{ end }}
-                      <p class="text-gray">{{ .Meta.subtitle }}</p>
+                      <p class="dark:text-dark-gray text-gray">{{ .Meta.subtitle }}</p>
                     </div>
                     {{ $dateStr := .Meta.date }}
                     {{ $date := parsedate $dateStr }}
-                    <div class="text-gray lowercase">{{ $date.Format "02 Jan, 2006" }}</div>
+                    <div class="dark:text-dark-gray text-gray lowercase">{{ $date.Format "02 Jan, 2006" }}</div>
                     </div>
                   </li>
               {{ end }}

@@ -27,9 +27,9 @@
               <div class="flex md:flex-row flex-col justify-between">
                 <div>
                   <a href="{{ $book.link }}">{{ $book.name }}</a>
-                  <p class="text-gray">{{ $book.author }}</p>
+                  <p class="dark:text-dark-gray text-gray">{{ $book.author }}</p>
                 </div>
-                <span class="text-gray lowercase">{{ $book.status }}</span>
+                <span class="dark:text-dark-gray text-gray lowercase">{{ $book.status }}</span>
               </div>
             </li>
           {{- end }}

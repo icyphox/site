@@ -30,11 +30,11 @@
                       {{ if .Meta.draft }}
                         (<span class="text-red-200">draft</span>)
                       {{ end }}
-                      <p class="text-gray">{{ .Meta.subtitle }}</p>
+                      <p class="text-gray dark:text-dark-gray">{{ .Meta.subtitle }}</p>
                     </div>
                     {{ $dateStr := .Meta.date }}
                     {{ $date := parsedate $dateStr }}
-                    <div class="index-date text-gray lowercase">{{ $date.Format "02 Jan, 2006" }}</div>
+                    <div class="index-date dark:text-dark-gray text-gray lowercase">{{ $date.Format "02 Jan, 2006" }}</div>
                   </div>
                 </li>
             {{ end }}

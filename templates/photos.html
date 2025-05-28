@@ -13,9 +13,9 @@
       {{ template "partials/nav.html" }}
     </div>
     <article align="left">
-      <h1>{{ .Meta.title }} &mdash; {{ .Meta.season }}</h1>
-      <h2 class="subtitle"> {{ .Meta.camera }} · {{ .Meta.lens }} · {{ .Meta.film }} </h2>
-      <div class="columns-1 md:columns-2">
+      <h1 class="-mb-4">{{ .Meta.title }} &mdash; {{ .Meta.season }}</h1>
+      <h2 class="text-gray dark:text-dark-gray"> {{ .Meta.camera }} · {{ .Meta.lens }} · {{ .Meta.film }} </h2>
+      <div class="columns-1 md:columns-2 mt-12">
       {{ $photos := .Yaml.photos }}
       {{ $d := .Yaml.defaults }}
       {{ range $photos }}

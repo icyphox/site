@@ -36,7 +36,7 @@
     h2 {
         @apply text-xl;
         @apply font-normal;
-        @apply text-darker;
+        @apply text-darker dark:text-dark-darker;
         @apply pt-4 pb-3;
     }
 
@@ -87,7 +87,7 @@
 
             .footnotes {
                 hr {
-                    @apply border-t border-light-gray pt-6 mt-6;
+                    @apply border-t dark:border-dark-light-gray border-light-gray pt-6 mt-6;
                 }
             }
 
@@ -102,7 +102,7 @@
             }
 
             .footnote-ref a {
-                @apply no-underline text-light rounded-full text-center bg-cyan border-b-0;
+                @apply no-underline dark:text-dark-light text-light rounded-full text-center bg-cyan border-b-0;
                 @apply w-3 h-3 text-[0.6rem] leading-3 inline-block;
             }
 
@@ -131,8 +131,9 @@
     }
 
     a {
-        @apply text-darker dark:text-gray;
+        @apply text-darker dark:text-dark-darker;
         @apply border-b border-medium-gray hover:border-gray;
+        @apply dark:border-dark-medium-gray dark:hover:border-dark-gray;
     }
 
     img {

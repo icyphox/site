@@ -35,11 +35,11 @@
           <div class="flex md:flex-row flex-col justify-between">
           <div>
             <a href=/photos/{{ .Meta.slug }}>{{ .Meta.title }} &mdash; {{ .Meta.season }}</a>
-            <p class="text-gray">{{ .Meta.camera }} · {{ .Meta.lens }} · {{ .Meta.film }}</p>
+            <p class="dark:text-dark-gray text-gray">{{ .Meta.camera }} · {{ .Meta.lens }} · {{ .Meta.film }}</p>
           </div>
           {{ $dateStr := .Meta.date }}
           {{ $date := parsedate $dateStr }}
-          <div class="text-gray lowercase">{{ $date.Format "02 Jan, 2006" }}</div>
+          <div class="dark:text-dark-gray text-gray lowercase">{{ $date.Format "02 Jan, 2006" }}</div>
           </div>
         </li>
       {{ end }}
