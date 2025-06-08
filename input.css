@@ -28,7 +28,7 @@
     }
 
     h1 {
-        @apply text-2xl;
+        @apply text-3xl;
         @apply font-medium;
         @apply pt-4 pb-3;
     }
@@ -79,10 +79,10 @@
             }
 
             code {
-                @apply bg-light text-[0.9rem];
+                @apply bg-light text-[0.9rem] dark:bg-dark-light;
             }
             pre {
-                @apply bg-light p-4 my-2 overflow-x-auto overflow-y-hidden;
+                @apply bg-light p-4 my-2 overflow-x-auto overflow-y-hidden dark:bg-dark-light;
             }
 
             .footnotes {
