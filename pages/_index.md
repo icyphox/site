@@ -6,9 +6,9 @@ template: index.html
 
 # Anirudh Oppiliappan
 
-Hi, I'm Anirudh and I live in Helsinki, Finland. Right now, I'm building
-[Tangled](https://tangled.sh) -- a code collaboration platform built on
-[atproto](https://atproto.com).
+Hi, I'm Anirudh and I live in Helsinki, Finland. Right now, I'm the
+co-founder of [Tangled](https://tangled.org) -- a code collaboration
+platform built on the [AT Protocol](https://atproto.com).
 
 I'm generally interested in distributed systems, infrastructure,
 VC-funded startups and effective altruism.

@@ -41,17 +41,17 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1745387732,
-        "narHash": "sha256-CdHBCqAzRynF39kDEktFNtYgD5f7vFIkKFupPIZhORY=",
+        "lastModified": 1758224598,
+        "narHash": "sha256-Ai+kyEpZVPTuk0IP34kE8ZaXxhI+Z97msUFPe82k0Ic=",
         "ref": "refs/heads/master",
-        "rev": "a64168bad0f8492be51dbb22991e12f2607ec3e2",
-        "revCount": 92,
+        "rev": "e67e553dc237e41adc9ceae4d834fc02d44e4eb4",
+        "revCount": 96,
         "type": "git",
-        "url": "https://tangled.sh/@icyphox.sh/vite"
+        "url": "https://tangled.org/@anirudh.fi/vite"
       },
       "original": {
         "type": "git",
-        "url": "https://tangled.sh/@icyphox.sh/vite"
+        "url": "https://tangled.org/@anirudh.fi/vite"
       }
     }
   },

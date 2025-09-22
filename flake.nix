@@ -2,7 +2,7 @@
   description = "site";
 
   inputs.nixpkgs.url = "github:nixos/nixpkgs";
-  inputs.vite.url = "git+https://tangled.sh/@icyphox.sh/vite";
+  inputs.vite.url = "git+https://tangled.org/@anirudh.fi/vite";
 
   outputs =
     { self
